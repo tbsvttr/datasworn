@@ -13,9 +13,7 @@ oracles:
   misc:
     name: Miscellaneous
     oracle_type: tables
-    enhances:
-    - oracle_collection:starforged/misc
-    _comment: Extension of the oracle collection
+    _comment: Extension of the oracle table
     _source: &Source
       title: Starsmith
       authors:
@@ -24,16 +22,13 @@ oracles:
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
     contents:
-      story_complication:
+      complication:
         name: Story Complication
         oracle_type: table_text
         dice: 1d300
-        replaces:
-        - oracle_rollable:starforged/misc/story_complication
         _comment: Extension of the oracle table
         _source: *Source
         rows:
-        # begin copied rows
         - text: Crucial equipment or device fails
           roll:
             min: 1
@@ -146,15 +141,16 @@ oracles:
           roll:
             min: 93
             max: 95
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 96
             max: 100
-          <<: &RollTwice
-            text: Roll twice
-            oracle_rolls:
-            - auto: true
-              number_of_rolls: 2
-            # end copied rows
         - text: A secret or unsavory past event from your life is revealed
           roll:
             min: 101
@@ -267,10 +263,16 @@ oracles:
           roll:
             min: 193
             max: 195
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 196
             max: 200
-          <<: *RollTwice
         - text: Calling in a favor comes up short
           roll:
             min: 201
@@ -383,21 +385,24 @@ oracles:
           roll:
             min: 293
             max: 295
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 296
             max: 300
-          <<: *RollTwice
         type: oracle_rollable
-      story_clue:
+      clue:
         name: Story Clue
         oracle_type: table_text
         dice: 1d300
-        replaces:
-        - oracle_rollable:starforged/misc/story_clue
         _comment: Extension of the oracle table
         _source: *Source
         rows:
-          # begin copied rows
         - text: Affirms a previously understood fact or clue
           roll:
             min: 1
@@ -518,17 +523,10 @@ oracles:
           roll:
             min: 88
             max: 90
-        - roll:
+        - text: ▶Descriptor + Focus
+          roll:
             min: 91
             max: 100
-          <<: &DescriptorFocus
-            text: '[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)'
-            oracle_rolls:
-            - oracle: oracle_rollable:starsmith/core/descriptor
-              auto: true
-            - oracle: oracle_rollable:starsmith/core/focus
-              auto: true
-            # end copied rows
         - text: Brings to light a prior altercation involving a connected leader
           roll:
             min: 101
@@ -656,10 +654,10 @@ oracles:
           roll:
             min: 188
             max: 190
-        - roll:
+        - text: ▶Descriptor + Focus
+          roll:
             min: 191
             max: 200
-          <<: *DescriptorFocus
         - text: Brings to light a prior altercation involving a primary suspect
           roll:
             min: 201
@@ -782,21 +780,18 @@ oracles:
           roll:
             min: 288
             max: 290
-        - roll:
+        - text: ▶Descriptor + Focus
+          roll:
             min: 291
             max: 300
-          <<: *DescriptorFocus
         type: oracle_rollable
-      combat_action:
+      action:
         name: Combat Action
         oracle_type: table_text
         dice: 1d300
-        replaces:
-        - oracle_rollable:starforged/misc/combat_action
         _comment: Extension of the oracle table
         _source: *Source
         rows:
-        # begin copied rows
         - text: Block a path or cut off an objective
           roll:
             min: 1
@@ -925,11 +920,16 @@ oracles:
           roll:
             min: 94
             max: 96
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 97
             max: 100
-          <<: *RollTwice
-          # end copied rows
         - text: Aid another
           roll:
             min: 101
@@ -1058,10 +1058,16 @@ oracles:
           roll:
             min: 194
             max: 196
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 197
             max: 200
-          <<: *RollTwice
         - text: Alter the terrain or surroundings
           roll:
             min: 201
@@ -1190,21 +1196,24 @@ oracles:
           roll:
             min: 294
             max: 296
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 297
             max: 300
-          <<: *RollTwice
         type: oracle_rollable
-      anomaly_effect:
+      effect:
         name: Anomaly Effect
         oracle_type: table_text
-        replaces:
-        - oracle_rollable:starforged/misc/anomaly_effect
         dice: 1d300
         _comment: Extension of the oracle table
         _source: *Source
         rows:
-        # begin copied rows
         - text: Alters or focuses gravity
           roll:
             min: 1
@@ -1333,11 +1342,16 @@ oracles:
           roll:
             min: 94
             max: 96
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 97
             max: 100
-          <<: *RollTwice
-          # end copied rows
         - text: Allows the spirits of the dead to speak
           roll:
             min: 101
@@ -1466,10 +1480,16 @@ oracles:
           roll:
             min: 194
             max: 196
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 197
             max: 200
-          <<: *RollTwice
         - text: Alters celestial movements
           roll:
             min: 201
@@ -1598,15 +1618,22 @@ oracles:
           roll:
             min: 294
             max: 296
-        - roll:
+        - text: Roll twice
+          oracle_rolls:
+          - oracle:
+            dice:
+            auto: true
+            duplicates: reroll
+            number_of_rolls: 2
+          roll:
             min: 297
             max: 300
-          <<: *RollTwice
         type: oracle_rollable
-      item:
+      item_of_narrative_significance:
         name: Item of Narrative Significance
         oracle_type: table_text
         dice: 1d300
+        _comment: Extension of the oracle table
         _source: *Source
         rows:
         - text: 3D printer with erased logs
