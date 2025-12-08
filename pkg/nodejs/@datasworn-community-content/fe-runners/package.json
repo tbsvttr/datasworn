@@ -1,0 +1,46 @@
+{
+	"name": "@datasworn-community-content/fe-runners",
+	"version": "0.1.0",
+	"description": "Datasworn JSON data for Fe-Runners, a cyberpunk Starforged expansion by Craig Smith.",
+	"files": [
+		"json",
+		"migration"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rsek/datasworn.git",
+		"directory": "pkg/nodejs/@datasworn-community-content/fe-runners"
+	},
+	"keywords": [
+		"ironsworn",
+		"datasworn",
+		"TTRPG",
+		"starforged",
+		"fe-runners",
+		"cyberpunk"
+	],
+	"contributors": [
+		{
+			"name": "Craig Smith",
+			"url": "https://zombiecraig.itch.io/"
+		}
+	],
+	"scripts": {
+		"release": "release-it"
+	},
+	"license": "CC-BY-NC-SA-4.0",
+	"bugs": {
+		"url": "https://github.com/rsek/datasworn/issues"
+	},
+	"dependencies": {
+		"@datasworn/starforged": "0.1.0"
+	},
+	"authors": [
+		{
+			"name": "Craig Smith",
+			"email": "agent.craig@gmail.com",
+			"url": "https://zombiecraig.itch.io/"
+		}
+	],
+	"private": true
+}

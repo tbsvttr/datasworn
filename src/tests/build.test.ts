@@ -105,6 +105,21 @@ describe('Output Data Validation', () => {
 		// Starsmith is oracle-only expansion
 		expect(Object.keys(data.oracles).length).toBeGreaterThan(0)
 	})
+
+	test('fe_runners.json is valid expansion for Starforged', () => {
+		const dataPath = path.join(ROOT, 'datasworn/fe_runners/fe_runners.json')
+		const data = JSON.parse(readFileSync(dataPath, 'utf-8'))
+
+		expect(data._id).toBe('fe_runners')
+		expect(data.type).toBe('expansion')
+		expect(data.ruleset).toBe('starforged')
+		// Fe-Runners has moves, assets, oracles, and rules
+		expect(data.moves).toBeDefined()
+		expect(data.assets).toBeDefined()
+		expect(data.oracles).toBeDefined()
+		expect(Object.keys(data.moves).length).toBeGreaterThan(0)
+		expect(Object.keys(data.assets).length).toBeGreaterThan(0)
+	})
 })
 
 describe('Schema Round-Trip Validation', () => {
@@ -522,6 +537,36 @@ describe('ID Consistency', () => {
 		expect(oracleIds.length).toBeGreaterThan(0)
 		for (const oracleId of oracleIds) {
 			expect(oracleId).toContain(':starsmith/')
+		}
+	})
+
+	test('all _id values in fe_runners.json contain expansion ID', () => {
+		const data = JSON.parse(
+			readFileSync(path.join(ROOT, 'datasworn/fe_runners/fe_runners.json'), 'utf-8')
+		)
+
+		expect(data._id).toBe('fe_runners')
+		expect(data.type).toBe('expansion')
+
+		// Check that move _ids contain the expansion ID
+		const moveIds = getAllIds(data.moves)
+		expect(moveIds.length).toBeGreaterThan(0)
+		for (const moveId of moveIds) {
+			expect(moveId).toContain(':fe_runners/')
+		}
+
+		// Check that asset _ids contain the expansion ID
+		const assetIds = getAllIds(data.assets)
+		expect(assetIds.length).toBeGreaterThan(0)
+		for (const assetId of assetIds) {
+			expect(assetId).toContain(':fe_runners/')
+		}
+
+		// Check that oracle _ids contain the expansion ID
+		const oracleIds = getAllIds(data.oracles)
+		expect(oracleIds.length).toBeGreaterThan(0)
+		for (const oracleId of oracleIds) {
+			expect(oracleId).toContain(':fe_runners/')
 		}
 	})
 })
