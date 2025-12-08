@@ -64,13 +64,13 @@ class RulesPackageExpansion(RulesPackage):
     The version of the Datasworn format used by this data.
     """
 
-    date: 'datetime'
+    date: 'str'
     """
     The date of the source documents's last update, formatted YYYY-MM-DD.
     Required because it's used to determine whether the data needs updating.
     """
 
-    license: 'WebURL'
+    license: 'Optional[WebURL]'
     moves: 'Dict[str, MoveCategory]'
     """
     A dictionary object containing move categories, which contain moves.
@@ -142,8 +142,8 @@ class RulesPackageExpansion(RulesPackage):
             _from_json_data(Dict[str, AssetCollection], data.get("assets")),
             _from_json_data(List[AuthorInfo], data.get("authors")),
             _from_json_data(RulesPackageExpansionDataswornVersion, data.get("datasworn_version")),
-            _from_json_data(datetime, data.get("date")),
-            _from_json_data(WebURL, data.get("license")),
+            _from_json_data(str, data.get("date")),
+            _from_json_data(Optional[WebURL], data.get("license")),
             _from_json_data(Dict[str, MoveCategory], data.get("moves")),
             _from_json_data(Dict[str, OracleTablesCollection], data.get("oracles")),
             _from_json_data(RulesetID, data.get("ruleset")),
@@ -228,13 +228,13 @@ class RulesPackageRuleset(RulesPackage):
     The version of the Datasworn format used by this data.
     """
 
-    date: 'datetime'
+    date: 'str'
     """
     The date of the source documents's last update, formatted YYYY-MM-DD.
     Required because it's used to determine whether the data needs updating.
     """
 
-    license: 'WebURL'
+    license: 'Optional[WebURL]'
     moves: 'Dict[str, MoveCategory]'
     """
     A dictionary object containing move categories, which contain moves.
@@ -305,8 +305,8 @@ class RulesPackageRuleset(RulesPackage):
             _from_json_data(Dict[str, AssetCollection], data.get("assets")),
             _from_json_data(List[AuthorInfo], data.get("authors")),
             _from_json_data(RulesPackageRulesetDataswornVersion, data.get("datasworn_version")),
-            _from_json_data(datetime, data.get("date")),
-            _from_json_data(WebURL, data.get("license")),
+            _from_json_data(str, data.get("date")),
+            _from_json_data(Optional[WebURL], data.get("license")),
             _from_json_data(Dict[str, MoveCategory], data.get("moves")),
             _from_json_data(Dict[str, OracleTablesCollection], data.get("oracles")),
             _from_json_data(Rules, data.get("rules")),
@@ -872,7 +872,7 @@ class AssetAbilityControlFieldCounter(AssetAbilityControlField):
     """
 
     label: 'Label'
-    max: 'int'
+    max: 'Optional[int]'
     min: 'int'
     """
     The (inclusive) minimum value.
@@ -895,7 +895,7 @@ class AssetAbilityControlFieldCounter(AssetAbilityControlField):
         return cls(
             "counter",
             _from_json_data(Label, data.get("label")),
-            _from_json_data(int, data.get("max")),
+            _from_json_data(Optional[int], data.get("max")),
             _from_json_data(int, data.get("min")),
             _from_json_data(bool, data.get("rollable")),
             _from_json_data(int, data.get("value")),
@@ -920,7 +920,7 @@ class AssetAbilityControlFieldText(AssetAbilityControlField):
     """
 
     label: 'Label'
-    value: 'str'
+    value: 'Optional[str]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -932,7 +932,7 @@ class AssetAbilityControlFieldText(AssetAbilityControlField):
         return cls(
             "text",
             _from_json_data(Label, data.get("label")),
-            _from_json_data(str, data.get("value")),
+            _from_json_data(Optional[str], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -1028,7 +1028,7 @@ class AssetAbilityOptionFieldText(AssetAbilityOptionField):
     """
 
     label: 'Label'
-    value: 'str'
+    value: 'Optional[str]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -1040,7 +1040,7 @@ class AssetAbilityOptionFieldText(AssetAbilityOptionField):
         return cls(
             "text",
             _from_json_data(Label, data.get("label")),
-            _from_json_data(str, data.get("value")),
+            _from_json_data(Optional[str], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -1127,13 +1127,13 @@ class AssetAttachment:
     Asset IDs (which may be wildcards) that may be attached to this asset
     """
 
-    max: 'int'
+    max: 'Optional[int]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'AssetAttachment':
         return cls(
             _from_json_data(List[AssetIDWildcard], data.get("assets")),
-            _from_json_data(int, data.get("max")),
+            _from_json_data(Optional[int], data.get("max")),
         )
 
     def to_json_data(self) -> Any:
@@ -1989,7 +1989,7 @@ class AssetControlFieldSelectEnhancement(AssetControlField):
 
     choices: 'Dict[str, AssetControlFieldSelectEnhancementChoice]'
     label: 'Label'
-    value: 'DictKey'
+    value: 'Optional[DictKey]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -2002,7 +2002,7 @@ class AssetControlFieldSelectEnhancement(AssetControlField):
             "select_enhancement",
             _from_json_data(Dict[str, AssetControlFieldSelectEnhancementChoice], data.get("choices")),
             _from_json_data(Label, data.get("label")),
-            _from_json_data(DictKey, data.get("value")),
+            _from_json_data(Optional[DictKey], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -2076,7 +2076,7 @@ class AssetControlValueRef:
     A reference to the value of an asset control.
     """
 
-    assets: 'List[AssetIDWildcard]'
+    assets: 'Optional[List[AssetIDWildcard]]'
     control: 'DictKey'
     """
     The dictionary key of the asset control field.
@@ -2091,7 +2091,7 @@ class AssetControlValueRef:
     @classmethod
     def from_json_data(cls, data: Any) -> 'AssetControlValueRef':
         return cls(
-            _from_json_data(List[AssetIDWildcard], data.get("assets")),
+            _from_json_data(Optional[List[AssetIDWildcard]], data.get("assets")),
             _from_json_data(DictKey, data.get("control")),
             _from_json_data(AssetControlValueRefUsing, data.get("using")),
         )
@@ -2292,7 +2292,7 @@ class AssetOptionFieldSelectEnhancement(AssetOptionField):
 
     choices: 'Dict[str, AssetOptionFieldSelectEnhancementChoice]'
     label: 'Label'
-    value: 'DictKey'
+    value: 'Optional[DictKey]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -2305,7 +2305,7 @@ class AssetOptionFieldSelectEnhancement(AssetOptionField):
             "select_enhancement",
             _from_json_data(Dict[str, AssetOptionFieldSelectEnhancementChoice], data.get("choices")),
             _from_json_data(Label, data.get("label")),
-            _from_json_data(DictKey, data.get("value")),
+            _from_json_data(Optional[DictKey], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -2326,7 +2326,7 @@ class AssetOptionFieldSelectValue(AssetOptionField):
 
     choices: 'Dict[str, SelectValueFieldChoice]'
     label: 'Label'
-    value: 'DictKey'
+    value: 'Optional[DictKey]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -2339,7 +2339,7 @@ class AssetOptionFieldSelectValue(AssetOptionField):
             "select_value",
             _from_json_data(Dict[str, SelectValueFieldChoice], data.get("choices")),
             _from_json_data(Label, data.get("label")),
-            _from_json_data(DictKey, data.get("value")),
+            _from_json_data(Optional[DictKey], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -2359,7 +2359,7 @@ class AssetOptionFieldText(AssetOptionField):
     """
 
     label: 'Label'
-    value: 'str'
+    value: 'Optional[str]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -2371,7 +2371,7 @@ class AssetOptionFieldText(AssetOptionField):
         return cls(
             "text",
             _from_json_data(Label, data.get("label")),
-            _from_json_data(str, data.get("value")),
+            _from_json_data(Optional[str], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -2402,7 +2402,7 @@ class AssetOptionValueRef:
     A reference to the value of an asset option.
     """
 
-    assets: 'List[AssetIDWildcard]'
+    assets: 'Optional[List[AssetIDWildcard]]'
     option: 'DictKey'
     """
     The dictionary key of the asset option field.
@@ -2417,7 +2417,7 @@ class AssetOptionValueRef:
     @classmethod
     def from_json_data(cls, data: Any) -> 'AssetOptionValueRef':
         return cls(
-            _from_json_data(List[AssetIDWildcard], data.get("assets")),
+            _from_json_data(Optional[List[AssetIDWildcard]], data.get("assets")),
             _from_json_data(DictKey, data.get("option")),
             _from_json_data(AssetOptionValueRefUsing, data.get("using")),
         )
@@ -3215,7 +3215,7 @@ class CounterField:
 
     field_type: 'CounterFieldFieldType'
     label: 'Label'
-    max: 'int'
+    max: 'Optional[int]'
     min: 'int'
     """
     The (inclusive) minimum value.
@@ -3238,7 +3238,7 @@ class CounterField:
         return cls(
             _from_json_data(CounterFieldFieldType, data.get("field_type")),
             _from_json_data(Label, data.get("label")),
-            _from_json_data(int, data.get("max")),
+            _from_json_data(Optional[int], data.get("max")),
             _from_json_data(int, data.get("min")),
             _from_json_data(bool, data.get("rollable")),
             _from_json_data(int, data.get("value")),
@@ -3687,7 +3687,7 @@ class DelveSiteDomainDanger:
     """
 
     id: 'DelveSiteDomainDangerID'
-    roll: 'DiceRange'
+    roll: 'Optional[DiceRange]'
     text: 'MarkdownString'
     """
     The primary text content of this row.
@@ -3713,7 +3713,7 @@ class DelveSiteDomainDanger:
     def from_json_data(cls, data: Any) -> 'DelveSiteDomainDanger':
         return cls(
             _from_json_data(DelveSiteDomainDangerID, data.get("_id")),
-            _from_json_data(DiceRange, data.get("roll")),
+            _from_json_data(Optional[DiceRange], data.get("roll")),
             _from_json_data(MarkdownString, data.get("text")),
             _from_json_data(Optional[I18nHints], data.get("_i18n")),
             _from_json_data(Optional[OracleRollableID], data.get("embed_table")),
@@ -3783,7 +3783,7 @@ class DelveSiteDomainFeature:
     """
 
     id: 'DelveSiteDomainFeatureID'
-    roll: 'DiceRange'
+    roll: 'Optional[DiceRange]'
     text: 'MarkdownString'
     """
     The primary text content of this row.
@@ -3809,7 +3809,7 @@ class DelveSiteDomainFeature:
     def from_json_data(cls, data: Any) -> 'DelveSiteDomainFeature':
         return cls(
             _from_json_data(DelveSiteDomainFeatureID, data.get("_id")),
-            _from_json_data(DiceRange, data.get("roll")),
+            _from_json_data(Optional[DiceRange], data.get("roll")),
             _from_json_data(MarkdownString, data.get("text")),
             _from_json_data(Optional[I18nHints], data.get("_i18n")),
             _from_json_data(Optional[OracleRollableID], data.get("embed_table")),
@@ -4062,7 +4062,7 @@ class DelveSiteThemeDanger:
     """
 
     id: 'DelveSiteThemeDangerID'
-    roll: 'DiceRange'
+    roll: 'Optional[DiceRange]'
     text: 'MarkdownString'
     """
     The primary text content of this row.
@@ -4088,7 +4088,7 @@ class DelveSiteThemeDanger:
     def from_json_data(cls, data: Any) -> 'DelveSiteThemeDanger':
         return cls(
             _from_json_data(DelveSiteThemeDangerID, data.get("_id")),
-            _from_json_data(DiceRange, data.get("roll")),
+            _from_json_data(Optional[DiceRange], data.get("roll")),
             _from_json_data(MarkdownString, data.get("text")),
             _from_json_data(Optional[I18nHints], data.get("_i18n")),
             _from_json_data(Optional[OracleRollableID], data.get("embed_table")),
@@ -4158,7 +4158,7 @@ class DelveSiteThemeFeature:
     """
 
     id: 'DelveSiteThemeFeatureID'
-    roll: 'DiceRange'
+    roll: 'Optional[DiceRange]'
     text: 'MarkdownString'
     """
     The primary text content of this row.
@@ -4184,7 +4184,7 @@ class DelveSiteThemeFeature:
     def from_json_data(cls, data: Any) -> 'DelveSiteThemeFeature':
         return cls(
             _from_json_data(DelveSiteThemeFeatureID, data.get("_id")),
-            _from_json_data(DiceRange, data.get("roll")),
+            _from_json_data(Optional[DiceRange], data.get("roll")),
             _from_json_data(MarkdownString, data.get("text")),
             _from_json_data(Optional[I18nHints], data.get("_i18n")),
             _from_json_data(Optional[OracleRollableID], data.get("embed_table")),
@@ -7046,13 +7046,13 @@ class Expansion:
     The version of the Datasworn format used by this data.
     """
 
-    date: 'datetime'
+    date: 'str'
     """
     The date of the source documents's last update, formatted YYYY-MM-DD.
     Required because it's used to determine whether the data needs updating.
     """
 
-    license: 'WebURL'
+    license: 'Optional[WebURL]'
     moves: 'Dict[str, MoveCategory]'
     """
     A dictionary object containing move categories, which contain moves.
@@ -7124,8 +7124,8 @@ class Expansion:
             _from_json_data(Dict[str, AssetCollection], data.get("assets")),
             _from_json_data(List[AuthorInfo], data.get("authors")),
             _from_json_data(ExpansionDataswornVersion, data.get("datasworn_version")),
-            _from_json_data(datetime, data.get("date")),
-            _from_json_data(WebURL, data.get("license")),
+            _from_json_data(str, data.get("date")),
+            _from_json_data(Optional[WebURL], data.get("license")),
             _from_json_data(Dict[str, MoveCategory], data.get("moves")),
             _from_json_data(Dict[str, OracleTablesCollection], data.get("oracles")),
             _from_json_data(RulesetID, data.get("ruleset")),
@@ -8130,7 +8130,7 @@ class MoveActionRollEnhancement:
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     roll_type: 'MoveActionRollEnhancementRollType'
     """
     A move must have this `roll_type` to receive this enhancement. This is in
@@ -8142,7 +8142,7 @@ class MoveActionRollEnhancement:
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveActionRollEnhancement':
         return cls(
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(MoveActionRollEnhancementRollType, data.get("roll_type")),
             _from_json_data(Optional[TriggerActionRollEnhancement], data.get("trigger")),
         )
@@ -8342,14 +8342,14 @@ class MoveEnhancementActionRoll(MoveEnhancement):
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     trigger: 'Optional[TriggerActionRollEnhancement]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveEnhancementActionRoll':
         return cls(
             "action_roll",
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(Optional[TriggerActionRollEnhancement], data.get("trigger")),
         )
 
@@ -8368,14 +8368,14 @@ class MoveEnhancementNoRoll(MoveEnhancement):
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     trigger: 'Optional[TriggerNoRollEnhancement]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveEnhancementNoRoll':
         return cls(
             "no_roll",
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(Optional[TriggerNoRollEnhancement], data.get("trigger")),
         )
 
@@ -8394,14 +8394,14 @@ class MoveEnhancementProgressRoll(MoveEnhancement):
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     trigger: 'Optional[TriggerProgressRollEnhancement]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveEnhancementProgressRoll':
         return cls(
             "progress_roll",
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(Optional[TriggerProgressRollEnhancement], data.get("trigger")),
         )
 
@@ -8420,14 +8420,14 @@ class MoveEnhancementSpecialTrack(MoveEnhancement):
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     trigger: 'Optional[TriggerSpecialTrackEnhancement]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveEnhancementSpecialTrack':
         return cls(
             "special_track",
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(Optional[TriggerSpecialTrackEnhancement], data.get("trigger")),
         )
 
@@ -8627,7 +8627,7 @@ class MoveNoRollEnhancement:
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     roll_type: 'MoveNoRollEnhancementRollType'
     """
     A move must have this `roll_type` to receive this enhancement. This is in
@@ -8639,7 +8639,7 @@ class MoveNoRollEnhancement:
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveNoRollEnhancement':
         return cls(
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(MoveNoRollEnhancementRollType, data.get("roll_type")),
             _from_json_data(Optional[TriggerNoRollEnhancement], data.get("trigger")),
         )
@@ -8936,7 +8936,7 @@ class MoveProgressRollEnhancement:
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     roll_type: 'MoveProgressRollEnhancementRollType'
     """
     A move must have this `roll_type` to receive this enhancement. This is in
@@ -8948,7 +8948,7 @@ class MoveProgressRollEnhancement:
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveProgressRollEnhancement':
         return cls(
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(MoveProgressRollEnhancementRollType, data.get("roll_type")),
             _from_json_data(Optional[TriggerProgressRollEnhancement], data.get("trigger")),
         )
@@ -9155,7 +9155,7 @@ class MoveSpecialTrackEnhancement:
     be concatencated with the original array value.
     """
 
-    enhances: 'List[AnyMoveIDWildcard]'
+    enhances: 'Optional[List[AnyMoveIDWildcard]]'
     roll_type: 'MoveSpecialTrackEnhancementRollType'
     """
     A move must have this `roll_type` to receive this enhancement. This is in
@@ -9167,7 +9167,7 @@ class MoveSpecialTrackEnhancement:
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveSpecialTrackEnhancement':
         return cls(
-            _from_json_data(List[AnyMoveIDWildcard], data.get("enhances")),
+            _from_json_data(Optional[List[AnyMoveIDWildcard]], data.get("enhances")),
             _from_json_data(MoveSpecialTrackEnhancementRollType, data.get("roll_type")),
             _from_json_data(Optional[TriggerSpecialTrackEnhancement], data.get("trigger")),
         )
@@ -10915,7 +10915,7 @@ class OracleRoll:
     twice".
     """
 
-    dice: 'DiceExpression'
+    dice: 'Optional[DiceExpression]'
     duplicates: 'OracleDuplicateBehavior'
     """
     Special rules on how to handle duplicate results, when rolling multiple
@@ -10927,16 +10927,16 @@ class OracleRoll:
     The number of times to roll.
     """
 
-    oracle: 'OracleRollableID'
+    oracle: 'Optional[OracleRollableID]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'OracleRoll':
         return cls(
             _from_json_data(bool, data.get("auto")),
-            _from_json_data(DiceExpression, data.get("dice")),
+            _from_json_data(Optional[DiceExpression], data.get("dice")),
             _from_json_data(OracleDuplicateBehavior, data.get("duplicates")),
             _from_json_data(int, data.get("number_of_rolls")),
-            _from_json_data(OracleRollableID, data.get("oracle")),
+            _from_json_data(Optional[OracleRollableID], data.get("oracle")),
         )
 
     def to_json_data(self) -> Any:
@@ -12006,7 +12006,7 @@ class OracleRollableRowText:
     """
 
     id: 'AnyOracleRollableRowID'
-    roll: 'DiceRange'
+    roll: 'Optional[DiceRange]'
     text: 'MarkdownString'
     """
     The primary text content of this row.
@@ -12032,7 +12032,7 @@ class OracleRollableRowText:
     def from_json_data(cls, data: Any) -> 'OracleRollableRowText':
         return cls(
             _from_json_data(AnyOracleRollableRowID, data.get("_id")),
-            _from_json_data(DiceRange, data.get("roll")),
+            _from_json_data(Optional[DiceRange], data.get("roll")),
             _from_json_data(MarkdownString, data.get("text")),
             _from_json_data(Optional[I18nHints], data.get("_i18n")),
             _from_json_data(Optional[OracleRollableID], data.get("embed_table")),
@@ -12071,13 +12071,13 @@ class OracleRollableRowText2:
     """
 
     id: 'AnyOracleRollableRowID'
-    roll: 'DiceRange'
+    roll: 'Optional[DiceRange]'
     text: 'MarkdownString'
     """
     The primary text content of this row.
     """
 
-    text2: 'MarkdownString'
+    text2: 'Optional[MarkdownString]'
     i18n: 'Optional[I18nHints]'
     embed_table: 'Optional[OracleRollableID]'
     """
@@ -12098,9 +12098,9 @@ class OracleRollableRowText2:
     def from_json_data(cls, data: Any) -> 'OracleRollableRowText2':
         return cls(
             _from_json_data(AnyOracleRollableRowID, data.get("_id")),
-            _from_json_data(DiceRange, data.get("roll")),
+            _from_json_data(Optional[DiceRange], data.get("roll")),
             _from_json_data(MarkdownString, data.get("text")),
-            _from_json_data(MarkdownString, data.get("text2")),
+            _from_json_data(Optional[MarkdownString], data.get("text2")),
             _from_json_data(Optional[I18nHints], data.get("_i18n")),
             _from_json_data(Optional[OracleRollableID], data.get("embed_table")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
@@ -12139,14 +12139,14 @@ class OracleRollableRowText3:
     """
 
     id: 'AnyOracleRollableRowID'
-    roll: 'DiceRange'
+    roll: 'Optional[DiceRange]'
     text: 'MarkdownString'
     """
     The primary text content of this row.
     """
 
-    text2: 'MarkdownString'
-    text3: 'MarkdownString'
+    text2: 'Optional[MarkdownString]'
+    text3: 'Optional[MarkdownString]'
     i18n: 'Optional[I18nHints]'
     embed_table: 'Optional[OracleRollableID]'
     """
@@ -12167,10 +12167,10 @@ class OracleRollableRowText3:
     def from_json_data(cls, data: Any) -> 'OracleRollableRowText3':
         return cls(
             _from_json_data(AnyOracleRollableRowID, data.get("_id")),
-            _from_json_data(DiceRange, data.get("roll")),
+            _from_json_data(Optional[DiceRange], data.get("roll")),
             _from_json_data(MarkdownString, data.get("text")),
-            _from_json_data(MarkdownString, data.get("text2")),
-            _from_json_data(MarkdownString, data.get("text3")),
+            _from_json_data(Optional[MarkdownString], data.get("text2")),
+            _from_json_data(Optional[MarkdownString], data.get("text3")),
             _from_json_data(Optional[I18nHints], data.get("_i18n")),
             _from_json_data(Optional[OracleRollableID], data.get("embed_table")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
@@ -14428,7 +14428,7 @@ class RollableValueAssetControl(RollableValue):
     A reference to the value of an asset control.
     """
 
-    assets: 'List[AssetIDWildcard]'
+    assets: 'Optional[List[AssetIDWildcard]]'
     control: 'DictKey'
     """
     The dictionary key of the asset control field.
@@ -14439,7 +14439,7 @@ class RollableValueAssetControl(RollableValue):
     def from_json_data(cls, data: Any) -> 'RollableValueAssetControl':
         return cls(
             "asset_control",
-            _from_json_data(List[AssetIDWildcard], data.get("assets")),
+            _from_json_data(Optional[List[AssetIDWildcard]], data.get("assets")),
             _from_json_data(DictKey, data.get("control")),
         )
 
@@ -14455,7 +14455,7 @@ class RollableValueAssetOption(RollableValue):
     A reference to the value of an asset option.
     """
 
-    assets: 'List[AssetIDWildcard]'
+    assets: 'Optional[List[AssetIDWildcard]]'
     option: 'DictKey'
     """
     The dictionary key of the asset option field.
@@ -14466,7 +14466,7 @@ class RollableValueAssetOption(RollableValue):
     def from_json_data(cls, data: Any) -> 'RollableValueAssetOption':
         return cls(
             "asset_option",
-            _from_json_data(List[AssetIDWildcard], data.get("assets")),
+            _from_json_data(Optional[List[AssetIDWildcard]], data.get("assets")),
             _from_json_data(DictKey, data.get("option")),
         )
 
@@ -14763,13 +14763,13 @@ class Ruleset:
     The version of the Datasworn format used by this data.
     """
 
-    date: 'datetime'
+    date: 'str'
     """
     The date of the source documents's last update, formatted YYYY-MM-DD.
     Required because it's used to determine whether the data needs updating.
     """
 
-    license: 'WebURL'
+    license: 'Optional[WebURL]'
     moves: 'Dict[str, MoveCategory]'
     """
     A dictionary object containing move categories, which contain moves.
@@ -14840,8 +14840,8 @@ class Ruleset:
             _from_json_data(Dict[str, AssetCollection], data.get("assets")),
             _from_json_data(List[AuthorInfo], data.get("authors")),
             _from_json_data(RulesetDataswornVersion, data.get("datasworn_version")),
-            _from_json_data(datetime, data.get("date")),
-            _from_json_data(WebURL, data.get("license")),
+            _from_json_data(str, data.get("date")),
+            _from_json_data(Optional[WebURL], data.get("license")),
             _from_json_data(Dict[str, MoveCategory], data.get("moves")),
             _from_json_data(Dict[str, OracleTablesCollection], data.get("oracles")),
             _from_json_data(Rules, data.get("rules")),
@@ -14996,7 +14996,7 @@ class SelectEnhancementField:
     choices: 'Dict[str, SelectEnhancementFieldChoice0]'
     field_type: 'SelectEnhancementFieldFieldType'
     label: 'Label'
-    value: 'DictKey'
+    value: 'Optional[DictKey]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -15009,7 +15009,7 @@ class SelectEnhancementField:
             _from_json_data(Dict[str, SelectEnhancementFieldChoice0], data.get("choices")),
             _from_json_data(SelectEnhancementFieldFieldType, data.get("field_type")),
             _from_json_data(Label, data.get("label")),
-            _from_json_data(DictKey, data.get("value")),
+            _from_json_data(Optional[DictKey], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -15118,7 +15118,7 @@ class SelectValueField:
     choices: 'Dict[str, SelectValueFieldChoice]'
     field_type: 'SelectValueFieldFieldType'
     label: 'Label'
-    value: 'DictKey'
+    value: 'Optional[DictKey]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -15131,7 +15131,7 @@ class SelectValueField:
             _from_json_data(Dict[str, SelectValueFieldChoice], data.get("choices")),
             _from_json_data(SelectValueFieldFieldType, data.get("field_type")),
             _from_json_data(Label, data.get("label")),
-            _from_json_data(DictKey, data.get("value")),
+            _from_json_data(Optional[DictKey], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -15181,7 +15181,7 @@ class SelectValueFieldChoiceAssetControl(SelectValueFieldChoice):
     Represents an option in a list of choices.
     """
 
-    assets: 'List[AssetIDWildcard]'
+    assets: 'Optional[List[AssetIDWildcard]]'
     choice_type: 'SelectValueFieldChoiceAssetControlChoiceType'
     control: 'DictKey'
     """
@@ -15194,7 +15194,7 @@ class SelectValueFieldChoiceAssetControl(SelectValueFieldChoice):
     def from_json_data(cls, data: Any) -> 'SelectValueFieldChoiceAssetControl':
         return cls(
             "asset_control",
-            _from_json_data(List[AssetIDWildcard], data.get("assets")),
+            _from_json_data(Optional[List[AssetIDWildcard]], data.get("assets")),
             _from_json_data(SelectValueFieldChoiceAssetControlChoiceType, data.get("choice_type")),
             _from_json_data(DictKey, data.get("control")),
             _from_json_data(Label, data.get("label")),
@@ -15223,7 +15223,7 @@ class SelectValueFieldChoiceAssetOption(SelectValueFieldChoice):
     Represents an option in a list of choices.
     """
 
-    assets: 'List[AssetIDWildcard]'
+    assets: 'Optional[List[AssetIDWildcard]]'
     choice_type: 'SelectValueFieldChoiceAssetOptionChoiceType'
     label: 'Label'
     option: 'DictKey'
@@ -15236,7 +15236,7 @@ class SelectValueFieldChoiceAssetOption(SelectValueFieldChoice):
     def from_json_data(cls, data: Any) -> 'SelectValueFieldChoiceAssetOption':
         return cls(
             "asset_option",
-            _from_json_data(List[AssetIDWildcard], data.get("assets")),
+            _from_json_data(Optional[List[AssetIDWildcard]], data.get("assets")),
             _from_json_data(SelectValueFieldChoiceAssetOptionChoiceType, data.get("choice_type")),
             _from_json_data(Label, data.get("label")),
             _from_json_data(DictKey, data.get("option")),
@@ -15455,13 +15455,13 @@ class SourceInfo:
     Lists authors credited by the source material.
     """
 
-    date: 'datetime'
+    date: 'str'
     """
     The date of the source documents's last update, formatted YYYY-MM-DD.
     Required because it's used to determine whether the data needs updating.
     """
 
-    license: 'WebURL'
+    license: 'Optional[WebURL]'
     title: 'Label'
     """
     The title of the source document.
@@ -15482,8 +15482,8 @@ class SourceInfo:
     def from_json_data(cls, data: Any) -> 'SourceInfo':
         return cls(
             _from_json_data(List[AuthorInfo], data.get("authors")),
-            _from_json_data(datetime, data.get("date")),
-            _from_json_data(WebURL, data.get("license")),
+            _from_json_data(str, data.get("date")),
+            _from_json_data(Optional[WebURL], data.get("license")),
             _from_json_data(Label, data.get("title")),
             _from_json_data(WebURL, data.get("url")),
             _from_json_data(Optional[PageNumber], data.get("page")),
@@ -15747,13 +15747,13 @@ class TagRule:
     The JSON schema for this tag value.
     """
 
-    node_types: 'List[TaggableNodeType]'
+    node_types: 'Optional[List[TaggableNodeType]]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'TagRule':
         return cls(
             _from_json_data(TagSchema, data.get("$schema")),
-            _from_json_data(List[TaggableNodeType], data.get("node_types")),
+            _from_json_data(Optional[List[TaggableNodeType]], data.get("node_types")),
         )
 
     def to_json_data(self) -> Any:
@@ -15785,12 +15785,14 @@ class TaggableNodeType(Enum):
     ASSET_COLLECTION = "asset_collection"
     ATLAS_COLLECTION = "atlas_collection"
     ATLAS_ENTRY = "atlas_entry"
+    CONDITION_METER = "condition_meter"
     DANGER = "danger"
     DELVE_SITE = "delve_site"
     DELVE_SITE_DOMAIN = "delve_site_domain"
     DELVE_SITE_THEME = "delve_site_theme"
     DENIZEN = "denizen"
     FEATURE = "feature"
+    IMPACT = "impact"
     MOVE = "move"
     MOVE_CATEGORY = "move_category"
     NPC = "npc"
@@ -15800,6 +15802,8 @@ class TaggableNodeType(Enum):
     ORACLE_ROLLABLE = "oracle_rollable"
     RARITY = "rarity"
     ROW = "row"
+    SPECIAL_TRACK = "special_track"
+    STAT = "stat"
     TRUTH = "truth"
     VARIANT = "variant"
     @classmethod
@@ -15841,7 +15845,7 @@ class TextField:
 
     field_type: 'TextFieldFieldType'
     label: 'Label'
-    value: 'str'
+    value: 'Optional[str]'
     icon: 'Optional[SvgImageURL]'
     """
     An icon associated with this input.
@@ -15853,7 +15857,7 @@ class TextField:
         return cls(
             _from_json_data(TextFieldFieldType, data.get("field_type")),
             _from_json_data(Label, data.get("label")),
-            _from_json_data(str, data.get("value")),
+            _from_json_data(Optional[str], data.get("value")),
             _from_json_data(Optional[SvgImageURL], data.get("icon")),
         )
 
@@ -15935,8 +15939,8 @@ class TriggerActionRollCondition:
 
 @dataclass
 class TriggerActionRollConditionEnhancement:
-    method: 'ActionRollMethod'
-    roll_options: 'List[RollableValue]'
+    method: 'Optional[ActionRollMethod]'
+    roll_options: 'Optional[List[RollableValue]]'
     """
     The options available when rolling with this trigger condition.
     """
@@ -15951,8 +15955,8 @@ class TriggerActionRollConditionEnhancement:
     @classmethod
     def from_json_data(cls, data: Any) -> 'TriggerActionRollConditionEnhancement':
         return cls(
-            _from_json_data(ActionRollMethod, data.get("method")),
-            _from_json_data(List[RollableValue], data.get("roll_options")),
+            _from_json_data(Optional[ActionRollMethod], data.get("method")),
+            _from_json_data(Optional[List[RollableValue]], data.get("roll_options")),
             _from_json_data(Optional[TriggerBy], data.get("by")),
             _from_json_data(Optional[MarkdownString], data.get("text")),
         )
@@ -16166,8 +16170,8 @@ class TriggerProgressRollCondition:
 
 @dataclass
 class TriggerProgressRollConditionEnhancement:
-    method: 'ProgressRollMethod'
-    roll_options: 'List[ProgressRollOption]'
+    method: 'Optional[ProgressRollMethod]'
+    roll_options: 'Optional[List[ProgressRollOption]]'
     """
     The options available when rolling with this trigger condition.
     """
@@ -16182,8 +16186,8 @@ class TriggerProgressRollConditionEnhancement:
     @classmethod
     def from_json_data(cls, data: Any) -> 'TriggerProgressRollConditionEnhancement':
         return cls(
-            _from_json_data(ProgressRollMethod, data.get("method")),
-            _from_json_data(List[ProgressRollOption], data.get("roll_options")),
+            _from_json_data(Optional[ProgressRollMethod], data.get("method")),
+            _from_json_data(Optional[List[ProgressRollOption]], data.get("roll_options")),
             _from_json_data(Optional[TriggerBy], data.get("by")),
             _from_json_data(Optional[MarkdownString], data.get("text")),
         )
@@ -16291,8 +16295,8 @@ class TriggerSpecialTrackConditionEnhancement:
     (classic Ironsworn), Failure (Delve), or Legacy (Starforged).
     """
 
-    method: 'SpecialTrackRollMethod'
-    roll_options: 'List[TriggerSpecialTrackConditionOption]'
+    method: 'Optional[SpecialTrackRollMethod]'
+    roll_options: 'Optional[List[TriggerSpecialTrackConditionOption]]'
     """
     The options available when rolling with this trigger condition.
     """
@@ -16307,8 +16311,8 @@ class TriggerSpecialTrackConditionEnhancement:
     @classmethod
     def from_json_data(cls, data: Any) -> 'TriggerSpecialTrackConditionEnhancement':
         return cls(
-            _from_json_data(SpecialTrackRollMethod, data.get("method")),
-            _from_json_data(List[TriggerSpecialTrackConditionOption], data.get("roll_options")),
+            _from_json_data(Optional[SpecialTrackRollMethod], data.get("method")),
+            _from_json_data(Optional[List[TriggerSpecialTrackConditionOption]], data.get("roll_options")),
             _from_json_data(Optional[TriggerBy], data.get("by")),
             _from_json_data(Optional[MarkdownString], data.get("text")),
         )

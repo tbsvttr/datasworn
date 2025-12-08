@@ -8,7 +8,7 @@ namespace Datasworn
     public class TriggerActionRollConditionEnhancement
     {
         [JsonPropertyName("method")]
-        public ActionRollMethod Method { get; set; }
+        public ActionRollMethod? Method { get; set; }
 
         /// <summary>
         /// The options available when rolling with this trigger condition.

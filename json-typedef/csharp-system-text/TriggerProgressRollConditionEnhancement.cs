@@ -8,7 +8,7 @@ namespace Datasworn
     public class TriggerProgressRollConditionEnhancement
     {
         [JsonPropertyName("method")]
-        public ProgressRollMethod Method { get; set; }
+        public ProgressRollMethod? Method { get; set; }
 
         /// <summary>
         /// The options available when rolling with this trigger condition.

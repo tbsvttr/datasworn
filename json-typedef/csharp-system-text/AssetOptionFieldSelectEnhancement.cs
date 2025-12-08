@@ -22,7 +22,7 @@ namespace Datasworn
         public Label Label { get; set; }
 
         [JsonPropertyName("value")]
-        public DictKey Value { get; set; }
+        public DictKey? Value { get; set; }
 
         /// <summary>
         /// An icon associated with this input.

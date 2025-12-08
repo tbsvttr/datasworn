@@ -23,8 +23,8 @@ module Datasworn
     attr_accessor assets: Hash[String, AssetCollection]
     attr_accessor authors: Array[AuthorInfo]
     attr_accessor datasworn_version: RulesPackageExpansionDataswornVersion
-    attr_accessor date: DateTime
-    attr_accessor license: WebURL
+    attr_accessor date: String
+    attr_accessor license: WebURL?
     attr_accessor moves: Hash[String, MoveCategory]
     attr_accessor oracles: Hash[String, OracleTablesCollection]
     attr_accessor ruleset: RulesetID
@@ -58,8 +58,8 @@ module Datasworn
     attr_accessor assets: Hash[String, AssetCollection]
     attr_accessor authors: Array[AuthorInfo]
     attr_accessor datasworn_version: RulesPackageRulesetDataswornVersion
-    attr_accessor date: DateTime
-    attr_accessor license: WebURL
+    attr_accessor date: String
+    attr_accessor license: WebURL?
     attr_accessor moves: Hash[String, MoveCategory]
     attr_accessor oracles: Hash[String, OracleTablesCollection]
     attr_accessor rules: Rules
@@ -234,7 +234,7 @@ module Datasworn
 
   class AssetAbilityControlFieldCounter < AssetAbilityControlField
     attr_accessor label: Label
-    attr_accessor max: Integer
+    attr_accessor max: Integer?
     attr_accessor min: Integer
     attr_accessor rollable: bool
     attr_accessor value: Integer
@@ -246,7 +246,7 @@ module Datasworn
 
   class AssetAbilityControlFieldText < AssetAbilityControlField
     attr_accessor label: Label
-    attr_accessor value: String
+    attr_accessor value: String?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> AssetAbilityControlFieldText
@@ -290,7 +290,7 @@ module Datasworn
 
   class AssetAbilityOptionFieldText < AssetAbilityOptionField
     attr_accessor label: Label
-    attr_accessor value: String
+    attr_accessor value: String?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> AssetAbilityOptionFieldText
@@ -327,7 +327,7 @@ module Datasworn
 
   class AssetAttachment
     attr_accessor assets: Array[AssetIDWildcard]
-    attr_accessor max: Integer
+    attr_accessor max: Integer?
 
     def self.from_json_data: (untyped) -> AssetAttachment
     def to_json_data: () -> untyped
@@ -577,7 +577,7 @@ module Datasworn
   class AssetControlFieldSelectEnhancement < AssetControlField
     attr_accessor choices: Hash[String, AssetControlFieldSelectEnhancementChoice]
     attr_accessor label: Label
-    attr_accessor value: DictKey
+    attr_accessor value: DictKey?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> AssetControlFieldSelectEnhancement
@@ -608,7 +608,7 @@ module Datasworn
   end
 
   class AssetControlValueRef
-    attr_accessor assets: Array[AssetIDWildcard]
+    attr_accessor assets: Array[AssetIDWildcard]?
     attr_accessor control: DictKey
     attr_accessor using: AssetControlValueRefUsing
 
@@ -675,7 +675,7 @@ module Datasworn
   class AssetOptionFieldSelectEnhancement < AssetOptionField
     attr_accessor choices: Hash[String, AssetOptionFieldSelectEnhancementChoice]
     attr_accessor label: Label
-    attr_accessor value: DictKey
+    attr_accessor value: DictKey?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> AssetOptionFieldSelectEnhancement
@@ -685,7 +685,7 @@ module Datasworn
   class AssetOptionFieldSelectValue < AssetOptionField
     attr_accessor choices: Hash[String, SelectValueFieldChoice]
     attr_accessor label: Label
-    attr_accessor value: DictKey
+    attr_accessor value: DictKey?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> AssetOptionFieldSelectValue
@@ -694,7 +694,7 @@ module Datasworn
 
   class AssetOptionFieldText < AssetOptionField
     attr_accessor label: Label
-    attr_accessor value: String
+    attr_accessor value: String?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> AssetOptionFieldText
@@ -711,7 +711,7 @@ module Datasworn
   end
 
   class AssetOptionValueRef
-    attr_accessor assets: Array[AssetIDWildcard]
+    attr_accessor assets: Array[AssetIDWildcard]?
     attr_accessor option: DictKey
     attr_accessor using: AssetOptionValueRefUsing
 
@@ -990,7 +990,7 @@ module Datasworn
   class CounterField
     attr_accessor field_type: CounterFieldFieldType
     attr_accessor label: Label
-    attr_accessor max: Integer
+    attr_accessor max: Integer?
     attr_accessor min: Integer
     attr_accessor rollable: bool
     attr_accessor value: Integer
@@ -1131,7 +1131,7 @@ module Datasworn
 
   class DelveSiteDomainDanger
     attr_accessor id: DelveSiteDomainDangerID
-    attr_accessor roll: DiceRange
+    attr_accessor roll: DiceRange?
     attr_accessor text: MarkdownString
     attr_accessor i18n: I18nHints?
     attr_accessor embed_table: OracleRollableID?
@@ -1161,7 +1161,7 @@ module Datasworn
 
   class DelveSiteDomainFeature
     attr_accessor id: DelveSiteDomainFeatureID
-    attr_accessor roll: DiceRange
+    attr_accessor roll: DiceRange?
     attr_accessor text: MarkdownString
     attr_accessor i18n: I18nHints?
     attr_accessor embed_table: OracleRollableID?
@@ -1250,7 +1250,7 @@ module Datasworn
 
   class DelveSiteThemeDanger
     attr_accessor id: DelveSiteThemeDangerID
-    attr_accessor roll: DiceRange
+    attr_accessor roll: DiceRange?
     attr_accessor text: MarkdownString
     attr_accessor i18n: I18nHints?
     attr_accessor embed_table: OracleRollableID?
@@ -1280,7 +1280,7 @@ module Datasworn
 
   class DelveSiteThemeFeature
     attr_accessor id: DelveSiteThemeFeatureID
-    attr_accessor roll: DiceRange
+    attr_accessor roll: DiceRange?
     attr_accessor text: MarkdownString
     attr_accessor i18n: I18nHints?
     attr_accessor embed_table: OracleRollableID?
@@ -2281,8 +2281,8 @@ module Datasworn
     attr_accessor assets: Hash[String, AssetCollection]
     attr_accessor authors: Array[AuthorInfo]
     attr_accessor datasworn_version: ExpansionDataswornVersion
-    attr_accessor date: DateTime
-    attr_accessor license: WebURL
+    attr_accessor date: String
+    attr_accessor license: WebURL?
     attr_accessor moves: Hash[String, MoveCategory]
     attr_accessor oracles: Hash[String, OracleTablesCollection]
     attr_accessor ruleset: RulesetID
@@ -2565,7 +2565,7 @@ module Datasworn
   end
 
   class MoveActionRollEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor roll_type: MoveActionRollEnhancementRollType
     attr_accessor trigger: TriggerActionRollEnhancement?
 
@@ -2627,7 +2627,7 @@ module Datasworn
   end
 
   class MoveEnhancementActionRoll < MoveEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor trigger: TriggerActionRollEnhancement?
 
     def self.from_json_data: (untyped) -> MoveEnhancementActionRoll
@@ -2635,7 +2635,7 @@ module Datasworn
   end
 
   class MoveEnhancementNoRoll < MoveEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor trigger: TriggerNoRollEnhancement?
 
     def self.from_json_data: (untyped) -> MoveEnhancementNoRoll
@@ -2643,7 +2643,7 @@ module Datasworn
   end
 
   class MoveEnhancementProgressRoll < MoveEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor trigger: TriggerProgressRollEnhancement?
 
     def self.from_json_data: (untyped) -> MoveEnhancementProgressRoll
@@ -2651,7 +2651,7 @@ module Datasworn
   end
 
   class MoveEnhancementSpecialTrack < MoveEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor trigger: TriggerSpecialTrackEnhancement?
 
     def self.from_json_data: (untyped) -> MoveEnhancementSpecialTrack
@@ -2723,7 +2723,7 @@ module Datasworn
   end
 
   class MoveNoRollEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor roll_type: MoveNoRollEnhancementRollType
     attr_accessor trigger: TriggerNoRollEnhancement?
 
@@ -2829,7 +2829,7 @@ module Datasworn
   end
 
   class MoveProgressRollEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor roll_type: MoveProgressRollEnhancementRollType
     attr_accessor trigger: TriggerProgressRollEnhancement?
 
@@ -2901,7 +2901,7 @@ module Datasworn
   end
 
   class MoveSpecialTrackEnhancement
-    attr_accessor enhances: Array[AnyMoveIDWildcard]
+    attr_accessor enhances: Array[AnyMoveIDWildcard]?
     attr_accessor roll_type: MoveSpecialTrackEnhancementRollType
     attr_accessor trigger: TriggerSpecialTrackEnhancement?
 
@@ -3429,10 +3429,10 @@ module Datasworn
 
   class OracleRoll
     attr_accessor auto: bool
-    attr_accessor dice: DiceExpression
+    attr_accessor dice: DiceExpression?
     attr_accessor duplicates: OracleDuplicateBehavior
     attr_accessor number_of_rolls: Integer
-    attr_accessor oracle: OracleRollableID
+    attr_accessor oracle: OracleRollableID?
 
     def self.from_json_data: (untyped) -> OracleRoll
     def to_json_data: () -> untyped
@@ -3745,7 +3745,7 @@ module Datasworn
 
   class OracleRollableRowText
     attr_accessor id: AnyOracleRollableRowID
-    attr_accessor roll: DiceRange
+    attr_accessor roll: DiceRange?
     attr_accessor text: MarkdownString
     attr_accessor i18n: I18nHints?
     attr_accessor embed_table: OracleRollableID?
@@ -3761,9 +3761,9 @@ module Datasworn
 
   class OracleRollableRowText2
     attr_accessor id: AnyOracleRollableRowID
-    attr_accessor roll: DiceRange
+    attr_accessor roll: DiceRange?
     attr_accessor text: MarkdownString
-    attr_accessor text2: MarkdownString
+    attr_accessor text2: MarkdownString?
     attr_accessor i18n: I18nHints?
     attr_accessor embed_table: OracleRollableID?
     attr_accessor icon: SvgImageURL?
@@ -3778,10 +3778,10 @@ module Datasworn
 
   class OracleRollableRowText3
     attr_accessor id: AnyOracleRollableRowID
-    attr_accessor roll: DiceRange
+    attr_accessor roll: DiceRange?
     attr_accessor text: MarkdownString
-    attr_accessor text2: MarkdownString
-    attr_accessor text3: MarkdownString
+    attr_accessor text2: MarkdownString?
+    attr_accessor text3: MarkdownString?
     attr_accessor i18n: I18nHints?
     attr_accessor embed_table: OracleRollableID?
     attr_accessor icon: SvgImageURL?
@@ -4478,7 +4478,7 @@ module Datasworn
   end
 
   class RollableValueAssetControl < RollableValue
-    attr_accessor assets: Array[AssetIDWildcard]
+    attr_accessor assets: Array[AssetIDWildcard]?
     attr_accessor control: DictKey
 
     def self.from_json_data: (untyped) -> RollableValueAssetControl
@@ -4486,7 +4486,7 @@ module Datasworn
   end
 
   class RollableValueAssetOption < RollableValue
-    attr_accessor assets: Array[AssetIDWildcard]
+    attr_accessor assets: Array[AssetIDWildcard]?
     attr_accessor option: DictKey
 
     def self.from_json_data: (untyped) -> RollableValueAssetOption
@@ -4593,8 +4593,8 @@ module Datasworn
     attr_accessor assets: Hash[String, AssetCollection]
     attr_accessor authors: Array[AuthorInfo]
     attr_accessor datasworn_version: RulesetDataswornVersion
-    attr_accessor date: DateTime
-    attr_accessor license: WebURL
+    attr_accessor date: String
+    attr_accessor license: WebURL?
     attr_accessor moves: Hash[String, MoveCategory]
     attr_accessor oracles: Hash[String, OracleTablesCollection]
     attr_accessor rules: Rules
@@ -4658,7 +4658,7 @@ module Datasworn
     attr_accessor choices: Hash[String, SelectEnhancementFieldChoice0]
     attr_accessor field_type: SelectEnhancementFieldFieldType
     attr_accessor label: Label
-    attr_accessor value: DictKey
+    attr_accessor value: DictKey?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> SelectEnhancementField
@@ -4715,7 +4715,7 @@ module Datasworn
     attr_accessor choices: Hash[String, SelectValueFieldChoice]
     attr_accessor field_type: SelectValueFieldFieldType
     attr_accessor label: Label
-    attr_accessor value: DictKey
+    attr_accessor value: DictKey?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> SelectValueField
@@ -4739,7 +4739,7 @@ module Datasworn
   end
 
   class SelectValueFieldChoiceAssetControl < SelectValueFieldChoice
-    attr_accessor assets: Array[AssetIDWildcard]
+    attr_accessor assets: Array[AssetIDWildcard]?
     attr_accessor choice_type: SelectValueFieldChoiceAssetControlChoiceType
     attr_accessor control: DictKey
     attr_accessor label: Label
@@ -4758,7 +4758,7 @@ module Datasworn
   end
 
   class SelectValueFieldChoiceAssetOption < SelectValueFieldChoice
-    attr_accessor assets: Array[AssetIDWildcard]
+    attr_accessor assets: Array[AssetIDWildcard]?
     attr_accessor choice_type: SelectValueFieldChoiceAssetOptionChoiceType
     attr_accessor label: Label
     attr_accessor option: DictKey
@@ -4866,8 +4866,8 @@ module Datasworn
 
   class SourceInfo
     attr_accessor authors: Array[AuthorInfo]
-    attr_accessor date: DateTime
-    attr_accessor license: WebURL
+    attr_accessor date: String
+    attr_accessor license: WebURL?
     attr_accessor title: Label
     attr_accessor url: WebURL
     attr_accessor page: PageNumber?
@@ -4965,7 +4965,7 @@ module Datasworn
 
   class TagRule
     attr_accessor schema: TagSchema
-    attr_accessor node_types: Array[TaggableNodeType]
+    attr_accessor node_types: Array[TaggableNodeType]?
 
     def self.from_json_data: (untyped) -> TagRule
     def to_json_data: () -> untyped
@@ -4986,12 +4986,14 @@ module Datasworn
     ASSET_COLLECTION: TaggableNodeType
     ATLAS_COLLECTION: TaggableNodeType
     ATLAS_ENTRY: TaggableNodeType
+    CONDITION_METER: TaggableNodeType
     DANGER: TaggableNodeType
     DELVE_SITE: TaggableNodeType
     DELVE_SITE_DOMAIN: TaggableNodeType
     DELVE_SITE_THEME: TaggableNodeType
     DENIZEN: TaggableNodeType
     FEATURE: TaggableNodeType
+    IMPACT: TaggableNodeType
     MOVE: TaggableNodeType
     MOVE_CATEGORY: TaggableNodeType
     NPC: TaggableNodeType
@@ -5001,6 +5003,8 @@ module Datasworn
     ORACLE_ROLLABLE: TaggableNodeType
     RARITY: TaggableNodeType
     ROW: TaggableNodeType
+    SPECIAL_TRACK: TaggableNodeType
+    STAT: TaggableNodeType
     TRUTH: TaggableNodeType
     VARIANT: TaggableNodeType
 
@@ -5027,7 +5031,7 @@ module Datasworn
   class TextField
     attr_accessor field_type: TextFieldFieldType
     attr_accessor label: Label
-    attr_accessor value: String
+    attr_accessor value: String?
     attr_accessor icon: SvgImageURL?
 
     def self.from_json_data: (untyped) -> TextField
@@ -5053,8 +5057,8 @@ module Datasworn
   end
 
   class TriggerActionRollConditionEnhancement
-    attr_accessor method: ActionRollMethod
-    attr_accessor roll_options: Array[RollableValue]
+    attr_accessor method: ActionRollMethod?
+    attr_accessor roll_options: Array[RollableValue]?
     attr_accessor by: TriggerBy?
     attr_accessor text: MarkdownString?
 
@@ -5119,8 +5123,8 @@ module Datasworn
   end
 
   class TriggerProgressRollConditionEnhancement
-    attr_accessor method: ProgressRollMethod
-    attr_accessor roll_options: Array[ProgressRollOption]
+    attr_accessor method: ProgressRollMethod?
+    attr_accessor roll_options: Array[ProgressRollOption]?
     attr_accessor by: TriggerBy?
     attr_accessor text: MarkdownString?
 
@@ -5154,8 +5158,8 @@ module Datasworn
   end
 
   class TriggerSpecialTrackConditionEnhancement
-    attr_accessor method: SpecialTrackRollMethod
-    attr_accessor roll_options: Array[TriggerSpecialTrackConditionOption]
+    attr_accessor method: SpecialTrackRollMethod?
+    attr_accessor roll_options: Array[TriggerSpecialTrackConditionOption]?
     attr_accessor by: TriggerBy?
     attr_accessor text: MarkdownString?
 

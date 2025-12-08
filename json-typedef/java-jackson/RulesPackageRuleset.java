@@ -5,7 +5,6 @@ package Datasworn;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.Map;
 
@@ -27,7 +26,7 @@ public class RulesPackageRuleset extends RulesPackage {
     private RulesPackageRulesetDataswornVersion dataswornVersion;
 
     @JsonProperty("date")
-    private OffsetDateTime date;
+    private String date;
 
     @JsonProperty("license")
     private WebUrl license;
@@ -149,7 +148,7 @@ public class RulesPackageRuleset extends RulesPackage {
      * The date of the source documents's last update, formatted YYYY-MM-DD.
      * Required because it's used to determine whether the data needs updating.
      */
-    public OffsetDateTime getDate() {
+    public String getDate() {
         return date;
     }
 
@@ -158,7 +157,7 @@ public class RulesPackageRuleset extends RulesPackage {
      * The date of the source documents's last update, formatted YYYY-MM-DD.
      * Required because it's used to determine whether the data needs updating.
      */
-    public void setDate(OffsetDateTime date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

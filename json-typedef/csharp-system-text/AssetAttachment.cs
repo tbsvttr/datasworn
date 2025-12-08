@@ -20,6 +20,6 @@ namespace Datasworn
         public IList<AssetIdWildcard> Assets { get; set; }
 
         [JsonPropertyName("max")]
-        public short Max { get; set; }
+        public short? Max { get; set; }
     }
 }

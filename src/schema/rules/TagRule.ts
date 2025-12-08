@@ -77,7 +77,7 @@ export const TaggableNodeType = Type.Union(
 	],
 	{
 		[JsonTypeDef]: {
-			schema: JtdType.Enum([...TypeId.Primary, ...TypeId.EmbedOnly])
+			schema: JtdType.Enum([...TypeId.Primary, ...TypeId.EmbedOnly, 'impact', 'condition_meter', 'special_track', 'stat'])
 		},
 		$id: 'TaggableNodeType'
 	}

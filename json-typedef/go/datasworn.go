@@ -5,7 +5,6 @@ package Datasworn
 import (
 	"encoding/json"
 	"fmt"
-	"time"
 )
 
 // Describes game rules compatible with the Ironsworn tabletop role-playing game
@@ -76,9 +75,9 @@ type RulesPackageExpansion struct {
 
 	// The date of the source documents's last update, formatted YYYY-MM-DD.
 	// Required because it's used to determine whether the data needs updating.
-	Date time.Time `json:"date"`
+	Date string `json:"date"`
 
-	License WebURL `json:"license"`
+	License *WebURL `json:"license"`
 
 	// A dictionary object containing move categories, which contain moves.
 	Moves map[string]MoveCategory `json:"moves"`
@@ -146,9 +145,9 @@ type RulesPackageRuleset struct {
 
 	// The date of the source documents's last update, formatted YYYY-MM-DD.
 	// Required because it's used to determine whether the data needs updating.
-	Date time.Time `json:"date"`
+	Date string `json:"date"`
 
-	License WebURL `json:"license"`
+	License *WebURL `json:"license"`
 
 	// A dictionary object containing move categories, which contain moves.
 	Moves map[string]MoveCategory `json:"moves"`
@@ -443,7 +442,7 @@ type AssetAbilityControlFieldClock struct {
 type AssetAbilityControlFieldCounter struct {
 	Label Label `json:"label"`
 
-	Max int16 `json:"max"`
+	Max *int16 `json:"max"`
 
 	// The (inclusive) minimum value.
 	Min int8 `json:"min"`
@@ -461,7 +460,7 @@ type AssetAbilityControlFieldCounter struct {
 type AssetAbilityControlFieldText struct {
 	Label Label `json:"label"`
 
-	Value string `json:"value"`
+	Value *string `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -522,7 +521,7 @@ func (v *AssetAbilityOptionField) UnmarshalJSON(b []byte) error {
 type AssetAbilityOptionFieldText struct {
 	Label Label `json:"label"`
 
-	Value string `json:"value"`
+	Value *string `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -549,7 +548,7 @@ type AssetAttachment struct {
 	// Asset IDs (which may be wildcards) that may be attached to this asset
 	Assets []AssetIDWildcard `json:"assets"`
 
-	Max int16 `json:"max"`
+	Max *int16 `json:"max"`
 }
 
 type AssetCardFlipFieldFieldType string
@@ -1012,7 +1011,7 @@ type AssetControlFieldSelectEnhancement struct {
 
 	Label Label `json:"label"`
 
-	Value DictKey `json:"value"`
+	Value *DictKey `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -1231,7 +1230,7 @@ type AssetOptionFieldSelectEnhancement struct {
 
 	Label Label `json:"label"`
 
-	Value DictKey `json:"value"`
+	Value *DictKey `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -1243,7 +1242,7 @@ type AssetOptionFieldSelectValue struct {
 
 	Label Label `json:"label"`
 
-	Value DictKey `json:"value"`
+	Value *DictKey `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -1253,7 +1252,7 @@ type AssetOptionFieldSelectValue struct {
 type AssetOptionFieldText struct {
 	Label Label `json:"label"`
 
-	Value string `json:"value"`
+	Value *string `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -1609,7 +1608,7 @@ type CounterField struct {
 
 	Label Label `json:"label"`
 
-	Max int16 `json:"max"`
+	Max *int16 `json:"max"`
 
 	// The (inclusive) minimum value.
 	Min int8 `json:"min"`
@@ -1810,7 +1809,7 @@ type DelveSiteDomain struct {
 type DelveSiteDomainDanger struct {
 	ID DelveSiteDomainDangerID `json:"_id"`
 
-	Roll DiceRange `json:"roll"`
+	Roll *DiceRange `json:"roll"`
 
 	// The primary text content of this row.
 	Text MarkdownString `json:"text"`
@@ -1843,7 +1842,7 @@ type DelveSiteDomainDangerIDWildcard = string
 type DelveSiteDomainFeature struct {
 	ID DelveSiteDomainFeatureID `json:"_id"`
 
-	Roll DiceRange `json:"roll"`
+	Roll *DiceRange `json:"roll"`
 
 	// The primary text content of this row.
 	Text MarkdownString `json:"text"`
@@ -1943,7 +1942,7 @@ type DelveSiteTheme struct {
 type DelveSiteThemeDanger struct {
 	ID DelveSiteThemeDangerID `json:"_id"`
 
-	Roll DiceRange `json:"roll"`
+	Roll *DiceRange `json:"roll"`
 
 	// The primary text content of this row.
 	Text MarkdownString `json:"text"`
@@ -1976,7 +1975,7 @@ type DelveSiteThemeDangerIDWildcard = string
 type DelveSiteThemeFeature struct {
 	ID DelveSiteThemeFeatureID `json:"_id"`
 
-	Roll DiceRange `json:"roll"`
+	Roll *DiceRange `json:"roll"`
 
 	// The primary text content of this row.
 	Text MarkdownString `json:"text"`
@@ -3324,9 +3323,9 @@ type Expansion struct {
 
 	// The date of the source documents's last update, formatted YYYY-MM-DD.
 	// Required because it's used to determine whether the data needs updating.
-	Date time.Time `json:"date"`
+	Date string `json:"date"`
 
-	License WebURL `json:"license"`
+	License *WebURL `json:"license"`
 
 	// A dictionary object containing move categories, which contain moves.
 	Moves map[string]MoveCategory `json:"moves"`
@@ -5111,7 +5110,7 @@ type OracleRoll struct {
 	// twice".
 	Auto bool `json:"auto"`
 
-	Dice DiceExpression `json:"dice"`
+	Dice *DiceExpression `json:"dice"`
 
 	// Special rules on how to handle duplicate results, when rolling multiple
 	// times.
@@ -5120,7 +5119,7 @@ type OracleRoll struct {
 	// The number of times to roll.
 	NumberOfRolls int16 `json:"number_of_rolls"`
 
-	Oracle OracleRollableID `json:"oracle"`
+	Oracle *OracleRollableID `json:"oracle"`
 }
 
 // Provides string templates that may be used in place of the static row
@@ -5612,7 +5611,7 @@ type OracleRollableRowIDWildcard = string
 type OracleRollableRowText struct {
 	ID AnyOracleRollableRowID `json:"_id"`
 
-	Roll DiceRange `json:"roll"`
+	Roll *DiceRange `json:"roll"`
 
 	// The primary text content of this row.
 	Text MarkdownString `json:"text"`
@@ -5638,12 +5637,12 @@ type OracleRollableRowText struct {
 type OracleRollableRowText2 struct {
 	ID AnyOracleRollableRowID `json:"_id"`
 
-	Roll DiceRange `json:"roll"`
+	Roll *DiceRange `json:"roll"`
 
 	// The primary text content of this row.
 	Text MarkdownString `json:"text"`
 
-	Text2 MarkdownString `json:"text2"`
+	Text2 *MarkdownString `json:"text2"`
 
 	I18n *I18nHints `json:"_i18n,omitempty"`
 
@@ -5666,14 +5665,14 @@ type OracleRollableRowText2 struct {
 type OracleRollableRowText3 struct {
 	ID AnyOracleRollableRowID `json:"_id"`
 
-	Roll DiceRange `json:"roll"`
+	Roll *DiceRange `json:"roll"`
 
 	// The primary text content of this row.
 	Text MarkdownString `json:"text"`
 
-	Text2 MarkdownString `json:"text2"`
+	Text2 *MarkdownString `json:"text2"`
 
-	Text3 MarkdownString `json:"text3"`
+	Text3 *MarkdownString `json:"text3"`
 
 	I18n *I18nHints `json:"_i18n,omitempty"`
 
@@ -6907,9 +6906,9 @@ type Ruleset struct {
 
 	// The date of the source documents's last update, formatted YYYY-MM-DD.
 	// Required because it's used to determine whether the data needs updating.
-	Date time.Time `json:"date"`
+	Date string `json:"date"`
 
-	License WebURL `json:"license"`
+	License *WebURL `json:"license"`
 
 	// A dictionary object containing move categories, which contain moves.
 	Moves map[string]MoveCategory `json:"moves"`
@@ -7034,7 +7033,7 @@ type SelectEnhancementField struct {
 
 	Label Label `json:"label"`
 
-	Value DictKey `json:"value"`
+	Value *DictKey `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -7087,7 +7086,7 @@ type SelectValueField struct {
 
 	Label Label `json:"label"`
 
-	Value DictKey `json:"value"`
+	Value *DictKey `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -7288,9 +7287,9 @@ type SourceInfo struct {
 
 	// The date of the source documents's last update, formatted YYYY-MM-DD.
 	// Required because it's used to determine whether the data needs updating.
-	Date time.Time `json:"date"`
+	Date string `json:"date"`
 
-	License WebURL `json:"license"`
+	License *WebURL `json:"license"`
 
 	// The title of the source document.
 	Title Label `json:"title"`
@@ -7417,6 +7416,8 @@ const (
 
 	TaggableNodeTypeAtlasEntry TaggableNodeType = "atlas_entry"
 
+	TaggableNodeTypeConditionMeter TaggableNodeType = "condition_meter"
+
 	TaggableNodeTypeDanger TaggableNodeType = "danger"
 
 	TaggableNodeTypeDelveSite TaggableNodeType = "delve_site"
@@ -7428,6 +7429,8 @@ const (
 	TaggableNodeTypeDenizen TaggableNodeType = "denizen"
 
 	TaggableNodeTypeFeature TaggableNodeType = "feature"
+
+	TaggableNodeTypeImpact TaggableNodeType = "impact"
 
 	TaggableNodeTypeMove TaggableNodeType = "move"
 
@@ -7446,6 +7449,10 @@ const (
 	TaggableNodeTypeRarity TaggableNodeType = "rarity"
 
 	TaggableNodeTypeRow TaggableNodeType = "row"
+
+	TaggableNodeTypeSpecialTrack TaggableNodeType = "special_track"
+
+	TaggableNodeTypeStat TaggableNodeType = "stat"
 
 	TaggableNodeTypeTruth TaggableNodeType = "truth"
 
@@ -7467,7 +7474,7 @@ type TextField struct {
 
 	Label Label `json:"label"`
 
-	Value string `json:"value"`
+	Value *string `json:"value"`
 
 	// An icon associated with this input.
 	Icon *SvgImageURL `json:"icon,omitempty"`
@@ -7498,7 +7505,7 @@ type TriggerActionRollCondition struct {
 }
 
 type TriggerActionRollConditionEnhancement struct {
-	Method ActionRollMethod `json:"method"`
+	Method *ActionRollMethod `json:"method"`
 
 	// The options available when rolling with this trigger condition.
 	RollOptions []RollableValue `json:"roll_options"`
@@ -7574,7 +7581,7 @@ type TriggerProgressRollCondition struct {
 }
 
 type TriggerProgressRollConditionEnhancement struct {
-	Method ProgressRollMethod `json:"method"`
+	Method *ProgressRollMethod `json:"method"`
 
 	// The options available when rolling with this trigger condition.
 	RollOptions []ProgressRollOption `json:"roll_options"`
@@ -7617,7 +7624,7 @@ type TriggerSpecialTrackCondition struct {
 // A progress move that rolls on one or more special tracks, like Bonds (classic
 // Ironsworn), Failure (Delve), or Legacy (Starforged).
 type TriggerSpecialTrackConditionEnhancement struct {
-	Method SpecialTrackRollMethod `json:"method"`
+	Method *SpecialTrackRollMethod `json:"method"`
 
 	// The options available when rolling with this trigger condition.
 	RollOptions []TriggerSpecialTrackConditionOption `json:"roll_options"`

@@ -20,6 +20,9 @@ public enum TaggableNodeType {
     @JsonProperty("atlas_entry")
     ATLAS_ENTRY,
 
+    @JsonProperty("condition_meter")
+    CONDITION_METER,
+
     @JsonProperty("danger")
     DANGER,
 
@@ -37,6 +40,9 @@ public enum TaggableNodeType {
 
     @JsonProperty("feature")
     FEATURE,
+
+    @JsonProperty("impact")
+    IMPACT,
 
     @JsonProperty("move")
     MOVE,
@@ -64,6 +70,12 @@ public enum TaggableNodeType {
 
     @JsonProperty("row")
     ROW,
+
+    @JsonProperty("special_track")
+    SPECIAL_TRACK,
+
+    @JsonProperty("stat")
+    STAT,
 
     @JsonProperty("truth")
     TRUTH,

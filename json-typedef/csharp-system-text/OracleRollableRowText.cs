@@ -14,7 +14,7 @@ namespace Datasworn
         public AnyOracleRollableRowId Id { get; set; }
 
         [JsonPropertyName("roll")]
-        public DiceRange Roll { get; set; }
+        public DiceRange? Roll { get; set; }
 
         /// <summary>
         /// The primary text content of this row.

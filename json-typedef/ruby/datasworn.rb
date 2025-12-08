@@ -72,7 +72,7 @@ module Datasworn
       out.assets = Datasworn::from_json_data(Hash[String, AssetCollection], data["assets"])
       out.authors = Datasworn::from_json_data(Array[AuthorInfo], data["authors"])
       out.datasworn_version = Datasworn::from_json_data(RulesPackageExpansionDataswornVersion, data["datasworn_version"])
-      out.date = Datasworn::from_json_data(DateTime, data["date"])
+      out.date = Datasworn::from_json_data(String, data["date"])
       out.license = Datasworn::from_json_data(WebURL, data["license"])
       out.moves = Datasworn::from_json_data(Hash[String, MoveCategory], data["moves"])
       out.oracles = Datasworn::from_json_data(Hash[String, OracleTablesCollection], data["oracles"])
@@ -169,7 +169,7 @@ module Datasworn
       out.assets = Datasworn::from_json_data(Hash[String, AssetCollection], data["assets"])
       out.authors = Datasworn::from_json_data(Array[AuthorInfo], data["authors"])
       out.datasworn_version = Datasworn::from_json_data(RulesPackageRulesetDataswornVersion, data["datasworn_version"])
-      out.date = Datasworn::from_json_data(DateTime, data["date"])
+      out.date = Datasworn::from_json_data(String, data["date"])
       out.license = Datasworn::from_json_data(WebURL, data["license"])
       out.moves = Datasworn::from_json_data(Hash[String, MoveCategory], data["moves"])
       out.oracles = Datasworn::from_json_data(Hash[String, OracleTablesCollection], data["oracles"])
@@ -6355,7 +6355,7 @@ module Datasworn
       out.assets = Datasworn::from_json_data(Hash[String, AssetCollection], data["assets"])
       out.authors = Datasworn::from_json_data(Array[AuthorInfo], data["authors"])
       out.datasworn_version = Datasworn::from_json_data(ExpansionDataswornVersion, data["datasworn_version"])
-      out.date = Datasworn::from_json_data(DateTime, data["date"])
+      out.date = Datasworn::from_json_data(String, data["date"])
       out.license = Datasworn::from_json_data(WebURL, data["license"])
       out.moves = Datasworn::from_json_data(Hash[String, MoveCategory], data["moves"])
       out.oracles = Datasworn::from_json_data(Hash[String, OracleTablesCollection], data["oracles"])
@@ -13023,7 +13023,7 @@ module Datasworn
       out.assets = Datasworn::from_json_data(Hash[String, AssetCollection], data["assets"])
       out.authors = Datasworn::from_json_data(Array[AuthorInfo], data["authors"])
       out.datasworn_version = Datasworn::from_json_data(RulesetDataswornVersion, data["datasworn_version"])
-      out.date = Datasworn::from_json_data(DateTime, data["date"])
+      out.date = Datasworn::from_json_data(String, data["date"])
       out.license = Datasworn::from_json_data(WebURL, data["license"])
       out.moves = Datasworn::from_json_data(Hash[String, MoveCategory], data["moves"])
       out.oracles = Datasworn::from_json_data(Hash[String, OracleTablesCollection], data["oracles"])
@@ -13722,7 +13722,7 @@ module Datasworn
     def self.from_json_data(data)
       out = SourceInfo.new
       out.authors = Datasworn::from_json_data(Array[AuthorInfo], data["authors"])
-      out.date = Datasworn::from_json_data(DateTime, data["date"])
+      out.date = Datasworn::from_json_data(String, data["date"])
       out.license = Datasworn::from_json_data(WebURL, data["license"])
       out.title = Datasworn::from_json_data(Label, data["title"])
       out.url = Datasworn::from_json_data(WebURL, data["url"])
@@ -14029,12 +14029,14 @@ module Datasworn
     ASSET_COLLECTION = new("asset_collection")
     ATLAS_COLLECTION = new("atlas_collection")
     ATLAS_ENTRY = new("atlas_entry")
+    CONDITION_METER = new("condition_meter")
     DANGER = new("danger")
     DELVE_SITE = new("delve_site")
     DELVE_SITE_DOMAIN = new("delve_site_domain")
     DELVE_SITE_THEME = new("delve_site_theme")
     DENIZEN = new("denizen")
     FEATURE = new("feature")
+    IMPACT = new("impact")
     MOVE = new("move")
     MOVE_CATEGORY = new("move_category")
     NPC = new("npc")
@@ -14044,6 +14046,8 @@ module Datasworn
     ORACLE_ROLLABLE = new("oracle_rollable")
     RARITY = new("rarity")
     ROW = new("row")
+    SPECIAL_TRACK = new("special_track")
+    STAT = new("stat")
     TRUTH = new("truth")
     VARIANT = new("variant")
 
@@ -14054,12 +14058,14 @@ module Datasworn
         "asset_collection" => ASSET_COLLECTION,
         "atlas_collection" => ATLAS_COLLECTION,
         "atlas_entry" => ATLAS_ENTRY,
+        "condition_meter" => CONDITION_METER,
         "danger" => DANGER,
         "delve_site" => DELVE_SITE,
         "delve_site_domain" => DELVE_SITE_DOMAIN,
         "delve_site_theme" => DELVE_SITE_THEME,
         "denizen" => DENIZEN,
         "feature" => FEATURE,
+        "impact" => IMPACT,
         "move" => MOVE,
         "move_category" => MOVE_CATEGORY,
         "npc" => NPC,
@@ -14069,6 +14075,8 @@ module Datasworn
         "oracle_rollable" => ORACLE_ROLLABLE,
         "rarity" => RARITY,
         "row" => ROW,
+        "special_track" => SPECIAL_TRACK,
+        "stat" => STAT,
         "truth" => TRUTH,
         "variant" => VARIANT,
       }[data]

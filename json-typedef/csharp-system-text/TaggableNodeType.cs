@@ -19,6 +19,8 @@ namespace Datasworn
 
         AtlasEntry,
 
+        ConditionMeter,
+
         Danger,
 
         DelveSite,
@@ -30,6 +32,8 @@ namespace Datasworn
         Denizen,
 
         Feature,
+
+        Impact,
 
         Move,
 
@@ -48,6 +52,10 @@ namespace Datasworn
         Rarity,
 
         Row,
+
+        SpecialTrack,
+
+        Stat,
 
         Truth,
 
@@ -70,6 +78,8 @@ namespace Datasworn
                     return TaggableNodeType.AtlasCollection;
                 case "atlas_entry":
                     return TaggableNodeType.AtlasEntry;
+                case "condition_meter":
+                    return TaggableNodeType.ConditionMeter;
                 case "danger":
                     return TaggableNodeType.Danger;
                 case "delve_site":
@@ -82,6 +92,8 @@ namespace Datasworn
                     return TaggableNodeType.Denizen;
                 case "feature":
                     return TaggableNodeType.Feature;
+                case "impact":
+                    return TaggableNodeType.Impact;
                 case "move":
                     return TaggableNodeType.Move;
                 case "move_category":
@@ -100,6 +112,10 @@ namespace Datasworn
                     return TaggableNodeType.Rarity;
                 case "row":
                     return TaggableNodeType.Row;
+                case "special_track":
+                    return TaggableNodeType.SpecialTrack;
+                case "stat":
+                    return TaggableNodeType.Stat;
                 case "truth":
                     return TaggableNodeType.Truth;
                 case "variant":
@@ -128,6 +144,9 @@ namespace Datasworn
                 case TaggableNodeType.AtlasEntry:
                     JsonSerializer.Serialize<string>(writer, "atlas_entry", options);
                     return;
+                case TaggableNodeType.ConditionMeter:
+                    JsonSerializer.Serialize<string>(writer, "condition_meter", options);
+                    return;
                 case TaggableNodeType.Danger:
                     JsonSerializer.Serialize<string>(writer, "danger", options);
                     return;
@@ -145,6 +164,9 @@ namespace Datasworn
                     return;
                 case TaggableNodeType.Feature:
                     JsonSerializer.Serialize<string>(writer, "feature", options);
+                    return;
+                case TaggableNodeType.Impact:
+                    JsonSerializer.Serialize<string>(writer, "impact", options);
                     return;
                 case TaggableNodeType.Move:
                     JsonSerializer.Serialize<string>(writer, "move", options);
@@ -172,6 +194,12 @@ namespace Datasworn
                     return;
                 case TaggableNodeType.Row:
                     JsonSerializer.Serialize<string>(writer, "row", options);
+                    return;
+                case TaggableNodeType.SpecialTrack:
+                    JsonSerializer.Serialize<string>(writer, "special_track", options);
+                    return;
+                case TaggableNodeType.Stat:
+                    JsonSerializer.Serialize<string>(writer, "stat", options);
                     return;
                 case TaggableNodeType.Truth:
                     JsonSerializer.Serialize<string>(writer, "truth", options);

@@ -52,6 +52,7 @@ This fork continues active development while the original repository is inactive
 | Security dependency updates | Applied |
 | TypeScript strict mode | Full compliance |
 | Starsmith Expanded Oracles | Added |
+| Rust/JTD type generation ([#78](https://github.com/rsek/datasworn/issues/78)) | Fixed |
 
 ### Upstream Compatibility
 
@@ -79,10 +80,15 @@ Tags:
 
 - [Bun](https://bun.sh/) 1.3+ (required)
 - [jtd-codegen](https://github.com/jsontypedef/json-typedef-codegen) (optional, for multi-language types)
+- [Rust](https://www.rust-lang.org/) (optional, for Rust integration tests)
 
 ```bash
 # Install jtd-codegen via Homebrew (macOS)
 brew install jsontypedef/jsontypedef/jtd-codegen
+
+# Install Rust via asdf (recommended) or rustup
+asdf plugin add rust
+asdf install rust latest
 ```
 
 > **Note:** The published npm packages work with both Node.js and Bun. Bun is only required for building from source.
@@ -105,11 +111,13 @@ bun install
 | `bun run build:dts` | Generate TypeScript types | - |
 | `bun run build:json` | Build game data JSON | - |
 | `bun run build:pkg` | Build npm packages | - |
-| `bun run test` | Run all tests | - |
-| `bun run test:build` | Run build validation tests | - |
+| `bun run test` | Run all tests | Rust (optional) |
+| `bun run test:build` | Run build validation tests | Rust (optional) |
 | `bun run check` | TypeScript type check | - |
 
 If you don't need multi-language type definitions (C#, Go, Java, Python, Ruby, Rust), you can skip `jtd-codegen` and run individual build commands instead of `bun run build`.
+
+The test suite includes Rust integration tests that verify the generated types can deserialize all JSON data. These tests are automatically skipped if `cargo` is not installed.
 
 ### Project Structure
 
@@ -119,10 +127,12 @@ datasworn/
 │   ├── schema/        # TypeBox schema definitions
 │   ├── pkg-core/      # Core runtime (IdParser, validators)
 │   ├── scripts/       # Build scripts
+│   ├── tests/         # Test suite
 │   └── types/         # Generated TypeScript types
 ├── pkg/nodejs/        # npm package sources
 ├── datasworn/         # Generated JSON output
 ├── json-typedef/      # Generated type definitions (multi-language)
+│   └── rust-test/     # Rust integration test project
 └── source_data/       # YAML source files
 ```
 

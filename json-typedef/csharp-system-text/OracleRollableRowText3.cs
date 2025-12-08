@@ -14,7 +14,7 @@ namespace Datasworn
         public AnyOracleRollableRowId Id { get; set; }
 
         [JsonPropertyName("roll")]
-        public DiceRange Roll { get; set; }
+        public DiceRange? Roll { get; set; }
 
         /// <summary>
         /// The primary text content of this row.
@@ -23,10 +23,10 @@ namespace Datasworn
         public MarkdownString Text { get; set; }
 
         [JsonPropertyName("text2")]
-        public MarkdownString Text2 { get; set; }
+        public MarkdownString? Text2 { get; set; }
 
         [JsonPropertyName("text3")]
-        public MarkdownString Text3 { get; set; }
+        public MarkdownString? Text3 { get; set; }
 
         [JsonPropertyName("_i18n")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]

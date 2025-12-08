@@ -32,11 +32,12 @@
 						"ref": "AuthorInfo"
 					},
 					"metadata": {
-						"description": "Lists authors credited by the source material."
+						"description": "Lists authors credited by the source material.",
+						"minItems": 1
 					}
 				},
 				"date": {
-					"type": "timestamp",
+					"type": "string",
 					"metadata": {
 						"description": "The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
 						"pattern": "[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))",
@@ -51,7 +52,8 @@
 					}
 				},
 				"license": {
-					"ref": "WebUrl"
+					"ref": "WebUrl",
+					"nullable": true
 				},
 				"oracles": {
 					"values": {
@@ -187,11 +189,12 @@
 						"ref": "AuthorInfo"
 					},
 					"metadata": {
-						"description": "Lists authors credited by the source material."
+						"description": "Lists authors credited by the source material.",
+						"minItems": 1
 					}
 				},
 				"date": {
-					"type": "timestamp",
+					"type": "string",
 					"metadata": {
 						"description": "The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
 						"pattern": "[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))",
@@ -206,7 +209,8 @@
 					}
 				},
 				"license": {
-					"ref": "WebUrl"
+					"ref": "WebUrl",
+					"nullable": true
 				},
 				"oracles": {
 					"values": {
@@ -615,7 +619,9 @@
 						"max": {
 							"type": "int8",
 							"metadata": {
-								"description": "The size of the clock -- in other words, the maximum number of filled clock segments. Standard clocks have 4, 6, 8, or 10 segments."
+								"description": "The size of the clock -- in other words, the maximum number of filled clock segments. Standard clocks have 4, 6, 8, or 10 segments.",
+								"minimum": 2,
+								"multipleOf": 2
 							}
 						},
 						"rollable": {
@@ -652,7 +658,8 @@
 							}
 						},
 						"max": {
-							"type": "int16"
+							"type": "int16",
+							"nullable": true
 						},
 						"rollable": {
 							"type": "boolean"
@@ -709,7 +716,8 @@
 							"ref": "Label"
 						},
 						"value": {
-							"type": "string"
+							"type": "string",
+							"nullable": true
 						}
 					},
 					"optionalProperties": {
@@ -763,7 +771,8 @@
 							"ref": "Label"
 						},
 						"value": {
-							"type": "string"
+							"type": "string",
+							"nullable": true
 						}
 					},
 					"optionalProperties": {
@@ -820,7 +829,10 @@
 				},
 				"max": {
 					"type": "int16",
-					"metadata": {}
+					"metadata": {
+						"minimum": 1
+					},
+					"nullable": true
 				}
 			},
 			"metadata": {
@@ -1301,7 +1313,8 @@
 							"ref": "Label"
 						},
 						"value": {
-							"ref": "DictKey"
+							"ref": "DictKey",
+							"nullable": true
 						},
 						"choices": {
 							"values": {
@@ -1458,7 +1471,8 @@
 				"assets": {
 					"elements": {
 						"ref": "AssetIdWildcard"
-					}
+					},
+					"nullable": true
 				},
 				"control": {
 					"ref": "DictKey",
@@ -1535,7 +1549,8 @@
 							"ref": "Label"
 						},
 						"value": {
-							"ref": "DictKey"
+							"ref": "DictKey",
+							"nullable": true
 						},
 						"choices": {
 							"values": {
@@ -1564,7 +1579,8 @@
 							"ref": "Label"
 						},
 						"value": {
-							"ref": "DictKey"
+							"ref": "DictKey",
+							"nullable": true
 						},
 						"choices": {
 							"values": {
@@ -1636,7 +1652,8 @@
 							"ref": "Label"
 						},
 						"value": {
-							"type": "string"
+							"type": "string",
+							"nullable": true
 						}
 					},
 					"optionalProperties": {
@@ -1661,7 +1678,8 @@
 				"assets": {
 					"elements": {
 						"ref": "AssetIdWildcard"
-					}
+					},
+					"nullable": true
 				},
 				"option": {
 					"ref": "DictKey",
@@ -2007,7 +2025,9 @@
 				"max": {
 					"type": "int8",
 					"metadata": {
-						"description": "The size of the clock -- in other words, the maximum number of filled clock segments. Standard clocks have 4, 6, 8, or 10 segments."
+						"description": "The size of the clock -- in other words, the maximum number of filled clock segments. Standard clocks have 4, 6, 8, or 10 segments.",
+						"minimum": 2,
+						"multipleOf": 2
 					}
 				},
 				"rollable": {
@@ -2200,7 +2220,8 @@
 					}
 				},
 				"max": {
-					"type": "int16"
+					"type": "int16",
+					"nullable": true
 				},
 				"rollable": {
 					"type": "boolean"
@@ -2514,7 +2535,8 @@
 					}
 				},
 				"roll": {
-					"ref": "DiceRange"
+					"ref": "DiceRange",
+					"nullable": true
 				},
 				"_id": {
 					"ref": "DelveSiteDomainDangerId"
@@ -2578,7 +2600,8 @@
 					}
 				},
 				"roll": {
-					"ref": "DiceRange"
+					"ref": "DiceRange",
+					"nullable": true
 				},
 				"_id": {
 					"ref": "DelveSiteDomainFeatureId"
@@ -2765,7 +2788,8 @@
 					}
 				},
 				"roll": {
-					"ref": "DiceRange"
+					"ref": "DiceRange",
+					"nullable": true
 				},
 				"_id": {
 					"ref": "DelveSiteThemeDangerId"
@@ -2829,7 +2853,8 @@
 					}
 				},
 				"roll": {
-					"ref": "DiceRange"
+					"ref": "DiceRange",
+					"nullable": true
 				},
 				"_id": {
 					"ref": "DelveSiteThemeFeatureId"
@@ -4724,11 +4749,12 @@
 						"ref": "AuthorInfo"
 					},
 					"metadata": {
-						"description": "Lists authors credited by the source material."
+						"description": "Lists authors credited by the source material.",
+						"minItems": 1
 					}
 				},
 				"date": {
-					"type": "timestamp",
+					"type": "string",
 					"metadata": {
 						"description": "The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
 						"pattern": "[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))",
@@ -4743,7 +4769,8 @@
 					}
 				},
 				"license": {
-					"ref": "WebUrl"
+					"ref": "WebUrl",
+					"nullable": true
 				},
 				"oracles": {
 					"values": {
@@ -5516,7 +5543,8 @@
 				"enhances": {
 					"elements": {
 						"ref": "AnyMoveIdWildcard"
-					}
+					},
+					"nullable": true
 				},
 				"roll_type": {
 					"enum": ["action_roll"],
@@ -5662,7 +5690,8 @@
 						"enhances": {
 							"elements": {
 								"ref": "AnyMoveIdWildcard"
-							}
+							},
+							"nullable": true
 						}
 					},
 					"optionalProperties": {
@@ -5679,7 +5708,8 @@
 						"enhances": {
 							"elements": {
 								"ref": "AnyMoveIdWildcard"
-							}
+							},
+							"nullable": true
 						}
 					},
 					"optionalProperties": {
@@ -5696,7 +5726,8 @@
 						"enhances": {
 							"elements": {
 								"ref": "AnyMoveIdWildcard"
-							}
+							},
+							"nullable": true
 						}
 					},
 					"optionalProperties": {
@@ -5713,7 +5744,8 @@
 						"enhances": {
 							"elements": {
 								"ref": "AnyMoveIdWildcard"
-							}
+							},
+							"nullable": true
 						}
 					},
 					"optionalProperties": {
@@ -5848,7 +5880,8 @@
 				"enhances": {
 					"elements": {
 						"ref": "AnyMoveIdWildcard"
-					}
+					},
+					"nullable": true
 				},
 				"roll_type": {
 					"enum": ["no_roll"],
@@ -6040,7 +6073,8 @@
 				"enhances": {
 					"elements": {
 						"ref": "AnyMoveIdWildcard"
-					}
+					},
+					"nullable": true
 				},
 				"roll_type": {
 					"enum": ["progress_roll"],
@@ -6179,7 +6213,8 @@
 				"enhances": {
 					"elements": {
 						"ref": "AnyMoveIdWildcard"
-					}
+					},
+					"nullable": true
 				},
 				"roll_type": {
 					"enum": ["special_track"],
@@ -7407,7 +7442,8 @@
 		"OracleRoll": {
 			"properties": {
 				"oracle": {
-					"ref": "OracleRollableId"
+					"ref": "OracleRollableId",
+					"nullable": true
 				},
 				"auto": {
 					"type": "boolean",
@@ -7422,12 +7458,14 @@
 					}
 				},
 				"dice": {
-					"ref": "DiceExpression"
+					"ref": "DiceExpression",
+					"nullable": true
 				},
 				"number_of_rolls": {
 					"type": "int16",
 					"metadata": {
-						"description": "The number of times to roll."
+						"description": "The number of times to roll.",
+						"minimum": 1
 					}
 				}
 			}
@@ -8110,7 +8148,8 @@
 					}
 				},
 				"roll": {
-					"ref": "DiceRange"
+					"ref": "DiceRange",
+					"nullable": true
 				},
 				"_id": {
 					"ref": "AnyOracleRollableRowId"
@@ -8160,13 +8199,15 @@
 					}
 				},
 				"roll": {
-					"ref": "DiceRange"
+					"ref": "DiceRange",
+					"nullable": true
 				},
 				"_id": {
 					"ref": "AnyOracleRollableRowId"
 				},
 				"text2": {
-					"ref": "MarkdownString"
+					"ref": "MarkdownString",
+					"nullable": true
 				}
 			},
 			"optionalProperties": {
@@ -8213,16 +8254,19 @@
 					}
 				},
 				"roll": {
-					"ref": "DiceRange"
+					"ref": "DiceRange",
+					"nullable": true
 				},
 				"_id": {
 					"ref": "AnyOracleRollableRowId"
 				},
 				"text2": {
-					"ref": "MarkdownString"
+					"ref": "MarkdownString",
+					"nullable": true
 				},
 				"text3": {
-					"ref": "MarkdownString"
+					"ref": "MarkdownString",
+					"nullable": true
 				}
 			},
 			"optionalProperties": {
@@ -9569,7 +9613,8 @@
 		"PageNumber": {
 			"type": "uint16",
 			"metadata": {
-				"description": "Represents a page number in a book."
+				"description": "Represents a page number in a book.",
+				"minimum": 1
 			}
 		},
 		"PartOfSpeech": {
@@ -9677,7 +9722,9 @@
 				"xp_cost": {
 					"type": "int16",
 					"metadata": {
-						"description": "From Ironsworn: Delve, p. 174:\n\n      Some assets will bring a rarity into play more often than others, so the experience point cost for a rarity will vary by the linked asset. These costs are shown in the tables on page 175.\n\n      If you are playing solo, and aren’t concerned with the relative balance of rarity abilities, you can ignore these variable costs. If so, spend 3 experience points to purchase a rarity."
+						"description": "From Ironsworn: Delve, p. 174:\n\n      Some assets will bring a rarity into play more often than others, so the experience point cost for a rarity will vary by the linked asset. These costs are shown in the tables on page 175.\n\n      If you are playing solo, and aren’t concerned with the relative balance of rarity abilities, you can ignore these variable costs. If so, spend 3 experience points to purchase a rarity.",
+						"maximum": 5,
+						"minimum": 3
 					}
 				},
 				"type": {
@@ -9775,7 +9822,8 @@
 						"assets": {
 							"elements": {
 								"ref": "AssetIdWildcard"
-							}
+							},
+							"nullable": true
 						},
 						"control": {
 							"ref": "DictKey",
@@ -9794,7 +9842,8 @@
 						"assets": {
 							"elements": {
 								"ref": "AssetIdWildcard"
-							}
+							},
+							"nullable": true
 						},
 						"option": {
 							"ref": "DictKey",
@@ -9937,11 +9986,12 @@
 						"ref": "AuthorInfo"
 					},
 					"metadata": {
-						"description": "Lists authors credited by the source material."
+						"description": "Lists authors credited by the source material.",
+						"minItems": 1
 					}
 				},
 				"date": {
-					"type": "timestamp",
+					"type": "string",
 					"metadata": {
 						"description": "The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
 						"pattern": "[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))",
@@ -9956,7 +10006,8 @@
 					}
 				},
 				"license": {
-					"ref": "WebUrl"
+					"ref": "WebUrl",
+					"nullable": true
 				},
 				"oracles": {
 					"values": {
@@ -10132,7 +10183,8 @@
 					"ref": "Label"
 				},
 				"value": {
-					"ref": "DictKey"
+					"ref": "DictKey",
+					"nullable": true
 				},
 				"choices": {
 					"values": {
@@ -10254,7 +10306,8 @@
 					"ref": "Label"
 				},
 				"value": {
-					"ref": "DictKey"
+					"ref": "DictKey",
+					"nullable": true
 				},
 				"choices": {
 					"values": {
@@ -10326,7 +10379,8 @@
 						"assets": {
 							"elements": {
 								"ref": "AssetIdWildcard"
-							}
+							},
+							"nullable": true
 						},
 						"control": {
 							"ref": "DictKey",
@@ -10351,7 +10405,8 @@
 						"assets": {
 							"elements": {
 								"ref": "AssetIdWildcard"
-							}
+							},
+							"nullable": true
 						},
 						"option": {
 							"ref": "DictKey",
@@ -10448,11 +10503,12 @@
 						"ref": "AuthorInfo"
 					},
 					"metadata": {
-						"description": "Lists authors credited by the source material."
+						"description": "Lists authors credited by the source material.",
+						"minItems": 1
 					}
 				},
 				"date": {
-					"type": "timestamp",
+					"type": "string",
 					"metadata": {
 						"description": "The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
 						"pattern": "[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))",
@@ -10467,7 +10523,8 @@
 					}
 				},
 				"license": {
-					"ref": "WebUrl"
+					"ref": "WebUrl",
+					"nullable": true
 				}
 			},
 			"optionalProperties": {
@@ -10641,7 +10698,11 @@
 				"feature",
 				"danger",
 				"denizen",
-				"variant"
+				"variant",
+				"impact",
+				"condition_meter",
+				"special_track",
+				"stat"
 			]
 		},
 		"TagRule": {
@@ -10649,7 +10710,8 @@
 				"node_types": {
 					"elements": {
 						"ref": "TaggableNodeType"
-					}
+					},
+					"nullable": true
 				},
 				"$schema": {
 					"ref": "TagSchema",
@@ -10697,7 +10759,8 @@
 					"ref": "Label"
 				},
 				"value": {
-					"type": "string"
+					"type": "string",
+					"nullable": true
 				},
 				"field_type": {
 					"enum": ["text"]
@@ -10765,7 +10828,8 @@
 		"TriggerActionRollConditionEnhancement": {
 			"properties": {
 				"method": {
-					"ref": "ActionRollMethod"
+					"ref": "ActionRollMethod",
+					"nullable": true
 				},
 				"roll_options": {
 					"elements": {
@@ -10773,7 +10837,8 @@
 					},
 					"metadata": {
 						"description": "The options available when rolling with this trigger condition."
-					}
+					},
+					"nullable": true
 				}
 			},
 			"optionalProperties": {
@@ -10919,7 +10984,8 @@
 		"TriggerProgressRollConditionEnhancement": {
 			"properties": {
 				"method": {
-					"ref": "ProgressRollMethod"
+					"ref": "ProgressRollMethod",
+					"nullable": true
 				},
 				"roll_options": {
 					"elements": {
@@ -10927,7 +10993,8 @@
 					},
 					"metadata": {
 						"description": "The options available when rolling with this trigger condition."
-					}
+					},
+					"nullable": true
 				}
 			},
 			"optionalProperties": {
@@ -11004,7 +11071,8 @@
 		"TriggerSpecialTrackConditionEnhancement": {
 			"properties": {
 				"method": {
-					"ref": "SpecialTrackRollMethod"
+					"ref": "SpecialTrackRollMethod",
+					"nullable": true
 				},
 				"roll_options": {
 					"elements": {
@@ -11012,7 +11080,8 @@
 					},
 					"metadata": {
 						"description": "The options available when rolling with this trigger condition."
-					}
+					},
+					"nullable": true
 				}
 			},
 			"optionalProperties": {

@@ -19,7 +19,9 @@ const filePath = JTD_JSON_PATH
 
 const json = await writeJSON(filePath, jtdRoot, {
 	replacer: (k, v) => {
-		if (isEmpty(v) && k !== 'properties') return undefined
+		// Strip null values and empty objects/arrays, but preserve booleans (like `nullable: true`)
+		if (v === null) return undefined
+		if (typeof v === 'object' && isEmpty(v) && k !== 'properties') return undefined
 		return v
 	}
 })

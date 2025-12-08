@@ -12,7 +12,7 @@ namespace Datasworn
     public class TriggerSpecialTrackConditionEnhancement
     {
         [JsonPropertyName("method")]
-        public SpecialTrackRollMethod Method { get; set; }
+        public SpecialTrackRollMethod? Method { get; set; }
 
         /// <summary>
         /// The options available when rolling with this trigger condition.

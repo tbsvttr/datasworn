@@ -16,7 +16,7 @@ namespace Datasworn
         public bool Auto { get; set; }
 
         [JsonPropertyName("dice")]
-        public DiceExpression Dice { get; set; }
+        public DiceExpression? Dice { get; set; }
 
         /// <summary>
         /// Special rules on how to handle duplicate results, when rolling
@@ -32,6 +32,6 @@ namespace Datasworn
         public short NumberOfRolls { get; set; }
 
         [JsonPropertyName("oracle")]
-        public OracleRollableId Oracle { get; set; }
+        public OracleRollableId? Oracle { get; set; }
     }
 }

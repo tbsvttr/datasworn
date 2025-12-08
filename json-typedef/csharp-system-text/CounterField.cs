@@ -17,7 +17,7 @@ namespace Datasworn
         public Label Label { get; set; }
 
         [JsonPropertyName("max")]
-        public short Max { get; set; }
+        public short? Max { get; set; }
 
         /// <summary>
         /// The (inclusive) minimum value.

@@ -304,6 +304,140 @@ describe('Content Integrity', () => {
 	})
 })
 
+describe('JTD Schema Validation', () => {
+	const jtdPath = path.join(ROOT, 'json-typedef/datasworn.jtd.json')
+
+	test('JTD schema file exists and is valid JSON', () => {
+		expect(existsSync(jtdPath)).toBe(true)
+		const content = readFileSync(jtdPath, 'utf-8')
+		expect(() => JSON.parse(content)).not.toThrow()
+	})
+
+	test('JTD schema has definitions', () => {
+		const jtd = JSON.parse(readFileSync(jtdPath, 'utf-8'))
+		expect(jtd.definitions).toBeDefined()
+		expect(Object.keys(jtd.definitions).length).toBeGreaterThan(100)
+	})
+
+	test('SourceInfo.date is typed as string (not timestamp)', () => {
+		// Fixes rsek/datasworn#78 - date strings like "2019-06-05" are not RFC 3339 timestamps
+		const jtd = JSON.parse(readFileSync(jtdPath, 'utf-8'))
+		const sourceInfo = jtd.definitions?.SourceInfo
+
+		expect(sourceInfo).toBeDefined()
+		expect(sourceInfo.properties?.date?.type).toBe('string')
+		// Ensure it's NOT timestamp (which would require RFC 3339 format)
+		expect(sourceInfo.properties?.date?.type).not.toBe('timestamp')
+	})
+
+	test('nullable fields have nullable: true property', () => {
+		// Fixes rsek/datasworn#78 - nullable properties must be preserved for proper Rust Option<> generation
+		const jtd = JSON.parse(readFileSync(jtdPath, 'utf-8'))
+
+		// OracleRoll.dice should be nullable (can be null to use table default)
+		const oracleRoll = jtd.definitions?.OracleRoll
+		expect(oracleRoll).toBeDefined()
+		expect(oracleRoll.properties?.dice?.nullable).toBe(true)
+
+		// OracleRoll.oracle should be nullable (null = roll on same table)
+		expect(oracleRoll.properties?.oracle?.nullable).toBe(true)
+
+		// SourceInfo.license should be nullable
+		const sourceInfo = jtd.definitions?.SourceInfo
+		expect(sourceInfo.properties?.license?.nullable).toBe(true)
+	})
+
+	test('TaggableNodeType enum includes RuleType values', () => {
+		// Fixes rsek/datasworn#78 - TaggableNodeType was missing rule types
+		const jtd = JSON.parse(readFileSync(jtdPath, 'utf-8'))
+		const taggableNodeType = jtd.definitions?.TaggableNodeType
+
+		expect(taggableNodeType).toBeDefined()
+		expect(taggableNodeType.enum).toBeDefined()
+
+		// Must include rule types (from RuleType enum)
+		expect(taggableNodeType.enum).toContain('special_track')
+		expect(taggableNodeType.enum).toContain('stat')
+		expect(taggableNodeType.enum).toContain('condition_meter')
+		expect(taggableNodeType.enum).toContain('impact')
+
+		// Must include primary types
+		expect(taggableNodeType.enum).toContain('asset')
+		expect(taggableNodeType.enum).toContain('move')
+		expect(taggableNodeType.enum).toContain('oracle_rollable')
+
+		// Must include embed-only types
+		expect(taggableNodeType.enum).toContain('ability')
+		expect(taggableNodeType.enum).toContain('row')
+	})
+
+	test('generated Rust types exist', () => {
+		const rustPath = path.join(ROOT, 'json-typedef/rust/mod.rs')
+		expect(existsSync(rustPath)).toBe(true)
+
+		const content = readFileSync(rustPath, 'utf-8')
+		// Verify key structs exist
+		expect(content).toContain('pub struct SourceInfo')
+		expect(content).toContain('pub struct OracleRoll')
+		expect(content).toContain('pub enum RulesPackage')
+	})
+
+	test('Rust types use Option for nullable fields', () => {
+		const rustPath = path.join(ROOT, 'json-typedef/rust/mod.rs')
+		const content = readFileSync(rustPath, 'utf-8')
+
+		// OracleRoll.dice should be Option<>
+		expect(content).toMatch(/pub dice: Option<.*DiceExpression/)
+		// OracleRoll.oracle should be Option<>
+		expect(content).toMatch(/pub oracle: Option<.*OracleRollableId/)
+	})
+})
+
+describe('Rust Integration Test', () => {
+	// Check if cargo is available
+	const cargoAvailable = (() => {
+		try {
+			const result = Bun.spawnSync(['cargo', '--version'])
+			return result.exitCode === 0
+		} catch {
+			return false
+		}
+	})()
+
+	const rustTestDir = path.join(ROOT, 'json-typedef/rust-test')
+
+	test.skipIf(!cargoAvailable)('cargo is available', () => {
+		expect(cargoAvailable).toBe(true)
+	})
+
+	test.skipIf(!cargoAvailable)('Rust test project compiles', async () => {
+		const result = await $`cargo build --release`.cwd(rustTestDir).quiet().nothrow()
+		expect(result.exitCode).toBe(0)
+	}, 120000)
+
+	test.skipIf(!cargoAvailable)('Rust types can deserialize all JSON files', async () => {
+		// Find all output JSON files
+		const dataswornDir = path.join(ROOT, 'datasworn')
+		const jsonFiles = readdirSync(dataswornDir, { withFileTypes: true })
+			.filter((d) => d.isDirectory())
+			.map((d) => path.join(dataswornDir, d.name, `${d.name}.json`))
+			.filter((p) => existsSync(p))
+
+		expect(jsonFiles.length).toBeGreaterThan(0)
+
+		// Run the Rust test binary with all JSON files
+		const binary = path.join(rustTestDir, 'target/release/datasworn-rust-test')
+		const result = await $`${binary} ${jsonFiles}`.quiet().nothrow()
+
+		if (result.exitCode !== 0) {
+			console.error('Rust integration test output:')
+			console.error(result.stderr.toString())
+		}
+
+		expect(result.exitCode).toBe(0)
+	}, 30000)
+})
+
 describe('ID Consistency', () => {
 	// Helper to get all _id values from a top-level collection recursively
 	function getAllIds(topLevel: Record<string, unknown>): string[] {
