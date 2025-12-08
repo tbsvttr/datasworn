@@ -496,7 +496,7 @@ oracles:
                 text: Hush
                 _i18n: *ProperNoun
               - roll: { min: 48, max: 48 }
-                text: Irodescriptionnclad
+                text: Ironclad
                 _i18n: *ProperNoun
               - roll: { min: 49, max: 49 }
                 text: Jackal
