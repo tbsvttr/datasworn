@@ -4,6 +4,7 @@ import { existsSync, readFileSync, readdirSync } from 'fs'
 import path from 'path'
 import ajvPkg, { type ErrorObject } from 'ajv'
 import ajvFormatPkg from 'ajv-formats'
+import * as JTD from 'jtd'
 
 // workaround for https://github.com/ajv-validator/ajv/issues/2132
 const Ajv = ajvPkg.default
@@ -317,6 +318,12 @@ describe('JTD Schema Validation', () => {
 		const jtd = JSON.parse(readFileSync(jtdPath, 'utf-8'))
 		expect(jtd.definitions).toBeDefined()
 		expect(Object.keys(jtd.definitions).length).toBeGreaterThan(100)
+	})
+
+	test('JTD schema passes official validation', () => {
+		// Fixes rsek/datasworn#77 - ensures JTD schema is valid (not to be confused with JSON Schema)
+		const jtd = JSON.parse(readFileSync(jtdPath, 'utf-8'))
+		expect(JTD.isValidSchema(jtd)).toBe(true)
 	})
 
 	test('SourceInfo.date is typed as string (not timestamp)', () => {
