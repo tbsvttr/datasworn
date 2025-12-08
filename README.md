@@ -77,8 +77,9 @@ Tags:
 
 ### Prerequisites
 
-- [Bun](https://bun.sh/) 1.3+
-- Node.js 24+ (LTS)
+- [Bun](https://bun.sh/) 1.3+ (required for development)
+
+> **Note:** The published npm packages work with both Node.js and Bun. Bun is only required for building from source.
 
 ### Setup
 
