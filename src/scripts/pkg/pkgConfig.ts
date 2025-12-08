@@ -159,6 +159,7 @@ export const FeRunners: RulesPackageConfig = {
 		authors: [
 			{
 				name: 'Craig Smith',
+				email: 'agent.craig@gmail.com',
 				url: 'https://zombiecraig.itch.io/',
 			},
 		],
