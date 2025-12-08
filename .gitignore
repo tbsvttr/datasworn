@@ -19,3 +19,6 @@ haxesworn
 
 **/__pycache__
 **/.venv
+
+# Local PDFs (not for distribution)
+pdfs/
