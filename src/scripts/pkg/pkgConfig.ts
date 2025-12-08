@@ -135,3 +135,32 @@ export const Starsmith: RulesPackageConfig = {
 		],
 	},
 }
+
+export const FeRunners: RulesPackageConfig = {
+	type: 'expansion',
+	paths: {
+		source: path.join(ROOT_SOURCE_DATA, 'fe_runners'),
+	},
+	id: 'fe_runners',
+	pkg: {
+		name: 'fe-runners',
+		private: true, // Don't publish to NPM yet
+		scope: PKG_SCOPE_COMMUNITY,
+		description:
+			'Datasworn JSON data for Fe-Runners, a cyberpunk Starforged expansion by Craig Smith.',
+		keywords: [
+			'ironsworn',
+			'datasworn',
+			'TTRPG',
+			'starforged',
+			'fe-runners',
+			'cyberpunk',
+		],
+		authors: [
+			{
+				name: 'Craig Smith',
+				url: 'https://zombiecraig.itch.io/',
+			},
+		],
+	},
+}
