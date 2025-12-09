@@ -1,0 +1,617 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+moves:
+  making_camp:
+    name: Making Camp Moves
+    type: move_category
+    color: '#6b8e23'
+    _source:
+      <<: &Source
+        title: 'Ancient Wonders'
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      hunker_down:
+        name: Hunker Down
+        roll_type: action_roll
+        type: move
+        trigger:
+          text: When you rest and recover at an improvised, temporary, or make-shift refuge...
+          conditions:
+            - method: player_choice
+              roll_options:
+                - using: condition_meter
+                  condition_meter: supply
+        text: |-
+          __When you rest and recover at an improvised, temporary, or make-shift refuge__, roll +supply.
+
+          On a __strong hit__, your provisions are enough to adequately sustain you, your allies, and your special companions; each may choose one.
+
+            * [Heal](move:starforged/recover/heal) and take an automatic strong hit.
+            * [Hearten](move:starforged/recover/hearten) and take an automatic strong hit.
+            * [Repair](move:starforged/recover/repair) and take an automatic strong hit (in the field or underway).
+
+          On a __weak hit__, as above, but resources or time are wasted; [Sacrifice Resources](move:starforged/suffer/sacrifice_resources) (-1) or [Lose Momentum](move:starforged/suffer/lose_momentum) (-2).
+
+          On a __miss__, you take no respite. [Pay the Price](move:starforged/fate/pay_the_price).
+        outcomes:
+          strong_hit:
+            text: |-
+              On a __strong hit__, your provisions are enough to adequately sustain you, your allies, and your special companions; each may choose one.
+
+                * [Heal](move:starforged/recover/heal) and take an automatic strong hit.
+                * [Hearten](move:starforged/recover/hearten) and take an automatic strong hit.
+                * [Repair](move:starforged/recover/repair) and take an automatic strong hit (in the field or underway).
+          weak_hit:
+            text: |-
+              On a __weak hit__, as above, but resources or time are wasted; [Sacrifice Resources](move:starforged/suffer/sacrifice_resources) (-1) or [Lose Momentum](move:starforged/suffer/lose_momentum) (-2).
+          miss:
+            text: |-
+              On a __miss__, you take no respite. [Pay the Price](move:starforged/fate/pay_the_price).
+        _source:
+          <<: *Source
+
+      establish_a_haven:
+        name: Establish A Haven
+        roll_type: action_roll
+        type: move
+        trigger:
+          text: When you secure an area while on an expedition, after overcoming a critical obstacle, gaining meaningful insight, or defeating a notable foe...
+          conditions:
+            - method: player_choice
+              roll_options:
+                - using: stat
+                  stat: wits
+        text: |-
+          __When you secure an area while on an expedition__, after doing any of the following...
+
+            * overcoming a critical obstacle
+            * gaining meaningful insight
+            * defeating a notable foe
+
+          ...envision how you can make this a perpetual safe place to rest. Then, roll +wits.
+
+          On a __strong hit__, you make a reliable haven. Name it and mark the progress box in which this haven is being established.
+
+          Then, when you...
+
+            * [Hunker Down](move:ancient_wonders/making_camp/hunker_down) in this haven: Add +2 and choose an additional option on a hit.
+            * [Undertake an Expedition](move:starforged/exploration/undertake_an_expedition) from this haven: Add +1 and take +1 momentum on a hit.
+            * Go to the haven by...
+              * Returning to it in the middle of an expedition: Clear all progress after the haven
+              * Starting a new expedition route: [Set a Course](move:starforged/exploration/set_a_course) and add +2
+
+          On a __weak hit__, as above, but making this haven causes a delay or setback. Choose one.
+
+            * [Lose Momentum](move:starforged/suffer/lose_momentum) (-3).
+            * Clear one progress box and mark the haven appropriately.
+
+          On a __miss__, this place is cursed. You find no comfort in it. [Pay the Price](move:starforged/fate/pay_the_price).
+        outcomes:
+          strong_hit:
+            text: |-
+              On a __strong hit__, you make a reliable haven. Name it and mark the progress box in which this haven is being established.
+
+              Then, when you...
+
+                * [Hunker Down](move:ancient_wonders/making_camp/hunker_down) in this haven: Add +2 and choose an additional option on a hit.
+                * [Undertake an Expedition](move:starforged/exploration/undertake_an_expedition) from this haven: Add +1 and take +1 momentum on a hit.
+                * Go to the haven by...
+                  * Returning to it in the middle of an expedition: Clear all progress after the haven
+                  * Starting a new expedition route: [Set a Course](move:starforged/exploration/set_a_course) and add +2
+          weak_hit:
+            text: |-
+              On a __weak hit__, as above, but making this haven causes a delay or setback. Choose one.
+
+                * [Lose Momentum](move:starforged/suffer/lose_momentum) (-3).
+                * Clear one progress box and mark the haven appropriately.
+          miss:
+            text: |-
+              On a __miss__, this place is cursed. You find no comfort in it. [Pay the Price](move:starforged/fate/pay_the_price).
+        _source:
+          <<: *Source
+
+  exchanging_wealth:
+    name: Exchanging Wealth Moves
+    type: move_category
+    color: '#daa520'
+    _source:
+      <<: *Source
+    contents:
+      browse_the_market:
+        name: Browse The Market
+        roll_type: action_roll
+        type: move
+        trigger:
+          text: When you search in a community, physical or digital, to find an asset, service, or someone interested in what you offer...
+          conditions:
+            - method: player_choice
+              text: Bargain across potential traders
+              roll_options:
+                - using: stat
+                  stat: heart
+            - method: player_choice
+              text: Assess the offers
+              roll_options:
+                - using: stat
+                  stat: wits
+        text: |-
+          __When you search in a community, physical or digital, to find an asset, service, or someone interested in what you offer__, envision your approach and roll. If you...
+
+            * Bargain across potential traders: Roll +heart
+            * Assess the offers: Roll +wits
+
+          If you are performing the search in a dense and technologically advanced population, add +1. If you share a bond, add another +1.
+
+          On a __strong hit__, you find what you are looking for at a fair deal. If you...
+
+            * [Resupply](move:starforged/recover/resupply) now, add +2
+            * [Exchange Wealth](move:ancient_wonders/exchanging_wealth/exchange_wealth), you have access to upmarket assets and services
+
+          On a __weak hit__, the search did not go as well as expected. If you...
+
+            * [Resupply](move:starforged/recover/resupply) now, add +1
+            * [Exchange Wealth](move:ancient_wonders/exchanging_wealth/exchange_wealth), you have access to upmarket assets and services but with some extra time; [Lose Momentum](move:starforged/suffer/lose_momentum) (-1).
+
+          On a __miss__, you are out of luck; what you're looking for is not available and the situation worsens. [Pay the Price](move:starforged/fate/pay_the_price).
+        outcomes:
+          strong_hit:
+            text: |-
+              On a __strong hit__, you find what you are looking for at a fair deal. If you...
+
+                * [Resupply](move:starforged/recover/resupply) now, add +2
+                * [Exchange Wealth](move:ancient_wonders/exchanging_wealth/exchange_wealth), you have access to upmarket assets and services
+          weak_hit:
+            text: |-
+              On a __weak hit__, the search did not go as well as expected. If you...
+
+                * [Resupply](move:starforged/recover/resupply) now, add +1
+                * [Exchange Wealth](move:ancient_wonders/exchanging_wealth/exchange_wealth), you have access to upmarket assets and services but with some extra time; [Lose Momentum](move:starforged/suffer/lose_momentum) (-1).
+          miss:
+            text: |-
+              On a __miss__, you are out of luck; what you're looking for is not available and the situation worsens. [Pay the Price](move:starforged/fate/pay_the_price).
+        _source:
+          <<: *Source
+
+      exchange_wealth:
+        name: Exchange Wealth
+        roll_type: no_roll
+        type: move
+        trigger:
+          text: When you make a deal where currency is the medium of exchange...
+        text: |-
+          __When you make a deal where currency is the medium of exchange__, envision the scene.
+
+          If you are acquiring an asset or service, reference this table to determine its cost in wealth:
+
+          | Asset or Service | Mechanical outcome | Cost |
+          | ----- | ----- | ----- |
+          | Object improvement | Upgrade an item asset | 2 |
+          | Object, fine | Acquire an uncommon item asset | 2 |
+          | Object, simple | Acquire a common item and take +1 momentum | 1 |
+          | Provisions, bountiful | Take up to +5 supply | 2 |
+          | Provisions, modest | Take up to +2 supply | 1 |
+          | Service, average | Make the appropriate move | 1 |
+          | Service, fine | Make the appropriate move and add +2 | 2 |
+
+          Upmarket (on a hit when you [Browse the Market](move:ancient_wonders/exchanging_wealth/browse_the_market)):
+
+          | Asset or Service | Mechanical outcome | Cost |
+          | ----- | ----- | ----- |
+          | Object, exceptional | Acquire a notable item asset | 3 |
+          | Object, precious | Acquire a rare item asset | 4 |
+          | Object, wondrous | Acquire an exotic item asset | 5 |
+          | Object, greatly abnormal | Acquire a major splinter, item asset | 4 |
+          | Object, slightly abnormal | Acquire a minor splinter, item asset | 3 |
+          | Partnership | Acquire a companion asset | 4 |
+          | Partnership, exceptional | Acquire a special companion asset | 5 |
+          | Service, costly | Make the appropriate move; you may reroll any dice | 3 |
+          | Ship feature | Acquire a module asset | 4 |
+          | Training | Upgrade a path asset | 3 |
+          | Training, special | Acquire a path asset | 4 |
+          | Training, partner | Upgrade a companion asset | 3 |
+          | Training, exceptional partner | Upgrade a special companion asset | 4 |
+          | Vessel improvement | Upgrade a vehicle or module asset | 3 |
+          | Vessel, minor | Acquire a support vehicle asset | 4 |
+          | Vessel, major | Acquire a command vehicle asset | 5 |
+
+          If you are selling...
+
+            * A modest amount of provisions: [Sacrifice Resources](move:starforged/suffer/sacrifice_resources) (-2) and take +1 wealth
+            * Apparels, consumables, tools, or weapons: Discard it and take +1 wealth for every marked ability. If the asset is broken, take 1 wealth less (to a minimum of 1).
+            * A command vehicle or module: Discard it and take +2 wealth for every marked ability (to a maximum of 5). If the asset is broken, battered, or cursed, take 1 wealth less.
+        _source:
+          <<: *Source
+
+  taking_a_hiatus:
+    name: Taking A Hiatus Moves
+    type: move_category
+    color: '#8b4513'
+    _source:
+      <<: *Source
+    contents:
+      enter_downtime:
+        name: Enter Downtime
+        roll_type: no_roll
+        type: move
+        trigger:
+          text: When you have at least one active campaign clock that threatens a vow (formidable or greater) and you spend extended time in a place safe enough to recuperate, profit, and develop your legacy...
+        text: |-
+          __When you have at least one active campaign clock that threatens a vow (formidable or greater) and you spend extended time in a place safe enough to recuperate, profit, and develop your legacy__, determine the amount of time you are committing to the hiatus. Then, as appropriate to that time, set the rank of the profit progress track and a number of segments for the downtime's tension clock.
+
+            * Half a season: Dangerous rank / four segments
+            * A full season: Formidable rank / eight segments
+
+          When the downtime tension clock is full, you must [Depart To Quest](move:ancient_wonders/taking_a_hiatus/depart_to_quest).
+        _source:
+          <<: *Source
+
+      work_the_field:
+        name: Work The Field
+        roll_type: action_roll
+        type: move
+        trigger:
+          text: When you use your downtime to profit or acquire something of worth...
+          conditions:
+            - method: player_choice
+              text: Exerting physical grace or using your dexterity
+              roll_options:
+                - using: stat
+                  stat: edge
+            - method: player_choice
+              text: Working with people or using your charisma
+              roll_options:
+                - using: stat
+                  stat: heart
+            - method: player_choice
+              text: Exercising force or using your brawn
+              roll_options:
+                - using: stat
+                  stat: iron
+            - method: player_choice
+              text: Duping people or using your guile
+              roll_options:
+                - using: stat
+                  stat: shadow
+            - method: player_choice
+              text: Deciphering truths or using your intelligence
+              roll_options:
+                - using: stat
+                  stat: wits
+        text: |-
+          __When you use your downtime to profit or acquire something of worth__, envision the labor. If your work mainly consists of...
+
+            * Exerting physical grace or using your dexterity: Roll +edge
+            * Working with people or using your charisma: Roll +heart
+            * Exercising force or using your brawn: Roll +iron
+            * Duping people or using your guile: Roll +shadow
+            * Deciphering truths or using your intelligence: Roll +wits
+
+          On a __hit__, your work efficiency allows you to save for your adventures. Add +1 on your next move (not a progress move).
+
+          On a __strong hit__, mark progress. On a __strong hit with a match__, mark progress twice.
+
+          On a __weak hit__, mark progress and fill a clock segment. If you fill a profit progress track, you may set another and continue marking progress.
+
+          On a __miss__, you encounter setbacks during your routine and do not save; fill a clock segment. On a __miss with a match__, fill two segments instead.
+        outcomes:
+          strong_hit:
+            text: |-
+              On a __strong hit__, mark progress.
+          weak_hit:
+            text: |-
+              On a __weak hit__, mark progress and fill a clock segment.
+          miss:
+            text: |-
+              On a __miss__, you encounter setbacks during your routine and do not save; fill a clock segment. On a __miss with a match__, fill two segments instead.
+        _source:
+          <<: *Source
+
+      work_your_legacy:
+        name: Work Your Legacy
+        roll_type: action_roll
+        type: move
+        trigger:
+          text: When you leverage your downtime to develop your abilities, improve your resources, gain a reward, or boost your influence...
+          conditions:
+            - method: player_choice
+              text: Training for your quest
+              roll_options:
+                - using: stat
+                  stat: edge
+            - method: player_choice
+              text: Training for your quest
+              roll_options:
+                - using: stat
+                  stat: iron
+            - method: player_choice
+              text: Fostering your reputation for your bonds
+              roll_options:
+                - using: stat
+                  stat: heart
+            - method: player_choice
+              text: Fostering your reputation for your bonds
+              roll_options:
+                - using: stat
+                  stat: shadow
+            - method: player_choice
+              text: Researching lore for your discoveries
+              roll_options:
+                - using: stat
+                  stat: wits
+        text: |-
+          __When you leverage your downtime to develop your abilities, improve your resources, gain a reward, or boost your influence__, envision the challenges you overcome to acquire or improve assets for your campaign. If you focus on...
+
+            * Training for your quest: Roll +edge or +iron
+            * Fostering your reputation for your bonds: Roll +heart or +shadow
+            * Researching lore for your discoveries: Roll +wits
+
+          On a __strong hit__, mark one tick on the appropriate legacy track. On a __strong hit with a match__, mark two ticks instead.
+
+          On a __weak hit__, as above, mark progress and fill a clock segment.
+
+          On a __miss__, fill a clock segment. On a __miss with a match__, fill two segments instead.
+        outcomes:
+          strong_hit:
+            text: |-
+              On a __strong hit__, mark one tick on the appropriate legacy track. On a __strong hit with a match__, mark two ticks instead.
+          weak_hit:
+            text: |-
+              On a __weak hit__, as above, mark progress and fill a clock segment.
+          miss:
+            text: |-
+              On a __miss__, fill a clock segment. On a __miss with a match__, fill two segments instead.
+        _source:
+          <<: *Source
+
+      measure_profit:
+        name: Measure Profit
+        roll_type: progress_roll
+        type: move
+        tracks:
+          category: Profit
+        trigger:
+          text: When you take note of the fruits of your labor...
+          conditions:
+            - roll_options:
+                - using: progress_track
+        text: |-
+          __When you take note of the fruits of your labor__, roll the challenge dice and compare to your progress.
+
+          On a __hit__, envision and record a ledger item with a wealth value per the hiatus duration and hit result.
+
+          | Hiatus Duration | On a Strong Hit | On a Weak Hit |
+          |---|---|---|
+          | Half a season | 3 value | 2 value |
+          | A full season | 5 value | 3 value |
+
+          On a __strong hit with a match__, record an additional ledger item with a value equivalent to a weak hit.
+
+          On a __miss__, the result of your labors do not translate into anything of value, and you become aware of some unanticipated complication or realization. [Pay the Price](move:starforged/fate/pay_the_price).
+        outcomes:
+          strong_hit:
+            text: |-
+              On a __strong hit__, envision and record a ledger item with a wealth value per the hiatus duration and hit result.
+
+              | Hiatus Duration | On a Strong Hit |
+              |---|---|
+              | Half a season | 3 value |
+              | A full season | 5 value |
+          weak_hit:
+            text: |-
+              On a __weak hit__, envision and record a ledger item with a wealth value per the hiatus duration and hit result.
+
+              | Hiatus Duration | On a Weak Hit |
+              |---|---|
+              | Half a season | 2 value |
+              | A full season | 3 value |
+          miss:
+            text: |-
+              On a __miss__, the result of your labors do not translate into anything of value, and you become aware of some unanticipated complication or realization. [Pay the Price](move:starforged/fate/pay_the_price).
+        _source:
+          <<: *Source
+
+      depart_to_quest:
+        name: Depart To Quest
+        roll_type: no_roll
+        type: move
+        trigger:
+          text: When you prepare to take off to continue your adventures after taking downtime...
+        text: |-
+          __When you prepare to take off to continue your adventures after taking downtime__, fill segments in the campaign clocks per the hiatus duration.
+
+            * Half a season: Two segments
+            * A full season: Four segments
+
+          Then, do the following:
+
+            * Clear your misfortunes and any battered impacts.
+            * Set any condition meters to their max values.
+            * Set your momentum to its reset value.
+
+          Then, envision what each marked segment represents and how the world has changed during your absence. If you have progress in your profit progress track, [Measure Profit](move:ancient_wonders/taking_a_hiatus/measure_profit).
+        _source:
+          <<: *Source
+
+  failing_forward:
+    name: Failing Forward Moves
+    type: move_category
+    color: '#8b0000'
+    _source:
+      <<: *Source
+    description: |-
+      These moves, originally from Ironsworn: Delve, allow you to track and learn from your failures.
+    contents:
+      mark_your_failure:
+        name: Mark Your Failure
+        roll_type: no_roll
+        type: move
+        trigger:
+          text: When you make a move and score a miss...
+        text: |-
+          __When you make a move and score a miss__, you may mark progress on your failure track per the table below.
+
+          | Roll | Miss | Miss With a Match |
+          |------|------|-------------------|
+          | Action roll | One tick | Two ticks |
+          | Progress roll | Two ticks | One box |
+        _source:
+          <<: *Source
+          title: 'Ironsworn: Delve'
+          url: https://ironswornrpg.com
+          date: 2020-02-13
+          authors:
+            - name: Shawn Tomkin
+
+      learn_from_your_failures:
+        name: Learn From Your Failures
+        roll_type: progress_roll
+        type: move
+        tracks:
+          category: Failure
+        trigger:
+          text: When you spend time reflecting on your hardships and missteps, and your failure track is +6 or greater...
+          conditions:
+            - roll_options:
+                - using: progress_track
+        text: |-
+          __When you spend time reflecting on your hardships and missteps__, and your failure track is +6 or greater, roll your challenge dice and compare to your progress.
+
+          On a __strong hit__, you commit to a dramatic change. Mark one box on your quests legacy track, clear all progress on the failure track, and choose one.
+
+            * Change course: Discard a single asset, take 2 experience for each marked ability, and [Advance](move:ancient_wonders/reworking_your_legacy/advance) to spend this experience on new assets or upgrades. Unused experience is discarded.
+            * Make it right: [Swear an Iron Vow](move:starforged/quest/swear_an_iron_vow) and reroll any dice.
+            * Ready your next steps: Take +3 momentum.
+
+          On a __weak hit__, you learn from your mistakes. Mark two ticks on your quests legacy track and clear all progress on the failure track.
+
+          On a __miss__, you've learned the wrong lessons. Mark 1 tick on your quests legacy track and clear all progress on the failure track. Then, envision how you set off on an ill-fated path.
+        outcomes:
+          strong_hit:
+            text: |-
+              On a __strong hit__, you commit to a dramatic change. Mark one box on your quests legacy track, clear all progress on the failure track, and choose one.
+
+                * Change course: Discard a single asset, take 2 experience for each marked ability, and [Advance](move:ancient_wonders/reworking_your_legacy/advance) to spend this experience on new assets or upgrades. Unused experience is discarded.
+                * Make it right: [Swear an Iron Vow](move:starforged/quest/swear_an_iron_vow) and reroll any dice.
+                * Ready your next steps: Take +3 momentum.
+          weak_hit:
+            text: |-
+              On a __weak hit__, you learn from your mistakes. Mark two ticks on your quests legacy track and clear all progress on the failure track.
+          miss:
+            text: |-
+              On a __miss__, you've learned the wrong lessons. Mark 1 tick on your quests legacy track and clear all progress on the failure track. Then, envision how you set off on an ill-fated path.
+        _source:
+          <<: *Source
+          title: 'Ironsworn: Delve'
+          url: https://ironswornrpg.com
+          date: 2020-02-13
+          authors:
+            - name: Shawn Tomkin
+
+  reworking_your_legacy:
+    name: Reworking Your Legacy Moves
+    type: move_category
+    color: '#4b0082'
+    _source:
+      <<: *Source
+    description: |-
+      These moves modify the standard Starforged Legacy moves to work with the Ancient Wonders item system.
+    contents:
+      advance:
+        name: Advance
+        roll_type: no_roll
+        type: move
+        replaces:
+          - move:starforged/legacy/advance
+        trigger:
+          text: When you develop your abilities, improve your resources, gain a reward, or boost your influence...
+        text: |-
+          __When you develop your abilities, improve your resources, gain a reward, or boost your influence__, you may spend experience to add a new asset or upgrade one. Choose from the following categories as appropriate to your focus and opportunities.
+
+          | Asset Type | Cost to Acquire | Cost to Upgrade |
+          |------------|-----------------|-----------------|
+          | Vehicle, module, path, deed, or companion | 3 | 2 |
+          | Special companion | 4 | 3 |
+          | Item | 1 | 1 |
+        _source:
+          <<: *Source
+          title: 'Ironsworn: Starforged Rulebook'
+          url: https://ironswornrpg.com
+          date: 2022-05-06
+          authors:
+            - name: Shawn Tomkin
+
+      continue_a_legacy:
+        name: Continue a Legacy
+        roll_type: progress_roll
+        type: move
+        replaces:
+          - move:starforged/legacy/continue_a_legacy
+        tracks:
+          category: Legacy
+        trigger:
+          text: When you retire from your life as Ironsworn, or succumb to death or desolation...
+          conditions:
+            - text: Roll for Quests Legacy
+              roll_options:
+                - using: progress_track
+            - text: Roll for Bonds Legacy
+              roll_options:
+                - using: progress_track
+            - text: Roll for Discoveries Legacy
+              roll_options:
+                - using: progress_track
+        text: |-
+          __When you retire from your life as Ironsworn, or succumb to death or desolation__, you may create a new character in your established setting. If you do, roll the challenge dice and compare to each of the former character's legacy tracks: quests, bonds, and discoveries (one roll per track).
+
+          For each __strong hit__, choose one from below, or one from the weak hit or miss options.
+
+            * Follow their path: Take one path or companion asset (regular or special) from the former character (at no cost), including any marked abilities.
+            * Share a connection: Take one connection from the former character, including any accrued progress or bond benefits.
+            * Accept an inheritance: Take the former character's command vehicle and one module or support vehicle (at no cost), including any marked abilities.
+
+          For each __weak hit__, choose one from below, or one from the miss options.
+
+            * See it through: Choose one of the former character's unfinished quests, and [Swear an Iron Vow](move:starforged/quest/swear_an_iron_vow) (with an automatic strong hit) to see it done. You may immediately mark up to half their earned progress (round down) on this quest.
+            * Rebuild a connection: Name one of the former character's connections, and envision how time or circumstances have changed them in a dramatic way. When you [Make a Connection](move:starforged/connection/make_a_connection) with them, take an automatic strong hit and mark two ticks on your bonds legacy track.
+            * Explore familiar ground: Name a location that was meaningful to the former character. When you first visit that place, envision how it has changed or is endangered. Then, mark two ticks on your discoveries legacy track.
+
+          For each __miss__, choose one.
+
+            * Deal with the aftermath: Envision how one of your former character's foes has gained power or influence.
+            * Switch loyalties: Envision how you begin in opposition to your former character's beliefs, goals, or allegiances.
+            * Open Pandora's Box: Envision how an advancement or discovery has unleashed unexpectedly dire consequences.
+        outcomes:
+          strong_hit:
+            text: |-
+              For each __strong hit__, choose one from below, or one from the weak hit or miss options.
+
+                * Follow their path: Take one path or companion asset (regular or special) from the former character (at no cost), including any marked abilities.
+                * Share a connection: Take one connection from the former character, including any accrued progress or bond benefits.
+                * Accept an inheritance: Take the former character's command vehicle and one module or support vehicle (at no cost), including any marked abilities.
+          weak_hit:
+            text: |-
+              For each __weak hit__, choose one from below, or one from the miss options.
+
+                * See it through: Choose one of the former character's unfinished quests, and [Swear an Iron Vow](move:starforged/quest/swear_an_iron_vow) (with an automatic strong hit) to see it done. You may immediately mark up to half their earned progress (round down) on this quest.
+                * Rebuild a connection: Name one of the former character's connections, and envision how time or circumstances have changed them in a dramatic way. When you [Make a Connection](move:starforged/connection/make_a_connection) with them, take an automatic strong hit and mark two ticks on your bonds legacy track.
+                * Explore familiar ground: Name a location that was meaningful to the former character. When you first visit that place, envision how it has changed or is endangered. Then, mark two ticks on your discoveries legacy track.
+          miss:
+            text: |-
+              For each __miss__, choose one.
+
+                * Deal with the aftermath: Envision how one of your former character's foes has gained power or influence.
+                * Switch loyalties: Envision how you begin in opposition to your former character's beliefs, goals, or allegiances.
+                * Open Pandora's Box: Envision how an advancement or discovery has unleashed unexpectedly dire consequences.
+        _source:
+          <<: *Source
+          title: 'Ironsworn: Starforged Rulebook'
+          url: https://ironswornrpg.com
+          date: 2022-05-06
+          authors:
+            - name: Shawn Tomkin

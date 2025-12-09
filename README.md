@@ -42,6 +42,15 @@ JSON schemas and data are in the [datasworn](datasworn) directory.
 | [`@datasworn/ironsworn-classic-delve`](https://www.npmjs.com/package/@datasworn/ironsworn-classic-delve) | *Ironsworn: Delve* expansion data |
 | [`@datasworn/starforged`](https://www.npmjs.com/package/@datasworn/starforged) | *Ironsworn: Starforged* data, SVG icons, WEBP images |
 
+### Community Content (not published to npm)
+
+| Package | Description | Author |
+|---------|-------------|--------|
+| `sundered_isles` | *Starforged: Sundered Isles* expansion | Shawn Tomkin |
+| `starsmith` | Starsmith Expanded Oracles | [Eric Bright](https://playeveryrole.com/) |
+| `fe_runners` | Fe-Runners cyberpunk expansion | [Craig Smith](https://zombiecraig.itch.io/) |
+| `ancient_wonders` | Ancient Wonders expansion (oracles, assets, moves) | [Ludic Pen](https://www.ludicpen.com/) |
+
 ## Fork Status
 
 This fork continues active development while the original repository is inactive. Changes include:
@@ -52,6 +61,9 @@ This fork continues active development while the original repository is inactive
 | Security dependency updates | Applied |
 | TypeScript strict mode | Full compliance |
 | Starsmith Expanded Oracles | Added |
+| Fe-Runners (cyberpunk expansion) | Added |
+| Sundered Isles expansion | Added |
+| Ancient Wonders expansion | Added |
 | Rust/JTD type generation ([#78](https://github.com/rsek/datasworn/issues/78)) | Fixed |
 
 ### Upstream Compatibility
