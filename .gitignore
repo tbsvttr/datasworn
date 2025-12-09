@@ -22,3 +22,6 @@ haxesworn
 
 # Local PDFs (not for distribution)
 pdfs/
+
+# Viewer build output
+tools/viewer/dist/
