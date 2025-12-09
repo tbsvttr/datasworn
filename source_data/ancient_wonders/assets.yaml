@@ -1,0 +1,718 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+<<: &Source
+  date: 2024-01-01
+  title: 'Ancient Wonders'
+  url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+  license: https://creativecommons.org/licenses/by-nc-sa/4.0
+  authors:
+    - name: Ludic Pen
+assets:
+  special_companion:
+    name: Special Companion
+    type: asset_collection
+    _source:
+      <<: *Source
+    contents:
+      engineer_1:
+        name: "Engineer 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            With a couple of hours or more, the engineer may assemble a construct companion with 2 health and a role. If they do, Sacrifice Resources (-3). When a party member makes a move directly aided by the construct performing its role, add +its health. The construct can be healed with the Repair move (spend 1 point to give it +1 health). If the construct's health reaches 0, it is destroyed.
+      xenoarcheologist_2:
+        name: "Xenoarcheologist 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Swear an Iron Vow (formidable or greater) with the xenoarcheologist to recover alien knowledge or relics, you reroll any dice. When you Reach a Milestone in that quest, take +2 momentum. When you Fulfill Your Vow and score a hit, mark 1 tick on your discoveries legacy track. When they make a move to traverse, scavenge, or make camp in an alien site, add +1.
+        - text: |-
+            When the xenoarcheologist makes a move to research or study something precursor-related, you may reroll one challenge die. On a match, they piece together a revelation; envision it and mark 1 tick on your discoveries legacy track. When they make a move using their precursor knowledge, add +1 and take +1 momentum on a hit.
+        - text: |-
+            When the xenoarcheologist makes a move to assault, avoid, or outwit precursor technology, you may reroll any dice and take +3 momentum on a hit.
+      smuggler_2:
+        name: "Smuggler 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The smuggler is hunted by many factions. When they make a move, you may improve the result to a strong hit. If you do, fill one segment of a four-segment clock to represent hunters closing in. When the clock is filled, a notable foe or force has tracked the party down. If you overcome them or escape, reset the clock and take +3 momentum.
+        - text: |-
+            When you Swear an Iron Vow alongside the smuggler to transport and protect something or someone, add +2. When they Set a Course in space, choose one of their proposed paths (before rolling).
+            
+            <ul>
+            <li>The fastest: Count a weak hit as a
+            strong hit.</li>
+            <li>The safest: Count a miss as a weak hit.</li>
+            </ul>
+        - text: |-
+            When the smuggler makes a move by hiding, fleeing, lying, bluffing, stealing, or cheating, add +2 and take +1 momentum on a hit.
+      ace_pilot_2:
+        name: "Ace Pilot 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When the ace pilot makes a move by maneuvering a vehicle through an obstructed area, through a hazard, or out of harm's way, choose their approach and roll +integrity. If they Withstand Damage as an outcome of this action, add +1.
+            
+            * Reckless: Add +2 and Lose Momentum (-1).
+            
+            * Focused: Take +1 momentum on a hit.
+        - text: |-
+            When the ace pilot makes a move by making preparations for an expedition or by studying a chart, add +2 and take +1 momentum on a hit. Then, they may reroll any dice for the first leg of the journey as they Undertake an Expedition.
+        - text: |-
+            When the ace pilot makes a move to navigate in any environment, they may rely on their intuition. If they do, roll +their spirit and Lose Momentum (-1). When the ace pilot must Endure Stress while piloting, you may roll +integrity. If you do, take +1 momentum on a hit.
+      ace_pilot_1:
+        name: "Ace Pilot 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When the ace pilot Enter the Fray while piloting, choose (before rolling) if they do so aggressively (count a weak hit as a strong hit) or defensively (count a miss as a weak hit). Then, when they Gain Ground by maneuvering against a foe and score a strong hit, they may put themselves in a firing position by noting the action die value. If any party member Strike using the vehicle's weapons, preset the action die with that value. This persists until someone scores a miss.
+      commando_2:
+        name: "Commando 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Swear an Iron Vow alongside the commando to wage war or defend others in a time of war, you may reroll any dice. When the commando Enter the Fray, or when you Make a Connection by seeking out or making contact with someone in need of the commando's services, add +1 and take +1 momentum on a hit.
+        - text: |-
+            When the commando makes a move by shooting at a specific target, take +1 momentum on a hit. If they score a miss, the commando sets their sights on their quarry and marks it. The next time they make a move to shoot at the same target, you may reroll any dice and take +2 momentum on a hit.
+        - text: |-
+            When the commando makes a move by holding foes at bay, employing a bold counter-attack, or charging into close quarters, you may roll +their spirit, but Lose Momentum (-1).
+      psionicist_2:
+        name: "Psionicist 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The psionicist may remotely push, pull, lift, or constrict objects or beings that are their size or smaller. When they are in a charged situation and draw on their powers to make a move or change the outcome of an action, reroll any dice and Lose Momentum (-2).
+        - text: |-
+            The psionicist may remotely interact with devices. When they make a move drawing on this power, add +1 and take +2 momentum on a hit. If they make the move to make a device explode or cause damage to a machine, Endure Stress and add +2 to the initial move per each stress suffered.
+        - text: |-
+            The psionicist may play with someone's mind. When they Compel or make a move to create an illusion or cause mental harm, add +1 and take +2 momentum on a hit. On a miss, they may harden the cognitive link. If they do, Endure Stress (1 stress) and reroll any dice, but count a weak hit as a miss.
+      psionicist_1:
+        name: "Psionicist 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When any party member scores a strong hit with a match, the psionicist takes +1 potency. The psionicist may suffer -1 potency to make a single move for a great psychic feat, such as manipulating large objects, creating destructive bursts of concussive force, or dominating someone's mind or body. If they do, they take an automatic strong hit and you take +3 momentum. If the psionicist is in a fight or scene challenge, mark progress.
+      droid_1:
+        name: "Droid 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The droid has a module that allows them to modify the core of their being with specialized assistance. You may spend 2 experience or 3 wealth to change the stats of the droid. If you do, instead of using an array, redistribute the 9 points across the stats, with a resulting minimum of 0 and a maximum of 4 in each of them. When you do this, clear any impacts the droid has marked--misfortunes and lasting effects. Then, take +3 momentum.
+      smuggler_1:
+        name: "Smuggler 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Make a Connection to seek out a new contact in the underworld, the smuggler may assist. If they do, roll +their shadow and take +2 momentum on a hit. When a party member Sojourns and scores a strong hit, the smuggler secures a valuable cache of a precious item or resource. One time only, the smuggler may use this acquisition to gain an automatic strong hit on any move where resources are a factor. If they do, take +3 momentum.
+      xenoarcheologist_1:
+        name: "Xenoarcheologist 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            So much interaction with alien tech and phenomena caused a mutation in the xenoarcheologist. Roll their action die to reveal the affected stat (1=edge; 2=heart; 3=iron; 4=shadow; 5=wits; 6=all stats). Mark it. When the xenoarcheologist makes a move using the stat and leverages the mutation, improve a miss to a weak hit or a weak hit to a strong hit. Then, the xenoarcheologist makes a suffer move (-2) and roll again to reveal the next affected stat.
+      delegate_1:
+        name: "Delegate 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The delegate bears a renowned and prestigious title. When they make a move leveraging their position and score a weak hit or miss, they may claim the rights or treatment warranted by their title. If they do, reroll any dice and take +2 momentum on a hit, but count a weak hit as a miss, as this presumptuous act results in unintended complications.
+      specter_1:
+        name: "Specter 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The specter may instantly cloak their form in the shadowy veil of the void. When they are veiled and make a move to ambush, hide, or sneak, you may preset their action die to 5. In darkness, make it 6. On a miss, in addition to any other cost, they are revealed and can't veil themselves again until the current situation is resolved. When the specter makes a move to expand their veil, roll +their shadow. On a hit, the darkness extends to adjacent spaces.
+      droid_2:
+        name: "Droid 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The droid has the following stats:
+            Edge: 1 / Heart: 1 / Iron: 3 / Shadow: 2 / Wits: 2. The droid does not eat, drink, or breathe. They Endure Harm as normal, but restore health only when they Repair (spend 1 repair point to take +1 health and 2 points to clear the wounded impact).
+        - text: |-
+            When the droid makes a move to build, repair, study, manipulate a device, or question or convince a mechanical being, you may roll +their spirit and take +1 momentum on a hit.
+        - text: |-
+            The droid has mechanical fittings or modifications. Gain one path asset for them at no extra cost. Spend 1 experience or 2 wealth to upgrade this asset or swap it for another path asset with an equal number of upgrades. The droid may suffer the cost of a move by marking the installed asset as broken and spend 2 repair points to restore its function.
+      field_medic_1:
+        name: "Field Medic 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The field medic has one less maximum spirit as a consequence of renouncing their Hippocratic Oath, a medical ethos to do no harm. When they make a move by using their medical knowledge to inflict harm, you may reroll any dice and take +1 momentum on a hit. On a weak hit or miss, they may push their boundaries. If they do, reroll any dice again and count a weak hit as a strong hit, but they Endure Stress (-1) after resolving the move.
+      delegate_2:
+        name: "Delegate 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Swear an Iron Vow alongside the delegate in service to a faction or creed, add +1. Then, when you Reach a Milestone on this quest, take +2 momentum. When you Fulfill Your Vow on a diplomatic mission (formidable or greater), you may reroll one challenge die. On a strong hit with a match, mark 1 tick on your bonds legacy track.
+        - text: |-
+            When you Make a Connection or Sojourn alongside the delegate, they may influence your interaction with the potential connection or ensure a warm welcome in the community. If they do, reroll one challenge die. If you Sojourn this way and score a strong hit with a match, great kindness or respect is shown to the party; take +3 momentum or make an extra recovery move with an automatic strong hit.
+        - text: |-
+            When the delegate makes a move to defuse, reason, or negotiate, add +2 and take +3 momentum on a hit.
+      specter_2:
+        name: "Specter 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            Once per situation, when the specter makes a move to ambush or perform a feint, reroll any dice. If in a fight, mark progress on a hit. When they hold a foe at the point of their weapon and make a move aided by the prospect of violence, add +2.
+        - text: |-
+            When the specter makes a move with stealth, add +1. If they Strike by approaching the foe with cunning, roll +their shadow and choose one after rolling.
+            
+            <ul>
+            <li>Ensure injury: Add +1 and take +1 momentum on a hit.</li>
+            <li>Ensure pain: Mark progress on a hit.</li>
+            <ul>
+        - text: |-
+            When the specter Takes Decisive Action by striking a weak spot, you may reroll one challenge die. If you do, the foe's anguish strikes the specter back; the specter must Endure Stress (-1). If they then choose to resist it, roll +their shadow instead of +their spirit or +their heart.
+      commando_1:
+        name: "Commando 1"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Enter the Fray (formidable or greater) alongside the commando, they take +3 willpower. During combat, they may suffer -1 willpower in exchange for one.
+            
+            * They make a move by committing to a furious exchange of fire: Reroll one die, count a weak hit as a strong hit, and mark progress on a hit.
+            
+                    
+            * They shout an order or words of encouragement: Every party member takes +2 momentum or +1 spirit.
+      engineer_2:
+        name: "Engineer 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When the engineer makes a move to craft, optimize, repurpose, modify, fix, or hack a piece of equipment or technology, add +1 and take +2 momentum on a hit. On a weak hit, they may press their luck. If they do, reroll all dice and add +2 (instead of +1).
+        - text: |-
+            When the engineer Withstand Damage, add +1. On a miss, they may attempt to reroute power or reboot critical systems. If they do, first Lose Momentum (-2). Then, reroll all dice and add +their wits instead of +integrity.
+        - text: |-
+            When the engineer Gathers Information by studying a piece of technology or disassembling a machine or device, reroll any dice and take +1 momentum on a hit. When they make a move in combat by leveraging their engineering knowledge against a foe, envision how tey make use of this knowledge and add +1. On a strong hit with a match, mark progress.
+      field_medic_2:
+        name: "Field Medic 2"
+        type: asset
+        category: Special Companion
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When the field medic Heal themselves or another character, add +1. If they are...
+            <ul>
+            <li>Treating someone other than themselves: Either takes +1 spirit.</li>
+            <li>In a fight: Reroll one challenge die.</li>
+            </ul>
+        - text: |-
+            When you Make a Connection, you reroll one challenge die. If they roll a match, the field medic and the connection have a history.
+            <ul>
+            <li>On a strong hit with a match, the field medic once assisted them and is owed a favor. Mark 1 tick on your bonds legacy track, and Develop Your Relationship now.</li>
+            <li>On a miss with a match, they fought against each other, and hold a grudge.</li>
+            </ul>
+        - text: |-
+            When the field medic Secure an Advantage or Gain Ground by recurring to a lesson from their field experiences, add +1. If the experience is about providing care, add +2 instead. On a hit, take +2 momentum.
+  item_weapon:
+    name: Item - Weapon
+    type: asset_collection
+    _source:
+      <<: *Source
+    contents:
+      sunderer:
+        name: "Sunderer"
+        type: asset
+        category: Item - Weapon
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The sunderer is armed with 2 ammo. When you Strike or Clash with a missile attack against a slow or stationary target, add +2. Then, suffer -1 ammo. If you Resupply in a place where your missiles can be replenished, you may exchange any earned +supply for +ammo.
+        - text: |-
+            Smaller ammunition allows for increased capacity. The sunderer can be armed with up to 4 ammo. When you Resupply it, take +1 momentum on a hit.
+        - text: |-
+            When you Strike or Clash with a missile attack, mark progress on a hit.
+        - text: |-
+            The weapon fires balls of plasma. When you Strike or Clash firing it, mark two progress on a hit. If you Resupply in a place where your missiles can be replenished, you may instead exchange +2 supply for +1 ammo.
+      fragmentation_grenades:
+        name: "Fragmentation Grenades"
+        type: asset
+        category: Item - Weapon
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you make a move using a fragmentation grenade against an unarmored target or group of foes, add +2 and take +1 momentum on a hit. Then, suffer -1 ordnance.
+        - text: |-
+            When you make a combat move using a fragmentation grenade, suffer -1 ordnance and choose one (decide after rolling).
+            
+               <ul>
+               <li>Increased radius: Reroll one challenge die</li>
+               <li>Increased impact: Mark progress on a hit</li>
+               </ul>
+        - text: |-
+            Take both outcomes above.
+        - text: |-
+            Two fragmentation grenades may be fused together and thrown to cause a significantly destructive blast. If you Take Decisive Action by doing so, suffer -2 ordnance. Then, you may reroll any dice, but count a weak hit as a miss.
+      implosion_grenades:
+        name: "Implosion Grenades"
+        type: asset
+        category: Item - Weapon
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you make a move using an implosion grenade against a light target or group of foes, add +1 and take +2 momentum on a hit. Then, suffer -1 ordnance.
+        - text: |-
+            When you make a combat move using an implosion grenade, suffer -1 ordnance and choose one (decide after rolling).
+            
+               <ul>
+               <li>Increased radius: Reroll one challenge die)</li>
+               <li>Increased pull: Take +3 momentum)</li>
+               </ul>
+        - text: |-
+            Take both outcomes above.
+        - text: |-
+            Two implosion grenades may be fused together and thrown to create a short-lived, miniature black hole. If you Take Decisive Action by doing so, suffer -2 ordnances, take an automatic weak hit, roll twice on the move's table, and choose one result.
+      advanced_weapon:
+        name: "Advanced Weapon"
+        type: asset
+        category: Item - Weapon
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Strike or Clash against an unarmored or lightly armored foe using the advanced weapon, add +1.
+        - text: |-
+            Choose one of the following three abilities.
+        - text: |-
+            <ul><li>When you move to conceal the weapon or make a feint with it, you may preset your action die to 4.</li></ul>
+        - text: |-
+            <ul><li>When you Pay the Price by marking the weapon as broken, it instead continues to function; mark it as marred. If you Pay the Price yet again this way, the weapon breaks; mark it as broken.</li></ul>
+        - text: |-
+            <ul><li>When you make a move using the weapon with speed or endurance, take +2 momentum on a hit.</li></ul>
+        - text: |-
+            Choose an additional ability from above.
+      experimental_weapon:
+        name: "Experimental Weapon"
+        type: asset
+        category: Item - Weapon
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you make a combat move using the weapon, add +1 and take +1 momentum on a hit. When you score a miss as a result, Pay the Price by choosing one.
+            
+               <ul>
+               <li>Volatile: Endure Harm (1 harm)</li>
+               <li>Fragile: Mark the weapon as broken</li>
+               </ul>
+        - text: |-
+            When you make a move by using the weapon, you may reroll one challenge die.
+        - text: |-
+            When you score a miss on a combat move with the weapon, Pay the Price as normal.
+        - text: |-
+            When you make a combat move using the weapon, you may Lose Momentum (-3) to choose one (after rolling).
+            
+               <ul>
+               <li>Overcharged: Mark progress on a hit</li>
+               <li>Focused: Improve a miss to a weak hit, or a weak hit to a strong hit.</li>
+               </ul>
+  item_consumable:
+    name: Item - Consumable
+    type: asset_collection
+    _source:
+      <<: *Source
+    contents:
+      last_chance_bubble:
+        name: "Last-Chance Bubble"
+        type: asset
+        category: Item - Consumable
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you must Face Death by being exposed to a life-threatening situation (such as the vacuum of space, high-pressures underwater, or explosion), you may deploy the last-chance bubble. If you do, take an automatic strong hit. When deployed, the bubble is a non-reusable, non-pilotable, incidental vehicle of 3 integrity that forms around you. It provides a communications kit, enough oxygen for up to 24 hours, and cannot be repaired.
+        - text: |-
+            The last-chance bubble is pilotable, equipped with micro-rockets capable of limited flight or travel.
+        - text: |-
+            The last-chance bubble is reinforced with armor; it has 5 integrity instead of 3.
+      medicine:
+        name: "Medicine"
+        type: asset
+        category: Item - Consumable
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Heal using the medicine, add +2 and suffer -1 use.
+        - text: |-
+            When you Heal using the medicine and score a weak hit, its chemicals lessen the time needed to heal and any need to use additional supplies; make the cost -1 instead of -2.
+        - text: |-
+            If you are wounded and Heal using the medicine, smart chemicals detect the physical injury and act immediately to heal it; take an automatic strong hit, but take or give +1 health instead of +2.
+        - text: |-
+            The medicine remains effective for 24 hours after being consumed. When you Endure Harm during that time, add +1 and choose one after resolving the move.
+            
+              <ul>
+              <li>Take +2 momentum</li>
+              <li>Add +1 on your next move (not a progress move)</li>
+              </ul>
+      sedative:
+        name: "Sedative"
+        type: asset
+        category: Item - Consumable
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Hearten using the sedative, add +2 and suffer -1 use.
+        - text: |-
+            When you Hearten using the sedative, its chemicals specifically target and bind to the relevant receptors; you may reroll one challenge die.
+        - text: |-
+            If you are shaken and Hearten using the sedative, advanced chemicals detect the neurological impact and act immediately to clear it; take an automatic strong hit, but Lose Momentum (-1).
+        - text: |-
+            The sedative remains effective for 24 hours after being consumed. When you Endure Stress during that time, add +1 and choose one after resolving the move.
+            
+               <ul>
+               <li>Take +2 momentum</li>
+               <li>Add +1 on your next move (not a progress move)</li>
+               </ul>
+      stimulant:
+        name: "Stimulant"
+        type: asset
+        category: Item - Consumable
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you use a stimulant, suffer -1 use and roll on the table below to reveal your reaction. When you make a move while under the influence of the drug, it pushes your body and mind to function faster while burning the reserves of energy; you must add +1 and Lose Momentum (-2). You lose the stimulant's effect when your momentum is reduced to 0 or negative.
+            
+            <table>
+                <tr>
+                    <td>1-20</td>
+                    <td>Auditory hallucination</td>
+                </tr>
+                <tr>
+                    <td>21-40</td>
+                    <td>Gustatory hallucination</td>
+                </tr>
+                <tr>
+                    <td>41-60</td>
+                    <td>Olfactory hallucination</td>
+                </tr>
+                <tr>
+                    <td>61-80</td>
+                    <td>Tactile hallucination</td>
+                </tr>
+                <tr>
+                    <td>81-100</td>
+                    <td>Visual hallucination</td>
+                </tr>
+            </table>
+        - text: |-
+            You may instead add +2 and Lose Momentum (-3).
+        - text: |-
+            You may end the effect of the stimulant at any time.
+      advanced_power_cell:
+        name: "Advanced Power Cell"
+        type: asset
+        category: Item - Consumable
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            Your advanced power cell stores 4 energy. You may use it to provide a boost of power when making a move that would leverage the energy. If you do, add +1 and take +1 momentum on a hit. Then, suffer -1 energy.
+        - text: |-
+            Your advanced power cell stores 6 energy. When you make a move that would leverage its power, take +2 momentum on a hit instead.
+        - text: |-
+            When you make a move to leverage the energy of the advanced power cell, add +2 instead +1.
+        - text: |-
+            The advanced power cell doesn't run out of energy, but the combustion needed for such endless power makes the cell dangerously volatile and prone to spontaneous detonation if in close proximity to another energy source.
+  item_tool:
+    name: Item - Tool
+    type: asset_collection
+    _source:
+      <<: *Source
+    contents:
+      survival_tent:
+        name: "Survival Tent"
+        type: asset
+        category: Item - Tool
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Hunker Down by sheltering inside the survival tent, add +1.
+        - text: |-
+            The survival tent is reinforced and insulated enough to resist damage from inclement weather and other sources. It has 3 integrity to Withstand Damage as an incidental vehicle that you can Repair.
+        - text: |-
+            The tent has 4 integrity and is enhanced to automatically construct and deconstruct itself. When you Hunker Down by using it, take +1 momentum on a hit.
+        - text: |-
+            The tent is capable of providing prolonged stays in even the most hazardous and isolated environments. It has 5 integrity and a communications kit with advanced antenna technology. When you make a move using the comms, add +1 and take +1 momentum on a hit.
+      bioscanner:
+        name: "Bioscanner"
+        type: asset
+        category: Item - Tool
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The bioscanner contains various medical sensors to diagnose a vast number of maladies. When you Secure an Advantage to diagnose an injury or illness, preset your action die to 4.
+        - text: |-
+            When you Gather Information using the bioscanner to study a lifeform, dead or alive, add +1. If you Reach a Milestone this way, take +1 momentum.
+        - text: |-
+            The bioscanner holds a significant amount of data on how to treat any diagnosable malady. When you Heal with knowledge provided by this tool and score a weak hit, make the cost -1 less.
+        - text: |-
+            When activated, the bioscanner's automated system makes it function as a small construct that aids with the work at hand. When you make a move using this tool, you may reroll one challenge die.
+      shield_generator:
+        name: "Shield Generator"
+        type: asset
+        category: Item - Tool
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you raise your shield, roll +edge or +wits. On a strong hit, set your shield to 5. On a weak hit, make it 3. Then, if you Endure Harm, suffer that harm as -shield and any remaining as -health. Raised shields last for a few minutes. If reduced to 0, they cannot be raised again for an hour or so.
+        - text: |-
+            You may React Under Fire by letting your shield take the blow. If you do, roll +shield. Then, suffer -shield by the harm you would have suffered and ignore any remaining.
+        - text: |-
+            When you raise your shield, you may reroll one challenge die. When you Endure Harm with it, add +1.
+        - text: |-
+            When you Endure Harm, ignore harm up to the value of your shield and suffer -1 shield.
+      disrupter:
+        name: "Disrupter"
+        type: asset
+        category: Item - Tool
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The disrupter can store up to 3 energy. When you charge it, roll +wits. On a strong hit, take +3 energy. On a weak hit, take +2. When you fire the disrupter's tether to sabotage a device or vehicle, roll +energy. Then, suffer -1 energy.
+        - text: |-
+            When you charge the disrupter, you may reroll your action die. When you make a move using this tool, take +1 momentum on a hit.
+        - text: |-
+            When you make a move using the disrupter to snare a machine or object, consider if the tool is charged with enough energy to carry the weight of the object (heavy=3; medium=2; light=1). If it does, roll +energy. Then, suffer -energy as per the weight.
+        - text: |-
+            When you make a move to inflict harm with the disrupter, reroll your action die if its value is less than the energy +2.
+      shipbreaker:
+        name: "Shipbreaker"
+        type: asset
+        category: Item - Tool
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you make a move using the shipbreaker to cut through a barrier (such as a ship's hull, a vehicle's armor, or a wall), add +1. Then, you may Lose Momentum (-2) to reroll one challenge die.
+        - text: |-
+            The shipbreaker features aturbo. When you make a move using this tool, you may leverage its turbo after rolling. If you do, improve a miss to a weak hit, or a weak hit to a strong hit, but Endure Harm (-1).
+        - text: |-
+            The shipbreaker may detect valuable materials. When you Explore a Waypoint or Resupply using this tool and score a strong hit with a 6 on your action die, you find a highly valuable resource; take +1 momentum. Then, you may choose to continue to look for more. If you do, reroll your action die and one challenge die. Resolve the move as a new outcome.
+      bioprocessor:
+        name: "Bioprocessor"
+        type: asset
+        category: Item - Tool
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you feed the tool with unprocessed organic matter, Sacrifice Resources (-1) and roll +wits. On a strong hit, take +4 nutrition. On a weak hit, take +2. Then, when you Sacrifice Resources that are potable water or nutrition, you may instead suffer -ration for any portion of the cost.
+        - text: |-
+            When you Hearten consuming a created ration, add +1 and suffer -1 ration.
+        - text: |-
+            The bioprocessor can turn inedible organic samples into a consumable that enhances capabilities. When you feed the tool for this purpose, Sacrifice Resources (-3). Then, determine the stat to affect. On a hit, you have a single special ration. The character that consumes it may add +1 when making moves with the stat until they roll a 1 on their action die. On a strong hit, also take +1 momentum.
+  item_apparel:
+    name: Item - Apparel
+    type: asset_collection
+    _source:
+      <<: *Source
+    contents:
+      aquatic_suit:
+        name: "Aquatic Suit"
+        type: asset
+        category: Item - Apparel
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The aquatic suit has up to 3 oxygen. When you Pay the Price while using it, you may suffer -1 oxygen as the cost. When the aquatic suit is in a breathable atmosphere, it replenishes its oxygen; set it to its max.
+        - text: |-
+            The aquatic suit has up to 5 oxygen. You may Secure an Advantage to replenish it from an improvised oxygen source. On a strong, take +4 oxygen. On a weak hit, take +2.
+        - text: |-
+            When you make a move with quickness or agility, you may suffer -1 oxygen for the aquatic suit to generate a stream of gas to propel you and increase maneuverability. If you do, reroll any dice and take +1 momentum on a hit.
+        - text: |-
+            The aquatic suit does not run out of oxygen, but it cannot be used to increase maneuverability.
+      chameleon_suit:
+        name: "Chameleon Suit"
+        type: asset
+        category: Item - Apparel
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The suit is design to provide camouflage in a chosen environment. When you make a move leveraging the camouflage, you may preset your action die to 4.
+        - text: |-
+            The suit's material allows for faster movement. When you make a move leveraging the camouflage and using speed, take +1 momentum on a hit.
+        - text: |-
+            The chameleon suit's camouflage shift to match any environment.
+        - text: |-
+            You may use the suit to raise an invisibility cloak. If you do, roll +shadow or +wits. On a strong hit, set your cloak to 3. On a weak hit, make it 2. Then, when you make a move leveraging the invisibility, you may suffer -1 cloak to reroll any dice or -2 to take an automatic strong hit. The cloak can't be raised for 24 hours after depletion.
+      maneuvering_unit:
+        name: "Maneuvering Unit"
+        type: asset
+        category: Item - Apparel
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The maneuvering unit consists of a hardsuit, grapples, magnetic boots, and a thruster backpack. This equipment allows you to reduce or increase your experienced gravity by one, as referenced on the table at right. When you make a move in which your weight is a major factor and leverage your maneuvering unit, add +1.
+        - text: |-
+            You may increase or decrease your experienced gravity by two (instead of one).
+        - text: |-
+            The maneuvering unit is a belt that may increases or decrease up to three your experienced gravity. When you make a move in which weight is a major factor, and leverage the belt, take +1 momentum on a hit.
+      ergonomic_pack:
+        name: "Ergonomic Pack"
+        type: asset
+        category: Item - Apparel
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            The ergonomic pack carries up to 2 refill. When you gain +supply, you may convert it to +refill. If you do, determine the type of provision (such as survival, combat, medical, or mechanical). When you make a move +supply by leveraging the provision type, you may add +refill. When you Sacrifice Resources, you may instead suffer -refill for any portion of the cost.
+        - text: |-
+            Improved design ensures all contained items are easily retrievable. When you make a move by using its provisions, take +1 momentum on a hit.
+        - text: |-
+            The pack carries up to 3 refill. When you make a move to barter or negotiate and you have at least 1 refill, you may sweeten the deal. If you do, reroll any dice and add +refill. Then, suffer -1 refill.
+  item_anomaly:
+    name: Item - Anomaly
+    type: asset_collection
+    _source:
+      <<: *Source
+    contents:
+      splinter:
+        name: "Splinter"
+        type: asset
+        category: Item - Anomaly
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you make a move using the focus, decide before rolling if you are leveraging the splinter's power. If you do, envision how the splinter influences your action. Then, use its bonus. If you roll a 6 on your action die, the splinter vanishes; after resolving the move, discard it.
+        - text: |-
+            Bonus(es):
+        - text: |-
+            <ul><li>Major</li></ul>
+        - text: |-
+            <ul><li>Minor</li></ul>
+  path:
+    name: Path
+    type: asset_collection
+    _source:
+      <<: *Source
+    contents:
+      delver:
+        name: "Delver"
+        type: asset
+        category: Path
+        _source:
+          <<: *Source
+        abilities:
+        - enabled: true
+          text: |-
+            When you Undertake an Expedition or Establish a Haven in a ruin, add +1. When you @UUID[Compendium.ancient-wonders.ancientwondersmoves.Item.fvxIsI6u73hkrK6J]{Hunker Down} in these locations, you may choose two options on a hit instead of one. If the ruin is alien, take +1 momentum on a hit when making these moves.
+        - text: |-
+            When you Resupply in an abandoned ship or structure and score a hit, you leverage your practical experience scavenging these locations; take +1 supply and +1 momentum. When you Make a Discovery, you capitalize on your findings; mark one box on your discoveries legacy track instead of marking 2 ticks.
+        - text: |-
+            When you Swear an Iron Vow to hunt for a valuable item or lost artifact, reroll any dice. If the sought-after object is not human-made, take an automatic strong hit. When you Reach a Milestone on this quest, take +1 momentum.

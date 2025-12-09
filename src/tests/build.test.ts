@@ -135,6 +135,36 @@ describe('Output Data Validation', () => {
 		expect(Object.keys(data.oracles).length).toBeGreaterThan(0)
 	})
 
+	test('ancient_wonders.json is valid expansion for Starforged', () => {
+		const dataPath = path.join(ROOT, 'datasworn/ancient_wonders/ancient_wonders.json')
+		const data = JSON.parse(readFileSync(dataPath, 'utf-8'))
+
+		expect(data._id).toBe('ancient_wonders')
+		expect(data.type).toBe('expansion')
+		expect(data.ruleset).toBe('starforged')
+		// Ancient Wonders has moves, assets, and oracles
+		expect(data.moves).toBeDefined()
+		expect(data.assets).toBeDefined()
+		expect(data.oracles).toBeDefined()
+		expect(Object.keys(data.moves).length).toBeGreaterThan(0)
+		expect(Object.keys(data.assets).length).toBeGreaterThan(0)
+		expect(Object.keys(data.oracles).length).toBeGreaterThan(0)
+	})
+
+	test('ancient_wonders.json has substantial oracle content', () => {
+		const dataPath = path.join(ROOT, 'datasworn/ancient_wonders/ancient_wonders.json')
+		const data = JSON.parse(readFileSync(dataPath, 'utf-8'))
+
+		// Ancient Wonders has 10 oracle categories
+		const oracleCategories = Object.keys(data.oracles)
+		expect(oracleCategories.length).toBeGreaterThanOrEqual(9)
+
+		// Check that key categories exist
+		expect(oracleCategories).toContain('planets_expanded')
+		expect(oracleCategories).toContain('alien_megastructures')
+		expect(oracleCategories).toContain('splinters')
+	})
+
 	test('sundered_isles.json has incidental_vehicle collection with sailing_ship', () => {
 		const dataPath = path.join(ROOT, 'datasworn/sundered_isles/sundered_isles.json')
 		const data = JSON.parse(readFileSync(dataPath, 'utf-8'))
@@ -605,6 +635,36 @@ describe('ID Consistency', () => {
 		expect(oracleIds.length).toBeGreaterThan(0)
 		for (const oracleId of oracleIds) {
 			expect(oracleId).toContain(':fe_runners/')
+		}
+	})
+
+	test('all _id values in ancient_wonders.json contain expansion ID', () => {
+		const data = JSON.parse(
+			readFileSync(path.join(ROOT, 'datasworn/ancient_wonders/ancient_wonders.json'), 'utf-8')
+		)
+
+		expect(data._id).toBe('ancient_wonders')
+		expect(data.type).toBe('expansion')
+
+		// Check that move _ids contain the expansion ID
+		const moveIds = getAllIds(data.moves)
+		expect(moveIds.length).toBeGreaterThan(0)
+		for (const moveId of moveIds) {
+			expect(moveId).toContain(':ancient_wonders/')
+		}
+
+		// Check that asset _ids contain the expansion ID
+		const assetIds = getAllIds(data.assets)
+		expect(assetIds.length).toBeGreaterThan(0)
+		for (const assetId of assetIds) {
+			expect(assetId).toContain(':ancient_wonders/')
+		}
+
+		// Check that oracle _ids contain the expansion ID
+		const oracleIds = getAllIds(data.oracles)
+		expect(oracleIds.length).toBeGreaterThan(0)
+		for (const oracleId of oracleIds) {
+			expect(oracleId).toContain(':ancient_wonders/')
 		}
 	})
 })

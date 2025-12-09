@@ -165,3 +165,32 @@ export const FeRunners: RulesPackageConfig = {
 		],
 	},
 }
+
+export const AncientWonders: RulesPackageConfig = {
+	type: 'expansion',
+	paths: {
+		source: path.join(ROOT_SOURCE_DATA, 'ancient_wonders'),
+	},
+	id: 'ancient_wonders',
+	pkg: {
+		name: 'ancient-wonders',
+		private: true,
+		scope: PKG_SCOPE_COMMUNITY,
+		description:
+			'Datasworn JSON data for Ancient Wonders, a Starforged expansion by Ludic Pen.',
+		keywords: [
+			'ironsworn',
+			'datasworn',
+			'TTRPG',
+			'starforged',
+			'ancient-wonders',
+		],
+		authors: [
+			{
+				name: 'Ludic Pen',
+				email: 'noreply@ludicpen.com',
+				url: 'https://www.ludicpen.com/',
+			},
+		],
+	},
+}
