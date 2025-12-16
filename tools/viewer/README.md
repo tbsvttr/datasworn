@@ -2,6 +2,8 @@
 
 A lightweight browser-based viewer for exploring Datasworn JSON data.
 
+**[View Online →](https://tbsvttr.github.io/datasworn/)**
+
 ## Features
 
 - Tree navigation for all content types (moves, assets, oracles, NPCs, truths, atlas)

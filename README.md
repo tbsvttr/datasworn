@@ -128,6 +128,10 @@ bun install
 | `bun run check` | TypeScript type check | - |
 | `bun run viewer` | Launch interactive data viewer | - |
 
+### Online Viewer
+
+Browse the data online at **[tbsvttr.github.io/datasworn](https://tbsvttr.github.io/datasworn/)**
+
 If you don't need multi-language type definitions (C#, Go, Java, Python, Ruby, Rust), you can skip `jtd-codegen` and run individual build commands instead of `bun run build`.
 
 The test suite includes Rust integration tests that verify the generated types can deserialize all JSON data. These tests are automatically skipped if `cargo` is not installed.
