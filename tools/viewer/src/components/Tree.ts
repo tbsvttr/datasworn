@@ -1,4 +1,5 @@
 import { state } from '../state'
+import type { RulesPackage } from '../utils/loader'
 
 interface TreeNodeData {
 	key: string
@@ -100,18 +101,31 @@ function expandAndSelectPath(container: HTMLElement, path: string[]): void {
 	}
 }
 
-function buildTreeNodes(data: Record<string, unknown>): TreeNodeData[] {
+function buildTreeNodes(data: RulesPackage): TreeNodeData[] {
 	const nodes: TreeNodeData[] = []
+
+	// Access RulesPackage properties - cast needed for iteration
+	const categories: [string, unknown][] = [
+		['moves', data.moves],
+		['assets', data.assets],
+		['oracles', data.oracles],
+		['rules', data.rules],
+		['truths', data.truths],
+		['atlas', data.atlas],
+		['npcs', data.npcs]
+	]
 
 	// Add categories in order
 	for (const key of CATEGORY_ORDER) {
-		if (data[key] && typeof data[key] === 'object') {
+		const entry = categories.find(([k]) => k === key)
+		const value = entry?.[1]
+		if (value && typeof value === 'object') {
 			nodes.push({
 				key,
 				label: formatLabel(key),
 				type: key,
-				value: data[key],
-				children: buildChildNodes(data[key] as Record<string, unknown>)
+				value,
+				children: buildChildNodes(value as Record<string, unknown>)
 			})
 		}
 	}
