@@ -1,0 +1,11 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+<<: &Source
+  date: 2024-01-01
+  title: 'Ancient Wonders'
+  url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+  license: https://creativecommons.org/licenses/by-nc-sa/4.0
+  authors:
+    - name: Ludic Pen

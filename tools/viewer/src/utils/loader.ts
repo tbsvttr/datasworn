@@ -9,7 +9,8 @@ const RULESETS = [
 	'starforged',
 	'sundered_isles',
 	'starsmith',
-	'fe_runners'
+	'fe_runners',
+	'ancient_wonders'
 ]
 
 export async function loadRuleset(id: string): Promise<Datasworn.RulesPackage> {

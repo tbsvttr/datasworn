@@ -25,10 +25,3 @@ pdfs/
 
 # Viewer build output
 tools/viewer/dist/
-
-# Private content (licensing restrictions)
-source_data/ancient_wonders/
-datasworn/ancient_wonders/
-pkg/nodejs/@datasworn-community-content/ancient-wonders/
-src/scripts/converters/ancient-wonders/
-src/migration/history/*/ancient_wonders/
