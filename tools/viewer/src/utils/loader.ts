@@ -14,7 +14,8 @@ const RULESETS = [
 ]
 
 export async function loadRuleset(id: string): Promise<Datasworn.RulesPackage> {
-	const response = await fetch(`/datasworn/${id}/${id}.json`)
+	const base = import.meta.env.BASE_URL
+	const response = await fetch(`${base}datasworn/${id}/${id}.json`)
 	if (!response.ok) {
 		throw new Error(`Failed to load ruleset: ${id}`)
 	}
