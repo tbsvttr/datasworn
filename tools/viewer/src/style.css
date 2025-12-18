@@ -977,3 +977,105 @@ html, body {
 		transform: scale(1);
 	}
 }
+
+/* Odds picker (Ask the Oracle) */
+.oracle-odds-picker {
+	margin: 16px 0;
+	padding: 20px;
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+}
+
+.oracle-odds-label {
+	font-size: 13px;
+	color: var(--text-secondary);
+	margin-bottom: 12px;
+}
+
+.oracle-odds-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+.odds-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 12px 16px;
+	background: var(--bg-secondary);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.15s;
+	min-width: 100px;
+}
+
+.odds-button:hover {
+	background: var(--bg-tertiary);
+	border-color: var(--accent);
+}
+
+.odds-button.selected {
+	background: var(--bg-tertiary);
+	border-color: var(--accent);
+	box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.3);
+}
+
+.odds-name {
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--text-primary);
+	margin-bottom: 4px;
+}
+
+.odds-threshold {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--accent);
+	font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+
+.oracle-odds-result {
+	display: none;
+	padding: 14px 18px;
+	background: var(--bg-tertiary);
+	border: 1px solid var(--accent);
+	border-radius: 8px;
+	font-size: 15px;
+	animation: fadeIn 0.2s ease-out;
+}
+
+.oracle-odds-result.show {
+	display: block;
+}
+
+.oracle-odds-result strong {
+	color: var(--accent);
+}
+
+.odds-answer {
+	font-weight: 700;
+	padding: 2px 8px;
+	border-radius: 4px;
+}
+
+.odds-answer.odds-yes {
+	background: var(--strong-hit);
+	color: #052e16;
+}
+
+.odds-answer.odds-no {
+	background: var(--miss);
+	color: #450a0a;
+}
+
+.odds-match {
+	display: block;
+	margin-top: 8px;
+	font-size: 13px;
+	color: var(--weak-hit);
+	font-style: italic;
+}

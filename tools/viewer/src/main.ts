@@ -7,6 +7,7 @@ declare global {
 	interface Window {
 		rollOracle: (tableId: string, dice: string) => void
 		rollOracleColumns: (tableId: string) => void
+		rollOdds: (button: HTMLButtonElement) => void
 	}
 }
 
@@ -74,6 +75,44 @@ window.rollOracleColumns = (tableId: string) => {
 		resultDiv.innerHTML = `<strong>Rolled ${roll}</strong>`
 		resultDiv.classList.add('show')
 	}
+}
+
+// Global roll function for odds-based oracles (Ask the Oracle)
+window.rollOdds = (button: HTMLButtonElement) => {
+	const rowsData = button.getAttribute('data-rows')
+	if (!rowsData) return
+
+	const rows = JSON.parse(rowsData) as Array<{ roll?: { min: number; max: number }; text?: string }>
+	const roll = rollDice('1d100')
+
+	// Find matching result
+	let resultText = 'No result'
+	for (const row of rows) {
+		if (row.roll && roll >= row.roll.min && roll <= row.roll.max) {
+			resultText = row.text || 'No result'
+			break
+		}
+	}
+
+	// Check for match (doubles like 11, 22, 33, etc.)
+	const isMatch = roll >= 11 && roll <= 99 && roll % 11 === 0
+
+	// Update result display
+	const resultDiv = document.getElementById('odds-result')
+	if (resultDiv) {
+		const oddsName = button.querySelector('.odds-name')?.textContent || ''
+		let html = `<strong>Rolled ${roll}</strong> (${oddsName}): <span class="odds-answer odds-${resultText.toLowerCase()}">${resultText}</span>`
+		if (isMatch) {
+			html += ` <span class="odds-match">Match! An extreme result or twist has occurred.</span>`
+		}
+		resultDiv.innerHTML = html
+		resultDiv.classList.add('show')
+	}
+
+	// Highlight the clicked button
+	const allButtons = document.querySelectorAll('.odds-button')
+	allButtons.forEach((b) => b.classList.remove('selected'))
+	button.classList.add('selected')
 }
 
 async function init() {

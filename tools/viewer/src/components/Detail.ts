@@ -233,57 +233,43 @@ function renderOracleColumns(oracles: Record<string, Record<string, unknown>>): 
 	const oracleEntries = Object.entries(oracles)
 	if (oracleEntries.length === 0) return ''
 
-	const tableId = `oracle-${Math.random().toString(36).slice(2)}`
+	// For Ask the Oracle style tables, render as clickable odds buttons
+	// Each oracle represents a different odds category with its own threshold
+	let html = `</p><div class="oracle-odds-picker">`
+	html += `<div class="oracle-odds-label">Choose your odds and roll:</div>`
+	html += `<div class="oracle-odds-buttons">`
 
-	// Build a multi-column table where each oracle is a column
-	let html = `</p><div class="embedded-oracle-table oracle-columns">`
-	html += `<button class="roll-button" onclick="window.rollOracleColumns('${tableId}')">Roll d100</button>`
-	html += `<div class="roll-result" id="${tableId}-result"></div>`
-	html += `<table id="${tableId}"><thead><tr><th class="roll-col">Roll</th>`
+	for (const [key, oracle] of oracleEntries) {
+		const name = oracle.name as string || key
+		const rows = oracle.rows as Array<Record<string, unknown>> | undefined
+		const tableId = `oracle-${Math.random().toString(36).slice(2)}`
 
-	// Add column headers for each oracle
-	for (const [, oracle] of oracleEntries) {
-		const name = oracle.name as string || 'Result'
-		html += `<th>${escapeHtml(name)}</th>`
-	}
-	html += `</tr></thead><tbody>`
-
-	// Find the maximum number of rows across all oracles
-	const maxRows = Math.max(...oracleEntries.map(([, o]) => {
-		const rows = o.rows as Array<Record<string, unknown>> | undefined
-		return rows?.length || 0
-	}))
-
-	// Build rows with data attributes for roll ranges
-	for (let i = 0; i < maxRows; i++) {
-		const firstOracle = oracleEntries[0][1]
-		const firstRows = firstOracle.rows as Array<Record<string, unknown>> | undefined
-		const firstRow = firstRows?.[i]
-		const roll = firstRow?.roll as Record<string, number> | undefined
-
-		let rollStr = ''
-		let minRoll = 0
-		let maxRoll = 0
-		if (roll) {
-			minRoll = roll.min
-			maxRoll = roll.max
-			rollStr = roll.min === roll.max ? `${roll.min}` : `${roll.min}–${roll.max}`
-		}
-		html += `<tr data-min="${minRoll}" data-max="${maxRoll}">`
-		html += `<td class="roll-cell">${rollStr}</td>`
-
-		// Add cell for each oracle
-		for (const [, oracle] of oracleEntries) {
-			const rows = oracle.rows as Array<Record<string, unknown>> | undefined
-			const row = rows?.[i]
-			const text = row?.text as string || ''
-			html += `<td>${escapeHtml(text)}</td>`
+		// Find the "Yes" threshold (the row where text is "Yes")
+		let yesThreshold = 0
+		if (rows) {
+			for (const row of rows) {
+				const text = (row.text as string || '').toLowerCase()
+				if (text === 'yes') {
+					const roll = row.roll as Record<string, number> | undefined
+					if (roll) {
+						yesThreshold = roll.min
+					}
+				}
+			}
 		}
 
-		html += `</tr>`
+		// Build data attributes for the roll function
+		const rowsJson = JSON.stringify(rows || []).replace(/"/g, '&quot;')
+
+		html += `<button class="odds-button" data-table-id="${tableId}" data-rows='${rowsJson}' onclick="window.rollOdds(this)">`
+		html += `<span class="odds-name">${escapeHtml(name)}</span>`
+		html += `<span class="odds-threshold">${yesThreshold}+</span>`
+		html += `</button>`
 	}
 
-	html += `</tbody></table></div><p>`
+	html += `</div>`
+	html += `<div class="oracle-odds-result" id="odds-result"></div>`
+	html += `</div><p>`
 	return html
 }
 
