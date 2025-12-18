@@ -203,7 +203,7 @@ function renderMarkdownWithOracles(text: string, oracles?: Record<string, unknow
 	if (!text) return ''
 
 	// Replace {{table>...}} templates with actual oracle tables
-	const processed = text.replace(/\{\{table>([^}]+)\}\}/g, (_, ref) => {
+	let processed = text.replace(/\{\{table>([^}]+)\}\}/g, (_, ref) => {
 		// ref is like "move.oracle_rollable:classic/suffer/endure_harm.endure_harm"
 		// Extract the oracle key (last segment after the last dot)
 		const oracleKey = ref.split('.').pop()
@@ -216,7 +216,67 @@ function renderMarkdownWithOracles(text: string, oracles?: Record<string, unknow
 		return `<em>[Oracle table: ${ref}]</em>`
 	})
 
+	// Replace {{table_columns>...}} templates with multi-column oracle tables
+	processed = processed.replace(/\{\{table_columns>([^}]+)\}\}/g, (_, ref) => {
+		// ref is like "move:classic/fate/ask_the_oracle"
+		// This means we should render all embedded oracles from this move as columns
+		if (oracles && Object.keys(oracles).length > 0) {
+			return renderOracleColumns(oracles as Record<string, Record<string, unknown>>)
+		}
+		return `<em>[Oracle columns: ${ref}]</em>`
+	})
+
 	return renderMarkdown(processed)
+}
+
+function renderOracleColumns(oracles: Record<string, Record<string, unknown>>): string {
+	const oracleEntries = Object.entries(oracles)
+	if (oracleEntries.length === 0) return ''
+
+	// Build a multi-column table where each oracle is a column
+	let html = `</p><div class="embedded-oracle-table oracle-columns"><table><thead><tr><th class="roll-col">Roll</th>`
+
+	// Add column headers for each oracle
+	for (const [, oracle] of oracleEntries) {
+		const name = oracle.name as string || 'Result'
+		html += `<th>${escapeHtml(name)}</th>`
+	}
+	html += `</tr></thead><tbody>`
+
+	// Find the maximum number of rows across all oracles
+	const maxRows = Math.max(...oracleEntries.map(([, o]) => {
+		const rows = o.rows as Array<Record<string, unknown>> | undefined
+		return rows?.length || 0
+	}))
+
+	// Build rows
+	for (let i = 0; i < maxRows; i++) {
+		html += `<tr>`
+
+		// Use the first oracle's roll range for the roll column
+		const firstOracle = oracleEntries[0][1]
+		const firstRows = firstOracle.rows as Array<Record<string, unknown>> | undefined
+		const firstRow = firstRows?.[i]
+		const roll = firstRow?.roll as Record<string, number> | undefined
+		let rollStr = ''
+		if (roll) {
+			rollStr = roll.min === roll.max ? `${roll.min}` : `${roll.min}–${roll.max}`
+		}
+		html += `<td class="roll-cell">${rollStr}</td>`
+
+		// Add cell for each oracle
+		for (const [, oracle] of oracleEntries) {
+			const rows = oracle.rows as Array<Record<string, unknown>> | undefined
+			const row = rows?.[i]
+			const text = row?.text as string || ''
+			html += `<td>${escapeHtml(text)}</td>`
+		}
+
+		html += `</tr>`
+	}
+
+	html += `</tbody></table></div><p>`
+	return html
 }
 
 function renderEmbeddedOracle(oracle: Record<string, unknown>): string {
