@@ -426,7 +426,7 @@ function renderNpc(npc: Datasworn.Npc): string {
 	if (npc.features && npc.features.length > 0) {
 		html += `<div class="npc-section"><div class="npc-section-title">Features</div><ul class="npc-list">`
 		for (const f of npc.features) {
-			html += `<li>${escapeHtml(f)}</li>`
+			html += `<li>${renderMarkdown(f)}</li>`
 		}
 		html += `</ul></div>`
 	}
@@ -435,7 +435,7 @@ function renderNpc(npc: Datasworn.Npc): string {
 	if (npc.drives && npc.drives.length > 0) {
 		html += `<div class="npc-section"><div class="npc-section-title">Drives</div><ul class="npc-list">`
 		for (const d of npc.drives) {
-			html += `<li>${escapeHtml(d)}</li>`
+			html += `<li>${renderMarkdown(d)}</li>`
 		}
 		html += `</ul></div>`
 	}
@@ -444,7 +444,7 @@ function renderNpc(npc: Datasworn.Npc): string {
 	if (npc.tactics && npc.tactics.length > 0) {
 		html += `<div class="npc-section"><div class="npc-section-title">Tactics</div><ul class="npc-list">`
 		for (const t of npc.tactics) {
-			html += `<li>${escapeHtml(t)}</li>`
+			html += `<li>${renderMarkdown(t)}</li>`
 		}
 		html += `</ul></div>`
 	}
@@ -480,7 +480,7 @@ function renderAtlasEntry(entry: Datasworn.AtlasEntry): string {
 	if (entry.features && entry.features.length > 0) {
 		html += `<div class="atlas-section"><div class="atlas-section-title">Features</div><ul class="atlas-list">`
 		for (const f of entry.features) {
-			html += `<li>${escapeHtml(f)}</li>`
+			html += `<li>${renderMarkdown(f)}</li>`
 		}
 		html += `</ul></div>`
 	}
