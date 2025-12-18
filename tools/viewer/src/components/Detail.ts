@@ -233,8 +233,13 @@ function renderOracleColumns(oracles: Record<string, Record<string, unknown>>): 
 	const oracleEntries = Object.entries(oracles)
 	if (oracleEntries.length === 0) return ''
 
+	const tableId = `oracle-${Math.random().toString(36).slice(2)}`
+
 	// Build a multi-column table where each oracle is a column
-	let html = `</p><div class="embedded-oracle-table oracle-columns"><table><thead><tr><th class="roll-col">Roll</th>`
+	let html = `</p><div class="embedded-oracle-table oracle-columns">`
+	html += `<button class="roll-button" onclick="window.rollOracleColumns('${tableId}')">Roll d100</button>`
+	html += `<div class="roll-result" id="${tableId}-result"></div>`
+	html += `<table id="${tableId}"><thead><tr><th class="roll-col">Roll</th>`
 
 	// Add column headers for each oracle
 	for (const [, oracle] of oracleEntries) {
@@ -249,19 +254,22 @@ function renderOracleColumns(oracles: Record<string, Record<string, unknown>>): 
 		return rows?.length || 0
 	}))
 
-	// Build rows
+	// Build rows with data attributes for roll ranges
 	for (let i = 0; i < maxRows; i++) {
-		html += `<tr>`
-
-		// Use the first oracle's roll range for the roll column
 		const firstOracle = oracleEntries[0][1]
 		const firstRows = firstOracle.rows as Array<Record<string, unknown>> | undefined
 		const firstRow = firstRows?.[i]
 		const roll = firstRow?.roll as Record<string, number> | undefined
+
 		let rollStr = ''
+		let minRoll = 0
+		let maxRoll = 0
 		if (roll) {
+			minRoll = roll.min
+			maxRoll = roll.max
 			rollStr = roll.min === roll.max ? `${roll.min}` : `${roll.min}–${roll.max}`
 		}
+		html += `<tr data-min="${minRoll}" data-max="${maxRoll}">`
 		html += `<td class="roll-cell">${rollStr}</td>`
 
 		// Add cell for each oracle
@@ -283,21 +291,31 @@ function renderEmbeddedOracle(oracle: Record<string, unknown>): string {
 	const rows = oracle.rows as Array<Record<string, unknown>> | undefined
 	if (!rows || rows.length === 0) return ''
 
-	let html = `</p><div class="embedded-oracle-table"><table><thead><tr><th class="roll-col">Roll</th><th>Result</th></tr></thead><tbody>`
+	const tableId = `oracle-${Math.random().toString(36).slice(2)}`
+	const dice = oracle.dice as string || '1d100'
+
+	let html = `</p><div class="embedded-oracle-table">`
+	html += `<button class="roll-button" onclick="window.rollOracle('${tableId}', '${dice}')">Roll ${dice}</button>`
+	html += `<div class="roll-result" id="${tableId}-result"></div>`
+	html += `<table id="${tableId}"><thead><tr><th class="roll-col">Roll</th><th>Result</th></tr></thead><tbody>`
 
 	for (const row of rows) {
 		const roll = row.roll as Record<string, number> | undefined
 		const text = row.text as string
 
 		let rollStr = ''
+		let minRoll = 0
+		let maxRoll = 0
 		if (roll) {
+			minRoll = roll.min
+			maxRoll = roll.max
 			rollStr = roll.min === roll.max ? `${roll.min}` : `${roll.min}–${roll.max}`
 		}
 
 		// Render text as markdown for links
 		const renderedText = text ? renderMarkdown(text) : ''
 
-		html += `<tr><td class="roll-cell">${rollStr}</td><td>${renderedText}</td></tr>`
+		html += `<tr data-min="${minRoll}" data-max="${maxRoll}"><td class="roll-cell">${rollStr}</td><td>${renderedText}</td></tr>`
 	}
 
 	html += `</tbody></table></div><p>`
@@ -377,25 +395,30 @@ function renderOracle(oracle: Datasworn.OracleRollable): string {
 		html += `<div class="oracle-summary">${renderMarkdown(summary)}</div>`
 	}
 
-	// Dice info
-	if (oracle.dice) {
-		html += `<div class="dice-badge">${oracle.dice}</div>`
-	}
-
 	// Rows (table)
 	if (oracle.rows && oracle.rows.length > 0) {
-		html += `<div class="oracle-table"><table><thead><tr><th class="roll-col">Roll</th><th>Result</th></tr></thead><tbody>`
+		const tableId = `oracle-${Math.random().toString(36).slice(2)}`
+		const dice = oracle.dice || '1d100'
+
+		html += `<div class="oracle-table">`
+		html += `<button class="roll-button" onclick="window.rollOracle('${tableId}', '${dice}')">Roll ${dice}</button>`
+		html += `<div class="roll-result" id="${tableId}-result"></div>`
+		html += `<table id="${tableId}"><thead><tr><th class="roll-col">Roll</th><th>Result</th></tr></thead><tbody>`
 
 		for (const row of oracle.rows) {
 			let rollStr = ''
+			let minRoll = 0
+			let maxRoll = 0
 			if (row.roll) {
+				minRoll = row.roll.min
+				maxRoll = row.roll.max
 				rollStr = row.roll.min === row.roll.max ? `${row.roll.min}` : `${row.roll.min}–${row.roll.max}`
 			}
 
 			const text = 'text' in row ? row.text : undefined
 			const text2 = 'text2' in row ? (row as { text2?: string }).text2 : undefined
 
-			html += `<tr><td class="roll-cell">${rollStr}</td><td>${text ? renderMarkdown(text) : ''}${text2 ? `<div class="oracle-text2">${renderMarkdown(text2)}</div>` : ''}</td></tr>`
+			html += `<tr data-min="${minRoll}" data-max="${maxRoll}"><td class="roll-cell">${rollStr}</td><td>${text ? renderMarkdown(text) : ''}${text2 ? `<div class="oracle-text2">${renderMarkdown(text2)}</div>` : ''}</td></tr>`
 		}
 
 		html += `</tbody></table></div>`
