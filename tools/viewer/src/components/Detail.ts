@@ -245,14 +245,23 @@ function renderOracleColumns(oracles: Record<string, Record<string, unknown>>): 
 		const tableId = `oracle-${Math.random().toString(36).slice(2)}`
 
 		// Find the "Yes" threshold (the row where text is "Yes")
-		let yesThreshold = 0
+		// In Starforged, "Yes" is for low rolls (1-X), so we show the max
+		// In Classic, "Yes" is for high rolls (X-100), so we show the min
+		let thresholdDisplay = ''
 		if (rows) {
 			for (const row of rows) {
 				const text = (row.text as string || '').toLowerCase()
 				if (text === 'yes') {
 					const roll = row.roll as Record<string, number> | undefined
 					if (roll) {
-						yesThreshold = roll.min
+						// Check if "Yes" is low roll (min=1) or high roll (max=100)
+						if (roll.min === 1) {
+							// Starforged style: Yes on 1-X
+							thresholdDisplay = `≤${roll.max}`
+						} else {
+							// Classic style: Yes on X-100
+							thresholdDisplay = `${roll.min}+`
+						}
 					}
 				}
 			}
@@ -263,7 +272,7 @@ function renderOracleColumns(oracles: Record<string, Record<string, unknown>>): 
 
 		html += `<button class="odds-button" data-table-id="${tableId}" data-rows='${rowsJson}' onclick="window.rollOdds(this)">`
 		html += `<span class="odds-name">${escapeHtml(name)}</span>`
-		html += `<span class="odds-threshold">${yesThreshold}+</span>`
+		html += `<span class="odds-threshold">${thresholdDisplay}</span>`
 		html += `</button>`
 	}
 
