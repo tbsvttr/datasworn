@@ -4,7 +4,7 @@
 
 import { state } from '../state'
 import { escapeHtml, generateId } from '../utils/html'
-import { formatType } from '../utils/formatting'
+import { formatType, formatLabel } from '../utils/formatting'
 import {
 	isMove,
 	isAsset,
@@ -30,9 +30,11 @@ export function createDetailPanel(container: HTMLElement): void {
 	panel.className = 'detail-panel'
 	container.appendChild(panel)
 
-	// Handle clicks on datasworn links
+	// Handle clicks on datasworn links and breadcrumbs
 	panel.addEventListener('click', (e) => {
 		const target = e.target as HTMLElement
+
+		// Handle datasworn: links
 		if (target.tagName === 'A') {
 			const href = target.getAttribute('href')
 			if (href?.startsWith('datasworn:')) {
@@ -42,6 +44,16 @@ export function createDetailPanel(container: HTMLElement): void {
 				if (!found) {
 					console.warn('Could not find item:', id)
 				}
+			}
+		}
+
+		// Handle breadcrumb clicks
+		const breadcrumb = target.closest('.breadcrumb-item') as HTMLElement | null
+		if (breadcrumb) {
+			const pathData = breadcrumb.dataset.path
+			if (pathData) {
+				const path = JSON.parse(pathData) as string[]
+				navigateToPath(path)
 			}
 		}
 	})
@@ -60,6 +72,42 @@ export function createDetailPanel(container: HTMLElement): void {
 	})
 }
 
+/** Navigate to a path in the tree */
+function navigateToPath(path: string[]): void {
+	const ruleset = state.getCurrentRuleset()
+	if (!ruleset) return
+
+	let current: unknown = ruleset
+	for (const segment of path) {
+		if (typeof current !== 'object' || current === null) return
+		const obj = current as Record<string, unknown>
+
+		// Try direct access first
+		if (obj[segment]) {
+			current = obj[segment]
+			continue
+		}
+
+		// Try contents
+		const contents = obj.contents as Record<string, unknown> | undefined
+		if (contents?.[segment]) {
+			current = contents[segment]
+			continue
+		}
+
+		// Try collections
+		const collections = obj.collections as Record<string, unknown> | undefined
+		if (collections?.[segment]) {
+			current = collections[segment]
+			continue
+		}
+
+		return // Path not found
+	}
+
+	state.selectItem(path, current)
+}
+
 function renderDetail(item: unknown, path: string[]): string {
 	if (typeof item !== 'object' || item === null) {
 		return `<div class="json-view">${JSON.stringify(item, null, 2)}</div>`
@@ -70,7 +118,14 @@ function renderDetail(item: unknown, path: string[]): string {
 	const type = typeof obj.type === 'string' ? obj.type : undefined
 	const id = typeof obj._id === 'string' ? obj._id : undefined
 
-	let html = `<div class="detail-header">`
+	let html = ''
+
+	// Breadcrumb trail
+	if (path.length > 1) {
+		html += renderBreadcrumbs(path)
+	}
+
+	html += `<div class="detail-header">`
 
 	// Type badge
 	if (type) {
@@ -115,5 +170,24 @@ function renderDetail(item: unknown, path: string[]): string {
 		</div>
 	`
 
+	return html
+}
+
+/** Render breadcrumb navigation */
+function renderBreadcrumbs(path: string[]): string {
+	let html = '<nav class="breadcrumbs" aria-label="Breadcrumb">'
+
+	for (let i = 0; i < path.length - 1; i++) {
+		const segment = path[i]
+		const partialPath = path.slice(0, i + 1)
+
+		html += `<span class="breadcrumb-item" data-path='${JSON.stringify(partialPath)}'>${escapeHtml(formatLabel(segment))}</span>`
+		html += '<span class="breadcrumb-separator">›</span>'
+	}
+
+	// Current item (not clickable)
+	html += `<span class="breadcrumb-current">${escapeHtml(formatLabel(path[path.length - 1]))}</span>`
+
+	html += '</nav>'
 	return html
 }
