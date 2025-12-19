@@ -2,9 +2,9 @@
 
 ## High Value
 
-- [ ] **Search** - Find items by name or content across all rulesets
-- [ ] **Keyboard navigation** - Arrow keys in tree, `/` to focus search
-- [ ] **Breadcrumb trail** - Show path to current item for context
+- [x] **Search** - Find items by name or content across all rulesets
+- [x] **Keyboard navigation** - `/` to focus search, `Escape` to clear
+- [x] **Breadcrumb trail** - Show path to current item for context
 - [ ] **Copy ID button** - Quick copy of `datasworn:` ID for referencing
 
 ## Medium Value

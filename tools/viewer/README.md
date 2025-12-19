@@ -7,6 +7,8 @@ A lightweight browser-based viewer for exploring Datasworn JSON data.
 ## Features
 
 - Tree navigation for all content types (moves, assets, oracles, NPCs, truths, atlas)
+- **Search** with keyboard shortcut (`/` to focus, `Escape` to clear)
+- **Breadcrumb navigation** for easy path traversal
 - Detail panel with formatted markdown rendering
 - Rollable oracle tables with dice rolling and result highlighting
 - Ask the Oracle odds picker buttons
@@ -42,9 +44,9 @@ src/
 ├── style.css            # Styles
 ├── components/
 │   ├── App.ts           # Main layout
-│   ├── Sidebar.ts       # Ruleset selector
+│   ├── Sidebar.ts       # Ruleset selector, search
 │   ├── Tree.ts          # Tree navigation
-│   └── Detail.ts        # Detail panel orchestration
+│   └── Detail.ts        # Detail panel, breadcrumbs
 ├── renderers/
 │   ├── index.ts         # Renderer exports
 │   ├── MoveRenderer.ts  # Move cards with outcomes
@@ -60,7 +62,8 @@ src/
     ├── markdown.ts      # Markdown rendering
     ├── html.ts          # HTML utilities
     ├── dice.ts          # Dice rolling utilities
-    └── formatting.ts    # Label and text formatting
+    ├── formatting.ts    # Label and text formatting
+    └── search.ts        # Search functionality
 ```
 
 ## Type Safety
