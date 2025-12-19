@@ -16,6 +16,9 @@ export function renderAsset(asset: Datasworn.Asset): string {
 		html += `<div class="asset-category">${escapeHtml(asset.category)}</div>`
 	}
 
+	// Tags (supernatural, technological, starforged-friendly, etc.)
+	html += renderAssetTags(asset)
+
 	// Requirement
 	if (asset.requirement) {
 		html += `<div class="asset-requirement">${renderMarkdown(asset.requirement)}</div>`
@@ -103,4 +106,57 @@ function renderAssetControls(asset: Datasworn.Asset): string {
 	}
 
 	return html
+}
+
+/** Tag display labels and descriptions */
+const TAG_LABELS: Record<string, { label: string; description: string; icon?: string }> = {
+	supernatural: {
+		label: 'Supernatural',
+		description: 'Features supernatural or mythic powers',
+		icon: '✦'
+	},
+	technological: {
+		label: 'Technological',
+		description: 'Features remarkable technologies',
+		icon: '⚙'
+	},
+	recommended: {
+		label: 'SF Friendly',
+		description: 'Ideal for use in Starforged',
+		icon: '★'
+	},
+	requires_allies: {
+		label: 'Allies Required',
+		description: 'For co-op or guided play with allies',
+		icon: '⚑'
+	}
+}
+
+/** Render asset tags as badges */
+function renderAssetTags(asset: Datasworn.Asset): string {
+	const tags = (asset as { tags?: Record<string, Record<string, unknown>> }).tags
+	if (!tags) return ''
+
+	const tagBadges: string[] = []
+
+	// Check each namespace (_core, starforged, sundered_isles, etc.)
+	for (const [, values] of Object.entries(tags)) {
+		if (typeof values !== 'object' || values === null) continue
+
+		for (const [tagName, tagValue] of Object.entries(values)) {
+			if (!tagValue) continue
+
+			const tagInfo = TAG_LABELS[tagName]
+			if (tagInfo) {
+				const icon = tagInfo.icon ? `${tagInfo.icon} ` : ''
+				tagBadges.push(
+					`<span class="asset-tag asset-tag-${tagName}" title="${tagInfo.description}">${icon}${tagInfo.label}</span>`
+				)
+			}
+		}
+	}
+
+	if (tagBadges.length === 0) return ''
+
+	return `<div class="asset-tags">${tagBadges.join('')}</div>`
 }
