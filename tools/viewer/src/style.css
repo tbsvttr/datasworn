@@ -515,6 +515,50 @@ html, body {
 	margin-bottom: 12px;
 }
 
+.asset-tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 16px;
+}
+
+.asset-tag {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 11px;
+	font-weight: 600;
+	padding: 4px 10px;
+	border-radius: 12px;
+	background: var(--bg-tertiary);
+	color: var(--text-secondary);
+	border: 1px solid var(--border);
+}
+
+.asset-tag-supernatural {
+	background: #4c1d95;
+	border-color: #7c3aed;
+	color: #e9d5ff;
+}
+
+.asset-tag-technological {
+	background: #164e63;
+	border-color: #0891b2;
+	color: #cffafe;
+}
+
+.asset-tag-recommended {
+	background: #065f46;
+	border-color: #10b981;
+	color: #d1fae5;
+}
+
+.asset-tag-requires_allies {
+	background: #78350f;
+	border-color: #f59e0b;
+	color: #fef3c7;
+}
+
 .asset-requirement {
 	font-size: 13px;
 	color: var(--text-secondary);

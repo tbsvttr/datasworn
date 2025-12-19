@@ -9,6 +9,7 @@ A lightweight browser-based viewer for exploring Datasworn JSON data.
 - Tree navigation for all content types (moves, assets, oracles, NPCs, truths, atlas)
 - **Search** with keyboard shortcut (`/` to focus, `Escape` to clear)
 - **Breadcrumb navigation** for easy path traversal
+- **Asset tags** display (supernatural, technological, SF friendly)
 - Detail panel with formatted markdown rendering
 - Rollable oracle tables with dice rolling and result highlighting
 - Ask the Oracle odds picker buttons
