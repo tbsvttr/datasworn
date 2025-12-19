@@ -547,7 +547,13 @@ html, body {
 	color: #cffafe;
 }
 
-.asset-tag-recommended {
+.asset-tag-sf-friendly {
+	background: #1e3a5f;
+	border-color: #3b82f6;
+	color: #bfdbfe;
+}
+
+.asset-tag-si-friendly {
 	background: #065f46;
 	border-color: #10b981;
 	color: #d1fae5;

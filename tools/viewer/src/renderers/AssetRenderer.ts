@@ -120,15 +120,24 @@ const TAG_LABELS: Record<string, { label: string; description: string; icon?: st
 		description: 'Features remarkable technologies',
 		icon: '⚙'
 	},
-	recommended: {
-		label: 'SF Friendly',
-		description: 'Ideal for use in Starforged',
-		icon: '★'
-	},
 	requires_allies: {
 		label: 'Allies Required',
 		description: 'For co-op or guided play with allies',
 		icon: '⚑'
+	}
+}
+
+/** Namespace-specific labels for the 'recommended' tag */
+const RECOMMENDED_LABELS: Record<string, { label: string; description: string; cssClass: string }> = {
+	starforged: {
+		label: '★ SF Friendly',
+		description: 'Recommended for use in Starforged',
+		cssClass: 'asset-tag-sf-friendly'
+	},
+	sundered_isles: {
+		label: '★ SI Friendly',
+		description: 'Recommended for use in Sundered Isles',
+		cssClass: 'asset-tag-si-friendly'
 	}
 }
 
@@ -140,11 +149,22 @@ function renderAssetTags(asset: Datasworn.Asset): string {
 	const tagBadges: string[] = []
 
 	// Check each namespace (_core, starforged, sundered_isles, etc.)
-	for (const [, values] of Object.entries(tags)) {
+	for (const [namespace, values] of Object.entries(tags)) {
 		if (typeof values !== 'object' || values === null) continue
 
 		for (const [tagName, tagValue] of Object.entries(values)) {
 			if (!tagValue) continue
+
+			// Handle 'recommended' tag specially - label depends on namespace
+			if (tagName === 'recommended') {
+				const recInfo = RECOMMENDED_LABELS[namespace]
+				if (recInfo) {
+					tagBadges.push(
+						`<span class="asset-tag ${recInfo.cssClass}" title="${recInfo.description}">${recInfo.label}</span>`
+					)
+				}
+				continue
+			}
 
 			const tagInfo = TAG_LABELS[tagName]
 			if (tagInfo) {
