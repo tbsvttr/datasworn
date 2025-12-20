@@ -10,10 +10,10 @@
 	},
 	"devDependencies": {
 		"typescript": "^5.5.4",
-		"vite": "^6.0.3"
+		"vite": "^7.3.0"
 	},
 	"dependencies": {
 		"@datasworn/core": "file:../../pkg/nodejs/@datasworn/core",
-		"marked": "^15.0.4"
+		"marked": "^17.0.1"
 	}
 }
