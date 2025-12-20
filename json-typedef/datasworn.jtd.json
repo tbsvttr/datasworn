@@ -7,7 +7,9 @@
 					"ref": "RulesetId"
 				},
 				"datasworn_version": {
-					"enum": ["0.1.0"],
+					"enum": [
+						"0.1.0"
+					],
 					"metadata": {
 						"description": "The version of the Datasworn format used by this data.",
 						"pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
@@ -48,7 +50,9 @@
 					"ref": "WebUrl",
 					"metadata": {
 						"description": "A URL where the source document is available.",
-						"examples": ["https://ironswornrpg.com"]
+						"examples": [
+							"https://ironswornrpg.com"
+						]
 					}
 				},
 				"license": {
@@ -164,7 +168,9 @@
 					"ref": "ExpansionId"
 				},
 				"datasworn_version": {
-					"enum": ["0.1.0"],
+					"enum": [
+						"0.1.0"
+					],
 					"metadata": {
 						"description": "The version of the Datasworn format used by this data.",
 						"pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
@@ -205,7 +211,9 @@
 					"ref": "WebUrl",
 					"metadata": {
 						"description": "A URL where the source document is available.",
-						"examples": ["https://ironswornrpg.com"]
+						"examples": [
+							"https://ironswornrpg.com"
+						]
 					}
 				},
 				"license": {
@@ -441,7 +449,9 @@
 					}
 				},
 				"type": {
-					"enum": ["asset"]
+					"enum": [
+						"asset"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -851,7 +861,9 @@
 					}
 				},
 				"field_type": {
-					"enum": ["card_flip"]
+					"enum": [
+						"card_flip"
+					]
 				},
 				"is_impact": {
 					"type": "boolean",
@@ -887,7 +899,9 @@
 					}
 				},
 				"field_type": {
-					"enum": ["checkbox"]
+					"enum": [
+						"checkbox"
+					]
 				},
 				"is_impact": {
 					"type": "boolean",
@@ -948,7 +962,9 @@
 					}
 				},
 				"type": {
-					"enum": ["asset_collection"]
+					"enum": [
+						"asset_collection"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -1061,7 +1077,9 @@
 					}
 				},
 				"field_type": {
-					"enum": ["condition_meter"]
+					"enum": [
+						"condition_meter"
+					]
 				},
 				"controls": {
 					"values": {
@@ -1201,7 +1219,9 @@
 		"AssetConditionMeterEnhancement": {
 			"properties": {
 				"field_type": {
-					"enum": ["condition_meter"]
+					"enum": [
+						"condition_meter"
+					]
 				},
 				"max": {
 					"type": "int8",
@@ -1478,11 +1498,16 @@
 					"ref": "DictKey",
 					"metadata": {
 						"description": "The dictionary key of the asset control field.",
-						"examples": ["health", "integrity"]
+						"examples": [
+							"health",
+							"integrity"
+						]
 					}
 				},
 				"using": {
-					"enum": ["asset_control"],
+					"enum": [
+						"asset_control"
+					],
 					"metadata": {
 						"description": "A reference to the value of an asset control."
 					}
@@ -1688,7 +1713,9 @@
 					}
 				},
 				"using": {
-					"enum": ["asset_option"],
+					"enum": [
+						"asset_option"
+					],
 					"metadata": {
 						"description": "A reference to the value of an asset option."
 					}
@@ -1735,7 +1762,9 @@
 					}
 				},
 				"type": {
-					"enum": ["atlas_collection"]
+					"enum": [
+						"atlas_collection"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -1844,7 +1873,9 @@
 					"ref": "MarkdownString"
 				},
 				"type": {
-					"enum": ["atlas_entry"]
+					"enum": [
+						"atlas_entry"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -1925,11 +1956,16 @@
 					"ref": "DictKey",
 					"metadata": {
 						"description": "The dictionary key of the asset control field.",
-						"examples": ["health", "integrity"]
+						"examples": [
+							"health",
+							"integrity"
+						]
 					}
 				},
 				"using": {
-					"enum": ["attached_asset_control"],
+					"enum": [
+						"attached_asset_control"
+					],
 					"metadata": {
 						"description": "A reference to the value of an attached asset control. For example, a Module asset could use this to roll using the `integrity` control of an attached Vehicle."
 					}
@@ -1948,7 +1984,9 @@
 					}
 				},
 				"using": {
-					"enum": ["attached_asset_option"],
+					"enum": [
+						"attached_asset_option"
+					],
 					"metadata": {
 						"description": "A reference to the value of an attached asset option."
 					}
@@ -1964,7 +2002,9 @@
 					"ref": "Label",
 					"metadata": {
 						"description": "The name of the author.",
-						"examples": ["Shawn Tomkin"]
+						"examples": [
+							"Shawn Tomkin"
+						]
 					}
 				}
 			},
@@ -2034,7 +2074,9 @@
 					"type": "boolean"
 				},
 				"field_type": {
-					"enum": ["clock"]
+					"enum": [
+						"clock"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -2050,7 +2092,13 @@
 			}
 		},
 		"CollectableType": {
-			"enum": ["atlas_entry", "npc", "oracle_rollable", "asset", "move"]
+			"enum": [
+				"atlas_entry",
+				"npc",
+				"oracle_rollable",
+				"asset",
+				"move"
+			]
 		},
 		"CollectionType": {
 			"enum": [
@@ -2091,7 +2139,9 @@
 					}
 				},
 				"field_type": {
-					"enum": ["condition_meter"]
+					"enum": [
+						"condition_meter"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -2110,7 +2160,11 @@
 			"ref": "DictKey",
 			"metadata": {
 				"description": "A basic, rollable player character resource specified by the ruleset.",
-				"examples": ["health", "spirit", "supply"]
+				"examples": [
+					"health",
+					"spirit",
+					"supply"
+				]
 			}
 		},
 		"ConditionMeterRule": {
@@ -2170,7 +2224,9 @@
 					"ref": "ConditionMeterKey"
 				},
 				"using": {
-					"enum": ["condition_meter"],
+					"enum": [
+						"condition_meter"
+					],
 					"metadata": {
 						"description": "A reference to the value of a standard player condition meter."
 					}
@@ -2227,7 +2283,9 @@
 					"type": "boolean"
 				},
 				"field_type": {
-					"enum": ["counter"]
+					"enum": [
+						"counter"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -2257,7 +2315,9 @@
 					"type": "int16"
 				},
 				"using": {
-					"enum": ["custom"],
+					"enum": [
+						"custom"
+					],
 					"metadata": {
 						"description": "An arbitrary static integer value with a label."
 					}
@@ -2314,7 +2374,9 @@
 					}
 				},
 				"type": {
-					"enum": ["delve_site"]
+					"enum": [
+						"delve_site"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -2409,7 +2471,13 @@
 			}
 		},
 		"DelveSiteDenizenFrequency": {
-			"enum": ["very_common", "common", "uncommon", "rare", "unforeseen"]
+			"enum": [
+				"very_common",
+				"common",
+				"uncommon",
+				"rare",
+				"unforeseen"
+			]
 		},
 		"DelveSiteDenizenId": {
 			"type": "string",
@@ -2462,7 +2530,9 @@
 					}
 				},
 				"type": {
-					"enum": ["delve_site_domain"]
+					"enum": [
+						"delve_site_domain"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -2721,7 +2791,9 @@
 					}
 				},
 				"type": {
-					"enum": ["delve_site_theme"]
+					"enum": [
+						"delve_site_theme"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -2927,7 +2999,11 @@
 			"type": "string",
 			"metadata": {
 				"description": "A simple dice roll expression with an optional (positive or negative) modifer.",
-				"examples": ["1d100", "1d6+2", "2d10"],
+				"examples": [
+					"1d100",
+					"1d6+2",
+					"2d10"
+				],
 				"pattern": "([1-9][0-9]*)d([1-9][0-9]*)([+-]([1-9][0-9]*))?"
 			}
 		},
@@ -3003,10 +3079,14 @@
 					"ref": "MoveOutcomes"
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["action_roll"]
+					"enum": [
+						"action_roll"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -3083,7 +3163,9 @@
 							"ref": "MoveOutcomes"
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -3154,7 +3236,9 @@
 							}
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -3228,7 +3312,9 @@
 							"ref": "MoveOutcomes"
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						},
 						"tracks": {
 							"ref": "ProgressTrackTypeInfo",
@@ -3308,7 +3394,9 @@
 							"ref": "MoveOutcomes"
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -3387,10 +3475,14 @@
 					}
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["no_roll"]
+					"enum": [
+						"no_roll"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -3457,10 +3549,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["column_text"]
+					"enum": [
+						"column_text"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -3543,10 +3639,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["column_text2"]
+					"enum": [
+						"column_text2"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -3629,10 +3729,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["column_text3"]
+					"enum": [
+						"column_text3"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -3728,7 +3832,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -3824,7 +3930,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -3923,7 +4031,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -4006,7 +4116,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -4089,7 +4201,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -4172,7 +4286,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -4273,10 +4389,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_text"]
+					"enum": [
+						"table_text"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -4372,10 +4492,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_text2"]
+					"enum": [
+						"table_text2"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -4474,10 +4598,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_text3"]
+					"enum": [
+						"table_text3"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -4567,10 +4695,14 @@
 					"ref": "MoveOutcomes"
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["progress_roll"]
+					"enum": [
+						"progress_roll"
+					]
 				},
 				"tracks": {
 					"ref": "ProgressTrackTypeInfo",
@@ -4650,10 +4782,14 @@
 					"ref": "MoveOutcomes"
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["special_track"]
+					"enum": [
+						"special_track"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -4721,10 +4857,14 @@
 					"ref": "ExpansionId"
 				},
 				"type": {
-					"enum": ["expansion"]
+					"enum": [
+						"expansion"
+					]
 				},
 				"datasworn_version": {
-					"enum": ["0.1.0"],
+					"enum": [
+						"0.1.0"
+					],
 					"metadata": {
 						"description": "The version of the Datasworn format used by this data.",
 						"pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
@@ -4765,7 +4905,9 @@
 					"ref": "WebUrl",
 					"metadata": {
 						"description": "A URL where the source document is available.",
-						"examples": ["https://ironswornrpg.com"]
+						"examples": [
+							"https://ironswornrpg.com"
+						]
 					}
 				},
 				"license": {
@@ -4882,7 +5024,10 @@
 			"type": "string",
 			"metadata": {
 				"description": "The ID of a Datasworn package that relies on an external package to provide its ruleset.",
-				"examples": ["delve", "sundered_isles"],
+				"examples": [
+					"delve",
+					"sundered_isles"
+				],
 				"pattern": "^[a-z][a-z0-9_]*$"
 			}
 		},
@@ -5062,7 +5207,9 @@
 							"ref": "MoveOutcomes"
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -5161,7 +5308,9 @@
 							}
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -5263,7 +5412,9 @@
 							"ref": "MoveOutcomes"
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						},
 						"tracks": {
 							"ref": "ProgressTrackTypeInfo",
@@ -5371,7 +5522,9 @@
 							"ref": "MoveOutcomes"
 						},
 						"type": {
-							"enum": ["move"]
+							"enum": [
+								"move"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -5475,10 +5628,14 @@
 					"ref": "MoveOutcomes"
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["action_roll"]
+					"enum": [
+						"action_roll"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -5547,7 +5704,9 @@
 					"nullable": true
 				},
 				"roll_type": {
-					"enum": ["action_roll"],
+					"enum": [
+						"action_roll"
+					],
 					"metadata": {
 						"description": "A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties."
 					}
@@ -5599,7 +5758,9 @@
 					}
 				},
 				"type": {
-					"enum": ["move_category"]
+					"enum": [
+						"move_category"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -5812,10 +5973,14 @@
 					}
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["no_roll"]
+					"enum": [
+						"no_roll"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -5884,7 +6049,9 @@
 					"nullable": true
 				},
 				"roll_type": {
-					"enum": ["no_roll"],
+					"enum": [
+						"no_roll"
+					],
 					"metadata": {
 						"description": "A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties."
 					}
@@ -5999,10 +6166,14 @@
 					"ref": "MoveOutcomes"
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["progress_roll"]
+					"enum": [
+						"progress_roll"
+					]
 				},
 				"tracks": {
 					"ref": "ProgressTrackTypeInfo",
@@ -6077,7 +6248,9 @@
 					"nullable": true
 				},
 				"roll_type": {
-					"enum": ["progress_roll"],
+					"enum": [
+						"progress_roll"
+					],
 					"metadata": {
 						"description": "A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties."
 					}
@@ -6093,7 +6266,12 @@
 			}
 		},
 		"MoveRollType": {
-			"enum": ["no_roll", "action_roll", "progress_roll", "special_track"],
+			"enum": [
+				"no_roll",
+				"action_roll",
+				"progress_roll",
+				"special_track"
+			],
 			"metadata": {
 				"enumDescription": {
 					"no_roll": "A move that makes no action rolls or progress rolls.",
@@ -6145,10 +6323,14 @@
 					"ref": "MoveOutcomes"
 				},
 				"type": {
-					"enum": ["move"]
+					"enum": [
+						"move"
+					]
 				},
 				"roll_type": {
-					"enum": ["special_track"]
+					"enum": [
+						"special_track"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -6217,7 +6399,9 @@
 					"nullable": true
 				},
 				"roll_type": {
-					"enum": ["special_track"],
+					"enum": [
+						"special_track"
+					],
 					"metadata": {
 						"description": "A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties."
 					}
@@ -6294,7 +6478,9 @@
 					}
 				},
 				"type": {
-					"enum": ["npc"]
+					"enum": [
+						"npc"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -6392,7 +6578,9 @@
 					}
 				},
 				"type": {
-					"enum": ["npc_collection"]
+					"enum": [
+						"npc_collection"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -6595,7 +6783,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_collection"]
+							"enum": [
+								"oracle_collection"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -6706,7 +6896,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_collection"]
+							"enum": [
+								"oracle_collection"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -6814,7 +7006,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_collection"]
+							"enum": [
+								"oracle_collection"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -6925,7 +7119,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_collection"]
+							"enum": [
+								"oracle_collection"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -7039,7 +7235,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_collection"]
+							"enum": [
+								"oracle_collection"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -7156,10 +7354,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["column_text"]
+					"enum": [
+						"column_text"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -7256,10 +7458,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["column_text2"]
+					"enum": [
+						"column_text2"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -7353,10 +7559,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["column_text3"]
+					"enum": [
+						"column_text3"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -7422,7 +7632,11 @@
 			}
 		},
 		"OracleDuplicateBehavior": {
-			"enum": ["reroll", "keep", "make_it_worse"],
+			"enum": [
+				"reroll",
+				"keep",
+				"make_it_worse"
+			],
 			"metadata": {
 				"description": "Special roll instructions to use when rolling multiple times on a single oracle.",
 				"enumDescription": {
@@ -7518,7 +7732,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -7634,7 +7850,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -7753,7 +7971,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -7850,7 +8070,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -7947,7 +8169,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -8041,7 +8265,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -8352,7 +8578,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -8468,7 +8696,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -8587,7 +8817,9 @@
 							}
 						},
 						"type": {
-							"enum": ["oracle_rollable"]
+							"enum": [
+								"oracle_rollable"
+							]
 						}
 					},
 					"optionalProperties": {
@@ -8722,10 +8954,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_collection"]
+					"enum": [
+						"oracle_collection"
+					]
 				},
 				"oracle_type": {
-					"enum": ["tables"]
+					"enum": [
+						"tables"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -8836,10 +9072,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_collection"]
+					"enum": [
+						"oracle_collection"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_shared_rolls"]
+					"enum": [
+						"table_shared_rolls"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -8947,10 +9187,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_collection"]
+					"enum": [
+						"oracle_collection"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_shared_text"]
+					"enum": [
+						"table_shared_text"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -9061,10 +9305,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_collection"]
+					"enum": [
+						"oracle_collection"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_shared_text2"]
+					"enum": [
+						"table_shared_text2"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -9178,10 +9426,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_collection"]
+					"enum": [
+						"oracle_collection"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_shared_text3"]
+					"enum": [
+						"table_shared_text3"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -9298,10 +9550,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_text"]
+					"enum": [
+						"table_text"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -9417,10 +9673,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_text2"]
+					"enum": [
+						"table_text2"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -9539,10 +9799,14 @@
 					}
 				},
 				"type": {
-					"enum": ["oracle_rollable"]
+					"enum": [
+						"oracle_rollable"
+					]
 				},
 				"oracle_type": {
-					"enum": ["table_text3"]
+					"enum": [
+						"table_text3"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -9646,7 +9910,12 @@
 			}
 		},
 		"ProgressRollMethod": {
-			"enum": ["miss", "weak_hit", "strong_hit", "progress_roll"],
+			"enum": [
+				"miss",
+				"weak_hit",
+				"strong_hit",
+				"progress_roll"
+			],
 			"metadata": {
 				"enumDescription": {
 					"miss": "An automatic miss.",
@@ -9659,7 +9928,9 @@
 		"ProgressRollOption": {
 			"properties": {
 				"using": {
-					"enum": ["progress_track"]
+					"enum": [
+						"progress_track"
+					]
 				}
 			}
 		},
@@ -9728,7 +9999,9 @@
 					}
 				},
 				"type": {
-					"enum": ["rarity"]
+					"enum": [
+						"rarity"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -9829,7 +10102,10 @@
 							"ref": "DictKey",
 							"metadata": {
 								"description": "The dictionary key of the asset control field.",
-								"examples": ["health", "integrity"]
+								"examples": [
+									"health",
+									"integrity"
+								]
 							}
 						}
 					},
@@ -9862,7 +10138,10 @@
 							"ref": "DictKey",
 							"metadata": {
 								"description": "The dictionary key of the asset control field.",
-								"examples": ["health", "integrity"]
+								"examples": [
+									"health",
+									"integrity"
+								]
 							}
 						}
 					},
@@ -9958,10 +10237,14 @@
 					"ref": "RulesetId"
 				},
 				"type": {
-					"enum": ["ruleset"]
+					"enum": [
+						"ruleset"
+					]
 				},
 				"datasworn_version": {
-					"enum": ["0.1.0"],
+					"enum": [
+						"0.1.0"
+					],
 					"metadata": {
 						"description": "The version of the Datasworn format used by this data.",
 						"pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$"
@@ -10002,7 +10285,9 @@
 					"ref": "WebUrl",
 					"metadata": {
 						"description": "A URL where the source document is available.",
-						"examples": ["https://ironswornrpg.com"]
+						"examples": [
+							"https://ironswornrpg.com"
+						]
 					}
 				},
 				"license": {
@@ -10116,7 +10401,10 @@
 			"type": "string",
 			"metadata": {
 				"description": "The ID of standalone Datasworn package that describes its own ruleset.",
-				"examples": ["classic", "starforged"],
+				"examples": [
+					"classic",
+					"starforged"
+				],
 				"pattern": "^[a-z][a-z0-9_]*$"
 			}
 		},
@@ -10175,7 +10463,12 @@
 			"type": "string"
 		},
 		"RuleType": {
-			"enum": ["impact", "condition_meter", "special_track", "stat"]
+			"enum": [
+				"impact",
+				"condition_meter",
+				"special_track",
+				"stat"
+			]
 		},
 		"SelectEnhancementField": {
 			"properties": {
@@ -10238,7 +10531,9 @@
 					}
 				},
 				"field_type": {
-					"enum": ["select_enhancement"]
+					"enum": [
+						"select_enhancement"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -10259,7 +10554,9 @@
 					"ref": "Label"
 				},
 				"choice_type": {
-					"enum": ["choice"]
+					"enum": [
+						"choice"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -10285,7 +10582,9 @@
 					}
 				},
 				"choice_type": {
-					"enum": ["choice_group"]
+					"enum": [
+						"choice_group"
+					]
 				},
 				"choices": {
 					"values": {
@@ -10318,7 +10617,9 @@
 					}
 				},
 				"field_type": {
-					"enum": ["select_value"]
+					"enum": [
+						"select_value"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -10342,7 +10643,9 @@
 							"ref": "Label"
 						},
 						"choice_type": {
-							"enum": ["choice"]
+							"enum": [
+								"choice"
+							]
 						},
 						"stat": {
 							"ref": "StatKey"
@@ -10358,7 +10661,9 @@
 							"ref": "Label"
 						},
 						"choice_type": {
-							"enum": ["choice"]
+							"enum": [
+								"choice"
+							]
 						},
 						"condition_meter": {
 							"ref": "ConditionMeterKey"
@@ -10374,7 +10679,9 @@
 							"ref": "Label"
 						},
 						"choice_type": {
-							"enum": ["choice"]
+							"enum": [
+								"choice"
+							]
 						},
 						"assets": {
 							"elements": {
@@ -10386,7 +10693,10 @@
 							"ref": "DictKey",
 							"metadata": {
 								"description": "The dictionary key of the asset control field.",
-								"examples": ["health", "integrity"]
+								"examples": [
+									"health",
+									"integrity"
+								]
 							}
 						}
 					},
@@ -10400,7 +10710,9 @@
 							"ref": "Label"
 						},
 						"choice_type": {
-							"enum": ["choice"]
+							"enum": [
+								"choice"
+							]
 						},
 						"assets": {
 							"elements": {
@@ -10425,13 +10737,18 @@
 							"ref": "Label"
 						},
 						"choice_type": {
-							"enum": ["choice"]
+							"enum": [
+								"choice"
+							]
 						},
 						"control": {
 							"ref": "DictKey",
 							"metadata": {
 								"description": "The dictionary key of the asset control field.",
-								"examples": ["health", "integrity"]
+								"examples": [
+									"health",
+									"integrity"
+								]
 							}
 						}
 					},
@@ -10445,7 +10762,9 @@
 							"ref": "Label"
 						},
 						"choice_type": {
-							"enum": ["choice"]
+							"enum": [
+								"choice"
+							]
 						},
 						"option": {
 							"ref": "DictKey",
@@ -10464,7 +10783,9 @@
 							"ref": "Label"
 						},
 						"choice_type": {
-							"enum": ["choice"]
+							"enum": [
+								"choice"
+							]
 						},
 						"value": {
 							"type": "int16"
@@ -10519,7 +10840,9 @@
 					"ref": "WebUrl",
 					"metadata": {
 						"description": "A URL where the source document is available.",
-						"examples": ["https://ironswornrpg.com"]
+						"examples": [
+							"https://ironswornrpg.com"
+						]
 					}
 				},
 				"license": {
@@ -10614,7 +10937,13 @@
 			"ref": "DictKey",
 			"metadata": {
 				"description": "A basic player character stat.",
-				"examples": ["edge", "heart", "iron", "shadow", "wits"]
+				"examples": [
+					"edge",
+					"heart",
+					"iron",
+					"shadow",
+					"wits"
+				]
 			}
 		},
 		"StatRule": {
@@ -10623,7 +10952,9 @@
 					"ref": "Label",
 					"metadata": {
 						"description": "A label for this stat.",
-						"examples": ["edge"]
+						"examples": [
+							"edge"
+						]
 					}
 				},
 				"description": {
@@ -10651,7 +10982,9 @@
 					"ref": "StatKey"
 				},
 				"using": {
-					"enum": ["stat"],
+					"enum": [
+						"stat"
+					],
 					"metadata": {
 						"description": "A reference to the value of a standard player character stat."
 					}
@@ -10763,7 +11096,9 @@
 					"nullable": true
 				},
 				"field_type": {
-					"enum": ["text"]
+					"enum": [
+						"text"
+					]
 				}
 			},
 			"optionalProperties": {
@@ -11150,7 +11485,9 @@
 					}
 				},
 				"type": {
-					"enum": ["truth"]
+					"enum": [
+						"truth"
+					]
 				}
 			},
 			"optionalProperties": {

@@ -7,7 +7,7 @@
  *   - `lowest`: Use the roll option with the worst/lowest value.
  *   - `all`: Use _every_ roll option at once.
  */
-export type ActionRollMethod = 'miss' | 'weak_hit' | 'strong_hit' | 'player_choice' | 'highest' | 'lowest' | 'all';
+export type ActionRollMethod = "miss" | "weak_hit" | "strong_hit" | "player_choice" | "highest" | "lowest" | "all";
 /**
  * Represents any kind of non-wildcard ID, including IDs of embedded objects.
  */
@@ -97,7 +97,7 @@ export interface Asset {
      * @default false
      */
     shared: boolean;
-    type: 'asset';
+    type: "asset";
 }
 /**
  * An asset ability: one of the purchasable features of an asset. Most assets have three.
@@ -239,7 +239,7 @@ export interface AssetCardFlipField {
      * @default false
      */
     value: boolean;
-    field_type: 'card_flip';
+    field_type: "card_flip";
     /**
      * An icon associated with this input.
      */
@@ -262,7 +262,7 @@ export interface AssetCheckboxField {
      * @default false
      */
     value: boolean;
-    field_type: 'checkbox';
+    field_type: "checkbox";
     /**
      * An icon associated with this input.
      */
@@ -333,7 +333,7 @@ export interface AssetCollection {
      * @default {}
      */
     collections: Record<DictKey, AssetCollection>;
-    type: 'asset_collection';
+    type: "asset_collection";
 }
 /**
  * A unique ID representing an AssetCollection object.
@@ -372,7 +372,7 @@ export interface AssetConditionMeter {
      * Is this meter's `value` usable as a stat in an action roll?
      */
     rollable: true;
-    field_type: 'condition_meter';
+    field_type: "condition_meter";
     /**
      * An icon associated with this input.
      */
@@ -407,7 +407,7 @@ export type AssetConditionMeterControlField = AssetCheckboxField | AssetCardFlip
  * Some assets provide a special condition meter of their own. The most common example is the health meters on companion assets. Asset condition meters may also include their own controls, such as the checkboxes that Starforged companion assets use to indicate they are "out of action".
  */
 export interface AssetConditionMeterEnhancement {
-    field_type: 'condition_meter';
+    field_type: "condition_meter";
     /**
      * The maximum value of this meter.
      */
@@ -439,7 +439,7 @@ export interface AssetControlValueRef {
     /**
      * A reference to the value of an asset control.
      */
-    using: 'asset_control';
+    using: "asset_control";
 }
 /**
  * Describes enhancements made to this asset in a partial asset object. The changes should be applied recursively; only the values that are specified should be changed.
@@ -496,7 +496,7 @@ export interface AssetOptionValueRef {
     /**
      * A reference to the value of an asset option.
      */
-    using: 'asset_option';
+    using: "asset_option";
 }
 export interface AtlasCollection {
     /**
@@ -553,7 +553,7 @@ export interface AtlasCollection {
      * @default {}
      */
     collections: Record<DictKey, AtlasCollection>;
-    type: 'atlas_collection';
+    type: "atlas_collection";
 }
 /**
  * A unique ID representing an AtlasCollection object.
@@ -607,7 +607,7 @@ export interface AtlasEntry {
     description: MarkdownString;
     quest_starter?: MarkdownString;
     your_truth?: MarkdownString;
-    type: 'atlas_entry';
+    type: "atlas_entry";
 }
 /**
  * A unique ID representing an AtlasEntry object.
@@ -636,7 +636,7 @@ export interface AttachedAssetControlValueRef {
     /**
      * A reference to the value of an attached asset control. For example, a Module asset could use this to roll using the `integrity` control of an attached Vehicle.
      */
-    using: 'attached_asset_control';
+    using: "attached_asset_control";
 }
 /**
  * A reference to the value of an attached asset option.
@@ -649,7 +649,7 @@ export interface AttachedAssetOptionValueRef {
     /**
      * A reference to the value of an attached asset option.
      */
-    using: 'attached_asset_option';
+    using: "attached_asset_option";
 }
 /**
  * Information on the original creator of this material.
@@ -706,14 +706,14 @@ export interface ClockField {
      */
     max: number;
     rollable: false;
-    field_type: 'clock';
+    field_type: "clock";
     /**
      * An icon associated with this input.
      */
     icon?: SvgImageUrl;
 }
-export type CollectableType = 'atlas_entry' | 'npc' | 'oracle_rollable' | 'asset' | 'move';
-export type CollectionType = 'atlas_collection' | 'npc_collection' | 'oracle_collection' | 'asset_collection' | 'move_category';
+export type CollectableType = "atlas_entry" | "npc" | "oracle_rollable" | "asset" | "move";
+export type CollectionType = "atlas_collection" | "npc_collection" | "oracle_collection" | "asset_collection" | "move_category";
 /**
  * A meter with an integer value, bounded by a minimum and maximum.
  */
@@ -737,7 +737,7 @@ export interface ConditionMeterField {
      * Is this meter's `value` usable as a stat in an action roll?
      */
     rollable: true;
-    field_type: 'condition_meter';
+    field_type: "condition_meter";
     /**
      * An icon associated with this input.
      */
@@ -795,7 +795,7 @@ export interface ConditionMeterValueRef {
     /**
      * A reference to the value of a standard player condition meter.
      */
-    using: 'condition_meter';
+    using: "condition_meter";
 }
 export interface CoreTags {
     /**
@@ -833,7 +833,7 @@ export interface CounterField {
      */
     max: number | null;
     rollable: false;
-    field_type: 'counter';
+    field_type: "counter";
     /**
      * An icon associated with this input.
      */
@@ -853,7 +853,7 @@ export interface CustomValue {
     /**
      * An arbitrary static integer value with a label.
      */
-    using: 'custom';
+    using: "custom";
 }
 /**
  * A delve site with a theme, domain, and denizens.
@@ -914,91 +914,91 @@ export interface DelveSite {
      */
     denizens: DelveSiteDenizen[] & [
         {
-            frequency: 'very_common';
+            frequency: "very_common";
             roll: {
                 min: 1;
                 max: 27;
             };
         },
         {
-            frequency: 'common';
+            frequency: "common";
             roll: {
                 min: 28;
                 max: 41;
             };
         },
         {
-            frequency: 'common';
+            frequency: "common";
             roll: {
                 min: 42;
                 max: 55;
             };
         },
         {
-            frequency: 'common';
+            frequency: "common";
             roll: {
                 min: 56;
                 max: 69;
             };
         },
         {
-            frequency: 'uncommon';
+            frequency: "uncommon";
             roll: {
                 min: 70;
                 max: 75;
             };
         },
         {
-            frequency: 'uncommon';
+            frequency: "uncommon";
             roll: {
                 min: 76;
                 max: 81;
             };
         },
         {
-            frequency: 'uncommon';
+            frequency: "uncommon";
             roll: {
                 min: 82;
                 max: 87;
             };
         },
         {
-            frequency: 'uncommon';
+            frequency: "uncommon";
             roll: {
                 min: 88;
                 max: 93;
             };
         },
         {
-            frequency: 'rare';
+            frequency: "rare";
             roll: {
                 min: 94;
                 max: 95;
             };
         },
         {
-            frequency: 'rare';
+            frequency: "rare";
             roll: {
                 min: 96;
                 max: 97;
             };
         },
         {
-            frequency: 'rare';
+            frequency: "rare";
             roll: {
                 min: 98;
                 max: 99;
             };
         },
         {
-            frequency: 'unforeseen';
+            frequency: "unforeseen";
             roll: {
                 min: 100;
                 max: 100;
             };
         }
     ];
-    type: 'delve_site';
+    type: "delve_site";
 }
 /**
  * Represents an entry in a delve site denizen matrix. Denizen matrices are described in Ironsworn: Delve.
@@ -1016,7 +1016,7 @@ export interface DelveSiteDenizen {
     roll: DiceRange;
     _id: DelveSiteDenizenId;
 }
-export type DelveSiteDenizenFrequency = 'very_common' | 'common' | 'uncommon' | 'rare' | 'unforeseen';
+export type DelveSiteDenizenFrequency = "very_common" | "common" | "uncommon" | "rare" | "unforeseen";
 /**
  * A unique ID representing a DelveSiteDenizen object.
  * @pattern ```javascript
@@ -1185,7 +1185,7 @@ export interface DelveSiteDomain {
             };
         }
     ];
-    type: 'delve_site_domain';
+    type: "delve_site_domain";
 }
 /**
  * Represents a row in an oracle table, with a single text cell.
@@ -1463,7 +1463,7 @@ export interface DelveSiteTheme {
             };
         }
     ];
-    type: 'delve_site_theme';
+    type: "delve_site_theme";
 }
 /**
  * Represents a row in an oracle table, with a single text cell.
@@ -1652,8 +1652,8 @@ export interface EmbeddedActionRollMove {
      */
     allow_momentum_burn: boolean;
     outcomes: MoveOutcomes;
-    type: 'move';
-    roll_type: 'action_roll';
+    type: "move";
+    roll_type: "action_roll";
 }
 /**
  * @remarks Deserialize as a discriminated union/polymorphic object type, using the `roll_type` property as a discriminator.
@@ -1699,8 +1699,8 @@ export interface EmbeddedNoRollMove {
      * @default null
      */
     outcomes: null;
-    type: 'move';
-    roll_type: 'no_roll';
+    type: "move";
+    roll_type: "no_roll";
 }
 export interface EmbeddedOracleColumnText {
     _id: EmbeddedOracleRollableId;
@@ -1747,8 +1747,8 @@ export interface EmbeddedOracleColumnText {
      * An array of objects, each representing a single row of the table.
      */
     rows: OracleRollableRowText[];
-    type: 'oracle_rollable';
-    oracle_type: 'column_text';
+    type: "oracle_rollable";
+    oracle_type: "column_text";
 }
 export interface EmbeddedOracleColumnText2 {
     _id: EmbeddedOracleRollableId;
@@ -1795,8 +1795,8 @@ export interface EmbeddedOracleColumnText2 {
      * An array of objects, each representing a single row of the table.
      */
     rows: Array<OracleRollableRowText2>;
-    type: 'oracle_rollable';
-    oracle_type: 'column_text2';
+    type: "oracle_rollable";
+    oracle_type: "column_text2";
 }
 export interface EmbeddedOracleColumnText3 {
     _id: EmbeddedOracleRollableId;
@@ -1843,8 +1843,8 @@ export interface EmbeddedOracleColumnText3 {
      * An array of objects, each representing a single row of the table.
      */
     rows: Array<OracleRollableRowText3>;
-    type: 'oracle_rollable';
-    oracle_type: 'column_text3';
+    type: "oracle_rollable";
+    oracle_type: "column_text3";
 }
 /**
  * @remarks Deserialize as a discriminated union/polymorphic object type, using the `oracle_type` property as a discriminator.
@@ -1910,8 +1910,8 @@ export interface EmbeddedOracleTableText {
         roll: Label;
         text: Label;
     };
-    type: 'oracle_rollable';
-    oracle_type: 'table_text';
+    type: "oracle_rollable";
+    oracle_type: "table_text";
 }
 export interface EmbeddedOracleTableText2 {
     _id: EmbeddedOracleRollableId;
@@ -1973,8 +1973,8 @@ export interface EmbeddedOracleTableText2 {
         text: Label;
         text2: Label;
     };
-    type: 'oracle_rollable';
-    oracle_type: 'table_text2';
+    type: "oracle_rollable";
+    oracle_type: "table_text2";
 }
 export interface EmbeddedOracleTableText3 {
     _id: EmbeddedOracleRollableId;
@@ -2027,8 +2027,8 @@ export interface EmbeddedOracleTableText3 {
         text2: Label;
         text3: Label;
     };
-    type: 'oracle_rollable';
-    oracle_type: 'table_text3';
+    type: "oracle_rollable";
+    oracle_type: "table_text3";
 }
 export interface EmbeddedProgressRollMove {
     _id: EmbeddedMoveId;
@@ -2065,8 +2065,8 @@ export interface EmbeddedProgressRollMove {
      */
     allow_momentum_burn: false;
     outcomes: MoveOutcomes;
-    type: 'move';
-    roll_type: 'progress_roll';
+    type: "move";
+    roll_type: "progress_roll";
     /**
      * Describes the common features of progress tracks associated with this move.
      */
@@ -2107,10 +2107,10 @@ export interface EmbeddedSpecialTrackMove {
      */
     allow_momentum_burn: false;
     outcomes: MoveOutcomes;
-    type: 'move';
-    roll_type: 'special_track';
+    type: "move";
+    roll_type: "special_track";
 }
-export type EmbedOnlyType = 'ability' | 'option' | 'row' | 'feature' | 'danger' | 'denizen' | 'variant';
+export type EmbedOnlyType = "ability" | "option" | "row" | "feature" | "danger" | "denizen" | "variant";
 /**
  * This type is a placeholder and may see signficant changes in v0.2.0.
  * @experimental
@@ -2123,14 +2123,14 @@ export interface EntityPrompt {
  */
 export interface Expansion {
     _id: ExpansionId;
-    type: 'expansion';
+    type: "expansion";
     /**
      * The version of the Datasworn format used by this data.
      * @pattern ```javascript
      * /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/
      * ```
      */
-    datasworn_version: '0.1.0';
+    datasworn_version: "0.1.0";
     description?: MarkdownString;
     /**
      * The title of the source document.
@@ -2396,8 +2396,8 @@ export interface MoveActionRoll {
      */
     allow_momentum_burn: boolean;
     outcomes: MoveOutcomes;
-    type: 'move';
-    roll_type: 'action_roll';
+    type: "move";
+    roll_type: "action_roll";
 }
 /**
  * An object that describes changes to a move. These changes should be applied recursively, altering only the specified properties; enhanced arrays should be concatencated with the original array value.
@@ -2411,7 +2411,7 @@ export interface MoveActionRollEnhancement {
     /**
      * A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties.
      */
-    roll_type: 'action_roll';
+    roll_type: "action_roll";
     trigger?: TriggerActionRollEnhancement;
 }
 export interface MoveCategory {
@@ -2469,7 +2469,7 @@ export interface MoveCategory {
      * @default {}
      */
     collections: Record<DictKey, MoveCategory>;
-    type: 'move_category';
+    type: "move_category";
 }
 /**
  * A unique ID representing a MoveCategory object.
@@ -2560,8 +2560,8 @@ export interface MoveNoRoll {
      * @default null
      */
     outcomes: null;
-    type: 'move';
-    roll_type: 'no_roll';
+    type: "move";
+    roll_type: "no_roll";
 }
 /**
  * An object that describes changes to a move. These changes should be applied recursively, altering only the specified properties; enhanced arrays should be concatencated with the original array value.
@@ -2575,7 +2575,7 @@ export interface MoveNoRollEnhancement {
     /**
      * A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties.
      */
-    roll_type: 'no_roll';
+    roll_type: "no_roll";
     trigger?: TriggerNoRollEnhancement;
 }
 /**
@@ -2674,8 +2674,8 @@ export interface MoveProgressRoll {
      */
     allow_momentum_burn: false;
     outcomes: MoveOutcomes;
-    type: 'move';
-    roll_type: 'progress_roll';
+    type: "move";
+    roll_type: "progress_roll";
     /**
      * Describes the common features of progress tracks associated with this move.
      */
@@ -2693,7 +2693,7 @@ export interface MoveProgressRollEnhancement {
     /**
      * A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties.
      */
-    roll_type: 'progress_roll';
+    roll_type: "progress_roll";
     trigger?: TriggerProgressRollEnhancement;
 }
 /**
@@ -2702,7 +2702,7 @@ export interface MoveProgressRollEnhancement {
  *   - `progress_roll`: A progress move that rolls on a standard progress track type (defined by this move).
  *   - `special_track`: A progress move that rolls on one or more special tracks, like Bonds (classic Ironsworn), Failure (Delve), or Legacies (Starforged).
  */
-export type MoveRollType = 'no_roll' | 'action_roll' | 'progress_roll' | 'special_track';
+export type MoveRollType = "no_roll" | "action_roll" | "progress_roll" | "special_track";
 /**
  * A progress move that rolls on a special track, such as Legacies (Starforged) or Bonds (classic Ironsworn). For progress moves that use standard progress tracks, see MoveProgressRoll instead.
  */
@@ -2757,8 +2757,8 @@ export interface MoveSpecialTrack {
      */
     allow_momentum_burn: false;
     outcomes: MoveOutcomes;
-    type: 'move';
-    roll_type: 'special_track';
+    type: "move";
+    roll_type: "special_track";
 }
 /**
  * An object that describes changes to a move. These changes should be applied recursively, altering only the specified properties; enhanced arrays should be concatencated with the original array value.
@@ -2772,10 +2772,10 @@ export interface MoveSpecialTrackEnhancement {
     /**
      * A move must have this `roll_type` to receive this enhancement. This is in addition to any other restrictions made by other properties.
      */
-    roll_type: 'special_track';
+    roll_type: "special_track";
     trigger?: TriggerSpecialTrackEnhancement;
 }
-export type NonCollectableType = 'delve_site' | 'delve_site_domain' | 'delve_site_theme' | 'rarity' | 'truth';
+export type NonCollectableType = "delve_site" | "delve_site_domain" | "delve_site_theme" | "rarity" | "truth";
 /**
  * A non-player character entry, similar to those in Chapter 5 of the Ironsworn Rulebook, or Chapter 4 of Starforged.
  */
@@ -2826,7 +2826,7 @@ export interface Npc {
      * @default {}
      */
     variants: Record<DictKey, NpcVariant>;
-    type: 'npc';
+    type: "npc";
 }
 export interface NpcCollection {
     /**
@@ -2883,7 +2883,7 @@ export interface NpcCollection {
      * @default {}
      */
     collections: Record<DictKey, NpcCollection>;
-    type: 'npc_collection';
+    type: "npc_collection";
 }
 /**
  * A unique ID representing a NpcCollection object.
@@ -3034,8 +3034,8 @@ export interface OracleColumnText {
      * An array of objects, each representing a single row of the table.
      */
     rows: OracleRollableRowText[];
-    type: 'oracle_rollable';
-    oracle_type: 'column_text';
+    type: "oracle_rollable";
+    oracle_type: "column_text";
 }
 export interface OracleColumnText2 {
     /**
@@ -3089,8 +3089,8 @@ export interface OracleColumnText2 {
      * An array of objects, each representing a single row of the table.
      */
     rows: Array<OracleRollableRowText2>;
-    type: 'oracle_rollable';
-    oracle_type: 'column_text2';
+    type: "oracle_rollable";
+    oracle_type: "column_text2";
 }
 export interface OracleColumnText3 {
     /**
@@ -3144,8 +3144,8 @@ export interface OracleColumnText3 {
      * An array of objects, each representing a single row of the table.
      */
     rows: Array<OracleRollableRowText3>;
-    type: 'oracle_rollable';
-    oracle_type: 'column_text3';
+    type: "oracle_rollable";
+    oracle_type: "column_text3";
 }
 /**
  * Special roll instructions to use when rolling multiple times on a single oracle.
@@ -3154,7 +3154,7 @@ export interface OracleColumnText3 {
  *   - `keep`: Duplicates results should be kept.
  *   - `make_it_worse`: Duplicate results should be kept, and they compound to make things worse.
  */
-export type OracleDuplicateBehavior = 'reroll' | 'keep' | 'make_it_worse';
+export type OracleDuplicateBehavior = "reroll" | "keep" | "make_it_worse";
 export interface OracleMatchBehavior {
     text: MarkdownString;
 }
@@ -3420,8 +3420,8 @@ export interface OracleTablesCollection {
      * @default {}
      */
     collections: Record<DictKey, OracleCollection>;
-    type: 'oracle_collection';
-    oracle_type: 'tables';
+    type: "oracle_collection";
+    oracle_type: "tables";
 }
 /**
  * An OracleCollection representing a single table with one roll column and multiple text columns.
@@ -3488,8 +3488,8 @@ export interface OracleTableSharedRolls {
     column_labels: {
         roll: Label;
     };
-    type: 'oracle_collection';
-    oracle_type: 'table_shared_rolls';
+    type: "oracle_collection";
+    oracle_type: "table_shared_rolls";
 }
 /**
  * An OracleCollection representing a single table with multiple roll columns and one text column.
@@ -3555,8 +3555,8 @@ export interface OracleTableSharedText {
     column_labels: {
         text: Label;
     };
-    type: 'oracle_collection';
-    oracle_type: 'table_shared_text';
+    type: "oracle_collection";
+    oracle_type: "table_shared_text";
 }
 /**
  * An OracleCollection representing a single table with multiple roll columns, and 2 shared text columns.
@@ -3624,8 +3624,8 @@ export interface OracleTableSharedText2 {
         text: Label;
         text2: Label;
     };
-    type: 'oracle_collection';
-    oracle_type: 'table_shared_text2';
+    type: "oracle_collection";
+    oracle_type: "table_shared_text2";
 }
 /**
  * An OracleCollection representing a single table with multiple roll columns, and 3 shared text columns.
@@ -3688,8 +3688,8 @@ export interface OracleTableSharedText3 {
         text2: Label;
         text3: Label;
     };
-    type: 'oracle_collection';
-    oracle_type: 'table_shared_text3';
+    type: "oracle_collection";
+    oracle_type: "table_shared_text3";
 }
 /**
  * Represents a basic rollable oracle table with one roll column and one text result column.
@@ -3763,8 +3763,8 @@ export interface OracleTableText {
         roll: Label;
         text: Label;
     };
-    type: 'oracle_rollable';
-    oracle_type: 'table_text';
+    type: "oracle_rollable";
+    oracle_type: "table_text";
 }
 /**
  * A rollable oracle table with one roll column and two text columns.
@@ -3840,8 +3840,8 @@ export interface OracleTableText2 {
         text: Label;
         text2: Label;
     };
-    type: 'oracle_rollable';
-    oracle_type: 'table_text2';
+    type: "oracle_rollable";
+    oracle_type: "table_text2";
 }
 /**
  * A rollable oracle table with one roll column and 3 text columns.
@@ -3908,8 +3908,8 @@ export interface OracleTableText3 {
         text2: Label;
         text3: Label;
     };
-    type: 'oracle_rollable';
-    oracle_type: 'table_text3';
+    type: "oracle_rollable";
+    oracle_type: "table_text3";
 }
 /**
  * Represents a page number in a book.
@@ -3929,16 +3929,16 @@ export type PageNumber = number;
  *   - `common_noun_as_proper_noun`: An common noun used as a proper noun.
  * @experimental
  */
-export type PartOfSpeech = 'common_noun' | 'proper_noun' | 'adjunct_common_noun' | 'adjunct_proper_noun' | 'verb' | 'gerund' | 'adjective' | 'attributive_verb' | 'adjective_as_proper_noun' | 'common_noun_as_proper_noun';
+export type PartOfSpeech = "common_noun" | "proper_noun" | "adjunct_common_noun" | "adjunct_proper_noun" | "verb" | "gerund" | "adjective" | "attributive_verb" | "adjective_as_proper_noun" | "common_noun_as_proper_noun";
 /**
  *   - `miss`: An automatic miss.
  *   - `weak_hit`: An automatic weak hit.
  *   - `strong_hit`: An automatic strong hit.
  *   - `progress_roll`: Make a progress roll on a progress track associated with this move.
  */
-export type ProgressRollMethod = 'miss' | 'weak_hit' | 'strong_hit' | 'progress_roll';
+export type ProgressRollMethod = "miss" | "weak_hit" | "strong_hit" | "progress_roll";
 export interface ProgressRollOption {
-    using: 'progress_track';
+    using: "progress_track";
 }
 /**
  * Describes the features of a type of progress track.
@@ -4012,7 +4012,7 @@ export interface Rarity {
      * @maximum 5
      */
     xp_cost: number;
-    type: 'rarity';
+    type: "rarity";
 }
 /**
  * A unique ID representing a Rarity object.
@@ -4074,14 +4074,14 @@ export interface Rules {
  */
 export interface Ruleset {
     _id: RulesetId;
-    type: 'ruleset';
+    type: "ruleset";
     /**
      * The version of the Datasworn format used by this data.
      * @pattern ```javascript
      * /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/
      * ```
      */
-    datasworn_version: '0.1.0';
+    datasworn_version: "0.1.0";
     description?: MarkdownString;
     /**
      * The title of the source document.
@@ -4231,7 +4231,7 @@ export interface RulesExpansion {
  */
 export type RulesPackage = Ruleset | Expansion;
 export type RulesPackageId = RulesetId | ExpansionId;
-export type RuleType = 'impact' | 'condition_meter' | 'special_track' | 'stat';
+export type RuleType = "impact" | "condition_meter" | "special_track" | "stat";
 /**
  * Select from player and/or asset enhancements. Use it to describe modal abilities. For examples, see Ironclad (classic Ironsworn) and Windbinder (Sundered Isles).
  * @remarks Semantics are similar to the HTML `<select>` element
@@ -4248,7 +4248,7 @@ export interface SelectEnhancementField {
      * @default {}
      */
     choices: Record<DictKey, SelectEnhancementFieldChoice | SelectEnhancementFieldChoiceGroup>;
-    field_type: 'select_enhancement';
+    field_type: "select_enhancement";
     /**
      * An icon associated with this input.
      */
@@ -4260,7 +4260,7 @@ export interface SelectEnhancementField {
  */
 export interface SelectEnhancementFieldChoice {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     enhance_asset?: AssetEnhancement;
     enhance_moves?: MoveEnhancement[];
 }
@@ -4273,7 +4273,7 @@ export interface SelectEnhancementFieldChoiceGroup {
      * A label for this option group.
      */
     name: Label;
-    choice_type: 'choice_group';
+    choice_type: "choice_group";
     /**
      * @remarks Deserialize as a dictionary object.
      * @default {}
@@ -4296,7 +4296,7 @@ export interface SelectValueField {
      * @default {}
      */
     choices: Record<DictKey, SelectValueFieldChoice>;
-    field_type: 'select_value';
+    field_type: "select_value";
     /**
      * An icon associated with this input.
      */
@@ -4307,23 +4307,23 @@ export interface SelectValueField {
  */
 export type SelectValueFieldChoice = {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     stat: StatKey;
     /**
      * A reference to the value of a standard player character stat.
      */
-    using: 'stat';
+    using: "stat";
 } | {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     condition_meter: ConditionMeterKey;
     /**
      * A reference to the value of a standard player condition meter.
      */
-    using: 'condition_meter';
+    using: "condition_meter";
 } | {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     /**
      * Asset IDs (which may be wildcarded) that may provide the control field. For asset ability enhancements, `null` is used to represent the asset's own control fields.
      * @default null
@@ -4338,10 +4338,10 @@ export type SelectValueFieldChoice = {
     /**
      * A reference to the value of an asset control.
      */
-    using: 'asset_control';
+    using: "asset_control";
 } | {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     /**
      * Asset IDs (which may be wildcarded) that may provide the option field. For asset ability enhancements, `null` is used to represent the asset's own option fields.
      * @default null
@@ -4354,10 +4354,10 @@ export type SelectValueFieldChoice = {
     /**
      * A reference to the value of an asset option.
      */
-    using: 'asset_option';
+    using: "asset_option";
 } | {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     /**
      * The dictionary key of the asset control field.
      * @example "health"
@@ -4367,10 +4367,10 @@ export type SelectValueFieldChoice = {
     /**
      * A reference to the value of an attached asset control. For example, a Module asset could use this to roll using the `integrity` control of an attached Vehicle.
      */
-    using: 'attached_asset_control';
+    using: "attached_asset_control";
 } | {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     /**
      * The dictionary key of the asset option field.
      */
@@ -4378,15 +4378,15 @@ export type SelectValueFieldChoice = {
     /**
      * A reference to the value of an attached asset option.
      */
-    using: 'attached_asset_option';
+    using: "attached_asset_option";
 } | {
     label: Label;
-    choice_type: 'choice';
+    choice_type: "choice";
     value: number;
     /**
      * An arbitrary static integer value with a label.
      */
-    using: 'custom';
+    using: "custom";
 };
 /**
  * @pattern ```javascript
@@ -4447,7 +4447,7 @@ export interface SourceInfo {
  *   - `lowest`: Use the roll option with the worst/lowest value.
  *   - `all`: Use _every_ roll option at once.
  */
-export type SpecialTrackRollMethod = 'miss' | 'weak_hit' | 'strong_hit' | 'player_choice' | 'highest' | 'lowest' | 'all';
+export type SpecialTrackRollMethod = "miss" | "weak_hit" | "strong_hit" | "player_choice" | "highest" | "lowest" | "all";
 /**
  * Describes a special track like Bonds (classic Ironsworn), Failure (Delve), or Legacies (Starforged).
  */
@@ -4526,7 +4526,7 @@ export interface StatValueRef {
     /**
      * A reference to the value of a standard player character stat.
      */
-    using: 'stat';
+    using: "stat";
 }
 /**
  * @experimental
@@ -4569,7 +4569,7 @@ export interface TextField {
      * @default null
      */
     value: string | null;
-    field_type: 'text';
+    field_type: "text";
     /**
      * An icon associated with this input.
      */
@@ -4839,7 +4839,7 @@ export interface Truth {
      * @experimental
      */
     factions?: EntityPrompt[];
-    type: 'truth';
+    type: "truth";
 }
 /**
  * A unique ID representing a Truth object.

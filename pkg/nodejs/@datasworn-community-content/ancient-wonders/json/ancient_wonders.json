@@ -62244,7 +62244,9 @@
 					"type": "move",
 					"name": "Advance",
 					"roll_type": "no_roll",
-					"replaces": ["move:starforged/legacy/advance"],
+					"replaces": [
+						"move:starforged/legacy/advance"
+					],
 					"trigger": {
 						"conditions": [],
 						"text": "When you develop your abilities, improve your resources, gain a reward, or boost your influence..."
@@ -62274,7 +62276,9 @@
 						"category": "Legacy",
 						"controls": {}
 					},
-					"replaces": ["move:starforged/legacy/continue_a_legacy"],
+					"replaces": [
+						"move:starforged/legacy/continue_a_legacy"
+					],
 					"trigger": {
 						"conditions": [
 							{
