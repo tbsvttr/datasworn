@@ -21,9 +21,16 @@
 			"region": {
 				"$schema": {
 					"description": "This oracle table or row relates to a specific region of the Sundered Isles.",
-					"enum": ["myriads", "margins", "reaches"]
+					"enum": [
+						"myriads",
+						"margins",
+						"reaches"
+					]
 				},
-				"node_types": ["oracle_rollable", "row"]
+				"node_types": [
+					"oracle_rollable",
+					"row"
+				]
 			},
 			"curse": {
 				"$schema": {
@@ -39,25 +46,39 @@
 						},
 						"behavior": {
 							"description": "* `replace_result`: Replace the original table result with the cursed table result, using the original table roll value.\n* `add_result`: Roll again on the cursed table, combining it with the original table result.",
-							"enum": ["add_result", "replace_result"]
+							"enum": [
+								"add_result",
+								"replace_result"
+							]
 						}
 					}
 				},
-				"node_types": ["oracle_rollable"]
+				"node_types": [
+					"oracle_rollable"
+				]
 			},
 			"cursed_by": {
 				"$schema": {
 					"description": "This oracle has a cursed version. This is provided to represent the print version of the table, but may not be a reliable indicator if custom content is available; you may want to check for `curse` tags, too.",
 					"$ref": "#/definitions/OracleRollableId"
 				},
-				"node_types": ["oracle_rollable"]
+				"node_types": [
+					"oracle_rollable"
+				]
 			},
 			"faction_type": {
 				"$schema": {
 					"description": "This oracle table or row relates to a specific faction type.",
-					"enum": ["society", "organization", "empire"]
+					"enum": [
+						"society",
+						"organization",
+						"empire"
+					]
 				},
-				"node_types": ["oracle_rollable", "row"]
+				"node_types": [
+					"oracle_rollable",
+					"row"
+				]
 			},
 			"location": {
 				"$schema": {
@@ -73,7 +94,10 @@
 						"river"
 					]
 				},
-				"node_types": ["oracle_rollable", "row"]
+				"node_types": [
+					"oracle_rollable",
+					"row"
+				]
 			},
 			"overland_region": {
 				"$schema": {
@@ -92,7 +116,10 @@
 						"cursed"
 					]
 				},
-				"node_types": ["oracle_rollable", "row"]
+				"node_types": [
+					"oracle_rollable",
+					"row"
+				]
 			},
 			"requires_allies": {
 				"$schema": {
@@ -114,35 +141,54 @@
 						"armada"
 					]
 				},
-				"node_types": ["oracle_rollable", "row"]
+				"node_types": [
+					"oracle_rollable",
+					"row"
+				]
 			},
 			"starforged_friendly": {
 				"$schema": {
 					"type": "boolean",
 					"description": "This asset is ideal for use in Starforged."
 				},
-				"node_types": ["asset"]
+				"node_types": [
+					"asset"
+				]
 			},
 			"supernatural": {
 				"$schema": {
 					"type": "boolean",
 					"description": "This object is supernatural in nature, and is ideal for settings that feature supernatural or mythic powers."
 				},
-				"node_types": ["asset", "row"]
+				"node_types": [
+					"asset",
+					"row"
+				]
 			},
 			"technological": {
 				"$schema": {
 					"type": "boolean",
 					"description": "This object is technological in nature, and is ideal for settings that feature remarkable technologies."
 				},
-				"node_types": ["asset", "row"]
+				"node_types": [
+					"asset",
+					"row"
+				]
 			},
 			"treasure_size": {
 				"$schema": {
 					"description": "This oracle table or row relates to a specific size of treasure.",
-					"enum": ["small", "medium", "large", "vast"]
+					"enum": [
+						"small",
+						"medium",
+						"large",
+						"vast"
+					]
 				},
-				"node_types": ["oracle_rollable", "row"]
+				"node_types": [
+					"oracle_rollable",
+					"row"
+				]
 			}
 		}
 	},
@@ -4671,7 +4717,9 @@
 			"type": "oracle_collection",
 			"name": "Character Oracles",
 			"oracle_type": "tables",
-			"replaces": ["oracle_collection:starforged/character"],
+			"replaces": [
+				"oracle_collection:starforged/character"
+			],
 			"summary": "When encountering a character, focus on what you learn or perceive as a first impression using tables such as [Character First Look](datasworn:oracle_rollable:sundered_isles/character/first_look) and [Character Disposition](datasworn:oracle_rollable:sundered_isles/character/disposition). Then envision or generate additional details over time.",
 			"contents": {
 				"first_look": {
@@ -4679,7 +4727,9 @@
 					"type": "oracle_rollable",
 					"name": "Character First Look",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/character/first_look"],
+					"replaces": [
+						"oracle_rollable:starforged/character/first_look"
+					],
 					"dice": "1d100",
 					"recommended_rolls": {
 						"min": 1,
@@ -5287,7 +5337,9 @@
 					"type": "oracle_rollable",
 					"name": "Character Roles",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/character/role"],
+					"replaces": [
+						"oracle_rollable:starforged/character/role"
+					],
 					"dice": "1d100",
 					"summary": "Envision a character’s background or occupation using the broad categories below. For more detail, check the related subtable.",
 					"column_labels": {
@@ -6589,7 +6641,9 @@
 					"type": "oracle_rollable",
 					"name": "Character Details",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/character/revealed_aspect"],
+					"replaces": [
+						"oracle_rollable:starforged/character/revealed_aspect"
+					],
 					"dice": "1d100",
 					"summary": "As you interact with a person to gain a deeper understanding of their nature and personality, roll on this table to reveal new characteristics. Feel free to ignore, reroll, or adjust contradictions. Or envision how those contradictions add interesting complexity to the character.",
 					"recommended_rolls": {
@@ -7586,7 +7640,9 @@
 					"type": "oracle_rollable",
 					"name": "Character Goals",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/character/goal"],
+					"replaces": [
+						"oracle_rollable:starforged/character/goal"
+					],
 					"dice": "1d100",
 					"recommended_rolls": {
 						"min": 1,
@@ -9477,7 +9533,9 @@
 					"type": "oracle_collection",
 					"name": "Character Name",
 					"oracle_type": "tables",
-					"replaces": ["oracle_collection:starforged/character/name"],
+					"replaces": [
+						"oracle_collection:starforged/character/name"
+					],
 					"description": "This table provides pairs of given and family names. When choosing or rolling for a character name, select a pair or mix and match from among the options in a row. Given and family names can often be reversed, or used independently as stand-alone names.\n\nThis table also includes monikers, one to each row. Not all characters have monikers, but sailors are often given a nickname by their shipmates, or adopt one of their own. Monikers can be used as a stand-alone name (for example, “Redbeard” or “Stormcrow”) or paired with a given name or family name (“Crimson Jack” or “Hardtack Hobbs”). Roll or select an appropriate moniker as you like.",
 					"contents": {
 						"given_name": {
@@ -14595,14 +14653,18 @@
 			"type": "oracle_collection",
 			"name": "Core",
 			"oracle_type": "tables",
-			"replaces": ["oracle_collection:starforged/core"],
+			"replaces": [
+				"oracle_collection:starforged/core"
+			],
 			"contents": {
 				"action": {
 					"_id": "oracle_rollable:sundered_isles/core/action",
 					"type": "oracle_rollable",
 					"name": "Action",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/action"],
+					"replaces": [
+						"oracle_rollable:starforged/core/action"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -15428,7 +15490,9 @@
 					"type": "oracle_rollable",
 					"name": "Theme",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/theme"],
+					"replaces": [
+						"oracle_rollable:starforged/core/theme"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -16254,7 +16318,9 @@
 					"type": "oracle_rollable",
 					"name": "Descriptor",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/descriptor"],
+					"replaces": [
+						"oracle_rollable:starforged/core/descriptor"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -17080,7 +17146,9 @@
 					"type": "oracle_rollable",
 					"name": "Focus",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/focus"],
+					"replaces": [
+						"oracle_rollable:starforged/core/focus"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -17921,7 +17989,9 @@
 			"type": "oracle_collection",
 			"name": "Faction Oracles",
 			"oracle_type": "tables",
-			"replaces": ["oracle_collection:starforged/faction"],
+			"replaces": [
+				"oracle_collection:starforged/faction"
+			],
 			"contents": {
 				"type": {
 					"_id": "oracle_rollable:sundered_isles/faction/type",
@@ -29766,7 +29836,9 @@
 			"type": "oracle_collection",
 			"name": "Miscellaneous Oracles",
 			"oracle_type": "tables",
-			"replaces": ["oracle_collection:starforged/misc"],
+			"replaces": [
+				"oracle_collection:starforged/misc"
+			],
 			"contents": {
 				"prompts": {
 					"_id": "oracle_rollable:sundered_isles/misc/prompts",
@@ -30221,7 +30293,9 @@
 					"type": "oracle_rollable",
 					"name": "Story Complication",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/misc/story_complication"],
+					"replaces": [
+						"oracle_rollable:starforged/misc/story_complication"
+					],
 					"dice": "1d100",
 					"summary": "This oracle will introduce narrative turns, troubles, and revelations. It can be used as an alternative to the [Pay the Price](datasworn:move.oracle_rollable:starforged/fate/pay_the_price.pay_the_price) table when you encounter a negative outcome at a crucial moment. In particular, you might use this table after rolling matched 10s on the challenge dice.",
 					"column_labels": {
@@ -30489,7 +30563,9 @@
 					"type": "oracle_rollable",
 					"name": "Story Clue",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/misc/story_clue"],
+					"replaces": [
+						"oracle_rollable:starforged/misc/story_clue"
+					],
 					"dice": "1d100",
 					"summary": "When you [Gather Information](datasworn:move:starforged/adventure/gather_information) to investigate a mystery, you might uncover clues in the form of messages, records, rumors, eyewitness reports, or physical evidence. You can use this oracle to help reveal what this evidence connects to or implicates. Then, use the outcome of the [Gather Information](datasworn:move:starforged/adventure/gather_information) roll—strong hit, weak hit, or miss—to guide whether the clue brings clarity or complications.",
 					"column_labels": {
@@ -30780,7 +30856,9 @@
 					"type": "oracle_rollable",
 					"name": "Combat Action",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/misc/combat_action"],
+					"replaces": [
+						"oracle_rollable:starforged/misc/combat_action"
+					],
 					"dice": "1d100",
 					"summary": "Use this oracle to help inspire an action for a foe in a fight. When you’re not sure what an enemy does next, particularly when they have you in a bad spot, roll on this table and interpret the result as appropriate to the nature of the enemy and battleground.",
 					"column_labels": {
@@ -51849,7 +51927,9 @@
 					"tags": {
 						"sundered_isles": {
 							"curse_behavior": "replace_result",
-							"cursed_version_of": ["oracle_rollable:sundered_isles/ship/cargo"]
+							"cursed_version_of": [
+								"oracle_rollable:sundered_isles/ship/cargo"
+							]
 						}
 					},
 					"column_labels": {
@@ -52830,7 +52910,9 @@
 					"tags": {
 						"sundered_isles": {
 							"curse_behavior": "replace_result",
-							"cursed_version_of": ["oracle_rollable:sundered_isles/ship/name"]
+							"cursed_version_of": [
+								"oracle_rollable:sundered_isles/ship/name"
+							]
 						}
 					},
 					"column_labels": {
@@ -60307,7 +60389,9 @@
 			"_id": "asset_collection:sundered_isles/companion",
 			"type": "asset_collection",
 			"name": "Companion Assets",
-			"enhances": ["asset_collection:starforged/companion"],
+			"enhances": [
+				"asset_collection:starforged/companion"
+			],
 			"color": "#3d8b8a",
 			"contents": {
 				"albatross": {
@@ -60371,7 +60455,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/secure_an_advantage"],
+									"enhances": [
+										"move:starforged/*/secure_an_advantage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -60410,8 +60496,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/companion_takes_a_hit"],
-								"recover": ["move:starforged/recover/heal"]
+								"suffer": [
+									"move:starforged/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:starforged/recover/heal"
+								]
 							}
 						}
 					},
@@ -60649,8 +60739,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/companion_takes_a_hit"],
-								"recover": ["move:starforged/recover/heal"]
+								"suffer": [
+									"move:starforged/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:starforged/recover/heal"
+								]
 							}
 						}
 					},
@@ -60692,7 +60786,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/secure_an_advantage"],
+									"enhances": [
+										"move:starforged/*/secure_an_advantage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -60731,7 +60827,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/companion_takes_a_hit"],
+									"enhances": [
+										"move:starforged/suffer/companion_takes_a_hit"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -60769,8 +60867,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/companion_takes_a_hit"],
-								"recover": ["move:starforged/recover/heal"]
+								"suffer": [
+									"move:starforged/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:starforged/recover/heal"
+								]
 							}
 						}
 					},
@@ -60817,7 +60919,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"],
+									"enhances": [
+										"move:starforged/combat/strike"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -60843,7 +60947,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/clash"],
+									"enhances": [
+										"move:starforged/combat/clash"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -60929,8 +61035,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/companion_takes_a_hit"],
-								"recover": ["move:starforged/recover/heal"]
+								"suffer": [
+									"move:starforged/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:starforged/recover/heal"
+								]
 							}
 						}
 					},
@@ -60972,7 +61082,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "no_roll",
-									"enhances": ["move:*/fate/pay_the_price"]
+									"enhances": [
+										"move:*/fate/pay_the_price"
+									]
 								}
 							],
 							"moves": {
@@ -61046,7 +61158,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/resupply"],
+									"enhances": [
+										"move:starforged/recover/resupply"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61079,8 +61193,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/companion_takes_a_hit"],
-								"recover": ["move:starforged/recover/heal"]
+								"suffer": [
+									"move:starforged/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:starforged/recover/heal"
+								]
 							}
 						}
 					},
@@ -61222,7 +61340,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/enter_the_fray"],
+									"enhances": [
+										"move:starforged/combat/enter_the_fray"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61235,7 +61355,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61268,8 +61390,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/companion_takes_a_hit"],
-								"recover": ["move:starforged/recover/heal"]
+								"suffer": [
+									"move:starforged/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:starforged/recover/heal"
+								]
 							}
 						}
 					},
@@ -61400,8 +61526,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/companion_takes_a_hit"],
-								"recover": ["move:starforged/recover/heal"]
+								"suffer": [
+									"move:starforged/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:starforged/recover/heal"
+								]
 							}
 						}
 					},
@@ -61447,7 +61577,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/combat/take_decisive_action"],
+									"enhances": [
+										"move:starforged/combat/take_decisive_action"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61495,7 +61627,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/quest/fulfill_your_vow"],
+									"enhances": [
+										"move:starforged/quest/fulfill_your_vow"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61546,7 +61680,9 @@
 			"_id": "asset_collection:sundered_isles/deed",
 			"type": "asset_collection",
 			"name": "Deed Assets",
-			"enhances": ["asset_collection:starforged/deed"],
+			"enhances": [
+				"asset_collection:starforged/deed"
+			],
 			"color": "#40834f",
 			"contents": {
 				"cohort": {
@@ -61570,11 +61706,15 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/withstand_damage"]
+									"enhances": [
+										"move:starforged/suffer/withstand_damage"
+									]
 								},
 								{
 									"roll_type": "no_roll",
-									"enhances": ["move:starforged/fate/pay_the_price"]
+									"enhances": [
+										"move:starforged/fate/pay_the_price"
+									]
 								}
 							],
 							"moves": {}
@@ -61598,7 +61738,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/secure_an_advantage"],
+									"enhances": [
+										"move:starforged/*/secure_an_advantage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61652,7 +61794,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "no_roll",
-									"enhances": ["move:starforged/legacy/advance"],
+									"enhances": [
+										"move:starforged/legacy/advance"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61676,7 +61820,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/sojourn"],
+									"enhances": [
+										"move:starforged/recover/sojourn"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61742,7 +61888,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/sojourn"],
+									"enhances": [
+										"move:starforged/recover/sojourn"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61815,7 +61963,9 @@
 								}
 							},
 							"moves": {
-								"recover": ["move:starforged/recover/sojourn"]
+								"recover": [
+									"move:starforged/recover/sojourn"
+								]
 							}
 						}
 					},
@@ -61866,7 +62016,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/secure_an_advantage"],
+									"enhances": [
+										"move:starforged/*/secure_an_advantage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61879,7 +62031,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -61955,7 +62109,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/endure_harm"],
+									"enhances": [
+										"move:starforged/suffer/endure_harm"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62069,7 +62225,9 @@
 			"_id": "asset_collection:sundered_isles/module",
 			"type": "asset_collection",
 			"name": "Module Assets",
-			"enhances": ["asset_collection:starforged/module"],
+			"enhances": [
+				"asset_collection:starforged/module"
+			],
 			"color": "#7f5a90",
 			"contents": {
 				"armored_prow": {
@@ -62108,7 +62266,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/withstand_damage"],
+									"enhances": [
+										"move:starforged/suffer/withstand_damage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62132,7 +62292,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"],
+									"enhances": [
+										"move:starforged/combat/strike"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62225,7 +62387,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"],
+									"enhances": [
+										"move:starforged/combat/strike"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62249,7 +62413,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/gain_ground"],
+									"enhances": [
+										"move:starforged/combat/gain_ground"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62273,7 +62439,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "no_roll",
-									"enhances": ["move:starforged/combat/face_defeat"],
+									"enhances": [
+										"move:starforged/combat/face_defeat"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62326,7 +62494,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/secure_an_advantage"],
+									"enhances": [
+										"move:starforged/*/secure_an_advantage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62403,7 +62573,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/withstand_damage"],
+									"enhances": [
+										"move:starforged/suffer/withstand_damage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62416,7 +62588,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/repair"],
+									"enhances": [
+										"move:starforged/recover/repair"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62533,7 +62707,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/gain_ground"],
+									"enhances": [
+										"move:starforged/combat/gain_ground"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62591,7 +62767,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/enter_the_fray"],
+									"enhances": [
+										"move:starforged/combat/enter_the_fray"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62625,7 +62803,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/resupply"],
+									"enhances": [
+										"move:starforged/recover/resupply"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62692,7 +62872,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/exploration/set_a_course"]
+									"enhances": [
+										"move:starforged/exploration/set_a_course"
+									]
 								}
 							],
 							"moves": {}
@@ -62755,7 +62937,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/sojourn"]
+									"enhances": [
+										"move:starforged/recover/sojourn"
+									]
 								}
 							],
 							"moves": {}
@@ -62831,7 +63015,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"]
+									"enhances": [
+										"move:starforged/combat/strike"
+									]
 								}
 							],
 							"moves": {}
@@ -62846,7 +63032,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/clash"],
+									"enhances": [
+										"move:starforged/combat/clash"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62899,7 +63087,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/resupply"],
+									"enhances": [
+										"move:starforged/recover/resupply"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -62966,7 +63156,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63039,7 +63231,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63063,7 +63257,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/secure_an_advantage"],
+									"enhances": [
+										"move:starforged/*/secure_an_advantage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63173,7 +63369,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/heal"]
+									"enhances": [
+										"move:starforged/recover/heal"
+									]
 								}
 							],
 							"moves": {}
@@ -63188,7 +63386,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/heal"],
+									"enhances": [
+										"move:starforged/recover/heal"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63241,7 +63441,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/withstand_damage"],
+									"enhances": [
+										"move:starforged/suffer/withstand_damage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63254,7 +63456,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/repair"],
+									"enhances": [
+										"move:starforged/recover/repair"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63344,7 +63548,9 @@
 							"value": 4,
 							"controls": {},
 							"moves": {
-								"recover": ["move:starforged/recover/repair"]
+								"recover": [
+									"move:starforged/recover/repair"
+								]
 							}
 						}
 					},
@@ -63507,7 +63713,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/withstand_damage"]
+									"enhances": [
+										"move:starforged/suffer/withstand_damage"
+									]
 								}
 							],
 							"moves": {}
@@ -63592,7 +63800,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/hearten"],
+									"enhances": [
+										"move:starforged/recover/hearten"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63685,7 +63895,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/enter_the_fray"]
+									"enhances": [
+										"move:starforged/combat/enter_the_fray"
+									]
 								}
 							],
 							"moves": {}
@@ -63766,7 +63978,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/enter_the_fray"],
+									"enhances": [
+										"move:starforged/combat/enter_the_fray"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63821,7 +64035,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"],
+									"enhances": [
+										"move:starforged/combat/strike"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -63976,7 +64192,9 @@
 			"_id": "asset_collection:sundered_isles/path",
 			"type": "asset_collection",
 			"name": "Path Assets",
-			"enhances": ["asset_collection:starforged/path"],
+			"enhances": [
+				"asset_collection:starforged/path"
+			],
 			"color": "#3f7faa",
 			"contents": {
 				"cannoneer": {
@@ -63999,7 +64217,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"],
+									"enhances": [
+										"move:starforged/combat/strike"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64131,7 +64351,9 @@
 							"enhance_asset": {
 								"attachments": {
 									"max": 1,
-									"assets": ["asset:*/path/*"]
+									"assets": [
+										"asset:*/path/*"
+									]
 								}
 							},
 							"moves": {}
@@ -64238,7 +64460,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/adventure/compel"],
+									"enhances": [
+										"move:starforged/adventure/compel"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64310,7 +64534,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"]
+									"enhances": [
+										"move:starforged/combat/strike"
+									]
 								},
 								{
 									"roll_type": "action_roll",
@@ -64362,7 +64588,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/combat/take_decisive_action"],
+									"enhances": [
+										"move:starforged/combat/take_decisive_action"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64375,7 +64603,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/endure_stress"],
+									"enhances": [
+										"move:starforged/suffer/endure_stress"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64460,7 +64690,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/gain_ground"],
+									"enhances": [
+										"move:starforged/combat/gain_ground"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64560,7 +64792,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/strike"],
+									"enhances": [
+										"move:starforged/combat/strike"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64573,7 +64807,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/gain_ground"],
+									"enhances": [
+										"move:starforged/combat/gain_ground"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64602,7 +64838,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/resupply"],
+									"enhances": [
+										"move:starforged/recover/resupply"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64745,7 +64983,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/hearten"],
+									"enhances": [
+										"move:starforged/recover/hearten"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64860,7 +65100,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/clash"],
+									"enhances": [
+										"move:starforged/combat/clash"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64884,7 +65126,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/gain_ground"],
+									"enhances": [
+										"move:starforged/combat/gain_ground"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64897,7 +65141,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/react_under_fire"],
+									"enhances": [
+										"move:starforged/combat/react_under_fire"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64945,7 +65191,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/adventure/gather_information"],
+									"enhances": [
+										"move:starforged/adventure/gather_information"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -64974,11 +65222,15 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/threshold/face_death"]
+									"enhances": [
+										"move:starforged/threshold/face_death"
+									]
 								},
 								{
 									"roll_type": "no_roll",
-									"enhances": ["move:starforged/adventure/aid_your_ally"]
+									"enhances": [
+										"move:starforged/adventure/aid_your_ally"
+									]
 								}
 							],
 							"moves": {}
@@ -64993,7 +65245,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65136,7 +65390,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/resupply"],
+									"enhances": [
+										"move:starforged/recover/resupply"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65342,7 +65598,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/exploration/set_a_course"],
+									"enhances": [
+										"move:starforged/exploration/set_a_course"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65355,7 +65613,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65379,7 +65639,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/sojourn"],
+									"enhances": [
+										"move:starforged/recover/sojourn"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65433,7 +65695,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/enter_the_fray"],
+									"enhances": [
+										"move:starforged/combat/enter_the_fray"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65446,7 +65710,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/battle"],
+									"enhances": [
+										"move:starforged/combat/battle"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65546,7 +65812,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/gain_ground"],
+									"enhances": [
+										"move:starforged/combat/gain_ground"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65599,7 +65867,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/combat/take_decisive_action"],
+									"enhances": [
+										"move:starforged/combat/take_decisive_action"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65674,7 +65944,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/hearten"],
+									"enhances": [
+										"move:starforged/recover/hearten"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65714,7 +65986,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/adventure/compel"],
+									"enhances": [
+										"move:starforged/adventure/compel"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65782,7 +66056,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65813,7 +66089,9 @@
 								},
 								{
 									"roll_type": "no_roll",
-									"enhances": ["move:starforged/suffer/lose_momentum"],
+									"enhances": [
+										"move:starforged/suffer/lose_momentum"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65887,7 +66165,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/repair"],
+									"enhances": [
+										"move:starforged/recover/repair"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65911,7 +66191,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/enter_the_fray"],
+									"enhances": [
+										"move:starforged/combat/enter_the_fray"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -65940,7 +66222,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/resupply"],
+									"enhances": [
+										"move:starforged/recover/resupply"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66055,7 +66339,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/hearten"],
+									"enhances": [
+										"move:starforged/recover/hearten"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66149,7 +66435,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/quest/swear_an_iron_vow"],
+									"enhances": [
+										"move:starforged/quest/swear_an_iron_vow"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66162,7 +66450,9 @@
 								},
 								{
 									"roll_type": "no_roll",
-									"enhances": ["move:starforged/quest/reach_a_milestone"],
+									"enhances": [
+										"move:starforged/quest/reach_a_milestone"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66175,7 +66465,9 @@
 								},
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/quest/fulfill_your_vow"],
+									"enhances": [
+										"move:starforged/quest/fulfill_your_vow"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66280,7 +66572,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/connection/make_a_connection"],
+									"enhances": [
+										"move:starforged/connection/make_a_connection"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66293,7 +66587,9 @@
 								},
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/connection/forge_a_bond"],
+									"enhances": [
+										"move:starforged/connection/forge_a_bond"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66365,7 +66661,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/enter_the_fray"],
+									"enhances": [
+										"move:starforged/combat/enter_the_fray"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66389,7 +66687,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/react_under_fire"],
+									"enhances": [
+										"move:starforged/combat/react_under_fire"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66494,7 +66794,9 @@
 								},
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/quest/fulfill_your_vow"],
+									"enhances": [
+										"move:starforged/quest/fulfill_your_vow"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66507,7 +66809,9 @@
 								},
 								{
 									"roll_type": "progress_roll",
-									"enhances": ["move:starforged/connection/forge_a_bond"],
+									"enhances": [
+										"move:starforged/connection/forge_a_bond"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -66793,7 +67097,9 @@
 			"_id": "asset_collection:sundered_isles/command_vehicle",
 			"type": "asset_collection",
 			"name": "Command Vehicle Assets",
-			"enhances": ["asset_collection:starforged/command_vehicle"],
+			"enhances": [
+				"asset_collection:starforged/command_vehicle"
+			],
 			"color": "#9aa3ad",
 			"contents": {
 				"flagship": {
@@ -66882,8 +67188,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/withstand_damage"],
-								"recover": ["move:starforged/recover/repair"]
+								"suffer": [
+									"move:starforged/suffer/withstand_damage"
+								],
+								"recover": [
+									"move:starforged/recover/repair"
+								]
 							}
 						},
 						"supply": {
@@ -66903,8 +67213,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/sacrifice_resources"],
-								"recover": ["move:starforged/recover/resupply"]
+								"suffer": [
+									"move:starforged/suffer/sacrifice_resources"
+								],
+								"recover": [
+									"move:starforged/recover/resupply"
+								]
 							}
 						}
 					},
@@ -66938,7 +67252,9 @@
 			"_id": "asset_collection:sundered_isles/support_vehicle",
 			"type": "asset_collection",
 			"name": "Support Vehicle Assets",
-			"enhances": ["asset_collection:starforged/support_vehicle"],
+			"enhances": [
+				"asset_collection:starforged/support_vehicle"
+			],
 			"color": "#495790",
 			"contents": {
 				"captains_boat": {
@@ -66991,7 +67307,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/combat/clash"],
+									"enhances": [
+										"move:starforged/combat/clash"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -67015,7 +67333,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/secure_an_advantage"],
+									"enhances": [
+										"move:starforged/*/secure_an_advantage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -67054,8 +67374,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/withstand_damage"],
-								"recover": ["move:starforged/recover/repair"]
+								"suffer": [
+									"move:starforged/suffer/withstand_damage"
+								],
+								"recover": [
+									"move:starforged/recover/repair"
+								]
 							}
 						}
 					},
@@ -67106,7 +67430,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/*/face_danger"],
+									"enhances": [
+										"move:starforged/*/face_danger"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -67125,7 +67451,9 @@
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/withstand_damage"],
+									"enhances": [
+										"move:starforged/suffer/withstand_damage"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -67184,8 +67512,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/withstand_damage"],
-								"recover": ["move:starforged/recover/repair"]
+								"suffer": [
+									"move:starforged/suffer/withstand_damage"
+								],
+								"recover": [
+									"move:starforged/recover/repair"
+								]
 							}
 						}
 					},
@@ -67280,7 +67612,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/exploration/set_a_course"],
+									"enhances": [
+										"move:starforged/exploration/set_a_course"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -67313,8 +67647,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/withstand_damage"],
-								"recover": ["move:starforged/recover/repair"]
+								"suffer": [
+									"move:starforged/suffer/withstand_damage"
+								],
+								"recover": [
+									"move:starforged/recover/repair"
+								]
 							}
 						}
 					},
@@ -67361,7 +67699,9 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/resupply"],
+									"enhances": [
+										"move:starforged/recover/resupply"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -67391,11 +67731,15 @@
 							"enhance_moves": [
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/suffer/withstand_damage"]
+									"enhances": [
+										"move:starforged/suffer/withstand_damage"
+									]
 								},
 								{
 									"roll_type": "action_roll",
-									"enhances": ["move:starforged/recover/repair"],
+									"enhances": [
+										"move:starforged/recover/repair"
+									],
 									"trigger": {
 										"conditions": [
 											{
@@ -67455,8 +67799,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:starforged/suffer/withstand_damage"],
-								"recover": ["move:starforged/recover/repair"]
+								"suffer": [
+									"move:starforged/suffer/withstand_damage"
+								],
+								"recover": [
+									"move:starforged/recover/repair"
+								]
 							}
 						}
 					},
@@ -67528,8 +67876,12 @@
 							"value": 5,
 							"controls": {},
 							"moves": {
-								"suffer": ["move:starforged/suffer/withstand_damage"],
-								"recover": ["move:starforged/recover/repair"]
+								"suffer": [
+									"move:starforged/suffer/withstand_damage"
+								],
+								"recover": [
+									"move:starforged/recover/repair"
+								]
 							}
 						}
 					},
@@ -67685,7 +68037,9 @@
 					"type": "move",
 					"name": "Undertake an Expedition",
 					"roll_type": "action_roll",
-					"replaces": ["move:starforged/exploration/undertake_an_expedition"],
+					"replaces": [
+						"move:starforged/exploration/undertake_an_expedition"
+					],
 					"trigger": {
 						"conditions": [
 							{
@@ -67753,7 +68107,9 @@
 					"type": "move",
 					"name": "Make a Discovery",
 					"roll_type": "no_roll",
-					"replaces": ["move:starforged/exploration/make_a_discovery"],
+					"replaces": [
+						"move:starforged/exploration/make_a_discovery"
+					],
 					"trigger": {
 						"conditions": [],
 						"text": "When your exploration of a waypoint uncovers something wondrous..."
@@ -67963,7 +68319,9 @@
 					"type": "move",
 					"name": "Confront Chaos",
 					"roll_type": "no_roll",
-					"replaces": ["move:starforged/exploration/confront_chaos"],
+					"replaces": [
+						"move:starforged/exploration/confront_chaos"
+					],
 					"trigger": {
 						"conditions": [],
 						"text": "When your exploration of a waypoint uncovers something dreadful..."
@@ -68164,7 +68522,9 @@
 					"type": "move",
 					"name": "Set a Course",
 					"roll_type": "action_roll",
-					"replaces": ["move:starforged/exploration/set_a_course"],
+					"replaces": [
+						"move:starforged/exploration/set_a_course"
+					],
 					"trigger": {
 						"conditions": [
 							{
@@ -68230,14 +68590,18 @@
 			"_id": "move_category:sundered_isles/combat",
 			"type": "move_category",
 			"name": "Combat Moves",
-			"enhances": ["move_category:starforged/combat"],
+			"enhances": [
+				"move_category:starforged/combat"
+			],
 			"contents": {
 				"enter_the_fray": {
 					"_id": "move:sundered_isles/combat/enter_the_fray",
 					"type": "move",
 					"name": "Enter the Fray",
 					"roll_type": "action_roll",
-					"replaces": ["move:starforged/combat/enter_the_fray"],
+					"replaces": [
+						"move:starforged/combat/enter_the_fray"
+					],
 					"trigger": {
 						"conditions": [
 							{
@@ -68339,14 +68703,18 @@
 			"_id": "move_category:sundered_isles/suffer",
 			"type": "move_category",
 			"name": "Suffer Moves",
-			"enhances": ["move_category:starforged/suffer"],
+			"enhances": [
+				"move_category:starforged/suffer"
+			],
 			"contents": {
 				"withstand_damage": {
 					"_id": "move:sundered_isles/suffer/withstand_damage",
 					"type": "move",
 					"name": "Withstand Damage",
 					"roll_type": "action_roll",
-					"replaces": ["move:starforged/suffer/withstand_damage"],
+					"replaces": [
+						"move:starforged/suffer/withstand_damage"
+					],
 					"trigger": {
 						"conditions": [
 							{
@@ -68489,14 +68857,18 @@
 			"_id": "move_category:sundered_isles/recover",
 			"type": "move_category",
 			"name": "Recover Moves",
-			"enhances": ["move_category:starforged/recover"],
+			"enhances": [
+				"move_category:starforged/recover"
+			],
 			"contents": {
 				"resupply": {
 					"_id": "move:sundered_isles/recover/resupply",
 					"type": "move",
 					"name": "Resupply",
 					"roll_type": "action_roll",
-					"replaces": ["move:starforged/recover/resupply"],
+					"replaces": [
+						"move:starforged/recover/resupply"
+					],
 					"trigger": {
 						"conditions": [
 							{
@@ -68585,7 +68957,9 @@
 					"type": "move",
 					"name": "Repair",
 					"roll_type": "action_roll",
-					"replaces": ["move:starforged/recover/repair"],
+					"replaces": [
+						"move:starforged/recover/repair"
+					],
 					"trigger": {
 						"conditions": [
 							{

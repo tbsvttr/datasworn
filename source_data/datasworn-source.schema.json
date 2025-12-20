@@ -136,7 +136,9 @@
 									}
 								}
 							],
-							"required": ["type"],
+							"required": [
+								"type"
+							],
 							"type": "object",
 							"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `type` property as a discriminator."
 						},
@@ -154,7 +156,10 @@
 									"$ref": "#/definitions/RulesetId"
 								}
 							},
-							"required": ["datasworn_version", "ruleset"]
+							"required": [
+								"datasworn_version",
+								"ruleset"
+							]
 						}
 					]
 				}
@@ -600,7 +605,13 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "category", "abilities", "type"]
+			"required": [
+				"name",
+				"_source",
+				"category",
+				"abilities",
+				"type"
+			]
 		},
 		"AssetAbility": {
 			"title": "AssetAbility",
@@ -689,14 +700,21 @@
 					"$ref": "#/definitions/Tags"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"AssetAbilityControlField": {
 			"title": "AssetAbilityControlField",
 			"properties": {
 				"field_type": {
-					"enum": ["clock", "counter", "checkbox", "text"]
+					"enum": [
+						"clock",
+						"counter",
+						"checkbox",
+						"text"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -754,7 +772,9 @@
 					}
 				}
 			],
-			"required": ["field_type"],
+			"required": [
+				"field_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `field_type` property as a discriminator."
 		},
@@ -786,7 +806,9 @@
 			"title": "AssetAbilityOptionField",
 			"properties": {
 				"field_type": {
-					"enum": ["text"]
+					"enum": [
+						"text"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -805,7 +827,9 @@
 					}
 				}
 			],
-			"required": ["field_type"],
+			"required": [
+				"field_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `field_type` property as a discriminator."
 		},
@@ -859,7 +883,9 @@
 					]
 				}
 			},
-			"required": ["assets"],
+			"required": [
+				"assets"
+			],
 			"additionalProperties": false
 		},
 		"AssetCardFlipField": {
@@ -893,7 +919,10 @@
 					"type": "boolean"
 				}
 			},
-			"required": ["label", "field_type"],
+			"required": [
+				"label",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"AssetCheckboxField": {
@@ -927,7 +956,10 @@
 					"type": "boolean"
 				}
 			},
-			"required": ["label", "field_type"],
+			"required": [
+				"label",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"AssetCollection": {
@@ -1021,7 +1053,11 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type"],
+			"required": [
+				"name",
+				"_source",
+				"type"
+			],
 			"additionalProperties": false
 		},
 		"AssetCollectionId": {
@@ -1117,7 +1153,11 @@
 					}
 				}
 			},
-			"required": ["label", "max", "field_type"],
+			"required": [
+				"label",
+				"max",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"AssetConditionMeterControlField": {
@@ -1125,7 +1165,10 @@
 			"description": "A checkbox control field, rendered as part of an asset condition meter.",
 			"properties": {
 				"field_type": {
-					"enum": ["checkbox", "card_flip"]
+					"enum": [
+						"checkbox",
+						"card_flip"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -1157,7 +1200,9 @@
 					}
 				}
 			],
-			"required": ["field_type"],
+			"required": [
+				"field_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `field_type` property as a discriminator."
 		},
@@ -1175,7 +1220,10 @@
 					"type": "integer"
 				}
 			},
-			"required": ["field_type", "max"],
+			"required": [
+				"field_type",
+				"max"
+			],
 			"additionalProperties": false
 		},
 		"AssetControlField": {
@@ -1245,7 +1293,9 @@
 					}
 				}
 			],
-			"required": ["field_type"],
+			"required": [
+				"field_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `field_type` property as a discriminator."
 		},
@@ -1253,7 +1303,9 @@
 			"title": "AssetControlFieldEnhancement",
 			"properties": {
 				"field_type": {
-					"enum": ["condition_meter"]
+					"enum": [
+						"condition_meter"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -1272,7 +1324,9 @@
 					}
 				}
 			],
-			"required": ["field_type"],
+			"required": [
+				"field_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `field_type` property as a discriminator."
 		},
@@ -1299,7 +1353,10 @@
 				},
 				"control": {
 					"description": "The dictionary key of the asset control field.",
-					"examples": ["health", "integrity"],
+					"examples": [
+						"health",
+						"integrity"
+					],
 					"$ref": "#/definitions/DictKey"
 				},
 				"using": {
@@ -1308,7 +1365,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["control", "using"],
+			"required": [
+				"control",
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"AssetEnhancement": {
@@ -1360,7 +1420,11 @@
 			"description": "Options are asset input fields which are set once, usually when the character takes the asset. The most common example is the \"name\" field on companion assets. A more complex example is the choice of a god's stat for the Devotant asset.",
 			"properties": {
 				"field_type": {
-					"enum": ["select_value", "select_enhancement", "text"]
+					"enum": [
+						"select_value",
+						"select_enhancement",
+						"text"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -1405,7 +1469,9 @@
 					}
 				}
 			],
-			"required": ["field_type"],
+			"required": [
+				"field_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `field_type` property as a discriminator."
 		},
@@ -1439,7 +1505,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["option", "using"],
+			"required": [
+				"option",
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"AtlasCollection": {
@@ -1533,7 +1602,11 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type"],
+			"required": [
+				"name",
+				"_source",
+				"type"
+			],
 			"additionalProperties": false
 		},
 		"AtlasCollectionId": {
@@ -1623,7 +1696,13 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "features", "description", "type"]
+			"required": [
+				"name",
+				"_source",
+				"features",
+				"description",
+				"type"
+			]
 		},
 		"AtlasEntryId": {
 			"title": "AtlasEntryId",
@@ -1644,7 +1723,10 @@
 			"properties": {
 				"control": {
 					"description": "The dictionary key of the asset control field.",
-					"examples": ["health", "integrity"],
+					"examples": [
+						"health",
+						"integrity"
+					],
 					"$ref": "#/definitions/DictKey"
 				},
 				"using": {
@@ -1653,7 +1735,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["control", "using"],
+			"required": [
+				"control",
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"AttachedAssetOptionValueRef": {
@@ -1671,7 +1756,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["option", "using"],
+			"required": [
+				"option",
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"AuthorInfo": {
@@ -1687,7 +1775,9 @@
 			"properties": {
 				"name": {
 					"description": "The name of the author.",
-					"examples": ["Shawn Tomkin"],
+					"examples": [
+						"Shawn Tomkin"
+					],
 					"$ref": "#/definitions/Label"
 				},
 				"email": {
@@ -1699,13 +1789,21 @@
 					"$ref": "#/definitions/WebUrl"
 				}
 			},
-			"required": ["name"],
+			"required": [
+				"name"
+			],
 			"additionalProperties": false
 		},
 		"ChallengeRank": {
 			"title": "ChallengeRank",
 			"description": "Challenge rank, represented as an integer from 1 (troublesome) to 5 (epic).\n\n  - `1`: Troublesome\n  - `2`: Dangerous\n  - `3`: Formidable\n  - `4`: Extreme\n  - `5`: Epic",
-			"enum": [1, 2, 3, 4, 5]
+			"enum": [
+				1,
+				2,
+				3,
+				4,
+				5
+			]
 		},
 		"ClockField": {
 			"title": "ClockField",
@@ -1748,12 +1846,22 @@
 					"$ref": "#/definitions/SvgImageUrl"
 				}
 			},
-			"required": ["label", "max", "field_type"],
+			"required": [
+				"label",
+				"max",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"CollectableType": {
 			"title": "CollectableType",
-			"enum": ["atlas_entry", "npc", "oracle_rollable", "asset", "move"]
+			"enum": [
+				"atlas_entry",
+				"npc",
+				"oracle_rollable",
+				"asset",
+				"move"
+			]
 		},
 		"CollectionType": {
 			"title": "CollectionType",
@@ -1802,12 +1910,20 @@
 					"$ref": "#/definitions/SvgImageUrl"
 				}
 			},
-			"required": ["label", "max", "field_type"],
+			"required": [
+				"label",
+				"max",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"ConditionMeterKey": {
 			"title": "ConditionMeterKey",
-			"examples": ["health", "spirit", "supply"],
+			"examples": [
+				"health",
+				"spirit",
+				"supply"
+			],
 			"description": "A basic, rollable player character resource specified by the ruleset.",
 			"$ref": "#/definitions/DictKey"
 		},
@@ -1853,7 +1969,11 @@
 					"type": "boolean"
 				}
 			},
-			"required": ["description", "label", "max"],
+			"required": [
+				"description",
+				"label",
+				"max"
+			],
 			"additionalProperties": false
 		},
 		"ConditionMeterValueRef": {
@@ -1870,7 +1990,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["condition_meter", "using"],
+			"required": [
+				"condition_meter",
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"CoreTags": {
@@ -1937,7 +2060,10 @@
 					"$ref": "#/definitions/SvgImageUrl"
 				}
 			},
-			"required": ["label", "field_type"],
+			"required": [
+				"label",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"CssColor": {
@@ -1963,7 +2089,11 @@
 					"type": "string"
 				}
 			},
-			"required": ["label", "value", "using"],
+			"required": [
+				"label",
+				"value",
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"DelveSite": {
@@ -2083,10 +2213,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2110,10 +2246,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2137,10 +2279,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2164,10 +2312,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2191,10 +2345,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2218,10 +2378,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2245,10 +2411,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2272,10 +2444,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2299,10 +2477,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2326,10 +2510,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2353,10 +2543,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2380,10 +2576,16 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["frequency", "roll"]
+									"required": [
+										"frequency",
+										"roll"
+									]
 								}
 							],
 							"additionalItems": false,
@@ -2431,12 +2633,21 @@
 					"$ref": "#/definitions/DelveSiteDenizenId"
 				}
 			},
-			"required": ["frequency", "roll"],
+			"required": [
+				"frequency",
+				"roll"
+			],
 			"additionalProperties": false
 		},
 		"DelveSiteDenizenFrequency": {
 			"title": "DelveSiteDenizenFrequency",
-			"enum": ["very_common", "common", "uncommon", "rare", "unforeseen"]
+			"enum": [
+				"very_common",
+				"common",
+				"uncommon",
+				"rare",
+				"unforeseen"
+			]
 		},
 		"DelveSiteDenizenId": {
 			"title": "DelveSiteDenizenId",
@@ -2543,10 +2754,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2565,10 +2781,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2587,10 +2808,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2609,10 +2835,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2631,10 +2862,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2653,10 +2889,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2675,10 +2916,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2697,10 +2943,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2719,10 +2970,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2741,10 +2997,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2763,10 +3024,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2785,10 +3051,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								}
 							],
 							"additionalItems": false,
@@ -2825,10 +3096,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2847,10 +3123,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2869,10 +3150,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2891,10 +3177,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -2913,10 +3204,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								}
 							],
 							"additionalItems": false,
@@ -2930,7 +3226,14 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "summary", "features", "dangers", "type"]
+			"required": [
+				"name",
+				"_source",
+				"summary",
+				"features",
+				"dangers",
+				"type"
+			]
 		},
 		"DelveSiteDomainDanger": {
 			"title": "DelveSiteDomainDanger",
@@ -2986,7 +3289,9 @@
 					"$ref": "#/definitions/DelveSiteDomainDangerId"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"DelveSiteDomainDangerId": {
@@ -3055,7 +3360,9 @@
 					"$ref": "#/definitions/DelveSiteDomainFeatureId"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"DelveSiteDomainFeatureId": {
@@ -3183,10 +3490,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3205,10 +3517,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3227,10 +3544,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3249,10 +3571,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3271,10 +3598,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								}
 							],
 							"additionalItems": false,
@@ -3311,10 +3643,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3333,10 +3670,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3355,10 +3697,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3377,10 +3724,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3399,10 +3751,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3421,10 +3778,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3443,10 +3805,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3465,10 +3832,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3487,10 +3859,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3509,10 +3886,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3531,10 +3913,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								},
 								{
 									"additionalProperties": true,
@@ -3553,10 +3940,15 @@
 													"type": "number"
 												}
 											},
-											"required": ["min", "max"]
+											"required": [
+												"min",
+												"max"
+											]
 										}
 									},
-									"required": ["roll"]
+									"required": [
+										"roll"
+									]
 								}
 							],
 							"additionalItems": false,
@@ -3570,7 +3962,14 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "summary", "features", "dangers", "type"]
+			"required": [
+				"name",
+				"_source",
+				"summary",
+				"features",
+				"dangers",
+				"type"
+			]
 		},
 		"DelveSiteThemeDanger": {
 			"title": "DelveSiteThemeDanger",
@@ -3626,7 +4025,9 @@
 					"$ref": "#/definitions/DelveSiteThemeDangerId"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"DelveSiteThemeDangerId": {
@@ -3695,7 +4096,9 @@
 					"$ref": "#/definitions/DelveSiteThemeFeatureId"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"DelveSiteThemeFeatureId": {
@@ -3726,7 +4129,11 @@
 			"title": "DiceExpression",
 			"pattern": "([1-9][0-9]*)d([1-9][0-9]*)([+-]([1-9][0-9]*))?",
 			"description": "A simple dice roll expression with an optional (positive or negative) modifer.",
-			"examples": ["1d100", "1d6+2", "2d10"],
+			"examples": [
+				"1d100",
+				"1d6+2",
+				"2d10"
+			],
 			"type": "string"
 		},
 		"DiceRange": {
@@ -3743,7 +4150,10 @@
 					"type": "integer"
 				}
 			},
-			"required": ["min", "max"],
+			"required": [
+				"min",
+				"max"
+			],
 			"additionalProperties": false
 		},
 		"DictKey": {
@@ -3830,14 +4240,26 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "text", "trigger", "outcomes", "type", "roll_type"],
+			"required": [
+				"name",
+				"text",
+				"trigger",
+				"outcomes",
+				"type",
+				"roll_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedMove": {
 			"title": "EmbeddedMove",
 			"properties": {
 				"roll_type": {
-					"enum": ["action_roll", "no_roll", "progress_roll", "special_track"]
+					"enum": [
+						"action_roll",
+						"no_roll",
+						"progress_roll",
+						"special_track"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -3895,7 +4317,9 @@
 					}
 				}
 			],
-			"required": ["roll_type"],
+			"required": [
+				"roll_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `roll_type` property as a discriminator."
 		},
@@ -3975,7 +4399,13 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "text", "trigger", "type", "roll_type"],
+			"required": [
+				"name",
+				"text",
+				"trigger",
+				"type",
+				"roll_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedOracleColumnText": {
@@ -4029,7 +4459,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -4057,7 +4490,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"],
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedOracleColumnText2": {
@@ -4111,7 +4549,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -4139,7 +4580,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"],
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedOracleColumnText3": {
@@ -4193,7 +4639,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -4221,7 +4670,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"],
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedOracleRollable": {
@@ -4319,7 +4773,9 @@
 					}
 				}
 			],
-			"required": ["oracle_type"],
+			"required": [
+				"oracle_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `oracle_type` property as a discriminator."
 		},
@@ -4402,7 +4858,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -4436,7 +4895,10 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["roll", "text"]
+					"required": [
+						"roll",
+						"text"
+					]
 				},
 				"type": {
 					"const": "oracle_rollable",
@@ -4447,7 +4909,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"],
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedOracleTableText2": {
@@ -4501,7 +4968,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -4539,7 +5009,11 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["roll", "text", "text2"]
+					"required": [
+						"roll",
+						"text",
+						"text2"
+					]
 				},
 				"type": {
 					"const": "oracle_rollable",
@@ -4550,7 +5024,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"],
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedOracleTableText3": {
@@ -4604,7 +5083,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -4640,7 +5122,12 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["roll", "text", "text2", "text3"]
+					"required": [
+						"roll",
+						"text",
+						"text2",
+						"text3"
+					]
 				},
 				"type": {
 					"const": "oracle_rollable",
@@ -4651,7 +5138,13 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "column_labels", "type", "oracle_type"],
+			"required": [
+				"name",
+				"rows",
+				"column_labels",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbeddedProgressRollMove": {
@@ -4803,7 +5296,14 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "text", "trigger", "outcomes", "type", "roll_type"],
+			"required": [
+				"name",
+				"text",
+				"trigger",
+				"outcomes",
+				"type",
+				"roll_type"
+			],
 			"additionalProperties": false
 		},
 		"EmbedOnlyType": {
@@ -4828,7 +5328,9 @@
 					"$ref": "#/definitions/MarkdownString"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"Expansion": {
@@ -4882,7 +5384,9 @@
 				},
 				"url": {
 					"description": "A URL where the source document is available.",
-					"examples": ["https://ironswornrpg.com"],
+					"examples": [
+						"https://ironswornrpg.com"
+					],
 					"$ref": "#/definitions/WebUrl"
 				},
 				"license": {
@@ -5017,11 +5521,19 @@
 					"$ref": "#/definitions/RulesExpansion"
 				}
 			},
-			"required": ["_id", "type", "datasworn_version", "ruleset"]
+			"required": [
+				"_id",
+				"type",
+				"datasworn_version",
+				"ruleset"
+			]
 		},
 		"ExpansionId": {
 			"title": "ExpansionId",
-			"examples": ["delve", "sundered_isles"],
+			"examples": [
+				"delve",
+				"sundered_isles"
+			],
 			"pattern": "^[a-z][a-z0-9_]*$",
 			"description": "The ID of a Datasworn package that relies on an external package to provide its ruleset.",
 			"type": "string"
@@ -5095,7 +5607,10 @@
 					}
 				}
 			},
-			"required": ["label", "description"],
+			"required": [
+				"label",
+				"description"
+			],
 			"additionalProperties": false
 		},
 		"ImpactRule": {
@@ -5134,7 +5649,10 @@
 					"$ref": "#/definitions/Tags"
 				}
 			},
-			"required": ["label", "description"],
+			"required": [
+				"label",
+				"description"
+			],
 			"additionalProperties": false
 		},
 		"Label": {
@@ -5162,7 +5680,12 @@
 			"title": "Move",
 			"properties": {
 				"roll_type": {
-					"enum": ["action_roll", "no_roll", "progress_roll", "special_track"]
+					"enum": [
+						"action_roll",
+						"no_roll",
+						"progress_roll",
+						"special_track"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -5220,7 +5743,9 @@
 					}
 				}
 			],
-			"required": ["roll_type"],
+			"required": [
+				"roll_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `roll_type` property as a discriminator."
 		},
@@ -5355,7 +5880,9 @@
 					"$ref": "#/definitions/TriggerActionRollEnhancement"
 				}
 			},
-			"required": ["roll_type"],
+			"required": [
+				"roll_type"
+			],
 			"additionalProperties": false
 		},
 		"MoveCategory": {
@@ -5449,7 +5976,11 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type"],
+			"required": [
+				"name",
+				"_source",
+				"type"
+			],
 			"additionalProperties": false
 		},
 		"MoveCategoryId": {
@@ -5468,7 +5999,12 @@
 			"title": "MoveEnhancement",
 			"properties": {
 				"roll_type": {
-					"enum": ["action_roll", "no_roll", "progress_roll", "special_track"]
+					"enum": [
+						"action_roll",
+						"no_roll",
+						"progress_roll",
+						"special_track"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -5526,7 +6062,9 @@
 					}
 				}
 			],
-			"required": ["roll_type"],
+			"required": [
+				"roll_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `roll_type` property as a discriminator."
 		},
@@ -5636,7 +6174,14 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "text", "trigger", "type", "roll_type"]
+			"required": [
+				"name",
+				"_source",
+				"text",
+				"trigger",
+				"type",
+				"roll_type"
+			]
 		},
 		"MoveNoRollEnhancement": {
 			"title": "MoveNoRollEnhancement",
@@ -5667,7 +6212,9 @@
 					"$ref": "#/definitions/TriggerNoRollEnhancement"
 				}
 			},
-			"required": ["roll_type"],
+			"required": [
+				"roll_type"
+			],
 			"additionalProperties": false
 		},
 		"MoveOracleRollableId": {
@@ -5708,7 +6255,9 @@
 					}
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"MoveOutcomes": {
@@ -5726,7 +6275,11 @@
 					"$ref": "#/definitions/MoveOutcome"
 				}
 			},
-			"required": ["strong_hit", "weak_hit", "miss"],
+			"required": [
+				"strong_hit",
+				"weak_hit",
+				"miss"
+			],
 			"additionalProperties": false
 		},
 		"MoveProgressRoll": {
@@ -5866,13 +6419,20 @@
 					"$ref": "#/definitions/TriggerProgressRollEnhancement"
 				}
 			},
-			"required": ["roll_type"],
+			"required": [
+				"roll_type"
+			],
 			"additionalProperties": false
 		},
 		"MoveRollType": {
 			"title": "MoveRollType",
 			"description": "  - `no_roll`: A move that makes no action rolls or progress rolls.\n  - `action_roll`: A move that makes an action roll.\n  - `progress_roll`: A progress move that rolls on a standard progress track type (defined by this move).\n  - `special_track`: A progress move that rolls on one or more special tracks, like Bonds (classic Ironsworn), Failure (Delve), or Legacies (Starforged).",
-			"enum": ["no_roll", "action_roll", "progress_roll", "special_track"]
+			"enum": [
+				"no_roll",
+				"action_roll",
+				"progress_roll",
+				"special_track"
+			]
 		},
 		"MoveSpecialTrack": {
 			"title": "Progress Move (special track roll)",
@@ -6006,7 +6566,9 @@
 					"$ref": "#/definitions/TriggerSpecialTrackEnhancement"
 				}
 			},
-			"required": ["roll_type"],
+			"required": [
+				"roll_type"
+			],
 			"additionalProperties": false
 		},
 		"NonCollectableType": {
@@ -6226,7 +6788,11 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type"],
+			"required": [
+				"name",
+				"_source",
+				"type"
+			],
 			"additionalProperties": false
 		},
 		"NpcCollectionId": {
@@ -6299,7 +6865,12 @@
 					"$ref": "#/definitions/MarkdownString"
 				}
 			},
-			"required": ["name", "rank", "nature", "description"],
+			"required": [
+				"name",
+				"rank",
+				"nature",
+				"description"
+			],
 			"additionalProperties": false
 		},
 		"NpcVariantId": {
@@ -6395,7 +6966,9 @@
 					}
 				}
 			],
-			"required": ["oracle_type"],
+			"required": [
+				"oracle_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `oracle_type` property as a discriminator."
 		},
@@ -6472,7 +7045,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -6500,7 +7076,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"]
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			]
 		},
 		"OracleColumnText2": {
 			"title": "OracleColumnText2",
@@ -6562,7 +7143,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -6590,7 +7174,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"]
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			]
 		},
 		"OracleColumnText3": {
 			"title": "OracleColumnText3",
@@ -6652,7 +7241,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -6680,12 +7272,21 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "rows", "type", "oracle_type"]
+			"required": [
+				"name",
+				"rows",
+				"type",
+				"oracle_type"
+			]
 		},
 		"OracleDuplicateBehavior": {
 			"title": "OracleDuplicateBehavior",
 			"description": "Special roll instructions to use when rolling multiple times on a single oracle.\n\n  - `reroll`: Duplicate results should be re-rolled.\n  - `keep`: Duplicates results should be kept.\n  - `make_it_worse`: Duplicate results should be kept, and they compound to make things worse.",
-			"enum": ["reroll", "keep", "make_it_worse"]
+			"enum": [
+				"reroll",
+				"keep",
+				"make_it_worse"
+			]
 		},
 		"OracleMatchBehavior": {
 			"title": "OracleMatchBehavior",
@@ -6695,7 +7296,9 @@
 					"$ref": "#/definitions/MarkdownString"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"OracleRoll": {
@@ -6841,7 +7444,9 @@
 					}
 				}
 			],
-			"required": ["oracle_type"],
+			"required": [
+				"oracle_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `oracle_type` property as a discriminator."
 		},
@@ -6937,7 +7542,9 @@
 					"$ref": "#/definitions/AnyOracleRollableRowId"
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"OracleRollableRowText2": {
@@ -7005,7 +7612,10 @@
 					]
 				}
 			},
-			"required": ["text", "text2"],
+			"required": [
+				"text",
+				"text2"
+			],
 			"additionalProperties": false
 		},
 		"OracleRollableRowText3": {
@@ -7084,14 +7694,22 @@
 					]
 				}
 			},
-			"required": ["text", "text2", "text3"],
+			"required": [
+				"text",
+				"text2",
+				"text3"
+			],
 			"additionalProperties": false
 		},
 		"OracleRollableTable": {
 			"title": "OracleRollableTable",
 			"properties": {
 				"oracle_type": {
-					"enum": ["table_text", "table_text2", "table_text3"]
+					"enum": [
+						"table_text",
+						"table_text2",
+						"table_text3"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -7136,7 +7754,9 @@
 					}
 				}
 			],
-			"required": ["oracle_type"],
+			"required": [
+				"oracle_type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `oracle_type` property as a discriminator."
 		},
@@ -7260,7 +7880,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type", "oracle_type"],
+			"required": [
+				"name",
+				"_source",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"OracleTableSharedRolls": {
@@ -7351,7 +7976,9 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["roll"],
+					"required": [
+						"roll"
+					],
 					"description": "Provides column labels for this table. The `roll` key refers to the roll column showing the dice range (`min` and `max` on each table row). For all other column labels, see the `name` property of each child `OracleColumn`."
 				},
 				"type": {
@@ -7363,7 +7990,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type", "oracle_type"],
+			"required": [
+				"name",
+				"_source",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"OracleTableSharedText": {
@@ -7454,7 +8086,9 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["text"]
+					"required": [
+						"text"
+					]
 				},
 				"type": {
 					"const": "oracle_collection",
@@ -7465,7 +8099,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type", "oracle_type"],
+			"required": [
+				"name",
+				"_source",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"OracleTableSharedText2": {
@@ -7560,7 +8199,10 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["text", "text2"]
+					"required": [
+						"text",
+						"text2"
+					]
 				},
 				"type": {
 					"const": "oracle_collection",
@@ -7571,7 +8213,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type", "oracle_type"],
+			"required": [
+				"name",
+				"_source",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"OracleTableSharedText3": {
@@ -7665,7 +8312,11 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["text", "text2", "text3"],
+					"required": [
+						"text",
+						"text2",
+						"text3"
+					],
 					"default": {}
 				},
 				"type": {
@@ -7677,7 +8328,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "type", "oracle_type"],
+			"required": [
+				"name",
+				"_source",
+				"type",
+				"oracle_type"
+			],
 			"additionalProperties": false
 		},
 		"OracleTableText": {
@@ -7745,7 +8401,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -7779,7 +8438,10 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["roll", "text"]
+					"required": [
+						"roll",
+						"text"
+					]
 				},
 				"type": {
 					"const": "oracle_rollable",
@@ -7790,7 +8452,13 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "rows", "type", "oracle_type"]
+			"required": [
+				"name",
+				"_source",
+				"rows",
+				"type",
+				"oracle_type"
+			]
 		},
 		"OracleTableText2": {
 			"title": "OracleTableText2",
@@ -7857,7 +8525,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -7895,7 +8566,11 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["roll", "text", "text2"]
+					"required": [
+						"roll",
+						"text",
+						"text2"
+					]
 				},
 				"type": {
 					"const": "oracle_rollable",
@@ -7906,7 +8581,13 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "rows", "type", "oracle_type"]
+			"required": [
+				"name",
+				"_source",
+				"rows",
+				"type",
+				"oracle_type"
+			]
 		},
 		"OracleTableText3": {
 			"title": "OracleTableText3",
@@ -7973,7 +8654,10 @@
 							"type": "integer"
 						}
 					},
-					"required": ["min", "max"]
+					"required": [
+						"min",
+						"max"
+					]
 				},
 				"dice": {
 					"default": "1d100",
@@ -8009,7 +8693,12 @@
 							"$ref": "#/definitions/Label"
 						}
 					},
-					"required": ["roll", "text", "text2", "text3"]
+					"required": [
+						"roll",
+						"text",
+						"text2",
+						"text3"
+					]
 				},
 				"type": {
 					"const": "oracle_rollable",
@@ -8055,7 +8744,12 @@
 		"ProgressRollMethod": {
 			"title": "ProgressRollMethod",
 			"description": "  - `miss`: An automatic miss.\n  - `weak_hit`: An automatic weak hit.\n  - `strong_hit`: An automatic strong hit.\n  - `progress_roll`: Make a progress roll on a progress track associated with this move.",
-			"enum": ["miss", "weak_hit", "strong_hit", "progress_roll"]
+			"enum": [
+				"miss",
+				"weak_hit",
+				"strong_hit",
+				"progress_roll"
+			]
 		},
 		"ProgressRollOption": {
 			"title": "ProgressRollOption",
@@ -8066,7 +8760,9 @@
 					"type": "string"
 				}
 			},
-			"required": ["using"],
+			"required": [
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"ProgressTrackTypeInfo": {
@@ -8099,7 +8795,9 @@
 					}
 				}
 			},
-			"required": ["category"],
+			"required": [
+				"category"
+			],
 			"additionalProperties": false
 		},
 		"Rarity": {
@@ -8171,7 +8869,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "asset", "type"]
+			"required": [
+				"name",
+				"_source",
+				"asset",
+				"type"
+			]
 		},
 		"RarityId": {
 			"title": "RarityId",
@@ -8295,7 +8998,9 @@
 					}
 				}
 			],
-			"required": ["using"],
+			"required": [
+				"using"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `using` property as a discriminator."
 		},
@@ -8414,7 +9119,9 @@
 				},
 				"url": {
 					"description": "A URL where the source document is available.",
-					"examples": ["https://ironswornrpg.com"],
+					"examples": [
+						"https://ironswornrpg.com"
+					],
 					"$ref": "#/definitions/WebUrl"
 				},
 				"license": {
@@ -8546,11 +9253,18 @@
 					"$ref": "#/definitions/Rules"
 				}
 			},
-			"required": ["_id", "type", "datasworn_version"]
+			"required": [
+				"_id",
+				"type",
+				"datasworn_version"
+			]
 		},
 		"RulesetId": {
 			"title": "RulesetId",
-			"examples": ["classic", "starforged"],
+			"examples": [
+				"classic",
+				"starforged"
+			],
 			"pattern": "^[a-z][a-z0-9_]*$",
 			"description": "The ID of standalone Datasworn package that describes its own ruleset.",
 			"type": "string"
@@ -8624,7 +9338,10 @@
 			"description": "Describes game rules compatible with the Ironsworn tabletop role-playing game by Shawn Tomkin.",
 			"properties": {
 				"type": {
-					"enum": ["ruleset", "expansion"]
+					"enum": [
+						"ruleset",
+						"expansion"
+					]
 				}
 			},
 			"additionalProperties": true,
@@ -8656,7 +9373,9 @@
 					}
 				}
 			],
-			"required": ["type"],
+			"required": [
+				"type"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `type` property as a discriminator."
 		},
@@ -8673,7 +9392,12 @@
 		},
 		"RuleType": {
 			"title": "RuleType",
-			"enum": ["impact", "condition_meter", "special_track", "stat"]
+			"enum": [
+				"impact",
+				"condition_meter",
+				"special_track",
+				"stat"
+			]
 		},
 		"SelectEnhancementField": {
 			"title": "SelectEnhancementField",
@@ -8704,7 +9428,10 @@
 						"^[a-z][a-z0-9_]*$": {
 							"properties": {
 								"choice_type": {
-									"enum": ["choice", "choice_group"]
+									"enum": [
+										"choice",
+										"choice_group"
+									]
 								}
 							},
 							"additionalProperties": true,
@@ -8736,7 +9463,9 @@
 									}
 								}
 							],
-							"required": ["choice_type"],
+							"required": [
+								"choice_type"
+							],
 							"type": "object",
 							"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `choice_type` property as a discriminator."
 						}
@@ -8751,7 +9480,10 @@
 					"$ref": "#/definitions/SvgImageUrl"
 				}
 			},
-			"required": ["label", "field_type"],
+			"required": [
+				"label",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"SelectEnhancementFieldChoice": {
@@ -8777,7 +9509,10 @@
 					}
 				}
 			},
-			"required": ["label", "choice_type"],
+			"required": [
+				"label",
+				"choice_type"
+			],
 			"additionalProperties": false
 		},
 		"SelectEnhancementFieldChoiceGroup": {
@@ -8804,7 +9539,10 @@
 					}
 				}
 			},
-			"required": ["name", "choice_type"],
+			"required": [
+				"name",
+				"choice_type"
+			],
 			"additionalProperties": false
 		},
 		"SelectValueField": {
@@ -8847,7 +9585,10 @@
 					"$ref": "#/definitions/SvgImageUrl"
 				}
 			},
-			"required": ["label", "field_type"],
+			"required": [
+				"label",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"SelectValueFieldChoice": {
@@ -8897,7 +9638,12 @@
 								"type": "string"
 							}
 						},
-						"required": ["label", "choice_type", "stat", "using"],
+						"required": [
+							"label",
+							"choice_type",
+							"stat",
+							"using"
+						],
 						"additionalProperties": false
 					}
 				},
@@ -8931,7 +9677,12 @@
 								"type": "string"
 							}
 						},
-						"required": ["label", "choice_type", "condition_meter", "using"],
+						"required": [
+							"label",
+							"choice_type",
+							"condition_meter",
+							"using"
+						],
 						"additionalProperties": false
 					}
 				},
@@ -8974,7 +9725,10 @@
 							},
 							"control": {
 								"description": "The dictionary key of the asset control field.",
-								"examples": ["health", "integrity"],
+								"examples": [
+									"health",
+									"integrity"
+								],
 								"$ref": "#/definitions/DictKey"
 							},
 							"using": {
@@ -8983,7 +9737,12 @@
 								"type": "string"
 							}
 						},
-						"required": ["label", "choice_type", "control", "using"],
+						"required": [
+							"label",
+							"choice_type",
+							"control",
+							"using"
+						],
 						"additionalProperties": false
 					}
 				},
@@ -9033,7 +9792,12 @@
 								"type": "string"
 							}
 						},
-						"required": ["label", "choice_type", "option", "using"],
+						"required": [
+							"label",
+							"choice_type",
+							"option",
+							"using"
+						],
 						"additionalProperties": false
 					}
 				},
@@ -9060,7 +9824,10 @@
 							},
 							"control": {
 								"description": "The dictionary key of the asset control field.",
-								"examples": ["health", "integrity"],
+								"examples": [
+									"health",
+									"integrity"
+								],
 								"$ref": "#/definitions/DictKey"
 							},
 							"using": {
@@ -9069,7 +9836,12 @@
 								"type": "string"
 							}
 						},
-						"required": ["label", "choice_type", "control", "using"],
+						"required": [
+							"label",
+							"choice_type",
+							"control",
+							"using"
+						],
 						"additionalProperties": false
 					}
 				},
@@ -9104,7 +9876,12 @@
 								"type": "string"
 							}
 						},
-						"required": ["label", "choice_type", "option", "using"],
+						"required": [
+							"label",
+							"choice_type",
+							"option",
+							"using"
+						],
 						"additionalProperties": false
 					}
 				},
@@ -9138,12 +9915,19 @@
 								"type": "string"
 							}
 						},
-						"required": ["label", "choice_type", "value", "using"],
+						"required": [
+							"label",
+							"choice_type",
+							"value",
+							"using"
+						],
 						"additionalProperties": false
 					}
 				}
 			],
-			"required": ["using"],
+			"required": [
+				"using"
+			],
 			"type": "object",
 			"remarks": "Deserialize as a discriminated union/polymorphic object type, using the `using` property as a discriminator."
 		},
@@ -9191,7 +9975,9 @@
 				},
 				"url": {
 					"description": "A URL where the source document is available.",
-					"examples": ["https://ironswornrpg.com"],
+					"examples": [
+						"https://ironswornrpg.com"
+					],
 					"$ref": "#/definitions/WebUrl"
 				},
 				"license": {
@@ -9210,7 +9996,13 @@
 					]
 				}
 			},
-			"required": ["title", "authors", "date", "url", "license"]
+			"required": [
+				"title",
+				"authors",
+				"date",
+				"url",
+				"license"
+			]
 		},
 		"SpecialTrackRollMethod": {
 			"title": "SpecialTrackRollMethod",
@@ -9253,7 +10045,10 @@
 					"$ref": "#/definitions/Tags"
 				}
 			},
-			"required": ["label", "description"],
+			"required": [
+				"label",
+				"description"
+			],
 			"additionalProperties": false
 		},
 		"SpecialTrackType": {
@@ -9270,7 +10065,13 @@
 		},
 		"StatKey": {
 			"title": "StatKey",
-			"examples": ["edge", "heart", "iron", "shadow", "wits"],
+			"examples": [
+				"edge",
+				"heart",
+				"iron",
+				"shadow",
+				"wits"
+			],
 			"description": "A basic player character stat.",
 			"$ref": "#/definitions/DictKey"
 		},
@@ -9281,7 +10082,9 @@
 			"properties": {
 				"label": {
 					"description": "A label for this stat.",
-					"examples": ["edge"],
+					"examples": [
+						"edge"
+					],
 					"$ref": "#/definitions/Label"
 				},
 				"description": {
@@ -9296,7 +10099,10 @@
 					"$ref": "#/definitions/Tags"
 				}
 			},
-			"required": ["label", "description"],
+			"required": [
+				"label",
+				"description"
+			],
 			"additionalProperties": false
 		},
 		"StatValueRef": {
@@ -9313,7 +10119,10 @@
 					"type": "string"
 				}
 			},
-			"required": ["stat", "using"],
+			"required": [
+				"stat",
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"Suggestions": {
@@ -9489,7 +10298,9 @@
 					"$ref": "#/definitions/TagSchema"
 				}
 			},
-			"required": ["$schema"],
+			"required": [
+				"$schema"
+			],
 			"additionalProperties": false
 		},
 		"Tags": {
@@ -9649,7 +10460,9 @@
 									]
 								}
 							},
-							"required": ["$ref"]
+							"required": [
+								"$ref"
+							]
 						},
 						{
 							"title": "TagSchemaStringEnum",
@@ -9663,7 +10476,9 @@
 									}
 								}
 							},
-							"required": ["enum"]
+							"required": [
+								"enum"
+							]
 						},
 						{
 							"title": "TagSchemaIntegerEnum",
@@ -9677,7 +10492,9 @@
 									}
 								}
 							},
-							"required": ["enum"]
+							"required": [
+								"enum"
+							]
 						},
 						{
 							"description": "Schema for a true or false value.",
@@ -9690,7 +10507,9 @@
 									"type": "string"
 								}
 							},
-							"required": ["type"]
+							"required": [
+								"type"
+							]
 						},
 						{
 							"title": "TagSchemaInteger",
@@ -9702,7 +10521,9 @@
 									"type": "string"
 								}
 							},
-							"required": ["type"]
+							"required": [
+								"type"
+							]
 						},
 						{
 							"title": "TagSchemaFloat",
@@ -9714,7 +10535,9 @@
 									"type": "string"
 								}
 							},
-							"required": ["type"]
+							"required": [
+								"type"
+							]
 						},
 						{
 							"title": "TagSchemaObject",
@@ -9734,7 +10557,10 @@
 									}
 								}
 							},
-							"required": ["type", "properties"]
+							"required": [
+								"type",
+								"properties"
+							]
 						},
 						{
 							"title": "TagSchemaArray",
@@ -9749,7 +10575,10 @@
 									"$ref": "#/definitions/TagSchema"
 								}
 							},
-							"required": ["type", "items"]
+							"required": [
+								"type",
+								"items"
+							]
 						}
 					]
 				},
@@ -9788,7 +10617,10 @@
 					"$ref": "#/definitions/SvgImageUrl"
 				}
 			},
-			"required": ["label", "field_type"],
+			"required": [
+				"label",
+				"field_type"
+			],
 			"additionalProperties": false
 		},
 		"TriggerActionRoll": {
@@ -9809,7 +10641,10 @@
 					"description": "Specific conditions that qualify for this trigger."
 				}
 			},
-			"required": ["text", "conditions"],
+			"required": [
+				"text",
+				"conditions"
+			],
 			"additionalProperties": false
 		},
 		"TriggerActionRollCondition": {
@@ -9834,7 +10669,10 @@
 					}
 				}
 			},
-			"required": ["method", "roll_options"],
+			"required": [
+				"method",
+				"roll_options"
+			],
 			"additionalProperties": false
 		},
 		"TriggerActionRollConditionEnhancement": {
@@ -9891,7 +10729,9 @@
 					}
 				}
 			},
-			"required": ["conditions"],
+			"required": [
+				"conditions"
+			],
 			"additionalProperties": false
 		},
 		"TriggerBy": {
@@ -9931,7 +10771,9 @@
 					"description": "Specific conditions that qualify for this trigger."
 				}
 			},
-			"required": ["text"],
+			"required": [
+				"text"
+			],
 			"additionalProperties": false
 		},
 		"TriggerNoRollCondition": {
@@ -9970,7 +10812,9 @@
 					}
 				}
 			},
-			"required": ["conditions"],
+			"required": [
+				"conditions"
+			],
 			"additionalProperties": false
 		},
 		"TriggerProgressRoll": {
@@ -9990,7 +10834,10 @@
 					"description": "Specific conditions that qualify for this trigger."
 				}
 			},
-			"required": ["text", "conditions"],
+			"required": [
+				"text",
+				"conditions"
+			],
 			"additionalProperties": false
 		},
 		"TriggerProgressRollCondition": {
@@ -10016,7 +10863,9 @@
 					}
 				}
 			},
-			"required": ["roll_options"],
+			"required": [
+				"roll_options"
+			],
 			"additionalProperties": false
 		},
 		"TriggerProgressRollConditionEnhancement": {
@@ -10074,7 +10923,9 @@
 					}
 				}
 			},
-			"required": ["conditions"],
+			"required": [
+				"conditions"
+			],
 			"additionalProperties": false
 		},
 		"TriggerSpecialTrack": {
@@ -10094,7 +10945,10 @@
 					"description": "Specific conditions that qualify for this trigger."
 				}
 			},
-			"required": ["text", "conditions"],
+			"required": [
+				"text",
+				"conditions"
+			],
 			"additionalProperties": false
 		},
 		"TriggerSpecialTrackCondition": {
@@ -10119,7 +10973,10 @@
 					}
 				}
 			},
-			"required": ["method", "roll_options"],
+			"required": [
+				"method",
+				"roll_options"
+			],
 			"additionalProperties": false
 		},
 		"TriggerSpecialTrackConditionEnhancement": {
@@ -10172,7 +11029,9 @@
 					"$ref": "#/definitions/SpecialTrackType"
 				}
 			},
-			"required": ["using"],
+			"required": [
+				"using"
+			],
 			"additionalProperties": false
 		},
 		"TriggerSpecialTrackEnhancement": {
@@ -10188,7 +11047,9 @@
 					}
 				}
 			},
-			"required": ["conditions"],
+			"required": [
+				"conditions"
+			],
 			"additionalProperties": false
 		},
 		"Truth": {
@@ -10271,7 +11132,12 @@
 					"type": "string"
 				}
 			},
-			"required": ["name", "_source", "options", "type"]
+			"required": [
+				"name",
+				"_source",
+				"options",
+				"type"
+			]
 		},
 		"TruthId": {
 			"title": "TruthId",
@@ -10321,7 +11187,11 @@
 					}
 				}
 			},
-			"required": ["roll", "description", "quest_starter"],
+			"required": [
+				"roll",
+				"description",
+				"quest_starter"
+			],
 			"additionalProperties": false
 		},
 		"TruthOptionId": {

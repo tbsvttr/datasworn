@@ -22,14 +22,18 @@
 				"contents": {
 					"overheated": {
 						"label": "overheated",
-						"prevents_recovery": ["integrity"],
+						"prevents_recovery": [
+							"integrity"
+						],
 						"permanent": false,
 						"shared": false,
 						"description": "Overheated is marked when you [Withstand Damange](datasworn:move:fe_runners/suffer/withstand_damage) and are reduced to 0 integrity. Coolant is depleted and the system is so hot that components are locking up."
 					},
 					"infected": {
 						"label": "infected",
-						"prevents_recovery": ["integrity"],
+						"prevents_recovery": [
+							"integrity"
+						],
 						"permanent": false,
 						"shared": false,
 						"description": "May be marked when your rig is at 0 integrity and you fail to [Withstand Damage](datasworn:move:fe_runners/suffer/withstand_damage). Your defenses were down and your systems core processor has been directly infected.  A virus is embedded into your system permanently.  Only a specific VX Author path has the ability to remove an infection."
@@ -42,21 +46,27 @@
 				"contents": {
 					"wounded": {
 						"label": "wounded",
-						"prevents_recovery": ["health"],
+						"prevents_recovery": [
+							"health"
+						],
 						"permanent": false,
 						"shared": false,
 						"description": "Wounded may be marked when you are at 0 health and fail to [Endure Harm](datasworn:move:starforged/suffer/endure_harm). You are severely injured."
 					},
 					"shaken": {
 						"label": "shaken",
-						"prevents_recovery": ["spirit"],
+						"prevents_recovery": [
+							"spirit"
+						],
 						"permanent": false,
 						"shared": false,
 						"description": "Shaken may be marked when you are at 0 spirit and fail to [Endure Stress](datasworn:move:starforged/suffer/endure_stress). You are despairing or distraught."
 					},
 					"unregulated": {
 						"label": "unregulated (power)",
-						"prevents_recovery": ["supply"],
+						"prevents_recovery": [
+							"supply"
+						],
 						"permanent": false,
 						"shared": true,
 						"description": "Unregulated is marked when you [Sacrifice Power](datasworn:move:fe_runners/suffer/sacrifice_power) and are reduced to 0 supply. if you lose resources consider losing Fe or portions of the data you are trying to collect.  If it's related to supply, imagine that with lower power you can’t multitask as well."
@@ -1424,7 +1434,9 @@
 					"type": "oracle_rollable",
 					"name": "Action",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/action"],
+					"replaces": [
+						"oracle_rollable:starforged/core/action"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -2250,7 +2262,9 @@
 					"type": "oracle_rollable",
 					"name": "Theme",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/theme"],
+					"replaces": [
+						"oracle_rollable:starforged/core/theme"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -3076,7 +3090,9 @@
 					"type": "oracle_rollable",
 					"name": "Descriptor",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/descriptor"],
+					"replaces": [
+						"oracle_rollable:starforged/core/descriptor"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -3902,7 +3918,9 @@
 					"type": "oracle_rollable",
 					"name": "Focus",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/core/focus"],
+					"replaces": [
+						"oracle_rollable:starforged/core/focus"
+					],
 					"dice": "1d100",
 					"column_labels": {
 						"roll": "Roll",
@@ -4728,7 +4746,9 @@
 					"type": "oracle_rollable",
 					"name": "Story Complication",
 					"oracle_type": "table_text",
-					"replaces": ["oracle_rollable:starforged/misc/story_complication"],
+					"replaces": [
+						"oracle_rollable:starforged/misc/story_complication"
+					],
 					"dice": "1d100",
 					"summary": "This oracle will introduce narrative turns, troubles, and revelations. It can be used as an alternative to the [Pay the Price](datasworn:move.oracle_rollable:starforged/fate/pay_the_price.pay_the_price) table when you encounter a negative outcome at a crucial moment. In particular, you might use this table after rolling matched 10s on the challenge dice.",
 					"column_labels": {
@@ -25430,8 +25450,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:fe_runners/suffer/companion_takes_a_hit"],
-								"recover": ["move:fe_runners/recover/heal"]
+								"suffer": [
+									"move:fe_runners/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:fe_runners/recover/heal"
+								]
 							}
 						}
 					},
@@ -25509,8 +25533,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:fe_runners/suffer/companion_takes_a_hit"],
-								"recover": ["move:fe_runners/recover/heal"]
+								"suffer": [
+									"move:fe_runners/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:fe_runners/recover/heal"
+								]
 							}
 						}
 					},
@@ -25588,8 +25616,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:fe_runners/suffer/companion_takes_a_hit"],
-								"recover": ["move:fe_runners/recover/repair"]
+								"suffer": [
+									"move:fe_runners/suffer/companion_takes_a_hit"
+								],
+								"recover": [
+									"move:fe_runners/recover/repair"
+								]
 							}
 						}
 					},
@@ -27740,7 +27772,9 @@
 					"shared": false,
 					"attachments": {
 						"max": null,
-						"assets": ["asset:*/module/*"]
+						"assets": [
+							"asset:*/module/*"
+						]
 					},
 					"abilities": [
 						{
@@ -27796,8 +27830,12 @@
 								}
 							},
 							"moves": {
-								"suffer": ["move:fe_runners/suffer/withstand_damage"],
-								"recover": ["move:fe_runners/recover/repair"]
+								"suffer": [
+									"move:fe_runners/suffer/withstand_damage"
+								],
+								"recover": [
+									"move:fe_runners/recover/repair"
+								]
 							}
 						}
 					},
@@ -28291,7 +28329,9 @@
 						}
 					},
 					"oracles": {},
-					"suggestions": ["oracle_rollable:fe_runners/core/story_clue"],
+					"suggestions": [
+						"oracle_rollable:fe_runners/core/story_clue"
+					],
 					"_source": {
 						"title": "Fe-Runners Rulebook",
 						"authors": [
@@ -30706,7 +30746,9 @@
 									{
 										"using": "asset_control",
 										"control": "health",
-										"assets": ["asset:*/companion/*"]
+										"assets": [
+											"asset:*/companion/*"
+										]
 									}
 								]
 							}
@@ -30779,7 +30821,9 @@
 									{
 										"using": "asset_control",
 										"control": "integrity",
-										"assets": ["asset:*/rig/*"]
+										"assets": [
+											"asset:*/rig/*"
+										]
 									}
 								]
 							}
