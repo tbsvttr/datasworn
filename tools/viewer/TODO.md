@@ -102,3 +102,10 @@ rules:
 - [ ] **Data**: Backport relevant tags to Delve
 - [ ] **Viewer**: Render `rules.tags` with player-friendly descriptions
 - [ ] **Viewer**: Hide or de-emphasize `$schema` technical details
+
+---
+
+## Dependencies
+
+- [ ] **Evaluate `jtd`** - Last updated 2021, consider alternatives or fork
+- [ ] **Evaluate `json-schema`** - Last updated 2021, consider alternatives
