@@ -19,9 +19,11 @@ haxesworn
 
 **/__pycache__
 **/.venv
+.mypy_cache
 
 # Local PDFs (not for distribution)
 pdfs/
 
 # Viewer build output
 tools/viewer/dist/
+
