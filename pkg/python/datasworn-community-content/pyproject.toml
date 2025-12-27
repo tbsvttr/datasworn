@@ -1,17 +1,37 @@
 [project]
 name = "datasworn-community-content"
 version = "0.1.0"
-description = "Add your description here"
+description = "Datasworn Community Content: A Python library for Ironsworn: Starforged community content."
 readme = "README.md"
-authors = [
-    { name = "Gerhard Brandt", email = "gbrandt@cern.ch" }
-]
+authors = [{ name = "Gerhard Brandt", email = "gbrandt@cern.ch" }]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "datasworn-community-content-ancient-wonders",
+    "datasworn-community-content-fe-runners",
+    "datasworn-community-content-starsmith",
+    "datasworn-core",
+]
 
-[project.scripts]
-datasworn-community-content = "datasworn_community_content:main"
+[tool.uv]
+managed = true
+package = false # the project itself is not a package
+
+[tool.uv.workspace]
+members = [
+    "src/datasworn-community-content/ancient-wonders",
+    "src/datasworn-community-content/fe-runners",
+    "src/datasworn-community-content/starsmith",
+]
+
+[tool.uv.sources]
+datasworn-core = { path = "../datasworn/src/datasworn/core" }
+datasworn-community-content-ancient-wonders = { workspace = true }
+datasworn-community-content-fe-runners = { workspace = true }
+datasworn-community-content-starsmith = { workspace = true }
 
 [build-system]
 requires = ["uv_build>=0.9.18,<0.10.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pytest>=9.0.2", "rich>=14.2.0"]

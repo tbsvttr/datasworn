@@ -1,0 +1,15 @@
+[project]
+name = "datasworn-community-content-ancient-wonders"
+version = "0.1.0"
+description = "Datasworn Community Content: Ancient Wonders data."
+readme = "README.md"
+authors = [{ name = "Gerhard Brandt", email = "gbrandt@cern.ch" }]
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.uv.build-backend]
+module-name = "datasworn_community_content.ancient_wonders"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
