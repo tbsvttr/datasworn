@@ -21,10 +21,11 @@ EMPTY_CLASSES_TO_REMOVE = [
 ]
 
 # Type replacements: placeholder -> actual type
+# Simple replacements that don't need context
 TYPE_REPLACEMENTS = {
     "list[Denizens]": "list[DelveSiteDenizen]",
-    "list[Features]": "list[DelveSiteDomainFeature]",
-    "list[Dangers]": "list[DelveSiteDomainDanger]",
+    "denizens: Denizens": "denizens: list[DelveSiteDenizen]",
+    "Annotated[\n        Denizens,": "Annotated[\n        list[DelveSiteDenizen],",
 }
 
 
@@ -41,6 +42,43 @@ def replace_placeholder_types(content: str) -> str:
     """Replace placeholder types with actual types."""
     for placeholder, actual in TYPE_REPLACEMENTS.items():
         content = content.replace(placeholder, actual)
+    return content
+
+
+def replace_features_dangers_contextually(content: str) -> str:
+    """Replace Features/Dangers placeholders based on class context.
+
+    DelveSiteDomain uses DelveSiteDomainFeature/DelveSiteDomainDanger
+    DelveSiteTheme uses DelveSiteThemeFeature/DelveSiteThemeDanger
+    """
+    # Replace in DelveSiteDomain class context
+    content = re.sub(
+        r"(class DelveSiteDomain\(BaseModel\):.*?)(features: Features)",
+        r"\1features: list[DelveSiteDomainFeature]",
+        content,
+        flags=re.DOTALL,
+    )
+    content = re.sub(
+        r"(class DelveSiteDomain\(BaseModel\):.*?)(dangers: Dangers)",
+        r"\1dangers: list[DelveSiteDomainDanger]",
+        content,
+        flags=re.DOTALL,
+    )
+
+    # Replace in DelveSiteTheme class context
+    content = re.sub(
+        r"(class DelveSiteTheme\(BaseModel\):.*?)(features: Features)",
+        r"\1features: list[DelveSiteThemeFeature]",
+        content,
+        flags=re.DOTALL,
+    )
+    content = re.sub(
+        r"(class DelveSiteTheme\(BaseModel\):.*?)(dangers: Dangers)",
+        r"\1dangers: list[DelveSiteThemeDanger]",
+        content,
+        flags=re.DOTALL,
+    )
+
     return content
 
 
@@ -73,6 +111,7 @@ def post_process(content: str) -> str:
     """Apply all post-processing fixes to generated models."""
     content = remove_empty_classes(content)
     content = replace_placeholder_types(content)
+    content = replace_features_dangers_contextually(content)
     content = remove_date_pattern(content)
     return content
 
