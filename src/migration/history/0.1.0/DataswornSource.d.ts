@@ -2272,6 +2272,9 @@ export interface Expansion {
 	/**
 	 * The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.
 	 * @remarks You may prefer to deserialize this as a Date object.
+	 * @pattern ```javascript
+	 * /[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))/
+	 * ```
 	 */
 	date?: string;
 	/**
@@ -4302,6 +4305,9 @@ export interface Ruleset {
 	/**
 	 * The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.
 	 * @remarks You may prefer to deserialize this as a Date object.
+	 * @pattern ```javascript
+	 * /[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))/
+	 * ```
 	 */
 	date?: string;
 	/**
@@ -4630,6 +4636,9 @@ export interface SourceInfo {
 	/**
 	 * The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.
 	 * @remarks You may prefer to deserialize this as a Date object.
+	 * @pattern ```javascript
+	 * /[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))/
+	 * ```
 	 */
 	date: string;
 	/**
