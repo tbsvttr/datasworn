@@ -5,7 +5,7 @@
 # readme = "README.md"
 # requires-python = ">=3.14"
 # dependencies = [
-#     "datamodel-code-generator[http]>=0.49.0",
+#     "datamodel-code-generator[http]>=0.53.0",
 #     "rich>=14.2.0",
 # ]
 # ///
