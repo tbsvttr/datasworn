@@ -25,9 +25,23 @@ npm install @datasworn/ironsworn-classic
 npm install @datasworn/ironsworn-classic-delve
 ```
 
+### Python
+
+Pydantic V2 packages with full type safety:
+
+```bash
+uv add datasworn-core datasworn-starforged
+```
+
+Available packages: `datasworn-core`, `datasworn-classic`, `datasworn-delve`, `datasworn-starforged`, `datasworn-sundered-isles`
+
+Community content: `datasworn-community-content-starsmith`, `datasworn-community-content-ancient-wonders`, `datasworn-community-content-fe-runners`
+
+See [pkg/python/README.md](pkg/python/README.md) for details.
+
 ### Other Languages
 
-Type definitions for C#, Go, Java, Python, Ruby, and Rust are available in the [json-typedef](json-typedef) directory, generated from [JSON TypeDef](https://jsontypedef.com) schemas.
+Type definitions for C#, Go, Java, Ruby, and Rust are available in the [json-typedef](json-typedef) directory, generated from [JSON TypeDef](https://jsontypedef.com) schemas.
 
 ### Raw JSON
 
@@ -64,6 +78,8 @@ This fork continues active development while the original repository is inactive
 | Fe-Runners (cyberpunk expansion) | Added |
 | Sundered Isles expansion | Added |
 | Ancient Wonders expansion | Added |
+| Lodestar moves (Ironsworn Classic) | Added |
+| Python/Pydantic packages | Added |
 | Rust/JTD type generation ([#78](https://github.com/rsek/datasworn/issues/78)) | Fixed |
 
 ### Upstream Compatibility
@@ -136,6 +152,24 @@ If you don't need multi-language type definitions (C#, Go, Java, Python, Ruby, R
 
 The test suite includes Rust integration tests that verify the generated types can deserialize all JSON data. These tests are automatically skipped if `cargo` is not installed.
 
+### JSON Type Definition (JTD)
+
+The `json-typedef/datasworn.jtd.json` schema is auto-generated from TypeBox definitions in `src/schema/`. TypeBox schemas use `[JsonTypeDef]` annotations to control JTD output:
+
+```typescript
+date: Type.String({
+    format: 'date',
+    [JsonTypeDef]: { schema: JtdType.String() },
+})
+```
+
+The build process:
+
+1. `bun run build:jtd` runs `src/scripts/json-typedef/index.ts`
+2. TypeBox schemas are converted to JTD format via `toJtdRoot()`
+3. Output is written to `json-typedef/datasworn.jtd.json`
+4. `jtd-codegen` then generates types for Go, Rust, Python, Java, C#, Ruby
+
 ### Project Structure
 
 ```text
@@ -146,7 +180,9 @@ datasworn/
 │   ├── scripts/       # Build scripts
 │   ├── tests/         # Test suite
 │   └── types/         # Generated TypeScript types
-├── pkg/nodejs/        # npm package sources
+├── pkg/
+│   ├── nodejs/        # npm package sources
+│   └── python/        # Python/Pydantic packages
 ├── datasworn/         # Generated JSON output
 ├── json-typedef/      # Generated type definitions (multi-language)
 │   └── rust-test/     # Rust integration test project
