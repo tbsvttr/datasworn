@@ -44,10 +44,36 @@ def replace_placeholder_types(content: str) -> str:
     return content
 
 
+def remove_date_pattern(content: str) -> str:
+    """Remove pattern= from date fields.
+
+    Pydantic's date type handles validation natively, and pattern regex
+    cannot be applied to date objects (only strings). The pattern in the
+    JSON Schema is for documentation/other consumers.
+    """
+    # Match pattern lines within date field definitions
+    # The generated code has: pattern='[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))',
+    date_pattern = r"            pattern='[^']+',\n"
+    # Only remove when it appears near date_aliased (to avoid removing other patterns)
+    content = re.sub(
+        r"(date: Annotated\[\n        date_aliased,\n        Field\(\n            description=\"[^\"]+\",\n)" + date_pattern,
+        r"\1",
+        content,
+    )
+    # Also handle alternate ordering where pattern comes first
+    content = re.sub(
+        r"(date: Annotated\[\n        date_aliased,\n        Field\(\n)" + date_pattern,
+        r"\1",
+        content,
+    )
+    return content
+
+
 def post_process(content: str) -> str:
     """Apply all post-processing fixes to generated models."""
     content = remove_empty_classes(content)
     content = replace_placeholder_types(content)
+    content = remove_date_pattern(content)
     return content
 
 
