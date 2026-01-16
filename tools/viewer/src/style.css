@@ -838,6 +838,13 @@ html, body {
 	color: var(--text-secondary);
 }
 
+.npc-quest {
+	padding: 32px 0 8px 0;
+	background: var(--bg-card);
+	border-top: 1px solid var(--border);
+	font-size: 14px;
+}
+
 /* Atlas specific */
 .atlas-card {
 	background: var(--bg-card);

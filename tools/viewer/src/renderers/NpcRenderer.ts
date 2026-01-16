@@ -20,6 +20,15 @@ export function renderNpc(npc: Datasworn.Npc): string {
 
 	html += renderNpcRank(npc)
 
+	// Quest Starters
+	if (npc.quest_starter) {
+		if (npc.quest_starter) {
+			html += `<div class="npc-quest">`
+			html += `<strong>Quest Starter:</strong> ${renderMarkdown(npc.quest_starter)}`
+			html += `</div>`
+		}
+	}
+
 	html += '</div>'
 
 	// Variants
