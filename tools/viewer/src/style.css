@@ -308,6 +308,13 @@ html, body {
 	line-height: 1.2;
 }
 
+.detail-header h3 {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 24px 0 8px 0;
+	line-height: 1.2;
+}
+
 .detail-id {
 	display: inline-block;
 	font-size: 11px;

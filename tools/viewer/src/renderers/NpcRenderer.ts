@@ -11,6 +11,29 @@ import { renderMarkdown } from '../utils/markdown'
 export function renderNpc(npc: Datasworn.Npc): string {
 	let html = '<div class="npc-card">'
 
+	html += renderNpcBasics(npc)
+
+	// Features, Drives, Tactics
+	html += renderNpcList('Features', npc.features)
+	html += renderNpcList('Drives', npc.drives)
+	html += renderNpcList('Tactics', npc.tactics)
+
+	html += renderNpcRank(npc)
+
+	html += '</div>'
+
+	// Variants
+	for (const variant of Object.values(npc.variants)) {
+		html += renderNpcVariant(variant)
+	}
+
+	return html
+}
+
+/** Render an NPC's or NPC Variant's basic information (nature, summary, description) */
+function renderNpcBasics(npc: Datasworn.Npc | Datasworn.NpcVariant): string {
+	let html = ""
+
 	// Nature
 	if (npc.nature) {
 		html += `<div class="npc-nature">${escapeHtml(npc.nature)}</div>`
@@ -26,17 +49,6 @@ export function renderNpc(npc: Datasworn.Npc): string {
 		html += `<div class="npc-description">${renderMarkdown(npc.description)}</div>`
 	}
 
-	// Features, Drives, Tactics
-	html += renderNpcList('Features', npc.features)
-	html += renderNpcList('Drives', npc.drives)
-	html += renderNpcList('Tactics', npc.tactics)
-
-	// Rank
-	if (npc.rank !== undefined) {
-		html += `<div class="npc-rank"><strong>Rank:</strong> ${formatRank(npc.rank)}</div>`
-	}
-
-	html += '</div>'
 	return html
 }
 
@@ -51,6 +63,37 @@ function renderNpcList(title: string, items?: string[]): string {
 		html += `<li>${renderMarkdown(item)}</li>`
 	}
 	html += `</ul></div>`
+
+	return html
+}
+
+/** Render an NPC or NPC Variant rank, if set */
+function renderNpcRank(npc: Datasworn.Npc | Datasworn.NpcVariant):string {
+	if (npc.rank !== undefined) {
+		return `<div class="npc-rank"><strong>Rank:</strong> ${formatRank(npc.rank)}</div>`
+	}
+
+	return ""
+}
+
+/** Render an NPC Variant */
+function renderNpcVariant(variant: Datasworn.NpcVariant): string {
+	let html = `<div class="detail-header">`
+
+	html += `<h3>${escapeHtml(variant.name)}</h3>`
+
+	if (variant._id) {
+		html += `<code class="detail-id">${variant._id}</code>`
+	}
+
+	html += `</div><div class="detail-content">`
+
+	html += '<div class="npc-card">'
+	html += renderNpcBasics(variant)
+	html += renderNpcRank(variant)
+	html += '</div>'
+
+	html += '</div>'
 
 	return html
 }
