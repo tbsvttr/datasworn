@@ -641,6 +641,7 @@ html, body {
 .asset-meter {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 12px;
 	margin-top: 20px;
 	padding-top: 20px;
@@ -668,6 +669,24 @@ html, body {
 	border-radius: 4px;
 	font-size: 12px;
 	font-weight: 600;
+}
+
+.impact-list {
+	display: flex;
+	gap: 16px;
+}
+
+.asset-impact {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.asset-impact::before {
+	content: '⬡';
+	font-size: 16px;
+	margin-right: 4px;
 }
 
 /* Oracle specific */
