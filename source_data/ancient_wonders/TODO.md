@@ -63,7 +63,7 @@ text: "roll >Planetary Class on page 41"
 - [ ] Add `_index` fields or restructure YAML to match book ordering
 - [ ] Reorganize `planets_expanded` into hierarchical collections
 - [ ] Add datasworn: links for all cross-references:
-  - [ ] Core oracle references (_Action_, _Theme_, _Focus_, _Descriptor_)
+  - [x] Core oracle references (_Action_, _Theme_, _Focus_, _Descriptor_)
   - [ ] Page number references (convert to oracle IDs)
   - [ ] `>Oracle` syntax references
   - [ ] Planet class references

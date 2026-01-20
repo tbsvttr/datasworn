@@ -22,7 +22,7 @@ oracles:
         oracle_type: table_text
         type: oracle_rollable
         summary: |-
-          Use this oracle to generate an abstract noun that, if matched with the _Action_ oracle, provides an interpretative answer to most questions.
+          Use this oracle to generate an abstract noun that, if matched with the [Action](datasworn:oracle_rollable:starforged/core/action) oracle, provides an interpretative answer to most questions.
         _source:
           <<: *Source
         rows:
@@ -421,7 +421,7 @@ oracles:
         oracle_type: table_text
         type: oracle_rollable
         summary: |-
-          Use this oracle to generate a verb that, if matched with the _Theme_ oracle, provides a prompt that can answer any goal, situation, or event.
+          Use this oracle to generate a verb that, if matched with the [Theme](datasworn:oracle_rollable:starforged/core/theme) oracle, provides a prompt that can answer any goal, situation, or event.
         _source:
           <<: *Source
         rows:
@@ -630,7 +630,7 @@ oracles:
         oracle_type: table_text
         type: oracle_rollable
         summary: |-
-          Use this oracle to generate an adjective that, if matched with the _Focus_ oracle, provides detail of a location, discovery, or encounter.
+          Use this oracle to generate an adjective that, if matched with the [Focus](datasworn:oracle_rollable:starforged/core/focus) oracle, provides detail of a location, discovery, or encounter.
         _source:
           <<: *Source
         rows:
@@ -14432,7 +14432,7 @@ oracles:
         oracle_type: table_text
         type: oracle_rollable
         summary: |-
-          Use this oracle to generate an concrete noun that, if matched with the _Descriptor_ oracle, provides what's needed to picture or dress an environment, finding, or encounter.
+          Use this oracle to generate an concrete noun that, if matched with the [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) oracle, provides what's needed to picture or dress an environment, finding, or encounter.
         _source:
           <<: *Source
         rows:
