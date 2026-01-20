@@ -9,7 +9,8 @@
 import {
 	type JsonSchema,
 	type SchemaNode,
-	Draft07
+	draft07,
+	compileSchema
 } from 'json-schema-library'
 
 import type { Datasworn } from '../../pkg-core/index.js'
@@ -62,8 +63,8 @@ export function extractLocaleStrings(
 	const strings = new Map<string, string>()
 
 	// TODO: The json-schema-library API has changed significantly in v10
-	// Need to rewrite this using the new Draft07 class and SchemaNode traversal
-	const _draft = new Draft07(schema) // eslint-disable-line @typescript-eslint/no-unused-vars
+	// Need to rewrite this using compileSchema and toDataNodes
+	const _node = compileSchema(schema, { drafts: [draft07] }) // eslint-disable-line @typescript-eslint/no-unused-vars
 
 	// Placeholder: The old toDataNodes method no longer exists
 	// This needs to be reimplemented with the new traversal API
