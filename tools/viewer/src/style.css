@@ -308,6 +308,13 @@ html, body {
 	line-height: 1.2;
 }
 
+.detail-id-row {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 4px;
+}
+
 .detail-id {
 	display: inline-block;
 	font-size: 11px;
@@ -316,6 +323,34 @@ html, body {
 	padding: 4px 8px;
 	border-radius: 4px;
 	font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+
+.copy-id-button {
+	font-size: 11px;
+	font-weight: 500;
+	padding: 4px 10px;
+	background: var(--bg-tertiary);
+	color: var(--text-secondary);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+.copy-id-button:hover {
+	background: var(--bg-secondary);
+	color: var(--text-primary);
+	border-color: var(--text-muted);
+}
+
+.copy-id-button:active {
+	transform: scale(0.96);
+}
+
+.copy-id-button.copied {
+	background: var(--accent);
+	color: white;
+	border-color: var(--accent);
 }
 
 /* Type badges */

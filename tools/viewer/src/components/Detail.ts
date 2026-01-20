@@ -30,7 +30,7 @@ export function createDetailPanel(container: HTMLElement): void {
 	panel.className = 'detail-panel'
 	container.appendChild(panel)
 
-	// Handle clicks on datasworn links and breadcrumbs
+	// Handle clicks on datasworn links, breadcrumbs, and copy button
 	panel.addEventListener('click', (e) => {
 		const target = e.target as HTMLElement
 
@@ -44,6 +44,22 @@ export function createDetailPanel(container: HTMLElement): void {
 				if (!found) {
 					console.warn('Could not find item:', id)
 				}
+			}
+		}
+
+		// Handle copy ID button
+		const copyButton = target.closest('.copy-id-button') as HTMLElement | null
+		if (copyButton) {
+			const id = copyButton.dataset.id
+			if (id) {
+				navigator.clipboard.writeText(`datasworn:${id}`).then(() => {
+					copyButton.classList.add('copied')
+					copyButton.textContent = 'Copied!'
+					setTimeout(() => {
+						copyButton.classList.remove('copied')
+						copyButton.textContent = 'Copy'
+					}, 1500)
+				})
 			}
 		}
 
@@ -135,7 +151,10 @@ function renderDetail(item: unknown, path: string[]): string {
 	html += `<h2>${escapeHtml(name)}</h2>`
 
 	if (id) {
-		html += `<code class="detail-id">${id}</code>`
+		html += `<div class="detail-id-row">
+			<code class="detail-id">${id}</code>
+			<button class="copy-id-button" data-id="${id}">Copy</button>
+		</div>`
 	}
 
 	html += `</div><div class="detail-content">`
