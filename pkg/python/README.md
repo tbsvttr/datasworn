@@ -58,7 +58,8 @@ with json_path.open() as f:
 ruleset = Ruleset.model_validate(data)
 
 # Access moves, oracles, assets, etc.
-print(f"Loaded: {ruleset.field_id.root}")
+# ID types are plain strings - no .root needed!
+print(f"Loaded: {ruleset.field_id}")
 print(f"Moves: {len(ruleset.moves)}")
 print(f"Oracles: {len(ruleset.oracles)}")
 ```
@@ -93,9 +94,10 @@ cd ../datasworn-community-content && uv run pytest tests/ -v
 
 The `datamodel-code-generator` has some limitations with complex JSON Schema constructs. The post-processing script (`scripts/python/post_process_models.py`) fixes:
 
-1. **Empty placeholder classes** - Removes empty classes generated from `allOf` constructs
-2. **Type replacements** - Fixes Delve-specific types (Denizens, Features, Dangers)
-3. **Date pattern removal** - Removes regex patterns from date fields (Pydantic's date type handles validation)
+1. **RootModel to type alias conversion** - Converts `RootModel[str]` classes to simple type aliases, eliminating the need for `.root` access on ID types and strings (80+ types converted)
+2. **Empty placeholder classes** - Removes empty classes generated from `allOf` constructs
+3. **Type replacements** - Fixes Delve-specific types (Denizens, Features, Dangers)
+4. **Date pattern removal** - Removes regex patterns from date fields (Pydantic's date type handles validation)
 
 ### Running Tests
 

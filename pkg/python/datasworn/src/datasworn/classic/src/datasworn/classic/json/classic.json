@@ -14681,6 +14681,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/combat_talent/fletcher.2.craft_arrow.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -14695,12 +14696,15 @@
 									"text": "When you craft a single arrow designated for a specific foe, envision the process and materials, and roll +wits. On a strong hit, take both. On a weak hit, choose one.\n\n  * Seeker: When a shooter uses the arrow to [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) against this foe, reroll any dice (one time only).\n  * Ravager: When a shooter uses the arrow to inflict harm against this foe, inflict +1d6 harm (one time only).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/combat_talent/fletcher.2.craft_arrow.strong_hit",
 											"text": "On a __strong hit__, take both:\n\n  * Seeker: When a shooter uses the arrow to [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) against this foe, reroll any dice (one time only).\n  * Ravager: When a shooter uses the arrow to inflict harm against this foe, inflict +1d6 harm (one time only)."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/combat_talent/fletcher.2.craft_arrow.weak_hit",
 											"text": "On a __weak hit__, choose one.\n\n  * Seeker: When a shooter uses the arrow to [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) against this foe, reroll any dice (one time only).\n  * Ravager: When a shooter uses the arrow to inflict harm against this foe, inflict +1d6 harm (one time only)."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/combat_talent/fletcher.2.craft_arrow.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -15384,6 +15388,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/combat_talent/sunderer.2.carve_rune.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -15398,12 +15403,15 @@
 									"text": "When you make a tribute to a fallen foe (formidable or greater) by carving a rune in the haft of your axe, roll +heart. On a strong hit, inflict +1d6 harm (one time only) when you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash). On a weak hit, as above, but this death weighs on you; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/combat_talent/sunderer.2.carve_rune.strong_hit",
 											"text": "On a __strong hit__, inflict +1d6 harm (one time only) when you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash)."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/combat_talent/sunderer.2.carve_rune.weak_hit",
 											"text": "On a __weak hit__, you succeed, but this death weighs on you; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).\n\nInflict +1d6 harm (one time only) when you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash)."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/combat_talent/sunderer.2.carve_rune.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -17069,6 +17077,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17079,6 +17088,7 @@
 												"text": "Elixir of deftness (edge)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.1",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17089,6 +17099,7 @@
 												"text": "Elixir of audacity (heart)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.2",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17099,6 +17110,7 @@
 												"text": "Elixir of vigor (iron)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.3",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17109,6 +17121,7 @@
 												"text": "Elixir of slyness (shadow)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.4",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17124,12 +17137,15 @@
 									"text": "When you create an elixir, choose an effect: Deftness (edge), audacity (heart), vigor (iron), slyness (shadow), or clarity (wits). Then, suffer -1 supply and roll +wits. On a strong hit, you create a single dose. The character who consumes the elixir must [Face Danger](datasworn:move:classic/adventure/face_danger) +iron and score a hit, after which they add +1 when making moves with the related stat until their health, spirit, or momentum fall below +1. On a weak hit, as above, but suffer an additional -1 supply to create it.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/alchemist.0.create_elixir.strong_hit",
 											"text": "On a __strong hit__, you create a single dose. The character who consumes the elixir must [Face Danger](datasworn:move:classic/adventure/face_danger) +iron and score a hit, after which they add +1 when making moves with the related stat until their health, spirit, or momentum fall below +1."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/alchemist.0.create_elixir.weak_hit",
 											"text": "On a __weak hit__, you create a single dose, but suffer an additional -1 supply to create it.\n\nThe character who consumes the elixir must [Face Danger](datasworn:move:classic/adventure/face_danger) +iron and score a hit, after which they add +1 when making moves with the related stat until their health, spirit, or momentum fall below +1."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/path/alchemist.0.create_elixir.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -17884,6 +17900,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/dancer.2.commemorate.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17898,12 +17915,15 @@
 									"text": "When you or an ally make a progress move and score a hit, you may perform a dance to commemorate the event. If you do, roll +edge. On a strong hit, you and each of your allies take +2 momentum and +1 spirit. On a weak hit, you take +1 momentum or +1 spirit, but your allies are unmoved.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/dancer.2.commemorate.strong_hit",
 											"text": "On a __strong hit__, you and each of your allies take +2 momentum and +1 spirit."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/dancer.2.commemorate.weak_hit",
 											"text": "On a __weak hit__, you take +1 momentum or +1 spirit, but your allies are unmoved."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/path/dancer.2.commemorate.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -19387,6 +19407,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/outcast.0.scrape_by.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -19401,12 +19422,15 @@
 									"text": "When your supply is reduced to 0, suffer any remaining -supply as -momentum. Then, roll +wits. On a strong hit, you manage to scrape by and take +1 supply. On a weak hit, you may suffer -2 momentum in exchange for +1 supply. On a miss, you are [Out of Supply](datasworn:move:classic/suffer/out_of_supply).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/outcast.0.scrape_by.strong_hit",
 											"text": "On a __strong hit__, you manage to scrape by and take +1 supply."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/outcast.0.scrape_by.weak_hit",
 											"text": "On a __weak hit__, you may suffer -2 momentum in exchange for +1 supply."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/path/outcast.0.scrape_by.miss",
 											"text": "On a __miss__, you are [Out of Supply](datasworn:move:classic/suffer/out_of_supply)."
 										}
 									},
@@ -19488,6 +19512,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/pretender.0.establish_false_identity.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -19502,12 +19527,15 @@
 									"text": "When you establish a false identity, roll +shadow. On a strong hit, you may add +2 when you make moves using this identity to deceive or influence others. If you roll a 1 on your action die when using your false identity, someone doubts you. Make appropriate moves to reassure them or prevent them from revealing the truth. On a weak hit, as above, but add +1 (instead of +2).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/pretender.0.establish_false_identity.strong_hit",
 											"text": "On a __strong hit__, you may add +2 when you make moves using this identity to deceive or influence others. If you roll a 1 on your action die when using your false identity, someone doubts you. Make appropriate moves to reassure them or prevent them from revealing the truth."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/path/pretender.0.establish_false_identity.weak_hit",
 											"text": "On a __weak hit__, you may add +1 when you make moves using this identity to deceive or influence others. If you roll a 1 on your action die when using your false identity, someone doubts you. Make appropriate moves to reassure them or prevent them from revealing the truth."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/path/pretender.0.establish_false_identity.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -21234,6 +21262,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/augur.0.augur.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21248,12 +21277,15 @@
 									"text": "When you summon a flock of crows and ask a single question, roll +wits. On a strong hit, you interpret their calls as a helpful omen. Envision the response ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure) and take +2 momentum. On a weak hit, the crows ignore your question and offer a clue to an unrelated problem or opportunity in this area. Envision what you learn ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and take +1 momentum.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/augur.0.augur.strong_hit",
 											"text": "On a __strong hit__, you interpret their calls as a helpful omen. Envision the response ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure) and take +2 momentum."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/augur.0.augur.weak_hit",
 											"text": "On a __weak hit__, the crows ignore your question and offer a clue to an unrelated problem or opportunity in this area. Envision what you learn ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and take +1 momentum."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/augur.0.augur.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -21335,6 +21367,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/awakening.0.awaken_simulacrum.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21349,12 +21382,15 @@
 									"text": "When you create a simulacrum, roll +heart. On a strong hit, your creation is given unnatural life. If it aids you as you make a move to assault or overcome an obstacle through strength, add +2. It has 3 health and suffers harm as appropriate, but is not a companion and may not be healed. At 0 health, it is dead. On a weak hit, as above, but if you roll a 1 on your action die when aided by your creation, you must [Face Danger](datasworn:move:classic/adventure/face_danger) +heart to keep it from turning on you (as a formidable foe).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/awakening.0.awaken_simulacrum.strong_hit",
 											"text": "On a __strong hit__, your creation is given unnatural life. If it aids you as you make a move to assault or overcome an obstacle through strength, add +2. It has 3 health and suffers harm as appropriate, but is not a companion and may not be healed. At 0 health, it is dead."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/awakening.0.awaken_simulacrum.weak_hit",
 											"text": "On a __weak hit__, your creation is given unnatural life. If it aids you as you make a move to assault or overcome an obstacle through strength, add +2. It has 3 health and suffers harm as appropriate, but is not a companion and may not be healed. At 0 health, it is dead.\n\nHowever, if you roll a 1 on your action die when aided by your creation, you must [Face Danger](datasworn:move:classic/adventure/face_danger) +heart to keep it from turning on you (as a formidable foe)."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/awakening.0.awaken_simulacrum.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -21446,6 +21482,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/bind.0.bind.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21460,12 +21497,15 @@
 									"text": "When you wear an animal pelt and dance in moonlight, roll +wits. On a strong hit, you or an ally may wear the pelt and add +1 when making moves with the related stat (wolf-edge; bear-iron; deer-heart; fox-shadow; boar-wits). If the wearer rolls a 1 on their action die while making a move using the pelt, the magic is spent. On a weak hit, as above, but the wilds call as you dance; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/bind.0.bind.strong_hit",
 											"text": "On a __strong hit__, you or an ally may wear the pelt and add +1 when making moves with the related stat (wolf-edge; bear-iron; deer-heart; fox-shadow; boar-wits). If the wearer rolls a 1 on their action die while making a move using the pelt, the magic is spent."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/bind.0.bind.weak_hit",
 											"text": "On a __weak hit__, you succeed, but the wilds call as you dance; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).\n\nYou or an ally may wear the pelt and add +1 when making moves with the related stat (wolf-edge; bear-iron; deer-heart; fox-shadow; boar-wits). If the wearer rolls a 1 on their action die while making a move using the pelt, the magic is spent."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/bind.0.bind.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -21547,6 +21587,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/communion.0.commune.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21561,12 +21602,15 @@
 									"text": "When you surround the remains of a recently deceased intelligent creature with lit candles, and summon its spirit, roll +heart. Add +1 if you share a bond. On a strong hit, the spirit appears and you may converse for a few minutes. Make moves as appropriate (add +1). On a weak hit, as above, but the spirit also delivers troubling news unrelated to your purpose. Envision what it tells you ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure) and [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/communion.0.commune.strong_hit",
 											"text": "On a __strong hit__, the spirit appears and you may converse for a few minutes. Make moves as appropriate (add +1)."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/communion.0.commune.weak_hit",
 											"text": "On a __weak hit__, the spirit appears and you may converse for a few minutes. Make moves as appropriate (add +1).\n\nHowever, the spirit also delivers troubling news unrelated to your purpose. Envision what it tells you ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure) and [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress)."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/communion.0.commune.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -21648,6 +21692,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/divination.0.cast_runes.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21662,12 +21707,15 @@
 									"text": "When you take a drop of blood from a willing subject (not yourself) and cast the rune-carved stones, roll +heart. On a strong hit, you may read the runes to gain insight about the subject and people close to them, including information you and the subject have no knowledge of. If you use the reading to [Gather Information](datasworn:move:classic/adventure/gather_information), [Compel](datasworn:move:classic/relationship/compel), or [Forge a Bond](datasworn:move:classic/relationship/forge_a_bond), add +1. On a weak hit, as above, but the runes reveal their secrets only with extra time and focus; suffer -2 momentum.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/divination.0.cast_runes.strong_hit",
 											"text": "On a __strong hit__, you may read the runes to gain insight about the subject and people close to them, including information you and the subject have no knowledge of.\n\nIf you use the reading to [Gather Information](datasworn:move:classic/adventure/gather_information), [Compel](datasworn:move:classic/relationship/compel), or [Forge a Bond](datasworn:move:classic/relationship/forge_a_bond), add +1."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/divination.0.cast_runes.weak_hit",
 											"text": "On a __weak hit__, you succeed, but the runes reveal their secrets only with extra time and focus; suffer -2 momentum.\n\nYou may read the runes to gain insight about the subject and people close to them, including information you and the subject have no knowledge of.\n\nIf you use the reading to [Gather Information](datasworn:move:classic/adventure/gather_information), [Compel](datasworn:move:classic/relationship/compel), or [Forge a Bond](datasworn:move:classic/relationship/forge_a_bond), add +1."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/divination.0.cast_runes.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -21773,6 +21821,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/invoke.0.invoke.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21787,12 +21836,15 @@
 									"text": "When you consume the mystical essence of your surroundings, roll +wits. On a strong hit, add the value of your action die to your essence track (max 6). You may then [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Face Danger](datasworn:move:classic/adventure/face_danger) +essence to create minor mystical effects or illusions. If you do, suffer -1 essence and take +1 momentum on a hit. On a weak hit, as above, but capturing these energies is harrowing; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/invoke.0.invoke.strong_hit",
 											"text": "On a __strong hit__, add the value of your action die to your essence track (max 6).\n\nYou may then [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Face Danger](datasworn:move:classic/adventure/face_danger) +essence to create minor mystical effects or illusions. If you do, suffer -1 essence and take +1 momentum on a hit."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/invoke.0.invoke.weak_hit",
 											"text": "On a __weak hit__, add the value of your action die to your essence track (max 6). However, capturing these energies is harrowing; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).\n\nYou may then [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Face Danger](datasworn:move:classic/adventure/face_danger) +essence to create minor mystical effects or illusions. If you do, suffer -1 essence and take +1 momentum on a hit."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/invoke.0.invoke.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -21899,6 +21951,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/keen.0.keen.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21913,12 +21966,15 @@
 									"text": "When you hold a weapon and sing a keen for those it has killed, roll +heart. On a strong hit, the wielder inflicts +1 harm when they [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash). If they roll a 1 on their action die when making a move to inflict harm, the magic is spent. On a weak hit, as above, but the voices of those who were slain join in your song; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/keen.0.keen.strong_hit",
 											"text": "On a __strong hit__, the wielder inflicts +1 harm when they [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash). If they roll a 1 on their action die when making a move to inflict harm, the magic is spent."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/keen.0.keen.weak_hit",
 											"text": "On a __weak hit__, you succeed, but the voices of those who were slain join in your song; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).\n\nThe wielder inflicts +1 harm when they [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash). If they roll a 1 on their action die when making a move to inflict harm, the magic is spent."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/keen.0.keen.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22000,6 +22056,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/leech.0.draw_blood_rune.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22014,12 +22071,15 @@
 									"text": "When you mark your hands or weapon with an intricate blood rune, roll +iron. On a strong hit, the rune thirsts for fresh blood. One time only, when you make a move to inflict harm, reroll any dice and inflict +2 harm on a hit. Then, for each point of harm inflicted, take +1 and allocate it as +health or +momentum. On a weak hit, as above, but this asset counts as a debility until the rune’s thirst is quenched.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/leech.0.draw_blood_rune.strong_hit",
 											"text": "On a __strong hit__, the rune thirsts for fresh blood.\n\nOne time only, when you make a move to inflict harm, reroll any dice and inflict +2 harm on a hit. Then, for each point of harm inflicted, take +1 and allocate it as +health or +momentum."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/leech.0.draw_blood_rune.weak_hit",
 											"text": "On a __weak hit__, the rune thirsts for fresh blood, but this asset counts as a debility until the rune’s thirst is quenched.\n\nOne time only, when you make a move to inflict harm, reroll any dice and inflict +2 harm on a hit. Then, for each point of harm inflicted, take +1 and allocate it as +health or +momentum."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/leech.0.draw_blood_rune.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22101,6 +22161,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/lightbearer.0.capture_light.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22115,12 +22176,15 @@
 									"text": "When you focus on a source of light and capture its essence, roll +wits. On a strong hit, set your light track to +6. On a weak hit, make it +3. Then, when you make a move to overcome or navigate darkness, you may add +2 and suffer -1 light.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/lightbearer.0.capture_light.strong_hit",
 											"text": "On a __strong hit__, set your light track to +6.\n\nWhen you make a move to overcome or navigate darkness, you may add +2 and suffer -1 light."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/lightbearer.0.capture_light.weak_hit",
 											"text": "On a __weak hit__, set your light track to +3.\n\nWhen you make a move to overcome or navigate darkness, you may add +2 and suffer -1 light."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/lightbearer.0.capture_light.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22233,6 +22297,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/scry.0.scry.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22247,12 +22312,15 @@
 									"text": "When you look into flames to study a remote person or location, roll +shadow. You or someone with you must have knowledge of the target. On a strong hit, you may [Gather Information](datasworn:move:classic/adventure/gather_information) through observation using +shadow or +wits. On a weak hit, as above, but the flames are hungry; choose one to sacrifice.\n\n  * Your blood: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (2 harm).\n  * Something precious: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).\n  * Provisions: Suffer -2 supply.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/scry.0.scry.strong_hit",
 											"text": "On a __strong hit__, you may [Gather Information](datasworn:move:classic/adventure/gather_information) through observation using +shadow or +wits."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/scry.0.scry.weak_hit",
 											"text": "On a __weak hit__, you succeed, but the flames are hungry; choose one to sacrifice.\n\n  * Your blood: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (2 harm).\n  * Something precious: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).\n  * Provisions: Suffer -2 supply.\n\nYou may [Gather Information](datasworn:move:classic/adventure/gather_information) through observation using +shadow or +wits."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/scry.0.scry.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22334,6 +22402,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/shadow_walk.0.shadow_walk.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22348,12 +22417,15 @@
 									"text": "When you cloak yourself with the gossamer veil of the shadow realms, roll +shadow. On a strong hit, take +1 momentum. Then, reroll any dice (one time only) when you make a move by ambushing, hiding, or sneaking. On a weak hit, as above, but the shadows try to lead you astray. You must first [Face Danger](datasworn:move:classic/adventure/face_danger) to find your way.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/shadow_walk.0.shadow_walk.strong_hit",
 											"text": "On a __strong hit__, take +1 momentum. Then, reroll any dice (one time only) when you make a move by ambushing, hiding, or sneaking."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/shadow_walk.0.shadow_walk.weak_hit",
 											"text": "On a __weak hit__, you succeed, but the shadows try to lead you astray. You must first [Face Danger](datasworn:move:classic/adventure/face_danger) to find your way.\n\nTake +1 momentum. Then, reroll any dice (one time only) when you make a move by ambushing, hiding, or sneaking."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/shadow_walk.0.shadow_walk.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22435,6 +22507,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/sway.0.sway.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22449,12 +22522,15 @@
 									"text": "When you speak a person’s name three times to the wind, roll +wits. On a strong hit, the wind whispers of this person’s need. Envision what you hear ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). If you use this information or fulfill this need when you [Compel](datasworn:move:classic/relationship/compel) them, you may reroll any dice (one time only). On a weak hit, as above, but this person’s need creates a troubling dilemma or complication; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/sway.0.sway.strong_hit",
 											"text": "On a __strong hit__, the wind whispers of this person’s need. Envision what you hear ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). If you use this information or fulfill this need when you [Compel](datasworn:move:classic/relationship/compel) them, you may reroll any dice (one time only)."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/sway.0.sway.weak_hit",
 											"text": "On a __weak hit__, you succeed, but this person’s need creates a troubling dilemma or complication; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).\n\nThe wind whispers of this person’s need. Envision what you hear ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). If you use this information or fulfill this need when you [Compel](datasworn:move:classic/relationship/compel) them, you may reroll any dice (one time only)."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/sway.0.sway.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22536,6 +22612,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/talisman.0.fashion_talisman.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22550,12 +22627,15 @@
 									"text": "When you fashion a charm, envision it and name the specific person or creature it protects against. Then roll +wits. On a strong hit, when the wearer opposes the target through a move, add +2. If a 1 is rolled on the action die while making a move using the charm, the magic is spent. On a weak hit, as above, but the wearer adds +1 when making a move (instead of +2).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/talisman.0.fashion_talisman.strong_hit",
 											"text": "On a __strong hit__, when the wearer opposes the target through a move, add +2. If a 1 is rolled on the action die while making a move using the charm, the magic is spent."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/talisman.0.fashion_talisman.weak_hit",
 											"text": "On a __weak hit__, when the wearer opposes the target through a move, add +1. If a 1 is rolled on the action die while making a move using the charm, the magic is spent."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/talisman.0.fashion_talisman.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22669,6 +22749,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/tether.0.tether.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22683,12 +22764,15 @@
 									"text": "When you commune with the spirits of a place, roll +heart. If you share a bond with someone there, add +1. On a strong hit, you are tethered. When you [Undertake a Journey](datasworn:move:classic/adventure/undertake_a_journey) to return, you may roll +spirit or +heart (instead of +wits), and take +1 momentum on a hit. When you [Reach Your Destination](datasworn:move:classic/adventure/reach_your_destination), take +2 momentum on a strong hit. The tether is lost if you perform this ritual elsewhere, or when you [Face Desolation](datasworn:move:classic/suffer/face_desolation). On a weak hit, as above, but the spirits reveal a disturbing aspect of the place; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/tether.0.tether.strong_hit",
 											"text": "On a __strong hit__, you are tethered. When you [Undertake a Journey](datasworn:move:classic/adventure/undertake_a_journey) to return, you may roll +spirit or +heart (instead of +wits), and take +1 momentum on a hit. When you [Reach Your Destination](datasworn:move:classic/adventure/reach_your_destination), take +2 momentum on a strong hit. The tether is lost if you perform this ritual elsewhere, or when you [Face Desolation](datasworn:move:classic/suffer/face_desolation)."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/tether.0.tether.weak_hit",
 											"text": "On a __weak hit__, you succeed, but the spirits reveal a disturbing aspect of the place; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).\n\nYou are tethered. When you [Undertake a Journey](datasworn:move:classic/adventure/undertake_a_journey) to return, you may roll +spirit or +heart (instead of +wits), and take +1 momentum on a hit. When you [Reach Your Destination](datasworn:move:classic/adventure/reach_your_destination), take +2 momentum on a strong hit. The tether is lost if you perform this ritual elsewhere, or when you [Face Desolation](datasworn:move:classic/suffer/face_desolation)."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/tether.0.tether.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22779,6 +22863,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/totem.0.focus_totem.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22793,12 +22878,15 @@
 									"text": "When you hold a totem of your animal or beast companion and focus on it, roll +heart. On a strong hit, you are bound together. Add +1 and take +1 momentum on a hit when you use a companion ability. If you roll a 1 on your action die when using a companion ability, the magic is spent. On a weak hit, as above, but creating this connection is unsettling; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/totem.0.focus_totem.strong_hit",
 											"text": "On a __strong hit__, you are bound together. Add +1 and take +1 momentum on a hit when you use a companion ability. If you roll a 1 on your action die when using a companion ability, the magic is spent."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/totem.0.focus_totem.weak_hit",
 											"text": "On a __weak hit__, you succeed, but creating this connection is unsettling; [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).\n\nYou are bound together. Add +1 and take +1 momentum on a hit when you use a companion ability. If you roll a 1 on your action die when using a companion ability, the magic is spent."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/totem.0.focus_totem.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22880,6 +22968,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/visage.0.paint_visage.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22894,12 +22983,15 @@
 									"text": "When you paint yourself in blood and ash, roll +wits. On a strong hit, you may add +2 and take +1 momentum on a hit when you [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Compel](datasworn:move:classic/relationship/compel) using fear or intimidation. If you roll a 1 on your action die when making a move aided by your visage, the magic is spent. On a weak hit, as above, but the blood must be your own; [Endure Harm](datasworn:move:classic/suffer/endure_harm) (2 harm).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/visage.0.paint_visage.strong_hit",
 											"text": "On a __strong hit__, you may add +2 and take +1 momentum on a hit when you [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Compel](datasworn:move:classic/relationship/compel) using fear or intimidation. If you roll a 1 on your action die when making a move aided by your visage, the magic is spent."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/visage.0.paint_visage.weak_hit",
 											"text": "On a __weak hit__, you succeed, but the blood must be your own; [Endure Harm](datasworn:move:classic/suffer/endure_harm) (2 harm).\n\nYou may add +2 and take +1 momentum on a hit when you [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Compel](datasworn:move:classic/relationship/compel) using fear or intimidation. If you roll a 1 on your action die when making a move aided by your visage, the magic is spent."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/visage.0.paint_visage.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -22981,6 +23073,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/ward.0.ward.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22995,12 +23088,15 @@
 									"text": "When you walk a wide circle, sprinkling the ground with salt, roll +wits. On a strong hit, choose two. On a weak hit, choose one.\n\n  * When a foe first crosses the boundary, take +1 momentum.\n  * When you first inflict harm against a foe within the boundary, inflict +1 harm.\n  * Your ward is ‘likely’ ([Ask the Oracle](datasworn:move.oracle_rollable:classic/fate/ask_the_oracle.likely)) to trap a foe within the boundary.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/ward.0.ward.strong_hit",
 											"text": "On a __strong hit__, choose two.\n\n  * When a foe first crosses the boundary, take +1 momentum.\n  * When you first inflict harm against a foe within the boundary, inflict +1 harm.\n  * Your ward is ‘likely’ ([Ask the Oracle](datasworn:move.oracle_rollable:classic/fate/ask_the_oracle.likely)) to trap a foe within the boundary."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:classic/ritual/ward.0.ward.weak_hit",
 											"text": "On a __weak hit__, choose one.\n\n  * When a foe first crosses the boundary, take +1 momentum.\n  * When you first inflict harm against a foe within the boundary, inflict +1 harm.\n  * Your ward is ‘likely’ ([Ask the Oracle](datasworn:move.oracle_rollable:classic/fate/ask_the_oracle.likely)) to trap a foe within the boundary."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:classic/ritual/ward.0.ward.miss",
 											"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 										}
 									},
@@ -23371,6 +23467,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/face_danger.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23381,6 +23478,7 @@
 								"text": "With speed, agility, or precision"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23391,6 +23489,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23401,6 +23500,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23411,6 +23511,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23426,12 +23527,15 @@
 					"text": "When __you attempt something risky or react to an imminent threat__, envision your action and roll. If you act...\n\n  * With speed, agility, or precision: Roll +edge.\n  * With charm, loyalty, or courage: Roll +heart.\n  * With aggressive action, forceful defense, strength, or endurance: Roll +iron.\n  * With deception, stealth, or trickery: Roll +shadow.\n  * With expertise, insight, or observation: Roll +wits.\n\nOn a __strong hit__, you are successful. Take +1 momentum.\n\nOn a __weak hit__, you succeed, but face a troublesome cost. Choose one.\n\n  * You are delayed, lose advantage, or face a new danger: Suffer -1 momentum.\n  * You are tired or hurt: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).\n  * You are dispirited or afraid: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).\n  * You sacrifice resources: Suffer -1 supply.\n\nOn a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/face_danger.strong_hit",
 							"text": "On a __strong hit__, you are successful. Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/face_danger.weak_hit",
 							"text": "On a __weak hit__, you succeed, but face a troublesome cost. Choose one.\n\n  * You are delayed, lose advantage, or face a new danger: Suffer -1 momentum.\n  * You are tired or hurt: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).\n  * You are dispirited or afraid: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).\n  * You sacrifice resources: Suffer -1 supply."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/face_danger.miss",
 							"text": "On a __miss__, you fail, or your progress is undermined by a dramatic and costly turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23458,6 +23562,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23468,6 +23573,7 @@
 								"text": "With speed, agility, or precision"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23478,6 +23584,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23488,6 +23595,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23498,6 +23606,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23513,12 +23622,15 @@
 					"text": "When __you assess a situation, make preparations, or attempt to gain leverage__, envision your action and roll. If you act...\n\n  * With speed, agility, or precision: Roll +edge.\n  * With charm, loyalty, or courage: Roll +heart.\n  * With aggressive action, forceful defense, strength, or endurance: Roll +iron.\n  * With deception, stealth, or trickery: Roll +shadow.\n  * With expertise, insight, or observation: Roll +wits.\n\nOn a __strong hit__, you gain advantage. Choose one.\n\n  * Take control: Make another move now (not a progress move), and add +1.\n  * Prepare to act: Take +2 momentum.\n\nOn a __weak hit__, your advantage is short-lived. Take +1 momentum.\n\nOn a __miss__, you fail or your assumptions betray you. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/secure_an_advantage.strong_hit",
 							"text": "On a __strong hit__, you gain advantage. Choose one.\n\n  * Take control: Make another move now (not a progress move), and add +1.\n  * Prepare to act: Take +2 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/secure_an_advantage.weak_hit",
 							"text": "On a __weak hit__, your advantage is short-lived. Take +1 momentum."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/secure_an_advantage.miss",
 							"text": "On a __miss__, you fail or your assumptions betray you. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23545,6 +23657,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/gather_information.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23559,12 +23672,15 @@
 					"text": "When __you search an area, ask questions, conduct an investigation, or follow a track__, roll +wits. If you act within a community or ask questions of a person with whom you share a bond, add +1.\n\nOn a __strong hit__, you discover something helpful and specific. The path you must follow or action you must take to make progress is made clear. Envision what you learn ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and take +2 momentum.\n\nOn a __weak hit__, the information complicates your quest or introduces a new danger. Envision what you discover ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and take +1 momentum.\n\nOn a __miss__, your investigation unearths a dire threat or reveals an unwelcome truth that undermines your quest. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/gather_information.strong_hit",
 							"text": "On a __strong hit__, you discover something helpful and specific. The path you must follow or action you must take to make progress is made clear. Envision what you learn ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and take +2 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/gather_information.weak_hit",
 							"text": "On a __weak hit__, the information complicates your quest or introduces a new danger. Envision what you discover ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and take +1 momentum."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/gather_information.miss",
 							"text": "On a __miss__, your investigation unearths a dire threat or reveals an unwelcome truth that undermines your quest. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23591,6 +23707,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/heal.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23600,6 +23717,7 @@
 								]
 							},
 							{
+								"_id": "move.condition:classic/adventure/heal.1",
 								"method": "lowest",
 								"roll_options": [
 									{
@@ -23619,12 +23737,15 @@
 					"text": "When __you treat an injury or ailment__, roll +wits. If you are mending your own wounds, roll +wits or +iron, whichever is lower.\n\nOn a __strong hit__, your care is helpful. If you (or the ally under your care) have the wounded condition, you may clear it. Then, take or give up to +2 health.\n\nOn a __weak hit__, as above, but you must suffer -1 supply or -1 momentum (your choice).\n\nOn a __miss__, your aid is ineffective. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/heal.strong_hit",
 							"text": "On a __strong hit__, your care is helpful. If you (or the ally under your care) have the wounded condition, you may clear it. Then, take or give up to +2 health."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/heal.weak_hit",
 							"text": "On a __weak hit__, your care is helpful, but you must suffer -1 supply or -1 momentum (your choice). If you (or the ally under your care) have the wounded condition, you may clear it. Then, take or give up to +2 health."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/heal.miss",
 							"text": "On a __miss__, your aid is ineffective. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23651,6 +23772,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/resupply.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23665,12 +23787,15 @@
 					"text": "When __you hunt, forage, or scavenge__, roll +wits.\n\nOn a __strong hit__, you bolster your resources. Take +2 supply.\n\nOn a __weak hit__, take up to +2 supply, but suffer -1 momentum for each.\n\nOn a __miss__, you find nothing helpful. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/resupply.strong_hit",
 							"text": "On a __strong hit__, you bolster your resources. Take +2 supply."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/resupply.weak_hit",
 							"text": "On a __weak hit__, take up to +2 supply, but suffer -1 momentum for each."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/resupply.miss",
 							"text": "On a __miss__, you find nothing helpful. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23697,6 +23822,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/make_camp.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23711,12 +23837,15 @@
 					"text": "When __you rest and recover for several hours in the wild__, roll +supply.\n\nOn a __strong hit__, you and your allies may each choose two. On a __weak hit__, choose one.\n\n  * Recuperate: Take +1 health for you and any companions.\n  * Partake: Suffer -1 supply and take +1 health for you and any companions.\n  * Relax: Take +1 spirit.\n  * Focus: Take +1 momentum.\n  * Prepare: When you break camp, add +1 if you [Undertake a Journey](datasworn:move:classic/adventure/undertake_a_journey).\n\nOn a __miss__, you take no comfort. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/make_camp.strong_hit",
 							"text": "On a __strong hit__, you and your allies may each choose two.\n\n  * Recuperate: Take +1 health for you and any companions.\n  * Partake: Suffer -1 supply and take +1 health for you and any companions.\n  * Relax: Take +1 spirit.\n  * Focus: Take +1 momentum.\n  * Prepare: When you break camp, add +1 if you [Undertake a Journey](datasworn:move:classic/adventure/undertake_a_journey)."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/make_camp.weak_hit",
 							"text": "On a __weak hit__, you and your allies may each choose one.\n\n  * Recuperate: Take +1 health for you and any companions.\n  * Partake: Suffer -1 supply and take +1 health for you and any companions.\n  * Relax: Take +1 spirit.\n  * Focus: Take +1 momentum.\n  * Prepare: When you break camp, add +1 if you [Undertake a Journey](datasworn:move:classic/adventure/undertake_a_journey)."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/make_camp.miss",
 							"text": "On a __miss__, you take no comfort. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23743,6 +23872,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/undertake_a_journey.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23757,12 +23887,15 @@
 					"text": "When __you travel across hazardous or unfamiliar lands__, set the rank of your journey.\n\n  * Troublesome journey: 3 progress per waypoint.\n  * Dangerous journey: 2 progress per waypoint.\n  * Formidable journey: 1 progress per waypoint.\n  * Extreme journey: 2 ticks per waypoint.\n  * Epic journey: 1 tick per waypoint.\n\nThen, for each segment of your journey, roll +wits. If you are setting off from a community with which you share a bond, add +1 to your initial roll.\n\nOn a __strong hit__, you reach a waypoint. If the waypoint is unknown to you, envision it ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). Then, choose one.\n\n  * You make good use of your resources: Mark progress.\n  * You move at speed: Mark progress and take +1 momentum, but suffer -1 supply.\n\nOn a __weak hit__, you reach a waypoint and mark progress, but suffer -1 supply.\n\nOn a __miss__, you are waylaid by a perilous event. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/undertake_a_journey.strong_hit",
 							"text": "On a __strong hit__, you reach a waypoint. If the waypoint is unknown to you, envision it ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). Then, choose one.\n\n  * You make good use of your resources: Mark progress.\n  * You move at speed: Mark progress and take +1 momentum, but suffer -1 supply."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/undertake_a_journey.weak_hit",
 							"text": "On a __weak hit__, you reach a waypoint and mark progress, but suffer -1 supply."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/undertake_a_journey.miss",
 							"text": "On a __miss__, you are waylaid by a perilous event. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23793,6 +23926,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/reach_your_destination.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -23805,14 +23939,17 @@
 					},
 					"text": "When __your journey comes to an end__, roll the challenge dice and compare to your progress. Momentum is ignored on this roll.\n\nOn a __strong hit__, the situation at your destination favors you. Choose one.\n\n  * Make another move now (not a progress move), and add +1.\n  * Take +1 momentum.\n\nOn a __weak hit__, you arrive but face an unforeseen hazard or complication. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __miss__, you have gone hopelessly astray, your objective is lost to you, or you were misled about your destination. If your journey continues, clear all but one filled progress, and raise the journey’s rank by one (if not already epic).",
 					"outcomes": {
-						"strong_hit": {
-							"text": "On a __strong hit__, the situation at your destination favors you. Choose one.\n\n  * Make another move now (not a progress move), and add +1.\n  * Take +1 momentum."
+						"miss": {
+							"_id": "move.outcome:classic/adventure/reach_your_destination.miss",
+							"text": "On a __miss__, you have gone hopelessly astray, your objective is lost to you, or you were misled about your destination. If your journey continues, clear all but one filled progress, and raise the journey’s rank by one (if not already epic)."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/reach_your_destination.weak_hit",
 							"text": "On a __weak hit__, you arrive but face an unforeseen hazard or complication. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
-						"miss": {
-							"text": "On a __miss__, you have gone hopelessly astray, your objective is lost to you, or you were misled about your destination. If your journey continues, clear all but one filled progress, and raise the journey’s rank by one (if not already epic)."
+						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/reach_your_destination.strong_hit",
+							"text": "On a __strong hit__, the situation at your destination favors you. Choose one.\n\n  * Make another move now (not a progress move), and add +1.\n  * Take +1 momentum."
 						}
 					},
 					"oracles": {},
@@ -23838,6 +23975,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/follow_a_path.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23852,12 +23990,15 @@
 					"text": "When __you journey along a known route, and one day blends into the next__, roll +supply.\n\nOn a __strong hit__, you reach your destination and the situation favors you. Take +1 momentum.\n\nOn a __weak hit__, you complete the journey, but face a cost or complication. Choose one or more.\n\n  * You took longer than expected.\n  * You pressed on through pain, sickness, or weariness: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You suffered under the burden of foul weather, worries, or fearful locations: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You wasted resources.\n  * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/adventure/follow_a_path.strong_hit",
 							"text": "On a __strong hit__, you reach your destination and the situation favors you. Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/adventure/follow_a_path.weak_hit",
 							"text": "On a __weak hit__, you complete the journey, but face a cost or complication. Choose one or more.\n\n  * You took longer than expected.\n  * You pressed on through pain, sickness, or weariness: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You suffered under the burden of foul weather, worries, or fearful locations: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You wasted resources.\n  * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/adventure/follow_a_path.miss",
 							"text": "On a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination."
 						}
 					},
@@ -23905,6 +24046,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/compel.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23915,6 +24057,7 @@
 								"text": "Charm, pacify, barter, or convince"
 							},
 							{
+								"_id": "move.condition:classic/relationship/compel.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23925,6 +24068,7 @@
 								"text": "Threaten or incite"
 							},
 							{
+								"_id": "move.condition:classic/relationship/compel.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23940,12 +24084,15 @@
 					"text": "When __you attempt to persuade someone to do something__, envision your approach and roll. If you...\n\n  * Charm, pacify, barter, or convince: Roll +heart (add +1 if you share a bond).\n  * Threaten or incite: Roll +iron.\n  * Lie or swindle: Roll +shadow.\n\nOn a __strong hit__, they’ll do what you want or share what they know. Take +1 momentum. If you use this exchange to [Gather Information](datasworn:move:classic/adventure/gather_information), make that move now and add +1.\n\nOn a __weak hit__, as above, but they ask something of you in return. Envision what they want ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __miss__, they refuse or make a demand which costs you greatly. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/relationship/compel.strong_hit",
 							"text": "On a __strong hit__, they’ll do what you want or share what they know. Take +1 momentum. If you use this exchange to [Gather Information](datasworn:move:classic/adventure/gather_information), make that move now and add +1."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/relationship/compel.weak_hit",
 							"text": "On a __weak hit__, they’ll do what you want or share what they know... but they ask something of you in return. Envision what they want ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nTake +1 momentum. If you use this exchange to [Gather Information](datasworn:move:classic/adventure/gather_information), make that move now and add +1."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/relationship/compel.miss",
 							"text": "On a __miss__, they refuse or make a demand which costs you greatly. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -23972,6 +24119,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/sojourn.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23986,12 +24134,15 @@
 					"text": "When __you spend time in a community seeking assistance__, roll +heart. If you share a bond, add +1. On __strong hit__, you and your allies may each choose two from within the categories below. On a __weak hit__, choose one. If you share a bond, choose one more.\n\nOn a hit, you and your allies may each focus on one of your chosen recover actions and roll +heart again. If you share a bond, add +1. On a __strong hit__, take +2 more for that action. On a __weak hit__, take +1 more. On a __miss__, it goes badly and you lose all benefits for that action.\n\n__Clear a Condition__\n\n  * Mend: Clear a wounded debility and take +1 health.\n  * Hearten: Clear a shaken debility and take +1 spirit.\n  * Equip: Clear an unprepared debility and take +1 supply.\n\n__Recover__\n\n  * Recuperate: Take +2 health for yourself and any companions.\n  * Consort: Take +2 spirit.\n  * Provision: Take +2 supply.\n  * Plan: Take +2 momentum.\n\n__Provide Aid__\n\n  * Take a quest: Envision what this community needs, or what trouble it is facing ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). If you chose to help, [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) and add +1.\n\nOn a __miss__, you find no help here. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/relationship/sojourn.strong_hit",
 							"text": "On a __strong hit__, you and your allies may each choose two from within the categories below.\n\nYou and your allies may each focus on one of your chosen recover actions and roll +heart again. If you share a bond, add +1. On a __strong hit__, take +2 more for that action. On a __weak hit__, take +1 more. On a __miss__, it goes badly and you lose all benefits for that action.\n\n__Clear a Condition__\n\n  * Mend: Clear a wounded debility and take +1 health.\n  * Hearten: Clear a shaken debility and take +1 spirit.\n  * Equip: Clear an unprepared debility and take +1 supply.\n\n__Recover__\n\n  * Recuperate: Take +2 health for yourself and any companions.\n  * Consort: Take +2 spirit.\n  * Provision: Take +2 supply.\n  * Plan: Take +2 momentum.\n\n__Provide Aid__\n\n  * Take a quest: Envision what this community needs, or what trouble it is facing ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). If you chose to help, [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) and add +1."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/relationship/sojourn.weak_hit",
 							"text": "On a __weak hit__, you and your allies may each choose one from within the categories below.\n\nYou and your allies may each focus on one of your chosen recover actions and roll +heart again. If you share a bond, add +1. On a __strong hit__, take +2 more for that action. On a __weak hit__, take +1 more. On a __miss__, it goes badly and you lose all benefits for that action.\n\n__Clear a Condition__\n\n  * Mend: Clear a wounded debility and take +1 health.\n  * Hearten: Clear a shaken debility and take +1 spirit.\n  * Equip: Clear an unprepared debility and take +1 supply.\n\n__Recover__\n\n  * Recuperate: Take +2 health for yourself and any companions.\n  * Consort: Take +2 spirit.\n  * Provision: Take +2 supply.\n  * Plan: Take +2 momentum.\n\n__Provide Aid__\n\n  * Take a quest: Envision what this community needs, or what trouble it is facing ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). If you chose to help, [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) and add +1."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/relationship/sojourn.miss",
 							"text": "On a __miss__, you find no help here. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -24018,6 +24169,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/draw_the_circle.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24032,12 +24184,15 @@
 					"text": "When __you challenge someone to a formal duel, or accept a challenge__, roll +heart. If you share a bond with this community, add +1.\n\nOn a __strong hit__, take +1 momentum. You may also choose up to two boasts and take +1 momentum for each.\n\nOn a __weak hit__, you may choose one boast in exchange for +1 momentum.\n\n  * Grant first strike: Your foe has initiative.\n  * Bare yourself: Take no benefit of armor or shield; your foe’s harm is +1.\n  * Hold no iron: Take no benefit of weapons; your harm is 1.\n  * Bloody yourself: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).\n  * To the death: One way or another, this fight must end with death.\n\nOn a __miss__, you begin the duel at a disadvantage. Your foe has initiative. [Pay the Price](datasworn:move:classic/fate/pay_the_price). Then, make moves to resolve the fight. If you are the victor, you may make a lawful demand, and your opponent must comply or forfeit their honor and standing. If you refuse the challenge, surrender, or are defeated, they make a demand of you.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/relationship/draw_the_circle.strong_hit",
 							"text": "On a __strong hit__, take +1 momentum. You may also choose up to two boasts and take +1 momentum for each.\n\n  * Grant first strike: Your foe has initiative.\n  * Bare yourself: Take no benefit of armor or shield; your foe’s harm is +1.\n  * Hold no iron: Take no benefit of weapons; your harm is 1.\n  * Bloody yourself: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).\n  * To the death: One way or another, this fight must end with death.\n\nThen, make moves to resolve the fight. If you are the victor, you may make a lawful demand, and your opponent must comply or forfeit their honor and standing. If you refuse the challenge, surrender, or are defeated, they make a demand of you."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/relationship/draw_the_circle.weak_hit",
 							"text": "On a __weak hit__, you may choose one boast in exchange for +1 momentum.\n\n  * Grant first strike: Your foe has initiative.\n  * Bare yourself: Take no benefit of armor or shield; your foe’s harm is +1.\n  * Hold no iron: Take no benefit of weapons; your harm is 1.\n  * Bloody yourself: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).\n  * To the death: One way or another, this fight must end with death.\n\nThen, make moves to resolve the fight. If you are the victor, you may make a lawful demand, and your opponent must comply or forfeit their honor and standing. If you refuse the challenge, surrender, or are defeated, they make a demand of you."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/relationship/draw_the_circle.miss",
 							"text": "On a __miss__, you begin the duel at a disadvantage. Your foe has initiative. [Pay the Price](datasworn:move:classic/fate/pay_the_price).\n\nThen, make moves to resolve the fight. If you are the victor, you may make a lawful demand, and your opponent must comply or forfeit their honor and standing. If you refuse the challenge, surrender, or are defeated, they make a demand of you."
 						}
 					},
@@ -24064,6 +24219,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/forge_a_bond.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24078,12 +24234,15 @@
 					"text": "When __you spend significant time with a person or community, stand together to face hardships, or make sacrifices for their cause__, you can attempt to create a bond. When you do, roll +heart. If you make this move after you successfully [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) to their benefit, you may reroll any dice.\n\nOn a __strong hit__, make note of the bond, mark a tick on your bond progress track, and choose one.\n\n  * Take +1 spirit.\n  * Take +2 momentum.\n\nOn a __weak hit__, they ask something more of you first. Envision what it is ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), do it (or [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow)), and mark the bond. If you refuse or fail, [Pay the Price](datasworn:move:classic/fate/pay_the_price).\n\nOn a __miss__, they reject you. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/relationship/forge_a_bond.strong_hit",
 							"text": "On a __strong hit__, make note of the bond, mark a tick on your bond progress track, and choose one.\n\n  * Take +1 spirit.\n  * Take +2 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/relationship/forge_a_bond.weak_hit",
 							"text": "On a __weak hit__, they ask something more of you first. Envision what it is ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), do it (or [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow)), and mark the bond. If you refuse or fail, [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/relationship/forge_a_bond.miss",
 							"text": "On a __miss__, they reject you. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -24110,6 +24269,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/test_your_bond.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24124,12 +24284,15 @@
 					"text": "When __your bond is tested through conflict, betrayal, or circumstance__, roll +heart.\n\nOn a __strong hit__, this test has strengthened your bond. Choose one.\n\n  * Take +1 spirit.\n  * Take +2 momentum.\n\nOn a __weak hit__, your bond is fragile and you must prove your loyalty. Envision what they ask of you ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and do it (or [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow)). If you refuse or fail, clear the bond and [Pay the Price](datasworn:move:classic/fate/pay_the_price).\n\nOn a __miss__, or if you have no interest in maintaining this relationship, clear the bond and [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/relationship/test_your_bond.strong_hit",
 							"text": "On a __strong hit__, this test has strengthened your bond. Choose one.\n\n  * Take +1 spirit.\n  * Take +2 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/relationship/test_your_bond.weak_hit",
 							"text": "On a __weak hit__, your bond is fragile and you must prove your loyalty. Envision what they ask of you ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and do it (or [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow)). If you refuse or fail, clear the bond and [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/relationship/test_your_bond.miss",
 							"text": "On a __miss__, clear the bond and [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -24182,6 +24345,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/write_your_epilogue.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24195,12 +24359,15 @@
 					"text": "When __you retire from your life as Ironsworn__, envision two things: What you hope for, and what you fear. Then, roll the challenge dice and compare to your bonds. Momentum is ignored on this roll.\n\nOn a __strong hit__, things come to pass as you hoped.\n\nOn a __weak hit__, your life takes an unexpected turn, but not necessarily for the worse. You find yourself spending your days with someone or in a place you did not foresee. Envision it ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __miss__, your fears are realized.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/relationship/write_your_epilogue.strong_hit",
 							"text": "On a __strong hit__, things come to pass as you had hoped."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/relationship/write_your_epilogue.weak_hit",
 							"text": "On a __weak hit__, your life takes an unexpected turn, but not necessarily for the worse. You find yourself spending your days with someone or in a place you did not foresee. Envision it ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/relationship/write_your_epilogue.miss",
 							"text": "On a __miss__, your fears are realized."
 						}
 					},
@@ -24248,6 +24415,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/enter_the_fray.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24258,6 +24426,7 @@
 								"text": "Facing off against your foe"
 							},
 							{
+								"_id": "move.condition:classic/combat/enter_the_fray.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24268,6 +24437,7 @@
 								"text": "Moving into position against an unaware foe, or striking without warning"
 							},
 							{
+								"_id": "move.condition:classic/combat/enter_the_fray.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24283,12 +24453,15 @@
 					"text": "When __you enter into combat__, set the rank of each of your foes.\n\n  * Troublesome foe: 3 progress per harm; inflicts 1 harm.\n  * Dangerous foe: 2 progress per harm; inflicts 2 harm.\n  * Formidable foe: 1 progress per harm; inflicts 3 harm.\n  * Extreme foe: 2 ticks per harm; inflicts 4 harm.\n  * Epic foe: 1 tick per harm; inflicts 5 harm.\n\nThen, roll to determine who is in control. If you are...\n\n  * Facing off against your foe: Roll +heart.\n  * Moving into position against an unaware foe, or striking without warning: Roll +shadow.\n  * Ambushed: Roll +wits.\n\nOn a __strong hit__, take +2 momentum. You have initiative.\n\nOn a __weak hit__, choose one.\n\n  * Bolster your position: Take +2 momentum.\n  * Prepare to act: Take initiative.\n\nOn a __miss__, combat begins with you at a disadvantage. [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/combat/enter_the_fray.strong_hit",
 							"text": "On a __strong hit__, take +2 momentum. You have initiative."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/combat/enter_the_fray.weak_hit",
 							"text": "On a __weak hit__, choose one.\n\n  * Bolster your position: Take +2 momentum.\n  * Prepare to act: Take initiative."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/combat/enter_the_fray.miss",
 							"text": "On a __miss__, combat begins with you at a disadvantage. [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative."
 						}
 					},
@@ -24315,6 +24488,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/strike.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24325,6 +24499,7 @@
 								"text": "In close quarters"
 							},
 							{
+								"_id": "move.condition:classic/combat/strike.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24340,12 +24515,15 @@
 					"text": "When __you have initiative and attack in close quarters__, roll +iron. When __you have initiative and attack at range__, roll +edge.\n\nOn a __strong hit__, inflict +1 harm. You retain initiative.\n\nOn a __weak hit__, inflict your harm and lose initiative.\n\nOn a __miss__, your attack fails and you must [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/combat/strike.strong_hit",
 							"text": "On a __strong hit__, inflict +1 harm. You retain initiative."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/combat/strike.weak_hit",
 							"text": "On a __weak hit__, inflict your harm and lose initiative."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/combat/strike.miss",
 							"text": "On a __miss__, your attack fails and you must [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative."
 						}
 					},
@@ -24372,6 +24550,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/clash.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24382,6 +24561,7 @@
 								"text": "Fight with them in close quarters"
 							},
 							{
+								"_id": "move.condition:classic/combat/clash.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24397,12 +24577,15 @@
 					"text": "When __your foe has initiative and you fight with them in close quarters__, roll +iron. When __you exchange a volley at range, or shoot at an advancing foe__, roll +edge.\n\nOn a __strong hit__, inflict your harm and choose one. You have the initiative.\n\n  * You bolster your position: Take +1 momentum.\n  * You find an opening: Inflict +1 harm.\n\nOn a __weak hit__, inflict your harm, but then [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative.\n\nOn a __miss__, you are outmatched and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/combat/clash.strong_hit",
 							"text": "On a __strong hit__, inflict your harm and choose one. You have the initiative.\n\n  * You bolster your position: Take +1 momentum.\n  * You find an opening: Inflict +1 harm."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/combat/clash.weak_hit",
 							"text": "On a __weak hit__, inflict your harm, but then [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/combat/clash.miss",
 							"text": "On a __miss__, you are outmatched and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). Your foe has initiative."
 						}
 					},
@@ -24459,6 +24642,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/end_the_fight.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -24472,12 +24656,15 @@
 					"text": "When __you make a move to take decisive action__, and score a strong hit, you may resolve the outcome of this fight. If you do, roll the challenge dice and compare to your progress. Momentum is ignored on this roll.\n\nOn a __strong hit__, this foe is no longer in the fight. They are killed, out of action, flee, or surrender as appropriate to the situation and your intent ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __weak hit__, as above, but you must also choose one.\n\n  * It’s worse than you thought: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You are overcome: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * Your victory is short-lived: A new danger or foe appears, or an existing danger worsens.\n  * You suffer collateral damage: Something of value is lost or broken, or someone important must pay the cost.\n  * You’ll pay for it: An objective falls out of reach.\n  * Others won’t forget: You are marked for vengeance.\n\nOn a __miss__, you have lost this fight. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/combat/end_the_fight.strong_hit",
 							"text": "On a __strong hit__, this foe is no longer in the fight. They are killed, out of action, flee, or surrender as appropriate to the situation and your intent ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/combat/end_the_fight.weak_hit",
 							"text": "On a __weak hit__, this foe is no longer in the fight... but you must also choose one.\n\n  * It’s worse than you thought: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You are overcome: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * Your victory is short-lived: A new danger or foe appears, or an existing danger worsens.\n  * You suffer collateral damage: Something of value is lost or broken, or someone important must pay the cost.\n  * You’ll pay for it: An objective falls out of reach.\n  * Others won’t forget: You are marked for vengeance.\n\nThe foe is killed, out of action, flees, or surrenders as appropriate to the situation and your intent ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/combat/end_the_fight.miss",
 							"text": "On a __miss__, you have lost this fight. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -24504,6 +24691,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/battle.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24514,6 +24702,7 @@
 								"text": "Fight at range, or using your speed and the terrain to your advantage"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24524,6 +24713,7 @@
 								"text": "Fight depending on your courage, allies, or companions"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24534,6 +24724,7 @@
 								"text": "Fight in close to overpower your opponents"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24544,6 +24735,7 @@
 								"text": "Fight using trickery to befuddle your opponents"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24559,12 +24751,15 @@
 					"text": "When __you fight a battle, and it happens in a blur__, envision your objective and roll. If you primarily...\n\n  * Fight at range, or using your speed and the terrain to your advantage: Roll +edge.\n  * Fight depending on your courage, allies, or companions: Roll +heart.\n  * Fight in close to overpower your opponents: Roll +iron.\n  * Fight using trickery to befuddle your opponents: Roll +shadow.\n  * Fight using careful tactics to outsmart your opponents: Roll +wits.\n\nOn a __strong hit__, you achieve your objective unconditionally. Take +2 momentum.\n\nOn a __weak hit__, you achieve your objective, but not without cost. [Pay the Price](datasworn:move:classic/fate/pay_the_price).\n\nOn a __miss__, you are defeated and the objective is lost to you. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/combat/battle.strong_hit",
 							"text": "On a __strong hit__, you achieve your objective unconditionally. Take +2 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/combat/battle.weak_hit",
 							"text": "On a __weak hit__, you achieve your objective, but not without cost. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/combat/battle.miss",
 							"text": "On a __miss__, you are defeated and the objective is lost to you. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -24612,6 +24807,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/endure_harm.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -24630,12 +24826,15 @@
 					"text": "When __you face physical damage__, suffer -health equal to your foe’s rank or as appropriate to the situation. If your health is 0, suffer -momentum equal to any remaining -health. Then, roll +health or +iron, whichever is higher.\n\nOn a __strong hit__, choose one.\n\n  * Shake it off: If your health is greater than 0, suffer -1 momentum in exchange for +1 health.\n  * Embrace the pain: Take +1 momentum.\n\nOn a __weak hit__, you press on.\n\nOn a __miss__, also suffer -1 momentum. If you are at 0 health, you must mark wounded or maimed (if currently unmarked) or roll on the following table.\n\n{{table>move.oracle_rollable:classic/suffer/endure_harm.endure_harm}}",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/suffer/endure_harm.strong_hit",
 							"text": "On a __strong hit__, choose one.\n\n  * Shake it off: If your health is greater than 0, suffer -1 momentum in exchange for +1 health.\n  * Embrace the pain: Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/suffer/endure_harm.weak_hit",
 							"text": "On a __weak hit__, you press on."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/suffer/endure_harm.miss",
 							"text": "On a __miss__, also suffer -1 momentum. If you are at 0 health, you must mark wounded or maimed (if currently unmarked) or roll on the following table.\n\n{{table>move.oracle_rollable:classic/suffer/endure_harm.endure_harm}}"
 						}
 					},
@@ -24716,6 +24915,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/face_death.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24730,12 +24930,15 @@
 					"text": "When __you are brought to the brink of death__, and glimpse the world beyond, roll +heart.\n\nOn a __strong hit__, death rejects you. You are cast back into the mortal world.\n\nOn a __weak hit__, choose one.\n\n  * You die, but not before making a noble sacrifice. Envision your final moments.\n  * Death desires something of you in exchange for your life. Envision what it wants ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) (formidable or extreme) to complete that quest. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow), or refuse the quest, you are dead. Otherwise, you return to the mortal world and are now cursed. You may only clear the cursed debility by completing the quest.\n\nOn a __miss__, you are dead.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/suffer/face_death.strong_hit",
 							"text": "On a __strong hit__, death rejects you. You are cast back into the mortal world."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/suffer/face_death.weak_hit",
 							"text": "On a __weak hit__, choose one.\n\n  * You die, but not before making a noble sacrifice. Envision your final moments.\n  * Death desires something of you in exchange for your life. Envision what it wants ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) (formidable or extreme) to complete that quest. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow), or refuse the quest, you are dead. Otherwise, you return to the mortal world and are now cursed. You may only clear the cursed debility by completing the quest."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/suffer/face_death.miss",
 							"text": "On a __miss__, you are dead."
 						}
 					},
@@ -24762,6 +24965,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/companion_endure_harm.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -24783,12 +24987,15 @@
 					"text": "When __your companion faces physical damage__, they suffer -health equal to the amount of harm inflicted. If your companion’s health is 0, exchange any leftover -health for -momentum. Then, roll +heart or +your companion’s health, whichever is higher.\n\nOn a __strong hit__, your companion rallies. Give them +1 health.\n\nOn a __weak hit__, your companion is battered. If their health is 0, they cannot assist you until they gain at least +1 health.\n\nOn a __miss__, also suffer -1 momentum. If your companion’s health is 0, they are gravely wounded and out of action. Without aid, they die in an hour or two. If you roll a miss with a 1 on your action die, and your companion’s health is 0, they are now dead. Take 1 experience for each marked ability on your companion asset, and remove it.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/suffer/companion_endure_harm.strong_hit",
 							"text": "On a __strong hit__, your companion rallies. Give them +1 health."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/suffer/companion_endure_harm.weak_hit",
 							"text": "On a __weak hit__, your companion is battered. If their health is 0, they cannot assist you until they gain at least +1 health."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/suffer/companion_endure_harm.miss",
 							"text": "On a __miss__, also suffer -1 momentum. If your companion’s health is 0, they are gravely wounded and out of action. Without aid, they die in an hour or two.\n\nIf you roll a miss with a 1 on your action die, and your companion’s health is 0, they are now dead. Take 1 experience for each marked ability on your companion asset, and remove it."
 						}
 					},
@@ -24815,6 +25022,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/endure_stress.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -24833,12 +25041,15 @@
 					"text": "When __you face mental shock or despair__, suffer -spirit equal to your foe’s rank or as appropriate to the situation. If your spirit is 0, suffer -momentum equal to any remaining -spirit. Then, roll +spirit or +heart, whichever is higher.\n\nOn a __strong hit__, choose one.\n\n  * Shake it off: If your spirit is greater than 0, suffer -1 momentum in exchange for +1 spirit\n  * Embrace the darkness: Take +1 momentum\n\nOn a __weak hit__, you press on.\n\nOn a __miss__, also suffer -1 momentum. If you are at 0 spirit, you must mark shaken or corrupted (if currently unmarked) or roll on the following table.\n\n{{table>move.oracle_rollable:classic/suffer/endure_stress.endure_stress}}",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/suffer/endure_stress.strong_hit",
 							"text": "On a __strong hit__, choose one.\n\n  * Shake it off: If your spirit is greater than 0, suffer -1 momentum in exchange for +1 spirit\n  * Embrace the darkness: Take +1 momentum"
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/suffer/endure_stress.weak_hit",
 							"text": "On a __weak hit__, you press on."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/suffer/endure_stress.miss",
 							"text": "On a __miss__, also suffer -1 momentum. If you are at 0 spirit, you must mark shaken or corrupted (if currently unmarked) or roll on the following table.\n\n{{table>move.oracle_rollable:classic/suffer/endure_stress.endure_stress}}"
 						}
 					},
@@ -24911,6 +25122,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/face_desolation.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24925,12 +25137,15 @@
 					"text": "When __you are brought to the brink of desolation__, roll +heart.\n\nOn a __strong hit__, you resist and press on.\n\nOn a __weak hit__, choose one.\n\n  * Your spirit or sanity breaks, but not before you make a noble sacrifice. Envision your final moments.\n  * You see a vision of a dreaded event coming to pass. Envision that dark future ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) (formidable or extreme) to prevent it. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow), or refuse the quest, you are lost. Otherwise, you return to your senses and are now tormented. You may only clear the tormented debility by completing the quest.\n\nOn a __miss__, you succumb to despair or horror and are lost.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/suffer/face_desolation.strong_hit",
 							"text": "On a __strong hit__, you resist and press on."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/suffer/face_desolation.weak_hit",
 							"text": "On a __weak hit__, choose one.\n\n  * Your spirit or sanity breaks, but not before you make a noble sacrifice. Envision your final moments.\n  * You see a vision of a dreaded event coming to pass. Envision that dark future ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) (formidable or extreme) to prevent it. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow), or refuse the quest, you are lost. Otherwise, you return to your senses and are now tormented. You may only clear the tormented debility by completing the quest."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/suffer/face_desolation.miss",
 							"text": "On a __miss__, you succumb to despair or horror and are lost."
 						}
 					},
@@ -25030,6 +25245,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/quest/swear_an_iron_vow.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25044,12 +25260,15 @@
 					"text": "When __you swear upon iron to complete a quest__, write your vow and give the quest a rank. Then, roll +heart. If you make this vow to a person or community with whom you share a bond, add +1.\n\nOn a __strong hit__, you are emboldened and it is clear what you must do next ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). Take +2 momentum.\n\nOn a __weak hit__, you are determined but begin your quest with more questions than answers. Take +1 momentum, and envision what you do to find a path forward.\n\nOn a __miss__, you face a significant obstacle before you can begin your quest. Envision what stands in your way ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and choose one.\n\n  * You press on: Suffer -2 momentum, and do what you must to overcome this obstacle.\n  * You give up: [Forsake Your Vow](datasworn:move:classic/quest/forsake_your_vow).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/quest/swear_an_iron_vow.strong_hit",
 							"text": "On a __strong hit__, you are emboldened and it is clear what you must do next ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). Take +2 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/quest/swear_an_iron_vow.weak_hit",
 							"text": "On a __weak hit__, you are determined but begin your quest with more questions than answers. Take +1 momentum, and envision what you do to find a path forward."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/quest/swear_an_iron_vow.miss",
 							"text": "On a __miss__, you face a significant obstacle before you can begin your quest. Envision what stands in your way ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and choose one.\n\n  * You press on: Suffer -2 momentum, and do what you must to overcome this obstacle.\n  * You give up: [Forsake Your Vow](datasworn:move:classic/quest/forsake_your_vow)."
 						}
 					},
@@ -25106,6 +25325,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/quest/fulfill_your_vow.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -25119,12 +25339,15 @@
 					"text": "When __you achieve what you believe to be the fulfillment of your vow__, roll the challenge dice and compare to your progress. Momentum is ignored on this roll.\n\nOn a __strong hit__, your quest is complete. Mark experience (troublesome=1; dangerous=2; formidable=3; extreme=4; epic=5).\n\nOn a __weak hit__, there is more to be done or you realize the truth of your quest. Envision what you discover ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). Then, mark experience (troublesome=0; dangerous=1; formidable=2; extreme=3; epic=4). You may [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to set things right. If you do, add +1.\n\nOn a __miss__, your quest is undone. Envision what happens ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and choose one.\n\n  * You recommit: Clear all but one filled progress, and raise the quest’s rank by one (if not already epic).\n  * You give up: [Forsake Your Vow](datasworn:move:classic/quest/forsake_your_vow).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/quest/fulfill_your_vow.strong_hit",
 							"text": "On a __strong hit__, your quest is complete. Mark experience (troublesome=1; dangerous=2; formidable=3; extreme=4; epic=5)."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/quest/fulfill_your_vow.weak_hit",
 							"text": "On a __weak hit__, there is more to be done or you realize the truth of your quest. Envision what you discover ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). Then, mark experience (troublesome=0; dangerous=1; formidable=2; extreme=3; epic=4). You may [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to set things right. If you do, add +1."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/quest/fulfill_your_vow.miss",
 							"text": "On a __miss__, your quest is undone. Envision what happens ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure), and choose one.\n\n  * You recommit: Clear all but one filled progress, and raise the quest’s rank by one (if not already epic).\n  * You give up: [Forsake Your Vow](datasworn:move:classic/quest/forsake_your_vow)."
 						}
 					},
@@ -25616,6 +25839,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25626,6 +25850,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25636,6 +25861,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25646,6 +25872,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25656,6 +25883,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25671,12 +25899,15 @@
 					"text": "When __you attempt something risky or react to an imminent threat within a scene challenge__, envision your action and roll. If you act...\n\n  * With speed, agility, or precision: Roll +edge.\n  * With charm, loyalty, or courage: Roll +heart.\n  * With aggressive action, forceful defense, strength, or endurance: Roll +iron.\n  * With deception, stealth, or trickery: Roll +shadow.\n  * With expertise, insight, or observation: Roll +wits.\n\nOn a __strong hit__, you are successful and mark progress. On a __strong hit with a match__, mark progress twice.\n\nOn a __weak hit__, you are successful and mark progress, but also encounter a complication or setback. Envision what occurs and mark a countdown segment.\n\nOn a __miss__, you fail, or a momentary success is undermined by a dramatic turn of events. Mark a countdown segment and [Pay the Price](datasworn:move:classic/fate/pay_the_price). On a __miss with a match__, mark two segments and [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/scene_challenge/face_danger.strong_hit",
 							"text": "On a __strong hit__, you are successful and mark progress. On a __strong hit with a match__, mark progress twice."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/scene_challenge/face_danger.weak_hit",
 							"text": "On a __weak hit__, you are successful and mark progress, but also encounter a complication or setback. Envision what occurs and mark a countdown segment."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/scene_challenge/face_danger.miss",
 							"text": "On a __miss__, you fail, or a momentary success is undermined by a dramatic turn of events. Mark a countdown segment and [Pay the Price](datasworn:move:classic/fate/pay_the_price). On a __miss with a match__, mark two segments and [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -25703,6 +25934,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25713,6 +25945,7 @@
 								"text": "With speed, agility, or precision"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25723,6 +25956,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25733,6 +25967,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25743,6 +25978,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25758,12 +25994,15 @@
 					"text": "When __you assess a situation, make preparations, or attempt to gain leverage__, envision your action and roll. If you act...\n\n  * With speed, agility, or precision: Roll +edge.\n  * With charm, loyalty, or courage: Roll +heart.\n  * With aggressive action, forceful defense, strength, or endurance: Roll +iron.\n  * With deception, stealth, or trickery: Roll +shadow.\n  * With expertise, insight, or observation: Roll +wits.\n\nOn a __strong hit__, take both. On a __string hit with a match__, take both and mark progress. On a __weak hit__, choose one.\n\n  * Take +2 momentum\n  * Add +1 on your next move (not a progress move)\n\nOn a __miss__, you fail or your assumptions betray you. Mark a countdown segment and [Pay the Price](datasworn:move:classic/fate/pay_the_price). On a __miss with a match__, mark two segments and [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/scene_challenge/secure_an_advantage.strong_hit",
 							"text": "On a __strong hit__, take +2 momentum and add +1 on your next move (not a progress move).\n\nOn a __strong hit with a match__, take +2 momentum, add +1 on your next move (not a progress move), and mark progress."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/scene_challenge/secure_an_advantage.weak_hit",
 							"text": "On a __weak hit__, choose one.\n\n  * Take +2 momentum\n  * Add +1 on your next move (not a progress move)"
 						},
 						"miss": {
+							"_id": "move.outcome:classic/scene_challenge/secure_an_advantage.miss",
 							"text": "On a __miss__, you fail or your assumptions betray you. Mark a countdown segment and [Pay the Price](datasworn:move:classic/fate/pay_the_price). On a __miss with a match__, mark two segments and [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -25794,6 +26033,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/scene_challenge/finish_the_scene.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -25807,12 +26047,15 @@
 					"text": "When __the scene challenge tension clock or progress track is filled, or when events lead to the scene’s conclusion__, roll the challenge dice and compare to your progress.\n\nOn a __strong hit__, you achieve your objective unconditionally.\n\nOn a __weak hit__, you succeed, but not without cost. You must [Pay the Price](datasworn:move:classic/fate/pay_the_price). Make this a minor cost relative to the scope of the scene.\n\nOn a __miss__, you fail or are undermined by a dire turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:classic/scene_challenge/finish_the_scene.strong_hit",
 							"text": "On a __strong hit__, you achieve your objective unconditionally."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:classic/scene_challenge/finish_the_scene.weak_hit",
 							"text": "On a __weak hit__, you succeed, but not without cost. You must [Pay the Price](datasworn:move:classic/fate/pay_the_price). Make this a minor cost relative to the scope of the scene."
 						},
 						"miss": {
+							"_id": "move.outcome:classic/scene_challenge/finish_the_scene.miss",
 							"text": "On a __miss__, you fail or are undermined by a dire turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
