@@ -132,9 +132,21 @@ ROOTMODEL_TYPES_TO_CONVERT = [
     "RulesPackageId",
     "SpecialTrackType",
     "StatKey",
-    # Note: Integer types (Max, NonNegativeInteger, PageNumber) are kept as
-    # RootModel because they have validation constraints and default values
-    # that don't translate cleanly to type aliases.
+    # Union wrapper types - these are just unions and can be type aliases
+    "AnyMove",
+    "AnyMoveId",
+    "AnyMoveConditionIdWildcard",
+    "AnyMoveOutcomeIdWildcard",
+    "AnyOracleRollable",
+    "AnyOracleRollableId",
+    "AnyOracleRollableIdWildcard",
+    "AnyOracleRollableRowIdWildcard",
+    # Schema-related types
+    "DataswornV010",
+    "Type1",
+    "SchemaArray",
+    # Note: Max and StringArray are kept as RootModel because they have
+    # default values (= None, = []) that are used in field definitions.
 ]
 
 # Type replacements: placeholder -> actual type
@@ -191,7 +203,8 @@ def convert_rootmodel_to_typealias(content: str) -> str:
     for type_name in ROOTMODEL_TYPES_TO_CONVERT:
         # Pattern 1: Match multi-line RootModel class definition
         # The Annotated block spans multiple lines with nested brackets
-        multiline_pattern = rf"class {type_name}\(RootModel\[[^\]]+\]\):\n    root: (Annotated\[\n(?:.*\n)*?    \])\n"
+        # Use .* for RootModel generic param to handle nested brackets like list[Schema1 | bool]
+        multiline_pattern = rf"class {type_name}\(RootModel\[.*\]\):\n    root: (Annotated\[\n(?:.*\n)*?    \])\n"
 
         def make_replacement(name):
             def replacement(match):
@@ -203,7 +216,8 @@ def convert_rootmodel_to_typealias(content: str) -> str:
 
         # Pattern 2: Match single-line RootModel class definition
         # The Annotated block is on a single line
-        singleline_pattern = rf"class {type_name}\(RootModel\[[^\]]+\]\):\n    root: (Annotated\[[^\n]+\])\n"
+        # Use .* for RootModel generic param to handle nested brackets like list[Schema1 | bool]
+        singleline_pattern = rf"class {type_name}\(RootModel\[.*\]\):\n    root: (Annotated\[[^\n]+\])\n"
 
         content = re.sub(singleline_pattern, make_replacement(type_name), content)
 
