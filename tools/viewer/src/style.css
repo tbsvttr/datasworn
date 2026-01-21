@@ -705,6 +705,24 @@ html, body {
 	font-weight: 600;
 }
 
+.impact-list {
+	display: flex;
+	gap: 16px;
+}
+
+.asset-impact {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.asset-impact::before {
+	content: '⬡';
+	font-size: 16px;
+	margin-right: 4px;
+}
+
 /* Oracle specific */
 .oracle-summary {
 	margin-bottom: 16px;

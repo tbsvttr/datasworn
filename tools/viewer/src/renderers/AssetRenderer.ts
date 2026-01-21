@@ -96,10 +96,19 @@ function renderAssetControls(asset: Datasworn.Asset): string {
 				`<div class="meter-box">${max - i}</div>`
 			).join('')
 
+			// Render impacts (e.g. "battered" for vehicles, "out of action" for companions)
+			let impacts = ''
+			if (control.controls) {
+				for (const impact of Object.values(control.controls)) {
+					impacts += `<div class="asset-impact">${impact.label}</div>`
+				}
+			}
+
 			html += `
 				<div class="asset-meter">
 					<span class="meter-label">${escapeHtml(label)}</span>
 					<div class="meter-track">${boxes}</div>
+					<div class="impact-list">${impacts}</div>
 				</div>
 			`
 		}
