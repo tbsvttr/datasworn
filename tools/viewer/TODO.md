@@ -109,3 +109,45 @@ rules:
 
 - [x] **Evaluate `jtd`** - Official RFC 8927 implementation, stable spec, no security issues - keeping as-is
 - [x] **Evaluate `json-schema`** - Replaced unofficial package with `@types/json-schema`
+
+---
+
+## ID Coverage Analysis
+
+### Objects WITH IDs (referenceable)
+
+All primary and embedded types have `_id` fields:
+
+**Primary types:** `ruleset`, `oracle_rollable`, `oracle_collection`, `move`, `move_category`, `asset`, `asset_collection`, `npc`, `npc_collection`, `atlas_entry`, `truth`, `delve_site`, `delve_site_domain`, `delve_site_theme`, `rarity`
+
+**Embedded types:** `row` (in oracles), `ability` (in assets), `option` (in truths), `variant` (in npcs), `feature`/`danger`/`denizen` (in delve)
+
+### Objects WITHOUT IDs (not directly referenceable)
+
+| Object                                                   | Count    | Parent  |
+| -------------------------------------------------------- | -------- | ------- |
+| `trigger.conditions[].roll_options[]`                    | ~602     | moves   |
+| `trigger.conditions[]`                                   | ~68      | moves   |
+| Planet sub-oracles (`observed_from_space`, `life`, etc.) | ~11 each | planets |
+
+### Non-Breaking Solution
+
+Adding `_id` to these objects would be **additive** (backwards compatible):
+
+1. Add new type to `TypeId.EmbedOnly` in `src/pkg-core/IdElements/TypeId.ts`
+2. Add embed relationship to `TypeId.EmbedTypeMap`
+3. Create schema with `EmbeddedNode` pattern
+4. Regenerate data
+
+Example ID format:
+
+```text
+move.trigger.condition:starforged/adventure/face_danger.0
+move.trigger.condition.roll_option:starforged/adventure/face_danger.0.0
+```
+
+### Priority
+
+1. **Move trigger conditions** - enables linking to specific trigger mechanics
+2. **Planet sub-oracles** - enables direct references in tools
+3. **Roll options** - enables UI tools to reference specific choices
