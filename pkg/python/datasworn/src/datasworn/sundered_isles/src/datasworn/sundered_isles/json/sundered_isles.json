@@ -60646,6 +60646,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/companion/dolphin.0.call_dolphin.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -60660,12 +60661,15 @@
 									"text": "Your dolphin companion is a helpful but often errant friend. When you call the dolphin, roll +heart. On a hit, it appears and will remain in the area for an hour or two. You may (one time only) reroll any dice on a move to overcome an obstacle or hazard with its help. On a strong hit, also take +2 momentum. On a miss, it is away or unable to respond; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/companion/dolphin.0.call_dolphin.strong_hit",
 											"text": "On a __strong hit__, it appears and will remain in the area for an hour or two. Take +2 momentum. You may (one time only) reroll any dice on a move to overcome an obstacle or hazard with its help."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/companion/dolphin.0.call_dolphin.weak_hit",
 											"text": "On a __weak hit__, it appears and will remain in the area for an hour or two. You may (one time only) reroll any dice on a move to overcome an obstacle or hazard with its help."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/companion/dolphin.0.call_dolphin.miss",
 											"text": "On a __miss__, it is away or unable to respond; [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 										}
 									},
@@ -61096,6 +61100,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/companion/monkey.0.suffer_monkey_business.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -61111,12 +61116,15 @@
 									"text": "Your monkey companion finds its own trouble. Once per situation, when you score a miss, you may suffer the cost by envisioning the monkey causing mischief or getting into danger. If you do, roll +its health. On a strong hit, the monkey unwittingly turns the situation in your favor; take +2 momentum. On a weak hit, it provides a distraction or mild boon; take +1 momentum. On a miss, it faces its own cost or makes the situation worse.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/companion/monkey.0.suffer_monkey_business.strong_hit",
 											"text": "On a __strong hit__, the monkey unwittingly turns the situation in your favor; take +2 momentum."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/companion/monkey.0.suffer_monkey_business.weak_hit",
 											"text": "On a __weak hit__, the monkey provides a distraction or mild boon; take +1 momentum."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/companion/monkey.0.suffer_monkey_business.miss",
 											"text": "On a __miss__, the monkey faces its own cost or makes the situation worse."
 										}
 									},
@@ -62532,6 +62540,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/gilded_adornments.1.host_reception.0",
 												"method": "highest",
 												"roll_options": [
 													{
@@ -62550,12 +62559,15 @@
 									"text": "When you host a formal ceremony or reception aboard your ship, roll +heart or +integrity, whichever is higher. On a strong hit, the event goes as planned; you and any allies in attendance mark 2 ticks on your bonds legacy track. On a weak hit, as above, but you must first deal with an unfortunate conflict or interruption. On a miss, the event flops or is dramatically cut short; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/gilded_adornments.1.host_reception.strong_hit",
 											"text": "On a __strong hit__, the event goes as planned; you and any allies in attendance mark 2 ticks on your bonds legacy track."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/gilded_adornments.1.host_reception.weak_hit",
 											"text": "On a __weak hit__, you must first deal with an unfortunate conflict or interruption. After, the event goes as planned; you and any allies in attendance mark 2 ticks on your bonds legacy track."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/gilded_adornments.1.host_reception.miss",
 											"text": "On a __miss__, the event flops or is dramatically cut short; [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 										}
 									},
@@ -62895,6 +62907,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/improved_galley.1.indulge_with_provisions.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -62914,12 +62927,15 @@
 									"text": "When you draw on your provisions to indulge yourself and others onboard, roll +supply and [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) (-2). On a strong hit, you and your allies each choose two. On a weak hit, you each choose one. On a miss, the event is ruined by a crisis, complication, or dispute.\n\n  * Bolster your ties: Mark 2 ticks on your bonds legacy track.\n  * Build resolve: Take +2 momentum.\n  * Take comfort: [Hearten](datasworn:move:starforged/recover/hearten) with an automatic strong hit.\n  * Gain strength: Take +2 health.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_galley.1.indulge_with_provisions.strong_hit",
 											"text": "On a __strong hit__, you and your allies each choose two.\n\n  * Bolster your ties: Mark 2 ticks on your bonds legacy track.\n  * Build resolve: Take +2 momentum.\n  * Take comfort: [Hearten](datasworn:move:starforged/recover/hearten) with an automatic strong hit.\n  * Gain strength: Take +2 health."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_galley.1.indulge_with_provisions.weak_hit",
 											"text": "On a __weak hit__, you and your allies each choose one.\n\n  * Bolster your ties: Mark 2 ticks on your bonds legacy track.\n  * Build resolve: Take +2 momentum.\n  * Take comfort: [Hearten](datasworn:move:starforged/recover/hearten) with an automatic strong hit.\n  * Gain strength: Take +2 health."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_galley.1.indulge_with_provisions.miss",
 											"text": "On a __miss__, the event is ruined by a crisis, complication, or dispute."
 										}
 									},
@@ -63119,6 +63135,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/improved_hold.1.draw_reserves.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -63133,12 +63150,15 @@
 									"text": "Your ship’s hold is stocked with reserves. When you [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) and your hold supply is reduced to 0, first roll +integrity instead of marking unprepared. On a strong hit, take +1 supply. On a weak hit or miss, mark unprepared.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_hold.1.draw_reserves.strong_hit",
 											"text": "On a __strong hit__, you don't need to mark unprepared. Take +1 supply."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_hold.1.draw_reserves.weak_hit",
 											"text": "On a __weak hit__, mark unprepared as normal."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_hold.1.draw_reserves.miss",
 											"text": "On a __miss__, mark unprepared as normal."
 										}
 									},
@@ -63327,6 +63347,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/improved_sick_bay.0.aid_wounded.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -63346,12 +63367,15 @@
 									"text": "When the wounded or stricken receive aid following a shipwide crisis, roll +supply. On a hit, the aid is effective; choose two on a strong hit, and one on a weak hit. On a miss, you must count the cost; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Build loyalty: Mark 1 tick on your bonds legacy track.\n  * Rally: You and your allies take +1 health or +2 momentum.\n  * Get to work: Take +1 integrity.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_sick_bay.0.aid_wounded.strong_hit",
 											"text": "On a __strong hit__, the aid is effective; choose two.\n\n  * Build loyalty: Mark 1 tick on your bonds legacy track.\n  * Rally: You and your allies take +1 health or +2 momentum.\n  * Get to work: Take +1 integrity."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_sick_bay.0.aid_wounded.weak_hit",
 											"text": "On a __weak hit__, the aid is effective; choose one.\n\n  * Build loyalty: Mark 1 tick on your bonds legacy track.\n  * Rally: You and your allies take +1 health or +2 momentum.\n  * Get to work: Take +1 integrity."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/improved_sick_bay.0.aid_wounded.miss",
 											"text": "On a __miss__, you must count the cost; [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 										}
 									},
@@ -63645,6 +63669,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/lucky_figurehead.0.depart_port.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -63660,12 +63685,15 @@
 									"text": "Choose one of your stats to represent the figurehead’s theme. When you depart a port or anchorage, you may roll +linked stat. You cannot burn momentum on this roll. On a strong hit, the figurehead’s luck offers a boon; you and your allies take +2 momentum and +1 spirit. On a weak hit, you and your allies take +1 momentum. On a miss, the luck is foul; you and your allies [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1), and the figurehead offers no benefits until you next check its luck.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/lucky_figurehead.0.depart_port.strong_hit",
 											"text": "On a __strong hit__, the figurehead’s luck offers a boon; you and your allies take +2 momentum and +1 spirit."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/lucky_figurehead.0.depart_port.weak_hit",
 											"text": "On a __weak hit__, you and your allies take +1 momentum."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/module/lucky_figurehead.0.depart_port.miss",
 											"text": "On a __miss__, the luck is foul; you and your allies [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1), and the figurehead offers no benefits until you next check its luck."
 										}
 									},
@@ -64406,6 +64434,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/crew_commander.0.bolster_your_crew.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -64420,12 +64449,15 @@
 									"text": "To bolster your crew, provide a notable reward or respite, and roll +heart. On a strong hit, take +4 command. On a weak hit, take +2. On a miss, take +2 but envision a threat to your crew or leadership.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/crew_commander.0.bolster_your_crew.strong_hit",
 											"text": "On a __strong hit__, take +4 command."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/crew_commander.0.bolster_your_crew.weak_hit",
 											"text": "On a __weak hit__, take +2 command."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/crew_commander.0.bolster_your_crew.miss",
 											"text": "On a __miss__, take +2 command but envision a threat to your crew or leadership."
 										}
 									},
@@ -65015,6 +65047,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/musician.2.memorialize_in_song.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65029,12 +65062,15 @@
 									"text": "When you suffer or encounter a tragic loss and perform a song to memorialize the dead, roll +heart. On a strong hit, take both. On a weak hit, choose one. On a miss, the performance leaves you or others troubled; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Honor the lost: mark 2 ticks on your bonds legacy track.\n  * Offer comfort or inspiration: you and your allies take +2 spirit or +2 momentum.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/musician.2.memorialize_in_song.strong_hit",
 											"text": "On a __strong hit__, take both.\n\n  * Honor the lost: mark 2 ticks on your bonds legacy track.\n  * Offer comfort or inspiration: you and your allies take +2 spirit or +2 momentum."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/musician.2.memorialize_in_song.weak_hit",
 											"text": "On a __weak hit__, choose one.\n\n  * Honor the lost: mark 2 ticks on your bonds legacy track.\n  * Offer comfort or inspiration: you and your allies take +2 spirit or +2 momentum."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/musician.2.memorialize_in_song.miss",
 											"text": "On a __miss__, the performance leaves you or others troubled; [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 										}
 									},
@@ -65353,6 +65389,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/overlander.1.shelter.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65367,12 +65404,15 @@
 									"text": "When you find or make shelter in the wilds, roll +wits. On a strong hit, you and your allies envision how you pass the time and each take +2 spirit or +2 health, or +1 to each. In addition, any companions in your company take +1 health. On a weak hit, the comfort is fleeting; you and your allies take +1 health or +1 spirit. On a miss, you encounter hardship or a new danger; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/overlander.1.shelter.strong_hit",
 											"text": "On a __strong hit__, you and your allies envision how you pass the time and each take +2 spirit or +2 health, or +1 to each. In addition, any companions in your company take +1 health."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/overlander.1.shelter.weak_hit",
 											"text": "On a __weak hit__, the comfort is fleeting; you and your allies take +1 health or +1 spirit."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/overlander.1.shelter.miss",
 											"text": "On a __miss__, you encounter hardship or a new danger; [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 										}
 									},
@@ -65451,6 +65491,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/peddler.0.peddle_your_wares.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65465,12 +65506,15 @@
 									"text": "Once per visit, when you offload valuable goods in a community, roll +wits. On a strong hit, choose two. On a weak hit, choose one. On a miss, you make a bad deal; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Trade for services: Make one recovery move (not Sojourn) with an automatic strong hit\n  * Trade for clout or solidarity: Mark 1 tick on your bonds legacy track\n  * Trade for goods or coin: Mark 1 tick on your quests legacy track",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/peddler.0.peddle_your_wares.strong_hit",
 											"text": "On a __strong hit__, choose two.\n\n  * Trade for services: Make one recovery move (not Sojourn) with an automatic strong hit\n  * Trade for clout or solidarity: Mark 1 tick on your bonds legacy track\n  * Trade for goods or coin: Mark 1 tick on your quests legacy track"
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/peddler.0.peddle_your_wares.weak_hit",
 											"text": "On a __weak hit__, choose one.\n\n  * Trade for services: Make one recovery move (not Sojourn) with an automatic strong hit\n  * Trade for clout or solidarity: Mark 1 tick on your bonds legacy track\n  * Trade for goods or coin: Mark 1 tick on your quests legacy track"
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/peddler.0.peddle_your_wares.miss",
 											"text": "On a __miss__, you make a bad deal; [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 										}
 									},
@@ -65561,6 +65605,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/pirate_captain.0.seize_your_prize.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65575,12 +65620,15 @@
 									"text": "When you seize a notable ship or treasure, roll +wits. On a strong hit, take both, or choose one twice. On a weak hit, choose one. On a miss, choose one, but this prize also brings an unexpected danger; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Build your fortune: Mark 1 tick on your quests legacy track.\n  * Share the spoils: Mark 1 tick on your bonds legacy track.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/pirate_captain.0.seize_your_prize.strong_hit",
 											"text": "On a __strong hit__, take both, or choose one twice.\n\n  * Build your fortune: Mark 1 tick on your quests legacy track.\n  * Share the spoils: Mark 1 tick on your bonds legacy track."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/pirate_captain.0.seize_your_prize.weak_hit",
 											"text": "On a __weak hit__, choose one.\n\n  * Build your fortune: Mark 1 tick on your quests legacy track.\n  * Share the spoils: Mark 1 tick on your bonds legacy track."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/pirate_captain.0.seize_your_prize.miss",
 											"text": "On a __miss__, choose one, but this prize also brings an unexpected danger; [Pay the Price](datasworn:move:starforged/fate/pay_the_price).\n\n  * Build your fortune: Mark 1 tick on your quests legacy track.\n  * Share the spoils: Mark 1 tick on your bonds legacy track."
 										}
 									},
@@ -66302,6 +66350,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/socialite.1.make_a_grand_entrance.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -66316,12 +66365,15 @@
 									"text": "When you first make an appearance at a social event, you may attempt a grand or memorable entrance. If you do, roll +heart. On a strong hit, mark 1 tick on your bonds legacy track and take +3 momentum. On a weak hit, take +2 momentum. On a miss, choose one and [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2).\n\n  * You spot an unwelcome rival, authority, or former beau.\n  * You commit an embarrassing faux pas.\n  * You are upstaged by another’s entrance.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/socialite.1.make_a_grand_entrance.strong_hit",
 											"text": "On a __strong hit__, mark 1 tick on your bonds legacy track and take +3 momentum."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/socialite.1.make_a_grand_entrance.weak_hit",
 											"text": "On a __weak hit__, take +2 momentum."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/socialite.1.make_a_grand_entrance.miss",
 											"text": "On a __miss__, choose one and [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2).\n\n  * You spot an unwelcome rival, authority, or former beau.\n  * You commit an embarrassing faux pas.\n  * You are upstaged by another’s entrance."
 										}
 									},
@@ -66970,6 +67022,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/windbinder.0.bind_the_winds.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -66984,12 +67037,15 @@
 									"text": "When you bind the winds to your will, roll +edge. On a strong hit, the winds are fine; you and your allies take +2 momentum now, and add +1 when you make a move to navigate or maneuver. On a weak hit, the winds are fair; take +2 momentum. On a miss, the capricious winds are foul; you and your allies [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2), and face weather-related hazards as appropriate. No matter the outcome, the winds are fair after a few hours.",
 									"outcomes": {
 										"strong_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/windbinder.0.bind_the_winds.strong_hit",
 											"text": "On a __strong hit__, the winds are fine; you and your allies take +2 momentum now, and add +1 when you make a move to navigate or maneuver.\n\nNo matter the outcome, the winds are fair after a few hours."
 										},
 										"weak_hit": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/windbinder.0.bind_the_winds.weak_hit",
 											"text": "On a __weak hit__, the winds are fair; take +2 momentum.\n\nNo matter the outcome, the winds are fair after a few hours."
 										},
 										"miss": {
+											"_id": "asset.ability.move.outcome:sundered_isles/path/windbinder.0.bind_the_winds.miss",
 											"text": "On a __miss__, the capricious winds are foul; you and your allies [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2), and face weather-related hazards as appropriate.\n\nNo matter the outcome, the winds are fair after a few hours."
 										}
 									},
@@ -68043,6 +68099,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/exploration/undertake_an_expedition.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68053,6 +68110,7 @@
 								"text": "Move at speed"
 							},
 							{
+								"_id": "move.condition:sundered_isles/exploration/undertake_an_expedition.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68063,6 +68121,7 @@
 								"text": "Keep under the radar"
 							},
 							{
+								"_id": "move.condition:sundered_isles/exploration/undertake_an_expedition.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68078,12 +68137,15 @@
 					"text": "__When you sail an unfamiliar route through perilous seas, find the way across hazardous terrain, or explore a mysterious site__, give the expedition a name and rank.\n\nThen, for each segment of the expedition, envision your approach. If you...\n\n  * Move at speed: Roll +edge\n  * Keep a low profile: Roll +shadow\n  * Stay vigilant: Roll +wits\n\nOn a __strong hit__, you reach a waypoint. Envision the location and mark progress per the rank of the expedition.\n\nOn a __weak hit__, as above, but this progress costs you. Choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a peril at the waypoint: Envision what you encounter.\n\nOn a __miss__, you are waylaid by a crisis, or arrive at a waypoint to confront an immediate hardship or threat. Do not mark progress, and [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:sundered_isles/exploration/undertake_an_expedition.strong_hit",
 							"text": "On a __strong hit__, you reach a waypoint. Envision the location and mark progress per the rank of the expedition."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:sundered_isles/exploration/undertake_an_expedition.weak_hit",
 							"text": "On a __weak hit__, you reach a waypoint, but this progress costs you. Envision the location and mark progress per the rank of the expedition, but choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a peril at the waypoint: Envision what you encounter."
 						},
 						"miss": {
+							"_id": "move.outcome:sundered_isles/exploration/undertake_an_expedition.miss",
 							"text": "On a __miss__, you are waylaid by a crisis, or arrive at a waypoint to confront an immediate hardship or threat. Do not mark progress, and [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 						}
 					},
@@ -68528,6 +68590,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/exploration/set_a_course.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68547,12 +68610,15 @@
 					"text": "__When you travel a known route through perilous seas, across hazardous terrain, or within a mysterious site__, roll +supply.\n\nOn a __strong hit__, you reach your destination and the situation there favors you. Take +1 momentum.\n\nOn a __weak hit__, you arrive, but face a cost or complication. Choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a complication at the destination: Envision what you encounter.\n\nOn a __miss__, you are waylaid by a significant threat, and must [Pay the Price](datasworn:move:starforged/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:sundered_isles/exploration/set_a_course.strong_hit",
 							"text": "On a __strong hit__, you reach your destination and the situation there favors you. Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:sundered_isles/exploration/set_a_course.weak_hit",
 							"text": "On a __weak hit__, you arrive, but face a cost or complication. Choose one.\n\n  * Suffer costs en route: Make a suffer move (-2), or two suffer moves (-1).\n  * Face a complication at the destination: Envision what you encounter."
 						},
 						"miss": {
+							"_id": "move.outcome:sundered_isles/exploration/set_a_course.miss",
 							"text": "On a __miss__, you are waylaid by a significant threat, and must [Pay the Price](datasworn:move:starforged/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination."
 						}
 					},
@@ -68605,6 +68671,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68615,6 +68682,7 @@
 								"text": "On the move or maneuvering"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68625,6 +68693,7 @@
 								"text": "In command or facing off against your foe"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68635,6 +68704,7 @@
 								"text": "In the thick of it at close quarters"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68645,6 +68715,7 @@
 								"text": "Preparing to act against an unaware foe"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68660,12 +68731,15 @@
 					"text": "__When you initiate combat or are forced into a fight__, envision your objective and give it a rank. If the combat includes discrete challenges or phases, set an objective with a rank for each.\n\nThen, roll to see if you are in control. If you are...\n\n  * On the move or maneuvering: Roll +edge\n  * In command or facing off against your foe: Roll +heart\n  * In the thick of it at close quarters: Roll +iron\n  * Preparing to act against an unaware foe: Roll +shadow\n  * Caught in a trap or sizing up the situation: Roll +wits\n\nOn a __strong hit__, take both. On a __weak hit__, choose one.\n\n  * Take +2 momentum\n  * You are in control\n\nOn a __miss__, the fight begins with you in a bad spot.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:sundered_isles/combat/enter_the_fray.strong_hit",
 							"text": "On a __strong hit__, take +2 momentum. You are in control."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:sundered_isles/combat/enter_the_fray.weak_hit",
 							"text": "On a __weak hit__, choose one.\n\n  * Take +2 momentum\n  * You are in control"
 						},
 						"miss": {
+							"_id": "move.outcome:sundered_isles/combat/enter_the_fray.miss",
 							"text": "On a __miss__, the fight begins with you in a bad spot."
 						}
 					},
@@ -68718,6 +68792,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/suffer/withstand_damage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68736,12 +68811,15 @@
 					"text": "__When your vehicle faces a damaging situation or environment__, suffer -1 integrity for minor damage, -2 for serious damage, or -3 for major damage. If your integrity is 0, [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) equal to any remaining damage.\n\nThen, if your integrity is 0 or you choose to resist the damage, roll +integrity.\n\nOn a __strong hit__, choose one.\n\n  * Bypass: If your vehicle is not battered, take +1 integrity\n  * Ride it out: Take +1 momentum\n\nOn a __weak hit__, if your vehicle is not battered, you may [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1) in exchange for +1 integrity. Otherwise, carry on.\n\nOn a __miss__, it's worse than you thought. Suffer an additional -1 integrity or [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2). If your integrity is 0, also suffer a cost according to the vehicle type.\n\n  * __Command vehicle:__ Mark the vehicle as __battered__ or __cursed__, mark a module as __broken__, destroy a broken module by discarding it, or roll on the table below. If the command vehicle is destroyed or sunk, [Overcome Destruction](datasworn:move:starforged/threshold/overcome_destruction).\n  * __Support vehicle:__ Mark the vehicle as __battered__ or roll on the table below. If the vehicle is destroyed or sunk, discard the asset.\n  * __Incidental vehicle:__ Roll on the table below.\n\n{{table>move.oracle_rollable:starforged/suffer/withstand_damage.withstand_damage}}",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:sundered_isles/suffer/withstand_damage.strong_hit",
 							"text": "On a __strong hit__, choose one.\n\n  * Bypass: If your vehicle is not battered, take +1 integrity\n  * Ride it out: Take +1 momentum"
 						},
 						"weak_hit": {
+							"_id": "move.outcome:sundered_isles/suffer/withstand_damage.weak_hit",
 							"text": "On a __weak hit__, if your vehicle is not battered, you may [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1) in exchange for +1 integrity. Otherwise, carry on."
 						},
 						"miss": {
+							"_id": "move.outcome:sundered_isles/suffer/withstand_damage.miss",
 							"text": "On a __miss__, it's worse than you thought. Suffer an additional -1 integrity or [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2). If your integrity is 0, also suffer a cost according to the vehicle type.\n\n  * __Command vehicle:__ Mark the vehicle as __battered__ or __cursed__, mark a module as __broken__, destroy a broken module by discarding it, or roll on the table below. If the command vehicle is destroyed or sunk, [Overcome Destruction](datasworn:move:starforged/threshold/overcome_destruction).\n  * __Support vehicle:__ Mark the vehicle as __battered__ or roll on the table below. If the vehicle is destroyed or sunk, discard the asset.\n  * __Incidental vehicle:__ Roll on the table below.\n\n{{table>move.oracle_rollable/starforged/suffer/withstand_damage.withstand_damage}}"
 						}
 					},
@@ -68872,6 +68950,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68882,6 +68961,7 @@
 								"text": "Barter or make an appeal"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68892,6 +68972,7 @@
 								"text": "Threaten or seize"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68902,6 +68983,7 @@
 								"text": "Steal or swindle"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68912,6 +68994,7 @@
 								"text": "Scavenge or craft"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68928,12 +69011,15 @@
 					"text": "__When you attempt to bolster your readiness__, envision the opportunity and your approach. If you...\n\n  * Barter or make an appeal: Roll +heart\n  * Threaten or seize: Roll +iron\n  * Steal or swindle: Roll +shadow\n  * Scavenge or craft: Roll +wits\n  * Gear up from your ship's stores: Roll +supply (hold)\n\nOn a __strong hit__, choose one.\n\n  * If you are unprepared, clear the impact and take +1 supply. Otherwise, take +2 supply.\n  * If you are in need of a specific item or resource that can reasonably be obtained, you acquire it. Take +1 momentum.\n\nOn a __weak hit__, as above, but you must first deal with a cost, complication, or demand. Envision the nature of this obstacle.\n\nOn a __miss__, you encounter an unexpected peril. [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:sundered_isles/recover/resupply.strong_hit",
 							"text": "On a __strong hit__, choose one.\n\n  * If you are unprepared, clear the impact and take +1 supply. Otherwise, take +2 supply.\n  * If you are in need of a specific item or resource that can reasonably be obtained, you acquire it. Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:sundered_isles/recover/resupply.weak_hit",
 							"text": "On a __weak hit__, you must first deal with a cost, complication, or demand. Envision the nature of this obstacle.\n\nThen choose one.\n\n  * If you are unprepared, clear the impact and take +1 supply. Otherwise, take +2 supply.\n  * If you are in need of a specific item or resource that can reasonably be obtained, you acquire it. Take +1 momentum."
 						},
 						"miss": {
+							"_id": "move.outcome:sundered_isles/recover/resupply.miss",
 							"text": "On a __miss__, you encounter an unexpected peril. [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 						}
 					},
@@ -68963,6 +69049,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/recover/repair.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68973,6 +69060,7 @@
 								"text": "Make your own repairs, or direct companions or crewmembers to make repairs"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/repair.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68988,12 +69076,15 @@
 					"text": "__When you make repairs to your vehicles, modules, mechanical companions, or other equipment__, envision the situation and roll. If you...\n\n  * Make your own repairs, or direct companions or crewmembers to make repairs: Roll +wits\n  * Obtain repair services at a facility: Roll +heart\n\nOn a __hit__, you gain repair points as appropriate to the situation, per the table below. Additionally, if you make your own repairs, you may [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) (hold) and exchange each -1 of supply for 1 extra repair point (up to 3 points).\n\nSituation     | Strong Hit | Weak Hit\n--------------|------------|---------\nAt a facility |\t7 points \t | 5 points\nAt anchor \t  | 4 points \t | 2 points\nUnderway \t    | 3 points \t | 1 points\nUnder fire \t  | 2 points \t | 0 points\n\nSpend repair points as follows. Unused points are discarded.\n\n  * Clear the battered impact on a vehicle: 2 points\n  * Fix one broken module: 2 points\n  * Take +1 integrity on a vehicle: 1 point\n  * Take +1 health for a mechanical companion: 1 point\n  * Repair any other component or device: 3 points\n  * Repair any other equipment or device, but with a complication or malfunction: 2 points\n\nOn a __miss__, the repairs are not made and the situation worsens. [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:sundered_isles/recover/repair.strong_hit",
 							"text": "On a __strong hit__, you gain repair points as appropriate to the situation, per the table below.\n\nSituation     | Strong Hit | Weak Hit\n--------------|------------|---------\nAt a facility |\t7 points \t | 5 points\nAt anchor \t  | 4 points \t | 2 points\nUnderway \t    | 3 points \t | 1 points\nUnder fire \t  | 2 points \t | 0 points\n\nAdditionally, you may [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) and exchange each -1 of supply for 1 extra repair point (up to 3 points).\n\nSpend repair points as follows. Unused points are discarded.\n\n  * Clear the battered impact on a vehicle: 2 points\n  * Fix one broken module: 2 points\n  * Take +1 integrity on a vehicle: 1 point\n  * Take +1 health for a mechanical companion: 1 point\n  * Repair any other device: 3 points\n  * Repair any other device, but with a complication or malfunction: 2 points"
 						},
 						"weak_hit": {
+							"_id": "move.outcome:sundered_isles/recover/repair.weak_hit",
 							"text": "On a __weak hit__, you gain repair points as appropriate to the situation, per the table below.\n\nSituation     | Strong Hit | Weak Hit\n--------------|------------|---------\nAt a facility |\t7 points \t | 5 points\nAt anchor \t  | 4 points \t | 2 points\nUnderway \t    | 3 points \t | 1 points\nUnder fire \t  | 2 points \t | 0 points\n\nAdditionally, you may [Sacrifice Resources](datasworn:move:starforged/suffer/sacrifice_resources) and exchange each -1 of supply for 1 extra repair point (up to 3 points).\n\nSpend repair points as follows. Unused points are discarded.\n\n  * Clear the battered impact on a vehicle: 2 points\n  * Fix one broken module: 2 points\n  * Take +1 integrity on a vehicle: 1 point\n  * Take +1 health for a mechanical companion: 1 point\n  * Repair any other device: 3 points\n  * Repair any other device, but with a complication or malfunction: 2 points"
 						},
 						"miss": {
+							"_id": "move.outcome:sundered_isles/recover/repair.miss",
 							"text": "On a __miss__, the repairs are not made and the situation worsens. [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
 						}
 					},

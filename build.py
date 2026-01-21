@@ -129,13 +129,15 @@ def build_core_package(args):
         input_file_type=InputFileType.JsonSchema,
         output_model_type=DataModelType.PydanticV2BaseModel,
         # output=output,
-        # extra_fields="allow",
         use_standard_collections=True,
         field_constraints=True,
         use_annotated=True,
         target_python_version=PythonVersion.PY_313,
-        # disable_future_imports=True,
-        # use_pendulum=True,
+        # Optimization: collapse simple RootModel types into type aliases
+        # This eliminates the need for .root access on string/primitive types
+        collapse_root_models=True,
+        # Use X | Y union syntax instead of Union[X, Y]
+        use_union_operator=True,
     )
 
     if args.dry_run:

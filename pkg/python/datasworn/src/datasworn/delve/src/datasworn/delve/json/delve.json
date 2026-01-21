@@ -10978,6 +10978,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/delve_the_depths.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -10988,6 +10989,7 @@
 								"text": "With haste"
 							},
 							{
+								"_id": "move.condition:delve/delve/delve_the_depths.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -10998,6 +11000,7 @@
 								"text": "With stealth or trickery"
 							},
 							{
+								"_id": "move.condition:delve/delve/delve_the_depths.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11013,12 +11016,15 @@
 					"text": "When you __traverse an area within a perilous site__, envision your surroundings ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure). Then, consider your approach. If you navigate this area...\n\n  * With haste: Roll +edge.\n  * With stealth or trickery: Roll +shadow.\n  * With observation, intuition, or expertise: Roll +wits.\n\nOn a __strong hit__, you delve deeper. Mark progress and [Find an Opportunity](datasworn:move:delve/delve/find_an_opportunity). On a __weak hit__, roll on the following table according to your stat.\n\nOn a __miss__, [Reveal a Danger](datasworn:move:delve/delve/reveal_a_danger).\n\n{{table_columns>move:delve/delve/delve_the_depths}}",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:delve/delve/delve_the_depths.strong_hit",
 							"text": "On a __strong hit__, you delve deeper. Mark progress and [Find an Opportunity](datasworn:move:delve/delve/find_an_opportunity)."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:delve/delve/delve_the_depths.weak_hit",
 							"text": "On a __weak hit__, roll on the following table according to your stat.\n\n{{table_columns>move:delve/delve/delve_the_depths}}"
 						},
 						"miss": {
+							"_id": "move.outcome:delve/delve/delve_the_depths.miss",
 							"text": "On a __miss__, [Reveal a Danger](datasworn:move:delve/delve/reveal_a_danger)."
 						}
 					},
@@ -11458,6 +11464,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/check_your_gear.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11472,12 +11479,15 @@
 					"text": "When __you check to see if you have a specific helpful item__, and you have at least +1 supply, roll +supply.\n\nOn a __strong hit__, you have it. Take +1 momentum.\n\nOn a __weak hit__, you have it, but your resources are diminished. Take +1 momentum and suffer -1 supply.\n\nOn a __miss__, you don’t have it and the situation grows more perilous. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:delve/delve/check_your_gear.strong_hit",
 							"text": "On a __strong hit__, you have it. Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:delve/delve/check_your_gear.weak_hit",
 							"text": "On a __weak hit__, you have it, but your resources are diminished. Take +1 momentum and suffer -1 supply."
 						},
 						"miss": {
+							"_id": "move.outcome:delve/delve/check_your_gear.miss",
 							"text": "On a __miss__, you don’t have it and the situation grows more perilous. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
 						}
 					},
@@ -11508,6 +11518,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/locate_your_objective.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -11521,12 +11532,15 @@
 					"text": "When __your exploration of a site comes to an end__, roll the challenge dice and compare to your progress. Momentum is ignored on this roll.\n\nOn a __strong hit__, you locate your objective and the situation favors you. Choose one.\n\n  * Make another move now (not a progress move), and add +1.\n  * Take +1 momentum.\n\nOn a __weak hit__, you locate your objective but face an unforeseen hazard or complication. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __miss__, your objective falls out of reach, you have been misled about the nature of your objective, or you discover that this site holds unexpected depths. If you continue your exploration, clear all but one filled progress and raise the site’s rank by one (if not already epic).",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:delve/delve/locate_your_objective.strong_hit",
 							"text": "On a __strong hit__, you locate your objective and the situation favors you. Choose one.\n\n  * Make another move now (not a progress move), and add +1.\n  * Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:delve/delve/locate_your_objective.weak_hit",
 							"text": "On a __weak hit__, you locate your objective but face an unforeseen hazard or complication. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
 						"miss": {
+							"_id": "move.outcome:delve/delve/locate_your_objective.miss",
 							"text": "On a __miss__, your objective falls out of reach, you have been misled about the nature of your objective, or you discover that this site holds unexpected depths. If you continue your exploration, clear all but one filled progress and raise the site’s rank by one (if not already epic)."
 						}
 					},
@@ -11553,6 +11567,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11563,6 +11578,7 @@
 								"text": "Find the fastest way out"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11573,6 +11589,7 @@
 								"text": "Steel yourself against the horrors of this place"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11583,6 +11600,7 @@
 								"text": "Fight your way out"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11593,6 +11611,7 @@
 								"text": "Keep out of sight"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11608,12 +11627,15 @@
 					"text": "When __you flee or withdraw from a site__, consider the situation and your approach. If you...\n\n  * Find the fastest way out: Roll +edge.\n  * Steel yourself against the horrors of this place: Roll +heart.\n  * Fight your way out: Roll +iron.\n  * Retrace your steps or locate an alternate path: Roll +wits.\n  * Keep out of sight: Roll +shadow.\n\nOn a __strong hit__, you make your way safely out of the site. Take +1 momentum.\n\nOn a __weak hit__, you find your way out, but this place exacts its price. Choose one.\n\n  * You are weary or wounded: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * The experience leaves you shaken: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You are delayed, and it costs you.\n  * You leave behind something important.\n  * You face a new complication as you emerge from the depths.\n  * A denizen plots their revenge.\n\nOn a __miss__, a dire threat or imposing obstacle stands in your way. [Reveal a Danger](datasworn:move:delve/delve/reveal_a_danger). If you survive, you may make your escape.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:delve/delve/escape_the_depths.strong_hit",
 							"text": "On a __strong hit__, you make your way safely out of the site. Take +1 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:delve/delve/escape_the_depths.weak_hit",
 							"text": "On a __weak hit__, you find your way out, but this place exacts its price. Choose one.\n\n  * You are weary or wounded: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * The experience leaves you shaken: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You are delayed, and it costs you.\n  * You leave behind something important.\n  * You face a new complication as you emerge from the depths.\n  * A denizen plots their revenge."
 						},
 						"miss": {
+							"_id": "move.outcome:delve/delve/escape_the_depths.miss",
 							"text": "On a __miss__, a dire threat or imposing obstacle stands in your way. [Reveal a Danger](datasworn:move:delve/delve/reveal_a_danger). If you survive, you may make your escape."
 						}
 					},
@@ -11819,6 +11841,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/failure/learn_from_your_failures.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11832,12 +11855,15 @@
 					"text": "When __you spend time reflecting on your hardships and missteps__, and your failure track is +6 or greater, roll your challenge dice and compare to your progress. Momentum is ignored on this roll.\n\nOn a __strong hit__, you commit to making a dramatic change. Take 3 experience and clear all progress. Then, choose one.\n\n  * Adjust your approach: Discard a single asset, and take 2 experience for each marked ability.\n  * Make an oath: [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow), and reroll any dice.\n  * Ready your next steps: Take +3 momentum.\n\nOn a __weak hit__, you learn from your mistakes. Take 2 experience and clear all progress.\n\nOn a __miss__, you’ve learned the wrong lessons. Take 1 experience and clear all progress. Then, envision how you set off on an ill-fated path.",
 					"outcomes": {
 						"strong_hit": {
+							"_id": "move.outcome:delve/failure/learn_from_your_failures.strong_hit",
 							"text": "On a __strong hit__, you commit to making a dramatic change. Take 3 experience and clear all progress. Then, choose one.\n\n  * Adjust your approach: Discard a single asset, and take 2 experience for each marked ability.\n  * Make an oath: [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow), and reroll any dice.\n  * Ready your next steps: Take +3 momentum."
 						},
 						"weak_hit": {
+							"_id": "move.outcome:delve/failure/learn_from_your_failures.weak_hit",
 							"text": "On a __weak hit__, you learn from your mistakes. Take 2 experience and clear all progress."
 						},
 						"miss": {
+							"_id": "move.outcome:delve/failure/learn_from_your_failures.miss",
 							"text": "On a __miss__, you’ve learned the wrong lessons. Take 1 experience and clear all progress. Then, envision how you set off on an ill-fated path."
 						}
 					},

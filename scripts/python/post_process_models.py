@@ -4,6 +4,7 @@ Post-processing script for generated Pydantic models.
 The datamodel-code-generator has limitations with certain JSON Schema constructs:
 1. allOf with tuple types generates empty placeholder classes
 2. Pattern + format on date fields causes validation issues
+3. RootModel[str] for ID types requires .root access (convert to type aliases)
 
 This script fixes these issues automatically after generation.
 """
@@ -18,6 +19,122 @@ EMPTY_CLASSES_TO_REMOVE = [
     "Denizens",
     "Features",
     "Dangers",
+]
+
+# RootModel classes that should be converted to type aliases
+# These simple wrapper types don't need RootModel - they can be Annotated types directly
+# This eliminates the need to use .root to access the underlying value
+ROOTMODEL_TYPES_TO_CONVERT = [
+    # Primary ID types
+    "RulesetId",
+    "ExpansionId",
+    "AssetId",
+    "AssetCollectionId",
+    "AtlasCollectionId",
+    "AtlasEntryId",
+    "DelveSiteId",
+    "DelveSiteDomainId",
+    "DelveSiteThemeId",
+    "MoveCategoryId",
+    "MoveId",
+    "NpcId",
+    "NpcCollectionId",
+    "OracleCollectionId",
+    "OracleRollableId",
+    "RarityId",
+    "TruthId",
+    # Embedded ID types
+    "AssetAbilityId",
+    "AssetAbilityMoveId",
+    "AssetAbilityMoveConditionId",
+    "AssetAbilityMoveOutcomeId",
+    "AssetAbilityOracleRollableId",
+    "AssetAbilityOracleRollableRowId",
+    "DelveSiteDenizensId",
+    "DelveSiteDenizenId",
+    "DelveSiteDomainDangersId",
+    "DelveSiteDomainDangerId",
+    "DelveSiteDomainFeaturesId",
+    "DelveSiteDomainFeatureId",
+    "DelveSiteThemeDangersId",
+    "DelveSiteThemeDangerId",
+    "DelveSiteThemeFeaturesId",
+    "DelveSiteThemeFeatureId",
+    "MoveConditionId",
+    "MoveOutcomeId",
+    "MoveOracleRollableId",
+    "MoveOracleRollableRowId",
+    "NpcVariantId",
+    "OracleRollableRowId",
+    "TruthOptionId",
+    "TruthOptionOracleRollableId",
+    "TruthOptionOracleRollableRowId",
+    # Wildcard types
+    "AssetAbilityIdWildcard",
+    "AssetAbilityMoveIdWildcard",
+    "AssetAbilityMoveConditionIdWildcard",
+    "AssetAbilityMoveOutcomeIdWildcard",
+    "AssetAbilityOracleRollableIdWildcard",
+    "AssetAbilityOracleRollableRowIdWildcard",
+    "AssetCollectionIdWildcard",
+    "AssetIdWildcard",
+    "AtlasCollectionIdWildcard",
+    "AtlasEntryIdWildcard",
+    "DelveSiteDenizensIdWildcard",
+    "DelveSiteDenizenIdWildcard",
+    "DelveSiteDomainDangersIdWildcard",
+    "DelveSiteDomainDangerIdWildcard",
+    "DelveSiteDomainFeaturesIdWildcard",
+    "DelveSiteDomainFeatureIdWildcard",
+    "DelveSiteDomainIdWildcard",
+    "DelveSiteIdWildcard",
+    "DelveSiteThemeDangersIdWildcard",
+    "DelveSiteThemeDangerIdWildcard",
+    "DelveSiteThemeFeaturesIdWildcard",
+    "DelveSiteThemeFeatureIdWildcard",
+    "DelveSiteThemeIdWildcard",
+    "ExpansionIdWildcard",
+    "MoveCategoryIdWildcard",
+    "MoveConditionIdWildcard",
+    "MoveIdWildcard",
+    "MoveOutcomeIdWildcard",
+    "MoveOracleRollableIdWildcard",
+    "MoveOracleRollableRowIdWildcard",
+    "NpcCollectionIdWildcard",
+    "NpcIdWildcard",
+    "NpcVariantIdWildcard",
+    "OracleCollectionIdWildcard",
+    "OracleRollableIdWildcard",
+    "OracleRollableRowIdWildcard",
+    "RarityIdWildcard",
+    "RulesetIdWildcard",
+    "TruthIdWildcard",
+    "TruthOptionIdWildcard",
+    "TruthOptionOracleRollableIdWildcard",
+    "TruthOptionOracleRollableRowIdWildcard",
+    # String wrapper types
+    "MarkdownString",
+    "MarkdownTemplateString",
+    "Label",
+    "DictKey",
+    "WebUrl",
+    "CssColor",
+    "DiceExpression",
+    "Documentation",
+    "SemanticVersion",
+    "SvgImageUrl",
+    "WebpImageUrl",
+    # Types with other inner types (still convert to type aliases)
+    "ConditionMeterKey",
+    "EmbeddedMoveId",
+    "EmbeddedMoveIdWildcard",
+    "NpcNature",
+    "RulesPackageId",
+    "SpecialTrackType",
+    "StatKey",
+    # Note: Integer types (Max, NonNegativeInteger, PageNumber) are kept as
+    # RootModel because they have validation constraints and default values
+    # that don't translate cleanly to type aliases.
 ]
 
 # Type replacements: placeholder -> actual type
@@ -35,6 +152,61 @@ def remove_empty_classes(content: str) -> str:
         # Match: class ClassName(BaseModel):\n    pass\n\n
         pattern = rf"^class {class_name}\(BaseModel\):\n    pass\n\n\n"
         content = re.sub(pattern, "", content, flags=re.MULTILINE)
+    return content
+
+
+def convert_rootmodel_to_typealias(content: str) -> str:
+    """Convert RootModel classes to type aliases.
+
+    This eliminates the need to use .root to access the underlying value.
+
+    Before (multi-line):
+        class AssetId(RootModel[str]):
+            root: Annotated[
+                str,
+                Field(
+                    description='...',
+                    pattern='...',
+                    title='AssetId',
+                ),
+            ]
+
+    After:
+        AssetId = Annotated[
+            str,
+            Field(
+                description='...',
+                pattern='...',
+                title='AssetId',
+            ),
+        ]
+
+    Before (single-line):
+        class CssColor(RootModel[str]):
+            root: Annotated[str, Field(description='...', title='CssColor')]
+
+    After:
+        CssColor = Annotated[str, Field(description='...', title='CssColor')]
+    """
+    for type_name in ROOTMODEL_TYPES_TO_CONVERT:
+        # Pattern 1: Match multi-line RootModel class definition
+        # The Annotated block spans multiple lines with nested brackets
+        multiline_pattern = rf"class {type_name}\(RootModel\[[^\]]+\]\):\n    root: (Annotated\[\n(?:.*\n)*?    \])\n"
+
+        def make_replacement(name):
+            def replacement(match):
+                annotated_type = match.group(1)
+                return f"{name} = {annotated_type}\n"
+            return replacement
+
+        content = re.sub(multiline_pattern, make_replacement(type_name), content)
+
+        # Pattern 2: Match single-line RootModel class definition
+        # The Annotated block is on a single line
+        singleline_pattern = rf"class {type_name}\(RootModel\[[^\]]+\]\):\n    root: (Annotated\[[^\n]+\])\n"
+
+        content = re.sub(singleline_pattern, make_replacement(type_name), content)
+
     return content
 
 
@@ -107,12 +279,40 @@ def remove_date_pattern(content: str) -> str:
     return content
 
 
+def add_discriminated_unions(content: str) -> str:
+    """Add discriminated union type aliases for polymorphic types.
+
+    The code generator creates base classes with extra='allow' for polymorphic types.
+    This replaces generic base class references with proper typed unions.
+
+    Move: MoveActionRoll | MoveNoRoll | MoveProgressRoll | MoveSpecialTrack (roll_type)
+    OracleRollableTable: OracleTableText | OracleTableText2 | OracleTableText3 (oracle_type)
+    """
+    # Replace dict[str, Move] with typed union in MoveCategory
+    content = re.sub(
+        r"contents: dict\[str, Move\]",
+        "contents: dict[str, MoveActionRoll | MoveNoRoll | MoveProgressRoll | MoveSpecialTrack]",
+        content,
+    )
+
+    # Replace dict[str, OracleRollableTable] with typed union
+    content = re.sub(
+        r"contents: dict\[str, OracleRollableTable\]",
+        "contents: dict[str, OracleTableText | OracleTableText2 | OracleTableText3]",
+        content,
+    )
+
+    return content
+
+
 def post_process(content: str) -> str:
     """Apply all post-processing fixes to generated models."""
     content = remove_empty_classes(content)
     content = replace_placeholder_types(content)
     content = replace_features_dangers_contextually(content)
     content = remove_date_pattern(content)
+    content = convert_rootmodel_to_typealias(content)
+    content = add_discriminated_unions(content)
     return content
 
 
