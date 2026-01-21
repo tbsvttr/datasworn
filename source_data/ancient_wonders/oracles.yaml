@@ -304,7 +304,7 @@ oracles:
           - roll: { min: 1, max: 15 }
             text: "Partially constructed / The host planet is a rocky world (no atmosphere, mono biome: bleak; page 72). The lack of an active core has prevented a magnetic field from forming; the world has the additional feature of having a highly irradiated surface as solar winds bombard the world with powerful radiation while stripping away any atmosphere and hydrosphere."
           - roll: { min: 16, max: 50 }
-            text: "Operational / When you roll &gt;Planet (page 40) to generate its  features, reroll the \"Anomalous World\", \"Furnace  World\", \"Jovian World\", \"Rocky World\", and \"Shattered World\" Planetary Class results. The  world must have at least a thin atmosphere."
+            text: "Operational / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate its  features, reroll the \"Anomalous World\", \"Furnace  World\", \"Jovian World\", \"Rocky World\", and \"Shattered World\" Planetary Class results. The  world must have at least a thin atmosphere."
           - roll: { min: 51, max: 85 }
             text: "Non-functional or offline / As operational. However, the world's core has  begun cooling. Reduced effectiveness of the  magnetic field has gradually allowed more radiation to reach the planet's surface, making the world mildly irradiated."
           - roll: { min: 86, max: 95 }
@@ -394,7 +394,7 @@ oracles:
           - roll: { min: 1, max: 15 }
             text: "Partially constructed / The planet is a furnace world (mono biome: volcanic; page 52)."
           - roll: { min: 16, max: 50 }
-            text: "Operational / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", and \"Shattered World\" Planetary Class results. There are no volcanoes, earthquakes, or magnetic disturbances."
+            text: "Operational / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", and \"Shattered World\" Planetary Class results. There are no volcanoes, earthquakes, or magnetic disturbances."
           - roll: { min: 51, max: 85 }
             text: "Non-functional or offline / The planet is a furnace world (mono biome: volcanic; page 52). Making the geothermal stabilizer functional will have a quickly appearing effect on the world; all volcanic activity and earthquakes cease and any magnetic disturbances disappear. The planetary class (or biome) begins to change. For example, a furnace world will change into a rocky world as eruptions cease and previously exposed lava solidifies"
           - roll: { min: 86, max: 95 }
@@ -938,7 +938,7 @@ oracles:
           - roll: { min: 84, max: 85 }
             text: "&gt;Precursor Vault (orbital); RG, pg 92"
           - roll: { min: 86, max: 92 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
           - roll: { min: 93, max: 100 }
             text: "Roll twice"
       jungle_world_biome_diversity_large_huge_giant_enor:
@@ -1750,7 +1750,7 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 33 }
-            text: "&gt;Planet; pg 40"
+            text: "[Planet](datasworn:oracle_rollable:starforged/planet/class)"
           - roll: { min: 34, max: 67 }
             text: "&gt;Ecumenopolis; pg 130"
           - roll: { min: 68, max: 100 }
@@ -2863,7 +2863,7 @@ oracles:
           - roll: { min: 86, max: 95 }
             text: "Gland-like organ"
           - roll: { min: 96, max: 100 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
       ice_world_settlements_expanse:
         name: "Ice World Settlements - Expanse"
         oracle_type: table_text
@@ -3687,7 +3687,7 @@ oracles:
           - roll: { min: 85, max: 88 }
             text: "Venomous lifeform"
           - roll: { min: 89, max: 94 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
           - roll: { min: 95, max: 100 }
             text: "Roll twice"
       karst_world_subterranean_environment_ice_surface:
@@ -3903,7 +3903,7 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 75 }
-            text: "Planet / A world that has also been modified to possess the capabilities of a starship. Roll &gt;Planet to determine its features (page 40)."
+            text: "Planet / A world that has also been modified to possess the capabilities of a starship. Roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to determine its features."
           - roll: { min: 76, max: 100 }
             text: "Vessel / A starship as large as an entire world. While it possess aspects similar to mankind's starships, you may roll &gt;Shape to envision its alien nature (page 102)."
       crystalline_world_crystal_type_exotic:
@@ -4024,17 +4024,17 @@ oracles:
           - roll: { min: 1, max: 56 }
             text: "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
           - roll: { min: 57, max: 66 }
-            text: "Instance &gt;Descriptor + Focus; pg 13"
+            text: "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
           - roll: { min: 67, max: 73 }
-            text: "Spacecraft &gt;Starship; RG, pg 58"
+            text: "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship); RG, pg 58"
           - roll: { min: 74, max: 76 }
-            text: "Planetside community &gt;Settlement; RG, pg 54 or SI, pg 164"
+            text: "Planetside community [Settlement](datasworn:oracle_collection:starforged/settlement); RG, pg 54 or SI, pg 164"
           - roll: { min: 77, max: 79 }
-            text: "Human wreckage &gt;Derelict; RG, pg 80"
+            text: "Human wreckage [Derelict](datasworn:oracle_collection:starforged/derelict); RG, pg 80"
           - roll: { min: 80, max: 82 }
             text: "Ancient city &gt;Megacity; pg 168"
           - roll: { min: 83, max: 85 }
-            text: "Alien structure &gt;Precursor Vault; RG, pg 922"
+            text: "Alien structure [Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault); RG, pg 922"
           - roll: { min: 86, max: 95 }
             text: "Character focus &gt;Interlude Scene; SI, pg 250"
           - roll: { min: 96, max: 100 }
@@ -4144,7 +4144,7 @@ oracles:
         summary: |-
           Underlying Biome
           
-          If you want to determine the environment this civilization was built upon or impacted, roll &gt;Planetary Class on page 41 and use its biomes to flavor your envisioning of the surface features of the grave world.
+          If you want to determine the environment this civilization was built upon or impacted, roll [Planetary Class](datasworn:oracle_rollable:starforged/planet/class) on page 41 and use its biomes to flavor your envisioning of the surface features of the grave world.
         _source:
           <<: *Source
         rows:
@@ -4504,7 +4504,7 @@ oracles:
           - roll: { min: 92, max: 95 }
             text: "Wreckage or ruins portend a new threat"
           - roll: { min: 96, max: 99 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
           - roll: { min: 100, max: 100 }
             text: "Roll twice"
       ice_world_biome_feature_glacial:
@@ -4982,7 +4982,7 @@ oracles:
           - roll: { min: 94, max: 96 }
             text: "Wreckage or ruins portend a new threat"
           - roll: { min: 97, max: 99 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
           - roll: { min: 100, max: 100 }
             text: "Roll twice"
       rocky_world_atmosphere:
@@ -5434,17 +5434,17 @@ oracles:
           - roll: { min: 1, max: 60 }
             text: "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
           - roll: { min: 61, max: 70 }
-            text: "Instance &gt;Descriptor + Focus; pg 13"
+            text: "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
           - roll: { min: 71, max: 73 }
-            text: "Spacecraft &gt;Starship; RG, pg 58"
+            text: "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship); RG, pg 58"
           - roll: { min: 74, max: 75 }
-            text: "Planetside community &gt;Settlement; RG, pg 54 or SI, pg 164"
+            text: "Planetside community [Settlement](datasworn:oracle_collection:starforged/settlement); RG, pg 54 or SI, pg 164"
           - roll: { min: 76, max: 77 }
-            text: "Human wreckage &gt;Derelict; RG, pg 80"
+            text: "Human wreckage [Derelict](datasworn:oracle_collection:starforged/derelict); RG, pg 80"
           - roll: { min: 78, max: 81 }
             text: "Ancient city &gt;Megacity; pg 168"
           - roll: { min: 82, max: 85 }
-            text: "Alien structure &gt;Precursor Vault; RG, pg 922"
+            text: "Alien structure [Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault); RG, pg 922"
           - roll: { min: 86, max: 95 }
             text: "Character focus &gt;Interlude Scene; SI, pg 250"
       living_world_atmosphere:
@@ -8123,17 +8123,17 @@ oracles:
           - roll: { min: 1, max: 53 }
             text: "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
           - roll: { min: 54, max: 63 }
-            text: "Instance &gt;Descriptor + Focus; pg 13"
+            text: "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
           - roll: { min: 64, max: 73 }
-            text: "Spacecraft &gt;Starship; RG, pg 58"
+            text: "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship); RG, pg 58"
           - roll: { min: 74, max: 77 }
-            text: "Planetside community &gt;Settlement; RG, pg 54 or SI, pg 164"
+            text: "Planetside community [Settlement](datasworn:oracle_collection:starforged/settlement); RG, pg 54 or SI, pg 164"
           - roll: { min: 78, max: 81 }
-            text: "Human wreckage &gt;Derelict; RG, pg 80"
+            text: "Human wreckage [Derelict](datasworn:oracle_collection:starforged/derelict); RG, pg 80"
           - roll: { min: 82, max: 83 }
             text: "Ancient city &gt;Megacity; pg 168"
           - roll: { min: 84, max: 85 }
-            text: "Alien structure &gt;Precursor Vault; RG, pg 92"
+            text: "Alien structure [Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault); RG, pg 92"
           - roll: { min: 86, max: 95 }
             text: "Character focus &gt;Interlude Scene; SI, pg 250"
           - roll: { min: 96, max: 100 }
@@ -10945,7 +10945,7 @@ oracles:
           - roll: { min: 93, max: 95 }
             text: "Intense smell"
           - roll: { min: 96, max: 100 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
       megastructure_status:
         name: "Megastructure Status"
         oracle_type: table_text
@@ -11022,7 +11022,7 @@ oracles:
           - roll: { min: 90, max: 95 }
             text: "Strong gravity well"
           - roll: { min: 96, max: 100 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
       unidentified_megastructure_type_type_2_civilizatio:
         name: "Unidentified Megastructure Type - Type 2 civilizations"
         oracle_type: table_text
@@ -11138,9 +11138,9 @@ oracles:
           - roll: { min: 1, max: 1 }
             text: "&gt;Pay the Price table; RG, pg 25"
           - roll: { min: 2, max: 2 }
-            text: "&gt;Theme Peril; RG, pg 100"
+            text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg 100"
           - roll: { min: 3, max: 3 }
-            text: "&gt;Derelict Peril; RG, pg 82"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg 82"
           - roll: { min: 4, max: 4 }
             text: "&gt;Vault Peril; RG, pg 92"
           - roll: { min: 5, max: 5 }
@@ -11260,7 +11260,7 @@ oracles:
           - roll: { min: 93, max: 95 }
             text: "Vehicle, space"
           - roll: { min: 96, max: 100 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
       megastructure_derelict_zones:
         name: "Megastructure Derelict Zones"
         oracle_type: table_text
@@ -11310,7 +11310,7 @@ oracles:
           - roll: { min: 81, max: 90 }
             text: "Vehicle"
           - roll: { min: 91, max: 100 }
-            text: "&gt;Descriptor + Focus;  pg  13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus;  pg  13"
       unidentified_megastructure_purpose:
         name: "Unidentified Megastructure Purpose"
         oracle_type: table_text
@@ -11347,7 +11347,7 @@ oracles:
           - roll: { min: 78, max: 84 }
             text: "Surveying or researching unknown realities"
           - roll: { min: 85, max: 95 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
           - roll: { min: 96, max: 100 }
             text: "Roll twice"
       unidentified_megastructure_ceramic_type_precious:
@@ -11630,9 +11630,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 15 }
-            text: "Partially constructed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', \"Karst World\", \"Tidally-locked World\", and \"Shattered World\" Planetary Class results."
+            text: "Partially constructed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', \"Karst World\", \"Tidally-locked World\", and \"Shattered World\" Planetary Class results."
           - roll: { min: 16, max: 50 }
-            text: "Operational / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terraformer hub, do not use the Planetary Class oracle. Instead, use the Altered Planetary Class oracle. When you explore the sanctum of the megastructure, you may attempt to use its systems to rapidly alter a small region of the world. If you do, introduce the features of another planetary class."
+            text: "Operational / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terraformer hub, do not use the Planetary Class oracle. Instead, use the Altered Planetary Class oracle. When you explore the sanctum of the megastructure, you may attempt to use its systems to rapidly alter a small region of the world. If you do, introduce the features of another planetary class."
           - roll: { min: 51, max: 85 }
             text: "Non-functional or offline / Roll on Non-functional table below"
           - roll: { min: 86, max: 95 }
@@ -11733,7 +11733,7 @@ oracles:
           - roll: { min: 1, max: 75 }
             text: "As if the terraformer hub were operational, but roll &gt;Altered Planetary Class twice (next page). The second result is the original class."
           - roll: { min: 76, max: 100 }
-            text: "When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', and \"Shattered World\" Planetary Class results."
+            text: "When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', and \"Shattered World\" Planetary Class results."
       exploring_the_megastructure:
         name: "Exploring The Megastructure"
         oracle_type: table_text
@@ -11744,9 +11744,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: "&gt;Theme Feature; RG, pg 100"
+            text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Feature; RG, pg 100"
           - roll: { min: 2, max: 4 }
-            text: "&gt;Derelict Feature; RG, pg 82"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG, pg 82"
           - roll: { min: 5, max: 6 }
             text: "&gt;Vault Feature; RG, pg 92"
       unidentified_megastructure_scale_type_2:
@@ -11856,9 +11856,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 2 }
-            text: "&gt;Theme Opportunity; RG, pg 100"
+            text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Opportunity; RG, pg 100"
           - roll: { min: 3, max: 4 }
-            text: "&gt;Derelict Opportunity; RG, pg 82"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity; RG, pg 82"
           - roll: { min: 5, max: 6 }
             text: "&gt;Vault Opportunity; RG, pg 92"
       unidentified_megastructure_ceramic_type_semi_preci:
@@ -12080,9 +12080,9 @@ oracles:
           - roll: { min: 1, max: 1 }
             text: "&gt;Pay the Price table; RG, pg 25"
           - roll: { min: 2, max: 2 }
-            text: "&gt;Theme Peril; RG, pg 100"
+            text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg 100"
           - roll: { min: 3, max: 3 }
-            text: "&gt;Derelict Peril; RG, pg 82"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg 82"
           - roll: { min: 4, max: 4 }
             text: "&gt;Vault Peril; RG, pg 92"
           - roll: { min: 5, max: 5 }
@@ -12145,9 +12145,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: "&gt;Theme Feature; RG, pg 100"
+            text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Feature; RG, pg 100"
           - roll: { min: 2, max: 4 }
-            text: "&gt;Derelict Feature; RG, pg 82"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG, pg 82"
           - roll: { min: 5, max: 6 }
             text: "&gt;Vault Feature; RG, pg 92"
       megacity_cipher:
@@ -12706,9 +12706,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 2 }
-            text: "&gt;Theme Opportunity; RG, pg 100"
+            text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Opportunity; RG, pg 100"
           - roll: { min: 3, max: 4 }
-            text: "&gt;Derelict Opportunity; RG, pg 82"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity; RG, pg 82"
           - roll: { min: 5, max: 6 }
             text: "&gt;Vault Opportunity; RG, pg 92"
   denizens:
@@ -13668,7 +13668,7 @@ oracles:
           - roll: { min: 77, max: 80 }
             text: "Technician"
           - roll: { min: 81, max: 100 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
       shipyard_debris_field_density:
         name: "Shipyard Debris Field Density"
         oracle_type: table_text
@@ -13764,17 +13764,17 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 4 }
-            text: "&gt;Settlement"
+            text: "[Settlement](datasworn:oracle_collection:starforged/settlement)"
           - roll: { min: 5, max: 10 }
-            text: "&gt;Starship"
+            text: "[Starship](datasworn:oracle_collection:starforged/starship)"
           - roll: { min: 11, max: 14 }
-            text: "&gt;Derelict"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict)"
           - roll: { min: 15, max: 18 }
-            text: "&gt;Precursor Vault"
+            text: "[Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault)"
           - roll: { min: 19, max: 24 }
-            text: "&gt;Creature"
+            text: "[Creature](datasworn:oracle_collection:starforged/creature)"
           - roll: { min: 25, max: 31 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
           - roll: { min: 32, max: 40 }
             text: "Debris Field: Mineral Asteroids"
           - roll: { min: 41, max: 47 }
@@ -14031,17 +14031,17 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 6 }
-            text: "&gt;Settlement"
+            text: "[Settlement](datasworn:oracle_collection:starforged/settlement)"
           - roll: { min: 7, max: 14 }
-            text: "&gt;Starship"
+            text: "[Starship](datasworn:oracle_collection:starforged/starship)"
           - roll: { min: 15, max: 19 }
-            text: "&gt;Derelict"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict)"
           - roll: { min: 20, max: 22 }
-            text: "&gt;Precursor Vault"
+            text: "[Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault)"
           - roll: { min: 23, max: 27 }
-            text: "&gt;Creature"
+            text: "[Creature](datasworn:oracle_collection:starforged/creature)"
           - roll: { min: 28, max: 33 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
           - roll: { min: 34, max: 42 }
             text: "Debris Field: Mineral Asteroids"
           - roll: { min: 43, max: 49 }
@@ -14184,11 +14184,11 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 15 }
-            text: "Partially constructed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World, \"Jovian  World\", and \"Shattered World\" Planetary Class results."
+            text: "Partially constructed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World, \"Jovian  World\", and \"Shattered World\" Planetary Class results."
           - roll: { min: 16, max: 50 }
-            text: "Operational /  When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", \"Shattered World\", \"Tainted World\" Planetary Class results. Then, roll &gt;Altered Atmosphere and &gt;Altered Life (next page) and treat these as a direct result of changes made to the world by the ecopoiesis array."
+            text: "Operational /  When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", \"Shattered World\", \"Tainted World\" Planetary Class results. Then, roll &gt;Altered Atmosphere and &gt;Altered Life (next page) and treat these as a direct result of changes made to the world by the ecopoiesis array."
           - roll: { min: 51, max: 85 }
-            text: "Non-functional  or offline / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. Making the ecopoiesis array functional will have an effect on the atmosphere; modify the Atmosphere oracle result to be more habitable, then shift the Life oracle result to be scarce or extinct, as much of indigenous flora and fauna might not have evolved to tolerate the new atmosphere."
+            text: "Non-functional  or offline / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. Making the ecopoiesis array functional will have an effect on the atmosphere; modify the Atmosphere oracle result to be more habitable, then shift the Life oracle result to be scarce or extinct, as much of indigenous flora and fauna might not have evolved to tolerate the new atmosphere."
           - roll: { min: 86, max: 95 }
             text: "Dysfunctional / As operational, but the world is wracked by powerful and extreme weather events. When you envision them, take inspiration from weather-based oracles results or base them on the planetary class."
           - roll: { min: 96, max: 100 }
@@ -14305,7 +14305,7 @@ oracles:
           - roll: { min: 77, max: 82 }
             text: "Violent currents"
           - roll: { min: 83, max: 91 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
           - roll: { min: 92, max: 100 }
             text: "Roll twice"
       behemoth_assembler_anchored_vessel:
@@ -14320,7 +14320,7 @@ oracles:
           - roll: { min: 1, max: 10 }
             text: "None"
           - roll: { min: 11, max: 40 }
-            text: "&gt;Planet; pg 40"
+            text: "[Planet](datasworn:oracle_rollable:starforged/planet/class)"
           - roll: { min: 41, max: 65 }
             text: "&gt;Planetcraft; pg 142"
           - roll: { min: 66, max: 100 }
@@ -14707,7 +14707,7 @@ oracles:
           - roll: { min: 87, max: 88 }
             text: "Worrying arrival of a ship or vehicle"
           - roll: { min: 89, max: 94 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
           - roll: { min: 95, max: 100 }
             text: "Roll twice"
       number_of_moons_massive:
@@ -14824,7 +14824,7 @@ oracles:
           - roll: { min: 85, max: 90 }
             text: "Uplift or intelligence increase of lifeforms"
           - roll: { min: 91, max: 95 }
-            text: "&gt;Action + Theme; pg 12"
+            text: "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
           - roll: { min: 96, max: 100 }
             text: "Roll twice"
       terravore_status:
@@ -14835,15 +14835,15 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 15 }
-            text: "Partially constructed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World', and \"Jovian World\" Planetary Class results. The partially-built terravore orbits the world silently, unable to fulfill its purpose."
+            text: "Partially constructed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World', and \"Jovian World\" Planetary Class results. The partially-built terravore orbits the world silently, unable to fulfill its purpose."
           - roll: { min: 16, max: 50 }
             text: "Operational / The planet is a furnace world (mono biome: volcanic; page 52)."
           - roll: { min: 51, max: 85 }
-            text: "Non-functional or offline / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", and \"Shattered World\" and Planetary Class results. If determined to be offline, reactivating the terravore will slowly transform the planet into a furnace world (if it is not one already; page 52)."
+            text: "Non-functional or offline / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", and \"Shattered World\" and Planetary Class results. If determined to be offline, reactivating the terravore will slowly transform the planet into a furnace world (if it is not one already; page 52)."
           - roll: { min: 86, max: 95 }
             text: "Dysfunctional / Roll on Dysfunctional table below."
           - roll: { min: 96, max: 100 }
-            text: "Destroyed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. The terravore, or its remains, orbit the world silently."
+            text: "Destroyed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. The terravore, or its remains, orbit the world silently."
       construct_initial_disposition_human_construct:
         name: "Construct Initial Disposition - Human Construct"
         oracle_type: table_text
@@ -15255,7 +15255,7 @@ oracles:
           - roll: { min: 1, max: 15 }
             text: "Partially constructed / While parts of the lunar speculorefractor were constructed, not enough were built to redirect the light required to alter the world. The host planet is an ice world (page 56)."
           - roll: { min: 16, max: 50 }
-            text: "Operational /  When you roll &gt;Planet (page 40) to generate the features of the world that hosts the lunar speculorefractor, use the Lunar Speculorefractor Planetary Class oracle instead of the Planetary Class oracle. The world has the additional feature of auroras."
+            text: "Operational /  When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the lunar speculorefractor, use the Lunar Speculorefractor Planetary Class oracle instead of the Planetary Class oracle. The world has the additional feature of auroras."
           - roll: { min: 51, max: 85 }
             text: "Non-functional or offline / The megastructure is not refracting enough light to adequately warm its planet, an ice world (page 56). Making the lunar speculorefractor functional will swiftly warm the planet by rapidly melting it into an ocean world (monobiome: hycean; page 70)."
           - roll: { min: 86, max: 95 }
@@ -15648,17 +15648,17 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 3 }
-            text: "&gt;Settlement"
+            text: "[Settlement](datasworn:oracle_collection:starforged/settlement)"
           - roll: { min: 4, max: 6 }
-            text: "&gt;Starship"
+            text: "[Starship](datasworn:oracle_collection:starforged/starship)"
           - roll: { min: 7, max: 9 }
-            text: "&gt;Derelict"
+            text: "[Derelict](datasworn:oracle_collection:starforged/derelict)"
           - roll: { min: 10, max: 14 }
-            text: "&gt;Precursor Vault"
+            text: "[Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault)"
           - roll: { min: 15, max: 21 }
-            text: "&gt;Creature"
+            text: "[Creature](datasworn:oracle_collection:starforged/creature)"
           - roll: { min: 22, max: 29 }
-            text: "&gt;Descriptor + Focus; pg 13"
+            text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
           - roll: { min: 30, max: 38 }
             text: "Debris Field: Mineral Asteroids"
           - roll: { min: 39, max: 45 }
@@ -16278,7 +16278,7 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 33 }
-            text: "The terravore's beam is significantly undercharged and is only affecting an isolated area of the planet. When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World\", and \"Jovian World\" Planetary Class results. Then, treat the area affected by the beam as a furnace world (mono biome: volcanic; page 52)."
+            text: "The terravore's beam is significantly undercharged and is only affecting an isolated area of the planet. When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World\", and \"Jovian World\" Planetary Class results. Then, treat the area affected by the beam as a furnace world (mono biome: volcanic; page 52)."
           - roll: { min: 34, max: 67 }
             text: "As above, but the terravore is no longer geostationary and is instead orbiting the planet, devastating numerous areas of the world with its beam."
           - roll: { min: 68, max: 100 }

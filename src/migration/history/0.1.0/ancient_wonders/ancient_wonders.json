@@ -1134,7 +1134,7 @@
 								"min": 16,
 								"max": 50
 							},
-							"text": "Operational / When you roll &gt;Planet (page 40) to generate its  features, reroll the \"Anomalous World\", \"Furnace  World\", \"Jovian World\", \"Rocky World\", and \"Shattered World\" Planetary Class results. The  world must have at least a thin atmosphere."
+							"text": "Operational / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate its  features, reroll the \"Anomalous World\", \"Furnace  World\", \"Jovian World\", \"Rocky World\", and \"Shattered World\" Planetary Class results. The  world must have at least a thin atmosphere."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/core_oracles/core_manipulators_ferrothermal_engine_status.2",
@@ -1486,7 +1486,7 @@
 								"min": 16,
 								"max": 50
 							},
-							"text": "Operational / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", and \"Shattered World\" Planetary Class results. There are no volcanoes, earthquakes, or magnetic disturbances."
+							"text": "Operational / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", and \"Shattered World\" Planetary Class results. There are no volcanoes, earthquakes, or magnetic disturbances."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/core_oracles/core_manipulators_geothermal_stabilizer_status.2",
@@ -3567,7 +3567,7 @@
 								"min": 86,
 								"max": 92
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/orbital_feature.7",
@@ -6511,7 +6511,7 @@
 								"min": 1,
 								"max": 33
 							},
-							"text": "&gt;Planet; pg 40"
+							"text": "[Planet](datasworn:oracle_rollable:starforged/planet/class)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetary_defenses_aegisphere_shielded_location.1",
@@ -10564,7 +10564,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						}
 					],
 					"_source": {
@@ -13606,7 +13606,7 @@
 								"min": 89,
 								"max": 94
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/living_world_underground_peril.20",
@@ -14340,7 +14340,7 @@
 								"min": 1,
 								"max": 75
 							},
-							"text": "Planet / A world that has also been modified to possess the capabilities of a starship. Roll &gt;Planet to determine its features (page 40)."
+							"text": "Planet / A world that has also been modified to possess the capabilities of a starship. Roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to determine its features."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetcraft_form.1",
@@ -14767,7 +14767,7 @@
 								"min": 57,
 								"max": 66
 							},
-							"text": "Instance &gt;Descriptor + Focus; pg 13"
+							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.2",
@@ -14775,7 +14775,7 @@
 								"min": 67,
 								"max": 73
 							},
-							"text": "Spacecraft &gt;Starship; RG, pg 58"
+							"text": "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship); RG, pg 58"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.3",
@@ -14783,7 +14783,7 @@
 								"min": 74,
 								"max": 76
 							},
-							"text": "Planetside community &gt;Settlement; RG, pg 54 or SI, pg 164"
+							"text": "Planetside community [Settlement](datasworn:oracle_collection:starforged/settlement); RG, pg 54 or SI, pg 164"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.4",
@@ -14791,7 +14791,7 @@
 								"min": 77,
 								"max": 79
 							},
-							"text": "Human wreckage &gt;Derelict; RG, pg 80"
+							"text": "Human wreckage [Derelict](datasworn:oracle_collection:starforged/derelict); RG, pg 80"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.5",
@@ -14807,7 +14807,7 @@
 								"min": 83,
 								"max": 85
 							},
-							"text": "Alien structure &gt;Precursor Vault; RG, pg 922"
+							"text": "Alien structure [Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault); RG, pg 922"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.7",
@@ -15199,7 +15199,7 @@
 					"name": "Grave World Surface Feature",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "Underlying Biome\n\nIf you want to determine the environment this civilization was built upon or impacted, roll &gt;Planetary Class on page 41 and use its biomes to flavor your envisioning of the surface features of the grave world.",
+					"summary": "Underlying Biome\n\nIf you want to determine the environment this civilization was built upon or impacted, roll [Planetary Class](datasworn:oracle_rollable:starforged/planet/class) on page 41 and use its biomes to flavor your envisioning of the surface features of the grave world.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -16522,7 +16522,7 @@
 								"min": 96,
 								"max": 99
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_peril_lifeless.26",
@@ -18227,7 +18227,7 @@
 								"min": 97,
 								"max": 99
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_peril_lifebearing.34",
@@ -19870,7 +19870,7 @@
 								"min": 61,
 								"max": 70
 							},
-							"text": "Instance &gt;Descriptor + Focus; pg 13"
+							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.2",
@@ -19878,7 +19878,7 @@
 								"min": 71,
 								"max": 73
 							},
-							"text": "Spacecraft &gt;Starship; RG, pg 58"
+							"text": "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship); RG, pg 58"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.3",
@@ -19886,7 +19886,7 @@
 								"min": 74,
 								"max": 75
 							},
-							"text": "Planetside community &gt;Settlement; RG, pg 54 or SI, pg 164"
+							"text": "Planetside community [Settlement](datasworn:oracle_collection:starforged/settlement); RG, pg 54 or SI, pg 164"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.4",
@@ -19894,7 +19894,7 @@
 								"min": 76,
 								"max": 77
 							},
-							"text": "Human wreckage &gt;Derelict; RG, pg 80"
+							"text": "Human wreckage [Derelict](datasworn:oracle_collection:starforged/derelict); RG, pg 80"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.5",
@@ -19910,7 +19910,7 @@
 								"min": 82,
 								"max": 85
 							},
-							"text": "Alien structure &gt;Precursor Vault; RG, pg 922"
+							"text": "Alien structure [Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault); RG, pg 922"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.7",
@@ -29592,7 +29592,7 @@
 								"min": 54,
 								"max": 63
 							},
-							"text": "Instance &gt;Descriptor + Focus; pg 13"
+							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.2",
@@ -29600,7 +29600,7 @@
 								"min": 64,
 								"max": 73
 							},
-							"text": "Spacecraft &gt;Starship; RG, pg 58"
+							"text": "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship); RG, pg 58"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.3",
@@ -29608,7 +29608,7 @@
 								"min": 74,
 								"max": 77
 							},
-							"text": "Planetside community &gt;Settlement; RG, pg 54 or SI, pg 164"
+							"text": "Planetside community [Settlement](datasworn:oracle_collection:starforged/settlement); RG, pg 54 or SI, pg 164"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.4",
@@ -29616,7 +29616,7 @@
 								"min": 78,
 								"max": 81
 							},
-							"text": "Human wreckage &gt;Derelict; RG, pg 80"
+							"text": "Human wreckage [Derelict](datasworn:oracle_collection:starforged/derelict); RG, pg 80"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.5",
@@ -29632,7 +29632,7 @@
 								"min": 84,
 								"max": 85
 							},
-							"text": "Alien structure &gt;Precursor Vault; RG, pg 92"
+							"text": "Alien structure [Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault); RG, pg 92"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.7",
@@ -39421,7 +39421,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						}
 					],
 					"_source": {
@@ -39696,7 +39696,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						}
 					],
 					"_source": {
@@ -40101,7 +40101,7 @@
 								"min": 2,
 								"max": 2
 							},
-							"text": "&gt;Theme Peril; RG, pg 100"
+							"text": "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg 100"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/trouble_in_the_megastructure.2",
@@ -40109,7 +40109,7 @@
 								"min": 3,
 								"max": 3
 							},
-							"text": "&gt;Derelict Peril; RG, pg 82"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg 82"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/trouble_in_the_megastructure.3",
@@ -40528,7 +40528,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						}
 					],
 					"_source": {
@@ -40706,7 +40706,7 @@
 								"min": 91,
 								"max": 100
 							},
-							"text": "&gt;Descriptor + Focus;  pg  13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus;  pg  13"
 						}
 					],
 					"_source": {
@@ -40835,7 +40835,7 @@
 								"min": 85,
 								"max": 95
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/unidentified_megastructure_purpose.13",
@@ -41895,7 +41895,7 @@
 								"min": 1,
 								"max": 15
 							},
-							"text": "Partially constructed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', \"Karst World\", \"Tidally-locked World\", and \"Shattered World\" Planetary Class results."
+							"text": "Partially constructed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', \"Karst World\", \"Tidally-locked World\", and \"Shattered World\" Planetary Class results."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/terraformer_hub_megastructure_status.1",
@@ -41903,7 +41903,7 @@
 								"min": 16,
 								"max": 50
 							},
-							"text": "Operational / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terraformer hub, do not use the Planetary Class oracle. Instead, use the Altered Planetary Class oracle. When you explore the sanctum of the megastructure, you may attempt to use its systems to rapidly alter a small region of the world. If you do, introduce the features of another planetary class."
+							"text": "Operational / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terraformer hub, do not use the Planetary Class oracle. Instead, use the Altered Planetary Class oracle. When you explore the sanctum of the megastructure, you may attempt to use its systems to rapidly alter a small region of the world. If you do, introduce the features of another planetary class."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/terraformer_hub_megastructure_status.2",
@@ -42257,7 +42257,7 @@
 								"min": 76,
 								"max": 100
 							},
-							"text": "When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', and \"Shattered World\" Planetary Class results."
+							"text": "When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terraformer hub, reroll the \"Anomalous World\", \"Jovian World', and \"Shattered World\" Planetary Class results."
 						}
 					],
 					"_source": {
@@ -42290,7 +42290,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": "&gt;Theme Feature; RG, pg 100"
+							"text": "[Theme](datasworn:oracle_rollable:starforged/core/theme) Feature; RG, pg 100"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/exploring_the_megastructure.1",
@@ -42298,7 +42298,7 @@
 								"min": 2,
 								"max": 4
 							},
-							"text": "&gt;Derelict Feature; RG, pg 82"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG, pg 82"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/exploring_the_megastructure.2",
@@ -42679,7 +42679,7 @@
 								"min": 1,
 								"max": 2
 							},
-							"text": "&gt;Theme Opportunity; RG, pg 100"
+							"text": "[Theme](datasworn:oracle_rollable:starforged/core/theme) Opportunity; RG, pg 100"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/opportunity_in_the_megastructure.1",
@@ -42687,7 +42687,7 @@
 								"min": 3,
 								"max": 4
 							},
-							"text": "&gt;Derelict Opportunity; RG, pg 82"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity; RG, pg 82"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/opportunity_in_the_megastructure.2",
@@ -43481,7 +43481,7 @@
 								"min": 2,
 								"max": 2
 							},
-							"text": "&gt;Theme Peril; RG, pg 100"
+							"text": "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg 100"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/trouble_in_the_megacity.2",
@@ -43489,7 +43489,7 @@
 								"min": 3,
 								"max": 3
 							},
-							"text": "&gt;Derelict Peril; RG, pg 82"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg 82"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/trouble_in_the_megacity.3",
@@ -43715,7 +43715,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": "&gt;Theme Feature; RG, pg 100"
+							"text": "[Theme](datasworn:oracle_rollable:starforged/core/theme) Feature; RG, pg 100"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/exploring_the_megacity.1",
@@ -43723,7 +43723,7 @@
 								"min": 2,
 								"max": 4
 							},
-							"text": "&gt;Derelict Feature; RG, pg 82"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG, pg 82"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/exploring_the_megacity.2",
@@ -45835,7 +45835,7 @@
 								"min": 1,
 								"max": 2
 							},
-							"text": "&gt;Theme Opportunity; RG, pg 100"
+							"text": "[Theme](datasworn:oracle_rollable:starforged/core/theme) Opportunity; RG, pg 100"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/opportunity_in_the_megacity.1",
@@ -45843,7 +45843,7 @@
 								"min": 3,
 								"max": 4
 							},
-							"text": "&gt;Derelict Opportunity; RG, pg 82"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity; RG, pg 82"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/opportunity_in_the_megacity.2",
@@ -49306,7 +49306,7 @@
 								"min": 81,
 								"max": 100
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						}
 					],
 					"_source": {
@@ -49645,7 +49645,7 @@
 								"min": 1,
 								"max": 4
 							},
-							"text": "&gt;Settlement"
+							"text": "[Settlement](datasworn:oracle_collection:starforged/settlement)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_outlands.1",
@@ -49653,7 +49653,7 @@
 								"min": 5,
 								"max": 10
 							},
-							"text": "&gt;Starship"
+							"text": "[Starship](datasworn:oracle_collection:starforged/starship)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_outlands.2",
@@ -49661,7 +49661,7 @@
 								"min": 11,
 								"max": 14
 							},
-							"text": "&gt;Derelict"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_outlands.3",
@@ -49669,7 +49669,7 @@
 								"min": 15,
 								"max": 18
 							},
-							"text": "&gt;Precursor Vault"
+							"text": "[Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_outlands.4",
@@ -49677,7 +49677,7 @@
 								"min": 19,
 								"max": 24
 							},
-							"text": "&gt;Creature"
+							"text": "[Creature](datasworn:oracle_collection:starforged/creature)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_outlands.5",
@@ -49685,7 +49685,7 @@
 								"min": 25,
 								"max": 31
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_outlands.6",
@@ -50582,7 +50582,7 @@
 								"min": 1,
 								"max": 6
 							},
-							"text": "&gt;Settlement"
+							"text": "[Settlement](datasworn:oracle_collection:starforged/settlement)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_terminus.1",
@@ -50590,7 +50590,7 @@
 								"min": 7,
 								"max": 14
 							},
-							"text": "&gt;Starship"
+							"text": "[Starship](datasworn:oracle_collection:starforged/starship)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_terminus.2",
@@ -50598,7 +50598,7 @@
 								"min": 15,
 								"max": 19
 							},
-							"text": "&gt;Derelict"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_terminus.3",
@@ -50606,7 +50606,7 @@
 								"min": 20,
 								"max": 22
 							},
-							"text": "&gt;Precursor Vault"
+							"text": "[Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_terminus.4",
@@ -50614,7 +50614,7 @@
 								"min": 23,
 								"max": 27
 							},
-							"text": "&gt;Creature"
+							"text": "[Creature](datasworn:oracle_collection:starforged/creature)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_terminus.5",
@@ -50622,7 +50622,7 @@
 								"min": 28,
 								"max": 33
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_terminus.6",
@@ -51130,7 +51130,7 @@
 								"min": 1,
 								"max": 15
 							},
-							"text": "Partially constructed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World, \"Jovian  World\", and \"Shattered World\" Planetary Class results."
+							"text": "Partially constructed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World, \"Jovian  World\", and \"Shattered World\" Planetary Class results."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/ecopoiesis_array_status.1",
@@ -51138,7 +51138,7 @@
 								"min": 16,
 								"max": 50
 							},
-							"text": "Operational /  When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", \"Shattered World\", \"Tainted World\" Planetary Class results. Then, roll &gt;Altered Atmosphere and &gt;Altered Life (next page) and treat these as a direct result of changes made to the world by the ecopoiesis array."
+							"text": "Operational /  When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian \"World\", \"Shattered World\", \"Tainted World\" Planetary Class results. Then, roll &gt;Altered Atmosphere and &gt;Altered Life (next page) and treat these as a direct result of changes made to the world by the ecopoiesis array."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/ecopoiesis_array_status.2",
@@ -51146,7 +51146,7 @@
 								"min": 51,
 								"max": 85
 							},
-							"text": "Non-functional  or offline / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. Making the ecopoiesis array functional will have an effect on the atmosphere; modify the Atmosphere oracle result to be more habitable, then shift the Life oracle result to be scarce or extinct, as much of indigenous flora and fauna might not have evolved to tolerate the new atmosphere."
+							"text": "Non-functional  or offline / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the megastructure, reroll the \"Anomalous World\", \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. Making the ecopoiesis array functional will have an effect on the atmosphere; modify the Atmosphere oracle result to be more habitable, then shift the Life oracle result to be scarce or extinct, as much of indigenous flora and fauna might not have evolved to tolerate the new atmosphere."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/ecopoiesis_array_status.3",
@@ -51550,7 +51550,7 @@
 								"min": 83,
 								"max": 91
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/open_sea_peril.11",
@@ -51599,7 +51599,7 @@
 								"min": 11,
 								"max": 40
 							},
-							"text": "&gt;Planet; pg 40"
+							"text": "[Planet](datasworn:oracle_rollable:starforged/planet/class)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/behemoth_assembler_anchored_vessel.2",
@@ -53062,7 +53062,7 @@
 								"min": 89,
 								"max": 94
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/seabed_peril.22",
@@ -53475,7 +53475,7 @@
 								"min": 91,
 								"max": 95
 							},
-							"text": "&gt;Action + Theme; pg 12"
+							"text": "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg 12"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/ecosphere_research.16",
@@ -53515,7 +53515,7 @@
 								"min": 1,
 								"max": 15
 							},
-							"text": "Partially constructed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World', and \"Jovian World\" Planetary Class results. The partially-built terravore orbits the world silently, unable to fulfill its purpose."
+							"text": "Partially constructed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World', and \"Jovian World\" Planetary Class results. The partially-built terravore orbits the world silently, unable to fulfill its purpose."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/terravore_status.1",
@@ -53531,7 +53531,7 @@
 								"min": 51,
 								"max": 85
 							},
-							"text": "Non-functional or offline / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", and \"Shattered World\" and Planetary Class results. If determined to be offline, reactivating the terravore will slowly transform the planet into a furnace world (if it is not one already; page 52)."
+							"text": "Non-functional or offline / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", and \"Shattered World\" and Planetary Class results. If determined to be offline, reactivating the terravore will slowly transform the planet into a furnace world (if it is not one already; page 52)."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/terravore_status.3",
@@ -53547,7 +53547,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "Destroyed / When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. The terravore, or its remains, orbit the world silently."
+							"text": "Destroyed / When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Jovian World\", \"Shattered World\" Planetary Class results. The terravore, or its remains, orbit the world silently."
 						}
 					],
 					"_source": {
@@ -55074,7 +55074,7 @@
 								"min": 16,
 								"max": 50
 							},
-							"text": "Operational /  When you roll &gt;Planet (page 40) to generate the features of the world that hosts the lunar speculorefractor, use the Lunar Speculorefractor Planetary Class oracle instead of the Planetary Class oracle. The world has the additional feature of auroras."
+							"text": "Operational /  When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the lunar speculorefractor, use the Lunar Speculorefractor Planetary Class oracle instead of the Planetary Class oracle. The world has the additional feature of auroras."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/lunar_speculorefractor_status.2",
@@ -56582,7 +56582,7 @@
 								"min": 1,
 								"max": 3
 							},
-							"text": "&gt;Settlement"
+							"text": "[Settlement](datasworn:oracle_collection:starforged/settlement)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_expanse.1",
@@ -56590,7 +56590,7 @@
 								"min": 4,
 								"max": 6
 							},
-							"text": "&gt;Starship"
+							"text": "[Starship](datasworn:oracle_collection:starforged/starship)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_expanse.2",
@@ -56598,7 +56598,7 @@
 								"min": 7,
 								"max": 9
 							},
-							"text": "&gt;Derelict"
+							"text": "[Derelict](datasworn:oracle_collection:starforged/derelict)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_expanse.3",
@@ -56606,7 +56606,7 @@
 								"min": 10,
 								"max": 14
 							},
-							"text": "&gt;Precursor Vault"
+							"text": "[Precursor Vault](datasworn:oracle_collection:starforged/precursor_vault)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_expanse.4",
@@ -56614,7 +56614,7 @@
 								"min": 15,
 								"max": 21
 							},
-							"text": "&gt;Creature"
+							"text": "[Creature](datasworn:oracle_collection:starforged/creature)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_expanse.5",
@@ -56622,7 +56622,7 @@
 								"min": 22,
 								"max": 29
 							},
-							"text": "&gt;Descriptor + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_expanse.6",
@@ -58905,7 +58905,7 @@
 								"min": 1,
 								"max": 33
 							},
-							"text": "The terravore's beam is significantly undercharged and is only affecting an isolated area of the planet. When you roll &gt;Planet (page 40) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World\", and \"Jovian World\" Planetary Class results. Then, treat the area affected by the beam as a furnace world (mono biome: volcanic; page 52)."
+							"text": "The terravore's beam is significantly undercharged and is only affecting an isolated area of the planet. When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class) to generate the features of the world that hosts the terravore, reroll the \"Furnace World\", \"Shattered World\", and \"Jovian World\" Planetary Class results. Then, treat the area affected by the beam as a furnace world (mono biome: volcanic; page 52)."
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/terravore_status_dysfunctional.1",
