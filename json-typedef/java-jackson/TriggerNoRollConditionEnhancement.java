@@ -7,10 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 @JsonSerialize
-public class TriggerNoRollCondition {
-    @JsonProperty("_id")
-    private AnyMoveConditionId id;
-
+public class TriggerNoRollConditionEnhancement {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("by")
     private TriggerBy by;
@@ -19,21 +16,7 @@ public class TriggerNoRollCondition {
     @JsonProperty("text")
     private MarkdownString text;
 
-    public TriggerNoRollCondition() {
-    }
-
-    /**
-     * Getter for id.<p>
-     */
-    public AnyMoveConditionId getId() {
-        return id;
-    }
-
-    /**
-     * Setter for id.<p>
-     */
-    public void setId(AnyMoveConditionId id) {
-        this.id = id;
+    public TriggerNoRollConditionEnhancement() {
     }
 
     /**

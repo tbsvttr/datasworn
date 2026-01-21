@@ -19,6 +19,8 @@ namespace Datasworn
 
         AtlasEntry,
 
+        Condition,
+
         ConditionMeter,
 
         Danger,
@@ -78,6 +80,8 @@ namespace Datasworn
                     return TaggableNodeType.AtlasCollection;
                 case "atlas_entry":
                     return TaggableNodeType.AtlasEntry;
+                case "condition":
+                    return TaggableNodeType.Condition;
                 case "condition_meter":
                     return TaggableNodeType.ConditionMeter;
                 case "danger":
@@ -143,6 +147,9 @@ namespace Datasworn
                     return;
                 case TaggableNodeType.AtlasEntry:
                     JsonSerializer.Serialize<string>(writer, "atlas_entry", options);
+                    return;
+                case TaggableNodeType.Condition:
+                    JsonSerializer.Serialize<string>(writer, "condition", options);
                     return;
                 case TaggableNodeType.ConditionMeter:
                     JsonSerializer.Serialize<string>(writer, "condition_meter", options);

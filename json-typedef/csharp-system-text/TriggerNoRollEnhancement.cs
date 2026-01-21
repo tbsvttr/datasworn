@@ -15,6 +15,6 @@ namespace Datasworn
         /// Trigger conditions added to the enhanced move.
         /// </summary>
         [JsonPropertyName("conditions")]
-        public IList<TriggerNoRollCondition> Conditions { get; set; }
+        public IList<TriggerNoRollConditionEnhancement> Conditions { get; set; }
     }
 }

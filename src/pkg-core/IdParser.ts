@@ -30,6 +30,28 @@ import type { Join, Split } from './Utils/String.js'
 type DictionaryLike<T> = Record<string, T> | Map<string, T>
 type UnknownNode = { [IdKey]: string }
 
+/**
+ * Resolves a potentially dot-separated property path to retrieve a nested value.
+ * For example, 'trigger.conditions' on { trigger: { conditions: [...] } } returns the conditions array.
+ */
+function getNestedProperty(obj: unknown, propertyPath: string): unknown {
+	if (typeof obj !== 'object' || obj === null) return undefined
+	const parts = propertyPath.split('.')
+	let current: unknown = obj
+	for (const part of parts) {
+		if (typeof current !== 'object' || current === null) return undefined
+		current = (current as Record<string, unknown>)[part]
+	}
+	return current
+}
+
+/**
+ * Checks if a potentially dot-separated property path exists on an object.
+ */
+function hasNestedProperty(obj: unknown, propertyPath: string): boolean {
+	return getNestedProperty(obj, propertyPath) !== undefined
+}
+
 interface RecursiveId<
 	TypeIds extends StringId.TypeIdParts = StringId.TypeIdParts,
 	PathSegments extends string[] & { length: TypeIds['length'] } = string[] & {
@@ -1081,13 +1103,14 @@ abstract class EmbeddingId<
 
 		if (recursive)
 			for (const embedTypeId of this.getEmbeddableTypes()) {
-				const property = TypeId.getEmbeddedPropertyKey(embedTypeId)
+				const propertyPath = TypeId.getEmbeddedPropertyKey(embedTypeId)
 
 				if (typeof node !== 'object') continue
 
-				if (!(property in node)) continue
+				// Support nested property paths like 'trigger.conditions'
+				if (!hasNestedProperty(node, propertyPath)) continue
 
-				const childNodes = (node as Record<string, unknown>)[property] as
+				const childNodes = getNestedProperty(node, propertyPath) as
 					| Record<string, { _id?: string }>
 					| Map<string, { _id?: string }>
 					| Array<{ _id?: string }>
@@ -1889,8 +1912,9 @@ class EmbeddedId<
 
 	override _getUnsafe(tree: (typeof IdParser)['tree']): TypeNode.Embedded<TTypeId> {
 		const parentNode = this.#parent.get(tree)
-		const property = TypeId.getEmbeddedPropertyKey(this.typeId)
-		const obj = (parentNode as Record<string, unknown>)?.[property]
+		const propertyPath = TypeId.getEmbeddedPropertyKey(this.typeId)
+		// Support nested property paths like 'trigger.conditions'
+		const obj = getNestedProperty(parentNode, propertyPath)
 
 		return (obj as Record<string, unknown>)?.[this.pathSegments.at(-1)!] as TypeNode.Embedded<TTypeId>
 	}

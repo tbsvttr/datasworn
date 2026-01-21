@@ -752,6 +752,29 @@ ids.AnyOracleRollableRowIdWildcard = Type.Union(
 )
 // @ts-expect-error
 
+ids.AnyMoveConditionId = Type.Union(
+	Object.values(ids)
+		.filter((schema) => schema.$id?.endsWith('ConditionId') && !schema.$id?.endsWith('IdWildcard'))
+		.map((schema) => Type.Ref(schema.$id as string)),
+	{
+		$id: 'AnyMoveConditionId',
+		[JsonTypeDef]: { schema: JtdType.String() }
+	}
+)
+// @ts-expect-error
+
+ids.AnyMoveConditionIdWildcard = Type.Union(
+	Object.values(ids)
+		.flat()
+		.filter((schema) => schema.$id?.endsWith('ConditionIdWildcard'))
+		.map((schema) => Type.Ref(schema.$id as string)),
+	{
+		$id: 'AnyMoveConditionIdWildcard',
+		[JsonTypeDef]: { schema: JtdType.String() }
+	}
+)
+// @ts-expect-error
+
 ids.AnyId = Type.Union(
 	Object.values(ids)
 		.flat()

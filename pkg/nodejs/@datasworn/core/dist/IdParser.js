@@ -21,6 +21,28 @@ const TypeGuard_js_1 = __importDefault(require("./IdElements/TypeGuard.js"));
 const TypeId_js_1 = __importDefault(require("./IdElements/TypeId.js"));
 const Errors_js_1 = require("./Errors.js");
 const index_js_1 = require("./IdElements/index.js");
+/**
+ * Resolves a potentially dot-separated property path to retrieve a nested value.
+ * For example, 'trigger.conditions' on { trigger: { conditions: [...] } } returns the conditions array.
+ */
+function getNestedProperty(obj, propertyPath) {
+    if (typeof obj !== 'object' || obj === null)
+        return undefined;
+    const parts = propertyPath.split('.');
+    let current = obj;
+    for (const part of parts) {
+        if (typeof current !== 'object' || current === null)
+            return undefined;
+        current = current[part];
+    }
+    return current;
+}
+/**
+ * Checks if a potentially dot-separated property path exists on an object.
+ */
+function hasNestedProperty(obj, propertyPath) {
+    return getNestedProperty(obj, propertyPath) !== undefined;
+}
 /** Performs parsing, validation, and construction of Datasworn IDs, and traverses the Datasworn hierarchy to retrieve matching node(s).  */
 class IdParser {
     /**  */
@@ -654,12 +676,13 @@ class EmbeddingId extends IdParser {
         const result = super.assignIdsIn(node, recursive, index);
         if (recursive)
             for (const embedTypeId of this.getEmbeddableTypes()) {
-                const property = TypeId_js_1.default.getEmbeddedPropertyKey(embedTypeId);
+                const propertyPath = TypeId_js_1.default.getEmbeddedPropertyKey(embedTypeId);
                 if (typeof node !== 'object')
                     continue;
-                if (!(property in node))
+                // Support nested property paths like 'trigger.conditions'
+                if (!hasNestedProperty(node, propertyPath))
                     continue;
-                const childNodes = node[property];
+                const childNodes = getNestedProperty(node, propertyPath);
                 if (childNodes == null)
                     continue;
                 if (Array.isArray(childNodes)) {
@@ -955,8 +978,9 @@ class EmbeddedId extends EmbeddingId {
     }
     _getUnsafe(tree) {
         const parentNode = __classPrivateFieldGet(this, _EmbeddedId_parent, "f").get(tree);
-        const property = TypeId_js_1.default.getEmbeddedPropertyKey(this.typeId);
-        const obj = parentNode === null || parentNode === void 0 ? void 0 : parentNode[property];
+        const propertyPath = TypeId_js_1.default.getEmbeddedPropertyKey(this.typeId);
+        // Support nested property paths like 'trigger.conditions'
+        const obj = getNestedProperty(parentNode, propertyPath);
         return obj === null || obj === void 0 ? void 0 : obj[this.pathSegments.at(-1)];
     }
     _getPathRegExpSource() {

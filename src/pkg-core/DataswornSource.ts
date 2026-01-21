@@ -26,14 +26,18 @@ export type ActionRollMethod = "miss" | "weak_hit" | "strong_hit" | "player_choi
 /**
  * Represents any kind of non-wildcard ID, including IDs of embedded objects.
  */
-export type AnyId = AtlasEntryId | NpcId | NpcVariantId | OracleRollableId | AssetAbilityOracleRollableId | MoveOracleRollableId | TruthOptionOracleRollableId | OracleRollableRowId | AssetAbilityOracleRollableRowId | MoveOracleRollableRowId | TruthOptionOracleRollableRowId | AssetId | AssetAbilityId | AssetAbilityMoveId | MoveId | AtlasCollectionId | NpcCollectionId | OracleCollectionId | AssetCollectionId | MoveCategoryId | DelveSiteId | DelveSiteDenizenId | DelveSiteDomainId | DelveSiteDomainFeatureId | DelveSiteThemeFeatureId | DelveSiteDomainDangerId | DelveSiteThemeDangerId | DelveSiteThemeId | RarityId | TruthId | TruthOptionId
+export type AnyId = AtlasEntryId | NpcId | NpcVariantId | OracleRollableId | AssetAbilityOracleRollableId | MoveOracleRollableId | TruthOptionOracleRollableId | OracleRollableRowId | AssetAbilityOracleRollableRowId | MoveOracleRollableRowId | TruthOptionOracleRollableRowId | AssetId | AssetAbilityId | AssetAbilityMoveId | MoveId | AssetAbilityMoveConditionId | MoveConditionId | AtlasCollectionId | NpcCollectionId | OracleCollectionId | AssetCollectionId | MoveCategoryId | DelveSiteId | DelveSiteDenizenId | DelveSiteDomainId | DelveSiteDomainFeatureId | DelveSiteThemeFeatureId | DelveSiteDomainDangerId | DelveSiteThemeDangerId | DelveSiteThemeId | RarityId | TruthId | TruthOptionId
 
 /**
  * Represents any kind of wildcard ID, including IDs of embedded objects.
  */
-export type AnyIdWildcard = AtlasEntryIdWildcard | NpcIdWildcard | NpcVariantIdWildcard | OracleRollableIdWildcard | AssetAbilityOracleRollableIdWildcard | MoveOracleRollableIdWildcard | TruthOptionOracleRollableIdWildcard | OracleRollableRowIdWildcard | AssetAbilityOracleRollableRowIdWildcard | MoveOracleRollableRowIdWildcard | TruthOptionOracleRollableRowIdWildcard | AssetIdWildcard | AssetAbilityIdWildcard | AssetAbilityMoveIdWildcard | MoveIdWildcard | AtlasCollectionIdWildcard | NpcCollectionIdWildcard | OracleCollectionIdWildcard | AssetCollectionIdWildcard | MoveCategoryIdWildcard | DelveSiteIdWildcard | DelveSiteDenizenIdWildcard | DelveSiteDomainIdWildcard | DelveSiteDomainFeatureIdWildcard | DelveSiteThemeFeatureIdWildcard | DelveSiteDomainDangerIdWildcard | DelveSiteThemeDangerIdWildcard | DelveSiteThemeIdWildcard | RarityIdWildcard | TruthIdWildcard | TruthOptionIdWildcard
+export type AnyIdWildcard = AtlasEntryIdWildcard | NpcIdWildcard | NpcVariantIdWildcard | OracleRollableIdWildcard | AssetAbilityOracleRollableIdWildcard | MoveOracleRollableIdWildcard | TruthOptionOracleRollableIdWildcard | OracleRollableRowIdWildcard | AssetAbilityOracleRollableRowIdWildcard | MoveOracleRollableRowIdWildcard | TruthOptionOracleRollableRowIdWildcard | AssetIdWildcard | AssetAbilityIdWildcard | AssetAbilityMoveIdWildcard | MoveIdWildcard | AssetAbilityMoveConditionIdWildcard | MoveConditionIdWildcard | AtlasCollectionIdWildcard | NpcCollectionIdWildcard | OracleCollectionIdWildcard | AssetCollectionIdWildcard | MoveCategoryIdWildcard | DelveSiteIdWildcard | DelveSiteDenizenIdWildcard | DelveSiteDomainIdWildcard | DelveSiteDomainFeatureIdWildcard | DelveSiteThemeFeatureIdWildcard | DelveSiteDomainDangerIdWildcard | DelveSiteThemeDangerIdWildcard | DelveSiteThemeIdWildcard | RarityIdWildcard | TruthIdWildcard | TruthOptionIdWildcard
 
 export type AnyMove = Move | EmbeddedMove
+
+export type AnyMoveConditionId = AssetAbilityMoveConditionId | MoveConditionId
+
+export type AnyMoveConditionIdWildcard = AssetAbilityMoveConditionIdWildcard | MoveConditionIdWildcard
 
 export type AnyMoveId = MoveId | AssetAbilityMoveId
 
@@ -201,6 +205,22 @@ export type AssetAbilityId = string
  * ```
  */
 export type AssetAbilityIdWildcard = string
+
+/**
+ * A unique ID representing an AssetAbilityMoveCondition object.
+ * @pattern ```javascript
+ * /^asset\.ability\.move\.condition:([a-z][a-z0-9_]*(?:\/[a-z][a-z0-9_]*){2,5})\.(\d+)\.([a-z][a-z0-9_]*|\*)\.(\d+)$/
+ * ```
+ */
+export type AssetAbilityMoveConditionId = string
+
+/**
+ * A wildcarded AssetAbilityMoveConditionId that can be used to match multiple AssetAbilityMoveCondition objects.
+ * @pattern ```javascript
+ * /^asset\.ability\.move\.condition:((?:[a-z][a-z0-9_]*|\*)(?:\/(?:[a-z][a-z0-9_]*|\*|\*\*)){2,5})\.(\d+|\*)\.([a-z][a-z0-9_]*|\*)\.(\d+|\*)$/
+ * ```
+ */
+export type AssetAbilityMoveConditionIdWildcard = string
 
 /**
  * A unique ID representing an AssetAbilityMove object.
@@ -2231,7 +2251,7 @@ export interface EmbeddedSpecialTrackMove {
 	roll_type: "special_track";
 }
 
-export type EmbedOnlyType = "ability" | "option" | "row" | "feature" | "danger" | "denizen" | "variant"
+export type EmbedOnlyType = "ability" | "condition" | "option" | "row" | "feature" | "danger" | "denizen" | "variant"
 
 /**
  * This type is a placeholder and may see signficant changes in v0.2.0.
@@ -2622,6 +2642,22 @@ export type MoveCategoryId = string
  * ```
  */
 export type MoveCategoryIdWildcard = string
+
+/**
+ * A unique ID representing a MoveCondition object.
+ * @pattern ```javascript
+ * /^move\.condition:([a-z][a-z0-9_]*(?:\/[a-z][a-z0-9_]*){2,5})\.(\d+)$/
+ * ```
+ */
+export type MoveConditionId = string
+
+/**
+ * A wildcarded MoveConditionId that can be used to match multiple MoveCondition objects.
+ * @pattern ```javascript
+ * /^move\.condition:((?:[a-z][a-z0-9_]*|\*)(?:\/(?:[a-z][a-z0-9_]*|\*|\*\*)){2,5})\.(\d+|\*)$/
+ * ```
+ */
+export type MoveConditionIdWildcard = string
 
 /**
  * @remarks Deserialize as a discriminated union/polymorphic object type, using the `roll_type` property as a discriminator.
@@ -4824,6 +4860,7 @@ export interface TriggerActionRoll {
 }
 
 export interface TriggerActionRollCondition {
+	_id?: AnyMoveConditionId;
 	/**
 	 * A markdown string of any trigger text specific to this trigger condition.
 	 */
@@ -4897,6 +4934,24 @@ export interface TriggerNoRoll {
 }
 
 export interface TriggerNoRollCondition {
+	_id?: AnyMoveConditionId;
+	/**
+	 * A markdown string of any trigger text specific to this trigger condition.
+	 */
+	text?: MarkdownString;
+	by?: TriggerBy;
+	/**
+	 * @default null
+	 */
+	method?: null;
+	/**
+	 * The options available when rolling with this trigger condition.
+	 * @default null
+	 */
+	roll_options?: null;
+}
+
+export interface TriggerNoRollConditionEnhancement {
 	/**
 	 * A markdown string of any trigger text specific to this trigger condition.
 	 */
@@ -4920,7 +4975,7 @@ export interface TriggerNoRollEnhancement {
 	/**
 	 * Trigger conditions added to the enhanced move.
 	 */
-	conditions: TriggerNoRollCondition[];
+	conditions: TriggerNoRollConditionEnhancement[];
 }
 
 export interface TriggerProgressRoll {
@@ -4937,6 +4992,7 @@ export interface TriggerProgressRoll {
 }
 
 export interface TriggerProgressRollCondition {
+	_id?: AnyMoveConditionId;
 	/**
 	 * A markdown string of any trigger text specific to this trigger condition.
 	 */
@@ -4993,6 +5049,7 @@ export interface TriggerSpecialTrack {
 }
 
 export interface TriggerSpecialTrackCondition {
+	_id?: AnyMoveConditionId;
 	/**
 	 * A markdown string of any trigger text specific to this trigger condition.
 	 */

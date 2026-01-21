@@ -14681,6 +14681,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/combat_talent/fletcher.2.craft_arrow.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -15384,6 +15385,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/combat_talent/sunderer.2.carve_rune.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17069,6 +17071,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17079,6 +17082,7 @@
 												"text": "Elixir of deftness (edge)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.1",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17089,6 +17093,7 @@
 												"text": "Elixir of audacity (heart)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.2",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17099,6 +17104,7 @@
 												"text": "Elixir of vigor (iron)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.3",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17109,6 +17115,7 @@
 												"text": "Elixir of slyness (shadow)"
 											},
 											{
+												"_id": "asset.ability.move.condition:classic/path/alchemist.0.create_elixir.4",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -17884,6 +17891,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/dancer.2.commemorate.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -19387,6 +19395,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/outcast.0.scrape_by.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -19488,6 +19497,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/path/pretender.0.establish_false_identity.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21234,6 +21244,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/augur.0.augur.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21335,6 +21346,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/awakening.0.awaken_simulacrum.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21446,6 +21458,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/bind.0.bind.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21547,6 +21560,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/communion.0.commune.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21648,6 +21662,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/divination.0.cast_runes.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21773,6 +21788,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/invoke.0.invoke.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -21899,6 +21915,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/keen.0.keen.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22000,6 +22017,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/leech.0.draw_blood_rune.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22101,6 +22119,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/lightbearer.0.capture_light.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22233,6 +22252,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/scry.0.scry.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22334,6 +22354,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/shadow_walk.0.shadow_walk.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22435,6 +22456,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/sway.0.sway.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22536,6 +22558,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/talisman.0.fashion_talisman.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22669,6 +22692,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/tether.0.tether.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22779,6 +22803,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/totem.0.focus_totem.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22880,6 +22905,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/visage.0.paint_visage.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -22981,6 +23007,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:classic/ritual/ward.0.ward.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -23371,6 +23398,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/face_danger.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23381,6 +23409,7 @@
 								"text": "With speed, agility, or precision"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23391,6 +23420,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23401,6 +23431,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23411,6 +23442,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/adventure/face_danger.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23458,6 +23490,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23468,6 +23501,7 @@
 								"text": "With speed, agility, or precision"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23478,6 +23512,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23488,6 +23523,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23498,6 +23534,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/adventure/secure_an_advantage.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23545,6 +23582,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/gather_information.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23591,6 +23629,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/heal.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23600,6 +23639,7 @@
 								]
 							},
 							{
+								"_id": "move.condition:classic/adventure/heal.1",
 								"method": "lowest",
 								"roll_options": [
 									{
@@ -23651,6 +23691,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/resupply.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23697,6 +23738,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/make_camp.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23743,6 +23785,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/undertake_a_journey.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23793,6 +23836,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/reach_your_destination.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -23838,6 +23882,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/adventure/follow_a_path.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23905,6 +23950,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/compel.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23915,6 +23961,7 @@
 								"text": "Charm, pacify, barter, or convince"
 							},
 							{
+								"_id": "move.condition:classic/relationship/compel.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23925,6 +23972,7 @@
 								"text": "Threaten or incite"
 							},
 							{
+								"_id": "move.condition:classic/relationship/compel.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -23972,6 +24020,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/sojourn.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24018,6 +24067,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/draw_the_circle.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24064,6 +24114,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/forge_a_bond.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24110,6 +24161,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/test_your_bond.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24182,6 +24234,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/relationship/write_your_epilogue.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24248,6 +24301,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/enter_the_fray.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24258,6 +24312,7 @@
 								"text": "Facing off against your foe"
 							},
 							{
+								"_id": "move.condition:classic/combat/enter_the_fray.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24268,6 +24323,7 @@
 								"text": "Moving into position against an unaware foe, or striking without warning"
 							},
 							{
+								"_id": "move.condition:classic/combat/enter_the_fray.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24315,6 +24371,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/strike.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24325,6 +24382,7 @@
 								"text": "In close quarters"
 							},
 							{
+								"_id": "move.condition:classic/combat/strike.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24372,6 +24430,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/clash.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24382,6 +24441,7 @@
 								"text": "Fight with them in close quarters"
 							},
 							{
+								"_id": "move.condition:classic/combat/clash.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24459,6 +24519,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/end_the_fight.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -24504,6 +24565,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/combat/battle.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24514,6 +24576,7 @@
 								"text": "Fight at range, or using your speed and the terrain to your advantage"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24524,6 +24587,7 @@
 								"text": "Fight depending on your courage, allies, or companions"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24534,6 +24598,7 @@
 								"text": "Fight in close to overpower your opponents"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24544,6 +24609,7 @@
 								"text": "Fight using trickery to befuddle your opponents"
 							},
 							{
+								"_id": "move.condition:classic/combat/battle.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24612,6 +24678,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/endure_harm.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -24716,6 +24783,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/face_death.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -24762,6 +24830,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/companion_endure_harm.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -24815,6 +24884,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/endure_stress.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -24911,6 +24981,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/suffer/face_desolation.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25030,6 +25101,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/quest/swear_an_iron_vow.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25106,6 +25178,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/quest/fulfill_your_vow.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -25616,6 +25689,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25626,6 +25700,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25636,6 +25711,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25646,6 +25722,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25656,6 +25733,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/face_danger.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25703,6 +25781,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25713,6 +25792,7 @@
 								"text": "With speed, agility, or precision"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25723,6 +25803,7 @@
 								"text": "With charm, loyalty, or courage"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25733,6 +25814,7 @@
 								"text": "With aggressive action, forceful defense, strength, or endurance"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25743,6 +25825,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:classic/scene_challenge/secure_an_advantage.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -25794,6 +25877,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:classic/scene_challenge/finish_the_scene.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{

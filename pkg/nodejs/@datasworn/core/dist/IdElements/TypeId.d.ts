@@ -35,16 +35,16 @@ declare namespace TypeId {
     function getCollectionOf<T extends Collectable>(typeId: T): CollectionOf<T>;
     const EmbeddablePrimary: ["oracle_rollable", "move"];
     type EmbeddablePrimary = (typeof EmbeddablePrimary)[number];
-    const EmbedOnly: readonly ["ability", "option", "row", "feature", "danger", "denizen", "variant"];
+    const EmbedOnly: readonly ["ability", "condition", "option", "row", "feature", "danger", "denizen", "variant"];
     type EmbedOnly = (typeof EmbedOnly)[number];
-    const Embeddable: ["oracle_rollable", "move", "ability", "option", "row", "feature", "danger", "denizen", "variant"];
+    const Embeddable: ["oracle_rollable", "move", "ability", "condition", "option", "row", "feature", "danger", "denizen", "variant"];
     type Embeddable = EmbeddablePrimary | EmbedOnly;
     const EmbedTypeMap: {
         readonly asset: ["ability"];
         readonly ability: ["move", "oracle_rollable"];
         readonly truth: ["option"];
         readonly option: ["oracle_rollable"];
-        readonly move: ["oracle_rollable"];
+        readonly move: ["condition", "oracle_rollable"];
         readonly oracle_rollable: ["row"];
         readonly delve_site: ["denizen"];
         readonly delve_site_domain: ["feature", "danger"];
@@ -56,7 +56,7 @@ declare namespace TypeId {
     /** Types that can be an embed of an embed. */
     const EmbeddableInEmbeddedTypeMap: {
         readonly ability: ["oracle_rollable", "move"];
-        readonly move: [];
+        readonly move: ["condition"];
         readonly option: ["oracle_rollable"];
         readonly oracle_rollable: ["row"];
     };
@@ -74,6 +74,7 @@ declare namespace TypeId {
     const EmbeddedTypePath: string[];
     const EmbeddedPropertyKeys: {
         readonly ability: "abilities";
+        readonly condition: "trigger.conditions";
         readonly option: "options";
         readonly row: "rows";
         readonly feature: "features";
@@ -83,7 +84,7 @@ declare namespace TypeId {
     };
     function getEmbeddedPropertyType(typeId: TypeId.Any): 'array' | 'dictionary';
     type Any = Primary | EmbedOnly;
-    const Any: ["atlas_entry", "npc", "oracle_rollable", "asset", "move", "atlas_collection", "npc_collection", "oracle_collection", "asset_collection", "move_category", "delve_site", "delve_site_domain", "delve_site_theme", "rarity", "truth", "ability", "option", "row", "feature", "danger", "denizen", "variant"];
+    const Any: ["atlas_entry", "npc", "oracle_rollable", "asset", "move", "atlas_collection", "npc_collection", "oracle_collection", "asset_collection", "move_category", "delve_site", "delve_site_domain", "delve_site_theme", "rarity", "truth", "ability", "condition", "option", "row", "feature", "danger", "denizen", "variant"];
     /** The ancestor key of this type on the {@link Datasworn.RulesPackage} object. */
     const BranchKey: {
         readonly asset_collection: "assets";

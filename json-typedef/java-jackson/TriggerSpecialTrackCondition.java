@@ -9,6 +9,9 @@ import java.util.List;
 
 @JsonSerialize
 public class TriggerSpecialTrackCondition {
+    @JsonProperty("_id")
+    private AnyMoveConditionId id;
+
     @JsonProperty("method")
     private SpecialTrackRollMethod method;
 
@@ -24,6 +27,20 @@ public class TriggerSpecialTrackCondition {
     private MarkdownString text;
 
     public TriggerSpecialTrackCondition() {
+    }
+
+    /**
+     * Getter for id.<p>
+     */
+    public AnyMoveConditionId getId() {
+        return id;
+    }
+
+    /**
+     * Setter for id.<p>
+     */
+    public void setId(AnyMoveConditionId id) {
+        this.id = id;
     }
 
     /**

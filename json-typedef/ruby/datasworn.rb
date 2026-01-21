@@ -289,6 +289,34 @@ module Datasworn
     end
   end
 
+  class AnyMoveConditionID
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AnyMoveConditionID.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  class AnyMoveConditionIDWildcard
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AnyMoveConditionIDWildcard.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
   class AnyMoveID
     attr_accessor :value
 
@@ -730,6 +758,37 @@ module Datasworn
 
     def self.from_json_data(data)
       out = AssetAbilityIDWildcard.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  # A unique ID representing an AssetAbilityMoveCondition object.
+  class AssetAbilityMoveConditionID
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AssetAbilityMoveConditionID.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  # A wildcarded AssetAbilityMoveConditionId that can be used to match multiple
+  # AssetAbilityMoveCondition objects.
+  class AssetAbilityMoveConditionIDWildcard
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AssetAbilityMoveConditionIDWildcard.new
       out.value = Datasworn.from_json_data(String, data)
       out
     end
@@ -3782,6 +3841,7 @@ module Datasworn
     private_class_method :new
 
     ABILITY = new("ability")
+    CONDITION = new("condition")
     DANGER = new("danger")
     DENIZEN = new("denizen")
     FEATURE = new("feature")
@@ -3792,6 +3852,7 @@ module Datasworn
     def self.from_json_data(data)
       {
         "ability" => ABILITY,
+        "condition" => CONDITION,
         "danger" => DANGER,
         "denizen" => DENIZEN,
         "feature" => FEATURE,
@@ -7308,6 +7369,37 @@ module Datasworn
 
     def self.from_json_data(data)
       out = MoveCategoryIDWildcard.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  # A unique ID representing a MoveCondition object.
+  class MoveConditionID
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = MoveConditionID.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  # A wildcarded MoveConditionId that can be used to match multiple
+  # MoveCondition objects.
+  class MoveConditionIDWildcard
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = MoveConditionIDWildcard.new
       out.value = Datasworn.from_json_data(String, data)
       out
     end
@@ -14029,6 +14121,7 @@ module Datasworn
     ASSET_COLLECTION = new("asset_collection")
     ATLAS_COLLECTION = new("atlas_collection")
     ATLAS_ENTRY = new("atlas_entry")
+    CONDITION = new("condition")
     CONDITION_METER = new("condition_meter")
     DANGER = new("danger")
     DELVE_SITE = new("delve_site")
@@ -14058,6 +14151,7 @@ module Datasworn
         "asset_collection" => ASSET_COLLECTION,
         "atlas_collection" => ATLAS_COLLECTION,
         "atlas_entry" => ATLAS_ENTRY,
+        "condition" => CONDITION,
         "condition_meter" => CONDITION_METER,
         "danger" => DANGER,
         "delve_site" => DELVE_SITE,
@@ -14179,6 +14273,7 @@ module Datasworn
   end
 
   class TriggerActionRollCondition
+    attr_accessor :id
     attr_accessor :method
 
     # The options available when rolling with this trigger condition.
@@ -14190,6 +14285,7 @@ module Datasworn
 
     def self.from_json_data(data)
       out = TriggerActionRollCondition.new
+      out.id = Datasworn::from_json_data(AnyMoveConditionID, data["_id"])
       out.method = Datasworn::from_json_data(ActionRollMethod, data["method"])
       out.roll_options = Datasworn::from_json_data(Array[RollableValue], data["roll_options"])
       out.by = Datasworn::from_json_data(TriggerBy, data["by"])
@@ -14199,6 +14295,7 @@ module Datasworn
 
     def to_json_data
       data = {}
+      data["_id"] = Datasworn::to_json_data(id)
       data["method"] = Datasworn::to_json_data(method)
       data["roll_options"] = Datasworn::to_json_data(roll_options)
       data["by"] = Datasworn::to_json_data(by) unless by.nil?
@@ -14305,6 +14402,7 @@ module Datasworn
   end
 
   class TriggerNoRollCondition
+    attr_accessor :id
     attr_accessor :by
 
     # A markdown string of any trigger text specific to this trigger condition.
@@ -14312,6 +14410,29 @@ module Datasworn
 
     def self.from_json_data(data)
       out = TriggerNoRollCondition.new
+      out.id = Datasworn::from_json_data(AnyMoveConditionID, data["_id"])
+      out.by = Datasworn::from_json_data(TriggerBy, data["by"])
+      out.text = Datasworn::from_json_data(MarkdownString, data["text"])
+      out
+    end
+
+    def to_json_data
+      data = {}
+      data["_id"] = Datasworn::to_json_data(id)
+      data["by"] = Datasworn::to_json_data(by) unless by.nil?
+      data["text"] = Datasworn::to_json_data(text) unless text.nil?
+      data
+    end
+  end
+
+  class TriggerNoRollConditionEnhancement
+    attr_accessor :by
+
+    # A markdown string of any trigger text specific to this trigger condition.
+    attr_accessor :text
+
+    def self.from_json_data(data)
+      out = TriggerNoRollConditionEnhancement.new
       out.by = Datasworn::from_json_data(TriggerBy, data["by"])
       out.text = Datasworn::from_json_data(MarkdownString, data["text"])
       out
@@ -14332,7 +14453,7 @@ module Datasworn
 
     def self.from_json_data(data)
       out = TriggerNoRollEnhancement.new
-      out.conditions = Datasworn::from_json_data(Array[TriggerNoRollCondition], data["conditions"])
+      out.conditions = Datasworn::from_json_data(Array[TriggerNoRollConditionEnhancement], data["conditions"])
       out
     end
 
@@ -14369,6 +14490,7 @@ module Datasworn
   end
 
   class TriggerProgressRollCondition
+    attr_accessor :id
     attr_accessor :method
 
     # The options available when rolling with this trigger condition.
@@ -14380,6 +14502,7 @@ module Datasworn
 
     def self.from_json_data(data)
       out = TriggerProgressRollCondition.new
+      out.id = Datasworn::from_json_data(AnyMoveConditionID, data["_id"])
       out.method = Datasworn::from_json_data(ProgressRollMethod, data["method"])
       out.roll_options = Datasworn::from_json_data(Array[ProgressRollOption], data["roll_options"])
       out.by = Datasworn::from_json_data(TriggerBy, data["by"])
@@ -14389,6 +14512,7 @@ module Datasworn
 
     def to_json_data
       data = {}
+      data["_id"] = Datasworn::to_json_data(id)
       data["method"] = Datasworn::to_json_data(method)
       data["roll_options"] = Datasworn::to_json_data(roll_options)
       data["by"] = Datasworn::to_json_data(by) unless by.nil?
@@ -14470,6 +14594,7 @@ module Datasworn
   end
 
   class TriggerSpecialTrackCondition
+    attr_accessor :id
     attr_accessor :method
 
     # The options available when rolling with this trigger condition.
@@ -14481,6 +14606,7 @@ module Datasworn
 
     def self.from_json_data(data)
       out = TriggerSpecialTrackCondition.new
+      out.id = Datasworn::from_json_data(AnyMoveConditionID, data["_id"])
       out.method = Datasworn::from_json_data(SpecialTrackRollMethod, data["method"])
       out.roll_options = Datasworn::from_json_data(Array[TriggerSpecialTrackConditionOption], data["roll_options"])
       out.by = Datasworn::from_json_data(TriggerBy, data["by"])
@@ -14490,6 +14616,7 @@ module Datasworn
 
     def to_json_data
       data = {}
+      data["_id"] = Datasworn::to_json_data(id)
       data["method"] = Datasworn::to_json_data(method)
       data["roll_options"] = Datasworn::to_json_data(roll_options)
       data["by"] = Datasworn::to_json_data(by) unless by.nil?

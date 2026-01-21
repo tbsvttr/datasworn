@@ -60646,6 +60646,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/companion/dolphin.0.call_dolphin.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -61096,6 +61097,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/companion/monkey.0.suffer_monkey_business.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -62532,6 +62534,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/gilded_adornments.1.host_reception.0",
 												"method": "highest",
 												"roll_options": [
 													{
@@ -62895,6 +62898,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/improved_galley.1.indulge_with_provisions.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -63119,6 +63123,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/improved_hold.1.draw_reserves.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -63327,6 +63332,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/improved_sick_bay.0.aid_wounded.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -63645,6 +63651,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/module/lucky_figurehead.0.depart_port.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -64406,6 +64413,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/crew_commander.0.bolster_your_crew.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65015,6 +65023,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/musician.2.memorialize_in_song.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65353,6 +65362,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/overlander.1.shelter.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65451,6 +65461,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/peddler.0.peddle_your_wares.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -65561,6 +65572,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/pirate_captain.0.seize_your_prize.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -66302,6 +66314,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/socialite.1.make_a_grand_entrance.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -66970,6 +66983,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:sundered_isles/path/windbinder.0.bind_the_winds.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -68043,6 +68057,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/exploration/undertake_an_expedition.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68053,6 +68068,7 @@
 								"text": "Move at speed"
 							},
 							{
+								"_id": "move.condition:sundered_isles/exploration/undertake_an_expedition.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68063,6 +68079,7 @@
 								"text": "Keep under the radar"
 							},
 							{
+								"_id": "move.condition:sundered_isles/exploration/undertake_an_expedition.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68528,6 +68545,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/exploration/set_a_course.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68605,6 +68623,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68615,6 +68634,7 @@
 								"text": "On the move or maneuvering"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68625,6 +68645,7 @@
 								"text": "In command or facing off against your foe"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68635,6 +68656,7 @@
 								"text": "In the thick of it at close quarters"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68645,6 +68667,7 @@
 								"text": "Preparing to act against an unaware foe"
 							},
 							{
+								"_id": "move.condition:sundered_isles/combat/enter_the_fray.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68718,6 +68741,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/suffer/withstand_damage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68872,6 +68896,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68882,6 +68907,7 @@
 								"text": "Barter or make an appeal"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68892,6 +68918,7 @@
 								"text": "Threaten or seize"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68902,6 +68929,7 @@
 								"text": "Steal or swindle"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68912,6 +68940,7 @@
 								"text": "Scavenge or craft"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/resupply.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68963,6 +68992,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:sundered_isles/recover/repair.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -68973,6 +69003,7 @@
 								"text": "Make your own repairs, or direct companions or crewmembers to make repairs"
 							},
 							{
+								"_id": "move.condition:sundered_isles/recover/repair.1",
 								"method": "player_choice",
 								"roll_options": [
 									{

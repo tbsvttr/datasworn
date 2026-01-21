@@ -64,6 +64,7 @@ var TypeId;
     ];
     TypeId.EmbedOnly = [
         'ability',
+        'condition',
         'option',
         'row',
         'feature',
@@ -75,6 +76,7 @@ var TypeId;
         'oracle_rollable',
         'move',
         'ability',
+        'condition',
         'option',
         'row',
         'feature',
@@ -87,7 +89,7 @@ var TypeId;
         ability: ['move', 'oracle_rollable'],
         truth: ['option'],
         option: ['oracle_rollable'],
-        move: ['oracle_rollable'],
+        move: ['condition', 'oracle_rollable'],
         oracle_rollable: ['row'],
         delve_site: ['denizen'],
         delve_site_domain: ['feature', 'danger'],
@@ -97,7 +99,7 @@ var TypeId;
     /** Types that can be an embed of an embed. */
     TypeId.EmbeddableInEmbeddedTypeMap = {
         ability: ['oracle_rollable', 'move'],
-        move: [],
+        move: ['condition'],
         option: ['oracle_rollable'],
         oracle_rollable: ['row'],
     };
@@ -152,6 +154,7 @@ var TypeId;
         expandTypePath(typeId);
     TypeId.EmbeddedPropertyKeys = {
         ability: 'abilities',
+        condition: 'trigger.conditions',
         option: 'options',
         row: 'rows',
         feature: 'features',
@@ -164,6 +167,7 @@ var TypeId;
     // i think it comes down to whether the type has a required `name` property to generate a key from.
     const EmbeddedPropertyType = {
         abilities: 'array',
+        'trigger.conditions': 'array',
         dangers: 'array',
         denizens: 'array',
         features: 'array',
@@ -197,6 +201,7 @@ var TypeId;
         'rarity',
         'truth',
         'ability',
+        'condition',
         'option',
         'row',
         'feature',

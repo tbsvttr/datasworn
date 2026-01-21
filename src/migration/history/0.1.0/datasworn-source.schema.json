@@ -228,6 +228,12 @@
 					"$ref": "#/definitions/MoveId"
 				},
 				{
+					"$ref": "#/definitions/AssetAbilityMoveConditionId"
+				},
+				{
+					"$ref": "#/definitions/MoveConditionId"
+				},
+				{
 					"$ref": "#/definitions/AtlasCollectionId"
 				},
 				{
@@ -327,6 +333,12 @@
 					"$ref": "#/definitions/MoveIdWildcard"
 				},
 				{
+					"$ref": "#/definitions/AssetAbilityMoveConditionIdWildcard"
+				},
+				{
+					"$ref": "#/definitions/MoveConditionIdWildcard"
+				},
+				{
 					"$ref": "#/definitions/AtlasCollectionIdWildcard"
 				},
 				{
@@ -384,6 +396,28 @@
 				},
 				{
 					"$ref": "#/definitions/EmbeddedMove"
+				}
+			]
+		},
+		"AnyMoveConditionId": {
+			"title": "AnyMoveConditionId",
+			"anyOf": [
+				{
+					"$ref": "#/definitions/AssetAbilityMoveConditionId"
+				},
+				{
+					"$ref": "#/definitions/MoveConditionId"
+				}
+			]
+		},
+		"AnyMoveConditionIdWildcard": {
+			"title": "AnyMoveConditionIdWildcard",
+			"anyOf": [
+				{
+					"$ref": "#/definitions/AssetAbilityMoveConditionIdWildcard"
+				},
+				{
+					"$ref": "#/definitions/MoveConditionIdWildcard"
 				}
 			]
 		},
@@ -788,6 +822,18 @@
 			"title": "AssetAbilityIdWildcard",
 			"description": "A wildcarded AssetAbilityId that can be used to match multiple AssetAbility objects.",
 			"pattern": "^asset\\.ability:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)$",
+			"type": "string"
+		},
+		"AssetAbilityMoveConditionId": {
+			"title": "AssetAbilityMoveConditionId",
+			"description": "A unique ID representing an AssetAbilityMoveCondition object.",
+			"pattern": "^asset\\.ability\\.move\\.condition:([a-z][a-z0-9_]*(?:\\/[a-z][a-z0-9_]*){2,5})\\.(\\d+)\\.([a-z][a-z0-9_]*|\\*)\\.(\\d+)$",
+			"type": "string"
+		},
+		"AssetAbilityMoveConditionIdWildcard": {
+			"title": "AssetAbilityMoveConditionIdWildcard",
+			"description": "A wildcarded AssetAbilityMoveConditionId that can be used to match multiple AssetAbilityMoveCondition objects.",
+			"pattern": "^asset\\.ability\\.move\\.condition:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)\\.([a-z][a-z0-9_]*|\\*)\\.(\\d+|\\*)$",
 			"type": "string"
 		},
 		"AssetAbilityMoveId": {
@@ -5310,6 +5356,7 @@
 			"title": "EmbedOnlyType",
 			"enum": [
 				"ability",
+				"condition",
 				"option",
 				"row",
 				"feature",
@@ -5993,6 +6040,18 @@
 			"title": "MoveCategoryIdWildcard",
 			"description": "A wildcarded MoveCategoryId that can be used to match multiple MoveCategory objects.",
 			"pattern": "^move_category:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){1,4})$",
+			"type": "string"
+		},
+		"MoveConditionId": {
+			"title": "MoveConditionId",
+			"description": "A unique ID representing a MoveCondition object.",
+			"pattern": "^move\\.condition:([a-z][a-z0-9_]*(?:\\/[a-z][a-z0-9_]*){2,5})\\.(\\d+)$",
+			"type": "string"
+		},
+		"MoveConditionIdWildcard": {
+			"title": "MoveConditionIdWildcard",
+			"description": "A wildcarded MoveConditionId that can be used to match multiple MoveCondition objects.",
+			"pattern": "^move\\.condition:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)$",
 			"type": "string"
 		},
 		"MoveEnhancement": {
@@ -10357,6 +10416,8 @@
 										"#/definitions/ActionRollMethod",
 										"#/definitions/AnyId",
 										"#/definitions/AnyIdWildcard",
+										"#/definitions/AnyMoveConditionId",
+										"#/definitions/AnyMoveConditionIdWildcard",
 										"#/definitions/AnyMoveId",
 										"#/definitions/AnyMoveIdWildcard",
 										"#/definitions/AnyOracleRollableId",
@@ -10365,6 +10426,8 @@
 										"#/definitions/AnyOracleRollableRowIdWildcard",
 										"#/definitions/AssetAbilityId",
 										"#/definitions/AssetAbilityIdWildcard",
+										"#/definitions/AssetAbilityMoveConditionId",
+										"#/definitions/AssetAbilityMoveConditionIdWildcard",
 										"#/definitions/AssetAbilityMoveId",
 										"#/definitions/AssetAbilityMoveIdWildcard",
 										"#/definitions/AssetAbilityOracleRollableId",
@@ -10415,6 +10478,8 @@
 										"#/definitions/MarkdownTemplateString",
 										"#/definitions/MoveCategoryId",
 										"#/definitions/MoveCategoryIdWildcard",
+										"#/definitions/MoveConditionId",
+										"#/definitions/MoveConditionIdWildcard",
 										"#/definitions/MoveId",
 										"#/definitions/MoveIdWildcard",
 										"#/definitions/MoveOracleRollableId",
@@ -10651,6 +10716,9 @@
 			"title": "TriggerActionRollCondition",
 			"type": "object",
 			"properties": {
+				"_id": {
+					"$ref": "#/definitions/AnyMoveConditionId"
+				},
 				"text": {
 					"description": "A markdown string of any trigger text specific to this trigger condition.",
 					"$ref": "#/definitions/MarkdownString"
@@ -10780,6 +10848,32 @@
 			"title": "TriggerNoRollCondition",
 			"type": "object",
 			"properties": {
+				"_id": {
+					"$ref": "#/definitions/AnyMoveConditionId"
+				},
+				"text": {
+					"description": "A markdown string of any trigger text specific to this trigger condition.",
+					"$ref": "#/definitions/MarkdownString"
+				},
+				"by": {
+					"$ref": "#/definitions/TriggerBy"
+				},
+				"method": {
+					"default": null,
+					"type": "null"
+				},
+				"roll_options": {
+					"description": "The options available when rolling with this trigger condition.",
+					"default": null,
+					"type": "null"
+				}
+			},
+			"additionalProperties": false
+		},
+		"TriggerNoRollConditionEnhancement": {
+			"title": "TriggerNoRollConditionEnhancement",
+			"type": "object",
+			"properties": {
 				"text": {
 					"description": "A markdown string of any trigger text specific to this trigger condition.",
 					"$ref": "#/definitions/MarkdownString"
@@ -10808,7 +10902,7 @@
 					"description": "Trigger conditions added to the enhanced move.",
 					"type": "array",
 					"items": {
-						"$ref": "#/definitions/TriggerNoRollCondition"
+						"$ref": "#/definitions/TriggerNoRollConditionEnhancement"
 					}
 				}
 			},
@@ -10844,6 +10938,9 @@
 			"title": "TriggerProgressRollCondition",
 			"type": "object",
 			"properties": {
+				"_id": {
+					"$ref": "#/definitions/AnyMoveConditionId"
+				},
 				"text": {
 					"description": "A markdown string of any trigger text specific to this trigger condition.",
 					"$ref": "#/definitions/MarkdownString"
@@ -10955,6 +11052,9 @@
 			"title": "TriggerSpecialTrackCondition",
 			"type": "object",
 			"properties": {
+				"_id": {
+					"$ref": "#/definitions/AnyMoveConditionId"
+				},
 				"text": {
 					"description": "A markdown string of any trigger text specific to this trigger condition.",
 					"$ref": "#/definitions/MarkdownString"

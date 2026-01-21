@@ -365,6 +365,12 @@
 				"description": "Represents any kind of wildcard ID, including IDs of embedded objects."
 			}
 		},
+		"AnyMoveConditionId": {
+			"type": "string"
+		},
+		"AnyMoveConditionIdWildcard": {
+			"type": "string"
+		},
 		"AnyMoveId": {
 			"type": "string"
 		},
@@ -756,6 +762,20 @@
 			"metadata": {
 				"description": "A wildcarded AssetAbilityId that can be used to match multiple AssetAbility objects.",
 				"pattern": "^asset\\.ability:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)$"
+			}
+		},
+		"AssetAbilityMoveConditionId": {
+			"type": "string",
+			"metadata": {
+				"description": "A unique ID representing an AssetAbilityMoveCondition object.",
+				"pattern": "^asset\\.ability\\.move\\.condition:([a-z][a-z0-9_]*(?:\\/[a-z][a-z0-9_]*){2,5})\\.(\\d+)\\.([a-z][a-z0-9_]*|\\*)\\.(\\d+)$"
+			}
+		},
+		"AssetAbilityMoveConditionIdWildcard": {
+			"type": "string",
+			"metadata": {
+				"description": "A wildcarded AssetAbilityMoveConditionId that can be used to match multiple AssetAbilityMoveCondition objects.",
+				"pattern": "^asset\\.ability\\.move\\.condition:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)\\.([a-z][a-z0-9_]*|\\*)\\.(\\d+|\\*)$"
 			}
 		},
 		"AssetAbilityMoveId": {
@@ -4833,6 +4853,7 @@
 		"EmbedOnlyType": {
 			"enum": [
 				"ability",
+				"condition",
 				"option",
 				"row",
 				"feature",
@@ -5841,6 +5862,20 @@
 			"metadata": {
 				"description": "A wildcarded MoveCategoryId that can be used to match multiple MoveCategory objects.",
 				"pattern": "^move_category:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){1,4})$"
+			}
+		},
+		"MoveConditionId": {
+			"type": "string",
+			"metadata": {
+				"description": "A unique ID representing a MoveCondition object.",
+				"pattern": "^move\\.condition:([a-z][a-z0-9_]*(?:\\/[a-z][a-z0-9_]*){2,5})\\.(\\d+)$"
+			}
+		},
+		"MoveConditionIdWildcard": {
+			"type": "string",
+			"metadata": {
+				"description": "A wildcarded MoveConditionId that can be used to match multiple MoveCondition objects.",
+				"pattern": "^move\\.condition:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)$"
 			}
 		},
 		"MoveEnhancement": {
@@ -11026,6 +11061,7 @@
 				"rarity",
 				"truth",
 				"ability",
+				"condition",
 				"option",
 				"row",
 				"feature",
@@ -11136,6 +11172,9 @@
 		},
 		"TriggerActionRollCondition": {
 			"properties": {
+				"_id": {
+					"ref": "AnyMoveConditionId"
+				},
 				"method": {
 					"ref": "ActionRollMethod"
 				},
@@ -11244,6 +11283,24 @@
 			}
 		},
 		"TriggerNoRollCondition": {
+			"properties": {
+				"_id": {
+					"ref": "AnyMoveConditionId"
+				}
+			},
+			"optionalProperties": {
+				"text": {
+					"ref": "MarkdownString",
+					"metadata": {
+						"description": "A markdown string of any trigger text specific to this trigger condition."
+					}
+				},
+				"by": {
+					"ref": "TriggerBy"
+				}
+			}
+		},
+		"TriggerNoRollConditionEnhancement": {
 			"properties": {},
 			"optionalProperties": {
 				"text": {
@@ -11261,7 +11318,7 @@
 			"properties": {
 				"conditions": {
 					"elements": {
-						"ref": "TriggerNoRollCondition"
+						"ref": "TriggerNoRollConditionEnhancement"
 					},
 					"metadata": {
 						"description": "Trigger conditions added to the enhanced move."
@@ -11292,6 +11349,9 @@
 		},
 		"TriggerProgressRollCondition": {
 			"properties": {
+				"_id": {
+					"ref": "AnyMoveConditionId"
+				},
 				"method": {
 					"ref": "ProgressRollMethod"
 				},
@@ -11379,6 +11439,9 @@
 		},
 		"TriggerSpecialTrackCondition": {
 			"properties": {
+				"_id": {
+					"ref": "AnyMoveConditionId"
+				},
 				"method": {
 					"ref": "SpecialTrackRollMethod"
 				},

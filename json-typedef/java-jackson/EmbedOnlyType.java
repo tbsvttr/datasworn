@@ -8,6 +8,9 @@ public enum EmbedOnlyType {
     @JsonProperty("ability")
     ABILITY,
 
+    @JsonProperty("condition")
+    CONDITION,
+
     @JsonProperty("danger")
     DANGER,
 

@@ -61651,6 +61651,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/making_camp/hunker_down.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61696,6 +61697,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/making_camp/establish_a_haven.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61761,6 +61763,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/exchanging_wealth/browse_the_market.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61771,6 +61774,7 @@
 								"text": "Bargain across potential traders"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/exchanging_wealth/browse_the_market.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61887,6 +61891,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_the_field.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61897,6 +61902,7 @@
 								"text": "Exerting physical grace or using your dexterity"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_the_field.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61907,6 +61913,7 @@
 								"text": "Working with people or using your charisma"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_the_field.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61917,6 +61924,7 @@
 								"text": "Exercising force or using your brawn"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_the_field.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61927,6 +61935,7 @@
 								"text": "Duping people or using your guile"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_the_field.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61973,6 +61982,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_your_legacy.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61983,6 +61993,7 @@
 								"text": "Training for your quest"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_your_legacy.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -61993,6 +62004,7 @@
 								"text": "Training for your quest"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_your_legacy.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62003,6 +62015,7 @@
 								"text": "Fostering your reputation for your bonds"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_your_legacy.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62013,6 +62026,7 @@
 								"text": "Fostering your reputation for your bonds"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/work_your_legacy.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62063,6 +62077,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/taking_a_hiatus/measure_profit.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -62182,6 +62197,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/failing_forward/learn_from_your_failures.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -62282,6 +62298,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:ancient_wonders/reworking_your_legacy/continue_a_legacy.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -62291,6 +62308,7 @@
 								"text": "Roll for Quests Legacy"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/reworking_your_legacy/continue_a_legacy.1",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -62300,6 +62318,7 @@
 								"text": "Roll for Bonds Legacy"
 							},
 							{
+								"_id": "move.condition:ancient_wonders/reworking_your_legacy/continue_a_legacy.2",
 								"method": "progress_roll",
 								"roll_options": [
 									{

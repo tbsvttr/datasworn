@@ -11,6 +11,8 @@ namespace Datasworn
     {
         Ability,
 
+        Condition,
+
         Danger,
 
         Denizen,
@@ -32,6 +34,8 @@ namespace Datasworn
             {
                 case "ability":
                     return EmbedOnlyType.Ability;
+                case "condition":
+                    return EmbedOnlyType.Condition;
                 case "danger":
                     return EmbedOnlyType.Danger;
                 case "denizen":
@@ -55,6 +59,9 @@ namespace Datasworn
             {
                 case EmbedOnlyType.Ability:
                     JsonSerializer.Serialize<string>(writer, "ability", options);
+                    return;
+                case EmbedOnlyType.Condition:
+                    JsonSerializer.Serialize<string>(writer, "condition", options);
                     return;
                 case EmbedOnlyType.Danger:
                     JsonSerializer.Serialize<string>(writer, "danger", options);

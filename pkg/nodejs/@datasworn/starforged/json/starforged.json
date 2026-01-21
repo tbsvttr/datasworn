@@ -53934,6 +53934,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/deed/vanguard.0.seek_safe_haven.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -54312,6 +54313,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/module/grappler.0.ready_grappler.0",
 												"method": "highest",
 												"roll_options": [
 													{
@@ -54572,6 +54574,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/module/internal_refit.1.draw_reserves.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -55459,6 +55462,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/module/shields.0.raise_shields.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -56128,6 +56132,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/archer.0.craft_projectiles.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -56421,6 +56426,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/artist.2.commemorate.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -57662,6 +57668,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/empath.0.read_heart.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -57973,6 +57980,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/firebrand.0.gather_energy.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -59074,6 +59082,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/looper.1.loop_back.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -59776,6 +59785,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/outcast.1.scrape_by.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -60251,6 +60261,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/shade.1.shroud_in_darkness.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -60561,6 +60572,7 @@
 									"trigger": {
 										"conditions": [
 											{
+												"_id": "asset.ability.move.condition:starforged/path/sniper.0.snipe_minor_foe.0",
 												"method": "player_choice",
 												"roll_options": [
 													{
@@ -62537,6 +62549,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/adventure/face_danger.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62547,6 +62560,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/face_danger.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62557,6 +62571,7 @@
 								"text": "With resolve, command, or sociability"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/face_danger.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62567,6 +62582,7 @@
 								"text": "With strength, endurance, or aggression"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/face_danger.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62577,6 +62593,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/face_danger.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62624,6 +62641,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/adventure/secure_an_advantage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62634,6 +62652,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/secure_an_advantage.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62644,6 +62663,7 @@
 								"text": "With resolve, command, or sociability"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/secure_an_advantage.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62654,6 +62674,7 @@
 								"text": "With strength, endurance, aggression"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/secure_an_advantage.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62664,6 +62685,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/secure_an_advantage.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62711,6 +62733,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/adventure/gather_information.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62760,6 +62783,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/adventure/compel.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62770,6 +62794,7 @@
 								"text": "Charm, pacify, encourage, or barter"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/compel.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62780,6 +62805,7 @@
 								"text": "Threaten or incite"
 							},
 							{
+								"_id": "move.condition:starforged/adventure/compel.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62853,6 +62879,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/adventure/check_your_gear.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62922,6 +62949,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/quest/swear_an_iron_vow.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -62998,6 +63026,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/quest/fulfill_your_vow.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -63092,6 +63121,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/connection/make_a_connection.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -63138,6 +63168,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/connection/develop_your_relationship.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -63206,6 +63237,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/connection/test_your_relationship.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -63256,6 +63288,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/connection/forge_a_bond.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -63324,6 +63357,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/exploration/undertake_an_expedition.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -63334,6 +63368,7 @@
 								"text": "Move at speed"
 							},
 							{
+								"_id": "move.condition:starforged/exploration/undertake_an_expedition.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -63344,6 +63379,7 @@
 								"text": "Keep under the radar"
 							},
 							{
+								"_id": "move.condition:starforged/exploration/undertake_an_expedition.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -63391,6 +63427,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/exploration/explore_a_waypoint.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -63898,6 +63935,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/exploration/finish_an_expedition.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -63943,6 +63981,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/exploration/set_a_course.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64012,6 +64051,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/combat/enter_the_fray.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64022,6 +64062,7 @@
 								"text": "On the move"
 							},
 							{
+								"_id": "move.condition:starforged/combat/enter_the_fray.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64032,6 +64073,7 @@
 								"text": "Facing off against your foe"
 							},
 							{
+								"_id": "move.condition:starforged/combat/enter_the_fray.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64042,6 +64084,7 @@
 								"text": "In the thick of it at close quarters"
 							},
 							{
+								"_id": "move.condition:starforged/combat/enter_the_fray.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64052,6 +64095,7 @@
 								"text": "Preparing to act against an unaware foe"
 							},
 							{
+								"_id": "move.condition:starforged/combat/enter_the_fray.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64099,6 +64143,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/combat/gain_ground.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64109,6 +64154,7 @@
 								"text": "In pursuit, fleeing, or maneuvering"
 							},
 							{
+								"_id": "move.condition:starforged/combat/gain_ground.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64119,6 +64165,7 @@
 								"text": "By charging boldly into action, coming to the aid of others, negotiating, or commanding"
 							},
 							{
+								"_id": "move.condition:starforged/combat/gain_ground.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64129,6 +64176,7 @@
 								"text": "Gaining leverage with force, powering through, or making a threat"
 							},
 							{
+								"_id": "move.condition:starforged/combat/gain_ground.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64139,6 +64187,7 @@
 								"text": "Hiding, preparing an ambush, or misdirecting"
 							},
 							{
+								"_id": "move.condition:starforged/combat/gain_ground.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64186,6 +64235,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/combat/react_under_fire.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64196,6 +64246,7 @@
 								"text": "In pursuit, fleeing, dodging, getting back into position, or taking cover"
 							},
 							{
+								"_id": "move.condition:starforged/combat/react_under_fire.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64206,6 +64257,7 @@
 								"text": "Remaining stalwart against fear or temptation"
 							},
 							{
+								"_id": "move.condition:starforged/combat/react_under_fire.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64216,6 +64268,7 @@
 								"text": "Blocking or diverting with force, or taking the hit"
 							},
 							{
+								"_id": "move.condition:starforged/combat/react_under_fire.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64226,6 +64279,7 @@
 								"text": "Moving into hiding or creating a distraction"
 							},
 							{
+								"_id": "move.condition:starforged/combat/react_under_fire.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64273,6 +64327,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/combat/strike.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64283,6 +64338,7 @@
 								"text": "Assault a foe at close quarters"
 							},
 							{
+								"_id": "move.condition:starforged/combat/strike.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64330,6 +64386,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/combat/clash.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64340,6 +64397,7 @@
 								"text": "Fight back against a foe at close quarters"
 							},
 							{
+								"_id": "move.condition:starforged/combat/clash.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64391,6 +64449,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/combat/take_decisive_action.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -64524,6 +64583,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/combat/battle.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64534,6 +64594,7 @@
 								"text": "At range, or using your speed and the environment to your advantage"
 							},
 							{
+								"_id": "move.condition:starforged/combat/battle.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64544,6 +64605,7 @@
 								"text": "Depending on your courage, leadership, or companions"
 							},
 							{
+								"_id": "move.condition:starforged/combat/battle.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64554,6 +64616,7 @@
 								"text": "In close to overpower your foe"
 							},
 							{
+								"_id": "move.condition:starforged/combat/battle.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64564,6 +64627,7 @@
 								"text": "Using trickery to befuddle your foe"
 							},
 							{
+								"_id": "move.condition:starforged/combat/battle.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64660,6 +64724,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/suffer/endure_harm.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -64764,6 +64829,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/suffer/endure_stress.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -64860,6 +64926,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/suffer/companion_takes_a_hit.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -64935,6 +65002,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/suffer/withstand_damage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65086,6 +65154,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/recover/sojourn.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65132,6 +65201,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/recover/heal.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65142,6 +65212,7 @@
 								"text": "Receive treatment from someone (not an ally)"
 							},
 							{
+								"_id": "move.condition:starforged/recover/heal.1",
 								"method": "lowest",
 								"roll_options": [
 									{
@@ -65156,6 +65227,7 @@
 								"text": "Mend your own wounds"
 							},
 							{
+								"_id": "move.condition:starforged/recover/heal.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65166,6 +65238,7 @@
 								"text": "Obtain treatment for a companion"
 							},
 							{
+								"_id": "move.condition:starforged/recover/heal.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65213,6 +65286,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/recover/hearten.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65259,6 +65333,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/recover/resupply.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65269,6 +65344,7 @@
 								"text": "Barter or make an appeal"
 							},
 							{
+								"_id": "move.condition:starforged/recover/resupply.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65279,6 +65355,7 @@
 								"text": "Threaten or seize"
 							},
 							{
+								"_id": "move.condition:starforged/recover/resupply.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65289,6 +65366,7 @@
 								"text": "Steal or swindle"
 							},
 							{
+								"_id": "move.condition:starforged/recover/resupply.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65336,6 +65414,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/recover/repair.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65346,6 +65425,7 @@
 								"text": "Make your own repairs, or direct a companion to make repairs"
 							},
 							{
+								"_id": "move.condition:starforged/recover/repair.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65416,6 +65496,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/threshold/face_death.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65462,6 +65543,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/threshold/face_desolation.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65508,6 +65590,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/threshold/overcome_destruction.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -65628,6 +65711,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/legacy/continue_a_legacy.0",
 								"method": "all",
 								"roll_options": [
 									{
@@ -66132,6 +66216,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/scene_challenge/face_danger.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66142,6 +66227,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/face_danger.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66152,6 +66238,7 @@
 								"text": "With resolve, command, or sociability"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/face_danger.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66162,6 +66249,7 @@
 								"text": "With strength, endurance, or aggression"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/face_danger.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66172,6 +66260,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/face_danger.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66219,6 +66308,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/scene_challenge/secure_an_advantage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66229,6 +66319,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/secure_an_advantage.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66239,6 +66330,7 @@
 								"text": "With resolve, command, or sociability"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/secure_an_advantage.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66249,6 +66341,7 @@
 								"text": "With strength, endurance, aggression"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/secure_an_advantage.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66259,6 +66352,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:starforged/scene_challenge/secure_an_advantage.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -66310,6 +66404,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:starforged/scene_challenge/finish_the_scene.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{

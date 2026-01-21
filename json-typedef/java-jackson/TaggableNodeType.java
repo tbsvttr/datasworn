@@ -20,6 +20,9 @@ public enum TaggableNodeType {
     @JsonProperty("atlas_entry")
     ATLAS_ENTRY,
 
+    @JsonProperty("condition")
+    CONDITION,
+
     @JsonProperty("condition_meter")
     CONDITION_METER,
 

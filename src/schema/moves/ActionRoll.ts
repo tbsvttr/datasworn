@@ -103,9 +103,20 @@ export const MoveNoRoll = Move(
 
 export type MoveNoRoll = Static<typeof MoveNoRoll>
 
+// No-roll triggers need a separate enhancement condition type to exclude _id
+export const TriggerNoRollConditionEnhancement = TriggerConditionEnhancement(
+	TriggerNoRollCondition,
+	{
+		$id: 'TriggerNoRollConditionEnhancement',
+		title: 'TriggerNoRollConditionEnhancement'
+	}
+)
+export type TriggerNoRollConditionEnhancement = Static<
+	typeof TriggerNoRollConditionEnhancement
+>
+
 export const TriggerNoRollEnhancement = TriggerEnhancement(
-	// triggers without rolls don't need their own condition enhancement type
-	Type.Array(Type.Ref(TriggerNoRollCondition)),
+	Type.Array(Type.Ref(TriggerNoRollConditionEnhancement)),
 	{
 		$id: 'TriggerNoRollEnhancement',
 		title: 'TriggerNoRollEnhancement'

@@ -7,6 +7,9 @@ namespace Datasworn
 {
     public class TriggerProgressRollCondition
     {
+        [JsonPropertyName("_id")]
+        public AnyMoveConditionId Id { get; set; }
+
         [JsonPropertyName("method")]
         public ProgressRollMethod Method { get; set; }
 

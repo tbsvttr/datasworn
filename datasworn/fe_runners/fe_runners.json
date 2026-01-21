@@ -28131,6 +28131,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/adventure/face_danger.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28141,6 +28142,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/face_danger.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28151,6 +28153,7 @@
 								"text": "With resolve, command, or sociability"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/face_danger.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28161,6 +28164,7 @@
 								"text": "With strength, endurance, or aggression"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/face_danger.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28171,6 +28175,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/face_danger.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28218,6 +28223,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/adventure/secure_an_advantage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28228,6 +28234,7 @@
 								"text": "With speed, mobility, or agility"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/secure_an_advantage.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28238,6 +28245,7 @@
 								"text": "With resolve, command, or sociability"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/secure_an_advantage.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28248,6 +28256,7 @@
 								"text": "With strength, endurance, aggression"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/secure_an_advantage.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28258,6 +28267,7 @@
 								"text": "With deception, stealth, or trickery"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/secure_an_advantage.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28305,6 +28315,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/adventure/gather_information.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28354,6 +28365,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/adventure/compel.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28364,6 +28376,7 @@
 								"text": "Charm, pacify, encourage, or barter"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/compel.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28374,6 +28387,7 @@
 								"text": "Threaten or incite"
 							},
 							{
+								"_id": "move.condition:fe_runners/adventure/compel.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28470,6 +28484,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/quest/swear_an_iron_vow.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28546,6 +28561,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/quest/fulfill_your_vow.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -28640,6 +28656,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/connection/make_a_connection.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28686,6 +28703,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/connection/develop_your_relationship.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28754,6 +28772,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/connection/test_your_relationship.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28804,6 +28823,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/connection/forge_a_bond.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -28872,6 +28892,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/combat/enter_the_fray.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28882,6 +28903,7 @@
 								"text": "On the move"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/enter_the_fray.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28892,6 +28914,7 @@
 								"text": "Facing off against your foe"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/enter_the_fray.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28902,6 +28925,7 @@
 								"text": "In the thick of it at close quarters"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/enter_the_fray.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28912,6 +28936,7 @@
 								"text": "Preparing to act against an unaware foe"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/enter_the_fray.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28959,6 +28984,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/combat/gain_ground.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28969,6 +28995,7 @@
 								"text": "In pursuit, fleeing, or maneuvering"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/gain_ground.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28979,6 +29006,7 @@
 								"text": "By charging boldly into action, coming to the aid of others, negotiating, or commanding"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/gain_ground.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28989,6 +29017,7 @@
 								"text": "Gaining leverage with force, powering through, or making a threat"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/gain_ground.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -28999,6 +29028,7 @@
 								"text": "Hiding, preparing an ambush, or misdirecting"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/gain_ground.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29046,6 +29076,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/combat/react_under_fire.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29056,6 +29087,7 @@
 								"text": "In pursuit, fleeing, dodging, getting back into position, or taking cover"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/react_under_fire.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29066,6 +29098,7 @@
 								"text": "Remaining stalwart against fear or temptation"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/react_under_fire.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29076,6 +29109,7 @@
 								"text": "Blocking or diverting with force, or taking the hit"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/react_under_fire.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29086,6 +29120,7 @@
 								"text": "Moving into hiding or creating a distraction"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/react_under_fire.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29133,6 +29168,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/combat/strike.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29143,6 +29179,7 @@
 								"text": "Assault a foe at close quarters"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/strike.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29190,6 +29227,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/combat/clash.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29200,6 +29238,7 @@
 								"text": "Fight back against a foe at close quarters"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/clash.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29251,6 +29290,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/combat/take_decisive_action.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -29358,6 +29398,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/combat/automate_attack.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29368,6 +29409,7 @@
 								"text": "At range, or using your speed and the environment to your advantage"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/automate_attack.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29378,6 +29420,7 @@
 								"text": "Depending on your courage, leadership, or companions"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/automate_attack.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29388,6 +29431,7 @@
 								"text": "In close to overpower your foe"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/automate_attack.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29398,6 +29442,7 @@
 								"text": "Using trickery to befuddle your foe"
 							},
 							{
+								"_id": "move.condition:fe_runners/combat/automate_attack.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29498,6 +29543,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/exploration/infiltrate_segment.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -29543,6 +29589,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/exploration/map_route.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29553,6 +29600,7 @@
 								"text": "Travel quickly"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/map_route.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29563,6 +29611,7 @@
 								"text": "Setup relays, and extra bounce locations"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/map_route.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29573,6 +29622,7 @@
 								"text": "Spray and pray tactics"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/map_route.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29620,6 +29670,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/exploration/gain_entry.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29630,6 +29681,7 @@
 								"text": "Find a backdoor of vulnerability to the system"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/gain_entry.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29640,6 +29692,7 @@
 								"text": "Social engineering, faking ID"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/gain_entry.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29687,6 +29740,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/exploration/explore_the_system.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29697,6 +29751,7 @@
 								"text": "With haste"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/explore_the_system.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29707,6 +29762,7 @@
 								"text": "With stealth or trickery"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/explore_the_system.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -29906,6 +29962,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/exploration/locate_your_objective.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -30223,6 +30280,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/exploration/disconnect.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30233,6 +30291,7 @@
 								"text": "Being chased, evading"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/disconnect.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30243,6 +30302,7 @@
 								"text": "Forced disconnect"
 							},
 							{
+								"_id": "move.condition:fe_runners/exploration/disconnect.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30313,6 +30373,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/artifact/develop_an_artifact.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30359,6 +30420,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/artifact/utilize_an_artifact.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30369,6 +30431,7 @@
 								"text": "When speed is of the essence"
 							},
 							{
+								"_id": "move.condition:fe_runners/artifact/utilize_an_artifact.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30379,6 +30442,7 @@
 								"text": "When utilizing social engineering"
 							},
 							{
+								"_id": "move.condition:fe_runners/artifact/utilize_an_artifact.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30389,6 +30453,7 @@
 								"text": "When needing to use brute force"
 							},
 							{
+								"_id": "move.condition:fe_runners/artifact/utilize_an_artifact.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30399,6 +30464,7 @@
 								"text": "When trying to go undetected"
 							},
 							{
+								"_id": "move.condition:fe_runners/artifact/utilize_an_artifact.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30446,6 +30512,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/artifact/reverse_engineer_an_artifact.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30541,6 +30608,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/suffer/endure_harm.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -30645,6 +30713,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/suffer/endure_stress.0",
 								"method": "highest",
 								"roll_options": [
 									{
@@ -30741,6 +30810,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/suffer/companion_takes_a_hit.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30816,6 +30886,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/suffer/withstand_damage.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -30966,6 +31037,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/recover/sojourn.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31012,6 +31084,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/recover/heal.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31022,6 +31095,7 @@
 								"text": "Receive treatment from someone (not an ally)"
 							},
 							{
+								"_id": "move.condition:fe_runners/recover/heal.1",
 								"method": "lowest",
 								"roll_options": [
 									{
@@ -31036,6 +31110,7 @@
 								"text": "Mend your own wounds"
 							},
 							{
+								"_id": "move.condition:fe_runners/recover/heal.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31046,6 +31121,7 @@
 								"text": "Obtain treatment for a companion"
 							},
 							{
+								"_id": "move.condition:fe_runners/recover/heal.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31093,6 +31169,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/recover/hearten.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31139,6 +31216,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/recover/repair.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31149,6 +31227,7 @@
 								"text": "Make your own repairs, or direct a companion to make repairs"
 							},
 							{
+								"_id": "move.condition:fe_runners/recover/repair.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31196,6 +31275,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/recover/recharge.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31206,6 +31286,7 @@
 								"text": "If bartering or asking for juice"
 							},
 							{
+								"_id": "move.condition:fe_runners/recover/recharge.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31216,6 +31297,7 @@
 								"text": "Forcibly patching into a power source"
 							},
 							{
+								"_id": "move.condition:fe_runners/recover/recharge.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31226,6 +31308,7 @@
 								"text": "Secretively draining power from an existing source"
 							},
 							{
+								"_id": "move.condition:fe_runners/recover/recharge.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31296,6 +31379,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/threshold/face_death.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31342,6 +31426,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/threshold/face_desolation.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31388,6 +31473,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/threshold/overcome_destruction.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -31508,6 +31594,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:fe_runners/legacy/continue_a_legacy.0",
 								"method": "all",
 								"roll_options": [
 									{

@@ -9,6 +9,9 @@ import java.util.List;
 
 @JsonSerialize
 public class TriggerProgressRollCondition {
+    @JsonProperty("_id")
+    private AnyMoveConditionId id;
+
     @JsonProperty("method")
     private ProgressRollMethod method;
 
@@ -24,6 +27,20 @@ public class TriggerProgressRollCondition {
     private MarkdownString text;
 
     public TriggerProgressRollCondition() {
+    }
+
+    /**
+     * Getter for id.<p>
+     */
+    public AnyMoveConditionId getId() {
+        return id;
+    }
+
+    /**
+     * Setter for id.<p>
+     */
+    public void setId(AnyMoveConditionId id) {
+        this.id = id;
     }
 
     /**

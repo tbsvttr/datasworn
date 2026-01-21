@@ -4,11 +4,8 @@ using System.Text.Json.Serialization;
 
 namespace Datasworn
 {
-    public class TriggerNoRollCondition
+    public class TriggerNoRollConditionEnhancement
     {
-        [JsonPropertyName("_id")]
-        public AnyMoveConditionId Id { get; set; }
-
         [JsonPropertyName("by")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]
         public TriggerBy? By { get; set; }

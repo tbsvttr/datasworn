@@ -10978,6 +10978,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/delve_the_depths.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -10988,6 +10989,7 @@
 								"text": "With haste"
 							},
 							{
+								"_id": "move.condition:delve/delve/delve_the_depths.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -10998,6 +11000,7 @@
 								"text": "With stealth or trickery"
 							},
 							{
+								"_id": "move.condition:delve/delve/delve_the_depths.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11458,6 +11461,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/check_your_gear.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11508,6 +11512,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/locate_your_objective.0",
 								"method": "progress_roll",
 								"roll_options": [
 									{
@@ -11553,6 +11558,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11563,6 +11569,7 @@
 								"text": "Find the fastest way out"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.1",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11573,6 +11580,7 @@
 								"text": "Steel yourself against the horrors of this place"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.2",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11583,6 +11591,7 @@
 								"text": "Fight your way out"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.3",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11593,6 +11602,7 @@
 								"text": "Keep out of sight"
 							},
 							{
+								"_id": "move.condition:delve/delve/escape_the_depths.4",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -11819,6 +11829,7 @@
 					"trigger": {
 						"conditions": [
 							{
+								"_id": "move.condition:delve/failure/learn_from_your_failures.0",
 								"method": "player_choice",
 								"roll_options": [
 									{

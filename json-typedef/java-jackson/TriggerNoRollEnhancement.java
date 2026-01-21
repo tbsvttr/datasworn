@@ -12,7 +12,7 @@ import java.util.List;
 @JsonSerialize
 public class TriggerNoRollEnhancement {
     @JsonProperty("conditions")
-    private List<TriggerNoRollCondition> conditions;
+    private List<TriggerNoRollConditionEnhancement> conditions;
 
     public TriggerNoRollEnhancement() {
     }
@@ -21,7 +21,7 @@ public class TriggerNoRollEnhancement {
      * Getter for conditions.<p>
      * Trigger conditions added to the enhanced move.
      */
-    public List<TriggerNoRollCondition> getConditions() {
+    public List<TriggerNoRollConditionEnhancement> getConditions() {
         return conditions;
     }
 
@@ -29,7 +29,7 @@ public class TriggerNoRollEnhancement {
      * Setter for conditions.<p>
      * Trigger conditions added to the enhanced move.
      */
-    public void setConditions(List<TriggerNoRollCondition> conditions) {
+    public void setConditions(List<TriggerNoRollConditionEnhancement> conditions) {
         this.conditions = conditions;
     }
 }

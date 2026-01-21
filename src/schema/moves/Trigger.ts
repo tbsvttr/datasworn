@@ -41,6 +41,7 @@ export const TriggerBy = Type.Object(
 export type TriggerBy = Static<typeof TriggerBy>
 
 const TriggerConditionBase = Type.Object({
+	_id: Utils.Computed(Type.Ref('AnyMoveConditionId')),
 	text: Type.Optional(
 		Type.Ref(Text.MarkdownString, {
 			description:
@@ -95,7 +96,7 @@ export function TriggerConditionEnhancement<T extends TTriggerCondition>(
 
 	type TNullableRollOptions = Omit<
 		T['properties'],
-		'roll_options' | 'method'
+		'roll_options' | 'method' | '_id'
 	> & {
 		roll_options: RollOptions extends TNull | Utils.TNullable
 			? RollOptions
@@ -122,8 +123,11 @@ export function TriggerConditionEnhancement<T extends TTriggerCondition>(
 				default: null
 			})
 
+	// Exclude _id from enhancement conditions as they're nested within asset abilities
+	// and not directly assignable IDs in the current ID system
+	const { _id, ...baseProps } = triggerCondition.properties
 	const nuProps = {
-		...triggerCondition.properties,
+		...baseProps,
 		roll_options,
 		method
 	} as TNullableRollOptions

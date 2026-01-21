@@ -7,6 +7,9 @@ namespace Datasworn
 {
     public class TriggerSpecialTrackCondition
     {
+        [JsonPropertyName("_id")]
+        public AnyMoveConditionId Id { get; set; }
+
         [JsonPropertyName("method")]
         public SpecialTrackRollMethod Method { get; set; }
 
