@@ -3,6 +3,8 @@
 	"version": "0.1.0",
 	"description": "Datasworn JSON data for Ancient Wonders, a Starforged expansion by Ludic Pen.",
 	"files": [
+		"index.js",
+		"index.d.ts",
 		"json",
 		"migration"
 	],
@@ -41,5 +43,15 @@
 			"url": "https://www.ludicpen.com/"
 		}
 	],
-	"private": true
+	"private": true,
+	"type": "module",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./json/ancient_wonders.json": "./json/ancient_wonders.json"
+	}
 }

@@ -4,6 +4,8 @@
 	"private": true,
 	"description": "Datasworn JSON data for the Starforged: Sundered Isles expansion.",
 	"files": [
+		"index.js",
+		"index.d.ts",
 		"json",
 		"migration"
 	],
@@ -42,5 +44,15 @@
 			"email": "r.sekouri@gmail.com",
 			"url": "https://github.com/rsek"
 		}
-	]
+	],
+	"type": "module",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./json/sundered_isles.json": "./json/sundered_isles.json"
+	}
 }

@@ -3,6 +3,8 @@
 	"version": "0.1.0",
 	"description": "Datasworn JSON data for the Ironsworn RPG.",
 	"files": [
+		"index.js",
+		"index.d.ts",
 		"json",
 		"migration"
 	],
@@ -40,5 +42,15 @@
 			"url": "https://github.com/rsek"
 		}
 	],
-	"private": false
+	"private": false,
+	"type": "module",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./json/classic.json": "./json/classic.json"
+	}
 }

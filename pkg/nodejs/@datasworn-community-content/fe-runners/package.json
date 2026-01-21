@@ -3,6 +3,8 @@
 	"version": "0.1.0",
 	"description": "Datasworn JSON data for Fe-Runners, a cyberpunk Starforged expansion by Craig Smith.",
 	"files": [
+		"index.js",
+		"index.d.ts",
 		"json",
 		"migration"
 	],
@@ -42,5 +44,15 @@
 			"url": "https://zombiecraig.itch.io/"
 		}
 	],
-	"private": true
+	"private": true,
+	"type": "module",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./json/fe_runners.json": "./json/fe_runners.json"
+	}
 }
