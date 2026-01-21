@@ -1,3 +1,5 @@
-# Warning!
+# Glossary
 
-These are out of date and pending revision. If you have additional game terms/mechanics you'd like to see defined here, please open an issue for it. :)
+Game term definitions from the Dataforged legacy format.
+
+> **Note:** This content is from the legacy Dataforged format and may be outdated. Contributions welcome via GitHub issues.

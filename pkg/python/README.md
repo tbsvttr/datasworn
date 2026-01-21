@@ -1,6 +1,6 @@
 # Datasworn Python Packages
 
-Python/Pydantic packages for working with [Datasworn](https://github.com/rsek/datasworn) data.
+Python/Pydantic packages for working with [Datasworn](https://github.com/tbsvttr/datasworn) data.
 
 ## Packages
 
@@ -111,4 +111,4 @@ uv run pytest tests/ -v
 
 ## License
 
-See the main [Datasworn repository](https://github.com/rsek/datasworn) for license information.
+See the main [Datasworn repository](https://github.com/tbsvttr/datasworn) for license information.

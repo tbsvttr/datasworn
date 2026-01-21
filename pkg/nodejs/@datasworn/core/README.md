@@ -1,8 +1,8 @@
-# Datasworn v0.0.10
+# @datasworn/core
 
-Traversal utilities, JSON schema, and Typescript declarations common to Datasworn packages.
+Traversal utilities, JSON schema, and TypeScript declarations for Datasworn packages.
 
-This is a pre-release package, provided for developer feedback. It will almost certainly receive breaking changes even on minor versions.
+This is a pre-release package. Breaking changes may occur on minor versions until v1.0.
 
 
 
@@ -64,8 +64,17 @@ IdParser.datasworn = datasworn
 The simplest way is to use the `IdParser.get` and `IdParser.getMatches` static methods. They will attempt to infer the type from the ID.
 
 ```typescript
-const oracleRollable = IdParser.get('starforged/oracles/core/action')
+// Look up a primary object
+const move = IdParser.get('move:starforged/adventure/face_danger')
 
+// Look up an embedded object (oracle rollable)
+const oracleRollable = IdParser.get('oracle_rollable:starforged/core/action')
+
+// Look up a trigger condition (new in v0.0.6)
+const condition = IdParser.get('move.condition:starforged/adventure/face_danger.0')
+
+// Look up an embedded move in an asset ability
+const embeddedMove = IdParser.get('asset.ability.move:starforged/path/archer.0.craft_projectiles')
 ```
 
 Note that for type safety, `IdParser.get` will throw an error if you call it on a wildcard ID string. This is because wildcard IDs may return multiple results. Use `IdParser.getMatches` for wildcard IDs.

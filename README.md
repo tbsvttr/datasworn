@@ -114,6 +114,7 @@ This fork continues active development while the original repository is inactive
 | Lodestar moves (Ironsworn Classic) | Added |
 | Python/Pydantic packages | Added |
 | Rust/JTD type generation ([#78](https://github.com/rsek/datasworn/issues/78)) | Fixed |
+| Trigger condition IDs | Added (v0.0.6) |
 
 ### Upstream Compatibility
 
@@ -224,6 +225,22 @@ datasworn/
     └── viewer/        # Interactive data browser
 ```
 
+## ID System
+
+Every Datasworn object has a unique `_id` property for referencing. ID formats:
+
+| Type | Example |
+| ---- | ------- |
+| Move | `move:starforged/adventure/face_danger` |
+| Oracle | `oracle_rollable:starforged/core/action` |
+| Asset | `asset:starforged/path/empath` |
+| Asset Ability | `asset.ability:starforged/path/empath.0` |
+| Trigger Condition | `move.condition:starforged/adventure/face_danger.0` |
+| Embedded Move | `asset.ability.move:starforged/path/archer.0.craft_projectiles` |
+| Oracle Row | `oracle_rollable.row:starforged/core/action.1-2` |
+
+The `IdParser` class in `@datasworn/core` provides utilities for parsing, validating, and looking up objects by ID. See [pkg/nodejs/@datasworn/core/README.md](pkg/nodejs/@datasworn/core/README.md) for usage.
+
 ## Design Goals
 
 - Language-agnostic JSON schema as source of truth
@@ -231,6 +248,7 @@ datasworn/
 - Type definitions for multiple languages
 - Interchange format for homebrew/3rd party content
 - Localization-friendly structure
+- Every object addressable via unique ID
 
 ## Licensing
 
