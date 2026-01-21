@@ -668,3 +668,86 @@ describe('ID Consistency', () => {
 		}
 	})
 })
+
+describe('Typed Content Package Exports', () => {
+	const PKG_DIR = path.join(ROOT, 'pkg/nodejs')
+
+	// Content packages with their expected Datasworn types
+	const contentPackages = [
+		{ scope: '@datasworn', name: 'ironsworn-classic', id: 'classic', type: 'Ruleset' },
+		{ scope: '@datasworn', name: 'ironsworn-classic-delve', id: 'delve', type: 'Expansion' },
+		{ scope: '@datasworn', name: 'starforged', id: 'starforged', type: 'Ruleset' },
+		{ scope: '@datasworn', name: 'sundered-isles', id: 'sundered_isles', type: 'Expansion' },
+		{ scope: '@datasworn-community-content', name: 'ancient-wonders', id: 'ancient_wonders', type: 'Expansion' },
+		{ scope: '@datasworn-community-content', name: 'fe-runners', id: 'fe_runners', type: 'Expansion' },
+		{ scope: '@datasworn-community-content', name: 'starsmith', id: 'starsmith', type: 'Expansion' },
+	]
+
+	for (const pkg of contentPackages) {
+		const pkgPath = path.join(PKG_DIR, pkg.scope, pkg.name)
+
+		describe(`${pkg.scope}/${pkg.name}`, () => {
+			test('has index.js file', () => {
+				const indexPath = path.join(pkgPath, 'index.js')
+				expect(existsSync(indexPath)).toBe(true)
+
+				const content = readFileSync(indexPath, 'utf-8')
+				// Verify it exports from the correct JSON file
+				expect(content).toContain(`./json/${pkg.id}.json`)
+				// Verify it has both default and named exports
+				expect(content).toContain('export { default }')
+				expect(content).toContain(`export { default as ${pkg.id} }`)
+			})
+
+			test('has index.d.ts file with correct type', () => {
+				const dtsPath = path.join(pkgPath, 'index.d.ts')
+				expect(existsSync(dtsPath)).toBe(true)
+
+				const content = readFileSync(dtsPath, 'utf-8')
+				// Verify it imports from @datasworn/core
+				expect(content).toContain("import type { Datasworn } from '@datasworn/core'")
+				// Verify it exports the correct Datasworn type
+				expect(content).toContain(`Datasworn.${pkg.type}`)
+				// Verify named export
+				expect(content).toContain(`export { data as ${pkg.id} }`)
+			})
+
+			test('package.json has correct module configuration', () => {
+				const packageJsonPath = path.join(pkgPath, 'package.json')
+				const packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf-8'))
+
+				// Verify ESM configuration
+				expect(packageJson.type).toBe('module')
+				expect(packageJson.main).toBe('index.js')
+				expect(packageJson.types).toBe('index.d.ts')
+
+				// Verify exports field
+				expect(packageJson.exports).toBeDefined()
+				expect(packageJson.exports['.']).toBeDefined()
+				expect(packageJson.exports['.'].types).toBe('./index.d.ts')
+				expect(packageJson.exports['.'].default).toBe('./index.js')
+
+				// Verify backwards-compatible JSON access
+				expect(packageJson.exports[`./json/${pkg.id}.json`]).toBe(`./json/${pkg.id}.json`)
+
+				// Verify files array includes index files
+				expect(packageJson.files).toContain('index.js')
+				expect(packageJson.files).toContain('index.d.ts')
+			})
+		})
+	}
+
+	test('all index.d.ts files have valid TypeScript syntax', () => {
+		// Verify all index.d.ts files are valid by checking they can be parsed
+		for (const pkg of contentPackages) {
+			const dtsPath = path.join(PKG_DIR, pkg.scope, pkg.name, 'index.d.ts')
+			const content = readFileSync(dtsPath, 'utf-8')
+
+			// Basic syntax checks
+			expect(content).toMatch(/^import type \{ Datasworn \} from '@datasworn\/core';/m)
+			expect(content).toMatch(/^declare const data: Datasworn\.(Ruleset|Expansion);/m)
+			expect(content).toMatch(/^export default data;/m)
+			expect(content).toMatch(/^export \{ data as \w+ \};/m)
+		}
+	})
+})
