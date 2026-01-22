@@ -241,3 +241,21 @@ function formatLabel(key: string): string {
 function getIcon(type: string): string {
 	return ICONS[type] || ICONS.default
 }
+
+export function expandAllNodes(container: HTMLElement): void {
+	container.querySelectorAll('.tree-toggle:not(.empty)').forEach((toggle) => {
+		toggle.classList.add('expanded')
+	})
+	container.querySelectorAll('.tree-children').forEach((children) => {
+		children.classList.remove('collapsed')
+	})
+}
+
+export function collapseAllNodes(container: HTMLElement): void {
+	container.querySelectorAll('.tree-toggle').forEach((toggle) => {
+		toggle.classList.remove('expanded')
+	})
+	container.querySelectorAll('.tree-children').forEach((children) => {
+		children.classList.add('collapsed')
+	})
+}

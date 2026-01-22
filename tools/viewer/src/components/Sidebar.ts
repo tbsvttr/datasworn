@@ -1,9 +1,25 @@
 import { state } from '../state'
 import { getRulesetDisplayName } from '../utils/loader'
 import { searchItems, type SearchResult } from '../utils/search'
-import { createTree } from './Tree'
+import { createTree, expandAllNodes, collapseAllNodes } from './Tree'
 import { escapeHtml } from '../utils/html'
 import { formatType } from '../utils/formatting'
+
+function getTheme(): 'dark' | 'light' {
+	return (localStorage.getItem('theme') as 'dark' | 'light') || 'dark'
+}
+
+function setTheme(theme: 'dark' | 'light'): void {
+	localStorage.setItem('theme', theme)
+	if (theme === 'light') {
+		document.documentElement.setAttribute('data-theme', 'light')
+	} else {
+		document.documentElement.removeAttribute('data-theme')
+	}
+}
+
+// Initialize theme on load
+setTheme(getTheme())
 
 export function createSidebar(container: HTMLElement): void {
 	const sidebar = document.createElement('div')
@@ -21,6 +37,11 @@ export function createSidebar(container: HTMLElement): void {
 		<div class="search-container">
 			<input type="text" id="search-input" placeholder="Search... (press /)" autocomplete="off" />
 			<button id="search-clear" class="search-clear" aria-label="Clear search">×</button>
+		</div>
+		<div class="sidebar-toolbar">
+			<button id="expand-all" class="toolbar-btn" title="Expand all">▼ Expand</button>
+			<button id="collapse-all" class="toolbar-btn" title="Collapse all">▶ Collapse</button>
+			<button id="theme-toggle" class="toolbar-btn" title="Toggle theme">☀ Light</button>
 		</div>
 	`
 	sidebar.appendChild(header)
@@ -50,6 +71,32 @@ export function createSidebar(container: HTMLElement): void {
 
 	// Tree is created inside tree container
 	createTree(treeContainer)
+
+	// Toolbar buttons
+	const expandAllBtn = header.querySelector('#expand-all') as HTMLButtonElement
+	const collapseAllBtn = header.querySelector('#collapse-all') as HTMLButtonElement
+	const themeToggleBtn = header.querySelector('#theme-toggle') as HTMLButtonElement
+
+	expandAllBtn.addEventListener('click', () => {
+		expandAllNodes(treeContainer)
+	})
+
+	collapseAllBtn.addEventListener('click', () => {
+		collapseAllNodes(treeContainer)
+	})
+
+	// Update theme button text based on current theme
+	const updateThemeButton = () => {
+		const isDark = getTheme() === 'dark'
+		themeToggleBtn.textContent = isDark ? '☀ Light' : '🌙 Dark'
+	}
+	updateThemeButton()
+
+	themeToggleBtn.addEventListener('click', () => {
+		const newTheme = getTheme() === 'dark' ? 'light' : 'dark'
+		setTheme(newTheme)
+		updateThemeButton()
+	})
 
 	let searchTimeout: ReturnType<typeof setTimeout> | null = null
 

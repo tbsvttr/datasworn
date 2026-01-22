@@ -15,6 +15,20 @@
 	--miss: #ef4444;
 }
 
+/* Light theme */
+[data-theme="light"] {
+	--bg-primary: #f5f5f5;
+	--bg-secondary: #ffffff;
+	--bg-tertiary: #e8e8e8;
+	--bg-card: #ffffff;
+	--text-primary: #1a1a2e;
+	--text-secondary: #555;
+	--text-muted: #888;
+	--accent: #d63350;
+	--accent-hover: #e94560;
+	--border: #ddd;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -72,6 +86,37 @@ html, body {
 
 .sidebar-header select:focus {
 	outline: none;
+	border-color: var(--accent);
+}
+
+/* Toolbar */
+.sidebar-toolbar {
+	display: flex;
+	gap: 8px;
+	margin-top: 12px;
+}
+
+.toolbar-btn {
+	flex: 1;
+	padding: 6px 10px;
+	background: var(--bg-tertiary);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	color: var(--text-secondary);
+	font-size: 12px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+
+.toolbar-btn:hover {
+	background: var(--bg-card);
+	color: var(--text-primary);
+	border-color: var(--accent);
+}
+
+.toolbar-btn.active {
+	background: var(--accent);
+	color: white;
 	border-color: var(--accent);
 }
 
