@@ -55,8 +55,9 @@ Available packages in `pkg/nodejs/`:
 
 - `@datasworn/core` - TypeScript typings and JSON schema
 - `@datasworn/starforged` - Starforged data
-- `@datasworn/ironsworn-classic` - Classic Ironsworn data (includes Lodestar moves)
+- `@datasworn/ironsworn-classic` - Classic Ironsworn data
 - `@datasworn/ironsworn-classic-delve` - Delve expansion data
+- `@datasworn/ironsworn-classic-lodestar` - Lodestar expansion data (moves only)
 
 ### Python
 
@@ -87,6 +88,7 @@ JSON schemas and data are in the [datasworn](datasworn) directory.
 | [`@datasworn/core`](https://www.npmjs.com/package/@datasworn/core) | TypeScript typings and JSON schema |
 | [`@datasworn/ironsworn-classic`](https://www.npmjs.com/package/@datasworn/ironsworn-classic) | Original *Ironsworn* rulebook data |
 | [`@datasworn/ironsworn-classic-delve`](https://www.npmjs.com/package/@datasworn/ironsworn-classic-delve) | *Ironsworn: Delve* expansion data |
+| [`@datasworn/ironsworn-classic-lodestar`](https://www.npmjs.com/package/@datasworn/ironsworn-classic-lodestar) | *Ironsworn: Lodestar* expansion data (moves only) |
 | [`@datasworn/starforged`](https://www.npmjs.com/package/@datasworn/starforged) | *Ironsworn: Starforged* data, SVG icons, WEBP images |
 
 ### Community Content (not published to npm)

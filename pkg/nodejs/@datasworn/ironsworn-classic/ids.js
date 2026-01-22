@@ -10,8 +10,7 @@ export const MoveIds = {
 		resupply: 'move:classic/adventure/resupply',
 		make_camp: 'move:classic/adventure/make_camp',
 		undertake_a_journey: 'move:classic/adventure/undertake_a_journey',
-		reach_your_destination: 'move:classic/adventure/reach_your_destination',
-		follow_a_path: 'move:classic/adventure/follow_a_path'
+		reach_your_destination: 'move:classic/adventure/reach_your_destination'
 	},
 	relationship: {
 		compel: 'move:classic/relationship/compel',
@@ -49,12 +48,6 @@ export const MoveIds = {
 	fate: {
 		pay_the_price: 'move:classic/fate/pay_the_price',
 		ask_the_oracle: 'move:classic/fate/ask_the_oracle'
-	},
-	scene_challenge: {
-		begin_the_scene: 'move:classic/scene_challenge/begin_the_scene',
-		face_danger: 'move:classic/scene_challenge/face_danger',
-		secure_an_advantage: 'move:classic/scene_challenge/secure_an_advantage',
-		finish_the_scene: 'move:classic/scene_challenge/finish_the_scene'
 	}
 }
 

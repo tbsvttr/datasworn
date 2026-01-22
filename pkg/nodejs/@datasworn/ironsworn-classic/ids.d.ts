@@ -10,7 +10,6 @@ export declare const MoveIds: {
 		readonly make_camp: 'move:classic/adventure/make_camp'
 		readonly undertake_a_journey: 'move:classic/adventure/undertake_a_journey'
 		readonly reach_your_destination: 'move:classic/adventure/reach_your_destination'
-		readonly follow_a_path: 'move:classic/adventure/follow_a_path'
 	}
 	readonly relationship: {
 		readonly compel: 'move:classic/relationship/compel'
@@ -48,12 +47,6 @@ export declare const MoveIds: {
 	readonly fate: {
 		readonly pay_the_price: 'move:classic/fate/pay_the_price'
 		readonly ask_the_oracle: 'move:classic/fate/ask_the_oracle'
-	}
-	readonly scene_challenge: {
-		readonly begin_the_scene: 'move:classic/scene_challenge/begin_the_scene'
-		readonly face_danger: 'move:classic/scene_challenge/face_danger'
-		readonly secure_an_advantage: 'move:classic/scene_challenge/secure_an_advantage'
-		readonly finish_the_scene: 'move:classic/scene_challenge/finish_the_scene'
 	}
 }
 

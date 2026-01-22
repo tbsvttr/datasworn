@@ -16,6 +16,7 @@ import type { Datasworn } from '../pkg-core/index.js'
 // Import the typed exports - these come pre-typed from the packages
 import { classic } from '../../pkg/nodejs/@datasworn/ironsworn-classic/index.js'
 import { delve } from '../../pkg/nodejs/@datasworn/ironsworn-classic-delve/index.js'
+import { lodestar } from '../../pkg/nodejs/@datasworn/ironsworn-classic-lodestar/index.js'
 import { starforged } from '../../pkg/nodejs/@datasworn/starforged/index.js'
 import { sundered_isles } from '../../pkg/nodejs/@datasworn/sundered-isles/index.js'
 import { ancient_wonders } from '../../pkg/nodejs/@datasworn-community-content/ancient-wonders/index.js'
@@ -38,6 +39,7 @@ const starforgedRuleset: Datasworn.Ruleset = starforged
 
 // Expansions
 const delveExpansion: Datasworn.Expansion = delve
+const lodestarExpansion: Datasworn.Expansion = lodestar
 const sunderedIslesExpansion: Datasworn.Expansion = sundered_isles
 const ancientWondersExpansion: Datasworn.Expansion = ancient_wonders
 const feRunnersExpansion: Datasworn.Expansion = fe_runners
@@ -51,6 +53,7 @@ type DatastoreEntry = [Datasworn.Ruleset | Datasworn.Expansion, number]
 const BUILTIN_SOURCES: DatastoreEntry[] = [
 	[classicRuleset, 0],
 	[delveExpansion, 1],
+	[lodestarExpansion, 1],
 	[starforgedRuleset, 0],
 	[sunderedIslesExpansion, 1],
 	[ancientWondersExpansion, 2],
@@ -65,6 +68,7 @@ console.log(`- ${starforged._id}: ${starforged.title}`)
 
 console.log('\nExpansions:')
 console.log(`- ${delve._id}: ${delve.title} (ruleset: ${delve.ruleset})`)
+console.log(`- ${lodestar._id}: ${lodestar.title} (ruleset: ${lodestar.ruleset})`)
 console.log(`- ${sundered_isles._id}: ${sundered_isles.title} (ruleset: ${sundered_isles.ruleset})`)
 console.log(`- ${ancient_wonders._id}: ${ancient_wonders.title} (ruleset: ${ancient_wonders.ruleset})`)
 console.log(`- ${fe_runners._id}: ${fe_runners.title} (ruleset: ${fe_runners.ruleset})`)

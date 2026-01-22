@@ -6,6 +6,7 @@ export type RulesPackage = Datasworn.RulesPackage
 const RULESETS = [
 	'classic',
 	'delve',
+	'lodestar',
 	'starforged',
 	'sundered_isles',
 	'starsmith',

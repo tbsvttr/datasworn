@@ -50,6 +50,28 @@ export const IronswornClassicDelve: RulesPackageConfig = {
 	},
 }
 
+export const IronswornClassicLodestar: RulesPackageConfig = {
+	type: 'expansion',
+	paths: {
+		source: path.join(ROOT_SOURCE_DATA, 'lodestar'),
+	},
+	id: 'lodestar',
+	pkg: {
+		name: 'ironsworn-classic-lodestar',
+		private: false,
+		scope: PKG_SCOPE_OFFICIAL,
+		description: 'Datasworn JSON data for the Ironsworn: Lodestar expansion.',
+		keywords: ['ironsworn', 'datasworn', 'TTRPG', 'lodestar', 'ironsworn-lodestar'],
+		authors: [
+			{
+				name: 'sgreg',
+				email: 'sven@craplab.fi',
+				url: 'https://github.com/sgreg',
+			},
+		],
+	},
+}
+
 export const Starforged: RulesPackageConfig = {
 	id: 'starforged',
 	type: 'ruleset',

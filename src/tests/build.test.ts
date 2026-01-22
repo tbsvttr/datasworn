@@ -83,6 +83,16 @@ describe('Output Data Validation', () => {
 		expect(data.oracles).toBeDefined()
 	})
 
+	test('lodestar.json is valid and has expected structure', () => {
+		const dataPath = path.join(ROOT, 'datasworn/lodestar/lodestar.json')
+		const data = JSON.parse(readFileSync(dataPath, 'utf-8'))
+
+		expect(data._id).toBe('lodestar')
+		expect(data.type).toBe('expansion')
+		expect(data.ruleset).toBe("classic")
+		expect(data.moves).toBeDefined()
+	})
+
 	test('starforged.json is valid and has expected structure', () => {
 		const dataPath = path.join(ROOT, 'datasworn/starforged/starforged.json')
 		const data = JSON.parse(readFileSync(dataPath, 'utf-8'))
@@ -577,6 +587,22 @@ describe('ID Consistency', () => {
 		}
 	})
 
+	test('all _id values in lodestar.json contain expansion ID', () => {
+		const data = JSON.parse(
+			readFileSync(path.join(ROOT, 'datasworn/lodestar/lodestar.json'), 'utf-8')
+		)
+
+		expect(data._id).toBe('lodestar')
+		expect(data.type).toBe('expansion')
+
+		// Check that move _ids contain the expansion ID (format: type:lodestar/...)
+		const moveIds = getAllIds(data.moves)
+		expect(moveIds.length).toBeGreaterThan(0)
+		for (const moveId of moveIds) {
+			expect(moveId).toContain(':lodestar/')
+		}
+	})
+
 	test('all _id values in starforged.json contain ruleset ID', () => {
 		const data = JSON.parse(
 			readFileSync(path.join(ROOT, 'datasworn/starforged/starforged.json'), 'utf-8')
@@ -676,6 +702,7 @@ describe('Typed Content Package Exports', () => {
 	const contentPackages = [
 		{ scope: '@datasworn', name: 'ironsworn-classic', id: 'classic', type: 'Ruleset' },
 		{ scope: '@datasworn', name: 'ironsworn-classic-delve', id: 'delve', type: 'Expansion' },
+		{ scope: '@datasworn', name: 'ironsworn-classic-lodestar', id: 'lodestar', type: 'Expansion' },
 		{ scope: '@datasworn', name: 'starforged', id: 'starforged', type: 'Ruleset' },
 		{ scope: '@datasworn', name: 'sundered-isles', id: 'sundered_isles', type: 'Expansion' },
 		{ scope: '@datasworn-community-content', name: 'ancient-wonders', id: 'ancient_wonders', type: 'Expansion' },

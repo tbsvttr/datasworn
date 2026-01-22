@@ -11,6 +11,7 @@
     "pkg/nodejs/@datasworn/core",
     "pkg/nodejs/@datasworn/ironsworn-classic",
     "pkg/nodejs/@datasworn/ironsworn-classic-delve",
+    "pkg/nodejs/@datasworn/ironsworn-classic-lodestar",
     "pkg/nodejs/@datasworn/starforged",
     "pkg/nodejs/@datasworn/sundered-isles"
   ],

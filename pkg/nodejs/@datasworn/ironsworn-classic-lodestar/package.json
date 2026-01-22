@@ -1,0 +1,62 @@
+{
+	"name": "@datasworn/ironsworn-classic-lodestar",
+	"version": "0.1.0",
+	"description": "Datasworn JSON data for the Ironsworn: Lodestar expansion.",
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"json",
+		"migration"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tbsvttr/datasworn.git",
+		"directory": "pkg/nodejs/@datasworn/ironsworn-classic-lodestar"
+	},
+	"keywords": [
+		"ironsworn",
+		"datasworn",
+		"TTRPG",
+		"lodestar",
+		"ironsworn-lodestar"
+	],
+	"contributors": [
+		{
+			"name": "sgreg",
+			"email": "sven@craplab.fi",
+			"url": "https://github.com/sgreg"
+		}
+	],
+	"scripts": {
+		"release": "release-it"
+	},
+	"license": "CC-BY-NC-4.0",
+	"bugs": {
+		"url": "https://github.com/tbsvttr/datasworn/issues"
+	},
+	"dependencies": {
+		"@datasworn/ironsworn-classic": "0.1.0"
+	},
+	"authors": [
+		{
+			"name": "sgreg",
+			"email": "sven@craplab.fi",
+			"url": "https://github.com/sgreg"
+		}
+	],
+	"private": false,
+	"type": "module",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./ids": {
+			"types": "./ids.d.ts",
+			"default": "./ids.js"
+		},
+		"./json/lodestar.json": "./json/lodestar.json"
+	}
+}
