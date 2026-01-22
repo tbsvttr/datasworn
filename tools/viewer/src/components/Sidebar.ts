@@ -1,7 +1,7 @@
 import { state } from '../state'
 import { getRulesetDisplayName } from '../utils/loader'
 import { searchItems, type SearchResult } from '../utils/search'
-import { createTree, expandAllNodes, collapseAllNodes } from './Tree'
+import { createTree, expandAllNodes, collapseAllNodes, setTreeFilter, type TreeFilter } from './Tree'
 import { escapeHtml } from '../utils/html'
 import { formatType } from '../utils/formatting'
 
@@ -16,6 +16,15 @@ function setTheme(theme: 'dark' | 'light'): void {
 	} else {
 		document.documentElement.removeAttribute('data-theme')
 	}
+}
+
+function getFilter(): TreeFilter {
+	return (localStorage.getItem('treeFilter') as TreeFilter) || 'all'
+}
+
+function setFilter(filter: TreeFilter): void {
+	localStorage.setItem('treeFilter', filter)
+	setTreeFilter(filter)
 }
 
 // Initialize theme on load
@@ -42,6 +51,12 @@ export function createSidebar(container: HTMLElement): void {
 			<button id="expand-all" class="toolbar-btn" title="Expand all">▼ Expand</button>
 			<button id="collapse-all" class="toolbar-btn" title="Collapse all">▶ Collapse</button>
 			<button id="theme-toggle" class="toolbar-btn" title="Toggle theme">☀ Light</button>
+		</div>
+		<div class="filter-toolbar">
+			<button class="filter-btn active" data-filter="all" title="Show all">All</button>
+			<button class="filter-btn" data-filter="moves" title="Show moves only">⚔️ Moves</button>
+			<button class="filter-btn" data-filter="assets" title="Show assets only">🎴 Assets</button>
+			<button class="filter-btn" data-filter="oracles" title="Show oracles only">🎲 Oracles</button>
 		</div>
 	`
 	sidebar.appendChild(header)
@@ -96,6 +111,29 @@ export function createSidebar(container: HTMLElement): void {
 		const newTheme = getTheme() === 'dark' ? 'light' : 'dark'
 		setTheme(newTheme)
 		updateThemeButton()
+	})
+
+	// Filter buttons
+	const filterButtons = header.querySelectorAll('.filter-btn') as NodeListOf<HTMLButtonElement>
+
+	const updateFilterButtons = (activeFilter: TreeFilter) => {
+		filterButtons.forEach((btn) => {
+			const btnFilter = btn.dataset.filter as TreeFilter
+			btn.classList.toggle('active', btnFilter === activeFilter)
+		})
+	}
+
+	// Initialize filter from localStorage
+	const initialFilter = getFilter()
+	updateFilterButtons(initialFilter)
+	setFilter(initialFilter)
+
+	filterButtons.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const filter = btn.dataset.filter as TreeFilter
+			setFilter(filter)
+			updateFilterButtons(filter)
+		})
 	})
 
 	let searchTimeout: ReturnType<typeof setTimeout> | null = null

@@ -12,7 +12,10 @@ import {
 	isNpc,
 	isAtlasEntry,
 	isTruth,
-	isCollection
+	isCollection,
+	isDelveSite,
+	isDelveSiteTheme,
+	isDelveSiteDomain
 } from '../types'
 import {
 	renderMove,
@@ -22,7 +25,10 @@ import {
 	renderAtlasEntry,
 	renderTruth,
 	renderCollection,
-	renderGeneric
+	renderGeneric,
+	renderDelveSite,
+	renderDelveSiteTheme,
+	renderDelveSiteDomain
 } from '../renderers'
 
 export function createDetailPanel(container: HTMLElement): void {
@@ -172,6 +178,12 @@ function renderDetail(item: unknown, path: string[]): string {
 		html += renderAtlasEntry(item)
 	} else if (isTruth(item)) {
 		html += renderTruth(item)
+	} else if (isDelveSite(item)) {
+		html += renderDelveSite(item)
+	} else if (isDelveSiteTheme(item)) {
+		html += renderDelveSiteTheme(item)
+	} else if (isDelveSiteDomain(item)) {
+		html += renderDelveSiteDomain(item)
 	} else if (isCollection(item)) {
 		html += renderCollection(item)
 	} else {

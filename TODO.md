@@ -32,12 +32,12 @@
 
 ### Medium Value
 
-- [ ] Dark mode - Theme toggle
-- [ ] Filter by type - Show only moves/oracles/assets in tree
-- [ ] Expand/collapse all - Tree controls
+- [x] Dark mode - Theme toggle with localStorage persistence
+- [x] Filter by type - Show only moves/oracles/assets in tree
+- [x] Expand/collapse all - Tree controls
+- [x] Linked oracle rolls - Markdown links like `[Action](datasworn:...)` are clickable
+- [x] Delve renderers - Proper display for sites, themes, domains
 - [ ] Roll history - Show recent oracle rolls in session
-- [ ] Linked oracle rolls - When result suggests another oracle, make it clickable
-- [ ] Delve renderers - Proper display for sites, themes, domains
 
 ### Nice to Have
 

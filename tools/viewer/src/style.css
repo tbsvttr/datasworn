@@ -120,6 +120,37 @@ html, body {
 	border-color: var(--accent);
 }
 
+/* Filter toolbar */
+.filter-toolbar {
+	display: flex;
+	gap: 6px;
+	margin-top: 10px;
+}
+
+.filter-btn {
+	flex: 1;
+	padding: 6px 8px;
+	background: var(--bg-tertiary);
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	color: var(--text-secondary);
+	font-size: 11px;
+	cursor: pointer;
+	transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+	background: var(--bg-card);
+	color: var(--text-primary);
+	border-color: var(--accent);
+}
+
+.filter-btn.active {
+	background: var(--accent);
+	color: white;
+	border-color: var(--accent);
+}
+
 /* Search */
 .search-container {
 	position: relative;
@@ -1365,3 +1396,138 @@ html, body {
 	color: var(--weak-hit);
 	font-style: italic;
 }
+
+/* Delve specific */
+.delve-site-card,
+.delve-theme-card,
+.delve-domain-card {
+	background: var(--bg-card);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 24px;
+	margin-bottom: 20px;
+}
+
+.delve-region {
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #10b981;
+	margin-bottom: 8px;
+}
+
+.delve-rank {
+	color: var(--text-secondary);
+	margin-bottom: 12px;
+}
+
+.delve-refs {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	margin-bottom: 16px;
+	padding: 12px;
+	background: var(--bg-secondary);
+	border-radius: 6px;
+}
+
+.delve-ref {
+	font-size: 13px;
+}
+
+.delve-ref a {
+	color: var(--accent);
+	text-decoration: underline;
+}
+
+.delve-summary {
+	font-size: 15px;
+	color: var(--text-secondary);
+	margin-bottom: 16px;
+}
+
+.delve-description {
+	margin-bottom: 16px;
+}
+
+.delve-table {
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid var(--border);
+}
+
+.delve-table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.delve-table th {
+	background: var(--bg-secondary);
+	padding: 12px 16px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: var(--text-muted);
+}
+
+.delve-table td {
+	padding: 12px 16px;
+	border-top: 1px solid var(--border);
+	background: var(--bg-card);
+}
+
+.delve-table .roll-col {
+	width: 80px;
+}
+
+.delve-table .roll-cell {
+	font-weight: 600;
+	font-family: 'SF Mono', Monaco, 'Courier New', monospace;
+	color: var(--accent);
+}
+
+.delve-table a {
+	color: var(--accent);
+	text-decoration: underline;
+}
+
+.delve-suggestions {
+	margin-top: 8px;
+	padding-top: 8px;
+	border-top: 1px dashed var(--border);
+	font-size: 12px;
+	color: var(--text-muted);
+}
+
+.frequency-cell {
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+.frequency-cell.frequency-very_common {
+	color: var(--strong-hit);
+}
+
+.frequency-cell.frequency-common {
+	color: #22d3ee;
+}
+
+.frequency-cell.frequency-uncommon {
+	color: var(--weak-hit);
+}
+
+.frequency-cell.frequency-rare {
+	color: #f97316;
+}
+
+.frequency-cell.frequency-unforeseen {
+	color: var(--miss);
+}
+
+/* Type badge for Delve types */
+.type-badge.type-delve_site { background: #10b981; }
+.type-badge.type-delve_site_theme { background: #8b5cf6; }
+.type-badge.type-delve_site_domain { background: #f59e0b; }

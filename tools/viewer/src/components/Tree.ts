@@ -9,7 +9,23 @@ interface TreeNodeData {
 	children?: TreeNodeData[]
 }
 
-const CATEGORY_ORDER = ['moves', 'assets', 'oracles', 'rules', 'truths', 'atlas', 'npcs']
+export type TreeFilter = 'all' | 'moves' | 'assets' | 'oracles'
+
+let currentFilter: TreeFilter = 'all'
+let treeContainerRef: HTMLElement | null = null
+
+const CATEGORY_ORDER = [
+	'moves', 'assets', 'oracles', 'rules', 'truths', 'atlas', 'npcs',
+	'delve_sites', 'site_themes', 'site_domains', 'rarities'
+]
+
+// Map filter types to category keys
+const FILTER_CATEGORIES: Record<TreeFilter, string[]> = {
+	all: CATEGORY_ORDER,
+	moves: ['moves'],
+	assets: ['assets'],
+	oracles: ['oracles']
+}
 const ICONS: Record<string, string> = {
 	moves: '⚔️',
 	assets: '🎴',
@@ -18,19 +34,50 @@ const ICONS: Record<string, string> = {
 	truths: '📜',
 	atlas: '🗺️',
 	npcs: '👤',
+	delve_sites: '🏚️',
+	site_themes: '🎭',
+	site_domains: '🏛️',
+	rarities: '✨',
 	move_category: '📁',
 	move: '⚔️',
 	asset_collection: '📁',
 	asset: '🎴',
 	oracle_collection: '📁',
 	oracle_rollable: '🎲',
+	delve_site: '🏚️',
+	delve_site_theme: '🎭',
+	delve_site_domain: '🏛️',
 	default: '📄'
+}
+
+export function setTreeFilter(filter: TreeFilter): void {
+	currentFilter = filter
+	rebuildTree()
+}
+
+function rebuildTree(): void {
+	if (!treeContainerRef) return
+
+	const ruleset = state.getCurrentRuleset()
+	if (!ruleset) {
+		treeContainerRef.innerHTML = '<div class="loading">Select a ruleset</div>'
+		return
+	}
+
+	treeContainerRef.innerHTML = ''
+	const nodes = buildTreeNodes(ruleset)
+	for (const node of nodes) {
+		treeContainerRef.appendChild(createTreeNode(node, [node.key]))
+	}
 }
 
 export function createTree(container: HTMLElement): void {
 	const treeContainer = document.createElement('div')
 	treeContainer.className = 'tree-container'
 	container.appendChild(treeContainer)
+
+	// Store reference for filter updates
+	treeContainerRef = treeContainer
 
 	let currentRulesetId: string | null = null
 
@@ -47,17 +94,7 @@ export function createTree(container: HTMLElement): void {
 		}
 		currentRulesetId = s.currentRuleset
 
-		const ruleset = state.getCurrentRuleset()
-		if (!ruleset) {
-			treeContainer.innerHTML = '<div class="loading">Select a ruleset</div>'
-			return
-		}
-
-		treeContainer.innerHTML = ''
-		const nodes = buildTreeNodes(ruleset)
-		for (const node of nodes) {
-			treeContainer.appendChild(createTreeNode(node, [node.key]))
-		}
+		rebuildTree()
 	})
 }
 
@@ -105,6 +142,8 @@ function buildTreeNodes(data: RulesPackage): TreeNodeData[] {
 	const nodes: TreeNodeData[] = []
 
 	// Access RulesPackage properties - cast needed for iteration
+	// Include Delve-specific categories (delve_sites, site_themes, site_domains, rarities)
+	const dataObj = data as unknown as Record<string, unknown>
 	const categories: [string, unknown][] = [
 		['moves', data.moves],
 		['assets', data.assets],
@@ -112,11 +151,21 @@ function buildTreeNodes(data: RulesPackage): TreeNodeData[] {
 		['rules', data.rules],
 		['truths', data.truths],
 		['atlas', data.atlas],
-		['npcs', data.npcs]
+		['npcs', data.npcs],
+		['delve_sites', dataObj.delve_sites],
+		['site_themes', dataObj.site_themes],
+		['site_domains', dataObj.site_domains],
+		['rarities', dataObj.rarities]
 	]
+
+	// Get categories to show based on filter
+	const visibleCategories = FILTER_CATEGORIES[currentFilter]
 
 	// Add categories in order
 	for (const key of CATEGORY_ORDER) {
+		// Skip categories not matching the filter
+		if (!visibleCategories.includes(key)) continue
+
 		const entry = categories.find(([k]) => k === key)
 		const value = entry?.[1]
 		if (value && typeof value === 'object') {
