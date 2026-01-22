@@ -135,6 +135,20 @@ module Datasworn
     def to_json_data: () -> untyped
   end
 
+  class AnyMoveOutcomeID
+    attr_accessor value: String
+
+    def self.from_json_data: (untyped) -> AnyMoveOutcomeID
+    def to_json_data: () -> untyped
+  end
+
+  class AnyMoveOutcomeIDWildcard
+    attr_accessor value: String
+
+    def self.from_json_data: (untyped) -> AnyMoveOutcomeIDWildcard
+    def to_json_data: () -> untyped
+  end
+
   class AnyOracleRollableID
     attr_accessor value: String
 
@@ -306,6 +320,20 @@ module Datasworn
     attr_accessor value: String
 
     def self.from_json_data: (untyped) -> AssetAbilityMoveIDWildcard
+    def to_json_data: () -> untyped
+  end
+
+  class AssetAbilityMoveOutcomeID
+    attr_accessor value: String
+
+    def self.from_json_data: (untyped) -> AssetAbilityMoveOutcomeID
+    def to_json_data: () -> untyped
+  end
+
+  class AssetAbilityMoveOutcomeIDWildcard
+    attr_accessor value: String
+
+    def self.from_json_data: (untyped) -> AssetAbilityMoveOutcomeIDWildcard
     def to_json_data: () -> untyped
   end
 
@@ -1395,6 +1423,7 @@ module Datasworn
     DENIZEN: EmbedOnlyType
     FEATURE: EmbedOnlyType
     OPTION: EmbedOnlyType
+    OUTCOME: EmbedOnlyType
     ROW: EmbedOnlyType
     VARIANT: EmbedOnlyType
 
@@ -2803,10 +2832,25 @@ module Datasworn
   end
 
   class MoveOutcome
+    attr_accessor id: AnyMoveOutcomeID
     attr_accessor text: MarkdownString
     attr_accessor oracle_rolls: Array[OracleRoll]?
 
     def self.from_json_data: (untyped) -> MoveOutcome
+    def to_json_data: () -> untyped
+  end
+
+  class MoveOutcomeID
+    attr_accessor value: String
+
+    def self.from_json_data: (untyped) -> MoveOutcomeID
+    def to_json_data: () -> untyped
+  end
+
+  class MoveOutcomeIDWildcard
+    attr_accessor value: String
+
+    def self.from_json_data: (untyped) -> MoveOutcomeIDWildcard
     def to_json_data: () -> untyped
   end
 
@@ -5045,6 +5089,7 @@ module Datasworn
     OPTION: TaggableNodeType
     ORACLE_COLLECTION: TaggableNodeType
     ORACLE_ROLLABLE: TaggableNodeType
+    OUTCOME: TaggableNodeType
     RARITY: TaggableNodeType
     ROW: TaggableNodeType
     SPECIAL_TRACK: TaggableNodeType

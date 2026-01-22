@@ -471,6 +471,28 @@ class AnyMoveIDWildcard:
         return _to_json_data(self.value)
 
 @dataclass
+class AnyMoveOutcomeID:
+    value: 'str'
+
+    @classmethod
+    def from_json_data(cls, data: Any) -> 'AnyMoveOutcomeID':
+        return cls(_from_json_data(str, data))
+
+    def to_json_data(self) -> Any:
+        return _to_json_data(self.value)
+
+@dataclass
+class AnyMoveOutcomeIDWildcard:
+    value: 'str'
+
+    @classmethod
+    def from_json_data(cls, data: Any) -> 'AnyMoveOutcomeIDWildcard':
+        return cls(_from_json_data(str, data))
+
+    def to_json_data(self) -> Any:
+        return _to_json_data(self.value)
+
+@dataclass
 class AnyOracleRollableID:
     value: 'str'
 
@@ -1054,6 +1076,37 @@ class AssetAbilityMoveIDWildcard:
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'AssetAbilityMoveIDWildcard':
+        return cls(_from_json_data(str, data))
+
+    def to_json_data(self) -> Any:
+        return _to_json_data(self.value)
+
+@dataclass
+class AssetAbilityMoveOutcomeID:
+    """
+    A unique ID representing an AssetAbilityMoveOutcome object.
+    """
+
+    value: 'str'
+
+    @classmethod
+    def from_json_data(cls, data: Any) -> 'AssetAbilityMoveOutcomeID':
+        return cls(_from_json_data(str, data))
+
+    def to_json_data(self) -> Any:
+        return _to_json_data(self.value)
+
+@dataclass
+class AssetAbilityMoveOutcomeIDWildcard:
+    """
+    A wildcarded AssetAbilityMoveOutcomeId that can be used to match multiple
+    AssetAbilityMoveOutcome objects.
+    """
+
+    value: 'str'
+
+    @classmethod
+    def from_json_data(cls, data: Any) -> 'AssetAbilityMoveOutcomeIDWildcard':
         return cls(_from_json_data(str, data))
 
     def to_json_data(self) -> Any:
@@ -4431,6 +4484,7 @@ class EmbedOnlyType(Enum):
     DENIZEN = "denizen"
     FEATURE = "feature"
     OPTION = "option"
+    OUTCOME = "outcome"
     ROW = "row"
     VARIANT = "variant"
     @classmethod
@@ -8801,22 +8855,56 @@ class MoveOracleRollableRowIDWildcard:
 
 @dataclass
 class MoveOutcome:
+    id: 'AnyMoveOutcomeID'
     text: 'MarkdownString'
     oracle_rolls: 'Optional[List[OracleRoll]]'
 
     @classmethod
     def from_json_data(cls, data: Any) -> 'MoveOutcome':
         return cls(
+            _from_json_data(AnyMoveOutcomeID, data.get("_id")),
             _from_json_data(MarkdownString, data.get("text")),
             _from_json_data(Optional[List[OracleRoll]], data.get("oracle_rolls")),
         )
 
     def to_json_data(self) -> Any:
         data: Dict[str, Any] = {}
+        data["_id"] = _to_json_data(self.id)
         data["text"] = _to_json_data(self.text)
         if self.oracle_rolls is not None:
              data["oracle_rolls"] = _to_json_data(self.oracle_rolls)
         return data
+
+@dataclass
+class MoveOutcomeID:
+    """
+    A unique ID representing a MoveOutcome object.
+    """
+
+    value: 'str'
+
+    @classmethod
+    def from_json_data(cls, data: Any) -> 'MoveOutcomeID':
+        return cls(_from_json_data(str, data))
+
+    def to_json_data(self) -> Any:
+        return _to_json_data(self.value)
+
+@dataclass
+class MoveOutcomeIDWildcard:
+    """
+    A wildcarded MoveOutcomeId that can be used to match multiple MoveOutcome
+    objects.
+    """
+
+    value: 'str'
+
+    @classmethod
+    def from_json_data(cls, data: Any) -> 'MoveOutcomeIDWildcard':
+        return cls(_from_json_data(str, data))
+
+    def to_json_data(self) -> Any:
+        return _to_json_data(self.value)
 
 @dataclass
 class MoveOutcomes:
@@ -15886,6 +15974,7 @@ class TaggableNodeType(Enum):
     OPTION = "option"
     ORACLE_COLLECTION = "oracle_collection"
     ORACLE_ROLLABLE = "oracle_rollable"
+    OUTCOME = "outcome"
     RARITY = "rarity"
     ROW = "row"
     SPECIAL_TRACK = "special_track"

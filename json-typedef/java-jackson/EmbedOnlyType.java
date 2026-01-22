@@ -23,6 +23,9 @@ public enum EmbedOnlyType {
     @JsonProperty("option")
     OPTION,
 
+    @JsonProperty("outcome")
+    OUTCOME,
+
     @JsonProperty("row")
     ROW,
 

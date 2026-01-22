@@ -21,6 +21,8 @@ namespace Datasworn
 
         Option,
 
+        Outcome,
+
         Row,
 
         Variant,
@@ -44,6 +46,8 @@ namespace Datasworn
                     return EmbedOnlyType.Feature;
                 case "option":
                     return EmbedOnlyType.Option;
+                case "outcome":
+                    return EmbedOnlyType.Outcome;
                 case "row":
                     return EmbedOnlyType.Row;
                 case "variant":
@@ -74,6 +78,9 @@ namespace Datasworn
                     return;
                 case EmbedOnlyType.Option:
                     JsonSerializer.Serialize<string>(writer, "option", options);
+                    return;
+                case EmbedOnlyType.Outcome:
+                    JsonSerializer.Serialize<string>(writer, "outcome", options);
                     return;
                 case EmbedOnlyType.Row:
                     JsonSerializer.Serialize<string>(writer, "row", options);

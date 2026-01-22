@@ -345,6 +345,34 @@ module Datasworn
     end
   end
 
+  class AnyMoveOutcomeID
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AnyMoveOutcomeID.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  class AnyMoveOutcomeIDWildcard
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AnyMoveOutcomeIDWildcard.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
   class AnyOracleRollableID
     attr_accessor :value
 
@@ -820,6 +848,37 @@ module Datasworn
 
     def self.from_json_data(data)
       out = AssetAbilityMoveIDWildcard.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  # A unique ID representing an AssetAbilityMoveOutcome object.
+  class AssetAbilityMoveOutcomeID
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AssetAbilityMoveOutcomeID.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  # A wildcarded AssetAbilityMoveOutcomeId that can be used to match multiple
+  # AssetAbilityMoveOutcome objects.
+  class AssetAbilityMoveOutcomeIDWildcard
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = AssetAbilityMoveOutcomeIDWildcard.new
       out.value = Datasworn.from_json_data(String, data)
       out
     end
@@ -3846,6 +3905,7 @@ module Datasworn
     DENIZEN = new("denizen")
     FEATURE = new("feature")
     OPTION = new("option")
+    OUTCOME = new("outcome")
     ROW = new("row")
     VARIANT = new("variant")
 
@@ -3857,6 +3917,7 @@ module Datasworn
         "denizen" => DENIZEN,
         "feature" => FEATURE,
         "option" => OPTION,
+        "outcome" => OUTCOME,
         "row" => ROW,
         "variant" => VARIANT,
       }[data]
@@ -7790,11 +7851,13 @@ module Datasworn
   end
 
   class MoveOutcome
+    attr_accessor :id
     attr_accessor :text
     attr_accessor :oracle_rolls
 
     def self.from_json_data(data)
       out = MoveOutcome.new
+      out.id = Datasworn::from_json_data(AnyMoveOutcomeID, data["_id"])
       out.text = Datasworn::from_json_data(MarkdownString, data["text"])
       out.oracle_rolls = Datasworn::from_json_data(Array[OracleRoll], data["oracle_rolls"])
       out
@@ -7802,9 +7865,41 @@ module Datasworn
 
     def to_json_data
       data = {}
+      data["_id"] = Datasworn::to_json_data(id)
       data["text"] = Datasworn::to_json_data(text)
       data["oracle_rolls"] = Datasworn::to_json_data(oracle_rolls) unless oracle_rolls.nil?
       data
+    end
+  end
+
+  # A unique ID representing a MoveOutcome object.
+  class MoveOutcomeID
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = MoveOutcomeID.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
+    end
+  end
+
+  # A wildcarded MoveOutcomeId that can be used to match multiple MoveOutcome
+  # objects.
+  class MoveOutcomeIDWildcard
+    attr_accessor :value
+
+    def self.from_json_data(data)
+      out = MoveOutcomeIDWildcard.new
+      out.value = Datasworn.from_json_data(String, data)
+      out
+    end
+
+    def to_json_data
+      Datasworn.to_json_data(value)
     end
   end
 
@@ -14137,6 +14232,7 @@ module Datasworn
     OPTION = new("option")
     ORACLE_COLLECTION = new("oracle_collection")
     ORACLE_ROLLABLE = new("oracle_rollable")
+    OUTCOME = new("outcome")
     RARITY = new("rarity")
     ROW = new("row")
     SPECIAL_TRACK = new("special_track")
@@ -14167,6 +14263,7 @@ module Datasworn
         "option" => OPTION,
         "oracle_collection" => ORACLE_COLLECTION,
         "oracle_rollable" => ORACLE_ROLLABLE,
+        "outcome" => OUTCOME,
         "rarity" => RARITY,
         "row" => ROW,
         "special_track" => SPECIAL_TRACK,

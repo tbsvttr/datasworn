@@ -258,6 +258,10 @@ pub type AnyMoveId = String;
 
 pub type AnyMoveIdWildcard = String;
 
+pub type AnyMoveOutcomeId = String;
+
+pub type AnyMoveOutcomeIdWildcard = String;
+
 pub type AnyOracleRollableId = String;
 
 pub type AnyOracleRollableIdWildcard = String;
@@ -562,6 +566,13 @@ pub type AssetAbilityMoveId = String;
 /// A wildcarded AssetAbilityMoveId that can be used to match multiple
 /// AssetAbilityMove objects.
 pub type AssetAbilityMoveIdWildcard = String;
+
+/// A unique ID representing an AssetAbilityMoveOutcome object.
+pub type AssetAbilityMoveOutcomeId = String;
+
+/// A wildcarded AssetAbilityMoveOutcomeId that can be used to match multiple
+/// AssetAbilityMoveOutcome objects.
+pub type AssetAbilityMoveOutcomeIdWildcard = String;
 
 #[derive(Serialize, Deserialize)]
 #[serde(tag = "field_type")]
@@ -2391,6 +2402,9 @@ pub enum EmbedOnlyType {
 
     #[serde(rename = "option")]
     Option,
+
+    #[serde(rename = "outcome")]
+    Outcome,
 
     #[serde(rename = "row")]
     Row,
@@ -5111,6 +5125,9 @@ pub type MoveOracleRollableRowIdWildcard = String;
 
 #[derive(Serialize, Deserialize)]
 pub struct MoveOutcome {
+    #[serde(rename = "_id")]
+    pub id: AnyMoveOutcomeId,
+
     #[serde(rename = "text")]
     pub text: MarkdownString,
 
@@ -5118,6 +5135,13 @@ pub struct MoveOutcome {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub oracleRolls: Option<Box<Vec<OracleRoll>>>,
 }
+
+/// A unique ID representing a MoveOutcome object.
+pub type MoveOutcomeId = String;
+
+/// A wildcarded MoveOutcomeId that can be used to match multiple MoveOutcome
+/// objects.
+pub type MoveOutcomeIdWildcard = String;
 
 /// A standalone localized description for each move outcome (miss, weak hit,
 /// or strong hit). This is for for e.g. VTT implementations, where it's often
@@ -9498,6 +9522,9 @@ pub enum TaggableNodeType {
 
     #[serde(rename = "oracle_rollable")]
     OracleRollable,
+
+    #[serde(rename = "outcome")]
+    Outcome,
 
     #[serde(rename = "rarity")]
     Rarity,

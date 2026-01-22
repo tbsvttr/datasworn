@@ -230,6 +230,10 @@ type AnyMoveID = string
 
 type AnyMoveIDWildcard = string
 
+type AnyMoveOutcomeID = string
+
+type AnyMoveOutcomeIDWildcard = string
+
 type AnyOracleRollableID = string
 
 type AnyOracleRollableIDWildcard = string
@@ -490,6 +494,13 @@ type AssetAbilityMoveID = string
 // A wildcarded AssetAbilityMoveId that can be used to match multiple
 // AssetAbilityMove objects.
 type AssetAbilityMoveIDWildcard = string
+
+// A unique ID representing an AssetAbilityMoveOutcome object.
+type AssetAbilityMoveOutcomeID = string
+
+// A wildcarded AssetAbilityMoveOutcomeId that can be used to match multiple
+// AssetAbilityMoveOutcome objects.
+type AssetAbilityMoveOutcomeIDWildcard = string
 
 type AssetAbilityOptionField struct {
 	FieldType string
@@ -2060,6 +2071,8 @@ const (
 	EmbedOnlyTypeFeature EmbedOnlyType = "feature"
 
 	EmbedOnlyTypeOption EmbedOnlyType = "option"
+
+	EmbedOnlyTypeOutcome EmbedOnlyType = "outcome"
 
 	EmbedOnlyTypeRow EmbedOnlyType = "row"
 
@@ -4111,10 +4124,19 @@ type MoveOracleRollableRowID = string
 type MoveOracleRollableRowIDWildcard = string
 
 type MoveOutcome struct {
+	ID AnyMoveOutcomeID `json:"_id"`
+
 	Text MarkdownString `json:"text"`
 
 	OracleRolls []OracleRoll `json:"oracle_rolls,omitempty"`
 }
+
+// A unique ID representing a MoveOutcome object.
+type MoveOutcomeID = string
+
+// A wildcarded MoveOutcomeId that can be used to match multiple MoveOutcome
+// objects.
+type MoveOutcomeIDWildcard = string
 
 // A standalone localized description for each move outcome (miss, weak hit,
 // or strong hit). This is for for e.g. VTT implementations, where it's often
@@ -7467,6 +7489,8 @@ const (
 	TaggableNodeTypeOracleCollection TaggableNodeType = "oracle_collection"
 
 	TaggableNodeTypeOracleRollable TaggableNodeType = "oracle_rollable"
+
+	TaggableNodeTypeOutcome TaggableNodeType = "outcome"
 
 	TaggableNodeTypeRarity TaggableNodeType = "rarity"
 
