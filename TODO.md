@@ -104,9 +104,13 @@ Feedback from southpole regarding converter-generated data.
 - [ ] Identify and add missing Focus oracle (or verify it's `splinter_focus`)
 - [ ] Add `_index` fields or restructure YAML to match book ordering
 - [ ] Reorganize `planets_expanded` into hierarchical collections
+  - ~150 oracles need grouping by planet type (desert_world, jungle_world, etc.)
+  - Manual YAML work required due to anchors/aliases that don't survive round-tripping
+  - Creates collections like `planets_expanded/desert_world/biome` for proper linking
 - [ ] Add datasworn: links for all cross-references:
   - [x] Starforged oracle references (80 links added - Action, Theme, Focus, Descriptor, Planet, Creature, Settlement, Starship, Derelict, Precursor Vault)
-  - [ ] Internal Ancient Wonders `>Oracle` syntax (~500 refs like `>Ecumenopolis`)
+  - [x] HTML entity decode: `&gt;` → `>` (515 refs now display cleanly)
+  - [ ] Internal Ancient Wonders `>Oracle` syntax (~500 refs) - blocked by reorganization above
   - [ ] Starforged/Sundered Isles page references ("SI, pg 250" etc.)
 
 ---
