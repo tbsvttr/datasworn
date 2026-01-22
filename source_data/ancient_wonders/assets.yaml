@@ -917,17 +917,17 @@ assets:
           focuses:
             label: focus(es)
             field_type: text
+        controls:
+          broken:
+            label: broken
+            field_type: checkbox
+            is_impact: true
           major:
             label: Major Bonus
             field_type: checkbox
           minor:
             label: Minor Bonus
             field_type: checkbox          
-        controls:
-          broken:
-            label: broken
-            field_type: checkbox
-            is_impact: true
         abilities:
         - enabled: true
           text: |-
