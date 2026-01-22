@@ -59,7 +59,7 @@ ruleset = Ruleset.model_validate(data)
 
 # Access moves, oracles, assets, etc.
 # ID types are plain strings - no .root needed!
-print(f"Loaded: {ruleset.field_id}")
+print(f"Loaded: {ruleset.id}")
 print(f"Moves: {len(ruleset.moves)}")
 print(f"Oracles: {len(ruleset.oracles)}")
 ```

@@ -41,7 +41,7 @@ def test_load_rules_package(package_name: str):
     rules = load_rules_package(package_name)
 
     # Basic assertions
-    assert rules.field_id is not None
+    assert rules.id is not None
     assert rules.type in ("ruleset", "expansion")
 
     # Check that the package has expected content
@@ -56,28 +56,28 @@ def test_classic_is_ruleset():
     rules = load_rules_package("classic")
     assert rules.type == "ruleset"
     # field_id is now a plain string (type alias), no .root needed
-    assert "classic" in rules.field_id
+    assert "classic" in rules.id
 
 
 def test_delve_is_expansion():
     """Test that delve is an expansion for classic."""
     rules = load_rules_package("delve")
     assert rules.type == "expansion"
-    assert "delve" in rules.field_id
+    assert "delve" in rules.id
 
 
 def test_starforged_is_ruleset():
     """Test that starforged is a ruleset."""
     rules = load_rules_package("starforged")
     assert rules.type == "ruleset"
-    assert "starforged" in rules.field_id
+    assert "starforged" in rules.id
 
 
 def test_sundered_isles_is_expansion():
     """Test that sundered_isles is an expansion for starforged."""
     rules = load_rules_package("sundered_isles")
     assert rules.type == "expansion"
-    assert "sundered_isles" in rules.field_id
+    assert "sundered_isles" in rules.id
 
 
 class TestTypeAliasErgonomics:
@@ -91,11 +91,11 @@ class TestTypeAliasErgonomics:
         """RulesetId should be usable as a plain string."""
         rules = load_rules_package("starforged")
         # ID is directly a string - no .root needed
-        assert isinstance(rules.field_id, str)
-        assert rules.field_id == "starforged"
+        assert isinstance(rules.id, str)
+        assert rules.id == "starforged"
         # String operations work directly
-        assert rules.field_id.startswith("star")
-        assert len(rules.field_id) == 10
+        assert rules.id.startswith("star")
+        assert len(rules.id) == 10
 
     def test_move_id_is_string(self):
         """MoveId should be usable as a plain string."""
@@ -108,11 +108,11 @@ class TestTypeAliasErgonomics:
         first_move = next(iter(first_category.contents.values()))
 
         # Move ID is now a properly typed field (discriminated union)
-        assert hasattr(first_move, "field_id")
-        assert isinstance(first_move.field_id, str)
-        assert first_move.field_id.startswith("move:")
+        assert hasattr(first_move, "id")
+        assert isinstance(first_move.id, str)
+        assert first_move.id.startswith("move:")
         # Can use string operations directly
-        parts = first_move.field_id.split("/")
+        parts = first_move.id.split("/")
         assert len(parts) >= 2
         # Also verify the move has other expected typed fields
         assert hasattr(first_move, "name")
@@ -128,9 +128,9 @@ class TestTypeAliasErgonomics:
             if collection.contents:
                 for oracle in collection.contents.values():
                     # Oracle ID is now a properly typed field
-                    assert hasattr(oracle, "field_id")
-                    assert isinstance(oracle.field_id, str)
-                    assert oracle.field_id.startswith("oracle")
+                    assert hasattr(oracle, "id")
+                    assert isinstance(oracle.id, str)
+                    assert oracle.id.startswith("oracle")
                     # Also verify the oracle has other expected typed fields
                     assert hasattr(oracle, "name")
                     assert isinstance(oracle.name, str)
@@ -148,10 +148,10 @@ class TestTypeAliasErgonomics:
         first_asset = next(iter(first_collection.contents.values()))
 
         # Asset ID is directly a string
-        assert isinstance(first_asset.field_id, str)
-        assert first_asset.field_id.startswith("asset:")
+        assert isinstance(first_asset.id, str)
+        assert first_asset.id.startswith("asset:")
         # Can use in f-strings directly
-        message = f"Loading asset: {first_asset.field_id}"
+        message = f"Loading asset: {first_asset.id}"
         assert "asset:" in message
 
     def test_markdown_string_is_string(self):

@@ -138,6 +138,8 @@ def build_core_package(args):
         collapse_root_models=True,
         # Use X | Y union syntax instead of Union[X, Y]
         use_union_operator=True,
+        # Remove field_ prefix from reserved names (_id -> id, _type -> type)
+        remove_special_field_name_prefix=True,
     )
 
     if args.dry_run:
