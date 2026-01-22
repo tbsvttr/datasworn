@@ -293,26 +293,71 @@ def remove_date_pattern(content: str) -> str:
     return content
 
 
+def add_discriminator_import(content: str) -> str:
+    """Add Discriminator to pydantic imports if not already present."""
+    if "Discriminator" not in content:
+        content = re.sub(
+            r"from pydantic import (.+)",
+            r"from pydantic import Discriminator, \1",
+            content,
+            count=1,
+        )
+    return content
+
+
 def add_discriminated_unions(content: str) -> str:
     """Add discriminated union type aliases for polymorphic types.
 
     The code generator creates base classes with extra='allow' for polymorphic types.
-    This replaces generic base class references with proper typed unions.
+    This replaces generic base class references with proper typed unions with
+    Pydantic discriminators for correct deserialization.
 
     Move: MoveActionRoll | MoveNoRoll | MoveProgressRoll | MoveSpecialTrack (roll_type)
     OracleRollableTable: OracleTableText | OracleTableText2 | OracleTableText3 (oracle_type)
     """
-    # Replace dict[str, Move] with typed union in MoveCategory
+    # Add Discriminator import
+    content = add_discriminator_import(content)
+
+    # Replace dict[str, Move] with typed union + discriminator in MoveCategory
     content = re.sub(
         r"contents: dict\[str, Move\]",
-        "contents: dict[str, MoveActionRoll | MoveNoRoll | MoveProgressRoll | MoveSpecialTrack]",
+        "contents: dict[str, Annotated[MoveActionRoll | MoveNoRoll | MoveProgressRoll | MoveSpecialTrack, Discriminator('roll_type')]]",
         content,
     )
 
-    # Replace dict[str, OracleRollableTable] with typed union
+    # Replace dict[str, OracleRollableTable] with typed union + discriminator
     content = re.sub(
         r"contents: dict\[str, OracleRollableTable\]",
-        "contents: dict[str, OracleTableText | OracleTableText2 | OracleTableText3]",
+        "contents: dict[str, Annotated[OracleTableText | OracleTableText2 | OracleTableText3, Discriminator('oracle_type')]]",
+        content,
+    )
+
+    # Also fix existing union types that were already replaced but missing discriminator
+    content = re.sub(
+        r"contents: dict\[str, MoveActionRoll \| MoveNoRoll \| MoveProgressRoll \| MoveSpecialTrack\]",
+        "contents: dict[str, Annotated[MoveActionRoll | MoveNoRoll | MoveProgressRoll | MoveSpecialTrack, Discriminator('roll_type')]]",
+        content,
+    )
+
+    content = re.sub(
+        r"contents: dict\[str, OracleTableText \| OracleTableText2 \| OracleTableText3\]",
+        "contents: dict[str, Annotated[OracleTableText | OracleTableText2 | OracleTableText3, Discriminator('oracle_type')]]",
+        content,
+    )
+
+    # Fix collections field to use a discriminated union of all oracle collection types
+    # instead of the base OracleCollection (which has extra='allow')
+    # The oracle_type field is used as discriminator
+    oracle_collection_union = (
+        "Annotated["
+        "OracleTablesCollection | OracleTableSharedRolls | OracleTableSharedText | "
+        "OracleTableSharedText2 | OracleTableSharedText3, "
+        "Discriminator('oracle_type')]"
+    )
+
+    content = re.sub(
+        r"collections: dict\[str, OracleCollection\]",
+        f"collections: dict[str, {oracle_collection_union}]",
         content,
     )
 
