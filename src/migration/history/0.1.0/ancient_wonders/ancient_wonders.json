@@ -60719,7 +60719,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 4,
+							"value": 2,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -60778,7 +60795,31 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 1,
+							"max": 4,
+							"value": 4,
+							"controls": {}
+						},
+						"consumed": {
+							"label": "consumed",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -60837,7 +60878,31 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 1,
+							"max": 4,
+							"value": 2,
+							"controls": {}
+						},
+						"consumed": {
+							"label": "consumed",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -60914,7 +60979,22 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"marred": {
+							"label": "marred",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -60973,7 +61053,15 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61042,7 +61130,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 3,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61101,7 +61206,31 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 1,
+							"max": 3,
+							"value": 3,
+							"controls": {}
+						},
+						"consumed": {
+							"label": "consumed",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61160,7 +61289,31 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 1,
+							"max": 3,
+							"value": 3,
+							"controls": {}
+						},
+						"consumed": {
+							"label": "consumed",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61210,7 +61363,31 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 1,
+							"max": 3,
+							"value": 3,
+							"controls": {}
+						},
+						"consumed": {
+							"label": "consumed",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61269,7 +61446,31 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 1,
+							"max": 6,
+							"value": 4,
+							"controls": {}
+						},
+						"consumed": {
+							"label": "consumed",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61347,7 +61548,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 3,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61406,7 +61624,15 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61465,7 +61691,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 5,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61524,7 +61767,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 3,
+							"value": 3,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61574,7 +61834,15 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61624,7 +61892,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 4,
+							"value": 4,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61702,7 +61987,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 3,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61761,7 +62063,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 3,
+							"value": 3,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61811,7 +62130,15 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61861,7 +62188,24 @@
 							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"uses": {
+							"label": "uses",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 3,
+							"value": 2,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
@@ -61898,7 +62242,28 @@
 					"type": "asset",
 					"name": "Splinter",
 					"category": "Item - Anomaly",
-					"options": {},
+					"options": {
+						"name": {
+							"label": "name",
+							"field_type": "text",
+							"value": null
+						},
+						"material": {
+							"label": "material",
+							"field_type": "text",
+							"value": null
+						},
+						"shape": {
+							"label": "shape",
+							"field_type": "text",
+							"value": null
+						},
+						"focuses": {
+							"label": "focus(es)",
+							"field_type": "text",
+							"value": null
+						}
+					},
 					"count_as_impact": false,
 					"shared": false,
 					"abilities": [
@@ -61910,36 +62275,31 @@
 							"controls": {},
 							"oracles": {},
 							"moves": {}
-						},
-						{
-							"_id": "asset.ability:ancient_wonders/item_anomaly/splinter.1",
-							"enabled": false,
-							"options": {},
-							"text": "Bonus(es):",
-							"controls": {},
-							"oracles": {},
-							"moves": {}
-						},
-						{
-							"_id": "asset.ability:ancient_wonders/item_anomaly/splinter.2",
-							"enabled": false,
-							"options": {},
-							"text": "<ul><li>Major</li></ul>",
-							"controls": {},
-							"oracles": {},
-							"moves": {}
-						},
-						{
-							"_id": "asset.ability:ancient_wonders/item_anomaly/splinter.3",
-							"enabled": false,
-							"options": {},
-							"text": "<ul><li>Minor</li></ul>",
-							"controls": {},
-							"oracles": {},
-							"moves": {}
 						}
 					],
-					"controls": {},
+					"controls": {
+						"broken": {
+							"label": "broken",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": true,
+							"disables_asset": false
+						},
+						"major": {
+							"label": "Major Bonus",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": false,
+							"disables_asset": false
+						},
+						"minor": {
+							"label": "Minor Bonus",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": false,
+							"disables_asset": false
+						}
+					},
 					"_source": {
 						"title": "Ancient Wonders",
 						"authors": [
