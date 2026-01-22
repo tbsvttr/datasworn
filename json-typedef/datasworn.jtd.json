@@ -377,6 +377,12 @@
 		"AnyMoveIdWildcard": {
 			"type": "string"
 		},
+		"AnyMoveOutcomeId": {
+			"type": "string"
+		},
+		"AnyMoveOutcomeIdWildcard": {
+			"type": "string"
+		},
 		"AnyOracleRollableId": {
 			"type": "string"
 		},
@@ -790,6 +796,20 @@
 			"metadata": {
 				"description": "A wildcarded AssetAbilityMoveId that can be used to match multiple AssetAbilityMove objects.",
 				"pattern": "^asset\\.ability\\.move:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)\\.([a-z][a-z0-9_]*|\\*)$"
+			}
+		},
+		"AssetAbilityMoveOutcomeId": {
+			"type": "string",
+			"metadata": {
+				"description": "A unique ID representing an AssetAbilityMoveOutcome object.",
+				"pattern": "^asset\\.ability\\.move\\.outcome:([a-z][a-z0-9_]*(?:\\/[a-z][a-z0-9_]*){2,5})\\.(\\d+)\\.([a-z][a-z0-9_]*|\\*)\\.([a-z][a-z0-9_]*|\\*)$"
+			}
+		},
+		"AssetAbilityMoveOutcomeIdWildcard": {
+			"type": "string",
+			"metadata": {
+				"description": "A wildcarded AssetAbilityMoveOutcomeId that can be used to match multiple AssetAbilityMoveOutcome objects.",
+				"pattern": "^asset\\.ability\\.move\\.outcome:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.(\\d+|\\*)\\.([a-z][a-z0-9_]*|\\*)\\.([a-z][a-z0-9_]*|\\*)$"
 			}
 		},
 		"AssetAbilityOptionField": {
@@ -4854,6 +4874,7 @@
 			"enum": [
 				"ability",
 				"condition",
+				"outcome",
 				"option",
 				"row",
 				"feature",
@@ -6131,6 +6152,9 @@
 		},
 		"MoveOutcome": {
 			"properties": {
+				"_id": {
+					"ref": "AnyMoveOutcomeId"
+				},
 				"text": {
 					"ref": "MarkdownString"
 				}
@@ -6141,6 +6165,20 @@
 						"ref": "OracleRoll"
 					}
 				}
+			}
+		},
+		"MoveOutcomeId": {
+			"type": "string",
+			"metadata": {
+				"description": "A unique ID representing a MoveOutcome object.",
+				"pattern": "^move\\.outcome:([a-z][a-z0-9_]*(?:\\/[a-z][a-z0-9_]*){2,5})\\.([a-z][a-z0-9_]*|\\*)$"
+			}
+		},
+		"MoveOutcomeIdWildcard": {
+			"type": "string",
+			"metadata": {
+				"description": "A wildcarded MoveOutcomeId that can be used to match multiple MoveOutcome objects.",
+				"pattern": "^move\\.outcome:((?:[a-z][a-z0-9_]*|\\*)(?:\\/(?:[a-z][a-z0-9_]*|\\*|\\*\\*)){2,5})\\.([a-z][a-z0-9_]*|\\*)$"
 			}
 		},
 		"MoveOutcomes": {
@@ -11062,6 +11100,7 @@
 				"truth",
 				"ability",
 				"condition",
+				"outcome",
 				"option",
 				"row",
 				"feature",

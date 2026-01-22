@@ -9,6 +9,9 @@ import java.util.List;
 
 @JsonSerialize
 public class MoveOutcome {
+    @JsonProperty("_id")
+    private AnyMoveOutcomeId id;
+
     @JsonProperty("text")
     private MarkdownString text;
 
@@ -17,6 +20,20 @@ public class MoveOutcome {
     private List<OracleRoll> oracleRolls;
 
     public MoveOutcome() {
+    }
+
+    /**
+     * Getter for id.<p>
+     */
+    public AnyMoveOutcomeId getId() {
+        return id;
+    }
+
+    /**
+     * Setter for id.<p>
+     */
+    public void setId(AnyMoveOutcomeId id) {
+        this.id = id;
     }
 
     /**

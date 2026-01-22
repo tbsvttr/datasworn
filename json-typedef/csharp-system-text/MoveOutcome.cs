@@ -7,6 +7,9 @@ namespace Datasworn
 {
     public class MoveOutcome
     {
+        [JsonPropertyName("_id")]
+        public AnyMoveOutcomeId Id { get; set; }
+
         [JsonPropertyName("text")]
         public MarkdownString Text { get; set; }
 

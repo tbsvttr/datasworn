@@ -68,6 +68,9 @@ public enum TaggableNodeType {
     @JsonProperty("oracle_rollable")
     ORACLE_ROLLABLE,
 
+    @JsonProperty("outcome")
+    OUTCOME,
+
     @JsonProperty("rarity")
     RARITY,
 

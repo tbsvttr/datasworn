@@ -51,6 +51,8 @@ namespace Datasworn
 
         OracleRollable,
 
+        Outcome,
+
         Rarity,
 
         Row,
@@ -112,6 +114,8 @@ namespace Datasworn
                     return TaggableNodeType.OracleCollection;
                 case "oracle_rollable":
                     return TaggableNodeType.OracleRollable;
+                case "outcome":
+                    return TaggableNodeType.Outcome;
                 case "rarity":
                     return TaggableNodeType.Rarity;
                 case "row":
@@ -195,6 +199,9 @@ namespace Datasworn
                     return;
                 case TaggableNodeType.OracleRollable:
                     JsonSerializer.Serialize<string>(writer, "oracle_rollable", options);
+                    return;
+                case TaggableNodeType.Outcome:
+                    JsonSerializer.Serialize<string>(writer, "outcome", options);
                     return;
                 case TaggableNodeType.Rarity:
                     JsonSerializer.Serialize<string>(writer, "rarity", options);
