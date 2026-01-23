@@ -124,8 +124,9 @@ Currently only includes **Expanded Oracles** (~9,800 oracle entries).
 
 Missing content:
 
-- [ ] **New Assets** - 32 assets across all categories
-- [ ] **Mecha Mercs** - Modular giant robot system with 4 chassis types
+- [ ] **New Assets** - 32 assets across all categories (should be straightforward)
+- [ ] **Additional Oracles** - e.g., "Random NPC Conversions" and others not in current data
+- [ ] **Mecha Mercs** - Modular giant robot system with 4 chassis types (adds new mechanics - harder to convert)
 
 Source: [playeveryrole.com/starsmith-products](https://playeveryrole.com/starsmith-products/)
 
