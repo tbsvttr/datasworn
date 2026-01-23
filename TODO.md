@@ -129,6 +129,8 @@ Missing content:
 
 Source: [playeveryrole.com/starsmith-products](https://playeveryrole.com/starsmith-products/)
 
+FoundryVTT module available: [jendave/starsmith-compendiums](https://github.com/jendave/starsmith-compendiums)
+
 ### Ironsmith (for Classic Ironsworn) - by Eric Bright
 
 Not in Datasworn yet. Content includes:
