@@ -8978,6 +8978,10 @@
 					"description": "The asset augmented by this rarity.",
 					"$ref": "#/definitions/AssetId"
 				},
+				"description": {
+					"description": "A description of this rarity.",
+					"$ref": "#/definitions/MarkdownString"
+				},
 				"xp_cost": {
 					"minimum": 3,
 					"maximum": 5,
@@ -8994,6 +8998,7 @@
 				"name",
 				"_source",
 				"asset",
+				"description",
 				"type"
 			]
 		},

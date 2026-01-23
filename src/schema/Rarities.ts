@@ -1,6 +1,7 @@
 import { Type, type Static } from '@sinclair/typebox'
 import { setSourceDataSchema } from './Utils.js'
 import Id from './common/Id.js'
+import { MarkdownString } from './common/Text.js'
 import { NonCollectableNode } from './Generic.js'
 
 export const Rarity = setSourceDataSchema(
@@ -8,6 +9,9 @@ export const Rarity = setSourceDataSchema(
 		Type.Object({
 			asset: Type.Ref(Id.AssetId, {
 				description: 'The asset augmented by this rarity.'
+			}),
+			description: Type.Ref(MarkdownString, {
+				description: 'A description of this rarity.'
 			}),
 			xp_cost: Type.Integer({
 				minimum: 3,
