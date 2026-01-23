@@ -947,7 +947,7 @@ assets:
         abilities:
         - enabled: true
           text: |-
-            When you Undertake an Expedition or Establish a Haven in a ruin, add +1. When you @UUID[Compendium.ancient-wonders.ancientwondersmoves.Item.fvxIsI6u73hkrK6J]{Hunker Down} in these locations, you may choose two options on a hit instead of one. If the ruin is alien, take +1 momentum on a hit when making these moves.
+            When you Undertake an Expedition or Establish a Haven in a ruin, add +1. When you Hunker Down in these locations, you may choose two options on a hit instead of one. If the ruin is alien, take +1 momentum on a hit when making these moves.
         - text: |-
             When you Resupply in an abandoned ship or structure and score a hit, you leverage your practical experience scavenging these locations; take +1 supply and +1 momentum. When you Make a Discovery, you capitalize on your findings; mark one box on your discoveries legacy track instead of marking 2 ticks.
         - text: |-

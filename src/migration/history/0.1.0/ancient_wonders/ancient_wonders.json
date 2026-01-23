@@ -62344,7 +62344,7 @@
 							"_id": "asset.ability:ancient_wonders/path/delver.0",
 							"enabled": true,
 							"options": {},
-							"text": "When you Undertake an Expedition or Establish a Haven in a ruin, add +1. When you @UUID[Compendium.ancient-wonders.ancientwondersmoves.Item.fvxIsI6u73hkrK6J]{Hunker Down} in these locations, you may choose two options on a hit instead of one. If the ruin is alien, take +1 momentum on a hit when making these moves.",
+							"text": "When you Undertake an Expedition or Establish a Haven in a ruin, add +1. When you Hunker Down in these locations, you may choose two options on a hit instead of one. If the ruin is alien, take +1 momentum on a hit when making these moves.",
 							"controls": {},
 							"oracles": {},
 							"moves": {}
