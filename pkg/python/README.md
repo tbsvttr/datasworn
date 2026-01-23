@@ -2,6 +2,18 @@
 
 Python/Pydantic packages for working with [Datasworn](https://github.com/tbsvttr/datasworn) data.
 
+## Quick Reference: Regenerating After JSON Changes
+
+After modifying any Datasworn JSON/YAML source files:
+
+```bash
+# From repository root:
+npm run build:json                   # 1. Rebuild Datasworn JSON from YAML
+uv run build.py --force              # 2. Copy JSON to Python packages + regenerate models
+uv run scripts/python/post_process_models.py \
+    pkg/python/datasworn/src/datasworn/core/src/datasworn/core/models.py  # 3. Post-process
+```
+
 ## Packages
 
 ### Official Content (`datasworn`)
@@ -73,22 +85,37 @@ print(f"Oracles: {len(ruleset.oracles)}")
 
 ### Regenerating Packages
 
+**When to regenerate:**
+
+- After modifying source YAML files in `source_data/`
+- After modifying the JSON Schema in `src/schema/`
+- After running `npm run build:json`
+
 The Python packages are generated from the Datasworn JSON Schema using `datamodel-code-generator`.
 
 ```bash
 # From repository root:
 
-# 1. Generate models and copy JSON files
+# 1. (If YAML changed) Rebuild Datasworn JSON
+npm run build:json
+
+# 2. Copy JSON to Python packages + regenerate Pydantic models
 uv run build.py --force
 
-# 2. Post-process to fix code generator limitations
+# 3. Post-process to fix code generator limitations
 uv run scripts/python/post_process_models.py \
     pkg/python/datasworn/src/datasworn/core/src/datasworn/core/models.py
 
-# 3. Run tests
+# 4. Run tests
 cd pkg/python/datasworn && uv run pytest tests/ -v
 cd ../datasworn-community-content && uv run pytest tests/ -v
 ```
+
+**What each step does:**
+
+- `build:json` - Compiles YAML source files into `datasworn/*.json`
+- `build.py` - Copies JSON to Python packages and regenerates `models.py` from schema
+- `post_process_models.py` - Converts RootModel classes to type aliases for better ergonomics
 
 ### Post-Processing
 
