@@ -70,6 +70,11 @@ function enhanceCollection(target, source) {
     return target;
 }
 function applyDictionaryEnhancements(targetDictionary, sourceDictionary) {
+    // Handle undefined dictionaries (e.g., when a collection has no nested collections)
+    if (sourceDictionary == null)
+        return targetDictionary;
+    if (targetDictionary == null)
+        return sourceDictionary;
     const targetMap = targetDictionary instanceof Map
         ? targetDictionary
         : new Map(Object.entries(targetDictionary));

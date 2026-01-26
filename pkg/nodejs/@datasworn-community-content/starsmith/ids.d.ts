@@ -177,75 +177,73 @@ export declare const OracleIds: {
 		readonly effect: 'oracle_rollable:starsmith/misc/effect'
 		readonly item_of_narrative_significance: 'oracle_rollable:starsmith/misc/item_of_narrative_significance'
 	}
-	readonly moves: {
-		readonly make_a_discovery: 'oracle_rollable:starsmith/moves/make_a_discovery'
-		readonly confront_chaos: 'oracle_rollable:starsmith/moves/confront_chaos'
-		readonly pay_the_price: 'oracle_rollable:starsmith/moves/pay_the_price'
-	}
-	readonly planets: {
-		readonly desert: {
-			readonly name: 'oracle_rollable:starsmith/planets/desert/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/desert/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/desert/planetside_feature'
-		}
-		readonly furnace: {
-			readonly name: 'oracle_rollable:starsmith/planets/furnace/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/furnace/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/furnace/planetside_feature'
-		}
-		readonly grave: {
-			readonly name: 'oracle_rollable:starsmith/planets/grave/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/grave/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/grave/planetside_feature'
-		}
-		readonly ice: {
-			readonly name: 'oracle_rollable:starsmith/planets/ice/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/ice/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/ice/planetside_feature'
-		}
-		readonly jovian: {
-			readonly name: 'oracle_rollable:starsmith/planets/jovian/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/jovian/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/jovian/planetside_feature'
-		}
-		readonly jungle: {
-			readonly name: 'oracle_rollable:starsmith/planets/jungle/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/jungle/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/jungle/planetside_feature'
-		}
-		readonly ocean: {
-			readonly name: 'oracle_rollable:starsmith/planets/ocean/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/ocean/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/ocean/planetside_feature'
-		}
-		readonly rocky: {
-			readonly name: 'oracle_rollable:starsmith/planets/rocky/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/rocky/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/rocky/planetside_feature'
-		}
-		readonly shattered: {
-			readonly name: 'oracle_rollable:starsmith/planets/shattered/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/shattered/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/shattered/planetside_feature'
-		}
-		readonly tainted: {
-			readonly name: 'oracle_rollable:starsmith/planets/tainted/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/tainted/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/tainted/planetside_feature'
-		}
-		readonly vital: {
-			readonly name: 'oracle_rollable:starsmith/planets/vital/name'
-			readonly observed_from_space: 'oracle_rollable:starsmith/planets/vital/observed_from_space'
-			readonly planetside_feature: 'oracle_rollable:starsmith/planets/vital/planetside_feature'
-			readonly plant: {
-				readonly type: 'oracle_rollable:starsmith/planets/vital/plant/type'
-				readonly characteristic: 'oracle_rollable:starsmith/planets/vital/plant/characteristic'
-				readonly first_look: 'oracle_rollable:starsmith/planets/vital/plant/first_look'
-			}
-		}
+	readonly move: {
+		readonly make_a_discovery: 'oracle_rollable:starsmith/move/make_a_discovery'
+		readonly confront_chaos: 'oracle_rollable:starsmith/move/confront_chaos'
+		readonly pay_the_price: 'oracle_rollable:starsmith/move/pay_the_price'
 	}
 	readonly planet: {
 		readonly class: 'oracle_rollable:starsmith/planet/class'
+		readonly desert: {
+			readonly name: 'oracle_rollable:starsmith/planet/desert/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/desert/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/desert/feature'
+		}
+		readonly furnace: {
+			readonly name: 'oracle_rollable:starsmith/planet/furnace/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/furnace/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/furnace/feature'
+		}
+		readonly grave: {
+			readonly name: 'oracle_rollable:starsmith/planet/grave/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/grave/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/grave/feature'
+		}
+		readonly ice: {
+			readonly name: 'oracle_rollable:starsmith/planet/ice/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/ice/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/ice/feature'
+		}
+		readonly jovian: {
+			readonly name: 'oracle_rollable:starsmith/planet/jovian/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/jovian/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/jovian/feature'
+		}
+		readonly jungle: {
+			readonly name: 'oracle_rollable:starsmith/planet/jungle/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/jungle/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/jungle/feature'
+		}
+		readonly ocean: {
+			readonly name: 'oracle_rollable:starsmith/planet/ocean/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/ocean/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/ocean/feature'
+		}
+		readonly rocky: {
+			readonly name: 'oracle_rollable:starsmith/planet/rocky/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/rocky/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/rocky/feature'
+		}
+		readonly shattered: {
+			readonly name: 'oracle_rollable:starsmith/planet/shattered/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/shattered/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/shattered/feature'
+		}
+		readonly tainted: {
+			readonly name: 'oracle_rollable:starsmith/planet/tainted/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/tainted/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/tainted/feature'
+		}
+		readonly vital: {
+			readonly name: 'oracle_rollable:starsmith/planet/vital/name'
+			readonly observed_from_space: 'oracle_rollable:starsmith/planet/vital/observed_from_space'
+			readonly feature: 'oracle_rollable:starsmith/planet/vital/feature'
+			readonly plant: {
+				readonly type: 'oracle_rollable:starsmith/planet/vital/plant/type'
+				readonly characteristic: 'oracle_rollable:starsmith/planet/vital/plant/characteristic'
+				readonly first_look: 'oracle_rollable:starsmith/planet/vital/plant/first_look'
+			}
+		}
 		readonly peril: {
 			readonly lifebearing: 'oracle_rollable:starsmith/planet/peril/lifebearing'
 			readonly lifeless: 'oracle_rollable:starsmith/planet/peril/lifeless'
@@ -255,22 +253,22 @@ export declare const OracleIds: {
 			readonly lifeless: 'oracle_rollable:starsmith/planet/opportunity/lifeless'
 		}
 	}
-	readonly vault: {
-		readonly form: 'oracle_rollable:starsmith/vault/form'
-		readonly shape: 'oracle_rollable:starsmith/vault/shape'
-		readonly material: 'oracle_rollable:starsmith/vault/material'
-		readonly outer_first_look: 'oracle_rollable:starsmith/vault/outer_first_look'
+	readonly precursor_vault: {
+		readonly form: 'oracle_rollable:starsmith/precursor_vault/form'
+		readonly shape: 'oracle_rollable:starsmith/precursor_vault/shape'
+		readonly material: 'oracle_rollable:starsmith/precursor_vault/material'
+		readonly outer_first_look: 'oracle_rollable:starsmith/precursor_vault/outer_first_look'
 		readonly interior: {
-			readonly first_look: 'oracle_rollable:starsmith/vault/interior/first_look'
-			readonly feature: 'oracle_rollable:starsmith/vault/interior/feature'
-			readonly peril: 'oracle_rollable:starsmith/vault/interior/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/vault/interior/opportunity'
+			readonly first_look: 'oracle_rollable:starsmith/precursor_vault/interior/first_look'
+			readonly feature: 'oracle_rollable:starsmith/precursor_vault/interior/feature'
+			readonly peril: 'oracle_rollable:starsmith/precursor_vault/interior/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/precursor_vault/interior/opportunity'
 		}
 		readonly sanctum: {
-			readonly feature: 'oracle_rollable:starsmith/vault/sanctum/feature'
-			readonly peril: 'oracle_rollable:starsmith/vault/sanctum/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/vault/sanctum/opportunity'
-			readonly purpose: 'oracle_rollable:starsmith/vault/sanctum/purpose'
+			readonly feature: 'oracle_rollable:starsmith/precursor_vault/sanctum/feature'
+			readonly peril: 'oracle_rollable:starsmith/precursor_vault/sanctum/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/precursor_vault/sanctum/opportunity'
+			readonly purpose: 'oracle_rollable:starsmith/precursor_vault/sanctum/purpose'
 		}
 	}
 	readonly settlement: {

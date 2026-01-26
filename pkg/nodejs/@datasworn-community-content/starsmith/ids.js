@@ -178,75 +178,73 @@ export const OracleIds = {
 		effect: 'oracle_rollable:starsmith/misc/effect',
 		item_of_narrative_significance: 'oracle_rollable:starsmith/misc/item_of_narrative_significance'
 	},
-	moves: {
-		make_a_discovery: 'oracle_rollable:starsmith/moves/make_a_discovery',
-		confront_chaos: 'oracle_rollable:starsmith/moves/confront_chaos',
-		pay_the_price: 'oracle_rollable:starsmith/moves/pay_the_price'
-	},
-	planets: {
-		desert: {
-			name: 'oracle_rollable:starsmith/planets/desert/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/desert/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/desert/planetside_feature'
-		},
-		furnace: {
-			name: 'oracle_rollable:starsmith/planets/furnace/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/furnace/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/furnace/planetside_feature'
-		},
-		grave: {
-			name: 'oracle_rollable:starsmith/planets/grave/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/grave/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/grave/planetside_feature'
-		},
-		ice: {
-			name: 'oracle_rollable:starsmith/planets/ice/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/ice/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/ice/planetside_feature'
-		},
-		jovian: {
-			name: 'oracle_rollable:starsmith/planets/jovian/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/jovian/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/jovian/planetside_feature'
-		},
-		jungle: {
-			name: 'oracle_rollable:starsmith/planets/jungle/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/jungle/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/jungle/planetside_feature'
-		},
-		ocean: {
-			name: 'oracle_rollable:starsmith/planets/ocean/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/ocean/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/ocean/planetside_feature'
-		},
-		rocky: {
-			name: 'oracle_rollable:starsmith/planets/rocky/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/rocky/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/rocky/planetside_feature'
-		},
-		shattered: {
-			name: 'oracle_rollable:starsmith/planets/shattered/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/shattered/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/shattered/planetside_feature'
-		},
-		tainted: {
-			name: 'oracle_rollable:starsmith/planets/tainted/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/tainted/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/tainted/planetside_feature'
-		},
-		vital: {
-			name: 'oracle_rollable:starsmith/planets/vital/name',
-			observed_from_space: 'oracle_rollable:starsmith/planets/vital/observed_from_space',
-			planetside_feature: 'oracle_rollable:starsmith/planets/vital/planetside_feature',
-			plant: {
-				type: 'oracle_rollable:starsmith/planets/vital/plant/type',
-				characteristic: 'oracle_rollable:starsmith/planets/vital/plant/characteristic',
-				first_look: 'oracle_rollable:starsmith/planets/vital/plant/first_look'
-			}
-		}
+	move: {
+		make_a_discovery: 'oracle_rollable:starsmith/move/make_a_discovery',
+		confront_chaos: 'oracle_rollable:starsmith/move/confront_chaos',
+		pay_the_price: 'oracle_rollable:starsmith/move/pay_the_price'
 	},
 	planet: {
 		class: 'oracle_rollable:starsmith/planet/class',
+		desert: {
+			name: 'oracle_rollable:starsmith/planet/desert/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/desert/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/desert/feature'
+		},
+		furnace: {
+			name: 'oracle_rollable:starsmith/planet/furnace/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/furnace/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/furnace/feature'
+		},
+		grave: {
+			name: 'oracle_rollable:starsmith/planet/grave/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/grave/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/grave/feature'
+		},
+		ice: {
+			name: 'oracle_rollable:starsmith/planet/ice/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/ice/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/ice/feature'
+		},
+		jovian: {
+			name: 'oracle_rollable:starsmith/planet/jovian/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/jovian/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/jovian/feature'
+		},
+		jungle: {
+			name: 'oracle_rollable:starsmith/planet/jungle/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/jungle/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/jungle/feature'
+		},
+		ocean: {
+			name: 'oracle_rollable:starsmith/planet/ocean/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/ocean/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/ocean/feature'
+		},
+		rocky: {
+			name: 'oracle_rollable:starsmith/planet/rocky/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/rocky/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/rocky/feature'
+		},
+		shattered: {
+			name: 'oracle_rollable:starsmith/planet/shattered/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/shattered/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/shattered/feature'
+		},
+		tainted: {
+			name: 'oracle_rollable:starsmith/planet/tainted/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/tainted/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/tainted/feature'
+		},
+		vital: {
+			name: 'oracle_rollable:starsmith/planet/vital/name',
+			observed_from_space: 'oracle_rollable:starsmith/planet/vital/observed_from_space',
+			feature: 'oracle_rollable:starsmith/planet/vital/feature',
+			plant: {
+				type: 'oracle_rollable:starsmith/planet/vital/plant/type',
+				characteristic: 'oracle_rollable:starsmith/planet/vital/plant/characteristic',
+				first_look: 'oracle_rollable:starsmith/planet/vital/plant/first_look'
+			}
+		},
 		peril: {
 			lifebearing: 'oracle_rollable:starsmith/planet/peril/lifebearing',
 			lifeless: 'oracle_rollable:starsmith/planet/peril/lifeless'
@@ -256,22 +254,22 @@ export const OracleIds = {
 			lifeless: 'oracle_rollable:starsmith/planet/opportunity/lifeless'
 		}
 	},
-	vault: {
-		form: 'oracle_rollable:starsmith/vault/form',
-		shape: 'oracle_rollable:starsmith/vault/shape',
-		material: 'oracle_rollable:starsmith/vault/material',
-		outer_first_look: 'oracle_rollable:starsmith/vault/outer_first_look',
+	precursor_vault: {
+		form: 'oracle_rollable:starsmith/precursor_vault/form',
+		shape: 'oracle_rollable:starsmith/precursor_vault/shape',
+		material: 'oracle_rollable:starsmith/precursor_vault/material',
+		outer_first_look: 'oracle_rollable:starsmith/precursor_vault/outer_first_look',
 		interior: {
-			first_look: 'oracle_rollable:starsmith/vault/interior/first_look',
-			feature: 'oracle_rollable:starsmith/vault/interior/feature',
-			peril: 'oracle_rollable:starsmith/vault/interior/peril',
-			opportunity: 'oracle_rollable:starsmith/vault/interior/opportunity'
+			first_look: 'oracle_rollable:starsmith/precursor_vault/interior/first_look',
+			feature: 'oracle_rollable:starsmith/precursor_vault/interior/feature',
+			peril: 'oracle_rollable:starsmith/precursor_vault/interior/peril',
+			opportunity: 'oracle_rollable:starsmith/precursor_vault/interior/opportunity'
 		},
 		sanctum: {
-			feature: 'oracle_rollable:starsmith/vault/sanctum/feature',
-			peril: 'oracle_rollable:starsmith/vault/sanctum/peril',
-			opportunity: 'oracle_rollable:starsmith/vault/sanctum/opportunity',
-			purpose: 'oracle_rollable:starsmith/vault/sanctum/purpose'
+			feature: 'oracle_rollable:starsmith/precursor_vault/sanctum/feature',
+			peril: 'oracle_rollable:starsmith/precursor_vault/sanctum/peril',
+			opportunity: 'oracle_rollable:starsmith/precursor_vault/sanctum/opportunity',
+			purpose: 'oracle_rollable:starsmith/precursor_vault/sanctum/purpose'
 		}
 	},
 	settlement: {
