@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -21,6 +21,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 197
     enhances:
       - oracle_collection:starforged/derelict
     contents:
@@ -325,7 +326,7 @@ oracles:
               min: 94
               max: 100
             <<: &DescriptorFocus
-              text: '[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)'
+              text: "[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)"
               oracle_rolls:
                 - oracle: oracle_rollable:starsmith/core/descriptor
                   auto: true

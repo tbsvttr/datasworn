@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -21,6 +21,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 118
     contents:
       type:
         name: Starship Type
@@ -152,7 +153,7 @@ oracles:
               max: 82
             <<: &Multipurpose
               text: Multipurpose
-              text2: '[Starship Mission](id:starforged/oracles/starship/mission)'
+              text2: "[Starship Mission](id:starforged/oracles/starship/mission)"
               # oracle_rolls removed (was invalid collection reference)
               _i18n: &Adjective
                 text:
@@ -168,7 +169,7 @@ oracles:
               min: 85
               max: 94
             <<: &Fleet
-              text: '[Fleet](oracle_rollable:starsmith/starship/fleet)'
+              text: "[Fleet](oracle_rollable:starsmith/starship/fleet)"
               text2:
               oracle_rolls:
                 - oracle: oracle_rollable:starsmith/starship/fleet
@@ -444,7 +445,7 @@ oracles:
               min: 91
               max: 100
             <<: &StarshipMission
-              text: '[Starship Mission](oracle_collection:starsmith/starship/mission)'
+              text: "[Starship Mission](oracle_collection:starsmith/starship/mission)"
               # oracle_rolls removed (was invalid collection reference)
             # end copied rows
           - text: Border patrol
@@ -570,7 +571,7 @@ oracles:
               min: 96
               max: 100
             <<: &Derelict
-              text: '[Derelict](oracle_collection:starsmith/derelict)'
+              text: "[Derelict](oracle_collection:starsmith/derelict)"
             # end copied rows
           - text: Helpful
             roll:
@@ -767,7 +768,7 @@ oracles:
               min: 95
               max: 100
             <<: &DescriptorFocus
-              text: '[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)'
+              text: "[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)"
               oracle_rolls:
                 - oracle: oracle_rollable:starsmith/core/descriptor
                   auto: true
@@ -2330,7 +2331,7 @@ oracles:
                   min: 83
                   max: 85
               - &Mission.30
-                text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+                text: "[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)"
                 oracle_rolls:
                   - oracle: oracle_rollable:starsmith/core/action
                     auto: true
@@ -2498,7 +2499,7 @@ oracles:
                   min: 183
                   max: 185
               - &Mission.62
-                text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+                text: "[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)"
                 roll:
                   min: 186
                   max: 190
@@ -2660,7 +2661,7 @@ oracles:
                   min: 283
                   max: 285
               - &Mission.94
-                text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+                text: "[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)"
                 roll:
                   min: 286
                   max: 290

@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -22,6 +22,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 106
     contents:
       location:
         name: Location
@@ -169,7 +170,7 @@ oracles:
               min: 91
               max: 100
             <<: &DescriptorFocus
-              text: '[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)'
+              text: "[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)"
               oracle_rolls:
                 - oracle: oracle_rollable:starsmith/core/descriptor
                   auto: true
@@ -397,7 +398,7 @@ oracles:
               min: 96
               max: 100
             <<: &Derelict
-              text: '[Derelict](oracle_collection:starsmith/derelict)'
+              text: "[Derelict](oracle_collection:starsmith/derelict)"
             # end copied rows
           - text: Helpful
             roll:
@@ -783,7 +784,7 @@ oracles:
               min: 96
               max: 100
             <<: &ActionTheme
-              text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+              text: "[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)"
               oracle_rolls:
                 - oracle: oracle_rollable:starsmith/core/action
                   auto: true

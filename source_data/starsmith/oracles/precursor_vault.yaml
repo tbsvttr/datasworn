@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -21,6 +21,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 222
     contents:
       form:
         name: Form
@@ -601,7 +602,7 @@ oracles:
               min: 96
               max: 100
             <<: &DescriptorFocus
-              text: '[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)'
+              text: "[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)"
               oracle_rolls:
                 - oracle: oracle_rollable:starsmith/core/descriptor
                   auto: true
@@ -1772,7 +1773,7 @@ oracles:
                   min: 96
                   max: 99
                 <<: &ActionTheme
-                  text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+                  text: "[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)"
                   oracle_rolls:
                     - oracle: oracle_rollable:starsmith/core/action
                       auto: true
