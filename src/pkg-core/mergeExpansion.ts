@@ -106,9 +106,13 @@ function enhanceCollection<T extends TypeNode.Collection>(
 
 function applyDictionaryEnhancements<
 	T extends TypeNode.Collection,
-	TTarget extends Map<string, T> | Record<string, T>,
-	TSource extends Map<string, T> | Record<string, T>
+	TTarget extends Map<string, T> | Record<string, T> | undefined,
+	TSource extends Map<string, T> | Record<string, T> | undefined
 >(targetDictionary: TTarget, sourceDictionary: TSource) {
+	// Handle undefined dictionaries (e.g., when a collection has no nested collections)
+	if (sourceDictionary == null) return targetDictionary
+	if (targetDictionary == null) return sourceDictionary
+
 	const targetMap: Map<string, T> =
 		targetDictionary instanceof Map
 			? targetDictionary
