@@ -4275,6 +4275,10 @@ export interface Rarity {
 	 */
 	asset: AssetId;
 	/**
+	 * A description of this rarity.
+	 */
+	description: MarkdownString;
+	/**
 	 * From Ironsworn: Delve, p. 174:
 	 * 
 	 *       Some assets will bring a rarity into play more often than others, so the experience point cost for a rarity will vary by the linked asset. These costs are shown in the tables on page 175.
