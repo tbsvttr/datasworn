@@ -4527,6 +4527,7 @@ module Datasworn
     attr_accessor id: RarityID
     attr_accessor source: SourceInfo
     attr_accessor asset: AssetID
+    attr_accessor description: MarkdownString
     attr_accessor name: Label
     attr_accessor type: RarityType
     attr_accessor xp_cost: Integer

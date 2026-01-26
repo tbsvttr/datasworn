@@ -14448,6 +14448,11 @@ class Rarity:
     The asset augmented by this rarity.
     """
 
+    description: 'MarkdownString'
+    """
+    A description of this rarity.
+    """
+
     name: 'Label'
     """
     The primary name/label for this node.
@@ -14500,6 +14505,7 @@ class Rarity:
             _from_json_data(RarityID, data.get("_id")),
             _from_json_data(SourceInfo, data.get("_source")),
             _from_json_data(AssetID, data.get("asset")),
+            _from_json_data(MarkdownString, data.get("description")),
             _from_json_data(Label, data.get("name")),
             _from_json_data(RarityType, data.get("type")),
             _from_json_data(int, data.get("xp_cost")),
@@ -14518,6 +14524,7 @@ class Rarity:
         data["_id"] = _to_json_data(self.id)
         data["_source"] = _to_json_data(self.source)
         data["asset"] = _to_json_data(self.asset)
+        data["description"] = _to_json_data(self.description)
         data["name"] = _to_json_data(self.name)
         data["type"] = _to_json_data(self.type)
         data["xp_cost"] = _to_json_data(self.xp_cost)

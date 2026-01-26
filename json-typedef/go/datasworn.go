@@ -6697,6 +6697,9 @@ type Rarity struct {
 	// The asset augmented by this rarity.
 	Asset AssetID `json:"asset"`
 
+	// A description of this rarity.
+	Description MarkdownString `json:"description"`
+
 	// The primary name/label for this node.
 	Name Label `json:"name"`
 

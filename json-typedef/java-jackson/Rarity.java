@@ -21,6 +21,9 @@ public class Rarity {
     @JsonProperty("asset")
     private AssetId asset;
 
+    @JsonProperty("description")
+    private MarkdownString description;
+
     @JsonProperty("name")
     private Label name;
 
@@ -113,6 +116,22 @@ public class Rarity {
      */
     public void setAsset(AssetId asset) {
         this.asset = asset;
+    }
+
+    /**
+     * Getter for description.<p>
+     * A description of this rarity.
+     */
+    public MarkdownString getDescription() {
+        return description;
+    }
+
+    /**
+     * Setter for description.<p>
+     * A description of this rarity.
+     */
+    public void setDescription(MarkdownString description) {
+        this.description = description;
     }
 
     /**
