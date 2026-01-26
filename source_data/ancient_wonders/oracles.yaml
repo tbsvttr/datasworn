@@ -963,18 +963,18 @@ oracles:
           - roll: { min: 1, max: 10 }
             text: "None"
           - roll: { min: 11, max: 25 }
-            text: ">Ring System"
+            text: "Ring System"
           - roll: { min: 26, max: 75 }
-            text: ">Moon; pg 42"
+            text: "Moon"
           - roll: { min: 76, max: 80 }
-            text: ">Dense Nebula Cloud; SSE, pg 24"
+            text: "Dense Nebula Cloud"
           - roll: { min: 81, max: 83 }
-            text: ">Fiery Energy Storm; SSE, pg 18"
+            text: "Fiery Energy Storm"
           - roll: { min: 84, max: 85 }
-            text: ">Precursor Vault (orbital); RG, pg 92"
+            text: "Precursor Vault (orbital)"
           - roll: { min: 86, max: 92 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus; pg 13"
+              Focus"
           - roll: { min: 93, max: 100 }
             text: "Roll twice"
       planet_phase:
@@ -1088,7 +1088,7 @@ oracles:
           - roll: { min: 1, max: 33 }
             text: "[Planet](datasworn:oracle_rollable:starforged/planet/class)"
           - roll: { min: 34, max: 67 }
-            text: ">Ecumenopolis; pg 130"
+            text: "Ecumenopolis"
           - roll: { min: 68, max: 100 }
             text: "[Kintsugi World](datasworn:oracle_collection:ancient_wonders/planets_expanded/kintsugi_world) (pg 134)"
       lesser_planet_moon_size_gravity:
@@ -1126,33 +1126,33 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 17 }
-            text: "Furnace World; pg 52"
+            text: "Furnace World"
           - roll: { min: 18, max: 47 }
-            text: "Desert World; pg 50"
+            text: "Desert World"
           - roll: { min: 48, max: 57 }
-            text: "Jungle World; pg 60"
+            text: "Jungle World"
           - roll: { min: 58, max: 69 }
-            text: "Jovian World; pg 58"
+            text: "Jovian World"
           - roll: { min: 70, max: 77 }
-            text: "Rocky World; pg 72"
+            text: "Rocky World"
           - roll: { min: 78, max: 83 }
-            text: "Tainted World; pg 76"
+            text: "Tainted World"
           - roll: { min: 84, max: 87 }
-            text: "Metallic World; pg 68"
+            text: "Metallic World"
           - roll: { min: 88, max: 89 }
-            text: "Crystalline World; pg 48"
+            text: "Crystalline World"
           - roll: { min: 90, max: 91 }
-            text: "Tidally-locked World; pg  78"
+            text: "Tidally-locked World"
           - roll: { min: 92, max: 93 }
-            text: "Karst World; pg 62"
+            text: "Karst World"
           - roll: { min: 94, max: 96 }
-            text: "Grave World; pg 54"
+            text: "Grave World"
           - roll: { min: 97, max: 98 }
-            text: "Shattered World; pg 74"
+            text: "Shattered World"
           - roll: { min: 99, max: 99 }
-            text: "Living World; pg 64"
+            text: "Living World"
           - roll: { min: 100, max: 100 }
-            text: "Anomalous World; pg 44"
+            text: "Anomalous World"
       three_free_interplanetary_orbits:
         name: "Three Free Interplanetary Orbits"
         oracle_type: table_text
@@ -1205,9 +1205,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 25 }
-            text: ">Planet (host of megacity or grounded vault); pg 40"
+            text: "Planet (host of megacity or grounded vault)"
           - roll: { min: 26, max: 50 }
-            text: ">Ecumenopolis; pg 130"
+            text: "Ecumenopolis"
           - roll: { min: 51, max: 75 }
             text: "[Kintsugi World](datasworn:oracle_collection:ancient_wonders/planets_expanded/kintsugi_world) (pg 134)"
           - roll: { min: 76, max: 100 }
@@ -1592,11 +1592,11 @@ oracles:
         rows:
           - roll: { min: 1, max: 56 }
             text: "Terrain feature (choose one) 1. Surface Feature; planetary class page 2.
-              Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
+              Region Landmark; SI, pg 151 3.Underwater Feature"
           - roll: { min: 57, max: 66 }
             text: "Instance
               [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor)
-              + Focus; pg 13"
+              + Focus"
           - roll: { min: 67, max: 73 }
             text: "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship);
               RG, pg 58"
@@ -1609,13 +1609,13 @@ oracles:
               [Derelict](datasworn:oracle_collection:starforged/derelict); RG,
               pg 80"
           - roll: { min: 80, max: 82 }
-            text: "Ancient city >Megacity; pg 168"
+            text: "Ancient city : Megacity"
           - roll: { min: 83, max: 85 }
             text: "Alien structure [Precursor
               Vault](datasworn:oracle_collection:starforged/precursor_vault);
               RG, pg 922"
           - roll: { min: 86, max: 95 }
-            text: "Character focus >Interlude Scene; SI, pg 250"
+            text: "Character focus : Interlude Scene"
           - roll: { min: 96, max: 100 }
             text: "Roll twice"
       planet_proximity_four_planets:
@@ -1735,7 +1735,7 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: ">Anomaly; pg 194"
+            text: "Anomaly"
           - roll: { min: 2, max: 3 }
             text: "Life is revealed or takes an unexpected form"
           - roll: { min: 4, max: 7 }
@@ -1880,33 +1880,33 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 15 }
-            text: ">Precursor Vault (megastructure scale); RG, pg 82"
+            text: "Precursor Vault (megastructure scale)"
           - roll: { min: 16, max: 22 }
-            text: ">Bishop Ring; pg 146"
+            text: "Bishop Ring"
           - roll: { min: 23, max: 30 }
-            text: ">Discworld; pg 114"
+            text: "Discworld"
           - roll: { min: 31, max: 39 }
-            text: ">Ecumenopolis; pg 130"
+            text: "Ecumenopolis"
           - roll: { min: 40, max: 45 }
-            text: ">Equatorial Shipyard; pg 152"
+            text: "Equatorial Shipyard"
           - roll: { min: 46, max: 52 }
-            text: ">McKendree Cylinder; pg 122"
+            text: "McKendree Cylinder"
           - roll: { min: 53, max: 56 }
-            text: ">Nezzarine Garden; pg 135"
+            text: "Nezzarine Garden"
           - roll: { min: 57, max: 62 }
             text: "[Quarry World](datasworn:oracle_collection:ancient_wonders/planets_expanded/quarry_world) (pg 144)"
           - roll: { min: 63, max: 68 }
-            text: ">Standford Torus; pg 146"
+            text: "Standford Torus"
           - roll: { min: 69, max: 74 }
-            text: ">Behemoth Assembler; pg 152"
+            text: "Behemoth Assembler"
           - roll: { min: 75, max: 80 }
-            text: ">Ecosphere; pg 128"
+            text: "Ecosphere"
           - roll: { min: 81, max: 87 }
-            text: ">Habitat Cluster; pg 122"
+            text: "Habitat Cluster"
           - roll: { min: 88, max: 94 }
             text: "[Kintsugi World](datasworn:oracle_collection:ancient_wonders/planets_expanded/kintsugi_world) (pg 134)"
           - roll: { min: 95, max: 100 }
-            text: ">Sentry Array; pg 150"
+            text: "Sentry Array"
       planetside_peril_lifebearing:
         name: "Planetside Peril - Lifebearing"
         oracle_type: table_text
@@ -1915,7 +1915,7 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: ">Anomaly; pg 194"
+            text: "Anomaly"
           - roll: { min: 2, max: 3 }
             text: "Corrupted or mutated lifeform"
           - roll: { min: 4, max: 6 }
@@ -2023,11 +2023,11 @@ oracles:
         rows:
           - roll: { min: 1, max: 60 }
             text: "Terrain feature (choose one) 1. Surface Feature; planetary class page 2.
-              Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
+              Region Landmark; SI, pg 151 3.Underwater Feature"
           - roll: { min: 61, max: 70 }
             text: "Instance
               [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor)
-              + Focus; pg 13"
+              + Focus"
           - roll: { min: 71, max: 73 }
             text: "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship);
               RG, pg 58"
@@ -2040,13 +2040,13 @@ oracles:
               [Derelict](datasworn:oracle_collection:starforged/derelict); RG,
               pg 80"
           - roll: { min: 78, max: 81 }
-            text: "Ancient city >Megacity; pg 168"
+            text: "Ancient city : Megacity"
           - roll: { min: 82, max: 85 }
             text: "Alien structure [Precursor
               Vault](datasworn:oracle_collection:starforged/precursor_vault);
               RG, pg 922"
           - roll: { min: 86, max: 95 }
-            text: "Character focus >Interlude Scene; SI, pg 250"
+            text: "Character focus : Interlude Scene"
       planetary_class_expanded_cold:
         name: "Planetary Class (Expanded) - Cold"
         oracle_type: table_text
@@ -2203,29 +2203,29 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 10 }
-            text: "Chemical World; pg 46"
+            text: "Chemical World"
           - roll: { min: 11, max: 12 }
-            text: "Crystalline World; pg 48"
+            text: "Crystalline World"
           - roll: { min: 13, max: 22 }
-            text: "Desert World; pg 50"
+            text: "Desert World"
           - roll: { min: 23, max: 32 }
-            text: "Furnace World; pg 52"
+            text: "Furnace World"
           - roll: { min: 33, max: 42 }
-            text: "Ice World; pg 56"
+            text: "Ice World"
           - roll: { min: 43, max: 52 }
-            text: "Jungle World; pg 60"
+            text: "Jungle World"
           - roll: { min: 53, max: 62 }
-            text: "Living World; pg 64"
+            text: "Living World"
           - roll: { min: 63, max: 64 }
-            text: "Metallic World; pg 68"
+            text: "Metallic World"
           - roll: { min: 65, max: 74 }
-            text: "Ocean World; pg 70"
+            text: "Ocean World"
           - roll: { min: 75, max: 80 }
-            text: "Rocky World; pg 72"
+            text: "Rocky World"
           - roll: { min: 81, max: 90 }
-            text: "Tainted World; pg 76"
+            text: "Tainted World"
           - roll: { min: 91, max: 100 }
-            text: "Vital World; pg 80"
+            text: "Vital World"
       stellar_compressor_planetary_class_sector_based_st:
         name: "Stellar Compressor Planetary Class (Sector Based) - Starforged"
         oracle_type: table_text
@@ -2236,21 +2236,21 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 17 }
-            text: "Furnace World; pg 52"
+            text: "Furnace World"
           - roll: { min: 18, max: 47 }
-            text: "Desert World; pg 50"
+            text: "Desert World"
           - roll: { min: 48, max: 57 }
-            text: "Jungle World; pg 60"
+            text: "Jungle World"
           - roll: { min: 58, max: 72 }
-            text: "Jovian World; pg 58"
+            text: "Jovian World"
           - roll: { min: 73, max: 84 }
-            text: "Rocky World; pg 72"
+            text: "Rocky World"
           - roll: { min: 85, max: 94 }
-            text: "Tainted World; pg 76"
+            text: "Tainted World"
           - roll: { min: 95, max: 97 }
-            text: "Grave World; pg 54"
+            text: "Grave World"
           - roll: { min: 98, max: 100 }
-            text: "Shattered World; pg 74"
+            text: "Shattered World"
       planetary_class_expanded_searing:
         name: "Planetary Class (Expanded) - Searing"
         oracle_type: table_text
@@ -2317,23 +2317,23 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 15 }
-            text: ">Precursor Vault (megastructure scale); RG, pg 82"
+            text: "Precursor Vault (megastructure scale)"
           - roll: { min: 16, max: 26 }
-            text: ">Bishop Ring; pg 146"
+            text: "Bishop Ring"
           - roll: { min: 27, max: 38 }
-            text: ">Discworld; pg 114"
+            text: "Discworld"
           - roll: { min: 39, max: 51 }
-            text: ">Ecumenopolis; pg 130"
+            text: "Ecumenopolis"
           - roll: { min: 52, max: 61 }
-            text: ">Equatorial Shipyard; pg 152"
+            text: "Equatorial Shipyard"
           - roll: { min: 62, max: 72 }
-            text: ">McKendree Cylinder; pg 122"
+            text: "McKendree Cylinder"
           - roll: { min: 73, max: 80 }
-            text: ">Nezzarine Garden; pg 135"
+            text: "Nezzarine Garden"
           - roll: { min: 81, max: 90 }
             text: "[Quarry World](datasworn:oracle_collection:ancient_wonders/planets_expanded/quarry_world) (pg 144)"
           - roll: { min: 91, max: 100 }
-            text: ">Standford Torus; pg 146"
+            text: "Standford Torus"
       ring_system:
         name: "Ring System"
         oracle_type: table_text
@@ -2423,21 +2423,21 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 13 }
-            text: "Desert World; pg 50"
+            text: "Desert World"
           - roll: { min: 14, max: 25 }
-            text: "Furnace World; pg 52"
+            text: "Furnace World"
           - roll: { min: 26, max: 37 }
-            text: "Ice World; pg 56"
+            text: "Ice World"
           - roll: { min: 38, max: 50 }
-            text: "Jungle World; pg 60"
+            text: "Jungle World"
           - roll: { min: 51, max: 63 }
-            text: "Ocean World; pg 70"
+            text: "Ocean World"
           - roll: { min: 64, max: 75 }
-            text: "Rocky World; pg 72"
+            text: "Rocky World"
           - roll: { min: 76, max: 88 }
-            text: "Tainted World; pg 76"
+            text: "Tainted World"
           - roll: { min: 89, max: 100 }
-            text: "Vital World; pg 80"
+            text: "Vital World"
       planetary_class_searing:
         name: "Planetary Class - Searing"
         oracle_type: table_text
@@ -2498,35 +2498,35 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 5 }
-            text: "Jungle World; pg 60"
+            text: "Jungle World"
           - roll: { min: 6, max: 20 }
-            text: "Ocean World; pg 70"
+            text: "Ocean World"
           - roll: { min: 21, max: 52 }
-            text: "Ice World; pg 56"
+            text: "Ice World"
           - roll: { min: 53, max: 57 }
-            text: "Chemical World; pg 46"
+            text: "Chemical World"
           - roll: { min: 58, max: 69 }
-            text: "Jovian World; pg 58"
+            text: "Jovian World"
           - roll: { min: 70, max: 77 }
-            text: "Rocky World; pg 72"
+            text: "Rocky World"
           - roll: { min: 78, max: 83 }
-            text: "Tainted World; pg 76"
+            text: "Tainted World"
           - roll: { min: 84, max: 87 }
-            text: "Metallic World; pg 68"
+            text: "Metallic World"
           - roll: { min: 88, max: 89 }
-            text: "Crystalline World; pg 48"
+            text: "Crystalline World"
           - roll: { min: 90, max: 91 }
-            text: "Tidally-locked World; pg  78"
+            text: "Tidally-locked World"
           - roll: { min: 92, max: 93 }
-            text: "Karst World; pg 62"
+            text: "Karst World"
           - roll: { min: 94, max: 96 }
-            text: "Grave World; pg 54"
+            text: "Grave World"
           - roll: { min: 97, max: 98 }
-            text: "Shattered World; pg 74"
+            text: "Shattered World"
           - roll: { min: 99, max: 99 }
-            text: "Living World; pg 64"
+            text: "Living World"
           - roll: { min: 100, max: 100 }
-            text: "Anomalous World; pg 44"
+            text: "Anomalous World"
       planetside_opportunity_lifebearing:
         name: "Planetside Opportunity - Lifebearing"
         oracle_type: table_text
@@ -2747,11 +2747,11 @@ oracles:
         rows:
           - roll: { min: 1, max: 53 }
             text: "Terrain feature (choose one) 1. Surface Feature; planetary class page 2.
-              Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
+              Region Landmark; SI, pg 151 3.Underwater Feature"
           - roll: { min: 54, max: 63 }
             text: "Instance
               [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor)
-              + Focus; pg 13"
+              + Focus"
           - roll: { min: 64, max: 73 }
             text: "Spacecraft [Starship](datasworn:oracle_collection:starforged/starship);
               RG, pg 58"
@@ -2764,13 +2764,13 @@ oracles:
               [Derelict](datasworn:oracle_collection:starforged/derelict); RG,
               pg 80"
           - roll: { min: 82, max: 83 }
-            text: "Ancient city >Megacity; pg 168"
+            text: "Ancient city : Megacity"
           - roll: { min: 84, max: 85 }
             text: "Alien structure [Precursor
               Vault](datasworn:oracle_collection:starforged/precursor_vault);
               RG, pg 92"
           - roll: { min: 86, max: 95 }
-            text: "Character focus >Interlude Scene; SI, pg 250"
+            text: "Character focus : Interlude Scene"
           - roll: { min: 96, max: 100 }
             text: "Roll twice"
       ringworlds_stellar_ringworld_segmentation:
@@ -2895,21 +2895,21 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 5 }
-            text: "Jungle World; pg 60"
+            text: "Jungle World"
           - roll: { min: 6, max: 25 }
-            text: "Ocean World; pg 70"
+            text: "Ocean World"
           - roll: { min: 26, max: 57 }
-            text: "Ice World; pg 56"
+            text: "Ice World"
           - roll: { min: 58, max: 72 }
-            text: "Jovian World; pg 58"
+            text: "Jovian World"
           - roll: { min: 73, max: 84 }
-            text: "Rocky World; pg 72"
+            text: "Rocky World"
           - roll: { min: 85, max: 94 }
-            text: "Tainted World; pg 76"
+            text: "Tainted World"
           - roll: { min: 95, max: 97 }
-            text: "Grave World; pg 54"
+            text: "Grave World"
           - roll: { min: 98, max: 100 }
-            text: "Shattered World; pg 74"
+            text: "Shattered World"
       planetary_class_hot:
         name: "Planetary Class - Hot"
         oracle_type: table_text
@@ -2951,7 +2951,7 @@ oracles:
           - roll: { min: 7, max: 8 }
             text: "[Shattered World](datasworn:oracle_collection:ancient_wonders/planets_expanded/shattered_world) (pg 74)"
           - roll: { min: 9, max: 10 }
-            text: ">Tidally-locked World; pg 78"
+            text: "Tidally-locked World"
           - roll: { min: 11, max: 12 }
             text: "[Karst World](datasworn:oracle_collection:ancient_wonders/planets_expanded/karst_world) (pg 62)"
           - roll: { min: 13, max: 17 }
@@ -3312,7 +3312,7 @@ oracles:
               - roll: { min: 89, max: 92 }
                 text: "Whispering mists"
               - roll: { min: 93, max: 100 }
-                text: ">Extraplanetary Biome"
+                text: "Extraplanetary Biome"
           life:
             name: "Anomalous World Life"
             oracle_type: table_text
@@ -3447,11 +3447,11 @@ oracles:
               - roll: { min: 77, max: 78 }
                 text: "Reef ([Ocean World](datasworn:oracle_collection:ancient_wonders/planets_expanded/ocean_world)) (pg 70)*"
               - roll: { min: 79, max: 80 }
-                text: ">Salt Flat (Desert World); pg 50*"
+                text: "Salt Flat (Desert World)"
               - roll: { min: 81, max: 81 }
                 text: "Savanna ([Vital World](datasworn:oracle_collection:ancient_wonders/planets_expanded/vital_world)) (pg 80)"
               - roll: { min: 82, max: 83 }
-                text: ">Semi-arid (Desert World); pg 50*"
+                text: "Semi-arid (Desert World)"
               - roll: { min: 84, max: 85 }
                 text: "Snow ([Ice World](datasworn:oracle_collection:ancient_wonders/planets_expanded/ice_world)) (pg 56)*"
               - roll: { min: 86, max: 87 }
@@ -3784,7 +3784,7 @@ oracles:
               - roll: { min: 29, max: 32 }
                 text: "Unusually colored clouds or sky"
               - roll: { min: 33, max: 100 }
-                text: ">Biome Feature; next page"
+                text: "Biome Feature"
           life:
             name: "Chemical World Life"
             oracle_type: table_text
@@ -4490,7 +4490,7 @@ oracles:
               - roll: { min: 26, max: 30 }
                 text: "Vibrant terrain colors"
               - roll: { min: 31, max: 100 }
-                text: ">Biome Feature; next page"
+                text: "Biome Feature"
           biome_feature_dune:
             name: "Desert World Biome Feature - Dune"
             oracle_type: table_text
@@ -4935,7 +4935,7 @@ oracles:
               - roll: { min: 31, max: 33 }
                 text: "World-spanning fissures"
               - roll: { min: 34, max: 100 }
-                text: ">Biome Feature"
+                text: "Biome Feature"
           biome:
             name: "Furnace World Biome"
             oracle_type: table_text
@@ -5576,7 +5576,7 @@ oracles:
               - roll: { min: 26, max: 30 }
                 text: "Vibrantly colored ice"
               - roll: { min: 31, max: 100 }
-                text: ">Biome Feature; next page"
+                text: "Biome Feature"
           names:
             name: "Ice World Names"
             oracle_type: table_text
@@ -5972,11 +5972,11 @@ oracles:
               <<: *Source
             rows:
               - roll: { min: 1, max: 33 }
-                text: "Hothouse (Furnace World); pg 53"
+                text: "Hothouse (Furnace World)"
               - roll: { min: 34, max: 67 }
-                text: "Bleak (Rocky World); pg 73"
+                text: "Bleak (Rocky World)"
               - roll: { min: 68, max: 100 }
-                text: "Frigid (Ice World); pg 57"
+                text: "Frigid (Ice World)"
           settlements_expanse:
             name: "Jovian World Settlements - Expanse"
             oracle_type: table_text
@@ -6195,7 +6195,7 @@ oracles:
               - roll: { min: 26, max: 30 }
                 text: "Violent electrical storms"
               - roll: { min: 31, max: 100 }
-                text: ">Biome Feature; next page"
+                text: "Biome Feature"
           biome_feature_swamp:
             name: "Jungle World Biome Feature - Swamp"
             oracle_type: table_text
@@ -7220,7 +7220,7 @@ oracles:
               - roll: { min: 74, max: 77 }
                 text: "Vents expelling waste gases"
               - roll: { min: 78, max: 100 }
-                text: ">Biome Feature"
+                text: "Biome Feature"
           underground_feature:
             name: "Living World Underground Feature"
             oracle_type: table_text
@@ -7326,7 +7326,7 @@ oracles:
                 text: "Gland-like organ"
               - roll: { min: 96, max: 100 }
                 text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-                  Focus; pg 13"
+                  Focus"
           epidermis:
             name: "Living World Epidermis"
             oracle_type: table_text
@@ -7476,7 +7476,7 @@ oracles:
               - roll: { min: 1, max: 1 }
                 text: "Anomaly, pg 194"
               - roll: { min: 2, max: 20 }
-                text: ">Lurking Threat"
+                text: "Lurking Threat"
               - roll: { min: 21, max: 24 }
                 text: "A touch triggers a reaction"
               - roll: { min: 25, max: 28 }
@@ -8120,7 +8120,7 @@ oracles:
               - roll: { min: 28, max: 32 }
                 text: "Visible oceanic currents"
               - roll: { min: 33, max: 100 }
-                text: ">Biome Feature; next page"
+                text: "Biome Feature"
           biome_feature_hycean:
             name: "Ocean World Biome Feature - Hycean"
             oracle_type: table_text
@@ -8760,7 +8760,7 @@ oracles:
               - roll: { min: 25, max: 27 }
                 text: "Weathered rocky monoliths"
               - roll: { min: 28, max: 100 }
-                text: ">Biome Feature"
+                text: "Biome Feature"
           biome_feature_bleak:
             name: "Rocky World Biome Feature - Bleak"
             oracle_type: table_text
@@ -9216,7 +9216,7 @@ oracles:
               - roll: { min: 93, max: 96 }
                 text: "Venting magma"
               - roll: { min: 97, max: 100 }
-                text: ">Preserved biome"
+                text: "Preserved biome"
           settlements_outlands:
             name: "Shattered World Settlements - Outlands"
             oracle_type: table_text
@@ -9515,7 +9515,7 @@ oracles:
               - roll: { min: 31, max: 33 }
                 text: "Vibrant terrain coloration"
               - roll: { min: 34, max: 100 }
-                text: ">Biome Feature"
+                text: "Biome Feature"
           atmosphere:
             name: "Tainted World Atmosphere"
             oracle_type: table_text
@@ -10228,7 +10228,7 @@ oracles:
               - roll: { min: 34, max: 35 }
                 text: "Vivid auroras"
               - roll: { min: 36, max: 100 }
-                text: ">Biome Feature"
+                text: "Biome Feature"
           settlements_outlands:
             name: "Vital World Settlements - Outlands"
             oracle_type: table_text
@@ -10373,83 +10373,83 @@ oracles:
               <<: *Source
             rows:
               - roll: { min: 1, max: 3 }
-                text: ">Badlands (Desert World)"
+                text: "Badlands (Desert World)"
               - roll: { min: 4, max: 6 }
-                text: ">Dune (Desert World)"
+                text: "Dune (Desert World)"
               - roll: { min: 7, max: 8 }
-                text: ">Mesa (Desert World)"
+                text: "Mesa (Desert World)"
               - roll: { min: 9, max: 9 }
-                text: ">Oasis (Desert World)"
+                text: "Oasis (Desert World)"
               - roll: { min: 10, max: 11 }
-                text: ">Salt Flat (Desert World)"
+                text: "Salt Flat (Desert World)"
               - roll: { min: 12, max: 14 }
-                text: ">Semi-arid (Desert World)"
+                text: "Semi-arid (Desert World)"
               - roll: { min: 15, max: 17 }
-                text: ">Steppe (Desert World)"
+                text: "Steppe (Desert World)"
               - roll: { min: 18, max: 18 }
-                text: ">Ash (Furnace World)"
+                text: "Ash (Furnace World)"
               - roll: { min: 19, max: 20 }
-                text: ">Volcanic (Furnace World)"
+                text: "Volcanic (Furnace World)"
               - roll: { min: 21, max: 22 }
-                text: ">Cryoflora (Ice World)"
+                text: "Cryoflora (Ice World)"
               - roll: { min: 23, max: 24 }
-                text: ">Frigid (Ice World)"
+                text: "Frigid (Ice World)"
               - roll: { min: 25, max: 25 }
-                text: ">Geothermal (Ice World)"
+                text: "Geothermal (Ice World)"
               - roll: { min: 26, max: 27 }
-                text: ">Glacial (Ice World)"
+                text: "Glacial (Ice World)"
               - roll: { min: 28, max: 28 }
-                text: ">Glaciovolcanic (Ice World)"
+                text: "Glaciovolcanic (Ice World)"
               - roll: { min: 29, max: 30 }
-                text: ">Iceberg (Ice World)"
+                text: "Iceberg (Ice World)"
               - roll: { min: 31, max: 33 }
-                text: ">Snow (Ice World)"
+                text: "Snow (Ice World)"
               - roll: { min: 34, max: 34 }
-                text: ">Subglacial (Ice World)"
+                text: "Subglacial (Ice World)"
               - roll: { min: 35, max: 38 }
-                text: ">Forest (Jungle World)"
+                text: "Forest (Jungle World)"
               - roll: { min: 39, max: 40 }
-                text: ">Megaflora (Jungle World)"
+                text: "Megaflora (Jungle World)"
               - roll: { min: 41, max: 41 }
-                text: ">Petrified (Jungle World)"
+                text: "Petrified (Jungle World)"
               - roll: { min: 42, max: 44 }
-                text: ">Rainforest (Jungle World)"
+                text: "Rainforest (Jungle World)"
               - roll: { min: 45, max: 47 }
-                text: ">Swamp (Jungle World)"
+                text: "Swamp (Jungle World)"
               - roll: { min: 48, max: 49 }
-                text: ">Tepui (Jungle World)"
+                text: "Tepui (Jungle World)"
               - roll: { min: 50, max: 52 }
-                text: ">Archipelago (Ocean World)"
+                text: "Archipelago (Ocean World)"
               - roll: { min: 53, max: 56 }
-                text: ">Atoll (Ocean World)"
+                text: "Atoll (Ocean World)"
               - roll: { min: 57, max: 58 }
-                text: ">Crag (Ocean World)"
+                text: "Crag (Ocean World)"
               - roll: { min: 59, max: 61 }
-                text: ">Hycean (Ocean World)"
+                text: "Hycean (Ocean World)"
               - roll: { min: 62, max: 62 }
-                text: ">Mangrove (Ocean World)"
+                text: "Mangrove (Ocean World)"
               - roll: { min: 63, max: 64 }
-                text: ">Reef (Ocean World)"
+                text: "Reef (Ocean World)"
               - roll: { min: 65, max: 65 }
-                text: ">Basalt (Rocky World)"
+                text: "Basalt (Rocky World)"
               - roll: { min: 66, max: 67 }
-                text: ">Bog (Rocky World)"
+                text: "Bog (Rocky World)"
               - roll: { min: 68, max: 68 }
-                text: ">Mud (Rocky World)"
+                text: "Mud (Rocky World)"
               - roll: { min: 69, max: 70 }
-                text: ">Hive (Tainted World)"
+                text: "Hive (Tainted World)"
               - roll: { min: 71, max: 71 }
-                text: ">Mutagenic (Tainted World)"
+                text: "Mutagenic (Tainted World)"
               - roll: { min: 72, max: 73 }
-                text: ">Mycelium (Tainted World)"
+                text: "Mycelium (Tainted World)"
               - roll: { min: 74, max: 80 }
-                text: ">Grassland (Vital World)"
+                text: "Grassland (Vital World)"
               - roll: { min: 81, max: 87 }
-                text: ">Jungle (Vital World)"
+                text: "Jungle (Vital World)"
               - roll: { min: 88, max: 94 }
-                text: ">Savanna (Vital World)"
+                text: "Savanna (Vital World)"
               - roll: { min: 95, max: 100 }
-                text: ">Taiga (Vital World)"
+                text: "Taiga (Vital World)"
           biome_feature_jungle:
             name: "Vital World Biome Feature - Jungle"
             oracle_type: table_text
@@ -10796,13 +10796,13 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 40 }
-            text: ">Metal Type; pg 69"
+            text: "Metal Type"
           - roll: { min: 41, max: 65 }
-            text: ">Ceramic Type; pg 103"
+            text: "Ceramic Type"
           - roll: { min: 66, max: 75 }
-            text: ">Crystal Type; pg 49"
+            text: "Crystal Type"
           - roll: { min: 76, max: 80 }
-            text: ">Animal Organic Matter; pg 64"
+            text: "Animal Organic Matter"
           - roll: { min: 81, max: 85 }
             text: "Plant-like"
           - roll: { min: 86, max: 87 }
@@ -11338,7 +11338,7 @@ oracles:
             text: "Intense smell"
           - roll: { min: 96, max: 100 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus; pg 13"
+              Focus"
       megastructure_status:
         name: "Megastructure Status"
         oracle_type: table_text
@@ -11421,7 +11421,7 @@ oracles:
             text: "Strong gravity well"
           - roll: { min: 96, max: 100 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus; pg 13"
+              Focus"
       unidentified_megastructure_type_type_2_civilizatio:
         name: "Unidentified Megastructure Type - Type 2 civilizations"
         oracle_type: table_text
@@ -11513,13 +11513,13 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 40 }
-            text: ">Metal Type; pg 69"
+            text: "Metal Type"
           - roll: { min: 41, max: 65 }
-            text: ">Ceramic Type"
+            text: "Ceramic Type"
           - roll: { min: 66, max: 75 }
-            text: ">Crystal Type; pg 49"
+            text: "Crystal Type"
           - roll: { min: 76, max: 80 }
-            text: ">Animal Organic Matter; pg 64"
+            text: "Animal Organic Matter"
           - roll: { min: 81, max: 85 }
             text: "Plant-like"
           - roll: { min: 86, max: 87 }
@@ -11551,7 +11551,7 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: ">Pay the Price table; RG, pg 25"
+            text: "Pay the Price table"
           - roll: { min: 2, max: 2 }
             text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg
               100"
@@ -11559,11 +11559,11 @@ oracles:
             text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg
               82"
           - roll: { min: 4, max: 4 }
-            text: ">Vault Peril; RG, pg 92"
+            text: "Vault Peril"
           - roll: { min: 5, max: 5 }
-            text: ">Lurking Threat"
+            text: "Lurking Threat"
           - roll: { min: 6, max: 6 }
-            text: ">Story Complication; RG, pg 110"
+            text: "Story Complication"
       quantity_of_megastructures_type_2:
         name: "Quantity Of Megastructures - Type 2"
         oracle_type: table_text
@@ -11631,13 +11631,13 @@ oracles:
           - roll: { min: 15, max: 19 }
             text: "Food"
           - roll: { min: 20, max: 24 }
-            text: "Gemstone, >Non-precious; pg 49"
+            text: "Gemstone, : Non-precious"
           - roll: { min: 25, max: 28 }
-            text: "Gemstone, >Semi-precious; pg 49"
+            text: "Gemstone, : Semi-precious"
           - roll: { min: 29, max: 31 }
-            text: "Gemstone, >Precious; pg 49"
+            text: "Gemstone, : Precious"
           - roll: { min: 32, max: 33 }
-            text: "Gemstone, >Exotic; pg 49"
+            text: "Gemstone, : Exotic"
           - roll: { min: 34, max: 37 }
             text: "Houseware, basic"
           - roll: { min: 38, max: 40 }
@@ -11649,11 +11649,11 @@ oracles:
           - roll: { min: 50, max: 54 }
             text: "Ingot, ferrous"
           - roll: { min: 55, max: 58 }
-            text: "Ingot, >Non-ferrous; pg 69"
+            text: "Ingot, : Non-ferrous"
           - roll: { min: 59, max: 61 }
-            text: "Ingot, >Precious; pg 69"
+            text: "Ingot, : Precious"
           - roll: { min: 62, max: 63 }
-            text: "Ingot, >Exotic; pg 69"
+            text: "Ingot, : Exotic"
           - roll: { min: 64, max: 66 }
             text: "Jewelry"
           - roll: { min: 67, max: 70 }
@@ -11678,7 +11678,7 @@ oracles:
             text: "Vehicle, space"
           - roll: { min: 96, max: 100 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus; pg 13"
+              Focus"
       megastructure_derelict_zones:
         name: "Megastructure Derelict Zones"
         oracle_type: table_text
@@ -11689,17 +11689,17 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 35 }
-            text: ">Engineering"
+            text: "Engineering"
           - roll: { min: 36, max: 40 }
-            text: ">Living"
+            text: "Living"
           - roll: { min: 41, max: 45 }
-            text: ">Medical"
+            text: "Medical"
           - roll: { min: 46, max: 65 }
-            text: ">Operations"
+            text: "Operations"
           - roll: { min: 66, max: 90 }
-            text: ">Production"
+            text: "Production"
           - roll: { min: 91, max: 100 }
-            text: ">Research"
+            text: "Research"
       gigafoundries_stellar_hyperforge_unknown_product:
         name: "Gigafoundries Stellar Hyperforge Unknown Product"
         oracle_type: table_text
@@ -11729,7 +11729,7 @@ oracles:
             text: "Vehicle"
           - roll: { min: 91, max: 100 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus;  pg  13"
+              Focus"
       unidentified_megastructure_purpose:
         name: "Unidentified Megastructure Purpose"
         oracle_type: table_text
@@ -12195,7 +12195,7 @@ oracles:
             text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG,
               pg 82"
           - roll: { min: 5, max: 6 }
-            text: ">Vault Feature; RG, pg 92"
+            text: "Vault Feature"
       unidentified_megastructure_scale_type_2:
         name: "Unidentified Megastructure Scale Type 2"
         oracle_type: table_text
@@ -12312,7 +12312,7 @@ oracles:
             text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity;
               RG, pg 82"
           - roll: { min: 5, max: 6 }
-            text: ">Vault Opportunity; RG, pg 92"
+            text: "Vault Opportunity"
       unidentified_megastructure_ceramic_type_semi_preci:
         name: "Unidentified Megastructure Ceramic Type - Semi-precious"
         oracle_type: table_text
@@ -12542,7 +12542,7 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: ">Pay the Price table; RG, pg 25"
+            text: "Pay the Price table"
           - roll: { min: 2, max: 2 }
             text: "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg
               100"
@@ -12550,11 +12550,11 @@ oracles:
             text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg
               82"
           - roll: { min: 4, max: 4 }
-            text: ">Vault Peril; RG, pg 92"
+            text: "Vault Peril"
           - roll: { min: 5, max: 5 }
-            text: ">Lurking Threat; next page"
+            text: "Lurking Threat"
           - roll: { min: 6, max: 6 }
-            text: ">Story Complication; RG, pg 110"
+            text: "Story Complication"
       megacity_lurking_threat_minor_control_threat_when_:
         name: "Megacity Lurking Threat - Minor Control (Threat / When the clock
           advances... / When the clock is filled...)"
@@ -12634,7 +12634,7 @@ oracles:
             text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG,
               pg 82"
           - roll: { min: 5, max: 6 }
-            text: ">Vault Feature; RG, pg 92"
+            text: "Vault Feature"
       megacity_cipher:
         name: "Megacity Cipher"
         oracle_type: table_text
@@ -12810,7 +12810,7 @@ oracles:
           - roll: { min: 94, max: 95 }
             text: "Orbiting object"
           - roll: { min: 96, max: 100 }
-            text: "Descriptor + Focus; pg 13"
+            text: "Descriptor + Focus"
       megacity_lurking_threat_partial_control_threat_whe:
         name: "Megacity Lurking Threat - Partial Control (Threat / When the clock
           advances... / When the clock is filled...)"
@@ -12997,7 +12997,7 @@ oracles:
           - roll: { min: 94, max: 95 }
             text: "Toxic residue"
           - roll: { min: 96, max: 100 }
-            text: "Descriptor + Focus; pg 13"
+            text: "Descriptor + Focus"
       megacity_class_open_sea:
         name: "Megacity Class - Open Sea"
         oracle_type: table_text
@@ -13246,7 +13246,7 @@ oracles:
             text: "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity;
               RG, pg 82"
           - roll: { min: 5, max: 6 }
-            text: ">Vault Opportunity; RG, pg 92"
+            text: "Vault Opportunity"
   denizens:
     name: "Denizens"
     type: oracle_collection
@@ -13435,7 +13435,7 @@ oracles:
           - roll: { min: 91, max: 99 }
             text: "Huge"
           - roll: { min: 100, max: 100 }
-            text: ">Ultra-scale"
+            text: "Ultra-scale"
       number_of_moons_enormous:
         name: "Number of Moons - Enormous"
         oracle_type: table_text
@@ -14271,9 +14271,9 @@ oracles:
           - roll: { min: 41, max: 55 }
             text: "Tracked"
           - roll: { min: 56, max: 94 }
-            text: ">Legged"
+            text: "Legged"
           - roll: { min: 95, max: 100 }
-            text: ">Wheeled"
+            text: "Wheeled"
       harvesting_platforms_amount:
         name: "Harvesting Platforms Amount"
         oracle_type: table_text
@@ -14313,7 +14313,7 @@ oracles:
             text: "[Creature](datasworn:oracle_collection:starforged/creature)"
           - roll: { min: 25, max: 31 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus; pg 13"
+              Focus"
           - roll: { min: 32, max: 40 }
             text: "Debris Field: Mineral Asteroids"
           - roll: { min: 41, max: 47 }
@@ -14587,7 +14587,7 @@ oracles:
             text: "[Creature](datasworn:oracle_collection:starforged/creature)"
           - roll: { min: 28, max: 33 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus; pg 13"
+              Focus"
           - roll: { min: 34, max: 42 }
             text: "Debris Field: Mineral Asteroids"
           - roll: { min: 43, max: 49 }
@@ -14786,7 +14786,7 @@ oracles:
           - roll: { min: 51, max: 65 }
             text: "Stationary"
           - roll: { min: 66, max: 100 }
-            text: ">Legged"
+            text: "Legged"
       gigatransporter_vessel_transport_duration_skyhook:
         name: "Gigatransporter Vessel Transport Duration - Skyhook"
         oracle_type: table_text
@@ -14866,9 +14866,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: ">Anomaly; pg 194"
+            text: "Anomaly"
           - roll: { min: 2, max: 30 }
-            text: ">Lurking Threat"
+            text: "Lurking Threat"
           - roll: { min: 31, max: 36 }
             text: "Dangerous sinking debris"
           - roll: { min: 37, max: 42 }
@@ -14904,9 +14904,9 @@ oracles:
           - roll: { min: 11, max: 40 }
             text: "[Planet](datasworn:oracle_rollable:starforged/planet/class)"
           - roll: { min: 41, max: 65 }
-            text: ">Planetcraft; pg 142"
+            text: "Planetcraft"
           - roll: { min: 66, max: 100 }
-            text: ">Precursor vault (world-spanning site, vessel); pg 92"
+            text: "Precursor vault (world-spanning site, vessel)"
       precursor_construct_motility_liquid:
         name: "Precursor Construct Motility - Liquid"
         oracle_type: table_text
@@ -15247,9 +15247,9 @@ oracles:
           <<: *Source
         rows:
           - roll: { min: 1, max: 1 }
-            text: ">Anomaly; pg 194"
+            text: "Anomaly"
           - roll: { min: 2, max: 20 }
-            text: ">Lurking Threat; pg 36"
+            text: "Lurking Threat"
           - roll: { min: 21, max: 24 }
             text: "Crumbling or collapsing terrain"
           - roll: { min: 25, max: 27 }
@@ -15784,9 +15784,9 @@ oracles:
           - roll: { min: 31, max: 45 }
             text: "Tracked"
           - roll: { min: 46, max: 80 }
-            text: ">Legged"
+            text: "Legged"
           - roll: { min: 81, max: 100 }
-            text: ">Wheeled"
+            text: "Wheeled"
       open_sea_feature:
         name: "Open Sea Feature"
         oracle_type: table_text
@@ -16281,7 +16281,7 @@ oracles:
             text: "[Creature](datasworn:oracle_collection:starforged/creature)"
           - roll: { min: 22, max: 29 }
             text: "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
-              Focus; pg 13"
+              Focus"
           - roll: { min: 30, max: 38 }
             text: "Debris Field: Mineral Asteroids"
           - roll: { min: 39, max: 45 }
@@ -16773,7 +16773,7 @@ oracles:
           - roll: { min: 85, max: 95 }
             text: "Transforming"
           - roll: { min: 96, max: 100 }
-            text: ">Basic Creature Form; RG, pg 69"
+            text: "Basic Creature Form"
       ecosphere_life_destroyed:
         name: "Ecosphere Life - Destroyed"
         oracle_type: table_text
@@ -16799,7 +16799,7 @@ oracles:
           - roll: { min: 16, max: 45 }
             text: "Stationary"
           - roll: { min: 46, max: 100 }
-            text: ">Legged"
+            text: "Legged"
       vertical_hex:
         name: "Vertical Hex"
         oracle_type: table_text
