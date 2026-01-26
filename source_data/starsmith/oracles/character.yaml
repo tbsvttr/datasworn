@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -23,6 +23,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 131
     contents:
       first_look:
         name: First Look
@@ -1045,7 +1046,7 @@ oracles:
               min: 93
               max: 95
             <<: &ActionTheme
-              text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+              text: "[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)"
               oracle_rolls:
                 - oracle: oracle_rollable:starsmith/core/action
                   auto: true

@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -15,41 +15,42 @@ oracles:
     _source: &Source
       authors:
         - name: Eric Bright
-      date: '2023-03-19'
+      date: "2023-03-19"
       title: Starsmith
       license: https://creativecommons.org/licenses/by/4.0/
       url: https://playeveryrole.com/
+      page: 212
     contents:
       zone:
         name: Zones
         oracle_type: table_text
         _source: *Source
         rows:
-          - text: '[Community](oracle_rollable:starsmith/district/community/area)'
+          - text: "[Community](oracle_rollable:starsmith/district/community/area)"
             roll:
               min: 1
               max: 20
-          - text: '[Engineering](oracle_rollable:starsmith/district/engineering/area)'
+          - text: "[Engineering](oracle_rollable:starsmith/district/engineering/area)"
             roll:
               min: 21
               max: 30
-          - text: '[Living](oracle_rollable:starsmith/district/living/area)'
+          - text: "[Living](oracle_rollable:starsmith/district/living/area)"
             roll:
               min: 31
               max: 55
-          - text: '[Medical](oracle_rollable:starsmith/district/medical/area)'
+          - text: "[Medical](oracle_rollable:starsmith/district/medical/area)"
             roll:
               min: 56
               max: 65
-          - text: '[Operations](oracle_rollable:starsmith/district/operations/area)'
+          - text: "[Operations](oracle_rollable:starsmith/district/operations/area)"
             roll:
               min: 66
               max: 75
-          - text: '[Production](oracle_rollable:starsmith/district/production/area)'
+          - text: "[Production](oracle_rollable:starsmith/district/production/area)"
             roll:
               min: 76
               max: 90
-          - text: '[Research](oracle_rollable:starsmith/district/research/area)'
+          - text: "[Research](oracle_rollable:starsmith/district/research/area)"
             roll:
               min: 91
               max: 100
@@ -178,7 +179,7 @@ oracles:
                     max: 88
                 text: Windows or viewports
               - &Feature.11
-                text: '[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)'
+                text: "[Descriptor](oracle_rollable:starsmith/core/descriptor) + [Focus](oracle_rollable:starsmith/core/focus)"
                 oracle_rolls:
                   - oracle: oracle_rollable:starsmith/core/descriptor
                     auto: true
@@ -240,7 +241,7 @@ oracles:
                     max: 90
                 text: Unsettling sound or disturbance
               - &Peril.9
-                text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+                text: "[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)"
                 oracle_rolls:
                   - oracle: oracle_rollable:starsmith/core/action
                     auto: true

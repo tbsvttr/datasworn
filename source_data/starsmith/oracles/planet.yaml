@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -21,6 +21,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 53
     contents:
       class:
         name: Planetary Class
@@ -88,11 +89,11 @@ oracles:
               max: 70
           - text: Ocean World
             text2:
-              'Ocean worlds may be an endless sea of water, but some are made up
+              "Ocean worlds may be an endless sea of water, but some are made up
               of other thalassogen such as ammonia, lava, or hydrocarbons. Other ocean
               worlds have their worlds contained between two icy spheres: a top layer
               protecting the water from solar radiation and a lower layer protecting
-              the water from the planet’s core.'
+              the water from the planet’s core."
             roll:
               min: 71
               max: 75
@@ -117,10 +118,10 @@ oracles:
               max: 92
           - text: Tainted World
             text2:
-              'The evolution of life itself is responsible for the death of this
+              "The evolution of life itself is responsible for the death of this
               planet. Whether a civilization greedily consumed the planetary resources
               thereby polluting the world or a dangerous micro-organism proliferated
-              rapidly, the result is the same: a planet of death.'
+              rapidly, the result is the same: a planet of death."
             roll:
               min: 93
               max: 98
@@ -283,7 +284,7 @@ oracles:
                   min: 97
                   max: 99
                 <<: &ActionTheme
-                  text: '[Action](starsmith/core/action) + [Theme](starsmith/core/theme)'
+                  text: "[Action](starsmith/core/action) + [Theme](starsmith/core/theme)"
                   oracle_rolls:
                     - oracle: oracle_rollable:starsmith/core/action
                       auto: true

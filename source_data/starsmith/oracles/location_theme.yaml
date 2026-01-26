@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -20,6 +20,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 248
     enhances:
       - oracle_collection:starforged/location_theme
     contents:
@@ -33,97 +34,97 @@ oracles:
         _source: *Source
         rows:
           # begin rows copied from replaced table
-          - text: '[Chaotic](starforged/oracles/location_theme/chaotic)'
+          - text: "[Chaotic](starforged/oracles/location_theme/chaotic)"
             text2: Reality is corrupted or warped in this place.
             roll:
               min: 1
               max: 15
-          - text: '[Fortified](starforged/oracles/location_theme/fortified)'
+          - text: "[Fortified](starforged/oracles/location_theme/fortified)"
             text2: Enemies defend this place against intruders.
             roll:
               min: 16
               max: 25
-          - text: '[Haunted](starforged/oracles/location_theme/haunted)'
+          - text: "[Haunted](starforged/oracles/location_theme/haunted)"
             text2: Restless spirits are bound in this place.
             roll:
               min: 26
               max: 35
-          - text: '[Infested](starforged/oracles/location_theme/infested)'
+          - text: "[Infested](starforged/oracles/location_theme/infested)"
             text2: Foul creatures have overrun this place.
             roll:
               min: 36
               max: 50
-          - text: '[Inhabited](starforged/oracles/location_theme/inhabited)'
+          - text: "[Inhabited](starforged/oracles/location_theme/inhabited)"
             text2: People have built a community in this place.
             roll:
               min: 51
               max: 60
-          - text: '[Mechanical](starforged/oracles/location_theme/mechanical)'
+          - text: "[Mechanical](starforged/oracles/location_theme/mechanical)"
             text2: Machines and technology hold sway in this place.
             roll:
               min: 61
               max: 75
-          - text: '[Ruined](starforged/oracles/location_theme/ruined)'
+          - text: "[Ruined](starforged/oracles/location_theme/ruined)"
             text2: Time, disaster, or war have ravaged this place.
             roll:
               min: 76
               max: 90
-          - text: '[Sacred](starforged/oracles/location_theme/sacred)'
+          - text: "[Sacred](starforged/oracles/location_theme/sacred)"
             text2: Worshipers glorify strange powers in this place.
             # end rows copied from replaced table
             roll:
               min: 91
               max: 100
-          - text: '[Arid](starsmith/oracles/location_theme/arid)'
+          - text: "[Arid](starsmith/oracles/location_theme/arid)"
             text2: &Arid.summary Wind and heat cover this place in a thick blanket.
             roll:
               min: 101
               max: 110
-          - text: '[Chronal](starsmith/oracles/location_theme/chronal)'
+          - text: "[Chronal](starsmith/oracles/location_theme/chronal)"
             text2: &Chronal.summary Time flits back and forth in this place.
             roll:
               min: 111
               max: 120
-          - text: '[Floating](starsmith/oracles/location_theme/floating)'
+          - text: "[Floating](starsmith/oracles/location_theme/floating)"
             text2:
               &Floating.summary Pockets of stable ground dance on gravity waves
               in this place.
             roll:
               min: 121
               max: 130
-          - text: '[Flooded](starsmith/oracles/location_theme/flooded)'
+          - text: "[Flooded](starsmith/oracles/location_theme/flooded)"
             text2:
               &Flooded.summary Murky waters or thick vapors have overtaken this
               place.
             roll:
               min: 131
               max: 140
-          - text: '[Frozen](starsmith/oracles/location_theme/frozen)'
+          - text: "[Frozen](starsmith/oracles/location_theme/frozen)"
             text2: &Frozen.summary Winter holds a permanent grip in this place.
             roll:
               min: 141
               max: 150
-          - text: '[Inferno](starsmith/oracles/location_theme/inferno)'
+          - text: "[Inferno](starsmith/oracles/location_theme/inferno)"
             text2: &Inferno.summary Flame and noxious gases fill this place.
             roll:
               min: 151
               max: 160
-          - text: '[Lifeform](starsmith/oracles/location_theme/lifeform)'
+          - text: "[Lifeform](starsmith/oracles/location_theme/lifeform)"
             text2: &Lifeform.summary Inside a living creature, microscopic or colossal.
             roll:
               min: 161
               max: 170
-          - text: '[Mystical](starsmith/oracles/location_theme/mystical)'
+          - text: "[Mystical](starsmith/oracles/location_theme/mystical)"
             text2: &Mystical.summary Arcane energies permeate this place.
             roll:
               min: 171
               max: 180
-          - text: '[Overgrown](starsmith/oracles/location_theme/overgrown)'
+          - text: "[Overgrown](starsmith/oracles/location_theme/overgrown)"
             text2: &Overgrown.summary Thriving ecosystems abound in this place.
             roll:
               min: 181
               max: 190
-          - text: '[War Zone](starsmith/oracles/location_theme/war_zone)'
+          - text: "[War Zone](starsmith/oracles/location_theme/war_zone)"
             text2: &WarZone.summary Combatants trade fire tensely in this place.
             roll:
               min: 191
@@ -203,7 +204,7 @@ oracles:
                     max: 96
                 text: Unending stretch of cracked, flat ground
               - &Feature.12
-                text: '[Descriptor](id:starsmith/oracles/core/descriptor) + [Focus](id:starsmith/oracles/core/focus)'
+                text: "[Descriptor](id:starsmith/oracles/core/descriptor) + [Focus](id:starsmith/oracles/core/focus)"
                 oracle_rolls:
                   - oracle: oracle_rollable:starsmith/core/descriptor
                     auto: true
@@ -270,7 +271,7 @@ oracles:
                     max: 90
                 text: Whirlpool of sand pulls you down
               - &Peril.10
-                text: '[Action](starsmith/oracles/core/action) + [Theme](starsmith/oracles/core/theme)'
+                text: "[Action](starsmith/oracles/core/action) + [Theme](starsmith/oracles/core/theme)"
                 oracle_rolls:
                   - oracle: oracle_rollable:starsmith/core/action
                     auto: true

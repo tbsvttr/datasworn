@@ -1,5 +1,5 @@
 _id: starsmith
-datasworn_version: '0.1.0'
+datasworn_version: "0.1.0"
 type: expansion
 ruleset: starforged
 <<: &Source
@@ -21,6 +21,7 @@ oracles:
       date: 2024-03-22
       url: https://playeveryrole.com/starsmith-products/
       license: https://creativecommons.org/licenses/by/4.0
+      page: 169
     contents:
       type:
         name: Type
@@ -3965,11 +3966,11 @@ oracles:
             roll:
               min: 101
               max: 103
-          - text: 'Being played by another power '
+          - text: "Being played by another power "
             roll:
               min: 104
               max: 106
-          - text: 'Bribing local lawmakers '
+          - text: "Bribing local lawmakers "
             roll:
               min: 107
               max: 109
@@ -3981,15 +3982,15 @@ oracles:
             roll:
               min: 113
               max: 115
-          - text: 'Defenses are consolidating in one area '
+          - text: "Defenses are consolidating in one area "
             roll:
               min: 116
               max: 118
-          - text: 'Developing dangerous technology '
+          - text: "Developing dangerous technology "
             roll:
               min: 119
               max: 121
-          - text: 'Digital systems have back door access '
+          - text: "Digital systems have back door access "
             roll:
               min: 122
               max: 124
@@ -4001,7 +4002,7 @@ oracles:
             roll:
               min: 128
               max: 130
-          - text: 'Gathering evidence against dangerous criminal '
+          - text: "Gathering evidence against dangerous criminal "
             roll:
               min: 131
               max: 133
@@ -4017,11 +4018,11 @@ oracles:
             roll:
               min: 140
               max: 142
-          - text: 'Key agent is interested in flipping sides '
+          - text: "Key agent is interested in flipping sides "
             roll:
               min: 143
               max: 145
-          - text: 'Leader is looking for a way out '
+          - text: "Leader is looking for a way out "
             roll:
               min: 146
               max: 148
@@ -4029,7 +4030,7 @@ oracles:
             roll:
               min: 149
               max: 151
-          - text: 'Losing face by publicly supporting unpopular faction '
+          - text: "Losing face by publicly supporting unpopular faction "
             roll:
               min: 152
               max: 154
@@ -4037,7 +4038,7 @@ oracles:
             roll:
               min: 155
               max: 157
-          - text: 'Lost a valuable asset '
+          - text: "Lost a valuable asset "
             roll:
               min: 158
               max: 160
@@ -4085,7 +4086,7 @@ oracles:
             roll:
               min: 191
               max: 193
-          - text: 'Wielding a dangerous power '
+          - text: "Wielding a dangerous power "
             roll:
               min: 194
               max: 196
@@ -4101,7 +4102,7 @@ oracles:
             roll:
               min: 204
               max: 206
-          - text: 'Bribing local law enforcement '
+          - text: "Bribing local law enforcement "
             roll:
               min: 207
               max: 209
