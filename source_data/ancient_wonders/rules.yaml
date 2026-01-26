@@ -9,3 +9,9 @@ ruleset: starforged
   license: https://creativecommons.org/licenses/by-nc-sa/4.0
   authors:
     - name: Ludic Pen
+rules:
+  special_tracks:
+    failure_track:
+      label: failure track
+      description: Rewards your character for the lessons learned when you fail to overcome challenges.
+      optional: true

@@ -12,6 +12,20 @@
 	"date": "2024-01-01",
 	"license": "https://creativecommons.org/licenses/by-nc-sa/4.0",
 	"url": "https://www.drivethrurpg.com/en/product/505365/ancient-wonders",
+	"rules": {
+		"condition_meters": {},
+		"stats": {},
+		"impacts": {},
+		"special_tracks": {
+			"failure_track": {
+				"label": "failure track",
+				"optional": true,
+				"shared": false,
+				"description": "Rewards your character for the lessons learned when you fail to overcome challenges."
+			}
+		},
+		"tags": {}
+	},
 	"oracles": {
 		"core_oracles": {
 			"_id": "oracle_collection:ancient_wonders/core_oracles",
