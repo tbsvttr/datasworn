@@ -12722,6 +12722,9 @@ module Datasworn
     # The asset augmented by this rarity.
     attr_accessor :asset
 
+    # A description of this rarity.
+    attr_accessor :description
+
     # The primary name/label for this node.
     attr_accessor :name
     attr_accessor :type
@@ -12760,6 +12763,7 @@ module Datasworn
       out.id = Datasworn::from_json_data(RarityID, data["_id"])
       out.source = Datasworn::from_json_data(SourceInfo, data["_source"])
       out.asset = Datasworn::from_json_data(AssetID, data["asset"])
+      out.description = Datasworn::from_json_data(MarkdownString, data["description"])
       out.name = Datasworn::from_json_data(Label, data["name"])
       out.type = Datasworn::from_json_data(RarityType, data["type"])
       out.xp_cost = Datasworn::from_json_data(Integer, data["xp_cost"])
@@ -12779,6 +12783,7 @@ module Datasworn
       data["_id"] = Datasworn::to_json_data(id)
       data["_source"] = Datasworn::to_json_data(source)
       data["asset"] = Datasworn::to_json_data(asset)
+      data["description"] = Datasworn::to_json_data(description)
       data["name"] = Datasworn::to_json_data(name)
       data["type"] = Datasworn::to_json_data(type)
       data["xp_cost"] = Datasworn::to_json_data(xp_cost)

@@ -8656,6 +8656,10 @@ pub struct Rarity {
     #[serde(rename = "asset")]
     pub asset: AssetId,
 
+    /// A description of this rarity.
+    #[serde(rename = "description")]
+    pub description: MarkdownString,
+
     /// The primary name/label for this node.
     #[serde(rename = "name")]
     pub name: Label,

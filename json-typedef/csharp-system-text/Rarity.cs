@@ -30,6 +30,12 @@ namespace Datasworn
         public AssetId Asset { get; set; }
 
         /// <summary>
+        /// A description of this rarity.
+        /// </summary>
+        [JsonPropertyName("description")]
+        public MarkdownString Description { get; set; }
+
+        /// <summary>
         /// The primary name/label for this node.
         /// </summary>
         [JsonPropertyName("name")]
