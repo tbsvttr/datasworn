@@ -97,10 +97,12 @@ Feedback from southpole regarding converter-generated data.
 2. **Table Ordering** - Tables not in book order (alphabetical vs physical book structure)
 3. ~~**Missing Planet Hierarchy**~~ - ✅ Fixed: 20 planet type collections created
 4. ~~**Missing Links**~~ - ✅ Fixed: 326 planet world links added
+5. **Missing Failure Track** - Ancient Wonders uses the failure track mechanic (like Delve p. 58ff)
 
 ### Tasks
 
 - [x] Add "broken" impact to item assets (PR #7 by kat)
+- [ ] **Add failure track** - Ancient Wonders uses failure track mechanic, needs special track added (see Delve p. 58ff for reference)
 - [ ] Identify and add missing Focus oracle (or verify it's `splinter_focus`)
 - [ ] Add `_index` fields or restructure YAML to match book ordering
 - [x] Reorganize `planets_expanded` into hierarchical collections
@@ -121,6 +123,12 @@ Feedback from southpole regarding converter-generated data.
 ### Starsmith (for Starforged) - by Eric Bright
 
 Currently only includes **Expanded Oracles** (~9,800 oracle entries).
+
+Recent improvements (PR #8 by southpole):
+
+- [x] Synced ID naming conventions with Starforged (e.g., `derelicts` → `derelict`, `vaults` → `precursor_vault`)
+- [x] Added page numbers to oracle collections
+- [ ] **Page numbers for individual oracles** - Collections done, individual oracles still need page numbers
 
 Missing content:
 
