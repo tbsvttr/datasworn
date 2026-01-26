@@ -10063,6 +10063,12 @@
 						"description": "The asset augmented by this rarity."
 					}
 				},
+				"description": {
+					"ref": "MarkdownString",
+					"metadata": {
+						"description": "A description of this rarity."
+					}
+				},
 				"xp_cost": {
 					"type": "int16",
 					"metadata": {

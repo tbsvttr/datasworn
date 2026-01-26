@@ -1,0 +1,7278 @@
+_id: starsmith
+datasworn_version: '0.1.0'
+type: expansion
+ruleset: starforged
+<<: &Source
+  title: Starsmith Expanded Oracles
+  date: 2024-03-22
+  url: https://playeveryrole.com/starsmith-products/
+  license: https://creativecommons.org/licenses/by/4.0
+  authors:
+    - name: Eric Bright
+oracles:
+  character:
+    name: Characters
+    oracle_type: tables
+    enhances:
+      - oracle_collection:starforged/character
+    _comment: Extension of the oracle table
+    _source: &Source
+      title: Starsmith
+      authors:
+        - name: Eric Bright
+      date: 2024-03-22
+      url: https://playeveryrole.com/starsmith-products/
+      license: https://creativecommons.org/licenses/by/4.0
+    contents:
+      first_look:
+        name: First Look
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/character/first_look
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          # begin copied rows
+          - text: Accented
+            _i18n: &Adjective
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 1
+              max: 3
+          - text: Accompanied
+            _i18n: *Adjective
+            roll:
+              min: 4
+              max: 6
+          - text: Adorned
+            _i18n: *Adjective
+            roll:
+              min: 7
+              max: 8
+          - text: Aged
+            _i18n: *Adjective
+            roll:
+              min: 9
+              max: 11
+          - text: Alluring
+            _i18n: &Gerund
+              text:
+                part_of_speech: gerund
+            roll:
+              min: 12
+              max: 13
+          - text: Armed
+            _i18n: *Adjective
+            roll:
+              min: 14
+              max: 15
+          - text: Armored
+            _i18n: *Adjective
+            roll:
+              min: 16
+              max: 17
+          - text: Athletic
+            _i18n: *Adjective
+            roll:
+              min: 18
+              max: 20
+          - text: Attractive
+            _i18n: *Adjective
+            roll:
+              min: 21
+              max: 23
+          - text: Augmented
+            _i18n: *Adjective
+            roll:
+              min: 24
+              max: 25
+          - text: Concealed
+            _i18n: *Adjective
+            roll:
+              min: 26
+              max: 27
+          - text: Distracted
+            _i18n: *Adjective
+            roll:
+              min: 28
+              max: 30
+          - text: Eccentric
+            _i18n: *Adjective
+            roll:
+              min: 31
+              max: 33
+          - text: Energetic
+            _i18n: *Adjective
+            roll:
+              min: 34
+              max: 35
+          - text: Flashy
+            _i18n: *Adjective
+            roll:
+              min: 36
+              max: 37
+          - text: Graceful
+            _i18n: *Adjective
+            roll:
+              min: 38
+              max: 40
+          - text: Grim
+            _i18n: *Adjective
+            roll:
+              min: 41
+              max: 43
+          - text: Haggard
+            _i18n: *Adjective
+            roll:
+              min: 44
+              max: 46
+          - text: Ill-equipped
+            _i18n: *Adjective
+            roll:
+              min: 47
+              max: 49
+          - text: Imposing
+            _i18n: *Gerund
+            roll:
+              min: 50
+              max: 52
+          - text: Large
+            _i18n: *Adjective
+            roll:
+              min: 53
+              max: 55
+          - text: Mutated
+            _i18n: *Adjective
+            roll:
+              min: 56
+              max: 57
+          - text: Plain
+            _i18n: *Adjective
+            roll:
+              min: 58
+              max: 60
+          - text: Poised
+            _i18n: *Adjective
+            roll:
+              min: 61
+              max: 62
+          - text: Scarred
+            _i18n: *Adjective
+            roll:
+              min: 63
+              max: 65
+          - text: Scruffy
+            _i18n: *Adjective
+            roll:
+              min: 66
+              max: 68
+          - text: Shifty
+            _i18n: *Adjective
+            roll:
+              min: 69
+              max: 71
+          - text: Sickly
+            _i18n: *Adjective
+            roll:
+              min: 72
+              max: 73
+          - text: Slight
+            _i18n: *Adjective
+            roll:
+              min: 74
+              max: 76
+          - text: Swaggering
+            _i18n: *Gerund
+            roll:
+              min: 77
+              max: 78
+          - text: Tattooed
+            _i18n: *Adjective
+            roll:
+              min: 79
+              max: 81
+          - text: Threatened
+            _i18n: *Adjective
+            roll:
+              min: 82
+              max: 83
+          - text: Uncanny
+            _i18n: *Adjective
+            roll:
+              min: 84
+              max: 85
+          - text: Visibly disabled
+            _i18n: *Adjective
+            roll:
+              min: 86
+              max: 87
+          - text: Weathered
+            _i18n: *Adjective
+            roll:
+              min: 88
+              max: 90
+          - text: Well-equipped
+            _i18n: *Adjective
+            roll:
+              min: 91
+              max: 92
+          - text: Wiry
+            _i18n: *Adjective
+            roll:
+              min: 93
+              max: 95
+          - text: Wounded
+            _i18n: *Adjective
+            roll:
+              min: 96
+              max: 97
+          - text: Youthful
+            _i18n: *Adjective
+            roll:
+              min: 98
+              max: 100
+          # end copied rows
+          - text: AI-Assisted
+            _i18n: *Adjective
+            roll:
+              min: 101
+              max: 103
+          - text:
+              Baggy eyes
+              # _i18n: *Adjective
+            roll:
+              min: 104
+              max: 106
+          - text:
+              Bright eyes
+              # _i18n: *Adjective
+            roll:
+              min: 107
+              max: 108
+          - text:
+              Bulbous nose
+              # _i18n: *Adjective
+            roll:
+              min: 109
+              max: 111
+          - text:
+              Cloudy eyes
+              # _i18n: *Adjective
+            roll:
+              min: 112
+              max: 113
+          - text: Corpulent
+            _i18n: *Adjective
+            roll:
+              min: 114
+              max: 115
+          - text: Disheveled
+            _i18n: *Adjective
+            roll:
+              min: 116
+              max: 117
+          - text: Elegant
+            _i18n: *Adjective
+            roll:
+              min: 118
+              max: 120
+          - text:
+              Exosuit
+              # _i18n: *Adjective
+            roll:
+              min: 121
+              max: 123
+          - text: Filthy
+            _i18n: *Adjective
+            roll:
+              min: 124
+              max: 125
+          - text: Flushed
+            _i18n: *Adjective
+            roll:
+              min: 126
+              max: 127
+          - text: Frail
+            _i18n: *Adjective
+            roll:
+              min: 128
+              max: 130
+          - text: Frightening
+            _i18n: *Gerund
+            roll:
+              min: 131
+              max: 133
+          - text: Frumpy
+            _i18n: *Adjective
+            roll:
+              min: 134
+              max: 135
+          - text: Gaudy
+            _i18n: *Adjective
+            roll:
+              min: 136
+              max: 137
+          - text:
+              Geared up
+              # _i18n: *Adjective
+            roll:
+              min: 138
+              max: 140
+          - text: Handsome
+            _i18n: *Adjective
+            roll:
+              min: 141
+              max: 143
+          - text: Hook-nosed
+            _i18n: *Adjective
+            roll:
+              min: 144
+              max: 146
+          - text: Immaculate
+            _i18n: *Adjective
+            roll:
+              min: 147
+              max: 149
+          - text:
+              Jowls
+              # _i18n: *Adjective
+            roll:
+              min: 150
+              max: 152
+          - text:
+              Large ears
+              # _i18n: *Adjective
+            roll:
+              min: 153
+              max: 155
+          - text:
+              Long hair
+              # _i18n: *Adjective
+            roll:
+              min: 156
+              max: 157
+          - text: Morose
+            _i18n: *Adjective
+            roll:
+              min: 158
+              max: 160
+          - text: Neat
+            _i18n: *Adjective
+            roll:
+              min: 161
+              max: 162
+          - text: Pallid
+            _i18n: *Adjective
+            roll:
+              min: 163
+              max: 165
+          - text: Petite
+            _i18n: *Adjective
+            roll:
+              min: 166
+              max: 168
+          - text: Pimpled
+            _i18n: *Adjective
+            roll:
+              min: 169
+              max: 171
+          - text: Pockmarked
+            _i18n: *Adjective
+            roll:
+              min: 172
+              max: 173
+          - text: Prim
+            _i18n: *Adjective
+            roll:
+              min: 174
+              max: 176
+          - text: Ruddy
+            _i18n: *Adjective
+            roll:
+              min: 177
+              max: 178
+          - text: Scrawny
+            _i18n: *Adjective
+            roll:
+              min: 179
+              max: 181
+          - text: Slim
+            _i18n: *Adjective
+            roll:
+              min: 182
+              max: 183
+          - text: Smarmy
+            _i18n: *Adjective
+            roll:
+              min: 184
+              max: 185
+          - text: Stocky
+            _i18n: *Adjective
+            roll:
+              min: 186
+              max: 187
+          - text: Thick-necked
+            _i18n: *Adjective
+            roll:
+              min: 188
+              max: 190
+          - text: Unarmed
+            _i18n: *Adjective
+            roll:
+              min: 191
+              max: 192
+          - text: Unassuming
+            _i18n: *Adjective
+            roll:
+              min: 193
+              max: 195
+          - text: Uniformed
+            _i18n: *Adjective
+            roll:
+              min: 196
+              max: 197
+          - text: Untidy
+            _i18n: *Adjective
+            roll:
+              min: 198
+              max: 200
+          - text: Alert
+            _i18n: *Adjective
+            roll:
+              min: 201
+              max: 203
+          - text: Bald
+            _i18n: *Adjective
+            roll:
+              min: 204
+              max: 206
+          - text: Bruised
+            _i18n: *Adjective
+            roll:
+              min: 207
+              max: 208
+          - text: Burly
+            _i18n: *Adjective
+            roll:
+              min: 209
+              max: 211
+          - text: Comely
+            _i18n: *Adjective
+            roll:
+              min: 212
+              max: 213
+          - text:
+              Curly hair
+              # _i18n: *Adjective
+            roll:
+              min: 214
+              max: 215
+          - text: Dusky
+            _i18n: *Adjective
+            roll:
+              min: 216
+              max: 217
+          - text:
+              Enviro suit
+              # _i18n: *Adjective
+            roll:
+              min: 218
+              max: 220
+          - text: Fidgety
+            _i18n: *Adjective
+            roll:
+              min: 221
+              max: 223
+          - text: Fit
+            _i18n: *Adjective
+            roll:
+              min: 224
+              max: 225
+          - text:
+              Formal dress
+              # _i18n: *Adjective
+            roll:
+              min: 226
+              max: 227
+          - text: Freckled
+            _i18n: *Adjective
+            roll:
+              min: 228
+              max: 230
+          - text:
+              Frizzy hair
+              # _i18n: *Adjective
+            roll:
+              min: 231
+              max: 233
+          - text: Full-lipped
+            _i18n: *Adjective
+            roll:
+              min: 234
+              max: 235
+          - text: Gaunt
+            _i18n: *Adjective
+            roll:
+              min: 236
+              max: 237
+          - text: Hairy
+            _i18n: *Adjective
+            roll:
+              min: 238
+              max: 240
+          - text: Helmeted
+            _i18n: *Adjective
+            roll:
+              min: 241
+              max: 243
+          - text: Husky
+            _i18n: *Adjective
+            roll:
+              min: 244
+              max: 246
+          - text: Injured
+            _i18n: *Adjective
+            roll:
+              min: 247
+              max: 249
+          - text: Lanky
+            _i18n: *Adjective
+            roll:
+              min: 250
+              max: 252
+          - text:
+              Large mouth
+              # _i18n: *Adjective
+            roll:
+              min: 253
+              max: 255
+          - text:
+              Missing teeth
+              # _i18n: *Adjective
+            roll:
+              min: 256
+              max: 257
+          - text: Muscled
+            _i18n: *Adjective
+            roll:
+              min: 258
+              max: 260
+          - text: Painted
+            _i18n: *Adjective
+            roll:
+              min: 261
+              max: 262
+          - text:
+              Penetrating gaze
+              # _i18n: *Adjective
+            roll:
+              min: 263
+              max: 265
+          - text:
+              Piercings
+              # _i18n: *Adjective
+            roll:
+              min: 266
+              max: 268
+          - text: Plump
+            _i18n: *Adjective
+            roll:
+              min: 269
+              max: 271
+          - text:
+              Ponytail
+              # _i18n: *Adjective
+            roll:
+              min: 272
+              max: 273
+          - text: Rough
+            _i18n: *Adjective
+            roll:
+              min: 274
+              max: 276
+          - text: Sallow
+            _i18n: *Adjective
+            roll:
+              min: 277
+              max: 278
+          - text:
+              Short hair
+              # _i18n: *Adjective
+            roll:
+              min: 279
+              max: 281
+          - text: Small
+            _i18n: *Adjective
+            roll:
+              min: 282
+              max: 283
+          - text:
+              Stealth suit
+              # _i18n: *Adjective
+            roll:
+              min: 284
+              max: 285
+          - text: Tanned
+            _i18n: *Adjective
+            roll:
+              min: 286
+              max: 287
+          - text: Tired
+            _i18n: *Adjective
+            roll:
+              min: 288
+              max: 290
+          - text: Unarmored
+            _i18n: *Adjective
+            roll:
+              min: 291
+              max: 292
+          - text: Unfocused
+            _i18n: *Adjective
+            roll:
+              min: 293
+              max: 295
+          - text: Unkempt
+            _i18n: *Adjective
+            roll:
+              min: 296
+              max: 297
+          - text:
+              Wavy hair
+              # _i18n: *Adjective
+            roll:
+              min: 298
+              max: 300
+        type: oracle_rollable
+      initial_disposition:
+        name: Initial Disposition
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/character/initial_disposition
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Helpful
+            roll:
+              min: 1
+              max: 6
+          - text: Friendly
+            roll:
+              min: 7
+              max: 14
+          - text: Cooperative
+            roll:
+              min: 15
+              max: 22
+          - text: Curious
+            roll:
+              min: 23
+              max: 30
+          - text: Indifferent
+            roll:
+              min: 31
+              max: 40
+          - text: Suspicious
+            roll:
+              min: 41
+              max: 50
+          - text: Wanting
+            roll:
+              min: 51
+              max: 60
+          - text: Desperate
+            roll:
+              min: 61
+              max: 70
+          - text: Demanding
+            roll:
+              min: 71
+              max: 78
+          - text: Unfriendly
+            roll:
+              min: 79
+              max: 86
+          - text: Threatening
+            roll:
+              min: 87
+              max: 94
+          - text: Hostile
+            roll:
+              min: 95
+              max: 100
+          - text: Informative
+            roll:
+              min: 101
+              max: 106
+          - text: Pleasant
+            roll:
+              min: 107
+              max: 114
+          - text: Tit for tat
+            roll:
+              min: 115
+              max: 122
+          - text: Cautious
+            roll:
+              min: 123
+              max: 130
+          - text: Dissembling
+            roll:
+              min: 131
+              max: 140
+          - text: Prickly
+            roll:
+              min: 141
+              max: 150
+          - text: Fearful
+            roll:
+              min: 151
+              max: 160
+          - text: Reckless
+            roll:
+              min: 161
+              max: 170
+          - text: Commanding
+            roll:
+              min: 171
+              max: 178
+          - text: Cold-hearted
+            roll:
+              min: 179
+              max: 186
+          - text: Brash
+            roll:
+              min: 187
+              max: 194
+          - text: Exploitive
+            roll:
+              min: 195
+              max: 200
+          - text: Generous
+            roll:
+              min: 201
+              max: 206
+          - text: Accommodating
+            roll:
+              min: 207
+              max: 214
+          - text: Common ground
+            roll:
+              min: 215
+              max: 222
+          - text: Anxious
+            roll:
+              min: 223
+              max: 230
+          - text: Logical
+            roll:
+              min: 231
+              max: 240
+          - text: Stubborn
+            roll:
+              min: 241
+              max: 250
+          - text: Competitive
+            roll:
+              min: 251
+              max: 260
+          - text: Disturbing
+            roll:
+              min: 261
+              max: 270
+          - text: Arrogant
+            roll:
+              min: 271
+              max: 278
+          - text: Disrespectful
+            roll:
+              min: 279
+              max: 286
+          - text: Paranoid
+            roll:
+              min: 287
+              max: 294
+          - text: Abusive
+            roll:
+              min: 295
+              max: 300
+        type: oracle_rollable
+      role:
+        name: Role
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/character/role
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Agent
+            _i18n: &CommonNoun
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 1
+              max: 2
+          - text: AI
+            _i18n: *CommonNoun
+            roll:
+              min: 3
+              max: 4
+          - text: Artisan
+            _i18n: *CommonNoun
+            roll:
+              min: 5
+              max: 6
+          - text: Assassin
+            _i18n: *CommonNoun
+            roll:
+              min: 7
+              max: 8
+          - text: Bounty Hunter
+            _i18n: *CommonNoun
+            roll:
+              min: 9
+              max: 10
+          - text: Courier
+            _i18n: *CommonNoun
+            roll:
+              min: 11
+              max: 12
+          - text: Crew
+            _i18n: *CommonNoun
+            roll:
+              min: 13
+              max: 14
+          - text: Criminal
+            _i18n: *CommonNoun
+            roll:
+              min: 15
+              max: 16
+          - text: Cultist
+            _i18n: *CommonNoun
+            roll:
+              min: 17
+              max: 18
+          - text: Diplomat
+            _i18n: *CommonNoun
+            roll:
+              min: 19
+              max: 20
+          - text: Engineer
+            _i18n: *CommonNoun
+            roll:
+              min: 21
+              max: 22
+          - text: Entertainer
+            _i18n: *CommonNoun
+            roll:
+              min: 23
+              max: 24
+          - text: Explorer
+            _i18n: *CommonNoun
+            roll:
+              min: 25
+              max: 26
+          - text: Farmer
+            _i18n: *CommonNoun
+            roll:
+              min: 27
+              max: 28
+          - text: Fugitive
+            _i18n: *CommonNoun
+            roll:
+              min: 29
+              max: 30
+          - text: Guard
+            _i18n: *CommonNoun
+            roll:
+              min: 31
+              max: 32
+          - text: Guide
+            _i18n: *CommonNoun
+            roll:
+              min: 33
+              max: 34
+          - text: Healer
+            _i18n: *CommonNoun
+            roll:
+              min: 35
+              max: 36
+          - text: Historian
+            _i18n: *CommonNoun
+            roll:
+              min: 37
+              max: 38
+          - text: Hunter
+            _i18n: *CommonNoun
+            roll:
+              min: 39
+              max: 40
+          - text: Investigator
+            _i18n: *CommonNoun
+            roll:
+              min: 41
+              max: 42
+          - text: Laborer
+            _i18n: *CommonNoun
+            roll:
+              min: 43
+              max: 44
+          - text: Lawkeeper
+            _i18n: *CommonNoun
+            roll:
+              min: 45
+              max: 46
+          - text: Leader
+            _i18n: *CommonNoun
+            roll:
+              min: 47
+              max: 48
+          - text: Mercenary
+            _i18n: *CommonNoun
+            roll:
+              min: 49
+              max: 50
+          - text: Merchant
+            _i18n: *CommonNoun
+            roll:
+              min: 51
+              max: 52
+          - text: Miner
+            _i18n: *CommonNoun
+            roll:
+              min: 53
+              max: 54
+          - text: Mystic
+            _i18n: *CommonNoun
+            roll:
+              min: 55
+              max: 56
+          - text: Navigator
+            _i18n: *CommonNoun
+            roll:
+              min: 57
+              max: 58
+          - text: Outcast
+            _i18n: *CommonNoun
+            roll:
+              min: 59
+              max: 60
+          - text: Pilgrim
+            _i18n: *CommonNoun
+            roll:
+              min: 61
+              max: 62
+          - text: Pilot
+            _i18n: *CommonNoun
+            roll:
+              min: 63
+              max: 64
+          - text: Pirate
+            _i18n: *CommonNoun
+            roll:
+              min: 65
+              max: 66
+          - text: Preacher
+            _i18n: *CommonNoun
+            roll:
+              min: 67
+              max: 68
+          - text: Prophet
+            _i18n: *CommonNoun
+            roll:
+              min: 69
+              max: 70
+          - text: Raider
+            _i18n: *CommonNoun
+            roll:
+              min: 71
+              max: 72
+          - text: Researcher
+            _i18n: *CommonNoun
+            roll:
+              min: 73
+              max: 74
+          - text: Scavenger
+            _i18n: *CommonNoun
+            roll:
+              min: 75
+              max: 76
+          - text: Scholar
+            _i18n: *CommonNoun
+            roll:
+              min: 77
+              max: 78
+          - text: Scout
+            _i18n: *CommonNoun
+            roll:
+              min: 79
+              max: 80
+          - text: Shipwright
+            _i18n: *CommonNoun
+            roll:
+              min: 81
+              max: 82
+          - text: Smuggler
+            _i18n: *CommonNoun
+            roll:
+              min: 83
+              max: 84
+          - text: Soldier
+            _i18n: *CommonNoun
+            roll:
+              min: 85
+              max: 86
+          - text: Spacer
+            _i18n: *CommonNoun
+            roll:
+              min: 87
+              max: 88
+          - text: Technician
+            _i18n: *CommonNoun
+            roll:
+              min: 89
+              max: 90
+          - text: Thief
+            _i18n: *CommonNoun
+            roll:
+              min: 91
+              max: 92
+          - roll:
+              min: 93
+              max: 95
+            <<: &ActionTheme
+              text: '[Action](oracle_rollable:starsmith/core/action) + [Theme](oracle_rollable:starsmith/core/theme)'
+              oracle_rolls:
+                - oracle: oracle_rollable:starsmith/core/action
+                  auto: true
+                - oracle: oracle_rollable:starsmith/core/theme
+                  auto: true
+          - roll:
+              min: 96
+              max: 100
+            <<: &RollTwice
+              text: Roll twice
+              oracle_rolls:
+                - number_of_rolls: 2
+                  auto: true
+          - text: Administrator
+            _i18n: *CommonNoun
+            roll:
+              min: 101
+              max: 102
+          - text: Arbiter
+            _i18n: *CommonNoun
+            roll:
+              min: 103
+              max: 104
+          - text: Architect
+            _i18n: *CommonNoun
+            roll:
+              min: 105
+              max: 106
+          - text: Arms Dealer
+            _i18n: *CommonNoun
+            roll:
+              min: 107
+              max: 108
+          - text: Attorney
+            _i18n: *CommonNoun
+            roll:
+              min: 109
+              max: 110
+          - text: Biochemist
+            _i18n: *CommonNoun
+            roll:
+              min: 111
+              max: 112
+          - text: Broker
+            _i18n: *CommonNoun
+            roll:
+              min: 113
+              max: 114
+          - text: CEO
+            _i18n: *CommonNoun
+            roll:
+              min: 115
+              max: 116
+          - text: Chef
+            _i18n: *CommonNoun
+            roll:
+              min: 117
+              max: 118
+          - text: Constable
+            _i18n: *CommonNoun
+            roll:
+              min: 119
+              max: 120
+          - text: Corporate Flunky
+            _i18n: *CommonNoun
+            roll:
+              min: 121
+              max: 122
+          - text: Crop Specialist
+            _i18n: *CommonNoun
+            roll:
+              min: 123
+              max: 124
+          - text: Customs Official
+            _i18n: *CommonNoun
+            roll:
+              min: 125
+              max: 126
+          - text: Deep Space Nutritionist
+            _i18n: *CommonNoun
+            roll:
+              min: 127
+              max: 128
+          - text: Doctor
+            _i18n: *CommonNoun
+            roll:
+              min: 129
+              max: 130
+          - text: Explosives Expert
+            _i18n: *CommonNoun
+            roll:
+              min: 131
+              max: 132
+          - text: Gas Extractor
+            _i18n: *CommonNoun
+            roll:
+              min: 133
+              max: 134
+          - text: Gunner
+            _i18n: *CommonNoun
+            roll:
+              min: 135
+              max: 136
+          - text: Hydroponicist
+            _i18n: *CommonNoun
+            roll:
+              min: 137
+              max: 138
+          - text: ID Specialist
+            _i18n: *CommonNoun
+            roll:
+              min: 139
+              max: 140
+          - text: Inspector
+            _i18n: *CommonNoun
+            roll:
+              min: 141
+              max: 142
+          - text: Journalist
+            _i18n: *CommonNoun
+            roll:
+              min: 143
+              max: 144
+          - text: Junkyard Worker
+            _i18n: *CommonNoun
+            roll:
+              min: 145
+              max: 146
+          - text: Livestock Farmer
+            _i18n: *CommonNoun
+            roll:
+              min: 147
+              max: 148
+          - text: Nano Technician
+            _i18n: *CommonNoun
+            roll:
+              min: 149
+              max: 150
+          - text: Officer, Comms
+            _i18n: *CommonNoun
+            roll:
+              min: 151
+              max: 152
+          - text: Officer, Helmsman
+            _i18n: *CommonNoun
+            roll:
+              min: 153
+              max: 154
+          - text: Officer, Medical
+            _i18n: *CommonNoun
+            roll:
+              min: 155
+              max: 156
+          - text: Officer, Security
+            _i18n: *CommonNoun
+            roll:
+              min: 157
+              max: 158
+          - text: Orbital Debris Scrubber
+            _i18n: *CommonNoun
+            roll:
+              min: 159
+              max: 160
+          - text: Politician
+            _i18n: *CommonNoun
+            roll:
+              min: 161
+              max: 162
+          - text: Programmer
+            _i18n: *CommonNoun
+            roll:
+              min: 163
+              max: 164
+          - text: Reclamator
+            _i18n: *CommonNoun
+            roll:
+              min: 165
+              max: 166
+          - text: Rental Agent
+            _i18n: *CommonNoun
+            roll:
+              min: 167
+              max: 168
+          - text: Scientist
+            _i18n: *CommonNoun
+            roll:
+              min: 169
+              max: 170
+          - text: Socialite
+            _i18n: *CommonNoun
+            roll:
+              min: 171
+              max: 172
+          - text: Spaceship Dealer
+            _i18n: *CommonNoun
+            roll:
+              min: 173
+              max: 174
+          - text: Supply Dealer
+            _i18n: *CommonNoun
+            roll:
+              min: 175
+              max: 176
+          - text: Tactical Officer
+            _i18n: *CommonNoun
+            roll:
+              min: 177
+              max: 178
+          - text: Technomage
+            _i18n: *CommonNoun
+            roll:
+              min: 179
+              max: 180
+          - text: Transportation
+            _i18n: *CommonNoun
+            roll:
+              min: 181
+              max: 182
+          - text: Waste Manager
+            _i18n: *CommonNoun
+            roll:
+              min: 183
+              max: 184
+          - text: Xenoanthropologist
+            _i18n: *CommonNoun
+            roll:
+              min: 185
+              max: 186
+          - text: Xenoecologist
+            _i18n: *CommonNoun
+            roll:
+              min: 187
+              max: 188
+          - text: Xenopathologist
+            _i18n: *CommonNoun
+            roll:
+              min: 189
+              max: 190
+          - text: Xenozoologist
+            _i18n: *CommonNoun
+            roll:
+              min: 191
+              max: 192
+          - roll:
+              min: 193
+              max: 195
+            <<: *ActionTheme
+          - roll:
+              min: 196
+              max: 200
+            <<: *RollTwice
+          - text: Alchemist
+            _i18n: *CommonNoun
+            roll:
+              min: 201
+              max: 202
+          - text: Archeologist
+            _i18n: *CommonNoun
+            roll:
+              min: 203
+              max: 204
+          - text: Armourer
+            _i18n: *CommonNoun
+            roll:
+              min: 205
+              max: 206
+          - text: Astronomer
+            _i18n: *CommonNoun
+            roll:
+              min: 207
+              max: 208
+          - text: Augmentor
+            _i18n: *CommonNoun
+            roll:
+              min: 209
+              max: 210
+          - text: Bookie
+            _i18n: *CommonNoun
+            roll:
+              min: 211
+              max: 212
+          - text: Cartographer
+            _i18n: *CommonNoun
+            roll:
+              min: 213
+              max: 214
+          - text: Chaplin
+            _i18n: *CommonNoun
+            roll:
+              min: 215
+              max: 216
+          - text: Con Artist
+            _i18n: *CommonNoun
+            roll:
+              min: 217
+              max: 218
+          - text: Construction Worker
+            _i18n: *CommonNoun
+            roll:
+              min: 219
+              max: 220
+          - text: Counsellor
+            _i18n: *CommonNoun
+            roll:
+              min: 221
+              max: 222
+          - text: Cultural Liason
+            _i18n: *CommonNoun
+            roll:
+              min: 223
+              max: 224
+          - text: Data Miner
+            _i18n: *CommonNoun
+            roll:
+              min: 225
+              max: 226
+          - text: Detective
+            _i18n: *CommonNoun
+            roll:
+              min: 227
+              max: 228
+          - text: Eidolon Servicer
+            _i18n: *CommonNoun
+            roll:
+              min: 229
+              max: 230
+          - text: Financier
+            _i18n: *CommonNoun
+            roll:
+              min: 231
+              max: 232
+          - text: Geneticist
+            _i18n: *CommonNoun
+            roll:
+              min: 233
+              max: 234
+          - text: Hacker
+            _i18n: *CommonNoun
+            roll:
+              min: 235
+              max: 236
+          - text: Ice Hauler
+            _i18n: *CommonNoun
+            roll:
+              min: 237
+              max: 238
+          - text: Infiltration Specialist
+            _i18n: *CommonNoun
+            roll:
+              min: 239
+              max: 240
+          - text: Insurance Agent
+            _i18n: *CommonNoun
+            roll:
+              min: 241
+              max: 242
+          - text: Judge
+            _i18n: *CommonNoun
+            roll:
+              min: 243
+              max: 244
+          - text: Librarian
+            _i18n: *CommonNoun
+            roll:
+              min: 245
+              max: 246
+          - text: Medical Technician
+            _i18n: *CommonNoun
+            roll:
+              min: 247
+              max: 248
+          - text: Nurse
+            _i18n: *CommonNoun
+            roll:
+              min: 249
+              max: 250
+          - text: Officer, Diplomatic
+            _i18n: *CommonNoun
+            roll:
+              min: 251
+              max: 252
+          - text: Officer, Intelligence
+            _i18n: *CommonNoun
+            roll:
+              min: 253
+              max: 254
+          - text: Officer, Science
+            _i18n: *CommonNoun
+            roll:
+              min: 255
+              max: 256
+          - text: Officer, Sensors
+            _i18n: *CommonNoun
+            roll:
+              min: 257
+              max: 258
+          - text: Officer, Weapons
+            _i18n: *CommonNoun
+            roll:
+              min: 259
+              max: 260
+          - text: Paranormal Specialist
+            _i18n: *CommonNoun
+            roll:
+              min: 261
+              max: 262
+          - text: Pro Athlete
+            _i18n: *CommonNoun
+            roll:
+              min: 263
+              max: 264
+          - text: Prospector
+            _i18n: *CommonNoun
+            roll:
+              min: 265
+              max: 266
+          - text: Refit Specialist
+            _i18n: *CommonNoun
+            roll:
+              min: 267
+              max: 268
+          - text: Robotics Specialist
+            _i18n: *CommonNoun
+            roll:
+              min: 269
+              max: 270
+          - text: Secretary
+            _i18n: *CommonNoun
+            roll:
+              min: 271
+              max: 272
+          - text: Space Traffic Controller
+            _i18n: *CommonNoun
+            roll:
+              min: 273
+              max: 274
+          - text: Spy
+            _i18n: *CommonNoun
+            roll:
+              min: 275
+              max: 276
+          - text: Surveyor
+            _i18n: *CommonNoun
+            roll:
+              min: 277
+              max: 278
+          - text: Teacher
+            _i18n: *CommonNoun
+            roll:
+              min: 279
+              max: 280
+          - text: Tracker
+            _i18n: *CommonNoun
+            roll:
+              min: 281
+              max: 282
+          - text: Union Boss
+            _i18n: *CommonNoun
+            roll:
+              min: 283
+              max: 284
+          - text: Xenobotanist
+            _i18n: *CommonNoun
+            roll:
+              min: 285
+              max: 286
+          - text: Xenolinguist
+            _i18n: *CommonNoun
+            roll:
+              min: 287
+              max: 288
+          - text: Xenosociologist
+            _i18n: *CommonNoun
+            roll:
+              min: 289
+              max: 290
+          - text: Zero-Grav Welder
+            _i18n: *CommonNoun
+            roll:
+              min: 291
+              max: 292
+          - roll:
+              min: 293
+              max: 295
+            <<: *ActionTheme
+          - text: Roll Twice
+            roll:
+              min: 296
+              max: 300
+            <<: *RollTwice
+        type: oracle_rollable
+      goal:
+        name: Character Goal
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/character/goal
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          # begin copied rows
+          - text: Avenge a wrong
+            roll:
+              min: 1
+              max: 2
+          - text: Build a home
+            roll:
+              min: 3
+              max: 4
+          - text: Build a relationship
+            roll:
+              min: 5
+              max: 7
+          - text: Claim a resource
+            roll:
+              min: 8
+              max: 10
+          - text: Collect a debt
+            roll:
+              min: 11
+              max: 12
+          - text: Craft an object
+            roll:
+              min: 13
+              max: 14
+          - text: Cure an ill
+            roll:
+              min: 15
+              max: 16
+          - text: Defeat a rival
+            roll:
+              min: 17
+              max: 18
+          - text: Defend a person
+            roll:
+              min: 19
+              max: 20
+          - text: Defend a place
+            roll:
+              min: 21
+              max: 23
+          - text: Discover a truth
+            roll:
+              min: 24
+              max: 25
+          - text: End a conflict
+            roll:
+              min: 26
+              max: 27
+          - text: Escape a captor
+            roll:
+              min: 28
+              max: 29
+          - text: Fight injustice
+            roll:
+              min: 30
+              max: 31
+          - text: Find a person
+            roll:
+              min: 32
+              max: 33
+          - text: Forge an alliance
+            roll:
+              min: 34
+              max: 35
+          - text: Gain knowledge
+            roll:
+              min: 36
+              max: 37
+          - text: Gain riches
+            roll:
+              min: 38
+              max: 39
+          - text: Maintain order
+            roll:
+              min: 40
+              max: 41
+          - text: Make an agreement
+            roll:
+              min: 42
+              max: 43
+          - text: Obtain an object
+            roll:
+              min: 44
+              max: 45
+          - text: Pay a debt
+            roll:
+              min: 46
+              max: 47
+          - text: Protect a lifeform
+            roll:
+              min: 48
+              max: 49
+          - text: Protect a secret
+            roll:
+              min: 50
+              max: 51
+          - text: Prove worthiness
+            roll:
+              min: 52
+              max: 53
+          - text: Rebel against power
+            roll:
+              min: 54
+              max: 55
+          - text: Refute a falsehood
+            roll:
+              min: 56
+              max: 57
+          - text: Repair a technology
+            roll:
+              min: 58
+              max: 59
+          - text: Resolve a dispute
+            roll:
+              min: 60
+              max: 61
+          - text: Restore a relationship
+            roll:
+              min: 62
+              max: 63
+          - text: Sabotage a technology
+            roll:
+              min: 64
+              max: 65
+          - text: Secure a resource
+            roll:
+              min: 66
+              max: 68
+          - text: Seek redemption
+            roll:
+              min: 69
+              max: 70
+          - text: Seize power
+            roll:
+              min: 71
+              max: 72
+          - text: Solve a mystery
+            roll:
+              min: 73
+              max: 74
+          - text: Spread faith
+            roll:
+              min: 75
+              max: 76
+          - text: Travel to a place
+            roll:
+              min: 77
+              max: 78
+          - text: Undermine a relationship
+            roll:
+              min: 79
+              max: 80
+          - roll:
+              min: 81
+              max: 90
+            <<: *ActionTheme
+          - roll:
+              min: 91
+              max: 100
+            <<: *RollTwice
+          # end copied rows
+          - text: Achieve enlightenment
+            roll:
+              min: 101
+              max: 102
+          - text: Attack a person
+            roll:
+              min: 103
+              max: 104
+          - text: Be a hero
+            roll:
+              min: 105
+              max: 107
+          - text: Be loved by all
+            roll:
+              min: 108
+              max: 110
+          - text: Blackmail a person
+            roll:
+              min: 111
+              max: 112
+          - text: Bring order to chaos
+            roll:
+              min: 113
+              max: 114
+          - text: Build a better life
+            roll:
+              min: 115
+              max: 116
+          - text: Challenge a law
+            roll:
+              min: 117
+              max: 118
+          - text: Clear a person’s name
+            roll:
+              min: 119
+              max: 120
+          - text: Combat poverty
+            roll:
+              min: 121
+              max: 123
+          - text: Create art
+            roll:
+              min: 124
+              max: 125
+          - text: Defeat a foe
+            roll:
+              min: 126
+              max: 127
+          - text: Destroy an object
+            roll:
+              min: 128
+              max: 129
+          - text: Discredit a person
+            roll:
+              min: 130
+              max: 131
+          - text: Establish reputation
+            roll:
+              min: 132
+              max: 133
+          - text: Explore and discover
+            roll:
+              min: 134
+              max: 135
+          - text: Find a safe place to live
+            roll:
+              min: 136
+              max: 137
+          - text: Find an artifact
+            roll:
+              min: 138
+              max: 139
+          - text: Find their true past
+            roll:
+              min: 140
+              max: 141
+          - text: Gain approval
+            roll:
+              min: 142
+              max: 143
+          - text: Gain followers
+            roll:
+              min: 144
+              max: 145
+          - text: Get revenge
+            roll:
+              min: 146
+              max: 147
+          - text: Have food to eat
+            roll:
+              min: 148
+              max: 149
+          - text: Hide a person
+            roll:
+              min: 150
+              max: 151
+          - text: Indulge in pleasure
+            roll:
+              min: 152
+              max: 153
+          - text: Liberate those in bondage
+            roll:
+              min: 154
+              max: 155
+          - text: Make small impacts
+            roll:
+              min: 156
+              max: 157
+          - text: Personal development
+            roll:
+              min: 158
+              max: 159
+          - text: Promote social justice
+            roll:
+              min: 160
+              max: 161
+          - text: Put down a rebellion
+            roll:
+              min: 162
+              max: 163
+          - text: Regain honor
+            roll:
+              min: 164
+              max: 165
+          - text: Rule a settlement
+            roll:
+              min: 166
+              max: 168
+          - text: Secure steady income
+            roll:
+              min: 169
+              max: 170
+          - text: Slay a creature
+            roll:
+              min: 171
+              max: 172
+          - text: Spread misinformation
+            roll:
+              min: 173
+              max: 174
+          - text: Study the exodus
+            roll:
+              min: 175
+              max: 176
+          - text: Uncover a secret
+            roll:
+              min: 177
+              max: 178
+          - text: Unite settlements
+            roll:
+              min: 179
+              max: 180
+          - roll:
+              min: 181
+              max: 190
+            <<: *ActionTheme
+          - roll:
+              min: 191
+              max: 200
+            <<: *RollTwice
+          - text: Advance a settlement
+            roll:
+              min: 201
+              max: 202
+          - text: Attack a place
+            roll:
+              min: 203
+              max: 204
+          - text: Be left alone
+            roll:
+              min: 205
+              max: 207
+          - text: Be the very best
+            roll:
+              min: 208
+              max: 210
+          - text: Bring balance
+            roll:
+              min: 211
+              max: 212
+          - text: Broker a treaty
+            roll:
+              min: 213
+              max: 214
+          - text: Capture a person
+            roll:
+              min: 215
+              max: 216
+          - text: Change the system
+            roll:
+              min: 217
+              max: 218
+          - text: Collect works of art
+            roll:
+              min: 219
+              max: 220
+          - text: Complete a collection
+            roll:
+              min: 221
+              max: 223
+          - text: Deepen mystic power
+            roll:
+              min: 224
+              max: 225
+          - text: Destroy a technology
+            roll:
+              min: 226
+              max: 227
+          - text: Develop a technology
+            roll:
+              min: 228
+              max: 229
+          - text: Educate others
+            roll:
+              min: 230
+              max: 231
+          - text: Exploit others
+            roll:
+              min: 232
+              max: 233
+          - text: Feed an addiction
+            roll:
+              min: 234
+              max: 235
+          - text: Find a soulmate
+            roll:
+              min: 236
+              max: 237
+          - text: Find peace
+            roll:
+              min: 238
+              max: 239
+          - text: Fracture an alliance
+            roll:
+              min: 240
+              max: 241
+          - text: Gain fame and glory
+            roll:
+              min: 242
+              max: 243
+          - text: Gain power and influence
+            roll:
+              min: 244
+              max: 245
+          - text: Grow a business
+            roll:
+              min: 246
+              max: 247
+          - text: Help the helpless
+            roll:
+              min: 248
+              max: 249
+          - text: Hide a truth
+            roll:
+              min: 250
+              max: 251
+          - text: Leave their mark
+            roll:
+              min: 252
+              max: 253
+          - text: Live in luxury
+            roll:
+              min: 254
+              max: 255
+          - text: Oppress the weak
+            roll:
+              min: 256
+              max: 257
+          - text: Professional development
+            roll:
+              min: 258
+              max: 259
+          - text: Protect an innocent
+            roll:
+              min: 260
+              max: 261
+          - text: Raise a family
+            roll:
+              min: 262
+              max: 263
+          - text: Rescue a person
+            roll:
+              min: 264
+              max: 265
+          - text: Scheme machinations
+            roll:
+              min: 266
+              max: 268
+          - text: Seek forgiveness
+            roll:
+              min: 269
+              max: 270
+          - text: Spread knowledge
+            roll:
+              min: 271
+              max: 272
+          - text: Start a conflict
+            roll:
+              min: 273
+              max: 274
+          - text: Sworn to service
+            roll:
+              min: 275
+              max: 276
+          - text: Understand the universe
+            roll:
+              min: 277
+              max: 278
+          - text: Win affection
+            roll:
+              min: 279
+              max: 280
+          - roll:
+              min: 281
+              max: 290
+            <<: *ActionTheme
+          - roll:
+              min: 291
+              max: 300
+            <<: *RollTwice
+        type: oracle_rollable
+      revealed_aspect:
+        name: Revealed Character Aspect
+        oracle_type: table_text
+        replaces:
+          - oracle_rollable:starforged/character/revealed_aspect
+        dice: 1d300
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          # begin copies of original rows
+          - text: Addicted
+            _i18n: *Adjective
+            roll:
+              min: 1
+              max: 1
+          - text: Adventurous
+            _i18n: *Adjective
+            roll:
+              min: 2
+              max: 2
+          - text: Afflicted
+            _i18n: *Adjective
+            roll:
+              min: 3
+              max: 3
+          - text: Aggressive
+            _i18n: *Adjective
+            roll:
+              min: 4
+              max: 4
+          - text: Ambitious
+            _i18n: *Adjective
+            roll:
+              min: 5
+              max: 5
+          - text: Angry
+            _i18n: *Adjective
+            roll:
+              min: 6
+              max: 6
+          - text: Anxious
+            _i18n: *Adjective
+            roll:
+              min: 7
+              max: 7
+          - text: Apathetic
+            _i18n: *Adjective
+            roll:
+              min: 8
+              max: 8
+          - text: Bitter
+            _i18n: *Adjective
+            roll:
+              min: 9
+              max: 9
+          - text: Boastful
+            _i18n: *Adjective
+            roll:
+              min: 10
+              max: 10
+          - text: Boisterous
+            _i18n: *Adjective
+            roll:
+              min: 11
+              max: 11
+          - text: Bold
+            _i18n: *Adjective
+            roll:
+              min: 12
+              max: 12
+          - text: Brave
+            _i18n: *Adjective
+            roll:
+              min: 13
+              max: 13
+          - text: Careless
+            _i18n: *Adjective
+            roll:
+              min: 14
+              max: 14
+          - text: Cautious
+            _i18n: *Adjective
+            roll:
+              min: 15
+              max: 15
+          - text: Charismatic
+            _i18n: *Adjective
+            roll:
+              min: 16
+              max: 16
+          - text: Clever
+            _i18n: *Adjective
+            roll:
+              min: 17
+              max: 17
+          - text: Conceited
+            _i18n: *Adjective
+            roll:
+              min: 18
+              max: 18
+          - text: Confident
+            _i18n: *Adjective
+            roll:
+              min: 19
+              max: 19
+          - text: Confused
+            _i18n: *Adjective
+            roll:
+              min: 20
+              max: 20
+          - text: Connected
+            _i18n: *Adjective
+            roll:
+              min: 21
+              max: 21
+          - text: Corrupted
+            _i18n: *Adjective
+            roll:
+              min: 22
+              max: 22
+          - text: Cowardly
+            _i18n: *Adjective
+            roll:
+              min: 23
+              max: 23
+          - text: Creative
+            _i18n: *Adjective
+            roll:
+              min: 24
+              max: 24
+          - text: Critical
+            _i18n: *Adjective
+            roll:
+              min: 25
+              max: 25
+          - text: Cruel
+            _i18n: *Adjective
+            roll:
+              min: 26
+              max: 26
+          - text: Cunning
+            _i18n: *Adjective
+            roll:
+              min: 27
+              max: 27
+          - text: Dangerous
+            _i18n: *Adjective
+            roll:
+              min: 28
+              max: 28
+          - text: Deceitful
+            _i18n: *Adjective
+            roll:
+              min: 29
+              max: 29
+          - text: Defiant
+            _i18n: *Adjective
+            roll:
+              min: 30
+              max: 30
+          - text: Determined
+            _i18n: *Adjective
+            roll:
+              min: 31
+              max: 31
+          - text: Disabled
+            _i18n: *Adjective
+            roll:
+              min: 32
+              max: 32
+          - text: Doomed
+            _i18n: *Adjective
+            roll:
+              min: 33
+              max: 33
+          - text: Driven
+            _i18n: *Adjective
+            roll:
+              min: 34
+              max: 34
+          - text: Dying
+            _i18n: *Adjective
+            roll:
+              min: 35
+              max: 35
+          - text: Envious
+            _i18n: *Adjective
+            roll:
+              min: 36
+              max: 36
+          - text: Experienced
+            _i18n: *Adjective
+            roll:
+              min: 37
+              max: 37
+          - text: Faithful
+            _i18n: *Adjective
+            roll:
+              min: 38
+              max: 38
+          - text: Generous
+            _i18n: *Adjective
+            roll:
+              min: 39
+              max: 39
+          - text: Gifted
+            _i18n: *Adjective
+            roll:
+              min: 40
+              max: 40
+          - text: Greedy
+            _i18n: *Adjective
+            roll:
+              min: 41
+              max: 41
+          - text: Grief-stricken
+            _i18n: *Adjective
+            roll:
+              min: 42
+              max: 42
+          - text: Handy
+            _i18n: *Adjective
+            roll:
+              min: 43
+              max: 43
+          - text: Hardhearted
+            _i18n: *Adjective
+            roll:
+              min: 44
+              max: 44
+          - text: Haunted
+            _i18n: *Adjective
+            roll:
+              min: 45
+              max: 45
+          - text: Honorable
+            _i18n: *Adjective
+            roll:
+              min: 46
+              max: 46
+          - text: Hot-tempered
+            _i18n: *Adjective
+            roll:
+              min: 47
+              max: 47
+          - text: Impulsive
+            _i18n: *Adjective
+            roll:
+              min: 48
+              max: 48
+          - text: Incompetent
+            _i18n: *Adjective
+            roll:
+              min: 49
+              max: 49
+          - text: Independent
+            _i18n: *Adjective
+            roll:
+              min: 50
+              max: 50
+          - text: Infamous
+            _i18n: *Adjective
+            roll:
+              min: 51
+              max: 51
+          - text: Influential
+            _i18n: *Adjective
+            roll:
+              min: 52
+              max: 52
+          - text: Insensitive
+            _i18n: *Adjective
+            roll:
+              min: 53
+              max: 53
+          - text: Insightful
+            _i18n: *Adjective
+            roll:
+              min: 54
+              max: 54
+          - text: Intelligent
+            _i18n: *Adjective
+            roll:
+              min: 55
+              max: 55
+          - text: Intolerant
+            _i18n: *Adjective
+            roll:
+              min: 56
+              max: 56
+          - text: Ironsworn
+            _i18n: *Adjective
+            roll:
+              min: 57
+              max: 57
+          - text: Kind
+            _i18n: *Adjective
+            roll:
+              min: 58
+              max: 58
+          - text: Law-abiding
+            _i18n: *Adjective
+            roll:
+              min: 59
+              max: 59
+          - text: Lonely
+            _i18n: *Adjective
+            roll:
+              min: 60
+              max: 60
+          - text: Loving
+            _i18n: *Adjective
+            roll:
+              min: 61
+              max: 61
+          - text: Loyal
+            _i18n: *Adjective
+            roll:
+              min: 62
+              max: 62
+          - text: Manipulative
+            _i18n: *Adjective
+            roll:
+              min: 63
+              max: 63
+          - text: Oblivious
+            _i18n: *Adjective
+            roll:
+              min: 64
+              max: 64
+          - text: Obsessed
+            _i18n: *Adjective
+            roll:
+              min: 65
+              max: 65
+          - text: Oppressed
+            _i18n: *Adjective
+            roll:
+              min: 66
+              max: 66
+          - text: Passive
+            _i18n: *Adjective
+            roll:
+              min: 67
+              max: 67
+          - text: Powerful
+            _i18n: *Adjective
+            roll:
+              min: 68
+              max: 68
+          - text: Proud
+            _i18n: *Adjective
+            roll:
+              min: 69
+              max: 69
+          - text: Quiet
+            _i18n: *Adjective
+            roll:
+              min: 70
+              max: 70
+          - text: Quirky
+            _i18n: *Adjective
+            roll:
+              min: 71
+              max: 71
+          - text: Rebellious
+            _i18n: *Adjective
+            roll:
+              min: 72
+              max: 72
+          - text: Reclusive
+            _i18n: *Adjective
+            roll:
+              min: 73
+              max: 73
+          - text: Relaxed
+            _i18n: *Adjective
+            roll:
+              min: 74
+              max: 74
+          - text: Remorseful
+            _i18n: *Adjective
+            roll:
+              min: 75
+              max: 75
+          - text: Resourceful
+            _i18n: *Adjective
+            roll:
+              min: 76
+              max: 76
+          - text: Secretive
+            _i18n: *Adjective
+            roll:
+              min: 77
+              max: 77
+          - text: Selfish
+            _i18n: *Adjective
+            roll:
+              min: 78
+              max: 78
+          - text: Sociable
+            _i18n: *Adjective
+            roll:
+              min: 79
+              max: 79
+          - text: Stealthy
+            _i18n: *Adjective
+            roll:
+              min: 80
+              max: 80
+          - text: Stern
+            _i18n: *Adjective
+            roll:
+              min: 81
+              max: 81
+          - text: Stingy
+            _i18n: *Adjective
+            roll:
+              min: 82
+              max: 82
+          - text: Stoic
+            _i18n: *Adjective
+            roll:
+              min: 83
+              max: 83
+          - text: Strong
+            _i18n: *Adjective
+            roll:
+              min: 84
+              max: 84
+          - text: Stubborn
+            _i18n: *Adjective
+            roll:
+              min: 85
+              max: 85
+          - text: Successful
+            _i18n: *Adjective
+            roll:
+              min: 86
+              max: 86
+          - text: Suspicious
+            _i18n: *Adjective
+            roll:
+              min: 87
+              max: 87
+          - text: Talented
+            _i18n: *Adjective
+            roll:
+              min: 88
+              max: 88
+          - text: Technical
+            _i18n: *Adjective
+            roll:
+              min: 89
+              max: 89
+          - text: Timid
+            _i18n: *Adjective
+            roll:
+              min: 90
+              max: 90
+          - text: Tolerant
+            _i18n: *Adjective
+            roll:
+              min: 91
+              max: 91
+          - text: Tough
+            _i18n: *Adjective
+            roll:
+              min: 92
+              max: 92
+          - text: Vengeful
+            _i18n: *Adjective
+            roll:
+              min: 93
+              max: 93
+          - text: Violent
+            _i18n: *Adjective
+            roll:
+              min: 94
+              max: 94
+          - text: Wary
+            _i18n: *Adjective
+            roll:
+              min: 95
+              max: 95
+          - text: Watchful
+            _i18n: *Adjective
+            roll:
+              min: 96
+              max: 96
+          - text: Weak
+            _i18n: *Adjective
+            roll:
+              min: 97
+              max: 97
+          - text: Weary
+            _i18n: *Adjective
+            roll:
+              min: 98
+              max: 98
+          - text: Wild
+            _i18n: *Adjective
+            roll:
+              min: 99
+              max: 99
+          - text: Wise
+            _i18n: *Adjective
+            roll:
+              min: 100
+              max: 100
+            # end copies of original rows
+          - text: Abrasive
+            roll:
+              min: 101
+              max: 101
+          - text: Active
+            roll:
+              min: 102
+              max: 102
+          - text: Affable
+            roll:
+              min: 103
+              max: 103
+          - text: Afraid
+            roll:
+              min: 104
+              max: 104
+          - text: Aimless
+            roll:
+              min: 105
+              max: 105
+          - text: Amusing
+            roll:
+              min: 106
+              max: 106
+          - text: Arrogant
+            roll:
+              min: 107
+              max: 107
+          - text: Assertive
+            roll:
+              min: 108
+              max: 108
+          - text: Bossy
+            roll:
+              min: 109
+              max: 109
+          - text: Busy
+            roll:
+              min: 110
+              max: 110
+          - text: Callous
+            roll:
+              min: 111
+              max: 111
+          - text: Cantankerous
+            roll:
+              min: 112
+              max: 112
+          - text: Careful
+            roll:
+              min: 113
+              max: 113
+          - text: Charming
+            roll:
+              min: 114
+              max: 114
+          - text: Childish
+            roll:
+              min: 115
+              max: 115
+          - text: Clumsy
+            roll:
+              min: 116
+              max: 116
+          - text: Compassionate
+            roll:
+              min: 117
+              max: 117
+          - text: Conforming
+            roll:
+              min: 118
+              max: 118
+          - text: Considerate
+            roll:
+              min: 119
+              max: 119
+          - text: Courageous
+            roll:
+              min: 120
+              max: 120
+          - text: Cultured
+            roll:
+              min: 121
+              max: 121
+          - text: Decadent
+            roll:
+              min: 122
+              max: 122
+          - text: Dedicated
+            roll:
+              min: 123
+              max: 123
+          - text: Dependable
+            roll:
+              min: 124
+              max: 124
+          - text: Devious
+            roll:
+              min: 125
+              max: 125
+          - text: Dignified
+            roll:
+              min: 126
+              max: 126
+          - text: Disclipined
+            roll:
+              min: 127
+              max: 127
+          - text: Discreet
+            roll:
+              min: 128
+              max: 128
+          - text: Disrespectful
+            roll:
+              min: 129
+              max: 129
+          - text: Dramatic
+            roll:
+              min: 130
+              max: 130
+          - text: Dynamic
+            roll:
+              min: 131
+              max: 131
+          - text: Easy-going
+            roll:
+              min: 132
+              max: 132
+          - text: Efficient
+            roll:
+              min: 133
+              max: 133
+          - text: Empathetic
+            roll:
+              min: 134
+              max: 134
+          - text: Energetic
+            roll:
+              min: 135
+              max: 135
+          - text: Flexible
+            roll:
+              min: 136
+              max: 136
+          - text: Foolish
+            roll:
+              min: 137
+              max: 137
+          - text: Forthright
+            roll:
+              min: 138
+              max: 138
+          - text: Frivolous
+            roll:
+              min: 139
+              max: 139
+          - text: Funny
+            roll:
+              min: 140
+              max: 140
+          - text: Genuine
+            roll:
+              min: 141
+              max: 141
+          - text: Gullible
+            roll:
+              min: 142
+              max: 142
+          - text: Hardworking
+            roll:
+              min: 143
+              max: 143
+          - text: Helpful
+            roll:
+              min: 144
+              max: 144
+          - text: Hopeful
+            roll:
+              min: 145
+              max: 145
+          - text: Humorous
+            roll:
+              min: 146
+              max: 146
+          - text: Idealistic
+            roll:
+              min: 147
+              max: 147
+          - text: Imaginative
+            roll:
+              min: 148
+              max: 148
+          - text: Impatient
+            roll:
+              min: 149
+              max: 149
+          - text: Innovative
+            roll:
+              min: 150
+              max: 150
+          - text: Intuitive
+            roll:
+              min: 151
+              max: 151
+          - text: Irrational
+            roll:
+              min: 152
+              max: 152
+          - text: Jealous
+            roll:
+              min: 153
+              max: 153
+          - text: Logical
+            roll:
+              min: 154
+              max: 154
+          - text: Lucky
+            roll:
+              min: 155
+              max: 155
+          - text: Mature
+            roll:
+              min: 156
+              max: 156
+          - text: Melancholy
+            roll:
+              min: 157
+              max: 157
+          - text: Meticulous
+            roll:
+              min: 158
+              max: 158
+          - text: Miserable
+            roll:
+              min: 159
+              max: 159
+          - text: Morbid
+            roll:
+              min: 160
+              max: 160
+          - text: Naïve
+            roll:
+              min: 161
+              max: 161
+          - text: Neat
+            roll:
+              min: 162
+              max: 162
+          - text: Neglectful
+            roll:
+              min: 163
+              max: 163
+          - text: Nice
+            roll:
+              min: 164
+              max: 164
+          - text: Nosy
+            roll:
+              min: 165
+              max: 165
+          - text: Open-minded
+            roll:
+              min: 166
+              max: 166
+          - text: Optimistic
+            roll:
+              min: 167
+              max: 167
+          - text: Outgoing
+            roll:
+              min: 168
+              max: 168
+          - text: Passionate
+            roll:
+              min: 169
+              max: 169
+          - text: Peaceful
+            roll:
+              min: 170
+              max: 170
+          - text: Persuasive
+            roll:
+              min: 171
+              max: 171
+          - text: Playful
+            roll:
+              min: 172
+              max: 172
+          - text: Polite
+            roll:
+              min: 173
+              max: 173
+          - text: Possessive
+            roll:
+              min: 174
+              max: 174
+          - text: Predatory
+            roll:
+              min: 175
+              max: 175
+          - text: Principled
+            roll:
+              min: 176
+              max: 176
+          - text: Protective
+            roll:
+              min: 177
+              max: 177
+          - text: Punctual
+            roll:
+              min: 178
+              max: 178
+          - text: Rational
+            roll:
+              min: 179
+              max: 179
+          - text: Reflective
+            roll:
+              min: 180
+              max: 180
+          - text: Respectful
+            roll:
+              min: 181
+              max: 181
+          - text: Romantic
+            roll:
+              min: 182
+              max: 182
+          - text: Sad
+            roll:
+              min: 183
+              max: 183
+          - text: Selfless
+            roll:
+              min: 184
+              max: 184
+          - text: Sensitive
+            roll:
+              min: 185
+              max: 185
+          - text: Shallow
+            roll:
+              min: 186
+              max: 186
+          - text: Silly
+            roll:
+              min: 187
+              max: 187
+          - text: Skillful
+            roll:
+              min: 188
+              max: 188
+          - text: Smart
+            roll:
+              min: 189
+              max: 189
+          - text: Spoiled
+            roll:
+              min: 190
+              max: 190
+          - text: Suave
+            roll:
+              min: 191
+              max: 191
+          - text: Tactless
+            roll:
+              min: 192
+              max: 192
+          - text: Thorough
+            roll:
+              min: 193
+              max: 193
+          - text: Treacherous
+            roll:
+              min: 194
+              max: 194
+          - text: Uncooperative
+            roll:
+              min: 195
+              max: 195
+          - text: Unfaithful
+            roll:
+              min: 196
+              max: 196
+          - text: Unkind
+            roll:
+              min: 197
+              max: 197
+          - text: Versatile
+            roll:
+              min: 198
+              max: 198
+          - text: Warm
+            roll:
+              min: 199
+              max: 199
+          - text: Well-rounded
+            roll:
+              min: 200
+              max: 200
+          - text: Accessible
+            roll:
+              min: 201
+              max: 201
+          - text: Adaptable
+            roll:
+              min: 202
+              max: 202
+          - text: Affectionate
+            roll:
+              min: 203
+              max: 203
+          - text: Agreeable
+            roll:
+              min: 204
+              max: 204
+          - text: Aloof
+            roll:
+              min: 205
+              max: 205
+          - text: Argumentative
+            roll:
+              min: 206
+              max: 206
+          - text: Artistic
+            roll:
+              min: 207
+              max: 207
+          - text: Blunt
+            roll:
+              min: 208
+              max: 208
+          - text: Brilliant
+            roll:
+              min: 209
+              max: 209
+          - text: Calculating
+            roll:
+              min: 210
+              max: 210
+          - text: Calm
+            roll:
+              min: 211
+              max: 211
+          - text: Capable
+            roll:
+              min: 212
+              max: 212
+          - text: Caring
+            roll:
+              min: 213
+              max: 213
+          - text: Cheerful
+            roll:
+              min: 214
+              max: 214
+          - text: Clear-headed
+            roll:
+              min: 215
+              max: 215
+          - text: Cold
+            roll:
+              min: 216
+              max: 216
+          - text: Compulsive
+            roll:
+              min: 217
+              max: 217
+          - text: Conscientious
+            roll:
+              min: 218
+              max: 218
+          - text: Cooperative
+            roll:
+              min: 219
+              max: 219
+          - text: Crude
+            roll:
+              min: 220
+              max: 220
+          - text: Curious
+            roll:
+              min: 221
+              max: 221
+          - text: Decisive
+            roll:
+              min: 222
+              max: 222
+          - text: Demanding
+            roll:
+              min: 223
+              max: 223
+          - text: Destructive
+            roll:
+              min: 224
+              max: 224
+          - text: Difficult
+            roll:
+              min: 225
+              max: 225
+          - text: Diligent
+            roll:
+              min: 226
+              max: 226
+          - text: Discouraging
+            roll:
+              min: 227
+              max: 227
+          - text: Dishonest
+            roll:
+              min: 228
+              max: 228
+          - text: Disturbing
+            roll:
+              min: 229
+              max: 229
+          - text: Dutiful
+            roll:
+              min: 230
+              max: 230
+          - text: Earnest
+            roll:
+              min: 231
+              max: 231
+          - text: Educated
+            roll:
+              min: 232
+              max: 232
+          - text: Eloquent
+            roll:
+              min: 233
+              max: 233
+          - text: Encouraging
+            roll:
+              min: 234
+              max: 234
+          - text: Fair
+            roll:
+              min: 235
+              max: 235
+          - text: Focused
+            roll:
+              min: 236
+              max: 236
+          - text: Forgiving
+            roll:
+              min: 237
+              max: 237
+          - text: Friendly
+            roll:
+              min: 238
+              max: 238
+          - text: Fun
+            roll:
+              min: 239
+              max: 239
+          - text: Gentle
+            roll:
+              min: 240
+              max: 240
+          - text: Gloomy
+            roll:
+              min: 241
+              max: 241
+          - text: Happy
+            roll:
+              min: 242
+              max: 242
+          - text: Hedonistic
+            roll:
+              min: 243
+              max: 243
+          - text: Honest
+            roll:
+              min: 244
+              max: 244
+          - text: Humble
+            roll:
+              min: 245
+              max: 245
+          - text: Hyper
+            roll:
+              min: 246
+              max: 246
+          - text: Ignorant
+            roll:
+              min: 247
+              max: 247
+          - text: Immature
+            roll:
+              min: 248
+              max: 248
+          - text: Impractical
+            roll:
+              min: 249
+              max: 249
+          - text: Insincere
+            roll:
+              min: 250
+              max: 250
+          - text: Inventive
+            roll:
+              min: 251
+              max: 251
+          - text: Irresponsible
+            roll:
+              min: 252
+              max: 252
+          - text: Lazy
+            roll:
+              min: 253
+              max: 253
+          - text: Loud
+            roll:
+              min: 254
+              max: 254
+          - text: Malicious
+            roll:
+              min: 255
+              max: 255
+          - text: Mean
+            roll:
+              min: 256
+              max: 256
+          - text: Messy
+            roll:
+              min: 257
+              max: 257
+          - text: Mischievous
+            roll:
+              min: 258
+              max: 258
+          - text: Moody
+            roll:
+              min: 259
+              max: 259
+          - text: Mysterious
+            roll:
+              min: 260
+              max: 260
+          - text: Narcissistic
+            roll:
+              min: 261
+              max: 261
+          - text: Negative
+            roll:
+              min: 262
+              max: 262
+          - text: Nervous
+            roll:
+              min: 263
+              max: 263
+          - text: Noisy
+            roll:
+              min: 264
+              max: 264
+          - text: Obnoxious
+            roll:
+              min: 265
+              max: 265
+          - text: Opportunistic
+            roll:
+              min: 266
+              max: 266
+          - text: Organized
+            roll:
+              min: 267
+              max: 267
+          - text: Paranoid
+            roll:
+              min: 268
+              max: 268
+          - text: Patient
+            roll:
+              min: 269
+              max: 269
+          - text: Perceptive
+            roll:
+              min: 270
+              max: 270
+          - text: Petty
+            roll:
+              min: 271
+              max: 271
+          - text: Plucky
+            roll:
+              min: 272
+              max: 272
+          - text: Pompous
+            roll:
+              min: 273
+              max: 273
+          - text: Precise
+            roll:
+              min: 274
+              max: 274
+          - text: Prejudiced
+            roll:
+              min: 275
+              max: 275
+          - text: Profound
+            roll:
+              min: 276
+              max: 276
+          - text: Prudent
+            roll:
+              min: 277
+              max: 277
+          - text: Purposeful
+            roll:
+              min: 278
+              max: 278
+          - text: Realistic
+            roll:
+              min: 279
+              max: 279
+          - text: Reliable
+            roll:
+              min: 280
+              max: 280
+          - text: Responsible
+            roll:
+              min: 281
+              max: 281
+          - text: Rude
+            roll:
+              min: 282
+              max: 282
+          - text: Scheming
+            roll:
+              min: 283
+              max: 283
+          - text: Sensible
+            roll:
+              min: 284
+              max: 284
+          - text: Serious
+            roll:
+              min: 285
+              max: 285
+          - text: Shy
+            roll:
+              min: 286
+              max: 286
+          - text: Sincere
+            roll:
+              min: 287
+              max: 287
+          - text: Sly
+            roll:
+              min: 288
+              max: 288
+          - text: Sneaky
+            roll:
+              min: 289
+              max: 289
+          - text: Steadfast
+            roll:
+              min: 290
+              max: 290
+          - text: Sympathetic
+            roll:
+              min: 291
+              max: 291
+          - text: Talkative
+            roll:
+              min: 292
+              max: 292
+          - text: Thoughtful
+            roll:
+              min: 293
+              max: 293
+          - text: Trustworthy
+            roll:
+              min: 294
+              max: 294
+          - text: Undisciplined
+            roll:
+              min: 295
+              max: 295
+          - text: Ungrateful
+            roll:
+              min: 296
+              max: 296
+          - text: Unreliable
+            roll:
+              min: 297
+              max: 297
+          - text: Vindictive
+            roll:
+              min: 298
+              max: 298
+          - text: Weak-willed
+            roll:
+              min: 299
+              max: 299
+          - text: Witty
+            roll:
+              min: 300
+              max: 300
+        type: oracle_rollable
+    collections:
+      name:
+        name: Name
+        oracle_type: table_shared_rolls
+        enhances:
+          - oracle_collection:starforged/character/name
+        _source:
+          <<: *Source
+        contents:
+          given_name:
+            name: Given Name
+            oracle_type: column_text
+            replaces:
+              - oracle_rollable:starforged/character/name/given_name
+            dice: 1d300
+            _comment: Extension of the oracle table
+            rows:
+              # begin copied rows
+              - text: Akim
+                roll:
+                  min: 1
+                  max: 1
+              - text: Alex
+                roll:
+                  min: 2
+                  max: 2
+              - text: Alexis
+                roll:
+                  min: 3
+                  max: 3
+              - text: Alisa
+                roll:
+                  min: 4
+                  max: 4
+              - text: Althea
+                roll:
+                  min: 5
+                  max: 5
+              - text: Amari
+                roll:
+                  min: 6
+                  max: 6
+              - text: Aparna
+                roll:
+                  min: 7
+                  max: 7
+              - text: Argus
+                roll:
+                  min: 8
+                  max: 8
+              - text: Arnav
+                roll:
+                  min: 9
+                  max: 9
+              - text: Ash
+                roll:
+                  min: 10
+                  max: 10
+              - text: Asha
+                roll:
+                  min: 11
+                  max: 11
+              - text: Astrid
+                roll:
+                  min: 12
+                  max: 12
+              - text: Aurora
+                roll:
+                  min: 13
+                  max: 13
+              - text: Ayako
+                roll:
+                  min: 14
+                  max: 14
+              - text: Azriel
+                roll:
+                  min: 15
+                  max: 15
+              - text: Blake
+                roll:
+                  min: 16
+                  max: 16
+              - text: Brennan
+                roll:
+                  min: 17
+                  max: 17
+              - text: Brianna
+                roll:
+                  min: 18
+                  max: 18
+              - text: Bruna
+                roll:
+                  min: 19
+                  max: 19
+              - text: Bruno
+                roll:
+                  min: 20
+                  max: 20
+              - text: Cassidy
+                roll:
+                  min: 21
+                  max: 21
+              - text: Christa
+                roll:
+                  min: 22
+                  max: 22
+              - text: Cole
+                roll:
+                  min: 23
+                  max: 23
+              - text: Corey
+                roll:
+                  min: 24
+                  max: 24
+              - text: Creed
+                roll:
+                  min: 25
+                  max: 25
+              - text: Derya
+                roll:
+                  min: 26
+                  max: 26
+              - text: Dex
+                roll:
+                  min: 27
+                  max: 27
+              - text: Doran
+                roll:
+                  min: 28
+                  max: 28
+              - text: Echo
+                roll:
+                  min: 29
+                  max: 29
+              - text: Eren
+                roll:
+                  min: 30
+                  max: 30
+              - text: Erim
+                roll:
+                  min: 31
+                  max: 31
+              - text: Esana
+                roll:
+                  min: 32
+                  max: 32
+              - text: Eveline
+                roll:
+                  min: 33
+                  max: 33
+              - text: Faye
+                roll:
+                  min: 34
+                  max: 34
+              - text: Fletcher
+                roll:
+                  min: 35
+                  max: 35
+              - text: Flint
+                roll:
+                  min: 36
+                  max: 36
+              - text: Florian
+                roll:
+                  min: 37
+                  max: 37
+              - text: Gavin
+                roll:
+                  min: 38
+                  max: 38
+              - text: Halia
+                roll:
+                  min: 39
+                  max: 39
+              - text: Ike
+                roll:
+                  min: 40
+                  max: 40
+              - text: Isaac
+                roll:
+                  min: 41
+                  max: 41
+              - text: James
+                roll:
+                  min: 42
+                  max: 42
+              - text: Janya
+                roll:
+                  min: 43
+                  max: 43
+              - text: Jihun
+                roll:
+                  min: 44
+                  max: 44
+              - text: Jorunn
+                roll:
+                  min: 45
+                  max: 45
+              - text: Juliana
+                roll:
+                  min: 46
+                  max: 46
+              - text: Juro
+                roll:
+                  min: 47
+                  max: 47
+              - text: Kaisa
+                roll:
+                  min: 48
+                  max: 48
+              - text: Karthik
+                roll:
+                  min: 49
+                  max: 49
+              - text: Kayla
+                roll:
+                  min: 50
+                  max: 50
+              - text: Kei
+                roll:
+                  min: 51
+                  max: 51
+              - text: Kiana
+                roll:
+                  min: 52
+                  max: 52
+              - text: Kieran
+                roll:
+                  min: 53
+                  max: 53
+              - text: Kierra
+                roll:
+                  min: 54
+                  max: 54
+              - text: Kimora
+                roll:
+                  min: 55
+                  max: 55
+              - text: Kiri
+                roll:
+                  min: 56
+                  max: 56
+              - text: Kirsa
+                roll:
+                  min: 57
+                  max: 57
+              - text: Kwan
+                roll:
+                  min: 58
+                  max: 58
+              - text: Kylar
+                roll:
+                  min: 59
+                  max: 59
+              - text: Landry
+                roll:
+                  min: 60
+                  max: 60
+              - text: Logan
+                roll:
+                  min: 61
+                  max: 61
+              - text: Lowell
+                roll:
+                  min: 62
+                  max: 62
+              - text: Lucas
+                roll:
+                  min: 63
+                  max: 63
+              - text: Curtis
+                roll:
+                  min: 64
+                  max: 64
+              - text: Luna
+                roll:
+                  min: 65
+                  max: 65
+              - text: Lux
+                roll:
+                  min: 66
+                  max: 66
+              - text: Mae
+                roll:
+                  min: 67
+                  max: 67
+              - text: Magnus
+                roll:
+                  min: 68
+                  max: 68
+              - text: Mave
+                roll:
+                  min: 69
+                  max: 69
+              - text: Merrick
+                roll:
+                  min: 70
+                  max: 70
+              - text: Mina
+                roll:
+                  min: 71
+                  max: 71
+              - text: Nashida
+                roll:
+                  min: 72
+                  max: 72
+              - text: Nassar
+                roll:
+                  min: 73
+                  max: 73
+              - text: Ostara
+                roll:
+                  min: 74
+                  max: 74
+              - text: Qasira
+                roll:
+                  min: 75
+                  max: 75
+              - text: Quinn
+                roll:
+                  min: 76
+                  max: 76
+              - text: Ragnar
+                roll:
+                  min: 77
+                  max: 77
+              - text: Raven
+                roll:
+                  min: 78
+                  max: 78
+              - text: Ria
+                roll:
+                  min: 79
+                  max: 79
+              - text: Rokuro
+                roll:
+                  min: 80
+                  max: 80
+              - text: Roland
+                roll:
+                  min: 81
+                  max: 81
+              - text: Rowena
+                roll:
+                  min: 82
+                  max: 82
+              - text: Sage
+                roll:
+                  min: 83
+                  max: 83
+              - text: Saren
+                roll:
+                  min: 84
+                  max: 84
+              - text: Annora
+                roll:
+                  min: 85
+                  max: 85
+              - text: Severinus
+                roll:
+                  min: 86
+                  max: 86
+              - text: Shen
+                roll:
+                  min: 87
+                  max: 87
+              - text: Talia
+                roll:
+                  min: 88
+                  max: 88
+              - text: Tomiko
+                roll:
+                  min: 89
+                  max: 89
+              - text: Ulan
+                roll:
+                  min: 90
+                  max: 90
+              - text: Valda
+                roll:
+                  min: 91
+                  max: 91
+              - text: Venri
+                roll:
+                  min: 92
+                  max: 92
+              - text: Vesper
+                roll:
+                  min: 93
+                  max: 93
+              - text: Vuldar
+                roll:
+                  min: 94
+                  max: 94
+              - text: William
+                roll:
+                  min: 95
+                  max: 95
+              - text: Yelena
+                roll:
+                  min: 96
+                  max: 96
+              - text: Zakia
+                roll:
+                  min: 97
+                  max: 97
+              - text: Zari
+                roll:
+                  min: 98
+                  max: 98
+              - text: Zev
+                roll:
+                  min: 99
+                  max: 99
+              - text: Zoya
+                # end copied rows
+                roll:
+                  min: 100
+                  max: 100
+              - text: Abrahan
+                roll:
+                  min: 101
+                  max: 101
+              - text: Adrihan
+                roll:
+                  min: 102
+                  max: 102
+              - text: Adryel
+                roll:
+                  min: 103
+                  max: 103
+              - text: Aedard
+                roll:
+                  min: 104
+                  max: 104
+              - text: Aekira
+                roll:
+                  min: 105
+                  max: 105
+              - text: Ahlex
+                roll:
+                  min: 106
+                  max: 106
+              - text: Alaegha
+                roll:
+                  min: 107
+                  max: 107
+              - text: Alestran
+                roll:
+                  min: 108
+                  max: 108
+              - text: Andret
+                roll:
+                  min: 109
+                  max: 109
+              - text: Anthonis
+                roll:
+                  min: 110
+                  max: 110
+              - text: Arjun
+                roll:
+                  min: 111
+                  max: 111
+              - text: Armanis
+                roll:
+                  min: 112
+                  max: 112
+              - text: Aryanna
+                roll:
+                  min: 113
+                  max: 113
+              - text: Augun
+                roll:
+                  min: 114
+                  max: 114
+              - text: Avry
+                roll:
+                  min: 115
+                  max: 115
+              - text: Balee
+                roll:
+                  min: 116
+                  max: 116
+              - text: Belenne
+                roll:
+                  min: 117
+                  max: 117
+              - text: Bentlix
+                roll:
+                  min: 118
+                  max: 118
+              - text: Bouwen
+                roll:
+                  min: 119
+                  max: 119
+              - text: Braley
+                roll:
+                  min: 120
+                  max: 120
+              - text: Bridgeth
+                roll:
+                  min: 121
+                  max: 121
+              - text: Brisea
+                roll:
+                  min: 122
+                  max: 122
+              - text: Caerson
+                roll:
+                  min: 123
+                  max: 123
+              - text: Calrin
+                roll:
+                  min: 124
+                  max: 124
+              - text: Cassan
+                roll:
+                  min: 125
+                  max: 125
+              - text: Ceilia
+                roll:
+                  min: 126
+                  max: 126
+              - text: Chindlr
+                roll:
+                  min: 127
+                  max: 127
+              - text: Cohren
+                roll:
+                  min: 128
+                  max: 128
+              - text: Craix
+                roll:
+                  min: 129
+                  max: 129
+              - text: Dafnea
+                roll:
+                  min: 130
+                  max: 130
+              - text: Darren
+                roll:
+                  min: 131
+                  max: 131
+              - text: Dayana
+                roll:
+                  min: 132
+                  max: 132
+              - text: Dryx
+                roll:
+                  min: 133
+                  max: 133
+              - text: Elenoh
+                roll:
+                  min: 134
+                  max: 134
+              - text: Elriot
+                roll:
+                  min: 135
+                  max: 135
+              - text: Emilisa
+                roll:
+                  min: 136
+                  max: 136
+              - text: Ender
+                roll:
+                  min: 137
+                  max: 137
+              - text: Evlyn
+                roll:
+                  min: 138
+                  max: 138
+              - text: Fynn
+                roll:
+                  min: 139
+                  max: 139
+              - text: Gerem
+                roll:
+                  min: 140
+                  max: 140
+              - text: Haelee
+                roll:
+                  min: 141
+                  max: 141
+              - text: Harlin
+                roll:
+                  min: 142
+                  max: 142
+              - text: Idelle
+                roll:
+                  min: 143
+                  max: 143
+              - text: Iyleen
+                roll:
+                  min: 144
+                  max: 144
+              - text: Jaecob
+                roll:
+                  min: 145
+                  max: 145
+              - text: Jaenelle
+                roll:
+                  min: 146
+                  max: 146
+              - text: Jareth
+                roll:
+                  min: 147
+                  max: 147
+              - text: Jasih
+                roll:
+                  min: 148
+                  max: 148
+              - text: Jazen
+                roll:
+                  min: 149
+                  max: 149
+              - text: Jemna
+                roll:
+                  min: 150
+                  max: 150
+              - text: Jilleane
+                roll:
+                  min: 151
+                  max: 151
+              - text: Juliran
+                roll:
+                  min: 152
+                  max: 152
+              - text: Justan
+                roll:
+                  min: 153
+                  max: 153
+              - text: Kaelyn
+                roll:
+                  min: 154
+                  max: 154
+              - text: Kain
+                roll:
+                  min: 155
+                  max: 155
+              - text: Karlin
+                roll:
+                  min: 156
+                  max: 156
+              - text: Kasra
+                roll:
+                  min: 157
+                  max: 157
+              - text: Kayi
+                roll:
+                  min: 158
+                  max: 158
+              - text: Kimra
+                roll:
+                  min: 159
+                  max: 159
+              - text: Krish
+                roll:
+                  min: 160
+                  max: 160
+              - text: Kyllen
+                roll:
+                  min: 161
+                  max: 161
+              - text: Lains
+                roll:
+                  min: 162
+                  max: 162
+              - text: Leski
+                roll:
+                  min: 163
+                  max: 163
+              - text: Lukeen
+                roll:
+                  min: 164
+                  max: 164
+              - text: Lylah
+                roll:
+                  min: 165
+                  max: 165
+              - text: Maelana
+                roll:
+                  min: 166
+                  max: 166
+              - text: Makenze
+                roll:
+                  min: 167
+                  max: 167
+              - text: Marza
+                roll:
+                  min: 168
+                  max: 168
+              - text: Meegon
+                roll:
+                  min: 169
+                  max: 169
+              - text: Mikala
+                roll:
+                  min: 170
+                  max: 170
+              - text: Nadira
+                roll:
+                  min: 171
+                  max: 171
+              - text: Natlea
+                roll:
+                  min: 172
+                  max: 172
+              - text: Nayli
+                roll:
+                  min: 173
+                  max: 173
+              - text: Nyco
+                roll:
+                  min: 174
+                  max: 174
+              - text: Paxt
+                roll:
+                  min: 175
+                  max: 175
+              - text: Randis
+                roll:
+                  min: 176
+                  max: 176
+              - text: Raylar
+                roll:
+                  min: 177
+                  max: 177
+              - text: Reesha
+                roll:
+                  min: 178
+                  max: 178
+              - text: Rianara
+                roll:
+                  min: 179
+                  max: 179
+              - text: Rohn
+                roll:
+                  min: 180
+                  max: 180
+              - text: Ryliea
+                roll:
+                  min: 181
+                  max: 181
+              - text: Saera
+                roll:
+                  min: 182
+                  max: 182
+              - text: Sarina
+                roll:
+                  min: 183
+                  max: 183
+              - text: Seliena
+                roll:
+                  min: 184
+                  max: 184
+              - text: Taelor
+                roll:
+                  min: 185
+                  max: 185
+              - text: Tatm
+                roll:
+                  min: 186
+                  max: 186
+              - text: Temrance
+                roll:
+                  min: 187
+                  max: 187
+              - text: Tiana
+                roll:
+                  min: 188
+                  max: 188
+              - text: Trephor
+                roll:
+                  min: 189
+                  max: 189
+              - text: Tryst
+                roll:
+                  min: 190
+                  max: 190
+              - text: Vallun
+                roll:
+                  min: 191
+                  max: 191
+              - text: Viliana
+                roll:
+                  min: 192
+                  max: 192
+              - text: Wylow
+                roll:
+                  min: 193
+                  max: 193
+              - text: Ximon
+                roll:
+                  min: 194
+                  max: 194
+              - text: Yan
+                roll:
+                  min: 195
+                  max: 195
+              - text: Ylivea
+                roll:
+                  min: 196
+                  max: 196
+              - text: Yrenea
+                roll:
+                  min: 197
+                  max: 197
+              - text: Zaeden
+                roll:
+                  min: 198
+                  max: 198
+              - text: Zand
+                roll:
+                  min: 199
+                  max: 199
+              - text: Zavir
+                roll:
+                  min: 200
+                  max: 200
+              - text: Adahn
+                roll:
+                  min: 201
+                  max: 201
+              - text: Adryan
+                roll:
+                  min: 202
+                  max: 202
+              - text: Aebram
+                roll:
+                  min: 203
+                  max: 203
+              - text: Aedele
+                roll:
+                  min: 204
+                  max: 204
+              - text: Agost
+                roll:
+                  min: 205
+                  max: 205
+              - text: Aibel
+                roll:
+                  min: 206
+                  max: 206
+              - text: Alaena
+                roll:
+                  min: 207
+                  max: 207
+              - text: Amaeri
+                roll:
+                  min: 208
+                  max: 208
+              - text: Anlise
+                roll:
+                  min: 209
+                  max: 209
+              - text: Arana
+                roll:
+                  min: 210
+                  max: 210
+              - text: Arlox
+                roll:
+                  min: 211
+                  max: 211
+              - text: Arthir
+                roll:
+                  min: 212
+                  max: 212
+              - text: Aubriena
+                roll:
+                  min: 213
+                  max: 213
+              - text: Avae
+                roll:
+                  min: 214
+                  max: 214
+              - text: Axarea
+                roll:
+                  min: 215
+                  max: 215
+              - text: Banca
+                roll:
+                  min: 216
+                  max: 216
+              - text: Bentlae
+                roll:
+                  min: 217
+                  max: 217
+              - text: Bentom
+                roll:
+                  min: 218
+                  max: 218
+              - text: Brack
+                roll:
+                  min: 219
+                  max: 219
+              - text: Braydn
+                roll:
+                  min: 220
+                  max: 220
+              - text: Brigan
+                roll:
+                  min: 221
+                  max: 221
+              - text: Brodin
+                roll:
+                  min: 222
+                  max: 222
+              - text: Cahlun
+                roll:
+                  min: 223
+                  max: 223
+              - text: Camdon
+                roll:
+                  min: 224
+                  max: 224
+              - text: Cathrise
+                roll:
+                  min: 225
+                  max: 225
+              - text: Charlt
+                roll:
+                  min: 226
+                  max: 226
+              - text: Claytin
+                roll:
+                  min: 227
+                  max: 227
+              - text: Colbix
+                roll:
+                  min: 228
+                  max: 228
+              - text: Crux
+                roll:
+                  min: 229
+                  max: 229
+              - text: Dariux
+                roll:
+                  min: 230
+                  max: 230
+              - text: Davith
+                roll:
+                  min: 231
+                  max: 231
+              - text: Diyana
+                roll:
+                  min: 232
+                  max: 232
+              - text: Elden
+                roll:
+                  min: 233
+                  max: 233
+              - text: Elex
+                roll:
+                  min: 234
+                  max: 234
+              - text: Emex
+                roll:
+                  min: 235
+                  max: 235
+              - text: Emmed
+                roll:
+                  min: 236
+                  max: 236
+              - text: Ethin
+                roll:
+                  min: 237
+                  max: 237
+              - text: Flyx
+                roll:
+                  min: 238
+                  max: 238
+              - text: Gayge
+                roll:
+                  min: 239
+                  max: 239
+              - text: Giana
+                roll:
+                  min: 240
+                  max: 240
+              - text: Haerlo
+                roll:
+                  min: 241
+                  max: 241
+              - text: Harris
+                roll:
+                  min: 242
+                  max: 242
+              - text: Islae
+                roll:
+                  min: 243
+                  max: 243
+              - text: Izella
+                roll:
+                  min: 244
+                  max: 244
+              - text: Jaelah
+                roll:
+                  min: 245
+                  max: 245
+              - text: Jaleah
+                roll:
+                  min: 246
+                  max: 246
+              - text: Jasemine
+                roll:
+                  min: 247
+                  max: 247
+              - text: Jayda
+                roll:
+                  min: 248
+                  max: 248
+              - text: Jazmi
+                roll:
+                  min: 249
+                  max: 249
+              - text: Jexi
+                roll:
+                  min: 250
+                  max: 250
+              - text: Juliasa
+                roll:
+                  min: 251
+                  max: 251
+              - text: Julith
+                roll:
+                  min: 252
+                  max: 252
+              - text: Kaedn
+                roll:
+                  min: 253
+                  max: 253
+              - text: Kaence
+                roll:
+                  min: 254
+                  max: 254
+              - text: Karina
+                roll:
+                  min: 255
+                  max: 255
+              - text: Karsyne
+                roll:
+                  min: 256
+                  max: 256
+              - text: Kayet
+                roll:
+                  min: 257
+                  max: 257
+              - text: Kaze
+                roll:
+                  min: 258
+                  max: 258
+              - text: Kira
+                roll:
+                  min: 259
+                  max: 259
+              - text: Kyber
+                roll:
+                  min: 260
+                  max: 260
+              - text: Kyndle
+                roll:
+                  min: 261
+                  max: 261
+              - text: Lars
+                roll:
+                  min: 262
+                  max: 262
+              - text: Lillya
+                roll:
+                  min: 263
+                  max: 263
+              - text: Lushian
+                roll:
+                  min: 264
+                  max: 264
+              - text: Madlyn
+                roll:
+                  min: 265
+                  max: 265
+              - text: Maeve
+                roll:
+                  min: 266
+                  max: 266
+              - text: Makin
+                roll:
+                  min: 267
+                  max: 267
+              - text: Maxtom
+                roll:
+                  min: 268
+                  max: 268
+              - text: Melia
+                roll:
+                  min: 269
+                  max: 269
+              - text: Myha
+                roll:
+                  min: 270
+                  max: 270
+              - text: Nathanael
+                roll:
+                  min: 271
+                  max: 271
+              - text: Nayel
+                roll:
+                  min: 272
+                  max: 272
+              - text: Nekra
+                roll:
+                  min: 273
+                  max: 273
+              - text: Orin
+                roll:
+                  min: 274
+                  max: 274
+              - text: Pilzen
+                roll:
+                  min: 275
+                  max: 275
+              - text: Rayina
+                roll:
+                  min: 276
+                  max: 276
+              - text: Rayven
+                roll:
+                  min: 277
+                  max: 277
+              - text: Renette
+                roll:
+                  min: 278
+                  max: 278
+              - text: Rikzar
+                roll:
+                  min: 279
+                  max: 279
+              - text: Roseya
+                roll:
+                  min: 280
+                  max: 280
+              - text: Sabrya
+                roll:
+                  min: 281
+                  max: 281
+              - text: Sanyah
+                roll:
+                  min: 282
+                  max: 282
+              - text: Sawyr
+                roll:
+                  min: 283
+                  max: 283
+              - text: Shaene
+                roll:
+                  min: 284
+                  max: 284
+              - text: Taria
+                roll:
+                  min: 285
+                  max: 285
+              - text: Teag
+                roll:
+                  min: 286
+                  max: 286
+              - text: Thadd
+                roll:
+                  min: 287
+                  max: 287
+              - text: Tobias
+                roll:
+                  min: 288
+                  max: 288
+              - text: Tristiran
+                roll:
+                  min: 289
+                  max: 289
+              - text: Ulivia
+                roll:
+                  min: 290
+                  max: 290
+              - text: Valriya
+                roll:
+                  min: 291
+                  max: 291
+              - text: Wilm
+                roll:
+                  min: 292
+                  max: 292
+              - text: Xander
+                roll:
+                  min: 293
+                  max: 293
+              - text: Yael
+                roll:
+                  min: 294
+                  max: 294
+              - text: Yegan
+                roll:
+                  min: 295
+                  max: 295
+              - text: Yos
+                roll:
+                  min: 296
+                  max: 296
+              - text: Yve
+                roll:
+                  min: 297
+                  max: 297
+              - text: Zaid
+                roll:
+                  min: 298
+                  max: 298
+              - text: Zarina
+                roll:
+                  min: 299
+                  max: 299
+              - text: Zolmon
+                roll:
+                  min: 300
+                  max: 300
+            type: oracle_rollable
+          family_name:
+            name: Family Name
+            oracle_type: column_text
+            dice: 1d300
+            _comment: Extension of the oracle table
+            rows:
+              # begin copied rows
+              - text: Kuzmin
+                roll:
+                  min: 1
+                  max: 1
+              - text: Durant
+                roll:
+                  min: 2
+                  max: 2
+              - text: Jefferies
+                roll:
+                  min: 3
+                  max: 3
+              - text: Velez
+                roll:
+                  min: 4
+                  max: 4
+              - text: Lontoc
+                roll:
+                  min: 5
+                  max: 5
+              - text: Wade
+                roll:
+                  min: 6
+                  max: 6
+              - text: Kade
+                roll:
+                  min: 7
+                  max: 7
+              - text: Thorn
+                roll:
+                  min: 8
+                  max: 8
+              - text: Khosla
+                roll:
+                  min: 9
+                  max: 9
+              - text: Hendrix
+                roll:
+                  min: 10
+                  max: 10
+              - text: Okiro
+                roll:
+                  min: 11
+                  max: 11
+              - text: Ripley
+                roll:
+                  min: 12
+                  max: 12
+              - text: Talin
+                roll:
+                  min: 13
+                  max: 13
+              - text: Jin
+                roll:
+                  min: 14
+                  max: 14
+              - text: Finn
+                roll:
+                  min: 15
+                  max: 15
+              - text: Solas
+                roll:
+                  min: 16
+                  max: 16
+              - text: Quint
+                roll:
+                  min: 17
+                  max: 17
+              - text: Keelan
+                roll:
+                  min: 18
+                  max: 18
+              - text: Silva
+                roll:
+                  min: 19
+                  max: 19
+              - text: Valk
+                roll:
+                  min: 20
+                  max: 20
+              - text: O’Brien
+                roll:
+                  min: 21
+                  max: 21
+              - text: Ruiz
+                roll:
+                  min: 22
+                  max: 22
+              - text: Stallard
+                roll:
+                  min: 23
+                  max: 23
+              - text: Mackenson
+                roll:
+                  min: 24
+                  max: 24
+              - text: Jensen
+                roll:
+                  min: 25
+                  max: 25
+              - text: Sakir
+                roll:
+                  min: 26
+                  max: 26
+              - text: Tolari
+                roll:
+                  min: 27
+                  max: 27
+              - text: Kain
+                roll:
+                  min: 28
+                  max: 28
+              - text: Carr
+                roll:
+                  min: 29
+                  max: 29
+              - text: Valenus
+                roll:
+                  min: 30
+                  max: 30
+              - text: Kaan
+                roll:
+                  min: 31
+                  max: 31
+              - text: Taylan
+                roll:
+                  min: 32
+                  max: 32
+              - text: Legrand
+                roll:
+                  min: 33
+                  max: 33
+              - text: Jemison
+                roll:
+                  min: 34
+                  max: 34
+              - text: Arden
+                roll:
+                  min: 35
+                  max: 35
+              - text: Sayer
+                roll:
+                  min: 36
+                  max: 36
+              - text: Kai
+                roll:
+                  min: 37
+                  max: 37
+              - text: Slater
+                roll:
+                  min: 38
+                  max: 38
+              - text: Edris
+                roll:
+                  min: 39
+                  max: 39
+              - text: Sutton
+                roll:
+                  min: 40
+                  max: 40
+              - text: Savarin
+                roll:
+                  min: 41
+                  max: 41
+              - text: Bridger
+                roll:
+                  min: 42
+                  max: 42
+              - text: Mital
+                roll:
+                  min: 43
+                  max: 43
+              - text: Shin
+                roll:
+                  min: 44
+                  max: 44
+              - text: Nadir
+                roll:
+                  min: 45
+                  max: 45
+              - text: Santos
+                roll:
+                  min: 46
+                  max: 46
+              - text: Mihara
+                roll:
+                  min: 47
+                  max: 47
+              - text: Buhari
+                roll:
+                  min: 48
+                  max: 48
+              - text: Salvi
+                roll:
+                  min: 49
+                  max: 49
+              - text: Adler
+                roll:
+                  min: 50
+                  max: 50
+              - text: Takara
+                roll:
+                  min: 51
+                  max: 51
+              - text: Shelton
+                roll:
+                  min: 52
+                  max: 52
+              - text: Vandu
+                roll:
+                  min: 53
+                  max: 53
+              - text: Vega
+                roll:
+                  min: 54
+                  max: 54
+              - text: Zhang
+                roll:
+                  min: 55
+                  max: 55
+              - text: Savela
+                roll:
+                  min: 56
+                  max: 56
+              - text: Hawking
+                roll:
+                  min: 57
+                  max: 57
+              - text: Jen
+                roll:
+                  min: 58
+                  max: 58
+              - text: Hobbs
+                roll:
+                  min: 59
+                  max: 59
+              - text: Holland
+                roll:
+                  min: 60
+                  max: 60
+              - text: Silvius
+                roll:
+                  min: 61
+                  max: 61
+              - text: Freeman
+                roll:
+                  min: 62
+                  max: 62
+              - text: Barbosa
+                roll:
+                  min: 63
+                  max: 63
+              - text: Winter
+                roll:
+                  min: 64
+                  max: 64
+              - text: Hammond
+                roll:
+                  min: 65
+                  max: 65
+              - text: Archer
+                roll:
+                  min: 66
+                  max: 66
+              - text: Barlowe
+                roll:
+                  min: 67
+                  max: 67
+              - text: Shepherd
+                roll:
+                  min: 68
+                  max: 68
+              - text: Griffin
+                roll:
+                  min: 69
+                  max: 69
+              - text: Frost
+                roll:
+                  min: 70
+                  max: 70
+              - text: Quon
+                roll:
+                  min: 71
+                  max: 71
+              - text: Malek
+                roll:
+                  min: 72
+                  max: 72
+              - text: Murad
+                roll:
+                  min: 73
+                  max: 73
+              - text: Becker
+                roll:
+                  min: 74
+                  max: 74
+              - text: Ammar
+                roll:
+                  min: 75
+                  max: 75
+              - text: Braddock
+                roll:
+                  min: 76
+                  max: 76
+              - text: Blackstone
+                roll:
+                  min: 77
+                  max: 77
+              - text: Hadley
+                roll:
+                  min: 78
+                  max: 78
+              - text: Farin
+                roll:
+                  min: 79
+                  max: 79
+              - text: Kobayashi
+                roll:
+                  min: 80
+                  max: 80
+              - text: Duval
+                roll:
+                  min: 81
+                  max: 81
+              - text: Hunter
+                roll:
+                  min: 82
+                  max: 82
+              - text: Beckett
+                roll:
+                  min: 83
+                  max: 83
+              - text: Dykstra
+                roll:
+                  min: 84
+                  max: 84
+              - text: Gray
+                roll:
+                  min: 85
+                  max: 85
+              - text: Sedano
+                roll:
+                  min: 86
+                  max: 86
+              - text: Bai
+                roll:
+                  min: 87
+                  max: 87
+              - text: Booker
+                roll:
+                  min: 88
+                  max: 88
+              - text: Sato
+                roll:
+                  min: 89
+                  max: 89
+              - text: Vayan
+                roll:
+                  min: 90
+                  max: 90
+              - text: Bond
+                roll:
+                  min: 91
+                  max: 91
+              - text: Stark
+                roll:
+                  min: 92
+                  max: 92
+              - text: Stirling
+                roll:
+                  min: 93
+                  max: 93
+              - text: Wolfe
+                roll:
+                  min: 94
+                  max: 94
+              - text: O’Niel
+                roll:
+                  min: 95
+                  max: 95
+              - text: Petrov
+                roll:
+                  min: 96
+                  max: 96
+              - text: Nazari
+                roll:
+                  min: 97
+                  max: 97
+              - text: Darwin
+                roll:
+                  min: 98
+                  max: 98
+              - text: Pearson
+                roll:
+                  min: 99
+                  max: 99
+              - text: Volkov
+                # end copied rows
+                roll:
+                  min: 100
+                  max: 100
+              - text: Aguirre
+                roll:
+                  min: 101
+                  max: 101
+              - text: Anthony
+                roll:
+                  min: 102
+                  max: 102
+              - text: Arnoldo
+                roll:
+                  min: 103
+                  max: 103
+              - text: Averson
+                roll:
+                  min: 104
+                  max: 104
+              - text: Ballarn
+                roll:
+                  min: 105
+                  max: 105
+              - text: Barker
+                roll:
+                  min: 106
+                  max: 106
+              - text: Bauer
+                roll:
+                  min: 107
+                  max: 107
+              - text: Bealsen
+                roll:
+                  min: 108
+                  max: 108
+              - text: Bernster
+                roll:
+                  min: 109
+                  max: 109
+              - text: Boltinplax
+                roll:
+                  min: 110
+                  max: 110
+              - text: Brugess
+                roll:
+                  min: 111
+                  max: 111
+              - text: Bullock
+                roll:
+                  min: 112
+                  max: 112
+              - text: Camaho
+                roll:
+                  min: 113
+                  max: 113
+              - text: Castaneda
+                roll:
+                  min: 114
+                  max: 114
+              - text: Chaler
+                roll:
+                  min: 115
+                  max: 115
+              - text: Chaney
+                roll:
+                  min: 116
+                  max: 116
+              - text: Cisneros
+                roll:
+                  min: 117
+                  max: 117
+              - text: Coffey
+                roll:
+                  min: 118
+                  max: 118
+              - text: Coleman
+                roll:
+                  min: 119
+                  max: 119
+              - text: Combs
+                roll:
+                  min: 120
+                  max: 120
+              - text: Conrad
+                roll:
+                  min: 121
+                  max: 121
+              - text: Cruz
+                roll:
+                  min: 122
+                  max: 122
+              - text: Curtis
+                roll:
+                  min: 123
+                  max: 123
+              - text: Dillonber
+                roll:
+                  min: 124
+                  max: 124
+              - text: Domingue
+                roll:
+                  min: 125
+                  max: 125
+              - text: Dunlap
+                roll:
+                  min: 126
+                  max: 126
+              - text: Esparza
+                roll:
+                  min: 127
+                  max: 127
+              - text: Everest
+                roll:
+                  min: 128
+                  max: 128
+              - text: Farley
+                roll:
+                  min: 129
+                  max: 129
+              - text: Fields
+                roll:
+                  min: 130
+                  max: 130
+              - text: Florentine
+                roll:
+                  min: 131
+                  max: 131
+              - text: Franhin
+                roll:
+                  min: 132
+                  max: 132
+              - text: Gambils
+                roll:
+                  min: 133
+                  max: 133
+              - text: Gates
+                roll:
+                  min: 134
+                  max: 134
+              - text: Golenbar
+                roll:
+                  min: 135
+                  max: 135
+              - text: Gonzalo
+                roll:
+                  min: 136
+                  max: 136
+              - text: Grenshaw
+                roll:
+                  min: 137
+                  max: 137
+              - text: Guerrero
+                roll:
+                  min: 138
+                  max: 138
+              - text: Haney
+                roll:
+                  min: 139
+                  max: 139
+              - text: Hardent
+                roll:
+                  min: 140
+                  max: 140
+              - text: Harrell
+                roll:
+                  min: 141
+                  max: 141
+              - text: Henrix
+                roll:
+                  min: 142
+                  max: 142
+              - text: Hester
+                roll:
+                  min: 143
+                  max: 143
+              - text: Hodge
+                roll:
+                  min: 144
+                  max: 144
+              - text: Hofferson
+                roll:
+                  min: 145
+                  max: 145
+              - text: Hollandry
+                roll:
+                  min: 146
+                  max: 146
+              - text: Hostetler
+                roll:
+                  min: 147
+                  max: 147
+              - text: Huffington
+                roll:
+                  min: 148
+                  max: 148
+              - text: Jennerson
+                roll:
+                  min: 149
+                  max: 149
+              - text: Josten
+                roll:
+                  min: 150
+                  max: 150
+              - text: Kellyn
+                roll:
+                  min: 151
+                  max: 151
+              - text: Knapp
+                roll:
+                  min: 152
+                  max: 152
+              - text: Lambern
+                roll:
+                  min: 153
+                  max: 153
+              - text: LeBlanc
+                roll:
+                  min: 154
+                  max: 154
+              - text: Leons
+                roll:
+                  min: 155
+                  max: 155
+              - text: Livingston
+                roll:
+                  min: 156
+                  max: 156
+              - text: Love
+                roll:
+                  min: 157
+                  max: 157
+              - text: Luna
+                roll:
+                  min: 158
+                  max: 158
+              - text: Mackron
+                roll:
+                  min: 159
+                  max: 159
+              - text: Mahon
+                roll:
+                  min: 160
+                  max: 160
+              - text: Mata
+                roll:
+                  min: 161
+                  max: 161
+              - text: Maynard
+                roll:
+                  min: 162
+                  max: 162
+              - text: McGrath
+                roll:
+                  min: 163
+                  max: 163
+              - text: Milon
+                roll:
+                  min: 164
+                  max: 164
+              - text: Mora
+                roll:
+                  min: 165
+                  max: 165
+              - text: Murfrees
+                roll:
+                  min: 166
+                  max: 166
+              - text: Nealson
+                roll:
+                  min: 167
+                  max: 167
+              - text: Nolben
+                roll:
+                  min: 168
+                  max: 168
+              - text: Owens
+                roll:
+                  min: 169
+                  max: 169
+              - text: Pacheco
+                roll:
+                  min: 170
+                  max: 170
+              - text: Palmer
+                roll:
+                  min: 171
+                  max: 171
+              - text: Paraz
+                roll:
+                  min: 172
+                  max: 172
+              - text: Payna
+                roll:
+                  min: 173
+                  max: 173
+              - text: Philson
+                roll:
+                  min: 174
+                  max: 174
+              - text: Ponce
+                roll:
+                  min: 175
+                  max: 175
+              - text: Pryle
+                roll:
+                  min: 176
+                  max: 176
+              - text: Ramsey
+                roll:
+                  min: 177
+                  max: 177
+              - text: Reeves
+                roll:
+                  min: 178
+                  max: 178
+              - text: Richards
+                roll:
+                  min: 179
+                  max: 179
+              - text: Rogera
+                roll:
+                  min: 180
+                  max: 180
+              - text: Salazar
+                roll:
+                  min: 181
+                  max: 181
+              - text: Schneider
+                roll:
+                  min: 182
+                  max: 182
+              - text: Shashay
+                roll:
+                  min: 183
+                  max: 183
+              - text: Shields
+                roll:
+                  min: 184
+                  max: 184
+              - text: Snydra
+                roll:
+                  min: 185
+                  max: 185
+              - text: Staffenberg
+                roll:
+                  min: 186
+                  max: 186
+              - text: Tapia
+                roll:
+                  min: 187
+                  max: 187
+              - text: Travers
+                roll:
+                  min: 188
+                  max: 188
+              - text: Valencia
+                roll:
+                  min: 189
+                  max: 189
+              - text: Vang
+                roll:
+                  min: 190
+                  max: 190
+              - text: Vincent
+                roll:
+                  min: 191
+                  max: 191
+              - text: Walters
+                roll:
+                  min: 192
+                  max: 192
+              - text: Watson
+                roll:
+                  min: 193
+                  max: 193
+              - text: Weaver
+                roll:
+                  min: 194
+                  max: 194
+              - text: Weeks
+                roll:
+                  min: 195
+                  max: 195
+              - text: Wester
+                roll:
+                  min: 196
+                  max: 196
+              - text: Wilcox
+                roll:
+                  min: 197
+                  max: 197
+              - text: Williz
+                roll:
+                  min: 198
+                  max: 198
+              - text: Yorksher
+                roll:
+                  min: 199
+                  max: 199
+              - text: Zamora
+                roll:
+                  min: 200
+                  max: 200
+              - text: Alvarez
+                roll:
+                  min: 201
+                  max: 201
+              - text: Armstrong
+                roll:
+                  min: 202
+                  max: 202
+              - text: Austone
+                roll:
+                  min: 203
+                  max: 203
+              - text: Baird
+                roll:
+                  min: 204
+                  max: 204
+              - text: Barber
+                roll:
+                  min: 205
+                  max: 205
+              - text: Barrera
+                roll:
+                  min: 206
+                  max: 206
+              - text: Baxter
+                roll:
+                  min: 207
+                  max: 207
+              - text: Beckard
+                roll:
+                  min: 208
+                  max: 208
+              - text: Blankenship
+                roll:
+                  min: 209
+                  max: 209
+              - text: Brady
+                roll:
+                  min: 210
+                  max: 210
+              - text: Buckley
+                roll:
+                  min: 211
+                  max: 211
+              - text: Calderon
+                roll:
+                  min: 212
+                  max: 212
+              - text: Camerton
+                roll:
+                  min: 213
+                  max: 213
+              - text: Castillo
+                roll:
+                  min: 214
+                  max: 214
+              - text: Chamberman
+                roll:
+                  min: 215
+                  max: 215
+              - text: Chen
+                roll:
+                  min: 216
+                  max: 216
+              - text: Clayson
+                roll:
+                  min: 217
+                  max: 217
+              - text: Cokrin
+                roll:
+                  min: 218
+                  max: 218
+              - text: Colon
+                roll:
+                  min: 219
+                  max: 219
+              - text: Conners
+                roll:
+                  min: 220
+                  max: 220
+              - text: Cooper
+                roll:
+                  min: 221
+                  max: 221
+              - text: Cuevas
+                roll:
+                  min: 222
+                  max: 222
+              - text: Denlar
+                roll:
+                  min: 223
+                  max: 223
+              - text: Dixon
+                roll:
+                  min: 224
+                  max: 224
+              - text: Doweller
+                roll:
+                  min: 225
+                  max: 225
+              - text: Eastin
+                roll:
+                  min: 226
+                  max: 226
+              - text: Evangle
+                roll:
+                  min: 227
+                  max: 227
+              - text: Ewing
+                roll:
+                  min: 228
+                  max: 228
+              - text: Ferril
+                roll:
+                  min: 229
+                  max: 229
+              - text: Figueroa
+                roll:
+                  min: 230
+                  max: 230
+              - text: Flores
+                roll:
+                  min: 231
+                  max: 231
+              - text: Galvan
+                roll:
+                  min: 232
+                  max: 232
+              - text: Garson
+                roll:
+                  min: 233
+                  max: 233
+              - text: Gibbs
+                roll:
+                  min: 234
+                  max: 234
+              - text: Gomerza
+                roll:
+                  min: 235
+                  max: 235
+              - text: Graves
+                roll:
+                  min: 236
+                  max: 236
+              - text: Grossen
+                roll:
+                  min: 237
+                  max: 237
+              - text: Hallison
+                roll:
+                  min: 238
+                  max: 238
+              - text: Hansen
+                roll:
+                  min: 239
+                  max: 239
+              - text: Harding
+                roll:
+                  min: 240
+                  max: 240
+              - text: Haydar
+                roll:
+                  min: 241
+                  max: 241
+              - text: Herrera
+                roll:
+                  min: 242
+                  max: 242
+              - text: Hickerton
+                roll:
+                  min: 243
+                  max: 243
+              - text: Hodor
+                roll:
+                  min: 244
+                  max: 244
+              - text: Holden
+                roll:
+                  min: 245
+                  max: 245
+              - text: Hollodo
+                roll:
+                  min: 246
+                  max: 246
+              - text: Howern
+                roll:
+                  min: 247
+                  max: 247
+              - text: Ibarra
+                roll:
+                  min: 248
+                  max: 248
+              - text: Jorden
+                roll:
+                  min: 249
+                  max: 249
+              - text: Kalvin
+                roll:
+                  min: 250
+                  max: 250
+              - text: Kerrin
+                roll:
+                  min: 251
+                  max: 251
+              - text: Knightly
+                roll:
+                  min: 252
+                  max: 252
+              - text: Lane
+                roll:
+                  min: 253
+                  max: 253
+              - text: Lee
+                roll:
+                  min: 254
+                  max: 254
+              - text: Lisley
+                roll:
+                  min: 255
+                  max: 255
+              - text: Lohenz
+                roll:
+                  min: 256
+                  max: 256
+              - text: Lowray
+                roll:
+                  min: 257
+                  max: 257
+              - text: Lynn
+                roll:
+                  min: 258
+                  max: 258
+              - text: Madden
+                roll:
+                  min: 259
+                  max: 259
+              - text: Malone
+                roll:
+                  min: 260
+                  max: 260
+              - text: Mathias
+                roll:
+                  min: 261
+                  max: 261
+              - text: McCarthy
+                roll:
+                  min: 262
+                  max: 262
+              - text: Mendoza
+                roll:
+                  min: 263
+                  max: 263
+              - text: Moores
+                roll:
+                  min: 264
+                  max: 264
+              - text: Morton
+                roll:
+                  min: 265
+                  max: 265
+              - text: Myeryn
+                roll:
+                  min: 266
+                  max: 266
+              - text: Newman
+                roll:
+                  min: 267
+                  max: 267
+              - text: Norbid
+                roll:
+                  min: 268
+                  max: 268
+              - text: Ozbern
+                roll:
+                  min: 269
+                  max: 269
+              - text: Palante
+                roll:
+                  min: 270
+                  max: 270
+              - text: Palmner
+                roll:
+                  min: 271
+                  max: 271
+              - text: Parker
+                roll:
+                  min: 272
+                  max: 272
+              - text: Pham
+                roll:
+                  min: 273
+                  max: 273
+              - text: Pitton
+                roll:
+                  min: 274
+                  max: 274
+              - text: Porzer
+                roll:
+                  min: 275
+                  max: 275
+              - text: Quinix
+                roll:
+                  min: 276
+                  max: 276
+              - text: Randalla
+                roll:
+                  min: 277
+                  max: 277
+              - text: Rettag
+                roll:
+                  min: 278
+                  max: 278
+              - text: Rochester
+                roll:
+                  min: 279
+                  max: 279
+              - text: Rosston
+                roll:
+                  min: 280
+                  max: 280
+              - text: Santanaz
+                roll:
+                  min: 281
+                  max: 281
+              - text: Schroner
+                roll:
+                  min: 282
+                  max: 282
+              - text: Sheppard
+                roll:
+                  min: 283
+                  max: 283
+              - text: Simonson
+                roll:
+                  min: 284
+                  max: 284
+              - text: Spencer
+                roll:
+                  min: 285
+                  max: 285
+              - text: Stouss
+                roll:
+                  min: 286
+                  max: 286
+              - text: Tran
+                roll:
+                  min: 287
+                  max: 287
+              - text: Valdex
+                roll:
+                  min: 288
+                  max: 288
+              - text: Valentine
+                roll:
+                  min: 289
+                  max: 289
+              - text: Velasque
+                roll:
+                  min: 290
+                  max: 290
+              - text: Wallington
+                roll:
+                  min: 291
+                  max: 291
+              - text: Warn
+                roll:
+                  min: 292
+                  max: 292
+              - text: Watts
+                roll:
+                  min: 293
+                  max: 293
+              - text: Webbon
+                roll:
+                  min: 294
+                  max: 294
+              - text: Weiss
+                roll:
+                  min: 295
+                  max: 295
+              - text: Whitaker
+                roll:
+                  min: 296
+                  max: 296
+              - text: Wilkinson
+                roll:
+                  min: 297
+                  max: 297
+              - text: Woodward
+                roll:
+                  min: 298
+                  max: 298
+              - text: Yuz
+                roll:
+                  min: 299
+                  max: 299
+              - text: Zimmers
+                roll:
+                  min: 300
+                  max: 300
+            type: oracle_rollable
+          callsign:
+            name: Callsign
+            oracle_type: column_text
+            dice: 1d300
+            _comment: Extension of the oracle table
+            replaces:
+              - oracle_rollable:starforged/character/name/callsign
+            rows:
+              # begin copied rows
+              - text: Albatross
+                roll:
+                  min: 1
+                  max: 1
+              - text: Angler
+                roll:
+                  min: 2
+                  max: 2
+              - text: Anvil
+                roll:
+                  min: 3
+                  max: 3
+              - text: Badger
+                roll:
+                  min: 4
+                  max: 4
+              - text: Bandit
+                roll:
+                  min: 5
+                  max: 5
+              - text: Bash
+                roll:
+                  min: 6
+                  max: 6
+              - text: Basilisk
+                roll:
+                  min: 7
+                  max: 7
+              - text: Bingo
+                roll:
+                  min: 8
+                  max: 8
+              - text: Blackbird
+                roll:
+                  min: 9
+                  max: 9
+              - text: Blade
+                roll:
+                  min: 10
+                  max: 10
+              - text: Bloodshot
+                roll:
+                  min: 11
+                  max: 11
+              - text: Bluewing
+                roll:
+                  min: 12
+                  max: 12
+              - text: Bonfire
+                roll:
+                  min: 13
+                  max: 13
+              - text: Book
+                roll:
+                  min: 14
+                  max: 14
+              - text: Breaker
+                roll:
+                  min: 15
+                  max: 15
+              - text: Brick
+                roll:
+                  min: 16
+                  max: 16
+              - text: Buzz
+                roll:
+                  min: 17
+                  max: 17
+              - text: Buzzard
+                roll:
+                  min: 18
+                  max: 18
+              - text: Centurion
+                roll:
+                  min: 19
+                  max: 19
+              - text: Chimera
+                roll:
+                  min: 20
+                  max: 20
+              - text: Circuit
+                roll:
+                  min: 21
+                  max: 21
+              - text: Clank
+                roll:
+                  min: 22
+                  max: 22
+              - text: Cleric
+                roll:
+                  min: 23
+                  max: 23
+              - text: Crash
+                roll:
+                  min: 24
+                  max: 24
+              - text: Cutter
+                roll:
+                  min: 25
+                  max: 25
+              - text: Cutthroat
+                roll:
+                  min: 26
+                  max: 26
+              - text: Cypher
+                roll:
+                  min: 27
+                  max: 27
+              - text: Dagger
+                roll:
+                  min: 28
+                  max: 28
+              - text: Dancer
+                roll:
+                  min: 29
+                  max: 29
+              - text: Dash
+                roll:
+                  min: 30
+                  max: 30
+              - text: Deadeye
+                roll:
+                  min: 31
+                  max: 31
+              - text: Deuce
+                roll:
+                  min: 32
+                  max: 32
+              - text: Failsafe
+                roll:
+                  min: 33
+                  max: 33
+              - text: Farseer
+                roll:
+                  min: 34
+                  max: 34
+              - text: Fidget
+                roll:
+                  min: 35
+                  max: 35
+              - text: Firestarter
+                roll:
+                  min: 36
+                  max: 36
+              - text: Fixer
+                roll:
+                  min: 37
+                  max: 37
+              - text: Flatline
+                roll:
+                  min: 38
+                  max: 38
+              - text: Ghost
+                roll:
+                  min: 39
+                  max: 39
+              - text: Grudge
+                roll:
+                  min: 40
+                  max: 40
+              - text: Gutshot
+                roll:
+                  min: 41
+                  max: 41
+              - text: Harrow
+                roll:
+                  min: 42
+                  max: 42
+              - text: Havoc
+                roll:
+                  min: 43
+                  max: 43
+              - text: Hellhound
+                roll:
+                  min: 44
+                  max: 44
+              - text: Hellion
+                roll:
+                  min: 45
+                  max: 45
+              - text: Hex
+                roll:
+                  min: 46
+                  max: 46
+              - text: Hush
+                roll:
+                  min: 47
+                  max: 47
+              - text: Ironclad
+                roll:
+                  min: 48
+                  max: 48
+              - text: Jackal
+                roll:
+                  min: 49
+                  max: 49
+              - text: Jackpot
+                roll:
+                  min: 50
+                  max: 50
+              - text: Jester
+                roll:
+                  min: 51
+                  max: 51
+              - text: Link
+                roll:
+                  min: 52
+                  max: 52
+              - text: Longshot
+                roll:
+                  min: 53
+                  max: 53
+              - text: Mainframe
+                roll:
+                  min: 54
+                  max: 54
+              - text: Mantis
+                roll:
+                  min: 55
+                  max: 55
+              - text: Mimic
+                roll:
+                  min: 56
+                  max: 56
+              - text: Mole
+                roll:
+                  min: 57
+                  max: 57
+              - text: Monarch
+                roll:
+                  min: 58
+                  max: 58
+              - text: Mongoose
+                roll:
+                  min: 59
+                  max: 59
+              - text: Nails
+                roll:
+                  min: 60
+                  max: 60
+              - text: Ogre
+                roll:
+                  min: 61
+                  max: 61
+              - text: Omega
+                roll:
+                  min: 62
+                  max: 62
+              - text: Overload
+                roll:
+                  min: 63
+                  max: 63
+              - text: Packrat
+                roll:
+                  min: 64
+                  max: 64
+              - text: Paladin
+                roll:
+                  min: 65
+                  max: 65
+              - text: Phantom
+                roll:
+                  min: 66
+                  max: 66
+              - text: Phoenix
+                roll:
+                  min: 67
+                  max: 67
+              - text: Pyro
+                roll:
+                  min: 68
+                  max: 68
+              - text: Quickdraw
+                roll:
+                  min: 69
+                  max: 69
+              - text: Razor
+                roll:
+                  min: 70
+                  max: 70
+              - text: Rogue
+                roll:
+                  min: 71
+                  max: 71
+              - text: Rook
+                roll:
+                  min: 72
+                  max: 72
+              - text: Rover
+                roll:
+                  min: 73
+                  max: 73
+              - text: Scout
+                roll:
+                  min: 74
+                  max: 74
+              - text: Shadow
+                roll:
+                  min: 75
+                  max: 75
+              - text: Shark
+                roll:
+                  min: 76
+                  max: 76
+              - text: Shutdown
+                roll:
+                  min: 77
+                  max: 77
+              - text: Slack
+                roll:
+                  min: 78
+                  max: 78
+              - text: Slash
+                roll:
+                  min: 79
+                  max: 79
+              - text: Snipe
+                roll:
+                  min: 80
+                  max: 80
+              - text: Spider
+                roll:
+                  min: 81
+                  max: 81
+              - text: Splinter
+                roll:
+                  min: 82
+                  max: 82
+              - text: Static
+                roll:
+                  min: 83
+                  max: 83
+              - text: Stinger
+                roll:
+                  min: 84
+                  max: 84
+              - text: Straggler
+                roll:
+                  min: 85
+                  max: 85
+              - text: Swindle
+                roll:
+                  min: 86
+                  max: 86
+              - text: Tinker
+                roll:
+                  min: 87
+                  max: 87
+              - text: Touchdown
+                roll:
+                  min: 88
+                  max: 88
+              - text: Tycoon
+                roll:
+                  min: 89
+                  max: 89
+              - text: Vagabond
+                roll:
+                  min: 90
+                  max: 90
+              - text: Valkyrie
+                roll:
+                  min: 91
+                  max: 91
+              - text: Vanguard
+                roll:
+                  min: 92
+                  max: 92
+              - text: Vertigo
+                roll:
+                  min: 93
+                  max: 93
+              - text: Warden
+                roll:
+                  min: 94
+                  max: 94
+              - text: Watchdog
+                roll:
+                  min: 95
+                  max: 95
+              - text: Wayfinder
+                roll:
+                  min: 96
+                  max: 96
+              - text: Whisper
+                roll:
+                  min: 97
+                  max: 97
+              - text: Wraith
+                roll:
+                  min: 98
+                  max: 98
+              - text: Wrongway
+                roll:
+                  min: 99
+                  max: 99
+              - text: Zephyr
+                # end copied rows
+                roll:
+                  min: 100
+                  max: 100
+              - text: Ace
+                roll:
+                  min: 101
+                  max: 101
+              - text: Angel
+                roll:
+                  min: 102
+                  max: 102
+              - text: Any
+                roll:
+                  min: 103
+                  max: 103
+              - text: Arrowhead
+                roll:
+                  min: 104
+                  max: 104
+              - text: Balboa
+                roll:
+                  min: 105
+                  max: 105
+              - text: Banner
+                roll:
+                  min: 106
+                  max: 106
+              - text: Baron
+                roll:
+                  min: 107
+                  max: 107
+              - text: Beehive
+                roll:
+                  min: 108
+                  max: 108
+              - text: Belter
+                roll:
+                  min: 109
+                  max: 109
+              - text: Blackjack
+                roll:
+                  min: 110
+                  max: 110
+              - text: Bones
+                roll:
+                  min: 111
+                  max: 111
+              - text: Boomer
+                roll:
+                  min: 112
+                  max: 112
+              - text: Buckshot
+                roll:
+                  min: 113
+                  max: 113
+              - text: Bullseye
+                roll:
+                  min: 114
+                  max: 114
+              - text: Caravan
+                roll:
+                  min: 115
+                  max: 115
+              - text: Cash
+                roll:
+                  min: 116
+                  max: 116
+              - text: Castle
+                roll:
+                  min: 117
+                  max: 117
+              - text: Chariot
+                roll:
+                  min: 118
+                  max: 118
+              - text: Chip
+                roll:
+                  min: 119
+                  max: 119
+              - text: Cinder
+                roll:
+                  min: 120
+                  max: 120
+              - text: Clownface
+                roll:
+                  min: 121
+                  max: 121
+              - text: Cookie
+                roll:
+                  min: 122
+                  max: 122
+              - text: Cosmos
+                roll:
+                  min: 123
+                  max: 123
+              - text: Creeper
+                roll:
+                  min: 124
+                  max: 124
+              - text: Critter
+                roll:
+                  min: 125
+                  max: 125
+              - text: Darkwing
+                roll:
+                  min: 126
+                  max: 126
+              - text: Data
+                roll:
+                  min: 127
+                  max: 127
+              - text: Demon
+                roll:
+                  min: 128
+                  max: 128
+              - text: Dino
+                roll:
+                  min: 129
+                  max: 129
+              - text: Doc Brown
+                roll:
+                  min: 130
+                  max: 130
+              - text: Doodle
+                roll:
+                  min: 131
+                  max: 131
+              - text: Drake
+                roll:
+                  min: 132
+                  max: 132
+              - text: Dropship
+                roll:
+                  min: 133
+                  max: 133
+              - text: Dynamo
+                roll:
+                  min: 134
+                  max: 134
+              - text: Earthquake
+                roll:
+                  min: 135
+                  max: 135
+              - text: Eclipse
+                roll:
+                  min: 136
+                  max: 136
+              - text: Fang
+                roll:
+                  min: 137
+                  max: 137
+              - text: Fiddler
+                roll:
+                  min: 138
+                  max: 138
+              - text: Flamingo
+                roll:
+                  min: 139
+                  max: 139
+              - text: Flat Top
+                roll:
+                  min: 140
+                  max: 140
+              - text: Flux
+                roll:
+                  min: 141
+                  max: 141
+              - text: Fox
+                roll:
+                  min: 142
+                  max: 142
+              - text: Gadget
+                roll:
+                  min: 143
+                  max: 143
+              - text: Gargoyle
+                roll:
+                  min: 144
+                  max: 144
+              - text: Geyser
+                roll:
+                  min: 145
+                  max: 145
+              - text: Goose
+                roll:
+                  min: 146
+                  max: 146
+              - text: Granny
+                roll:
+                  min: 147
+                  max: 147
+              - text: Halo
+                roll:
+                  min: 148
+                  max: 148
+              - text: Hawk
+                roll:
+                  min: 149
+                  max: 149
+              - text: Hitch
+                roll:
+                  min: 150
+                  max: 150
+              - text: Hulk
+                roll:
+                  min: 151
+                  max: 151
+              - text: Jenkins
+                roll:
+                  min: 152
+                  max: 152
+              - text: Jumper
+                roll:
+                  min: 153
+                  max: 153
+              - text: King
+                roll:
+                  min: 154
+                  max: 154
+              - text: Leeroy
+                roll:
+                  min: 155
+                  max: 155
+              - text: Lightning
+                roll:
+                  min: 156
+                  max: 156
+              - text: Locket
+                roll:
+                  min: 157
+                  max: 157
+              - text: Lurker
+                roll:
+                  min: 158
+                  max: 158
+              - text: Melody
+                roll:
+                  min: 159
+                  max: 159
+              - text: Moose
+                roll:
+                  min: 160
+                  max: 160
+              - text: Nightcrawler
+                roll:
+                  min: 161
+                  max: 161
+              - text: Ninja
+                roll:
+                  min: 162
+                  max: 162
+              - text: Packer
+                roll:
+                  min: 163
+                  max: 163
+              - text: Panther
+                roll:
+                  min: 164
+                  max: 164
+              - text: Piggy
+                roll:
+                  min: 165
+                  max: 165
+              - text: Polaris
+                roll:
+                  min: 166
+                  max: 166
+              - text: Prince
+                roll:
+                  min: 167
+                  max: 167
+              - text: Queen
+                roll:
+                  min: 168
+                  max: 168
+              - text: Quicksilver
+                roll:
+                  min: 169
+                  max: 169
+              - text: Ringo
+                roll:
+                  min: 170
+                  max: 170
+              - text: Robin
+                roll:
+                  min: 171
+                  max: 171
+              - text: Rounder
+                roll:
+                  min: 172
+                  max: 172
+              - text: Scarecrow
+                roll:
+                  min: 173
+                  max: 173
+              - text: Sentry
+                roll:
+                  min: 174
+                  max: 174
+              - text: Shaker
+                roll:
+                  min: 175
+                  max: 175
+              - text: Shatter
+                roll:
+                  min: 176
+                  max: 176
+              - text: Songbird
+                roll:
+                  min: 177
+                  max: 177
+              - text: Spartan
+                roll:
+                  min: 178
+                  max: 178
+              - text: Squirrel
+                roll:
+                  min: 179
+                  max: 179
+              - text: Stardust
+                roll:
+                  min: 180
+                  max: 180
+              - text: Storm
+                roll:
+                  min: 181
+                  max: 181
+              - text: Suit
+                roll:
+                  min: 182
+                  max: 182
+              - text: Sunshine
+                roll:
+                  min: 183
+                  max: 183
+              - text: Surfer
+                roll:
+                  min: 184
+                  max: 184
+              - text: Swordfish
+                roll:
+                  min: 185
+                  max: 185
+              - text: Tango
+                roll:
+                  min: 186
+                  max: 186
+              - text: Templer
+                roll:
+                  min: 187
+                  max: 187
+              - text: Tiger
+                roll:
+                  min: 188
+                  max: 188
+              - text: Titan
+                roll:
+                  min: 189
+                  max: 189
+              - text: Tower
+                roll:
+                  min: 190
+                  max: 190
+              - text: Turtle
+                roll:
+                  min: 191
+                  max: 191
+              - text: Venom
+                roll:
+                  min: 192
+                  max: 192
+              - text: Viper
+                roll:
+                  min: 193
+                  max: 193
+              - text: Walker
+                roll:
+                  min: 194
+                  max: 194
+              - text: Watchman
+                roll:
+                  min: 195
+                  max: 195
+              - text: Whistle
+                roll:
+                  min: 196
+                  max: 196
+              - text: Willow
+                roll:
+                  min: 197
+                  max: 197
+              - text: Winger
+                roll:
+                  min: 198
+                  max: 198
+              - text: Wolf
+                roll:
+                  min: 199
+                  max: 199
+              - text: Wyvern
+                roll:
+                  min: 200
+                  max: 200
+              - text: Alpha
+                roll:
+                  min: 201
+                  max: 201
+              - text: Antique
+                roll:
+                  min: 202
+                  max: 202
+              - text: Arc
+                roll:
+                  min: 203
+                  max: 203
+              - text: Aurora
+                roll:
+                  min: 204
+                  max: 204
+              - text: Banjo
+                roll:
+                  min: 205
+                  max: 205
+              - text: Banshee
+                roll:
+                  min: 206
+                  max: 206
+              - text: Beast
+                roll:
+                  min: 207
+                  max: 207
+              - text: Behemoth
+                roll:
+                  min: 208
+                  max: 208
+              - text: Biscuit
+                roll:
+                  min: 209
+                  max: 209
+              - text: Blaze
+                roll:
+                  min: 210
+                  max: 210
+              - text: Bookworm
+                roll:
+                  min: 211
+                  max: 211
+              - text: Boxer
+                roll:
+                  min: 212
+                  max: 212
+              - text: Bulldog
+                roll:
+                  min: 213
+                  max: 213
+              - text: Butcher
+                roll:
+                  min: 214
+                  max: 214
+              - text: Carbine
+                roll:
+                  min: 215
+                  max: 215
+              - text: Casper
+                roll:
+                  min: 216
+                  max: 216
+              - text: Champ
+                roll:
+                  min: 217
+                  max: 217
+              - text: Chimp
+                roll:
+                  min: 218
+                  max: 218
+              - text: Chuck Norris
+                roll:
+                  min: 219
+                  max: 219
+              - text: Cloud
+                roll:
+                  min: 220
+                  max: 220
+              - text: Cobra
+                roll:
+                  min: 221
+                  max: 221
+              - text: Copper
+                roll:
+                  min: 222
+                  max: 222
+              - text: Coyote
+                roll:
+                  min: 223
+                  max: 223
+              - text: Cricket
+                roll:
+                  min: 224
+                  max: 224
+              - text: Daredevil
+                roll:
+                  min: 225
+                  max: 225
+              - text: Darling
+                roll:
+                  min: 226
+                  max: 226
+              - text: Delight
+                roll:
+                  min: 227
+                  max: 227
+              - text: Digger
+                roll:
+                  min: 228
+                  max: 228
+              - text: Dizzy
+                roll:
+                  min: 229
+                  max: 229
+              - text: Dodger
+                roll:
+                  min: 230
+                  max: 230
+              - text: Dragonfly
+                roll:
+                  min: 231
+                  max: 231
+              - text: Drift
+                roll:
+                  min: 232
+                  max: 232
+              - text: Duster
+                roll:
+                  min: 233
+                  max: 233
+              - text: Eagle
+                roll:
+                  min: 234
+                  max: 234
+              - text: Echelon
+                roll:
+                  min: 235
+                  max: 235
+              - text: Enigma
+                roll:
+                  min: 236
+                  max: 236
+              - text: Feather
+                roll:
+                  min: 237
+                  max: 237
+              - text: Firefly
+                roll:
+                  min: 238
+                  max: 238
+              - text: Flash
+                roll:
+                  min: 239
+                  max: 239
+              - text: Fluke
+                roll:
+                  min: 240
+                  max: 240
+              - text: Fly
+                roll:
+                  min: 241
+                  max: 241
+              - text: Frostbite
+                roll:
+                  min: 242
+                  max: 242
+              - text: Gambit
+                roll:
+                  min: 243
+                  max: 243
+              - text: Gator
+                roll:
+                  min: 244
+                  max: 244
+              - text: Giggles
+                roll:
+                  min: 245
+                  max: 245
+              - text: Grandpa
+                roll:
+                  min: 246
+                  max: 246
+              - text: Grizzle
+                roll:
+                  min: 247
+                  max: 247
+              - text: Hammer
+                roll:
+                  min: 248
+                  max: 248
+              - text: Hercules
+                roll:
+                  min: 249
+                  max: 249
+              - text: Hound
+                roll:
+                  min: 250
+                  max: 250
+              - text: Humility
+                roll:
+                  min: 251
+                  max: 251
+              - text: Joker
+                roll:
+                  min: 252
+                  max: 252
+              - text: Justice
+                roll:
+                  min: 253
+                  max: 253
+              - text: Lancer
+                roll:
+                  min: 254
+                  max: 254
+              - text: Liberty
+                roll:
+                  min: 255
+                  max: 255
+              - text: Lizard
+                roll:
+                  min: 256
+                  max: 256
+              - text: Lucky
+                roll:
+                  min: 257
+                  max: 257
+              - text: Magnet
+                roll:
+                  min: 258
+                  max: 258
+              - text: Merlin
+                roll:
+                  min: 259
+                  max: 259
+              - text: Mustang
+                roll:
+                  min: 260
+                  max: 260
+              - text: Nightlight
+                roll:
+                  min: 261
+                  max: 261
+              - text: Orbiter
+                roll:
+                  min: 262
+                  max: 262
+              - text: Pan
+                roll:
+                  min: 263
+                  max: 263
+              - text: Patriot
+                roll:
+                  min: 264
+                  max: 264
+              - text: Pitch
+                roll:
+                  min: 265
+                  max: 265
+              - text: Prime
+                roll:
+                  min: 266
+                  max: 266
+              - text: Prodigy
+                roll:
+                  min: 267
+                  max: 267
+              - text: Quicksand
+                roll:
+                  min: 268
+                  max: 268
+              - text: Radar
+                roll:
+                  min: 269
+                  max: 269
+              - text: Roach
+                roll:
+                  min: 270
+                  max: 270
+              - text: Rocketman
+                roll:
+                  min: 271
+                  max: 271
+              - text: Sandman
+                roll:
+                  min: 272
+                  max: 272
+              - text: Scratch
+                roll:
+                  min: 273
+                  max: 273
+              - text: Serpent
+                roll:
+                  min: 274
+                  max: 274
+              - text: Sharktooth
+                roll:
+                  min: 275
+                  max: 275
+              - text: Snapdragon
+                roll:
+                  min: 276
+                  max: 276
+              - text: Sonic
+                roll:
+                  min: 277
+                  max: 277
+              - text: Specter
+                roll:
+                  min: 278
+                  max: 278
+              - text: Stallion
+                roll:
+                  min: 279
+                  max: 279
+              - text: Stitch
+                roll:
+                  min: 280
+                  max: 280
+              - text: Stranger
+                roll:
+                  min: 281
+                  max: 281
+              - text: Sunburn
+                roll:
+                  min: 282
+                  max: 282
+              - text: Supernova
+                roll:
+                  min: 283
+                  max: 283
+              - text: Surgeon
+                roll:
+                  min: 284
+                  max: 284
+              - text: Talon
+                roll:
+                  min: 285
+                  max: 285
+              - text: Teach
+                roll:
+                  min: 286
+                  max: 286
+              - text: Thunderball
+                roll:
+                  min: 287
+                  max: 287
+              - text: Tinkerbell
+                roll:
+                  min: 288
+                  max: 288
+              - text: Torch
+                roll:
+                  min: 289
+                  max: 289
+              - text: Tsunami
+                roll:
+                  min: 290
+                  max: 290
+              - text: Twilight
+                roll:
+                  min: 291
+                  max: 291
+              - text: Viking
+                roll:
+                  min: 292
+                  max: 292
+              - text: Volcano
+                roll:
+                  min: 293
+                  max: 293
+              - text: Wasp
+                roll:
+                  min: 294
+                  max: 294
+              - text: Whirlwind
+                roll:
+                  min: 295
+                  max: 295
+              - text: Widow
+                roll:
+                  min: 296
+                  max: 296
+              - text: Windigo
+                roll:
+                  min: 297
+                  max: 297
+              - text: Witch
+                roll:
+                  min: 298
+                  max: 298
+              - text: Wolverine
+                roll:
+                  min: 299
+                  max: 299
+              - text: Zion
+                roll:
+                  min: 300
+                  max: 300
+            type: oracle_rollable
+        type: oracle_collection
+      plot_knowledge:
+        name: Plot Knowledge
+        oracle_type: tables
+        _source:
+          <<: *Source
+        contents:
+          type:
+            name: Plot Knowledge Type
+            oracle_type: table_text
+            dice: 1d100
+            _source: *Source
+            rows:
+              - text: The location of
+                roll:
+                  min: 1
+                  max: 3
+              - text: The identity of
+                roll:
+                  min: 4
+                  max: 6
+              - text: Positive news about
+                roll:
+                  min: 7
+                  max: 9
+              - text: Negative news about
+                roll:
+                  min: 10
+                  max: 12
+              - text: A positive change in
+                roll:
+                  min: 13
+                  max: 15
+              - text: A negative change in
+                roll:
+                  min: 16
+                  max: 18
+              - text: A connection between an NPC and
+                roll:
+                  min: 19
+                  max: 21
+              - text: A connection between a PC and
+                roll:
+                  min: 22
+                  max: 24
+              - text: A connection between an antagonist and
+                roll:
+                  min: 25
+                  max: 27
+              - text: A significant insight related to
+                roll:
+                  min: 28
+                  max: 30
+              - text: Historical/background knowledge about
+                roll:
+                  min: 31
+                  max: 33
+              - text: An ambush concerning
+                roll:
+                  min: 34
+                  max: 36
+              - text: An alteration of
+                roll:
+                  min: 37
+                  max: 39
+              - text: A physical loss involving
+                roll:
+                  min: 40
+                  max: 42
+              - text: A mental loss involving
+                roll:
+                  min: 43
+                  max: 45
+              - text: An emotional loss involving
+                roll:
+                  min: 46
+                  max: 48
+              - text: A spiritual loss involving
+                roll:
+                  min: 49
+                  max: 51
+              - text: A financial loss involving
+                roll:
+                  min: 52
+                  max: 54
+              - text: The loss of an ability involving
+                roll:
+                  min: 55
+                  max: 57
+              - text: The loss of authority involving
+                roll:
+                  min: 58
+                  max: 60
+              - text: A material loss involving
+                roll:
+                  min: 61
+                  max: 63
+              - text: A loss of influence involving
+                roll:
+                  min: 64
+                  max: 66
+              - text: A loss of opportunity involving
+                roll:
+                  min: 67
+                  max: 69
+              - text: A physical boon involving
+                roll:
+                  min: 70
+                  max: 72
+              - text: A mental boon involving
+                roll:
+                  min: 73
+                  max: 75
+              - text: An emotional boon involving
+                roll:
+                  min: 76
+                  max: 78
+              - text: A spiritual boon involving
+                roll:
+                  min: 79
+                  max: 81
+              - text: A financial boon involving
+                roll:
+                  min: 82
+                  max: 84
+              - text: The acquisition of an ability involving
+                roll:
+                  min: 85
+                  max: 87
+              - text: The acquisition of authority involving
+                roll:
+                  min: 88
+                  max: 90
+              - text: A material boon involving
+                roll:
+                  min: 91
+                  max: 93
+              - text: A gain in influence involving
+                roll:
+                  min: 94
+                  max: 96
+              - text: An additional opportunity involving
+                roll:
+                  min: 97
+                  max: 99
+              - text: The truth is the exact opposite of what the PCs thought about
+                roll:
+                  min: 100
+                  max: 100
+            type: oracle_rollable
+          topic:
+            name: Plot Knowledge Topic
+            oracle_type: table_text
+            dice: 1d100
+            _source: *Source
+            rows:
+              - text: an enemy spy
+                roll:
+                  min: 1
+                  max: 3
+              - text: an enemy servant
+                roll:
+                  min: 4
+                  max: 6
+              - text: an enemy leader
+                roll:
+                  min: 7
+                  max: 9
+              - text: an enemy stronghold
+                roll:
+                  min: 10
+                  max: 12
+              - text: a secret enemy hideout
+                roll:
+                  min: 13
+                  max: 15
+              - text: a safe location for the PCs
+                roll:
+                  min: 16
+                  max: 18
+              - text: a dangerous location for the PCs
+                roll:
+                  min: 19
+                  max: 21
+              - text: an enemy who is now an ally
+                roll:
+                  min: 22
+                  max: 24
+              - text: a traitor to the PCs
+                roll:
+                  min: 25
+                  max: 27
+              - text: an enemy's current plan
+                roll:
+                  min: 28
+                  max: 30
+              - text: an enemy's future plan
+                roll:
+                  min: 31
+                  max: 33
+              - text: a necessary artifact for fulfilling a vow
+                roll:
+                  min: 34
+                  max: 36
+              - text: a benefactor for the PCs
+                roll:
+                  min: 37
+                  max: 39
+              - text: a distant location
+                roll:
+                  min: 40
+                  max: 42
+              - text: the current setting
+                roll:
+                  min: 43
+                  max: 45
+              - text: a main antagonist
+                roll:
+                  min: 46
+                  max: 48
+              - text: a beloved NPC
+                roll:
+                  min: 49
+                  max: 51
+              - text: a combative NPC
+                roll:
+                  min: 52
+                  max: 54
+              - text: a single PC
+                roll:
+                  min: 55
+                  max: 57
+              - text: the PCs as a whole
+                roll:
+                  min: 58
+                  max: 60
+              - text: a despised NPC
+                roll:
+                  min: 61
+                  max: 63
+              - text: a necessary object to complete a vow
+                roll:
+                  min: 64
+                  max: 66
+              - text: the road or passage to the next location
+                roll:
+                  min: 67
+                  max: 69
+              - text: a special status for a PC
+                roll:
+                  min: 70
+                  max: 72
+              - text: a special status for an NPC
+                roll:
+                  min: 73
+                  max: 75
+              - text: a special status for a main antagonist
+                roll:
+                  min: 76
+                  max: 78
+              - text: the current short-term goal
+                roll:
+                  min: 79
+                  max: 81
+              - text: a group supportive to the PCs
+                roll:
+                  min: 82
+                  max: 84
+              - text: an extreme or epic vow
+                roll:
+                  min: 85
+                  max: 87
+              - text: a person with vital information about a formidable or lower vow
+                roll:
+                  min: 88
+                  max: 90
+              - text: an opposition group that is not a main antagonist
+                roll:
+                  min: 91
+                  max: 93
+              - text: a person with vital information about an extreme or epic vow
+                roll:
+                  min: 94
+                  max: 96
+              - text: a previously unknown character connected to the plot
+                roll:
+                  min: 97
+                  max: 99
+              - text: a foundational truth of the world
+                roll:
+                  min: 100
+                  max: 100
+            type: oracle_rollable
+        type: oracle_collection
+    type: oracle_collection

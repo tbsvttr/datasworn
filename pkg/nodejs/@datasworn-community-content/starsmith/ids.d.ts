@@ -3,27 +3,20 @@
 export declare const MoveIds: {}
 
 export declare const OracleIds: {
-	readonly campaign_launch: {
-		readonly backstory_prompts: 'oracle_rollable:starsmith/campaign_launch/backstory_prompts'
-		readonly starship_history: 'oracle_rollable:starsmith/campaign_launch/starship_history'
-		readonly starship_quirks: 'oracle_rollable:starsmith/campaign_launch/starship_quirks'
-		readonly sector_trouble: 'oracle_rollable:starsmith/campaign_launch/sector_trouble'
-		readonly inciting_incident: 'oracle_rollable:starsmith/campaign_launch/inciting_incident'
-	}
-	readonly characters: {
-		readonly first_look: 'oracle_rollable:starsmith/characters/first_look'
-		readonly initial_disposition: 'oracle_rollable:starsmith/characters/initial_disposition'
-		readonly role: 'oracle_rollable:starsmith/characters/role'
-		readonly goal: 'oracle_rollable:starsmith/characters/goal'
-		readonly revealed_aspect: 'oracle_rollable:starsmith/characters/revealed_aspect'
+	readonly character: {
+		readonly first_look: 'oracle_rollable:starsmith/character/first_look'
+		readonly initial_disposition: 'oracle_rollable:starsmith/character/initial_disposition'
+		readonly role: 'oracle_rollable:starsmith/character/role'
+		readonly goal: 'oracle_rollable:starsmith/character/goal'
+		readonly revealed_aspect: 'oracle_rollable:starsmith/character/revealed_aspect'
 		readonly name: {
-			readonly given_name: 'oracle_rollable:starsmith/characters/name/given_name'
-			readonly family_name: 'oracle_rollable:starsmith/characters/name/family_name'
-			readonly callsign: 'oracle_rollable:starsmith/characters/name/callsign'
+			readonly given_name: 'oracle_rollable:starsmith/character/name/given_name'
+			readonly family_name: 'oracle_rollable:starsmith/character/name/family_name'
+			readonly callsign: 'oracle_rollable:starsmith/character/name/callsign'
 		}
 		readonly plot_knowledge: {
-			readonly type: 'oracle_rollable:starsmith/characters/plot_knowledge/type'
-			readonly topic: 'oracle_rollable:starsmith/characters/plot_knowledge/topic'
+			readonly type: 'oracle_rollable:starsmith/character/plot_knowledge/type'
+			readonly topic: 'oracle_rollable:starsmith/character/plot_knowledge/topic'
 		}
 	}
 	readonly core: {
@@ -32,137 +25,144 @@ export declare const OracleIds: {
 		readonly descriptor: 'oracle_rollable:starsmith/core/descriptor'
 		readonly focus: 'oracle_rollable:starsmith/core/focus'
 	}
-	readonly creatures: {
-		readonly first_look: 'oracle_rollable:starsmith/creatures/first_look'
-		readonly encountered_behavior: 'oracle_rollable:starsmith/creatures/encountered_behavior'
-		readonly revealed_aspect: 'oracle_rollable:starsmith/creatures/revealed_aspect'
+	readonly creature: {
+		readonly first_look: 'oracle_rollable:starsmith/creature/first_look'
+		readonly encountered_behavior: 'oracle_rollable:starsmith/creature/encountered_behavior'
+		readonly revealed_aspect: 'oracle_rollable:starsmith/creature/revealed_aspect'
 	}
-	readonly derelicts: {
-		readonly location_and_type: 'oracle_rollable:starsmith/derelicts/location_and_type'
-		readonly outer_first_look: 'oracle_rollable:starsmith/derelicts/outer_first_look'
-		readonly inner_first_look: 'oracle_rollable:starsmith/derelicts/inner_first_look'
+	readonly derelict: {
+		readonly location: 'oracle_rollable:starsmith/derelict/location'
+		readonly outer_first_look: 'oracle_rollable:starsmith/derelict/outer_first_look'
+		readonly inner_first_look: 'oracle_rollable:starsmith/derelict/inner_first_look'
 	}
-	readonly districts: {
-		readonly zones: 'oracle_rollable:starsmith/districts/zones'
+	readonly district: {
+		readonly zone: 'oracle_rollable:starsmith/district/zone'
 		readonly access: {
-			readonly area: 'oracle_rollable:starsmith/districts/access/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/access/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/access/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/access/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/access/area'
+			readonly feature: 'oracle_rollable:starsmith/district/access/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/access/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/access/opportunity'
 		}
 		readonly community: {
-			readonly area: 'oracle_rollable:starsmith/districts/community/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/community/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/community/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/community/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/community/area'
+			readonly feature: 'oracle_rollable:starsmith/district/community/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/community/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/community/opportunity'
 		}
 		readonly engineering: {
-			readonly area: 'oracle_rollable:starsmith/districts/engineering/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/engineering/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/engineering/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/engineering/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/engineering/area'
+			readonly feature: 'oracle_rollable:starsmith/district/engineering/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/engineering/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/engineering/opportunity'
 		}
 		readonly living: {
-			readonly area: 'oracle_rollable:starsmith/districts/living/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/living/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/living/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/living/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/living/area'
+			readonly feature: 'oracle_rollable:starsmith/district/living/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/living/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/living/opportunity'
 		}
 		readonly medical: {
-			readonly area: 'oracle_rollable:starsmith/districts/medical/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/medical/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/medical/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/medical/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/medical/area'
+			readonly feature: 'oracle_rollable:starsmith/district/medical/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/medical/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/medical/opportunity'
 		}
 		readonly operations: {
-			readonly area: 'oracle_rollable:starsmith/districts/operations/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/operations/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/operations/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/operations/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/operations/area'
+			readonly feature: 'oracle_rollable:starsmith/district/operations/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/operations/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/operations/opportunity'
 		}
 		readonly production: {
-			readonly area: 'oracle_rollable:starsmith/districts/production/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/production/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/production/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/production/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/production/area'
+			readonly feature: 'oracle_rollable:starsmith/district/production/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/production/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/production/opportunity'
 		}
 		readonly research: {
-			readonly area: 'oracle_rollable:starsmith/districts/research/area'
-			readonly feature: 'oracle_rollable:starsmith/districts/research/feature'
-			readonly peril: 'oracle_rollable:starsmith/districts/research/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/districts/research/opportunity'
+			readonly area: 'oracle_rollable:starsmith/district/research/area'
+			readonly feature: 'oracle_rollable:starsmith/district/research/feature'
+			readonly peril: 'oracle_rollable:starsmith/district/research/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/district/research/opportunity'
 		}
 	}
-	readonly factions: {
-		readonly type: 'oracle_rollable:starsmith/factions/type'
-		readonly dominion: 'oracle_rollable:starsmith/factions/dominion'
-		readonly leadership: 'oracle_rollable:starsmith/factions/leadership'
-		readonly guild: 'oracle_rollable:starsmith/factions/guild'
-		readonly group: 'oracle_rollable:starsmith/factions/group'
-		readonly field: 'oracle_rollable:starsmith/factions/field'
-		readonly specialty: 'oracle_rollable:starsmith/factions/specialty'
-		readonly role: 'oracle_rollable:starsmith/factions/role'
-		readonly field_of_study: 'oracle_rollable:starsmith/factions/field_of_study'
-		readonly ai_hive_prime_directive: 'oracle_rollable:starsmith/factions/ai_hive_prime_directive'
-		readonly projects: 'oracle_rollable:starsmith/factions/projects'
-		readonly relationships: 'oracle_rollable:starsmith/factions/relationships'
-		readonly legacy: 'oracle_rollable:starsmith/factions/legacy'
-		readonly affiliation: 'oracle_rollable:starsmith/factions/affiliation'
-		readonly identity: 'oracle_rollable:starsmith/factions/identity'
-		readonly quirks: 'oracle_rollable:starsmith/factions/quirks'
-		readonly rumors: 'oracle_rollable:starsmith/factions/rumors'
+	readonly faction: {
+		readonly type: 'oracle_rollable:starsmith/faction/type'
+		readonly dominion: 'oracle_rollable:starsmith/faction/dominion'
+		readonly leadership: 'oracle_rollable:starsmith/faction/leadership'
+		readonly guild: 'oracle_rollable:starsmith/faction/guild'
+		readonly group: 'oracle_rollable:starsmith/faction/group'
+		readonly field: 'oracle_rollable:starsmith/faction/field'
+		readonly specialty: 'oracle_rollable:starsmith/faction/specialty'
+		readonly role: 'oracle_rollable:starsmith/faction/role'
+		readonly field_of_study: 'oracle_rollable:starsmith/faction/field_of_study'
+		readonly ai_hive_prime_directive: 'oracle_rollable:starsmith/faction/ai_hive_prime_directive'
+		readonly projects: 'oracle_rollable:starsmith/faction/projects'
+		readonly relationships: 'oracle_rollable:starsmith/faction/relationships'
+		readonly legacy: 'oracle_rollable:starsmith/faction/legacy'
+		readonly affiliation: 'oracle_rollable:starsmith/faction/affiliation'
+		readonly identity: 'oracle_rollable:starsmith/faction/identity'
+		readonly quirks: 'oracle_rollable:starsmith/faction/quirks'
+		readonly rumors: 'oracle_rollable:starsmith/faction/rumors'
 	}
-	readonly location_themes: {
-		readonly type: 'oracle_rollable:starsmith/location_themes/type'
+	readonly launching_your_campaign: {
+		readonly backstory: 'oracle_rollable:starsmith/launching_your_campaign/backstory'
+		readonly history: 'oracle_rollable:starsmith/launching_your_campaign/history'
+		readonly quirks: 'oracle_rollable:starsmith/launching_your_campaign/quirks'
+		readonly trouble: 'oracle_rollable:starsmith/launching_your_campaign/trouble'
+		readonly inciting_incident: 'oracle_rollable:starsmith/launching_your_campaign/inciting_incident'
+	}
+	readonly location_theme: {
+		readonly type: 'oracle_rollable:starsmith/location_theme/type'
 		readonly arid: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/arid/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/arid/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/arid/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/arid/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/arid/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/arid/opportunity'
 		}
 		readonly chronal: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/chronal/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/chronal/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/chronal/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/chronal/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/chronal/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/chronal/opportunity'
 		}
 		readonly inferno: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/inferno/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/inferno/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/inferno/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/inferno/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/inferno/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/inferno/opportunity'
 		}
 		readonly floating: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/floating/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/floating/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/floating/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/floating/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/floating/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/floating/opportunity'
 		}
 		readonly flooded: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/flooded/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/flooded/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/flooded/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/flooded/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/flooded/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/flooded/opportunity'
 		}
 		readonly frozen: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/frozen/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/frozen/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/frozen/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/frozen/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/frozen/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/frozen/opportunity'
 		}
 		readonly lifeform: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/lifeform/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/lifeform/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/lifeform/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/lifeform/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/lifeform/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/lifeform/opportunity'
 		}
 		readonly mystical: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/mystical/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/mystical/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/mystical/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/mystical/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/mystical/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/mystical/opportunity'
 		}
 		readonly overgrown: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/overgrown/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/overgrown/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/overgrown/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/overgrown/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/overgrown/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/overgrown/opportunity'
 		}
 		readonly war_zone: {
-			readonly feature: 'oracle_rollable:starsmith/location_themes/war_zone/feature'
-			readonly peril: 'oracle_rollable:starsmith/location_themes/war_zone/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/location_themes/war_zone/opportunity'
+			readonly feature: 'oracle_rollable:starsmith/location_theme/war_zone/feature'
+			readonly peril: 'oracle_rollable:starsmith/location_theme/war_zone/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/location_theme/war_zone/opportunity'
 		}
 	}
 	readonly misc: {
@@ -183,7 +183,6 @@ export declare const OracleIds: {
 		readonly pay_the_price: 'oracle_rollable:starsmith/moves/pay_the_price'
 	}
 	readonly planets: {
-		readonly class: 'oracle_rollable:starsmith/planets/class'
 		readonly desert: {
 			readonly name: 'oracle_rollable:starsmith/planets/desert/name'
 			readonly observed_from_space: 'oracle_rollable:starsmith/planets/desert/observed_from_space'
@@ -244,23 +243,44 @@ export declare const OracleIds: {
 				readonly first_look: 'oracle_rollable:starsmith/planets/vital/plant/first_look'
 			}
 		}
+	}
+	readonly planet: {
+		readonly class: 'oracle_rollable:starsmith/planet/class'
 		readonly peril: {
-			readonly lifebearing: 'oracle_rollable:starsmith/planets/peril/lifebearing'
-			readonly lifeless: 'oracle_rollable:starsmith/planets/peril/lifeless'
+			readonly lifebearing: 'oracle_rollable:starsmith/planet/peril/lifebearing'
+			readonly lifeless: 'oracle_rollable:starsmith/planet/peril/lifeless'
 		}
 		readonly opportunity: {
-			readonly lifebearing: 'oracle_rollable:starsmith/planets/opportunity/lifebearing'
-			readonly lifeless: 'oracle_rollable:starsmith/planets/opportunity/lifeless'
+			readonly lifebearing: 'oracle_rollable:starsmith/planet/opportunity/lifebearing'
+			readonly lifeless: 'oracle_rollable:starsmith/planet/opportunity/lifeless'
 		}
 	}
-	readonly settlements: {
-		readonly location: 'oracle_rollable:starsmith/settlements/location'
-		readonly first_look: 'oracle_rollable:starsmith/settlements/first_look'
-		readonly contact: 'oracle_rollable:starsmith/settlements/contact'
-		readonly authority: 'oracle_rollable:starsmith/settlements/authority'
-		readonly projects: 'oracle_rollable:starsmith/settlements/projects'
-		readonly trouble: 'oracle_rollable:starsmith/settlements/trouble'
-		readonly name: 'oracle_rollable:starsmith/settlements/name'
+	readonly vault: {
+		readonly form: 'oracle_rollable:starsmith/vault/form'
+		readonly shape: 'oracle_rollable:starsmith/vault/shape'
+		readonly material: 'oracle_rollable:starsmith/vault/material'
+		readonly outer_first_look: 'oracle_rollable:starsmith/vault/outer_first_look'
+		readonly interior: {
+			readonly first_look: 'oracle_rollable:starsmith/vault/interior/first_look'
+			readonly feature: 'oracle_rollable:starsmith/vault/interior/feature'
+			readonly peril: 'oracle_rollable:starsmith/vault/interior/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/vault/interior/opportunity'
+		}
+		readonly sanctum: {
+			readonly feature: 'oracle_rollable:starsmith/vault/sanctum/feature'
+			readonly peril: 'oracle_rollable:starsmith/vault/sanctum/peril'
+			readonly opportunity: 'oracle_rollable:starsmith/vault/sanctum/opportunity'
+			readonly purpose: 'oracle_rollable:starsmith/vault/sanctum/purpose'
+		}
+	}
+	readonly settlement: {
+		readonly location: 'oracle_rollable:starsmith/settlement/location'
+		readonly first_look: 'oracle_rollable:starsmith/settlement/first_look'
+		readonly contact: 'oracle_rollable:starsmith/settlement/contact'
+		readonly authority: 'oracle_rollable:starsmith/settlement/authority'
+		readonly projects: 'oracle_rollable:starsmith/settlement/projects'
+		readonly trouble: 'oracle_rollable:starsmith/settlement/trouble'
+		readonly name: 'oracle_rollable:starsmith/settlement/name'
 	}
 	readonly space: {
 		readonly object: 'oracle_rollable:starsmith/space/object'
@@ -276,34 +296,16 @@ export declare const OracleIds: {
 			readonly suffix: 'oracle_rollable:starsmith/space/sector_name/suffix'
 		}
 	}
-	readonly starships: {
-		readonly type: 'oracle_rollable:starsmith/starships/type'
-		readonly fleet: 'oracle_rollable:starsmith/starships/fleet'
-		readonly initial_contact: 'oracle_rollable:starsmith/starships/initial_contact'
-		readonly first_look: 'oracle_rollable:starsmith/starships/first_look'
-		readonly name: 'oracle_rollable:starsmith/starships/name'
+	readonly starship: {
+		readonly type: 'oracle_rollable:starsmith/starship/type'
+		readonly fleet: 'oracle_rollable:starsmith/starship/fleet'
+		readonly initial_contact: 'oracle_rollable:starsmith/starship/initial_contact'
+		readonly first_look: 'oracle_rollable:starsmith/starship/first_look'
+		readonly name: 'oracle_rollable:starsmith/starship/name'
 		readonly mission: {
-			readonly terminus: 'oracle_rollable:starsmith/starships/mission/terminus'
-			readonly outlands: 'oracle_rollable:starsmith/starships/mission/outlands'
-			readonly expanse: 'oracle_rollable:starsmith/starships/mission/expanse'
-		}
-	}
-	readonly vaults: {
-		readonly form: 'oracle_rollable:starsmith/vaults/form'
-		readonly shape: 'oracle_rollable:starsmith/vaults/shape'
-		readonly material: 'oracle_rollable:starsmith/vaults/material'
-		readonly outer_first_look: 'oracle_rollable:starsmith/vaults/outer_first_look'
-		readonly interior: {
-			readonly first_look: 'oracle_rollable:starsmith/vaults/interior/first_look'
-			readonly feature: 'oracle_rollable:starsmith/vaults/interior/feature'
-			readonly peril: 'oracle_rollable:starsmith/vaults/interior/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/vaults/interior/opportunity'
-		}
-		readonly sanctum: {
-			readonly feature: 'oracle_rollable:starsmith/vaults/sanctum/feature'
-			readonly peril: 'oracle_rollable:starsmith/vaults/sanctum/peril'
-			readonly opportunity: 'oracle_rollable:starsmith/vaults/sanctum/opportunity'
-			readonly purpose: 'oracle_rollable:starsmith/vaults/sanctum/purpose'
+			readonly terminus: 'oracle_rollable:starsmith/starship/mission/terminus'
+			readonly outlands: 'oracle_rollable:starsmith/starship/mission/outlands'
+			readonly expanse: 'oracle_rollable:starsmith/starship/mission/expanse'
 		}
 	}
 }

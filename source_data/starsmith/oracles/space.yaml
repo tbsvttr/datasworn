@@ -51,32 +51,32 @@ oracles:
                 min: 16
                 max: 35
               <<: &Planet
-                text: '[Planet](oracle_collection:starsmith/planets)'
+                text: '[Planet](oracle_collection:starsmith/planet)'
             - roll:
                 min: 36
                 max: 40
               <<: &Sighting.2
-                text: '[Settlement](oracle_collection:starsmith/settlements)'
+                text: '[Settlement](oracle_collection:starsmith/settlement)'
             - roll:
                 min: 41
                 max: 47
               <<: &Sighting.3
-                text: '[Starship](oracle_collection:starsmith/starships)'
+                text: '[Starship](oracle_collection:starsmith/starship)'
             - roll:
                 min: 48
                 max: 51
               <<: &Sighting.4
-                text: '[Derelict](oracle_collection:starsmith/derelicts)'
+                text: '[Derelict](oracle_collection:starsmith/derelict)'
             - roll:
                 min: 52
                 max: 53
               <<: &Sighting.5
-                text: '[Precursor Vault](oracle_collection:starsmith/vaults)'
+                text: '[Precursor Vault](oracle_collection:starsmith/precursor_vault)'
             - roll:
                 min: 54
                 max: 55
               <<: &Sighting.6
-                text: '[Creature](oracle_collection:starsmith/creatures)'
+                text: '[Creature](oracle_collection:starsmith/creature)'
             - roll:
                 min: 56
                 max: 60

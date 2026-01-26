@@ -35874,6 +35874,86 @@
 										"max": 50
 									},
 									"text": "River crashing through a narrow gorge"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.10",
+									"roll": {
+										"min": 51,
+										"max": 55
+									},
+									"text": "Scars of a recent landslide"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.11",
+									"roll": {
+										"min": 56,
+										"max": 60
+									},
+									"text": "Sheer precipice"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.12",
+									"roll": {
+										"min": 61,
+										"max": 65
+									},
+									"text": "Sheltered highland lake"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.13",
+									"roll": {
+										"min": 66,
+										"max": 70
+									},
+									"text": "Steep, rocky slope"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.14",
+									"roll": {
+										"min": 71,
+										"max": 75
+									},
+									"text": "Stone stairs carved into a cliff face"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.15",
+									"roll": {
+										"min": 76,
+										"max": 80
+									},
+									"text": "Thundering waterfall"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.16",
+									"roll": {
+										"min": 81,
+										"max": 85
+									},
+									"text": "Towering rock spires"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.17",
+									"roll": {
+										"min": 86,
+										"max": 90
+									},
+									"text": "Vantage point with an expansive view"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.18",
+									"roll": {
+										"min": 91,
+										"max": 95
+									},
+									"text": "Veins of ore"
+								},
+								{
+									"_id": "oracle_rollable.row:sundered_isles/overland/region_landmarks/highlands.19",
+									"roll": {
+										"min": 96,
+										"max": 100
+									},
+									"text": "Winding footpath"
 								}
 							],
 							"_source": {

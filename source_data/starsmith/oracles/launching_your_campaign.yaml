@@ -10,7 +10,7 @@ ruleset: starforged
   authors:
     - name: Eric Bright
 oracles:
-  campaign_launch:
+  launching_your_campaign:
     name: Campaign Launch Oracles
     oracle_type: tables
     # summary: Extension of the oracle table
@@ -26,7 +26,7 @@ oracles:
       license: https://creativecommons.org/licenses/by/4.0
     contents:
       # no replacement to background_assets
-      backstory_prompts:
+      backstory:
         name: Backstory Prompts
         oracle_type: table_text
         dice: 1d300
@@ -216,7 +216,7 @@ oracles:
             min: 295
             max: 300
         type: oracle_rollable
-      starship_history:
+      history:
         name: Starship History
         oracle_type: table_text
         replaces:
@@ -371,7 +371,8 @@ oracles:
             min: 293
             max: 300
         type: oracle_rollable
-      starship_quirks:
+# add starship collection        
+      quirks:
         name: Starship Quirk
         oracle_type: table_text
         dice: 1d300
@@ -633,7 +634,8 @@ oracles:
             min: 296
             max: 300
         type: oracle_rollable
-      sector_trouble:
+# add starting_sector collection
+      trouble:
         name: Sector Trouble
         oracle_type: table_text
         replaces:
@@ -889,6 +891,7 @@ oracles:
             min: 296
             max: 300
         type: oracle_rollable
+# add adventure collection
       inciting_incident:
         name: Inciting Incident
         oracle_type: table_text

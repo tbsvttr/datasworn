@@ -43,6 +43,9 @@ export declare const OracleIds: {
 		readonly characteristics: 'oracle_rollable:delve/monstrosity/characteristics'
 		readonly abilities: 'oracle_rollable:delve/monstrosity/abilities'
 	}
+	readonly site_starters: {
+		readonly site_starters: 'oracle_rollable:delve/site_starters/site_starters'
+	}
 	readonly site_name: {
 		readonly format: 'oracle_rollable:delve/site_name/format'
 		readonly description: 'oracle_rollable:delve/site_name/description'

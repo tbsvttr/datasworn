@@ -10,7 +10,7 @@ ruleset: starforged
   authors:
     - name: Eric Bright
 oracles:
-  creatures:
+  creature:
     name: Creatures
     oracle_type: tables
     enhances:

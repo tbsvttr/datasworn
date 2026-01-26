@@ -44,6 +44,9 @@ export const OracleIds = {
 		characteristics: 'oracle_rollable:delve/monstrosity/characteristics',
 		abilities: 'oracle_rollable:delve/monstrosity/abilities'
 	},
+	site_starters: {
+		site_starters: 'oracle_rollable:delve/site_starters/site_starters'
+	},
 	site_name: {
 		format: 'oracle_rollable:delve/site_name/format',
 		description: 'oracle_rollable:delve/site_name/description',
