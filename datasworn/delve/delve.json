@@ -4649,6 +4649,256 @@
 				"url": "https://ironswornrpg.com"
 			}
 		},
+		"site_starters": {
+			"_id": "oracle_collection:delve/site_starters",
+			"type": "oracle_collection",
+			"name": "Site Starters",
+			"oracle_type": "tables",
+			"summary": "Use this table to randomly select a site in the Ironlands.",
+			"description": "Use this table to randomly select a site in the Ironlands. You can use the result to start a new campaign, or to find a new site to explore.",
+			"contents": {
+				"site_starters": {
+					"_id": "oracle_rollable:delve/site_starters/site_starters",
+					"type": "oracle_rollable",
+					"name": "Site Starters",
+					"canonical_name": "Site Starters",
+					"oracle_type": "table_text3",
+					"dice": "1d100",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Name",
+						"text2": "Theme",
+						"text3": "Domain"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.0",
+							"roll": {
+								"min": 1,
+								"max": 5
+							},
+							"text": "Alva's Rest",
+							"text2": "Fortified",
+							"text3": "Domain"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.1",
+							"roll": {
+								"min": 6,
+								"max": 10
+							},
+							"text": "Bleakroot Depths",
+							"text2": "Wild",
+							"text3": "Frozen Cavern"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.2",
+							"roll": {
+								"min": 11,
+								"max": 15
+							},
+							"text": "Bonewilds",
+							"text2": "Haunted",
+							"text3": "Tanglewood"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.3",
+							"roll": {
+								"min": 16,
+								"max": 20
+							},
+							"text": "Darkfall Caves",
+							"text2": "Infested",
+							"text3": "Cavern"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.4",
+							"roll": {
+								"min": 21,
+								"max": 25
+							},
+							"text": "Deeprot Bog",
+							"text2": "Hallowed",
+							"text3": "Shadowfen"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.5",
+							"roll": {
+								"min": 26,
+								"max": 30
+							},
+							"text": "Egan's Folly",
+							"text2": "Haunted",
+							"text3": "Pass"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.6",
+							"roll": {
+								"min": 31,
+								"max": 35
+							},
+							"text": "Foulwater Plunge",
+							"text2": "Corrupted",
+							"text3": "Sea Cave"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.7",
+							"roll": {
+								"min": 36,
+								"max": 40
+							},
+							"text": "Frostmark",
+							"text2": "Fortified",
+							"text3": "Icereach"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.8",
+							"roll": {
+								"min": 41,
+								"max": 45
+							},
+							"text": "Greathammer Deep",
+							"text2": "Ravaged",
+							"text3": "Mine"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.9",
+							"roll": {
+								"min": 46,
+								"max": 50
+							},
+							"text": "Holdfast Barrow",
+							"text2": "Haunted",
+							"text3": "Barrow"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.10",
+							"roll": {
+								"min": 51,
+								"max": 55
+							},
+							"text": "Hollowmount Island",
+							"text2": "Ancient",
+							"text3": "Underkeep"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.11",
+							"roll": {
+								"min": 56,
+								"max": 60
+							},
+							"text": "Icebound Reach",
+							"text2": "Wild",
+							"text3": "Icereach"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.12",
+							"roll": {
+								"min": 61,
+								"max": 65
+							},
+							"text": "Lastrock Mine",
+							"text2": "Infested",
+							"text3": "Mine"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.13",
+							"roll": {
+								"min": 66,
+								"max": 70
+							},
+							"text": "Redhome Sanctum",
+							"text2": "Corrupted",
+							"text3": "Underkeep"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.14",
+							"roll": {
+								"min": 71,
+								"max": 74
+							},
+							"text": "Sinking Temple",
+							"text2": "Ravaged",
+							"text3": "Ruin"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.15",
+							"roll": {
+								"min": 75,
+								"max": 80
+							},
+							"text": "Smoldering Wood",
+							"text2": "Ravaged",
+							"text3": "Tanglewood"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.16",
+							"roll": {
+								"min": 81,
+								"max": 84
+							},
+							"text": "Stillgrave Mire",
+							"text2": "Haunted",
+							"text3": "Shadowfen"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.17",
+							"roll": {
+								"min": 85,
+								"max": 90
+							},
+							"text": "Stonesong Spire",
+							"text2": "Hallowed",
+							"text3": "Stronghold"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.18",
+							"roll": {
+								"min": 91,
+								"max": 94
+							},
+							"text": "Topplekeep",
+							"text2": "Infested",
+							"text3": "Ruin"
+						},
+						{
+							"_id": "oracle_rollable.row:delve/site_starters/site_starters.19",
+							"roll": {
+								"min": 95,
+								"max": 100
+							},
+							"text": "Trail of Spirits",
+							"text2": "Ancient",
+							"text3": "Pass"
+						}
+					],
+					"_source": {
+						"title": "Ironsworn: Delve",
+						"authors": [
+							{
+								"name": "Shawn Tomkin"
+							}
+						],
+						"date": "2020-02-13",
+						"license": "https://creativecommons.org/licenses/by/4.0",
+						"url": "https://ironswornrpg.com"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Ironsworn: Delve",
+				"authors": [
+					{
+						"name": "Shawn Tomkin"
+					}
+				],
+				"date": "2020-02-13",
+				"license": "https://creativecommons.org/licenses/by/4.0",
+				"page": 94,
+				"url": "https://ironswornrpg.com"
+			}
+		},
 		"site_name": {
 			"_id": "oracle_collection:delve/site_name",
 			"type": "oracle_collection",
@@ -14502,6 +14752,66 @@
 				"date": "2020-02-13",
 				"license": "https://creativecommons.org/licenses/by-nc-sa/4.0",
 				"page": 199,
+				"url": "https://ironswornrpg.com"
+			}
+		},
+		"lidless_eye": {
+			"_id": "rarity:delve/lidless_eye",
+			"type": "rarity",
+			"name": "Lidless Eye",
+			"xp_cost": 4,
+			"asset": "asset:classic/ritual/totem",
+			"description": "When you look deeply into this glass orb, you see an unblinking eye which mimics that of your animal or beast companion. As you carry the orb with you, your connection to them is strengthened.\n\nYou may not be able to see the orb, but you may see the reflection of it in the eyes of others. You may also see the reflection of it in the eyes of your animal or beast companion.",
+			"_source": {
+				"title": "Ironsworn: Delve",
+				"authors": [
+					{
+						"name": "Shawn Tomkin"
+					}
+				],
+				"date": "2020-02-13",
+				"license": "https://creativecommons.org/licenses/by-nc-sa/4.0",
+				"page": 200,
+				"url": "https://ironswornrpg.com"
+			}
+		},
+		"phial_of_the_untamed": {
+			"_id": "rarity:delve/phial_of_the_untamed",
+			"type": "rarity",
+			"name": "Phial of the Untamed",
+			"xp_cost": 4,
+			"asset": "asset:classic/ritual/visage",
+			"description": "This unbreakable glass jar is filled with the blood of beasts and monsters. A single drop added to a paste of mundane blood and ash infuses the mixture with the essence of those baneful creatures. Those who look upon you when you wear your visage may glimpse instead the dread specters of fang, claw, tentacle, and wing.",
+			"_source": {
+				"title": "Ironsworn: Delve",
+				"authors": [
+					{
+						"name": "Shawn Tomkin"
+					}
+				],
+				"date": "2020-02-13",
+				"license": "https://creativecommons.org/licenses/by-nc-sa/4.0",
+				"page": 200,
+				"url": "https://ironswornrpg.com"
+			}
+		},
+		"defenders_spike": {
+			"_id": "rarity:delve/defenders_spike",
+			"type": "rarity",
+			"name": "Defender’s Spike",
+			"xp_cost": 3,
+			"asset": "asset:classic/ritual/ward",
+			"description": "This spike of chiseled stone is fashioned from the remains of a wall which once protected an Old World fortress—one which withstood assaults over millennia. When you drive the spike into the ground at the center of your ward, you may be heartened by ghostly echoes of a forgotten past. It is the rallying cry of those brave warriors who held the walls against relentless attacks.",
+			"_source": {
+				"title": "Ironsworn: Delve",
+				"authors": [
+					{
+						"name": "Shawn Tomkin"
+					}
+				],
+				"date": "2020-02-13",
+				"license": "https://creativecommons.org/licenses/by-nc-sa/4.0",
+				"page": 200,
 				"url": "https://ironswornrpg.com"
 			}
 		}

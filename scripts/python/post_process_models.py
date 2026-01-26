@@ -12,6 +12,7 @@ This script fixes these issues automatically after generation.
 import re
 import sys
 from pathlib import Path
+from typing import Any
 
 
 # Classes that should be removed (empty placeholders from allOf)
@@ -206,8 +207,8 @@ def convert_rootmodel_to_typealias(content: str) -> str:
         # Use .* for RootModel generic param to handle nested brackets like list[Schema1 | bool]
         multiline_pattern = rf"class {type_name}\(RootModel\[.*\]\):\n    root: (Annotated\[\n(?:.*\n)*?    \])\n"
 
-        def make_replacement(name):
-            def replacement(match):
+        def make_replacement(name : str) -> Any:
+            def replacement(match : Any) -> str:
                 annotated_type = match.group(1)
                 return f"{name} = {annotated_type}\n"
             return replacement
@@ -329,6 +330,24 @@ def add_discriminated_unions(content: str) -> str:
     content = re.sub(
         r"contents: dict\[str, OracleRollableTable\]",
         "contents: dict[str, Annotated[OracleTableText | OracleTableText2 | OracleTableText3, Discriminator('oracle_type')]]",
+        content,
+    )
+    
+    # replace EmbeddedOracleRollable base class with discriminated union
+    content = re.sub(
+        r"class EmbeddedOracleRollable\(BaseModel\):\n    model_config = ConfigDict\(\n        extra='allow',\n    \)\n    oracle_type: OracleType",
+        """\
+EmbeddedOracleRollable = Annotated[
+        "EmbeddedOracleColumnText | EmbeddedOracleColumnText2 | EmbeddedOracleColumnText3 | EmbeddedOracleTableText | EmbeddedOracleTableText2 | EmbeddedOracleTableText3",
+        Discriminator('oracle_type'),
+    ]""", 
+    content,
+    )
+
+    # replace EmbeddedMove with discriminated union
+    content = re.sub(
+        r"class EmbeddedMove\(BaseModel\):\n    model_config = ConfigDict\(\n        extra='allow',\n    \)\n    roll_type: RollType",
+        """EmbeddedMove = Annotated["EmbeddedActionRollMove | EmbeddedNoRollMove | EmbeddedProgressRollMove | EmbeddedSpecialTrackMove", Discriminator('roll_type')]""",
         content,
     )
 

@@ -746,3 +746,38 @@ rarities:
       But his ship did not return. Weeks passed. Then months. All hope seemed lost. One night, as the mourning husband held the string tight in a closed fist, there came a knock at the door. It was the sailor, with no memory of what brought him there.
 
       Centuries later, these twin strings—passed into legend and now returned—are held in a simple wooden box. When you carry it, you are reminded of the importance of a place and the people there, and it helps set you on the path home.
+  lidless_eye:
+    type: rarity
+    name: Lidless Eye
+    asset: asset:classic/ritual/totem
+    _source:
+      <<: *Source
+      page: 200
+    xp_cost: 4
+    description: |-
+      When you look deeply into this glass orb, you see an unblinking eye which mimics that of your animal or beast companion. As you carry the orb with you, your connection to them is strengthened.
+
+      You may not be able to see the orb, but you may see the reflection of it in the eyes of others. You may also see the reflection of it in the eyes of your animal or beast companion.
+  phial_of_the_untamed:
+    type: rarity
+    name: Phial of the Untamed
+    asset: asset:classic/ritual/visage
+    _source:
+      <<: *Source
+      page: 200
+    xp_cost: 4
+    description: |-
+      This unbreakable glass jar is filled with the blood of beasts and monsters. A single drop added to a paste of mundane blood and ash infuses the mixture with the essence of those baneful creatures. Those who look upon you when you wear your visage may glimpse instead the dread specters of fang, claw, tentacle, and wing.
+  defenders_spike:
+    type: rarity
+    name: Defender’s Spike
+    asset: asset:classic/ritual/ward
+    _source:
+      <<: *Source
+      page: 200
+    xp_cost: 3
+    description: |-
+      This spike of chiseled stone is fashioned from the remains of a wall which once protected an Old World fortress—one which withstood assaults over millennia. When you drive the spike into the ground at the center of your ward, you may be heartened by ghostly echoes of a forgotten past. It is the rallying cry of those brave warriors who held the walls against relentless attacks.
+
+
+

@@ -1,3 +1,4 @@
+#!/usr/bin/env -S uv run --script
 # /// script
 # name = "python-datasworn"
 # version = "0.1.0"

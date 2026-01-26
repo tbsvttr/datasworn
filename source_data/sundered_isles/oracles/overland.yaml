@@ -185,6 +185,26 @@ oracles:
                 text: Ornate stone carvings
               - roll: { min: 46, max: 50 }
                 text: River crashing through a narrow gorge
+              - roll: { min: 51, max: 55 }
+                text: Scars of a recent landslide
+              - roll: { min: 56, max: 60 }
+                text: Sheer precipice
+              - roll: { min: 61, max: 65 }
+                text: Sheltered highland lake
+              - roll: { min: 66, max: 70 }
+                text: Steep, rocky slope
+              - roll: { min: 71, max: 75 }
+                text: Stone stairs carved into a cliff face
+              - roll: { min: 76, max: 80 }
+                text: Thundering waterfall
+              - roll: { min: 81, max: 85 }
+                text: Towering rock spires
+              - roll: { min: 86, max: 90 }
+                text: Vantage point with an expansive view
+              - roll: { min: 91, max: 95 }
+                text: Veins of ore
+              - roll: { min: 96, max: 100}
+                text:  Winding footpath                
           jungle:
             name: Jungle
             type: oracle_rollable

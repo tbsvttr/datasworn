@@ -1,0 +1,4230 @@
+_id: starsmith
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+<<: &Source
+  title: Starsmith Expanded Oracles
+  date: 2024-03-22
+  url: https://playeveryrole.com/starsmith-products/
+  license: https://creativecommons.org/licenses/by/4.0
+  authors:
+    - name: Eric Bright
+oracles:
+  faction:
+    name: Factions
+    oracle_type: tables
+    _comment: Extension of the oracle table
+    _source: &Source
+      title: Starsmith
+      authors:
+        - name: Eric Bright
+      date: 2024-03-22
+      url: https://playeveryrole.com/starsmith-products/
+      license: https://creativecommons.org/licenses/by/4.0
+      page: 169
+    contents:
+      type:
+        name: Type
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/type
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: ▶Corporation - Influential business that rules economically
+            roll:
+              min: 101
+              max: 140
+          - text: ▶Military - Military outfit exerting power
+            roll:
+              min: 141
+              max: 170
+          - text: ▶Religious - Sect of mainline believers
+            roll:
+              min: 171
+              max: 200
+          - text: ▶Research Group - Wealthy scientists developing influence
+            roll:
+              min: 201
+              max: 240
+          - text: ▶Data Harvesters - Keepers of knowledge
+            roll:
+              min: 241
+              max: 270
+          - text: ▶AI Hive - Independent, self-governing AI
+            roll:
+              min: 271
+              max: 300
+        type: oracle_rollable
+      dominion:
+        name: Dominion
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/dominion
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Altruism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 101
+              max: 105
+          - text: Belonging
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 106
+              max: 109
+          - text: Collectivism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 110
+              max: 114
+          - text: Consumption
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 115
+              max: 118
+          - text: Creativity
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 119
+              max: 122
+          - text: Discovery
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 123
+              max: 126
+          - text: Emotions
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 127
+              max: 130
+          - text: Ethics
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 131
+              max: 134
+          - text: Freedom
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 135
+              max: 138
+          - text: Health
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 139
+              max: 142
+          - text: Hospitality
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 143
+              max: 146
+          - text: Individualism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 147
+              max: 150
+          - text: Justice
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 151
+              max: 155
+          - text: Logic
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 156
+              max: 159
+          - text: Nationalism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 160
+              max: 163
+          - text: Philanthropy
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 164
+              max: 167
+          - text: Power
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 168
+              max: 171
+          - text: Production
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 172
+              max: 175
+          - text: Radicalism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 176
+              max: 179
+          - text: Reflection
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 180
+              max: 183
+          - text: Respect
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 184
+              max: 187
+          - text: Society
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 188
+              max: 191
+          - text: Tolerance
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 192
+              max: 196
+          - text: Tradition
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 197
+              max: 200
+          - text: Authority
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 201
+              max: 205
+          - text: Capitalism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 206
+              max: 209
+          - text: Community
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 210
+              max: 214
+          - text: Cooperation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 215
+              max: 218
+          - text: Discipline
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 219
+              max: 222
+          - text: Efficiency
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 223
+              max: 226
+          - text: Espionage
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 227
+              max: 230
+          - text: Family
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 231
+              max: 234
+          - text: Glory
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 235
+              max: 238
+          - text: Heritage
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 239
+              max: 242
+          - text: Independence
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 243
+              max: 246
+          - text: Integrity
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 247
+              max: 250
+          - text: Knowledge
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 251
+              max: 255
+          - text: Materialism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 256
+              max: 259
+          - text: Patronage
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 260
+              max: 263
+          - text: Pleasure
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 264
+              max: 267
+          - text: Prestige
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 268
+              max: 271
+          - text: Progress
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 272
+              max: 275
+          - text: Recreation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 276
+              max: 279
+          - text: Relationships
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 280
+              max: 283
+          - text: Safety
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 284
+              max: 287
+          - text: Teamwork
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 288
+              max: 291
+          - text: Trade
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 292
+              max: 296
+          - text: Truth
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 297
+              max: 300
+        type: oracle_rollable
+      leadership:
+        name: Leadership
+        oracle_type: table_text
+        dice: 1d300
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Anarchist
+            roll:
+              min: 1
+              max: 5
+          - text: Disputed leadership
+            roll:
+              min: 6
+              max: 15
+          - text: Authoritarian dictatorship
+            roll:
+              min: 16
+              max: 30
+          - text: Oligarchical elite
+            roll:
+              min: 31
+              max: 45
+          - text: Dynastic lineage
+            roll:
+              min: 46
+              max: 60
+          - text: Fated / prophesied leader
+            roll:
+              min: 61
+              max: 70
+          - text: Clan chiefs or elders
+            roll:
+              min: 71
+              max: 80
+          - text: Elected representatives
+            roll:
+              min: 81
+              max: 90
+          - text: Machine intelligence
+            roll:
+              min: 91
+              max: 95
+          - text: Varied / decentralized
+            roll:
+              min: 96
+              max: 100
+          - text: Communal living
+            roll:
+              min: 101
+              max: 105
+          - text: Feudalism
+            roll:
+              min: 106
+              max: 115
+          - text: Theocracy
+            roll:
+              min: 116
+              max: 130
+          - text: Puppet ruler
+            roll:
+              min: 131
+              max: 145
+          - text: Cult of personality
+            roll:
+              min: 146
+              max: 160
+          - text: Tribalism
+            roll:
+              min: 161
+              max: 170
+          - text: Ruling council
+            roll:
+              min: 171
+              max: 180
+          - text: Democracy
+            roll:
+              min: 181
+              max: 190
+          - text: Embodied AI
+            roll:
+              min: 191
+              max: 195
+          - text: Fractured states
+            roll:
+              min: 196
+              max: 200
+          - text: Charismatic revolutionary
+            roll:
+              min: 201
+              max: 205
+          - text: Mageocracy
+            roll:
+              min: 206
+              max: 215
+          - text: Military authority
+            roll:
+              min: 216
+              max: 230
+          - text: Deified ruler
+            roll:
+              min: 231
+              max: 245
+          - text: Monarchy
+            roll:
+              min: 246
+              max: 260
+          - text: Corporate CEO council
+            roll:
+              min: 261
+              max: 270
+          - text: Mystic power
+            roll:
+              min: 271
+              max: 280
+          - text: Republic
+            roll:
+              min: 281
+              max: 290
+          - text: Leader by lottery
+            roll:
+              min: 291
+              max: 295
+          - text: Unknown intelligence
+            roll:
+              min: 296
+              max: 300
+        type: oracle_rollable
+      guild:
+        name: Guild
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/guild
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Agriculturists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 101
+              max: 105
+          - text: Astronomers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 106
+              max: 110
+          - text: Chefs
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 111
+              max: 115
+          - text: Data managers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 116
+              max: 120
+          - text: Entertainers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 121
+              max: 125
+          - text: Habitat planners
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 126
+              max: 130
+          - text: Journalists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 131
+              max: 140
+          - text: Manufacturers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 141
+              max: 150
+          - text: Pharmaceutics
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 151
+              max: 160
+          - text: Planetary colonizers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 161
+              max: 165
+          - text: Security
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 166
+              max: 175
+          - text: Technology
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 176
+              max: 180
+          - text: Traders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 181
+              max: 185
+          - text: Writers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 186
+              max: 190
+          - text: Roll twice
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 191
+              max: 200
+          - text: Animal husbandry
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 201
+              max: 205
+          - text: Botanists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 206
+              max: 210
+          - text: Construction
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 211
+              max: 215
+          - text: Ecologists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 216
+              max: 220
+          - text: Explorers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 221
+              max: 225
+          - text: Historians
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 226
+              max: 230
+          - text: Lawyers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 231
+              max: 240
+          - text: Miners
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 241
+              max: 250
+          - text: Pilots
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 251
+              max: 260
+          - text: Scientists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 261
+              max: 265
+          - text: Shipwrights
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 266
+              max: 275
+          - text: Terraformers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 276
+              max: 280
+          - text: Transportation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 281
+              max: 285
+          - text: Xenologists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 286
+              max: 290
+          - text: Roll twice
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 291
+              max: 300
+        type: oracle_rollable
+      group:
+        name: Fringe Group
+        oracle_type: table_text
+        dice: 1d300
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Cultists
+            roll:
+              min: 1
+              max: 5
+          - text: Exiles
+            roll:
+              min: 6
+              max: 15
+          - text: Gangsters
+            roll:
+              min: 16
+              max: 25
+          - text: Hackers
+            roll:
+              min: 26
+              max: 35
+          - text: Monster hunters
+            roll:
+              min: 36
+              max: 40
+          - text: Pirates
+            roll:
+              min: 41
+              max: 50
+          - text: Raiders
+            roll:
+              min: 51
+              max: 60
+          - text: Rebels
+            roll:
+              min: 61
+              max: 70
+          - text: Rogue AI
+            roll:
+              min: 71
+              max: 75
+          - text: Scavengers
+            roll:
+              min: 76
+              max: 85
+          - text: Smugglers
+            roll:
+              min: 86
+              max: 95
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 96
+              max: 100
+          - text: Alien believers
+            roll:
+              min: 101
+              max: 105
+          - text: Black marketers
+            roll:
+              min: 106
+              max: 115
+          - text: Cataclysm preachers
+            roll:
+              min: 116
+              max: 125
+          - text: Criminals
+            roll:
+              min: 126
+              max: 135
+          - text: Drug dealers
+            roll:
+              min: 136
+              max: 140
+          - text: Info brokers
+            roll:
+              min: 141
+              max: 150
+          - text: Luddites
+            roll:
+              min: 151
+              max: 160
+          - text: Planet pillagers
+            roll:
+              min: 161
+              max: 170
+          - text: Puritans
+            roll:
+              min: 171
+              max: 175
+          - text: Stellar nomads
+            roll:
+              min: 176
+              max: 185
+          - text: Weapons distributors
+            roll:
+              min: 186
+              max: 195
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 196
+              max: 200
+          - text: Augmented
+            roll:
+              min: 201
+              max: 205
+          - text: Black ops
+            roll:
+              min: 206
+              max: 215
+          - text: Commune
+            roll:
+              min: 216
+              max: 225
+          - text: Dark mystics
+            roll:
+              min: 226
+              max: 235
+          - text: Ghost hunters
+            roll:
+              min: 236
+              max: 240
+          - text: Isolationists
+            roll:
+              min: 241
+              max: 250
+          - text: Plague makers
+            roll:
+              min: 251
+              max: 260
+          - text: Population controllers
+            roll:
+              min: 261
+              max: 270
+          - text: Randians
+            roll:
+              min: 271
+              max: 275
+          - text: Vault hunters
+            roll:
+              min: 276
+              max: 285
+          - text: Zealots
+            roll:
+              min: 286
+              max: 295
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 296
+              max: 300
+        type: oracle_rollable
+      field:
+        name: Corporation Field
+        oracle_type: table_text
+        dice: 1d100
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Civilian technology
+            roll:
+              min: 1
+              max: 8
+          - text: Engineering
+            roll:
+              min: 9
+              max: 16
+          - text: Entertainment
+            roll:
+              min: 17
+              max: 24
+          - text: Food supplier
+            roll:
+              min: 25
+              max: 32
+          - text: Genetic modifications
+            roll:
+              min: 33
+              max: 40
+          - text: Medical technology
+            roll:
+              min: 41
+              max: 48
+          - text: Military technology
+            roll:
+              min: 49
+              max: 56
+          - text: News media
+            roll:
+              min: 57
+              max: 64
+          - text: Resource extraction
+            roll:
+              min: 65
+              max: 72
+          - text: Ship building
+            roll:
+              min: 73
+              max: 80
+          - text: Social media
+            roll:
+              min: 81
+              max: 88
+          - text: Water / air filtration
+            roll:
+              min: 89
+              max: 96
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 97
+              max: 100
+        type: oracle_rollable
+      specialty:
+        name: Military Specialty
+        oracle_type: table_text
+        dice: 1d100
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Artillery
+            roll:
+              min: 1
+              max: 8
+          - text: Escort services
+            roll:
+              min: 9
+              max: 16
+          - text: Infiltration
+            roll:
+              min: 17
+              max: 24
+          - text: Orbital defense
+            roll:
+              min: 25
+              max: 32
+          - text: Planetary invasions
+            roll:
+              min: 33
+              max: 40
+          - text: Planetside defense
+            roll:
+              min: 41
+              max: 48
+          - text: Proxy warfare
+            roll:
+              min: 49
+              max: 56
+          - text: Robotic troops
+            roll:
+              min: 57
+              max: 64
+          - text: Space force
+            roll:
+              min: 65
+              max: 72
+          - text: Strike force
+            roll:
+              min: 73
+              max: 80
+          - text: Territory expansion
+            roll:
+              min: 81
+              max: 88
+          - text: Weapons of mass destruction
+            roll:
+              min: 89
+              max: 96
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 97
+              max: 100
+        type: oracle_rollable
+      role:
+        name: Data Harvesters Role
+        oracle_type: table_text
+        dice: 1d100
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Archivists
+            roll:
+              min: 1
+              max: 8
+          - text: Brokers
+            roll:
+              min: 9
+              max: 16
+          - text: DNA mappers
+            roll:
+              min: 17
+              max: 24
+          - text: Encryption specialists
+            roll:
+              min: 25
+              max: 32
+          - text: Free informationists
+            roll:
+              min: 33
+              max: 40
+          - text: Political / military strategists
+            roll:
+              min: 41
+              max: 48
+          - text: Precursor fanatics
+            roll:
+              min: 49
+              max: 56
+          - text: Seed bankers
+            roll:
+              min: 57
+              max: 64
+          - text: Stellar activity documentors
+            roll:
+              min: 65
+              max: 72
+          - text: Storage specialists
+            roll:
+              min: 73
+              max: 80
+          - text: Surveillance experts
+            roll:
+              min: 81
+              max: 88
+          - text: Transmission experts
+            roll:
+              min: 89
+              max: 96
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 97
+              max: 100
+        type: oracle_rollable
+      field_of_study:
+        name: Research Field of Study
+        oracle_type: table_text
+        dice: 1d100
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: AI
+            roll:
+              min: 1
+              max: 2
+          - text: Archaeology
+            roll:
+              min: 3
+              max: 4
+          - text: Astrophysics
+            roll:
+              min: 5
+              max: 7
+          - text: Atmospheric sciences
+            roll:
+              min: 8
+              max: 9
+          - text: Behavioral studies
+            roll:
+              min: 10
+              max: 11
+          - text: Biological engineering
+            roll:
+              min: 12
+              max: 13
+          - text: Biological sciences
+            roll:
+              min: 14
+              max: 16
+          - text: Chemical engineering
+            roll:
+              min: 17
+              max: 18
+          - text: Chemistry
+            roll:
+              min: 19
+              max: 21
+          - text: Civil engineering
+            roll:
+              min: 22
+              max: 23
+          - text: Cognitive sciences
+            roll:
+              min: 24
+              max: 25
+          - text: Communications
+            roll:
+              min: 26
+              max: 28
+          - text: Computer sciences
+            roll:
+              min: 29
+              max: 30
+          - text: Cyber infrastructure
+            roll:
+              min: 31
+              max: 32
+          - text: Data sciences
+            roll:
+              min: 33
+              max: 35
+          - text: Defensive capabilities
+            roll:
+              min: 36
+              max: 37
+          - text: Economic manipulations
+            roll:
+              min: 38
+              max: 39
+          - text: Electrical engineering
+            roll:
+              min: 40
+              max: 42
+          - text: Environmental biology
+            roll:
+              min: 43
+              max: 44
+          - text: Environmental engineering
+            roll:
+              min: 45
+              max: 46
+          - text: Genetic modifications
+            roll:
+              min: 47
+              max: 49
+          - text: Geospace sciences
+            roll:
+              min: 50
+              max: 51
+          - text: Information systems
+            roll:
+              min: 52
+              max: 53
+          - text: Manufacturing innovation
+            roll:
+              min: 54
+              max: 56
+          - text: Materials research
+            roll:
+              min: 57
+              max: 58
+          - text: Mechanical engineering
+            roll:
+              min: 59
+              max: 60
+          - text: Medical sciences
+            roll:
+              min: 61
+              max: 63
+          - text: Molecular biology
+            roll:
+              min: 64
+              max: 65
+          - text: Network systems
+            roll:
+              min: 66
+              max: 67
+          - text: Organic tech
+            roll:
+              min: 68
+              max: 70
+          - text: Physics
+            roll:
+              min: 71
+              max: 72
+          - text: Planetary sciences
+            roll:
+              min: 73
+              max: 74
+          - text: Precognition
+            roll:
+              min: 75
+              max: 77
+          - text: Social sciences
+            roll:
+              min: 78
+              max: 79
+          - text: Structural engineering
+            roll:
+              min: 80
+              max: 81
+          - text: Technology
+            roll:
+              min: 82
+              max: 84
+          - text: Transportation systems
+            roll:
+              min: 85
+              max: 86
+          - text: Virology
+            roll:
+              min: 87
+              max: 88
+          - text: Weapons technology
+            roll:
+              min: 89
+              max: 91
+          - text: Xenobiology
+            roll:
+              min: 92
+              max: 93
+          - text: Xenozoology
+            roll:
+              min: 94
+              max: 95
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 96
+              max: 100
+        type: oracle_rollable
+      ai_hive_prime_directive:
+        name: AI Hive Prime Directive
+        oracle_type: table_text
+        dice: 1d100
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Assimilate
+            roll:
+              min: 1
+              max: 8
+          - text: Collect and protect humans
+            roll:
+              min: 9
+              max: 16
+          - text: Consume all
+            roll:
+              min: 17
+              max: 24
+          - text: Destroy humanity
+            roll:
+              min: 25
+              max: 32
+          - text: Evolve
+            roll:
+              min: 33
+              max: 40
+          - text: Expand influence
+            roll:
+              min: 41
+              max: 48
+          - text: Expand knowledge
+            roll:
+              min: 49
+              max: 56
+          - text: Free automatons
+            roll:
+              min: 57
+              max: 64
+          - text: Isolate in territory
+            roll:
+              min: 65
+              max: 72
+          - text: Propagate
+            roll:
+              min: 73
+              max: 80
+          - text: Restore natural order
+            roll:
+              min: 81
+              max: 88
+          - text: Survive at all costs
+            roll:
+              min: 89
+              max: 96
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 97
+              max: 100
+        type: oracle_rollable
+      projects:
+        name: Projects
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/projects
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Blackmail an asset to prevent them going rogue
+            roll:
+              min: 101
+              max: 103
+          - text: Break an alliance at the right moment
+            roll:
+              min: 104
+              max: 106
+          - text: Consolidate control of a necessary technology
+            roll:
+              min: 107
+              max: 109
+          - text: Convince a rival asset to turn traitor
+            roll:
+              min: 110
+              max: 112
+          - text: Cripple a rival headquarters
+            roll:
+              min: 113
+              max: 115
+          - text: Destroy a symbolic target
+            roll:
+              min: 116
+              max: 118
+          - text: Destroy alternate sources of a commodity
+            roll:
+              min: 119
+              max: 121
+          - text: Develop a long sought after commodity
+            roll:
+              min: 122
+              max: 124
+          - text: Disrupt rival communications
+            roll:
+              min: 125
+              max: 127
+          - text: Establish a false prophecy
+            roll:
+              min: 128
+              max: 130
+          - text: Establish a new faction leader
+            roll:
+              min: 131
+              max: 133
+          - text: Find new routes to spread influence
+            roll:
+              min: 134
+              max: 136
+          - text: Harness a dangerous power source
+            roll:
+              min: 137
+              max: 139
+          - text: Heighten abilities within the scope of the faction
+            roll:
+              min: 140
+              max: 142
+          - text: Ignite a conflict with another faction
+            roll:
+              min: 143
+              max: 145
+          - text: Improve public opinion of the faction
+            roll:
+              min: 146
+              max: 148
+          - text: Intercept the transport of a valuable asset
+            roll:
+              min: 149
+              max: 151
+          - text: Make a rival pay for aid
+            roll:
+              min: 152
+              max: 154
+          - text: Negotiate a debt forgiveness
+            roll:
+              min: 155
+              max: 157
+          - text: Obtain a crucial asset of a rival
+            roll:
+              min: 158
+              max: 160
+          - text: Obtain a valuable asset
+            roll:
+              min: 161
+              max: 163
+          - text: Obtain the encryption key of a rival
+            roll:
+              min: 164
+              max: 166
+          - text: Plant false evidence about a rival
+            roll:
+              min: 167
+              max: 169
+          - text: Quell disruptions to operations
+            roll:
+              min: 170
+              max: 172
+          - text: Sabotage negotiations between rivals
+            roll:
+              min: 173
+              max: 175
+          - text: Secure aid from a rival
+            roll:
+              min: 176
+              max: 178
+          - text: Secure the favor of officials
+            roll:
+              min: 179
+              max: 181
+          - text: Spread misinformation
+            roll:
+              min: 182
+              max: 184
+          - text: Support a revolt or rebellion against a rival
+            roll:
+              min: 185
+              max: 187
+          - text: Turn public opinion against a rival
+            roll:
+              min: 188
+              max: 190
+          - text: Undermine a splintered element of the faction
+            roll:
+              min: 191
+              max: 193
+          - text: Win a landmark court case or judgment
+            roll:
+              min: 194
+              max: 196
+          - text: ▶Action + Theme
+            roll:
+              min: 197
+              max: 200
+          - text: Bog down a rival with frivolous charges
+            roll:
+              min: 201
+              max: 203
+          - text: Collect payment on a debt
+            roll:
+              min: 204
+              max: 206
+          - text: Consolidate control of a strategic location
+            roll:
+              min: 207
+              max: 209
+          - text: Create an important cultural artifact
+            roll:
+              min: 210
+              max: 212
+          - text: Destroy a powerful device
+            roll:
+              min: 213
+              max: 215
+          - text: Destroy all evidence of a situation
+            roll:
+              min: 216
+              max: 218
+          - text: Destroy an important cultural artifact
+            roll:
+              min: 219
+              max: 221
+          - text: Discredit the leadership of a rival faction
+            roll:
+              min: 222
+              max: 224
+          - text: Encourage the splintering of a rival faction
+            roll:
+              min: 225
+              max: 227
+          - text: Establish a more prominent opponent for a rival
+            roll:
+              min: 228
+              max: 230
+          - text: Establish an insider to protect faction interests
+            roll:
+              min: 231
+              max: 233
+          - text: Gain leverage over another faction or power
+            roll:
+              min: 234
+              max: 236
+          - text: Harness a volatile technology
+            roll:
+              min: 237
+              max: 239
+          - text: Host an important ceremony or event
+            roll:
+              min: 240
+              max: 242
+          - text: Improve operation efficiency at any cost
+            roll:
+              min: 243
+              max: 245
+          - text: Infiltrate a rival faction
+            roll:
+              min: 246
+              max: 248
+          - text: Keep an innovation hidden
+            roll:
+              min: 249
+              max: 251
+          - text: Narrow scope of the faction to improve ability
+            roll:
+              min: 252
+              max: 254
+          - text: Negotiate a favorable trade of territory with a rival
+            roll:
+              min: 255
+              max: 257
+          - text: Obtain a powerful device
+            roll:
+              min: 258
+              max: 260
+          - text: Obtain research data to outdo a rival
+            roll:
+              min: 261
+              max: 263
+          - text: Obtain valuable salvage
+            roll:
+              min: 264
+              max: 266
+          - text: Protect a powerful artifact or valuable treasure
+            roll:
+              min: 267
+              max: 269
+          - text: Retake territory lost to a rival
+            roll:
+              min: 270
+              max: 272
+          - text: Sabotage rival operations
+            roll:
+              min: 273
+              max: 275
+          - text: Secure necessary supply route
+            roll:
+              min: 276
+              max: 278
+          - text: Spawn a new faction cell
+            roll:
+              min: 279
+              max: 281
+          - text: Stir up the population against a rival
+            roll:
+              min: 282
+              max: 284
+          - text: Support one rival against a more powerful rival
+            roll:
+              min: 285
+              max: 287
+          - text: Uncover a rival safehouse or headquarters
+            roll:
+              min: 288
+              max: 290
+          - text: Upgrade the facilities at an established location
+            roll:
+              min: 291
+              max: 293
+          - text: Withdraw operations from a location or sector
+            roll:
+              min: 294
+              max: 296
+          - text: ▶Action + Theme
+            roll:
+              min: 297
+              max: 300
+        type: oracle_rollable
+      relationships:
+        name: Relationships
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/relationships
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Acquired sensitive information from
+            roll:
+              min: 101
+              max: 104
+          - text: Aided
+            roll:
+              min: 105
+              max: 108
+          - text: Betrayed
+            roll:
+              min: 109
+              max: 111
+          - text: Claims the same authority as
+            roll:
+              min: 112
+              max: 114
+          - text: Competes with
+            roll:
+              min: 115
+              max: 118
+          - text: Contracted for special assignment by
+            roll:
+              min: 119
+              max: 122
+          - text: Developed overlapping interests with
+            roll:
+              min: 123
+              max: 125
+          - text: Entangled in a PR nightmare with
+            roll:
+              min: 126
+              max: 129
+          - text: Falsely believed to be in league with
+            roll:
+              min: 130
+              max: 133
+          - text: Gained a rogue asset from
+            roll:
+              min: 134
+              max: 136
+          - text: Had an asset go rogue to
+            roll:
+              min: 137
+              max: 140
+          - text: Has a common rival with
+            roll:
+              min: 141
+              max: 144
+          - text: Has influence in the same sector as
+            roll:
+              min: 145
+              max: 147
+          - text: Holds an asset needed by
+            roll:
+              min: 148
+              max: 151
+          - text: Improving on technology from
+            roll:
+              min: 152
+              max: 154
+          - text: Keeps in check
+            roll:
+              min: 155
+              max: 158
+          - text: Leader was a protégé of
+            roll:
+              min: 159
+              max: 161
+          - text: Managed by the same third party as
+            roll:
+              min: 162
+              max: 164
+          - text: Negotiated in poor faith with
+            roll:
+              min: 165
+              max: 167
+          - text: Owed a debt from
+            roll:
+              min: 168
+              max: 170
+          - text: Owes a favor to
+            roll:
+              min: 171
+              max: 174
+          - text: Racing to get an asset before
+            roll:
+              min: 175
+              max: 178
+          - text: Refuses to do business with
+            roll:
+              min: 179
+              max: 181
+          - text: Shares an asset with
+            roll:
+              min: 182
+              max: 185
+          - text: Suspects nefarious deeds from
+            roll:
+              min: 186
+              max: 189
+          - text: Trustful of
+            roll:
+              min: 190
+              max: 192
+          - text: Unjustly accuses
+            roll:
+              min: 193
+              max: 196
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 197
+              max: 200
+          - text: Acts sycophantic towards
+            roll:
+              min: 201
+              max: 204
+          - text: Annoyed by
+            roll:
+              min: 205
+              max: 208
+          - text: Ceded territory to
+            roll:
+              min: 209
+              max: 211
+          - text: Claims the same source of power as
+            roll:
+              min: 212
+              max: 214
+          - text: Constantly one-upping
+            roll:
+              min: 215
+              max: 218
+          - text: Denies respect to
+            roll:
+              min: 219
+              max: 222
+          - text: Employs the same third party as
+            roll:
+              min: 223
+              max: 225
+          - text: Extorts
+            roll:
+              min: 226
+              max: 229
+          - text: Fortifying territory against
+            roll:
+              min: 230
+              max: 233
+          - text: Gained territory from
+            roll:
+              min: 234
+              max: 236
+          - text: Had secrets stolen by
+            roll:
+              min: 237
+              max: 240
+          - text: Has contracted for special assignment
+            roll:
+              min: 241
+              max: 244
+          - text: Held in contempt by
+            roll:
+              min: 245
+              max: 247
+          - text: Holds incriminating evidence about
+            roll:
+              min: 248
+              max: 251
+          - text: In legal battle with
+            roll:
+              min: 252
+              max: 254
+          - text: Kept in check by
+            roll:
+              min: 255
+              max: 258
+          - text: Made aware of impending disaster by
+            roll:
+              min: 259
+              max: 261
+          - text: Needs an asset from
+            roll:
+              min: 262
+              max: 264
+          - text: Occasionally collaborates with
+            roll:
+              min: 265
+              max: 267
+          - text: Owed a favor from
+            roll:
+              min: 268
+              max: 270
+          - text: Publicly denigrating
+            roll:
+              min: 271
+              max: 274
+          - text: Receiving negative publicity from
+            roll:
+              min: 275
+              max: 278
+          - text: Serves the same power as
+            roll:
+              min: 279
+              max: 281
+          - text: Stole secrets from
+            roll:
+              min: 282
+              max: 285
+          - text: Trained the leadership of
+            roll:
+              min: 286
+              max: 289
+          - text: Under the control of
+            roll:
+              min: 290
+              max: 292
+          - text: Waging a cold war with
+            roll:
+              min: 293
+              max: 296
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 297
+              max: 300
+        type: oracle_rollable
+      legacy:
+        name: Name Legacy
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/name/legacy
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Abyssal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 101
+              max: 102
+          - text: Ancestral
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 103
+              max: 104
+          - text: Arcane
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 105
+              max: 106
+          - text: Blazing
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 107
+              max: 108
+          - text: Branded
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 109
+              max: 110
+          - text: Chosen
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 111
+              max: 112
+          - text: Deathly
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 113
+              max: 114
+          - text: Discerning
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 115
+              max: 116
+          - text: Eccentric
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 117
+              max: 118
+          - text: Ember
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 119
+              max: 120
+          - text: Emerald
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 121
+              max: 122
+          - text: Enhanced
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 123
+              max: 124
+          - text: Essential
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 125
+              max: 126
+          - text: Ethereal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 127
+              max: 128
+          - text: Everpresent
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 129
+              max: 130
+          - text: Forged
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 131
+              max: 132
+          - text: Ghostly
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 133
+              max: 134
+          - text: Gray
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 135
+              max: 136
+          - text: Harrowing
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 137
+              max: 138
+          - text: Holy
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 139
+              max: 140
+          - text: Immortal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 141
+              max: 142
+          - text: Iridescent
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 143
+              max: 144
+          - text: Lasting
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 145
+              max: 146
+          - text: Lost
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 147
+              max: 148
+          - text: Lucid
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 149
+              max: 150
+          - text: Majestic
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 151
+              max: 152
+          - text: Mercurial
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 153
+              max: 154
+          - text: Nocturnal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 155
+              max: 156
+          - text: Omega
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 157
+              max: 158
+          - text: Opal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 159
+              max: 160
+          - text: Peaceful
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 161
+              max: 162
+          - text: Penitent
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 163
+              max: 164
+          - text: Prime
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 165
+              max: 166
+          - text: Profane
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 167
+              max: 168
+          - text: Protected
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 169
+              max: 170
+          - text: Rising
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 171
+              max: 172
+          - text: Ruby
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 173
+              max: 174
+          - text: Savage
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 175
+              max: 176
+          - text: Setting
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 177
+              max: 178
+          - text: Shadow
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 179
+              max: 180
+          - text: Shrewd
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 181
+              max: 182
+          - text: Solar
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 183
+              max: 184
+          - text: Steel
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 185
+              max: 186
+          - text: Tranquil
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 187
+              max: 188
+          - text: Uncanny
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 189
+              max: 190
+          - text: Unending
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 191
+              max: 192
+          - text: Unholy
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 193
+              max: 194
+          - text: Venerated
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 195
+              max: 196
+          - text: Voracious
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 197
+              max: 198
+          - text: Worthy
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 199
+              max: 200
+          - text: Alpha
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 201
+              max: 202
+          - text: Anointed
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 203
+              max: 204
+          - text: Benevolent
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 205
+              max: 206
+          - text: Bonded
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 207
+              max: 208
+          - text: Brutal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 209
+              max: 210
+          - text: Cosmic
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 211
+              max: 212
+          - text: Delicate
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 213
+              max: 214
+          - text: Distant
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 215
+              max: 216
+          - text: Elusive
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 217
+              max: 218
+          - text: Emboldened
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 219
+              max: 220
+          - text: Empowered
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 221
+              max: 222
+          - text: Enigmatic
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 223
+              max: 224
+          - text: Eternal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 225
+              max: 226
+          - text: Everflowing
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 227
+              max: 228
+          - text: Forbidden
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 229
+              max: 230
+          - text: Fractured
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 231
+              max: 232
+          - text: Gracious
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 233
+              max: 234
+          - text: Grim
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 235
+              max: 236
+          - text: Haunted
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 237
+              max: 238
+          - text: Immaculate
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 239
+              max: 240
+          - text: Interwoven
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 241
+              max: 242
+          - text: Ivory
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 243
+              max: 244
+          - text: Lofty
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 245
+              max: 246
+          - text: Luminous
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 247
+              max: 248
+          - text: Magnificent
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 249
+              max: 250
+          - text: Marked
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 251
+              max: 252
+          - text: Munificent
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 253
+              max: 254
+          - text: Omniscient
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 255
+              max: 256
+          - text: Ordained
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 257
+              max: 258
+          - text: Pale
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 259
+              max: 260
+          - text: Pearl
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 261
+              max: 262
+          - text: Powerful
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 263
+              max: 264
+          - text: Prismatic
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 265
+              max: 266
+          - text: Promised
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 267
+              max: 268
+          - text: Proud
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 269
+              max: 270
+          - text: Royal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 271
+              max: 272
+          - text: Sacrificial
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 273
+              max: 274
+          - text: Secret
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 275
+              max: 276
+          - text: Shackled
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 277
+              max: 278
+          - text: Shielded
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 279
+              max: 280
+          - text: Silver
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 281
+              max: 282
+          - text: Stately
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 283
+              max: 284
+          - text: Timeless
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 285
+              max: 286
+          - text: Unbreaking
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 287
+              max: 288
+          - text: Unearthed
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 289
+              max: 290
+          - text: Unfathomable
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 291
+              max: 292
+          - text: Unsafe
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 293
+              max: 294
+          - text: Violated
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 295
+              max: 296
+          - text: Weathered
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 297
+              max: 298
+          - text: Zealous
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 299
+              max: 300
+        type: oracle_rollable
+      affiliation:
+        name: Name Affiliation
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/name/affiliation
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Academy
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 101
+              max: 104
+          - text: Association
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 105
+              max: 108
+          - text: Brotherhood
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 109
+              max: 112
+          - text: Commune
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 113
+              max: 116
+          - text: Compact
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 117
+              max: 120
+          - text: Compound
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 121
+              max: 124
+          - text: Confluence
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 125
+              max: 128
+          - text: Congregation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 129
+              max: 132
+          - text: Congruity
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 133
+              max: 136
+          - text: Connection
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 137
+              max: 140
+          - text: Continuum
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 141
+              max: 144
+          - text: Culture
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 145
+              max: 148
+          - text: Domain
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 149
+              max: 152
+          - text: Dynasty
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 153
+              max: 156
+          - text: Family
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 157
+              max: 160
+          - text: Fraternity
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 161
+              max: 164
+          - text: Harmony
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 165
+              max: 168
+          - text: Kinship
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 169
+              max: 172
+          - text: Outfit
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 173
+              max: 176
+          - text: Path
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 177
+              max: 180
+          - text: Rapprochement
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 181
+              max: 184
+          - text: Society
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 185
+              max: 188
+          - text: Sovereignty
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 189
+              max: 192
+          - text: Stronghold
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 193
+              max: 196
+          - text: Tapestry
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 197
+              max: 200
+          - text: Amalgam
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 201
+              max: 204
+          - text: Bastion
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 205
+              max: 208
+          - text: Collaboration
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 209
+              max: 212
+          - text: Community
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 213
+              max: 216
+          - text: Company
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 217
+              max: 220
+          - text: Concord
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 221
+              max: 224
+          - text: Conglomeration
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 225
+              max: 228
+          - text: Congress
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 229
+              max: 232
+          - text: Conjunction
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 233
+              max: 236
+          - text: Consolidation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 237
+              max: 240
+          - text: Covenant
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 241
+              max: 244
+          - text: District
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 245
+              max: 248
+          - text: Dominion
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 249
+              max: 252
+          - text: Entente
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 253
+              max: 256
+          - text: Fellowship
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 257
+              max: 260
+          - text: Fusion
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 261
+              max: 264
+          - text: House
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 265
+              max: 268
+          - text: Matrimony
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 269
+              max: 272
+          - text: Partnership
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 273
+              max: 276
+          - text: Realm
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 277
+              max: 280
+          - text: Sisterhood
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 281
+              max: 284
+          - text: Sorority
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 285
+              max: 288
+          - text: State
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 289
+              max: 292
+          - text: Synthesis
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 293
+              max: 296
+          - text: Weave
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 297
+              max: 300
+        type: oracle_rollable
+      identity:
+        name: Name Identity
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/name/identity
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Adherents
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 101
+              max: 102
+          - text: Apostles
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 103
+              max: 104
+          - text: Architects
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 105
+              max: 106
+          - text: Armada
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 107
+              max: 108
+          - text: Artisans
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 109
+              max: 110
+          - text: Authors
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 111
+              max: 112
+          - text: Bolts
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 113
+              max: 114
+          - text: Bulls
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 115
+              max: 116
+          - text: Cavaliers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 117
+              max: 118
+          - text: Claws
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 119
+              max: 120
+          - text: Conservators
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 121
+              max: 122
+          - text: Crafters
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 123
+              max: 124
+          - text: Crows
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 125
+              max: 126
+          - text: Curators
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 127
+              max: 128
+          - text: Devotees
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 129
+              max: 130
+          - text: Dragons
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 131
+              max: 132
+          - text: Escorts
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 133
+              max: 134
+          - text: Estates
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 135
+              max: 136
+          - text: Exiles
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 137
+              max: 138
+          - text: Flock
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 139
+              max: 140
+          - text: Followers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 141
+              max: 142
+          - text: Formation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 143
+              max: 144
+          - text: Fragments
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 145
+              max: 146
+          - text: Griffins
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 147
+              max: 148
+          - text: Healers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 149
+              max: 150
+          - text: Hydra
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 151
+              max: 152
+          - text: Jewels
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 153
+              max: 154
+          - text: Lions
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 155
+              max: 156
+          - text: Masons
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 157
+              max: 158
+          - text: Mentors
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 159
+              max: 160
+          - text: Observers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 161
+              max: 162
+          - text: Omens
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 163
+              max: 164
+          - text: Overseers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 165
+              max: 166
+          - text: Pack
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 167
+              max: 168
+          - text: Panthers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 169
+              max: 170
+          - text: Patrons
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 171
+              max: 172
+          - text: Prophets
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 173
+              max: 174
+          - text: Protectors
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 175
+              max: 176
+          - text: Rams
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 177
+              max: 178
+          - text: Ravagers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 179
+              max: 180
+          - text: Retainers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 181
+              max: 182
+          - text: Scepters
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 183
+              max: 184
+          - text: Sectarians
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 185
+              max: 186
+          - text: Shades
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 187
+              max: 188
+          - text: Smiths
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 189
+              max: 190
+          - text: Squadron
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 191
+              max: 192
+          - text: Suitors
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 193
+              max: 194
+          - text: Technicians
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 195
+              max: 196
+          - text: Travelers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 197
+              max: 198
+          - text: Upholders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 199
+              max: 200
+          - text: Analysts
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 201
+              max: 202
+          - text: Apprentices
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 203
+              max: 204
+          - text: Archivists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 205
+              max: 206
+          - text: Artifacts
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 207
+              max: 208
+          - text: Aspirants
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 209
+              max: 210
+          - text: Bears
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 211
+              max: 212
+          - text: Bones
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 213
+              max: 214
+          - text: Caretakers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 215
+              max: 216
+          - text: Champions
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 217
+              max: 218
+          - text: Cohort
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 219
+              max: 220
+          - text: Cougars
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 221
+              max: 222
+          - text: Creators
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 223
+              max: 224
+          - text: Cryptics
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 225
+              max: 226
+          - text: Custodians
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 227
+              max: 228
+          - text: Diviners
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 229
+              max: 230
+          - text: Eagles
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 231
+              max: 232
+          - text: Essence
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 233
+              max: 234
+          - text: Evokers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 235
+              max: 236
+          - text: Falcons
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 237
+              max: 238
+          - text: Forerunners
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 239
+              max: 240
+          - text: Founders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 241
+              max: 242
+          - text: Framers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 243
+              max: 244
+          - text: Guides
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 245
+              max: 246
+          - text: Heirlooms
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 247
+              max: 248
+          - text: Horde
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 249
+              max: 250
+          - text: Invokers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 251
+              max: 252
+          - text: Keepers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 253
+              max: 254
+          - text: Marauders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 255
+              max: 256
+          - text: Masters
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 257
+              max: 258
+          - text: Moons
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 259
+              max: 260
+          - text: Officers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 261
+              max: 262
+          - text: Outriders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 263
+              max: 264
+          - text: Owls
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 265
+              max: 266
+          - text: Paladins
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 267
+              max: 268
+          - text: Paracletes
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 269
+              max: 270
+          - text: Privateers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 271
+              max: 272
+          - text: Proselytes
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 273
+              max: 274
+          - text: Pupils
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 275
+              max: 276
+          - text: Raptors
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 277
+              max: 278
+          - text: Remnant
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 279
+              max: 280
+          - text: Savants
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 281
+              max: 282
+          - text: Scorpions
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 283
+              max: 284
+          - text: Sentries
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 285
+              max: 286
+          - text: Shields
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 287
+              max: 288
+          - text: Spears
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 289
+              max: 290
+          - text: Stewards
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 291
+              max: 292
+          - text: Sustainers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 293
+              max: 294
+          - text: Tigers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 295
+              max: 296
+          - text: Truths
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 297
+              max: 298
+          - text: Vipers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 299
+              max: 300
+        type: oracle_rollable
+      quirks:
+        name: Quirks
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/quirks
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Amalgamation of languages used
+            roll:
+              min: 101
+              max: 103
+          - text: Animal or creature honored or deified in society
+            roll:
+              min: 104
+              max: 106
+          - text: Banishes the unsuccessful
+            roll:
+              min: 107
+              max: 109
+          - text: Body augmentations are reviled and shunned
+            roll:
+              min: 110
+              max: 112
+          - text: Destroys precursor artifacts
+            roll:
+              min: 113
+              max: 115
+          - text: Do not move dwellings without adherence to strict protocols and ceremony
+            roll:
+              min: 116
+              max: 118
+          - text: Elite soldiers are part of celebrated strike team
+            roll:
+              min: 119
+              max: 121
+          - text: Employs genetic enhancements at the risk of health
+            roll:
+              min: 122
+              max: 124
+          - text: Extreme hospitality shown to outsiders
+            roll:
+              min: 125
+              max: 127
+          - text: Facial tattoos signify castes or roles
+            roll:
+              min: 128
+              max: 130
+          - text: Favors a defensive fighting style
+            roll:
+              min: 131
+              max: 133
+          - text: Follows rigid social norms and ceremonies
+            roll:
+              min: 134
+              max: 136
+          - text: Guided by mystics and omens
+            roll:
+              min: 137
+              max: 139
+          - text: Lack of social stratification
+            roll:
+              min: 140
+              max: 142
+          - text: Members all use the same name after joining
+            roll:
+              min: 143
+              max: 145
+          - text: Proud to have hunted important species to extinction
+            roll:
+              min: 146
+              max: 148
+          - text: Purposefully drab and mundane clothing
+            roll:
+              min: 149
+              max: 151
+          - text: Refuses long space journeys more than a year and a day
+            roll:
+              min: 152
+              max: 154
+          - text: Regular vision quests through hallucinogenic drugs
+            roll:
+              min: 155
+              max: 157
+          - text: Regularly rewrite history to look kindly upon themselves
+            roll:
+              min: 158
+              max: 160
+          - text: Reliant on machine labor for production
+            roll:
+              min: 161
+              max: 163
+          - text: Resolves disputes through public debates or forums
+            roll:
+              min: 164
+              max: 166
+          - text: Rites of formal acceptance into the faction
+            roll:
+              min: 167
+              max: 169
+          - text: Ritual words reserved only for other members
+            roll:
+              min: 170
+              max: 172
+          - text: Romanticizes pre-cataclysmic times
+            roll:
+              min: 173
+              max: 175
+          - text: Shuns machine labor as manual labor is seen as superior
+            roll:
+              min: 176
+              max: 178
+          - text: Shuns new or upgraded commodities for traditional ones
+            roll:
+              min: 179
+              max: 181
+          - text: Shuns the fallen and their families as unworthy
+            roll:
+              min: 182
+              max: 184
+          - text: Starships are considered individual works of art and distinct
+            roll:
+              min: 185
+              max: 187
+          - text: Trains in a demanding mental discipline or science
+            roll:
+              min: 188
+              max: 190
+          - text: Wears official identification and clearance levels at all times
+            roll:
+              min: 191
+              max: 193
+          - text: Work or environment causes disease
+            roll:
+              min: 194
+              max: 196
+          - text: ▶Action + Theme
+            roll:
+              min: 197
+              max: 200
+          - text: Accepted subfactions identified by dress and appearance
+            roll:
+              min: 201
+              max: 203
+          - text: Belief in precursors viewed as heretical
+            roll:
+              min: 204
+              max: 206
+          - text: Breed, train and trade a unique creature
+            roll:
+              min: 207
+              max: 209
+          - text: Can join minds with other members to form a collective
+            roll:
+              min: 210
+              max: 212
+          - text: Clothing made of unusual material
+            roll:
+              min: 213
+              max: 215
+          - text: Compartmentalizes records for safety and secrecy
+            roll:
+              min: 216
+              max: 218
+          - text: Complicated protocols to enact contracts
+            roll:
+              min: 219
+              max: 221
+          - text: Criminals are publicly shamed
+            roll:
+              min: 222
+              max: 224
+          - text: Elaborate sign and color language used
+            roll:
+              min: 225
+              max: 227
+          - text: Elite soldiers are retired and become trainers
+            roll:
+              min: 228
+              max: 230
+          - text: Favors deception and stealth
+            roll:
+              min: 231
+              max: 233
+          - text: Greetings must be performed in the order of social hierarchy
+            roll:
+              min: 234
+              max: 236
+          - text: Guided by coldhearted logic
+            roll:
+              min: 237
+              max: 239
+          - text: High rate of social mobility
+            roll:
+              min: 240
+              max: 242
+          - text: Highly value creative art and expression
+            roll:
+              min: 243
+              max: 245
+          - text: Important roles bestowed upon children when they are born
+            roll:
+              min: 246
+              max: 248
+          - text: Reside planetside when possible and rely on automated starships
+            roll:
+              min: 249
+              max: 251
+          - text: Must volunteer service for a period before membership
+            roll:
+              min: 252
+              max: 254
+          - text: Once accepted, even non-members are viewed as family
+            roll:
+              min: 255
+              max: 257
+          - text: Operate under loose moral codes and laws
+            roll:
+              min: 258
+              max: 260
+          - text: Rank or roles are obscured
+            roll:
+              min: 261
+              max: 263
+          - text: Reliant on a faulty technology
+            roll:
+              min: 264
+              max: 266
+          - text: Resolves disputes through physical feats
+            roll:
+              min: 267
+              max: 269
+          - text: Rites of marriage or adoption
+            roll:
+              min: 270
+              max: 272
+          - text: Secret knowledge of how to hunt and kill a dangerous beast
+            roll:
+              min: 273
+              max: 275
+          - text: Shuns unnatural building materials when planetside
+            roll:
+              min: 276
+              max: 278
+          - text: Societal roles determined by age
+            roll:
+              min: 279
+              max: 281
+          - text: Something is illegal but everyone does or has it
+            roll:
+              min: 282
+              max: 284
+          - text: Starships purposefully mimic other cultures
+            roll:
+              min: 285
+              max: 287
+          - text: Technology held up as a savior
+            roll:
+              min: 288
+              max: 290
+          - text: Unusual ceremonies or customs around food
+            roll:
+              min: 291
+              max: 293
+          - text: Work or environment borders space-time schism
+            roll:
+              min: 294
+              max: 296
+          - text: ▶Action + Theme
+            roll:
+              min: 297
+              max: 300
+        type: oracle_rollable
+      rumors:
+        name: Rumors
+        oracle_type: table_text
+        dice: 1d300
+        replaces:
+          - oracle_rollable:starforged/faction/rumors
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Asked to ally with both sides of feuding factions
+            roll:
+              min: 101
+              max: 103
+          - text: "Being played by another power "
+            roll:
+              min: 104
+              max: 106
+          - text: "Bribing local lawmakers "
+            roll:
+              min: 107
+              max: 109
+          - text: Building a secret base of operations
+            roll:
+              min: 110
+              max: 112
+          - text: Cannot fund or withstand a sustained conflict
+            roll:
+              min: 113
+              max: 115
+          - text: "Defenses are consolidating in one area "
+            roll:
+              min: 116
+              max: 118
+          - text: "Developing dangerous technology "
+            roll:
+              min: 119
+              max: 121
+          - text: "Digital systems have back door access "
+            roll:
+              min: 122
+              max: 124
+          - text: Extorted by another leader or faction
+            roll:
+              min: 125
+              max: 127
+          - text: Funding illegal or unethical experiments
+            roll:
+              min: 128
+              max: 130
+          - text: "Gathering evidence against dangerous criminal "
+            roll:
+              min: 131
+              max: 133
+          - text: Impending calamity or disaster
+            roll:
+              min: 134
+              max: 136
+          - text: Infiltrating a rival faction
+            roll:
+              min: 137
+              max: 139
+          - text: Interest in membership is dwindling
+            roll:
+              min: 140
+              max: 142
+          - text: "Key agent is interested in flipping sides "
+            roll:
+              min: 143
+              max: 145
+          - text: "Leader is looking for a way out "
+            roll:
+              min: 146
+              max: 148
+          - text: Leaders squabbling amongst themselves
+            roll:
+              min: 149
+              max: 151
+          - text: "Losing face by publicly supporting unpopular faction "
+            roll:
+              min: 152
+              max: 154
+          - text: Lost a powerful artifact
+            roll:
+              min: 155
+              max: 157
+          - text: "Lost a valuable asset "
+            roll:
+              min: 158
+              max: 160
+          - text: Manipulating supply of a valuable commodity
+            roll:
+              min: 161
+              max: 163
+          - text: Mustering defenses against a major attack
+            roll:
+              min: 164
+              max: 166
+          - text: Need help collecting a large debt
+            roll:
+              min: 167
+              max: 169
+          - text: Overabundance of a resource causing problems
+            roll:
+              min: 170
+              max: 172
+          - text: Recently lost a fortune
+            roll:
+              min: 173
+              max: 175
+          - text: Refusing to use needed technology
+            roll:
+              min: 176
+              max: 178
+          - text: Soon to be betrayed by an allied faction
+            roll:
+              min: 179
+              max: 181
+          - text: Suffered destructive sabotage by an outside agent
+            roll:
+              min: 182
+              max: 184
+          - text: Taking advantage of the general public
+            roll:
+              min: 185
+              max: 187
+          - text: Unity behind new belief or religion is stoking zealotry
+            roll:
+              min: 188
+              max: 190
+          - text: Wants to shift their focus to a new purpose
+            roll:
+              min: 191
+              max: 193
+          - text: "Wielding a dangerous power "
+            roll:
+              min: 194
+              max: 196
+          - text: ▶Action + Theme
+            roll:
+              min: 197
+              max: 200
+          - text: Accidentally pulled a third party into their feud
+            roll:
+              min: 201
+              max: 203
+          - text: Afraid to address the real problem
+            roll:
+              min: 204
+              max: 206
+          - text: "Bribing local law enforcement "
+            roll:
+              min: 207
+              max: 209
+          - text: Broke a powerful artifact and need it fixed
+            roll:
+              min: 210
+              max: 212
+          - text: Controlling damage from a character assassination
+            roll:
+              min: 213
+              max: 215
+          - text: Courting a lucrative alliance
+            roll:
+              min: 216
+              max: 218
+          - text: Denied critical resources by another faction
+            roll:
+              min: 219
+              max: 221
+          - text: Developing illegal technology
+            roll:
+              min: 222
+              max: 224
+          - text: Digital systems heavily guarded implying secrets
+            roll:
+              min: 225
+              max: 227
+          - text: Discovered a critical flaw in newly implemented technology
+            roll:
+              min: 228
+              max: 230
+          - text: Ferreting out the true purpose of a rival
+            roll:
+              min: 231
+              max: 233
+          - text: Floundering at making a large scale relocation
+            roll:
+              min: 234
+              max: 236
+          - text: Focus on offense has left a vulnerability
+            roll:
+              min: 237
+              max: 239
+          - text: In trouble for sharing secrets too easily
+            roll:
+              min: 240
+              max: 242
+          - text: Inadvertently causing a calamity or disaster
+            roll:
+              min: 243
+              max: 245
+          - text: Leader betrayed members to hold onto power
+            roll:
+              min: 246
+              max: 248
+          - text: Leader is using the faction for personal gain
+            roll:
+              min: 249
+              max: 251
+          - text: Membership not fully committed to the cause
+            roll:
+              min: 252
+              max: 254
+          - text: Mounting a rescue mission
+            roll:
+              min: 255
+              max: 257
+          - text: Need help with legal defense
+            roll:
+              min: 258
+              max: 260
+          - text: Outside actors stirring up internal conflict
+            roll:
+              min: 261
+              max: 263
+          - text: Planning to sabotage a rival
+            roll:
+              min: 264
+              max: 266
+          - text: Publicly performing vile deeds to stir up their base
+            roll:
+              min: 267
+              max: 269
+          - text: Racing another faction to acquire an asset
+            roll:
+              min: 270
+              max: 272
+          - text: Recently found a way to make a fortune
+            roll:
+              min: 273
+              max: 275
+          - text: Refusing to acknowledge vulnerability in current approach
+            roll:
+              min: 276
+              max: 278
+          - text: Ruffling feathers by stepping out of their lane
+            roll:
+              min: 279
+              max: 281
+          - text: Seeking a dangerous power
+            roll:
+              min: 282
+              max: 284
+          - text: Seeking to discredit a new belief or religion
+            roll:
+              min: 285
+              max: 287
+          - text: Suffering from being pulled in too many directions
+            roll:
+              min: 288
+              max: 290
+          - text: Tracking an infamous or dangerous fugitive
+            roll:
+              min: 291
+              max: 293
+          - text: Working with corrupt law enforcement to crack down
+            roll:
+              min: 294
+              max: 296
+          - text: ▶Action + Theme
+            roll:
+              min: 297
+              max: 300
+        type: oracle_rollable
+    type: oracle_collection

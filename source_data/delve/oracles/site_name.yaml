@@ -3,6 +3,115 @@ datasworn_version: "0.1.0"
 type: expansion
 ruleset: classic
 oracles:
+  site_starters:
+    name: Site Starters
+    type: oracle_collection
+    oracle_type: tables
+    summary: Use this table to randomly select a site in the Ironlands.
+    description: |-
+      Use this table to randomly select a site in the Ironlands. You can use the result to start a new campaign, or to find a new site to explore.
+    _source:
+      <<: &Source
+        license: https://creativecommons.org/licenses/by/4.0
+        url: https://ironswornrpg.com
+        date: 2020-02-13
+        title: 'Ironsworn: Delve'
+        authors:
+          - name: Shawn Tomkin
+      page: 94
+    contents:
+      site_starters:
+        name: Site Starters
+        _source: *Source
+        canonical_name: 'Site Starters'
+        oracle_type: table_text3
+        type: oracle_rollable
+        column_labels:
+          roll: Roll
+          text: Name
+          text2: Theme
+          text3: Domain
+        rows:
+          - roll: { min: 1, max: 5 }  
+            text: Alva's Rest
+            text2: Fortified
+            text3: Domain
+          - roll: { min: 6, max: 10 }
+            text:  Bleakroot Depths
+            text2: Wild
+            text3: Frozen Cavern
+          - roll: { min: 11, max: 15}
+            text:  Bonewilds
+            text2: Haunted
+            text3: Tanglewood
+          - roll: { min: 16, max: 20}
+            text:  Darkfall Caves
+            text2: Infested
+            text3: Cavern
+          - roll: { min: 21, max: 25}
+            text:  Deeprot Bog
+            text2: Hallowed
+            text3: Shadowfen
+          - roll: { min: 26, max: 30}
+            text:  Egan's Folly
+            text2: Haunted
+            text3: Pass
+          - roll: { min: 31, max: 35}
+            text:  Foulwater Plunge
+            text2: Corrupted
+            text3: Sea Cave
+          - roll: { min: 36, max: 40}
+            text:  Frostmark
+            text2: Fortified
+            text3: Icereach
+          - roll: { min: 41, max: 45}
+            text:  Greathammer Deep
+            text2: Ravaged
+            text3: Mine
+          - roll: { min: 46, max: 50}
+            text:  Holdfast Barrow
+            text2: Haunted
+            text3: Barrow
+          - roll: { min: 51, max: 55}
+            text:  Hollowmount Island
+            text2: Ancient
+            text3: Underkeep
+          - roll: { min: 56, max: 60}
+            text:  Icebound Reach
+            text2: Wild
+            text3: Icereach
+          - roll: { min: 61, max: 65}
+            text:  Lastrock Mine
+            text2: Infested
+            text3: Mine
+          - roll: { min: 66, max: 70}
+            text:  Redhome Sanctum
+            text2: Corrupted
+            text3: Underkeep
+          - roll: { min: 71, max: 74}
+            text:  Sinking Temple
+            text2: Ravaged
+            text3: Ruin
+          - roll: { min: 75, max: 80}
+            text:  Smoldering Wood
+            text2: Ravaged
+            text3: Tanglewood
+          - roll: { min: 81, max: 84}
+            text:  Stillgrave Mire
+            text2: Haunted
+            text3: Shadowfen
+          - roll: { min: 85, max: 90}
+            text:  Stonesong Spire
+            text2: Hallowed
+            text3: Stronghold
+          - roll: { min: 91, max: 94}
+            text:  Topplekeep
+            text2: Infested
+            text3: Ruin
+          - roll: { min: 95, max: 100}
+            text:  Trail of Spirits
+            text2: Ancient
+            text3: Pass          
   site_name:
     name: Site Name
     type: oracle_collection
