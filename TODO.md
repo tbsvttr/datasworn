@@ -103,6 +103,7 @@ Feedback from southpole regarding converter-generated data.
 
 - [x] Add "broken" impact to item assets (PR #7 by kat)
 - [x] **Add failure track** - Ancient Wonders uses failure track mechanic, needs special track added (see Delve p. 58ff for reference)
+- [ ] **Clean up oracle text formatting** - 68 entries have `>Name; pg N` format that should be cleaned (strip `>` prefix, optionally convert to datasworn links)
 - [ ] Identify and add missing Focus oracle (or verify it's `splinter_focus`)
 - [ ] Add `_index` fields or restructure YAML to match book ordering
 - [x] Reorganize `planets_expanded` into hierarchical collections
