@@ -1,0 +1,1067 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+oracles:
+  alien_megacities:
+    name: "Alien Megacities"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#e74c3c"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      complexity:
+        name: "Megacity Complexity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify the intricacy of a megacity's interior design.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 5 }
+            text: "Simple"
+          - roll: { min: 6, max: 20 }
+            text: "Basic"
+          - roll: { min: 21, max: 45 }
+            text: "Manageable"
+          - roll: { min: 46, max: 80 }
+            text: "Complicated"
+          - roll: { min: 81, max: 100 }
+            text: "Bewildering"
+      inner_first_look_cursed:
+        name: "Cursed Megacity Inner First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          The following oracle provides inspiration for the initial survey of a megacity by generating details about each new area of a megacity's interior.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 2 }
+            text: "Structures of disturbing subject matter"
+          - roll: { min: 3, max: 5 }
+            text: "Structures defaced with cryptic glyphs"
+          - roll: { min: 6, max: 7 }
+            text: "Ostentatious display of organic matter"
+          - roll: { min: 8, max: 9 }
+            text: "Constant flow of organic liquid matter"
+          - roll: { min: 10, max: 11 }
+            text: "Scarred with huge bestial scratches"
+          - roll: { min: 12, max: 13 }
+            text: "Dead show glimpses of reanimation"
+          - roll: { min: 14, max: 16 }
+            text: "Foreboding or esoteric monuments"
+          - roll: { min: 17, max: 18 }
+            text: "Sounds reminiscent of human pain"
+          - roll: { min: 19, max: 20 }
+            text: "Structures made of organic matter"
+          - roll: { min: 21, max: 22 }
+            text: "Unsettling sense of being watched"
+          - roll: { min: 23, max: 24 }
+            text: "Glimpses of shadows on the move"
+          - roll: { min: 25, max: 27 }
+            text: "Lifeforms with evident mutations"
+          - roll: { min: 28, max: 29 }
+            text: "Desiccated or putrefied corpses"
+          - roll: { min: 30, max: 31 }
+            text: "Overwhelming stillness or quiet"
+          - roll: { min: 32, max: 34 }
+            text: "Mutated or warped structures"
+          - roll: { min: 35, max: 36 }
+            text: "Scale does not match exterior"
+          - roll: { min: 37, max: 39 }
+            text: "Ominous, untraceable sounds"
+          - roll: { min: 40, max: 42 }
+            text: "Haunting visions of the dead"
+          - roll: { min: 43, max: 44 }
+            text: "Lair of a monstrous creature"
+          - roll: { min: 45, max: 47 }
+            text: "Sticky and viscous surfaces"
+          - roll: { min: 48, max: 50 }
+            text: "Signs of hurried evacuation"
+          - roll: { min: 51, max: 52 }
+            text: "Esoteric writing or symbols"
+          - roll: { min: 53, max: 55 }
+            text: "Time or reality distortions"
+          - roll: { min: 56, max: 57 }
+            text: "Foul masses of secretions"
+          - roll: { min: 58, max: 60 }
+            text: "Dissonant tones or music"
+          - roll: { min: 61, max: 63 }
+            text: "Shrouded in mist or haze"
+          - roll: { min: 64, max: 65 }
+            text: "Carried tech is disrupted"
+          - roll: { min: 66, max: 67 }
+            text: "Echoes of distant voices"
+          - roll: { min: 68, max: 70 }
+            text: "Dreadful howls or roars"
+          - roll: { min: 71, max: 72 }
+            text: "Impenetrable darkness"
+          - roll: { min: 73, max: 74 }
+            text: "Splattered with blood"
+          - roll: { min: 75, max: 77 }
+            text: "Visions or apparitions"
+          - roll: { min: 78, max: 79 }
+            text: "Whispers of the dead"
+          - roll: { min: 80, max: 81 }
+            text: "Uncanny illumination"
+          - roll: { min: 82, max: 83 }
+            text: "Biological infestation"
+          - roll: { min: 84, max: 85 }
+            text: "Hazardous readings"
+          - roll: { min: 86, max: 88 }
+            text: "Dying flora or fauna"
+          - roll: { min: 89, max: 91 }
+            text: "Abnormal gravity"
+          - roll: { min: 92, max: 94 }
+            text: "Moldering bones"
+          - roll: { min: 95, max: 96 }
+            text: "Mass graves"
+          - roll: { min: 97, max: 98 }
+            text: "Noxious fog"
+          - roll: { min: 99, max: 100 }
+            text: "Watchful AI"
+      class_underground:
+        name: "Megacity Class - Underground"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify a megacity based on the surrounding environment.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text: "Ceiling City"
+          - roll: { min: 16, max: 20 }
+            text: "Dome City"
+          - roll: { min: 21, max: 90 }
+            text: "Underground City"
+          - roll: { min: 91, max: 100 }
+            text: "Underwater City"
+      lurking_threat_total_control_threat_when_:
+        name: "Megacity Lurking Threat - Total Control (Threat / When the clock
+          advances... / When the clock is filled...)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 12 }
+            text:
+              "Climate changesi / Temperature fluctuations; minor bodily reactions /
+              Your body suffers a major affliction!"
+          - roll: { min: 13, max: 17 }
+            text:
+              "Crumbling buildings / Creaking and groaning sounds; tumbling debris /
+              Buildings collapse!"
+          - roll: { min: 18, max: 34 }
+            text:
+              "Defensive mechanism / Trigger signals; counter-assault preparations / The
+              machines strike!"
+          - roll: { min: 35, max: 39 }
+            text:
+              "Energy overload / Electricity arcs; remarkable fluctuations in power /
+              Energy threatens you from all sides!"
+          - roll: { min: 40, max: 56 }
+            text:
+              "Guarding keepers / Signs of being under surveillance; sounds of
+              mechanical motility / A force of keepers defend the city!"
+          - roll: { min: 57, max: 68 }
+            text:
+              "Lurking predator / Glances of the creature; remains of previous attacks /
+              The predator attacks!"
+          - roll: { min: 69, max: 80 }
+            text:
+              "Perplexing space / Undecipherable environment; confusion take hold /
+              Anxiety or panic takes over!"
+          - roll: { min: 81, max: 85 }
+            text:
+              "Rival delvers / Evidence of recent activity; distance voices / Your rival
+              makes their move!"
+          - roll: { min: 86, max: 90 }
+            text:
+              "Transforming pathways / Surroundings being altered; reconfigured routes /
+              You get lost!"
+          - roll: { min: 91, max: 95 }
+            text:
+              "Urban fire / Encompassing and intense heat; obfuscating smoke / Fire
+              causes destruction!"
+          - roll: { min: 96, max: 100 }
+            text:
+              "Urban flood / Surging currents; inundated spaces / The pathway is
+              engulfed!"
+      trouble:
+        name: "Trouble In The Megacity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this set of oracles to detail your exploration in the depths of a megacity.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 1 }
+            text: "Pay the Price table"
+          - roll: { min: 2, max: 2 }
+            text:
+              "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg
+              100"
+          - roll: { min: 3, max: 3 }
+            text:
+              "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg
+              82"
+          - roll: { min: 4, max: 4 }
+            text: "Vault Peril"
+          - roll: { min: 5, max: 5 }
+            text: "Lurking Threat"
+          - roll: { min: 6, max: 6 }
+            text: "Story Complication"
+      lurking_threat_minor_control_threat_when_:
+        name: "Megacity Lurking Threat - Minor Control (Threat / When the clock
+          advances... / When the clock is filled...)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 14 }
+            text:
+              "Climate changesi / Temperature fluctuations; minor bodily reactions /
+              Your body suffers a major affliction!"
+          - roll: { min: 15, max: 22 }
+            text:
+              "Crumbling buildings / Creaking and groaning sounds; tumbling debris /
+              Buildings collapse!"
+          - roll: { min: 23, max: 27 }
+            text:
+              "Defensive mechanism / Trigger signals; counter-assault preparations / The
+              machines strike!"
+          - roll: { min: 28, max: 35 }
+            text:
+              "Energy overload / Electricity arcs; remarkable fluctuations in power /
+              Energy threatens you from all sides!"
+          - roll: { min: 36, max: 40 }
+            text:
+              "Guarding keepers / Signs of being under surveillance; sounds of
+              mechanical motility / A force of keepers defend the city!"
+          - roll: { min: 41, max: 54 }
+            text:
+              "Lurking predator / Glances of the creature; remains of previous attacks /
+              The predator attacks!"
+          - roll: { min: 55, max: 68 }
+            text:
+              "Perplexing space / Undecipherable environment; confusion take hold /
+              Anxiety or panic takes over!"
+          - roll: { min: 69, max: 76 }
+            text:
+              "Rival delvers / Evidence of recent activity; distance voices / Your rival
+              makes their move!"
+          - roll: { min: 77, max: 84 }
+            text:
+              "Transforming pathways / Surroundings being altered; reconfigured routes /
+              You get lost!"
+          - roll: { min: 85, max: 92 }
+            text:
+              "Urban fire / Encompassing and intense heat; obfuscating smoke / Fire
+              causes destruction!"
+          - roll: { min: 93, max: 100 }
+            text:
+              "Urban flood / Surging currents; inundated spaces / The pathway is
+              engulfed!"
+      status_partial_control:
+        name: "Megacity Status - Partial Control"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Megacities are in a ruinous state. Use the table below to identify the current condition of a megacity within that framework. Keepers have partial control of the megacities
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text:
+              "Partially built / The megacity never reached a point of completion. The
+              population that originated this megacity never inhabited it"
+          - roll: { min: 11, max: 35 }
+            text:
+              "Devastated / The megacity has either been destroyed or taken significant
+              damage at some point, naturally or by other means"
+          - roll: { min: 36, max: 75 }
+            text:
+              "Abandoned / The megacity's population left. The habitat may be
+              functional, but its lack of adequate maintenance has taken its
+              toll"
+          - roll: { min: 76, max: 100 }
+            text:
+              "Inhabited / The megacity, despite its state of disrepair, has become a
+              settlement for humanity"
+      exploration:
+        name: "Exploring The Megacity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this set of oracles to detail your exploration in the depths of a megacity.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 1 }
+            text:
+              "[Theme](datasworn:oracle_rollable:starforged/core/theme) Feature; RG, pg
+              100"
+          - roll: { min: 2, max: 4 }
+            text:
+              "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG,
+              pg 82"
+          - roll: { min: 5, max: 6 }
+            text: "Vault Feature"
+      cipher:
+        name: "Megacity Cipher"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Aesthetic creation or art piece"
+          - roll: { min: 11, max: 20 }
+            text: "Chart or log"
+          - roll: { min: 21, max: 30 }
+            text: "Evidence of other venturers"
+          - roll: { min: 31, max: 40 }
+            text: "Hand-crafted message"
+          - roll: { min: 41, max: 50 }
+            text: "Hidden zone or area"
+          - roll: { min: 51, max: 60 }
+            text: "Machinery or contraption"
+          - roll: { min: 61, max: 70 }
+            text: "Personal item"
+          - roll: { min: 71, max: 80 }
+            text: "Remains of the dead"
+          - roll: { min: 81, max: 90 }
+            text: "Signs projected on screen"
+          - roll: { min: 91, max: 100 }
+            text: "Unusual structure"
+      cursed_lurking_threat_minor_control_threa:
+        name:
+          "Megacity Cursed Lurking Threat - Minor Control (Threat / When the clock
+          advances... / When the clock is filled...)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 6 }
+            text:
+              "Corrupted sectarians / Ill-omened ideograms; ritualistic objects or
+              remains / The sect make its move!"
+          - roll: { min: 7, max: 23 }
+            text:
+              "Devastating aberration / Minor side-effects; slight anomalous effects / A
+              powerful aberration forms!"
+          - roll: { min: 24, max: 33 }
+            text:
+              "Elite keeper / Activation signals; structures closing for protection / A
+              dominant construct appears!"
+          - roll: { min: 34, max: 38 }
+            text:
+              "Hazardous festival /  Foreboding announcements; structures modifying for
+              arrival / A procession of keepers appear!"
+          - roll: { min: 39, max: 53 }
+            text:
+              "Infesting organisms /  Scuttles or chittering; revolting nests / Vicious
+              clusters of lifeforms spread!"
+          - roll: { min: 54, max: 68 }
+            text:
+              "Mighty creature / Territorial markings; signs or sounds of a creature on
+              the hunt / The creature strikes!"
+          - roll: { min: 69, max: 83 }
+            text:
+              "Sanitation treatment / Protocol announcements; caustic substances are
+              spread / Your body breaks down!"
+          - roll: { min: 84, max: 100 }
+            text:
+              "Unleashed entities / Spectral noises; glimpses of phantom forms / A group
+              entities spawn!"
+      cursed_lurking_threat_total_control_threa:
+        name:
+          "Megacity Cursed Lurking Threat - Total Control (Threat / When the clock
+          advances... / When the clock is filled...)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 2 }
+            text:
+              "Corrupted sectarians / Ill-omened ideograms; ritualistic objects or
+              remains / The sect make its move!"
+          - roll: { min: 3, max: 10 }
+            text:
+              "Devastating aberration / Minor side-effects; slight anomalous effects / A
+              powerful aberration forms!"
+          - roll: { min: 11, max: 44 }
+            text:
+              "Elite keeper / Activation signals; structures closing for protection / A
+              dominant construct appears!"
+          - roll: { min: 45, max: 59 }
+            text:
+              "Hazardous festival /  Foreboding announcements; structures modifying for
+              arrival / A procession of keepers appear!"
+          - roll: { min: 60, max: 70 }
+            text:
+              "Infesting organisms /  Scuttles or chittering; revolting nests / Vicious
+              clusters of lifeforms spread!"
+          - roll: { min: 71, max: 81 }
+            text:
+              "Mighty creature / Territorial markings; signs or sounds of a creature on
+              the hunt / The creature strikes!"
+          - roll: { min: 82, max: 92 }
+            text:
+              "Sanitation treatment / Protocol announcements; caustic substances are
+              spread / Your body breaks down!"
+          - roll: { min: 93, max: 100 }
+            text:
+              "Unleashed entities / Spectral noises; glimpses of phantom forms / A group
+              entities spawn!"
+      outer_first_look:
+        name: "Megacity Outer First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 2 }
+            text: "Cyphered messages in known alphabet"
+          - roll: { min: 3, max: 4 }
+            text: "Idyllic appearance or architecture"
+          - roll: { min: 5, max: 6 }
+            text: "Surrounded by smoldering ashes"
+          - roll: { min: 7, max: 8 }
+            text: "Immense crashed ship or vessel"
+          - roll: { min: 9, max: 11 }
+            text: "Majestic and grand adornments"
+          - roll: { min: 12, max: 13 }
+            text: "Pervasive undulating vibrations"
+          - roll: { min: 14, max: 15 }
+            text: "Connective skyways or tunnels"
+          - roll: { min: 16, max: 17 }
+            text: "Beautifying all its surroundings"
+          - roll: { min: 18, max: 20 }
+            text: "Grim, industrial infrastructure"
+          - roll: { min: 21, max: 22 }
+            text: "Evidence of new inhabitants"
+          - roll: { min: 23, max: 25 }
+            text: "Power-conducting surfaces"
+          - roll: { min: 26, max: 27 }
+            text: "Gigantic statue or monolith"
+          - roll: { min: 28, max: 30 }
+            text: "Flanked by huge monoliths"
+          - roll: { min: 31, max: 32 }
+            text: "Signs of a previous conflict"
+          - roll: { min: 33, max: 35 }
+            text: "Entrance for large vehicles"
+          - roll: { min: 36, max: 37 }
+            text: "Scaled for outsized beings"
+          - roll: { min: 38, max: 40 }
+            text: "Encased in an energy field"
+          - roll: { min: 41, max: 43 }
+            text: "No obvious point of entry"
+          - roll: { min: 44, max: 46 }
+            text: "Crumbling infrastructure"
+          - roll: { min: 47, max: 49 }
+            text: "Bulwark against assaults"
+          - roll: { min: 50, max: 51 }
+            text: "Hazardous surroundings"
+          - roll: { min: 52, max: 54 }
+            text: "Electric arcs and sparks"
+          - roll: { min: 55, max: 56 }
+            text: "Energy core or conduit"
+          - roll: { min: 57, max: 59 }
+            text: "Leaking gases or vapor"
+          - roll: { min: 60, max: 61 }
+            text: "Distinct segmentation"
+          - roll: { min: 62, max: 64 }
+            text: "Lighted or illuminated"
+          - roll: { min: 65, max: 67 }
+            text: "Electromagnetic field"
+          - roll: { min: 68, max: 69 }
+            text: "Reflective structures"
+          - roll: { min: 70, max: 72 }
+            text: "Collapsed structures"
+          - roll: { min: 73, max: 75 }
+            text: "Natural reclamation"
+          - roll: { min: 76, max: 78 }
+            text: "Glyphs or symbols"
+          - roll: { min: 79, max: 81 }
+            text: "Signal or message"
+          - roll: { min: 82, max: 84 }
+            text: "Gigantic entrance"
+          - roll: { min: 85, max: 86 }
+            text: "Breached exterior"
+          - roll: { min: 87, max: 88 }
+            text: "Leaking radiation"
+          - roll: { min: 89, max: 91 }
+            text: "Flickering lights"
+          - roll: { min: 92, max: 93 }
+            text: "Blocked access"
+          - roll: { min: 94, max: 95 }
+            text: "Orbiting object"
+          - roll: { min: 96, max: 100 }
+            text: "Descriptor + Focus"
+      lurking_threat_partial_control_threat_whe:
+        name:
+          "Megacity Lurking Threat - Partial Control (Threat / When the clock
+          advances... / When the clock is filled...)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 13 }
+            text:
+              "Climate changesi / Temperature fluctuations; minor bodily reactions /
+              Your body suffers a major affliction!"
+          - roll: { min: 14, max: 20 }
+            text:
+              "Crumbling buildings / Creaking and groaning sounds; tumbling debris /
+              Buildings collapse!"
+          - roll: { min: 21, max: 29 }
+            text:
+              "Defensive mechanism / Trigger signals; counter-assault preparations / The
+              machines strike!"
+          - roll: { min: 30, max: 36 }
+            text:
+              "Energy overload / Electricity arcs; remarkable fluctuations in power /
+              Energy threatens you from all sides!"
+          - roll: { min: 37, max: 46 }
+            text:
+              "Guarding keepers / Signs of being under surveillance; sounds of
+              mechanical motility / A force of keepers defend the city!"
+          - roll: { min: 47, max: 59 }
+            text:
+              "Lurking predator / Glances of the creature; remains of previous attacks /
+              The predator attacks!"
+          - roll: { min: 60, max: 72 }
+            text:
+              "Perplexing space / Undecipherable environment; confusion take hold /
+              Anxiety or panic takes over!"
+          - roll: { min: 73, max: 79 }
+            text:
+              "Rival delvers / Evidence of recent activity; distance voices / Your rival
+              makes their move!"
+          - roll: { min: 80, max: 86 }
+            text:
+              "Transforming pathways / Surroundings being altered; reconfigured routes /
+              You get lost!"
+          - roll: { min: 87, max: 93 }
+            text:
+              "Urban fire / Encompassing and intense heat; obfuscating smoke / Fire
+              causes destruction!"
+          - roll: { min: 94, max: 100 }
+            text:
+              "Urban flood / Surging currents; inundated spaces / The pathway is
+              engulfed!"
+      size_scale_human_population_capacity:
+        name: "Megacity Size (Scale / Human Population Capacity)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Enormous / Tens of thousands"
+          - roll: { min: 11, max: 25 }
+            text: "Massive / Hundreds of thousands"
+          - roll: { min: 26, max: 60 }
+            text: "Gigantic / A million"
+          - roll: { min: 61, max: 85 }
+            text: "Colossal / Tens of millions"
+          - roll: { min: 86, max: 100 }
+            text: "Megalithic / A hundred million"
+      inner_first_look:
+        name: "Megacity Inner First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          The following oracle provides inspiration for the initial survey of a megacity by generating details about each new area of a megacity's interior.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 1 }
+            text: "Aesthetic doesn't match exterior"
+          - roll: { min: 2, max: 2 }
+            text: "Pervasive undulating vibrations"
+          - roll: { min: 3, max: 3 }
+            text: "Evidence of new inhabitants"
+          - roll: { min: 4, max: 4 }
+            text: "Automated announcements"
+          - roll: { min: 5, max: 5 }
+            text: "Ornate markings or symbols"
+          - roll: { min: 6, max: 6 }
+            text: "Power-conducting surfaces"
+          - roll: { min: 7, max: 7 }
+            text: "Distinctively preserved area"
+          - roll: { min: 8, max: 8 }
+            text: "Signs of a previous conflict"
+          - roll: { min: 9, max: 9 }
+            text: "Thick or fluid atmosphere"
+          - roll: { min: 10, max: 10 }
+            text: "Evidence of scavenging"
+          - roll: { min: 11, max: 11 }
+            text: "Greatly beautified area"
+          - roll: { min: 12, max: 12 }
+            text: "Overly-adorned paths"
+          - roll: { min: 13, max: 13 }
+            text: "Reflective structures"
+          - roll: { min: 14, max: 14 }
+            text: "Thick haze or smoke"
+          - roll: { min: 15, max: 15 }
+            text: "Well-preserved area"
+          - roll: { min: 16, max: 16 }
+            text: "Magnetic surfaces"
+          - roll: { min: 17, max: 17 }
+            text: "Cryptic interfaces"
+          - roll: { min: 18, max: 18 }
+            text: "Active constructs"
+          - roll: { min: 19, max: 19 }
+            text: "Toxic atmosphere"
+          - roll: { min: 20, max: 20 }
+            text: "Adverse flooding"
+          - roll: { min: 21, max: 21 }
+            text: "Cyphered messages in known alphabet"
+          - roll: { min: 22, max: 22 }
+            text: "Connective passageways or corridors"
+          - roll: { min: 23, max: 23 }
+            text: "Environment reacts to your presence"
+          - roll: { min: 24, max: 25 }
+            text: "Environment unfit for human biology"
+          - roll: { min: 26, max: 27 }
+            text: "Majestic and grand ornamentations"
+          - roll: { min: 28, max: 29 }
+            text: "Immense cargo pods or containers"
+          - roll: { min: 30, max: 31 }
+            text: "Idyllic appearance or architecture"
+          - roll: { min: 32, max: 33 }
+            text: "Cluttered with debris or rubble"
+          - roll: { min: 34, max: 35 }
+            text: "Grim, industrial infrastructure"
+          - roll: { min: 36, max: 37 }
+            text: "Electromagnetic interference"
+          - roll: { min: 38, max: 39 }
+            text: "Overspread smoldering ashes"
+          - roll: { min: 40, max: 41 }
+            text: "Thrumming or droning sound"
+          - roll: { min: 42, max: 43 }
+            text: "Echoes of distant machinery"
+          - roll: { min: 44, max: 45 }
+            text: "Complex designs or patterns"
+          - roll: { min: 46, max: 47 }
+            text: "Nesting or feeding creatures"
+          - roll: { min: 48, max: 49 }
+            text: "Gigantic statue or monolith"
+          - roll: { min: 50, max: 51 }
+            text: "Signs of invasive lifeforms"
+          - roll: { min: 52, max: 53 }
+            text: "Fluctuating temperatures"
+          - roll: { min: 54, max: 55 }
+            text: "Electrical arcs and sparks"
+          - roll: { min: 56, max: 57 }
+            text: "Heavy steam or moisture"
+          - roll: { min: 58, max: 59 }
+            text: "Pools of synthetic liquids"
+          - roll: { min: 60, max: 61 }
+            text: "Crumbling infrastructure"
+          - roll: { min: 62, max: 63 }
+            text: "Loud mechanical noises"
+          - roll: { min: 64, max: 65 }
+            text: "Leaking gases or vapor"
+          - roll: { min: 66, max: 67 }
+            text: "Distinct segmentation"
+          - roll: { min: 68, max: 69 }
+            text: "Excessive cold or heat"
+          - roll: { min: 70, max: 71 }
+            text: "Lighted or illuminated"
+          - roll: { min: 72, max: 73 }
+            text: "Faint ambient lighting"
+          - roll: { min: 74, max: 75 }
+            text: "Obfuscating pollution"
+          - roll: { min: 76, max: 77 }
+            text: "Radioactive hotspots"
+          - roll: { min: 78, max: 79 }
+            text: "Collapsed structures"
+          - roll: { min: 80, max: 81 }
+            text: "Natural reclamation"
+          - roll: { min: 82, max: 83 }
+            text: "Path or traffic signs"
+          - roll: { min: 84, max: 85 }
+            text: "Energy overcharge"
+          - roll: { min: 86, max: 87 }
+            text: "Fluctuating power"
+          - roll: { min: 88, max: 89 }
+            text: "Energy surges"
+          - roll: { min: 90, max: 91 }
+            text: "Wet or humid"
+          - roll: { min: 92, max: 93 }
+            text: "Intense smell"
+          - roll: { min: 94, max: 95 }
+            text: "Toxic residue"
+          - roll: { min: 96, max: 100 }
+            text: "Descriptor + Focus"
+      class_open_sea:
+        name: "Megacity Class - Open Sea"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify a megacity based on the surrounding environment.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text: "Cloud City"
+          - roll: { min: 16, max: 35 }
+            text: "Megatall City"
+          - roll: { min: 36, max: 100 }
+            text: "Movable City"
+      class_sky:
+        name: "Megacity Class - Sky"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify a megacity based on the surrounding environment.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 35 }
+            text: "Ceiling City"
+          - roll: { min: 36, max: 65 }
+            text: "Cloud City"
+          - roll: { min: 66, max: 75 }
+            text: "Dome City"
+          - roll: { min: 76, max: 90 }
+            text: "Megatall City"
+          - roll: { min: 91, max: 95 }
+            text: "Movable City"
+          - roll: { min: 96, max: 100 }
+            text: "Sea City"
+      cipher_cursed:
+        name: "Cursed Megacity Cipher"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Anomalous apparatus"
+          - roll: { min: 11, max: 20 }
+            text: "Cautionary message from dying explorer"
+          - roll: { min: 21, max: 30 }
+            text: "Distinctive visit or warning"
+          - roll: { min: 31, max: 40 }
+            text: "Dreadful dreams or visions"
+          - roll: { min: 41, max: 50 }
+            text: "Evidence of horrendous death or violence"
+          - roll: { min: 51, max: 60 }
+            text: "Harrowing documentation"
+          - roll: { min: 61, max: 70 }
+            text: "Holographic reenactment"
+          - roll: { min: 71, max: 80 }
+            text: "Lethal mechanism or trap"
+          - roll: { min: 81, max: 90 }
+            text: "Oversized or menacing keepers"
+          - roll: { min: 91, max: 100 }
+            text: "Violently improvised message"
+      class_land:
+        name: "Megacity Class - Land"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify a megacity based on the surrounding environment.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 5 }
+            text: "Cloud City"
+          - roll: { min: 6, max: 35 }
+            text: "Dome City"
+          - roll: { min: 36, max: 60 }
+            text: "Megatall City"
+          - roll: { min: 61, max: 100 }
+            text: "Movable City"
+      class_underwater:
+        name: "Megacity Class - Underwater"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify a megacity based on the surrounding environment.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Dome City"
+          - roll: { min: 11, max: 20 }
+            text: "Underground City"
+          - roll: { min: 21, max: 100 }
+            text: "Underwater City"
+      cursed_lurking_threat_partial_control_thr:
+        name:
+          "Megacity Cursed Lurking Threat - Partial Control (Threat / When the clock
+          advances... / When the clock is filled...)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 3 }
+            text:
+              "Corrupted sectarians / Ill-omened ideograms; ritualistic objects or
+              remains / The sect make its move!"
+          - roll: { min: 4, max: 17 }
+            text:
+              "Devastating aberration / Minor side-effects; slight anomalous effects / A
+              powerful aberration forms!"
+          - roll: { min: 18, max: 37 }
+            text:
+              "Elite keeper / Activation signals; structures closing for protection / A
+              dominant construct appears!"
+          - roll: { min: 38, max: 47 }
+            text:
+              "Hazardous festival /  Foreboding announcements; structures modifying for
+              arrival / A procession of keepers appear!"
+          - roll: { min: 48, max: 60 }
+            text:
+              "Infesting organisms /  Scuttles or chittering; revolting nests / Vicious
+              clusters of lifeforms spread!"
+          - roll: { min: 61, max: 73 }
+            text:
+              "Mighty creature / Territorial markings; signs or sounds of a creature on
+              the hunt / The creature strikes!"
+          - roll: { min: 74, max: 86 }
+            text:
+              "Sanitation treatment / Protocol announcements; caustic substances are
+              spread / Your body breaks down!"
+          - roll: { min: 87, max: 100 }
+            text:
+              "Unleashed entities / Spectral noises; glimpses of phantom forms / A group
+              entities spawn!"
+      status_total_control:
+        name: "Megacity Status - Total Control"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Megacities are in a ruinous state. Use the table below to identify the current condition of a megacity within that framework. Keepers have maintained near total control of the megacities
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text:
+              "Partially built / The megacity never reached a point of completion. The
+              population that originated this megacity never inhabited it"
+          - roll: { min: 11, max: 35 }
+            text:
+              "Devastated / The megacity has either been destroyed or taken significant
+              damage at some point, naturally or by other means"
+          - roll: { min: 36, max: 90 }
+            text:
+              "Abandoned / The megacity's population left. The habitat may be
+              functional, but its lack of adequate maintenance has taken its
+              toll"
+          - roll: { min: 91, max: 100 }
+            text:
+              "Inhabited / The megacity, despite its state of disrepair, has become a
+              settlement for humanity"
+      status_minor_control:
+        name: "Megacity Status - Minor Control"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Megacities are in a ruinous state. Use the table below to identify the current condition of a megacity within that framework. Keepers have minor control of the megacities
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text:
+              "Partially built / The megacity never reached a point of completion. The
+              population that originated this megacity never inhabited it"
+          - roll: { min: 11, max: 35 }
+            text:
+              "Devastated / The megacity has either been destroyed or taken significant
+              damage at some point, naturally or by other means"
+          - roll: { min: 36, max: 50 }
+            text:
+              "Abandoned / The megacity's population left. The habitat may be
+              functional, but its lack of adequate maintenance has taken its
+              toll"
+          - roll: { min: 51, max: 100 }
+            text:
+              "Inhabited / The megacity, despite its state of disrepair, has become a
+              settlement for humanity"
+      outer_first_look_cursed:
+        name: "Cursed Megacity Outer First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 4 }
+            text: "Structures of disturbing subject matter"
+          - roll: { min: 5, max: 8 }
+            text: "Structures defaced with cryptic glyphs"
+          - roll: { min: 9, max: 12 }
+            text: "Fouled with large masses of excretions"
+          - roll: { min: 13, max: 16 }
+            text: "Foreboding ornate and dramatic forms"
+          - roll: { min: 17, max: 20 }
+            text: "Ostentatious display of organic matter"
+          - roll: { min: 21, max: 24 }
+            text: "Constant flow of organic liquid matter"
+          - roll: { min: 25, max: 27 }
+            text: "Dead show glimpses of reanimation"
+          - roll: { min: 28, max: 30 }
+            text: "Dreadful howls or roars from within"
+          - roll: { min: 31, max: 34 }
+            text: "Sounds reminiscent of human pain"
+          - roll: { min: 35, max: 37 }
+            text: "Desiccated or putrefied corpses"
+          - roll: { min: 38, max: 40 }
+            text: "Guarded by monstrous creature"
+          - roll: { min: 41, max: 44 }
+            text: "Overwhelming stench of decay"
+          - roll: { min: 45, max: 48 }
+            text: "Scarred with bestial scratches"
+          - roll: { min: 49, max: 52 }
+            text: "Mutated or warped structures"
+          - roll: { min: 53, max: 56 }
+            text: "Corrupting its surroundings"
+          - roll: { min: 57, max: 60 }
+            text: "Esoteric writing or symbols"
+          - roll: { min: 61, max: 64 }
+            text: "Surrounded by destruction"
+          - roll: { min: 65, max: 68 }
+            text: "Time or reality distortions"
+          - roll: { min: 69, max: 72 }
+            text: "Shrouded in mist or haze"
+          - roll: { min: 73, max: 75 }
+            text: "Visions or apparitions"
+          - roll: { min: 76, max: 78 }
+            text: "Whispers of the dead"
+          - roll: { min: 79, max: 81 }
+            text: "Uncanny illumination"
+          - roll: { min: 82, max: 85 }
+            text: "Automated defenses"
+          - roll: { min: 86, max: 89 }
+            text: "Hazardous readings"
+          - roll: { min: 90, max: 93 }
+            text: "Mysterious echoes"
+          - roll: { min: 94, max: 96 }
+            text: "Mass graves"
+          - roll: { min: 97, max: 100 }
+            text: "Noxious fog"
+      opportunity:
+        name: "Opportunity In The Megacity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this set of oracles to detail your exploration in the depths of a megacity.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 2 }
+            text:
+              "[Theme](datasworn:oracle_rollable:starforged/core/theme) Opportunity; RG,
+              pg 100"
+          - roll: { min: 3, max: 4 }
+            text:
+              "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity;
+              RG, pg 82"
+          - roll: { min: 5, max: 6 }
+            text: "Vault Opportunity"
+      mystery_result_question:
+        name: "Megacity Mystery (Result / Question)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 8 }
+            text: "Ancient relic / What alien artifact or treasure can be found here?"
+          - roll: { min: 9, max: 17 }
+            text:
+              "Biological constitution / What were the species that inhabited this
+              place?"
+          - roll: { min: 18, max: 26 }
+            text:
+              "Civilizational purpose / What was the overall function of this city for
+              its species?"
+          - roll: { min: 27, max: 34 }
+            text:
+              "Cryptic waymaker / What greater location or finding does this site lead
+              to?"
+          - roll: { min: 35, max: 42 }
+            text: "Enemy plot / What objective does a foe or rival have in this site?"
+          - roll: { min: 43, max: 50 }
+            text:
+              "Lost inhabitant / What was the destiny of the people who originally lived
+              here?"
+          - roll: { min: 51, max: 58 }
+            text:
+              "Political system / What was the form of government which ruled this
+              settlement?"
+          - roll: { min: 59, max: 66 }
+            text: "Popular faith / What was the most widespread belief in this place?"
+          - roll: { min: 67, max: 74 }
+            text:
+              "Social structure / What was the collective arrangement of the people who
+              lived here?"
+          - roll: { min: 75, max: 82 }
+            text:
+              "Traditional practices / What important cultural customs were practiced
+              here?"
+          - roll: { min: 83, max: 91 }
+            text:
+              "Unfinished project / What abandoned program left its shadow in this
+              site?"
+          - roll: { min: 92, max: 100 }
+            text: "Valuable resource / What stock of goods or materials can be found here?"
+      mystery_result_question_cursed:
+        name: "Cursed Megacity Mystery (Result / Question)"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text:
+              "Commanding keeper / What is the nature of the overseeing construct that
+              guards this  site?"
+          - roll: { min: 11, max: 20 }
+            text: "Confined being / What entity or creature is imprisoned in this place?"
+          - roll: { min: 21, max: 30 }
+            text: "Cursed relic / What treasure or splinter of the past is held here?"
+          - roll: { min: 31, max: 40 }
+            text:
+              "Eldritch sect / What corrupted faction made this site their place of
+              operation?"
+          - roll: { min: 41, max: 50 }
+            text: "Enigmatic gateway / What strange domain does this site connect to?"
+          - roll: { min: 51, max: 60 }
+            text:
+              "Haunting anomaly / What aberration makes its presence felt in this
+              place?"
+          - roll: { min: 61, max: 70 }
+            text: "Menacing portent / What foreboding catastrophe does this site hold?"
+          - roll: { min: 71, max: 80 }
+            text:
+              "Ruinous fallout / What calamity left this place bound to everlasting
+              decay?"
+          - roll: { min: 81, max: 90 }
+            text: "Weird mutation / What physical or mental alteration can this site cause?"
+          - roll: { min: 91, max: 100 }
+            text:
+              "Wretched technology / What abnormal machinery or apparatus affects this
+              site?"

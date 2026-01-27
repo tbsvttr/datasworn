@@ -1,0 +1,175 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+oracles:
+  solar_system:
+    name: "Solar Systems"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#f1c40f"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      celestial_harvesters_star_lifter_stellar_hazard:
+        name: "Celestial Harvesters Star Lifter Stellar Hazard"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          When you are in a sector containing an operational - or dysfunctional - star lifter, set a ten-segment tension clock. Once all segments are filled, the star lifter has drawn away enough of the star's mass that it creates a temporary, system-spanning hazard. Use the table below to identify it.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 20 }
+            text: "Blinding flashes of light"
+          - roll: { min: 21, max: 40 }
+            text: "Gargantuan solar flares"
+          - roll: { min: 41, max: 60 }
+            text: "Powerful gravitational waves"
+          - roll: { min: 61, max: 75 }
+            text: "Turbulent energy storms"
+          - roll: { min: 76, max: 85 }
+            text: "Volleys of super-heated meteors"
+          - roll: { min: 86, max: 95 }
+            text: "Beams of ionizing radiation"
+          - roll: { min: 96, max: 100 }
+            text: "Unearthly screams"
+      ecosphere_environment_starforged:
+        name: "Ecosphere Environment - Starforged"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to determine the internal habitat of an ecosphere.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 13 }
+            text: "[Desert World](datasworn:oracle_collection:ancient_wonders/planet/desert) (pg 50)"
+          - roll: { min: 14, max: 26 }
+            text: "[Furnace World](datasworn:oracle_collection:ancient_wonders/planet/furnace) (pg 52)"
+          - roll: { min: 27, max: 39 }
+            text: "[Ice World](datasworn:oracle_collection:ancient_wonders/planet/ice) (pg 56)"
+          - roll: { min: 40, max: 52 }
+            text: "[Jungle World](datasworn:oracle_collection:ancient_wonders/planet/jungle) (pg 60)"
+          - roll: { min: 53, max: 65 }
+            text: "[Ocean World](datasworn:oracle_collection:ancient_wonders/planet/ocean) (pg 70)"
+          - roll: { min: 66, max: 78 }
+            text: "[Rocky World](datasworn:oracle_collection:ancient_wonders/planet/rocky) (pg 72)"
+          - roll: { min: 79, max: 91 }
+            text: "[Tainted World](datasworn:oracle_collection:ancient_wonders/planet/tainted) (pg 76)"
+          - roll: { min: 92, max: 100 }
+            text: "[Vital World](datasworn:oracle_collection:ancient_wonders/planet/vital) (pg 80)"
+      stellar_compressor_when_discovered_solar_system_ba:
+        name: "Stellar Compressor When Discovered... - Solar System Based"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Mark the megastructure at the position of the stellar object. When rolling to determine the number of planets roll on the table below.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Three"
+          - roll: { min: 11, max: 30 }
+            text: "Four"
+          - roll: { min: 31, max: 60 }
+            text: "Five"
+          - roll: { min: 61, max: 100 }
+            text: "Six"
+      # starship_type:
+      #   name: "Starship Type"
+      #   oracle_type: table_text
+      #   type: oracle_rollable
+      #   _source:
+      #     <<: *Source
+      #   rows:
+      #     - roll: { min: 1, max: 2 }
+      #       text: "Carrier"
+      #     - roll: { min: 3, max: 6 }
+      #       text: "Corvette"
+      #     - roll: { min: 7, max: 11 }
+      #       text: "Courier"
+      #     - roll: { min: 12, max: 14 }
+      #       text: "Cruiser"
+      #     - roll: { min: 15, max: 16 }
+      #       text: "Dreadnought"
+      #     - roll: { min: 17, max: 19 }
+      #       text: "Escape pod"
+      #     - roll: { min: 20, max: 22 }
+      #       text: "Foundry"
+      #     - roll: { min: 23, max: 27 }
+      #       text: "Harvester"
+      #     - roll: { min: 28, max: 33 }
+      #       text: "Hauler"
+      #     - roll: { min: 34, max: 36 }
+      #       text: "Hunter"
+      #     - roll: { min: 37, max: 38 }
+      #       text: "Ironhome"
+      #     - roll: { min: 39, max: 42 }
+      #       text: "Mender"
+      #     - roll: { min: 43, max: 47 }
+      #       text: "Outbounder"
+      #     - roll: { min: 48, max: 50 }
+      #       text: "Pennant"
+      #     - roll: { min: 51, max: 56 }
+      #       text: "Prospector"
+      #     - roll: { min: 57, max: 61 }
+      #       text: "Reclaimer"
+      #     - roll: { min: 62, max: 64 }
+      #       text: "Shuttle"
+      #     - roll: { min: 65, max: 67 }
+      #       text: "Snub fighter"
+      #     - roll: { min: 68, max: 82 }
+      #       text: "Multipurpose"
+      #     - roll: { min: 83, max: 84 }
+      #       text: "Unusual or unknown"
+      #     - roll: { min: 85, max: 94 }
+      #       text: "[Fleet]"
+      #     - roll: { min: 95, max: 100 }
+      #       text: "Ships in conflict (roll twice)"
+      unidentified_megastructure_when_discovered_solar_s:
+        name: "Unidentified Megastructure When Discovered Solar System Based"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Sub-planetary scale -- First, roll on the following table to determine the megastructure location.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 40 }
+            text: "Planetside"
+          - roll: { min: 41, max: 75 }
+            text: "Orbital"
+          - roll: { min: 76, max: 100 }
+            text: "Deep space"
+      # starship_fleet:
+      #   name: "Starship Fleet"
+      #   oracle_type: table_text
+      #   type: oracle_rollable
+      #   _source:
+      #     <<: *Source
+      #   rows:
+      #     - roll: { min: 1, max: 10 }
+      #       text: "Battle fleet"
+      #     - roll: { min: 11, max: 25 }
+      #       text: "Pirate wing"
+      #     - roll: { min: 26, max: 35 }
+      #       text: "Raider horde"
+      #     - roll: { min: 36, max: 50 }
+      #       text: "Salvager hive"
+      #     - roll: { min: 51, max: 60 }
+      #       text: "Settler caravan"
+      #     - roll: { min: 61, max: 70 }
+      #       text: "Trade caravan"
+      #     - roll: { min: 71, max: 90 }
+      #       text: "Transport and escorts"
+      #     - roll: { min: 91, max: 100 }
+      #       text: '<a class="entity-link oracle-category-link"
+      #         data-dsid="oracle_collection:starforged/starship/mission">    <i
+      #         class="fa fa-caret-right"></i> Starship Mission</a>'
