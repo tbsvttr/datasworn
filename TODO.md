@@ -123,7 +123,7 @@ Feedback from southpole regarding converter-generated data.
 
 ### Starsmith (for Starforged) - by Eric Bright
 
-Currently only includes **Expanded Oracles** (~9,800 oracle entries).
+Currently includes **Expanded Oracles** (~9,800 oracle entries) and **Assets** (32).
 
 Recent improvements (PR #8 by southpole):
 
@@ -133,7 +133,7 @@ Recent improvements (PR #8 by southpole):
 
 Missing content:
 
-- [ ] **New Assets** - 32 assets across all categories (should be straightforward)
+- [x] **New Assets** - 32 assets across all categories (Module: 7, Path: 15, Companion: 5, Deed: 4, Support Vehicle: 1)
 - [ ] **Additional Oracles** - e.g., "Random NPC Conversions" and others not in current data
 - [ ] **Mecha Mercs** - Modular giant robot system with 4 chassis types (adds new mechanics - harder to convert)
 

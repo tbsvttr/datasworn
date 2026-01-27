@@ -113372,7 +113372,1924 @@
 			}
 		}
 	},
-	"assets": {},
+	"assets": {
+		"module": {
+			"_id": "asset_collection:starsmith/module",
+			"type": "asset_collection",
+			"name": "Module Assets",
+			"color": "#7f5a90",
+			"contents": {
+				"aeroponics": {
+					"_id": "asset:starsmith/module/aeroponics",
+					"type": "asset",
+					"name": "Aeroponics",
+					"category": "Module",
+					"options": {},
+					"count_as_impact": false,
+					"shared": true,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/module/aeroponics.0",
+							"enabled": true,
+							"options": {},
+							"text": "You have a high yield aeroponics bay to enrich your food supply. When you [Resupply](datasworn:move:starforged/recover/resupply) at a settlement in need of fresh food, add +1 or take +2 momentum on a hit. The food takes some time to regrow.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/aeroponics.1",
+							"enabled": false,
+							"options": {},
+							"text": "You have cultivated part of the bay into a meditative arboretum. Once per journey when you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition), you may take time to recenter yourself and [Hearten](datasworn:move:starforged/recover/hearten). If you do, add +2.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/aeroponics.2",
+							"enabled": false,
+							"options": {},
+							"text": "You have an ideal growing environment for a specialized herb. Envision what this herb does. Then, when you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by using this herb, add +2. Once pruned, this herb takes significant time to regrow.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"armory": {
+					"_id": "asset:starsmith/module/armory",
+					"type": "asset",
+					"name": "Armory",
+					"category": "Module",
+					"options": {},
+					"count_as_impact": false,
+					"shared": true,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/module/armory.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) to oppose an invader within your vehicle, boost. On a strong hit, they were unprepared for your firepower. Add +1 to all moves until you roll a one on your action die.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/armory.1",
+							"enabled": false,
+							"options": {},
+							"text": "You may prepare for engaging in combat by taking limited-use armaments from your armory. If you do, one time only, when you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray), choose your approach.\n\n  * Going in hot: On a hit, take +2 momentum. On a strong hit with a match, also mark progress.\n  * Gain the upper hand: Add +2.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/armory.2",
+							"enabled": false,
+							"options": {},
+							"text": "You may prepare for a drawn-out battle by taking specialized ammunition. If you do, during a single combat scene only, you may reroll any action die showing a one when you [Strike](datasworn:move:starforged/combat/strike) or [Clash](datasworn:move:starforged/combat/clash).",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"drones": {
+					"_id": "asset:starsmith/module/drones",
+					"type": "asset",
+					"name": "Drones",
+					"category": "Module",
+					"options": {},
+					"count_as_impact": false,
+					"shared": true,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/module/drones.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your set of hoverbike-sized drones are equipped with combat analytics to fight at your side.  When you [Strike](datasworn:move:starforged/combat/strike) aided by the drones, add +1.  When you [Clash](datasworn:move:starforged/combat/clash), take +1 momentum on a hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/drones.1",
+							"enabled": false,
+							"options": {},
+							"text": "Your drones are equipped with triangulating astronavigation sensors. When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) (+wits) using the drones to help guide your command vehicle on a journey, boost and suffer -1 integrity to the drones.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/drones.2",
+							"enabled": false,
+							"options": {},
+							"text": "Your drones are equipped with stealth plating, false signal projectors and sensor jamming systems. When you make a move against a specific foe or threat to avoid detection with their help, boost and suffer -1 integrity to the drones.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"integrity": {
+							"label": "integrity",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 3,
+							"value": 3,
+							"controls": {}
+						},
+						"broken": {
+							"label": "broken",
+							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"external_refit": {
+					"_id": "asset:starsmith/module/external_refit",
+					"type": "asset",
+					"name": "External Refit",
+					"category": "Module",
+					"options": {},
+					"count_as_impact": false,
+					"shared": true,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/module/external_refit.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your command vehicle is sealed against high pressure environments and can travel underwater. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) to traverse hazardous underwater currents or areas of dangerous debris, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/external_refit.1",
+							"enabled": false,
+							"options": {},
+							"text": "Your command vehicle is equipped with radiation reflective plating. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) from a hostile space environment, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/external_refit.2",
+							"enabled": false,
+							"options": {},
+							"text": "Your command vehicle has a modular design that shifts its physical form to fit the situation. If you take time to reconfigure your ship or [Face Danger](datasworn:move:starforged/adventure/face_danger) to do it swiftly, declare a stat. Thereafter, when you make a move with your command vehicle utilizing that stat, roll with advantage. With all other stats, roll with disadvantage.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"holodeck": {
+					"_id": "asset:starsmith/module/holodeck",
+					"type": "asset",
+					"name": "Holodeck",
+					"category": "Module",
+					"options": {
+						"path": {
+							"label": "path",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": true,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/module/holodeck.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your holodeck helps you practice and prepare. Declare a path asset you are training for, and set your training cycle to 0. Once per journey when you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition), you may train in the holodeck. If you do, roll +integrity or +an appropriate stat. On a hit, take +1 training cycle. When your training cycle is at 4 and you [Advance](datasworn:move:starforged/legacy/advance) to gain or upgrade the declared asset, it costs -1 XP. Then, set your training cycle to zero and declare a new path asset.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/holodeck.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Gather Information](datasworn:move:starforged/adventure/gather_information) or [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by talking to a holographic facsimile of an expert, add +1.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/holodeck.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you take time for yourself and [Hearten](datasworn:move:starforged/recover/hearten) using a favorite recreational program, add +1.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"training": {
+							"label": "training",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 4,
+							"value": 4,
+							"controls": {}
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"stabilizers": {
+					"_id": "asset:starsmith/module/stabilizers",
+					"type": "asset",
+					"name": "Stabilizers",
+					"category": "Module",
+					"options": {},
+					"count_as_impact": false,
+					"shared": true,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/module/stabilizers.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your deflector array clears the way for safer passage. When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) through debris or asteroid fields, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/stabilizers.1",
+							"enabled": false,
+							"options": {},
+							"text": "Your inertial dampeners protect the ship's vital systems. When you [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) from spaceborne environmental factors, add +2.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/stabilizers.2",
+							"enabled": false,
+							"options": {},
+							"text": "Your gravity compensators create an isolating graviton field about your ship. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) from gravitational forces around a star or stellar phenomenon, you may reroll any dice.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"tractor_beam": {
+					"_id": "asset:starsmith/module/tractor_beam",
+					"type": "asset",
+					"name": "Tractor Beam",
+					"category": "Module",
+					"options": {},
+					"count_as_impact": false,
+					"shared": true,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/module/tractor_beam.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your tractor beam can tow a smaller vehicle, asteroid or other willing object. When you make a move with the tractor beam, take +1 momentum on a hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/tractor_beam.1",
+							"enabled": false,
+							"options": {},
+							"text": "As above, but add +1 to the move as the beam splits into several smaller beams for finer manipulation of smaller objects.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/module/tractor_beam.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you take a minute or so to invert the polarity of your tractor beam and charge it, roll +integrity or +wits. On a hit, the beam is reversed and charged, and it may be released in a single blast. On a weak hit, as above, but it takes time. [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-1). On a miss, the charge fails and you must [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage) (-2). If you make a move to push a foe or obstacle away by releasing the charge, take an automatic strong hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"charged": {
+							"label": "charged",
+							"field_type": "checkbox",
+							"value": false,
+							"is_impact": false,
+							"disables_asset": false
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Starsmith: Assets",
+				"authors": [
+					{
+						"name": "Eric Bright"
+					}
+				],
+				"date": "2023-03-09",
+				"license": "https://creativecommons.org/licenses/by-sa/4.0",
+				"url": "https://playeveryrole.com/starsmith-products/"
+			}
+		},
+		"support_vehicle": {
+			"_id": "asset_collection:starsmith/support_vehicle",
+			"type": "asset_collection",
+			"name": "Support Vehicle Assets",
+			"color": "#5a6a8f",
+			"contents": {
+				"aquatic_hov": {
+					"_id": "asset:starsmith/support_vehicle/aquatic_hov",
+					"type": "asset",
+					"name": "Aquatic HOV",
+					"category": "Support Vehicle",
+					"options": {
+						"name": {
+							"label": "name",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/support_vehicle/aquatic_hov.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your unarmed HOV can be launched from orbit to splashdown into deep waters and holds several people and their equipment. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [React Under Fire](datasworn:move:starforged/combat/react_under_fire) to navigate through hazardous waters, avoid obstacles, or evade an attack, boost. A single use rocket may be fired to return the HOV to your command vehicle.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/support_vehicle/aquatic_hov.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gather Information](datasworn:move:starforged/adventure/gather_information) by scanning your surroundings with sensors, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/support_vehicle/aquatic_hov.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you make a move using the sub's manipulator arms to perform a delicate or forceful task, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"integrity": {
+							"label": "integrity",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 4,
+							"value": 4,
+							"controls": {}
+						},
+						"battered": {
+							"label": "battered",
+							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Starsmith: Assets",
+				"authors": [
+					{
+						"name": "Eric Bright"
+					}
+				],
+				"date": "2023-03-09",
+				"license": "https://creativecommons.org/licenses/by-sa/4.0",
+				"url": "https://playeveryrole.com/starsmith-products/"
+			}
+		},
+		"path": {
+			"_id": "asset_collection:starsmith/path",
+			"type": "asset_collection",
+			"name": "Path Assets",
+			"color": "#3a7f90",
+			"contents": {
+				"constable": {
+					"_id": "asset:starsmith/path/constable",
+					"type": "asset",
+					"name": "Constable",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/constable.0",
+							"enabled": true,
+							"options": {},
+							"text": "You are an agent of the law from a nearby locality. Envision where your authority comes from. When you invoke the law and [Compel](datasworn:move:starforged/adventure/compel) a person familiar with the authority you are associated with, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/constable.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Swear an Iron Vow](datasworn:move:starforged/quest/swear_an_iron_vow) (formidable or greater) to bring a lawbreaker to justice, reroll any dice. After you [Fulfill Your Vow](datasworn:move:starforged/quest/fulfill_your_vow) and score a hit, if you [Make a Connection](datasworn:move:starforged/connection/make_a_connection) with a victim of the criminal, add +2.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/constable.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Gather Information](datasworn:move:starforged/adventure/gather_information) while investigating a crime, you may roll a three dice challenge. On a miss with a match, envision what you learn of a deepening conspiracy or betrayal, make the rank of your quest one higher (no greater than epic), and use the new rank when marking future progress.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"cosmic_constructor": {
+					"_id": "asset:starsmith/path/cosmic_constructor",
+					"type": "asset",
+					"name": "Cosmic Constructor",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/cosmic_constructor.0",
+							"enabled": true,
+							"options": {},
+							"text": "You can mold cosmic energy into small, basic shapes with a physical form that last from a few moments to a few minutes. When you rest and meditate to gather this energy, roll +spirit. On a strong hit, take up to +3 energy. On a weak hit, take +2. On a miss, take +2 energy but [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-2). Your max energy is +5. When you make moves aided by your constructs to attack or overcome obstacles, add +2 and suffer -1 energy.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/cosmic_constructor.1",
+							"enabled": false,
+							"options": {},
+							"text": "As above, but your constructs may be medium sized with multiple shapes.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/cosmic_constructor.2",
+							"enabled": false,
+							"options": {},
+							"text": "As above, but your constructs may be larger, more intricate, more durable or longer lasting. If they are, suffer -2 energy when used instead of -1.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"energy": {
+							"label": "energy",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 5,
+							"controls": {}
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"enhanced": {
+					"_id": "asset:starsmith/path/enhanced",
+					"type": "asset",
+					"name": "Enhanced",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/enhanced.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your DNA was spliced with that of another species, known or unknown. Envision a permanent change this bestows upon your body and how others react to it when they find out. When you make a move directly aided by this change, add +1. On a strong hit, take +2 momentum. On a miss with a match, [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-2) as your body temporarily rejects the DNA.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/enhanced.1",
+							"enabled": false,
+							"options": {},
+							"text": "A second change permanently affects your body as above, but the benefits of the two changes do not stack.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/enhanced.2",
+							"enabled": false,
+							"options": {},
+							"text": "Encoded in your altered DNA is something that could change humanity forever. If you [Swear an Iron Vow](datasworn:move:starforged/quest/swear_an_iron_vow) to uncover this change (rank extreme or epic), reroll any dice. When you [Fulfill Your Vow](datasworn:move:starforged/quest/fulfill_your_vow) and score a hit, mark two boxes on your discoveries legacy track.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"linguist": {
+					"_id": "asset:starsmith/path/linguist",
+					"type": "asset",
+					"name": "Linguist",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/linguist.0",
+							"enabled": true,
+							"options": {},
+							"text": "You were trained in several languages and dialects found throughout the Forge. When you [Ask the Oracle](datasworn:move:starforged/fate/ask_the_oracle) if you know a specific language or dialect you encounter, increase the likelihood by one step.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/linguist.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by taking significant time to decipher an unknown language or decrypt a language based cypher, add +2.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/linguist.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Compel](datasworn:move:starforged/adventure/compel) using figurative language or slang to strike emotional chords in a language not native to you, roll with advantage.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"logistician": {
+					"_id": "asset:starsmith/path/logistician",
+					"type": "asset",
+					"name": "Logistician",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/logistician.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you focus or meditate to [Gather Information](datasworn:move:starforged/adventure/gather_information) about a place, being, or situation (in person or remotely) by puzzling through the logical causes, effects or outcomes, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/logistician.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by researching the circumstances of a concerning situation looking for connections that others may have missed, you may reroll any dice.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/logistician.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Compel](datasworn:move:starforged/adventure/compel) using a researched and evidence-based argument, you may roll +wits instead of +heart. If you do, take +2 momentum on a hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"precog": {
+					"_id": "asset:starsmith/path/precog",
+					"type": "asset",
+					"name": "Precog",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/precog.0",
+							"enabled": true,
+							"options": {},
+							"text": "You can see brief moments into the future allowing you to attempt avoiding mistakes. When you score a miss on [Face Danger](datasworn:move:starforged/adventure/face_danger), [Clash](datasworn:move:starforged/combat/clash) or [React Under Fire](datasworn:move:starforged/combat/react_under_fire), you may choose for this to have been a vision of an avoidable future. If you do, [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2), envision how you approach the situation differently and reroll any dice. On a strong hit, take +1 momentum.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/precog.1",
+							"enabled": false,
+							"options": {},
+							"text": "As above, but it can be used when you score a miss on [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray), [Strike](datasworn:move:starforged/combat/strike) or [Gain Ground](datasworn:move:starforged/combat/gain_ground).",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/precog.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) with your precognitive ability, [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2) and make the hit options add +2 and take +1 momentum instead of the normal options.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"psionic": {
+					"_id": "asset:starsmith/path/psionic",
+					"type": "asset",
+					"name": "Psionic",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/psionic.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you [Compel](datasworn:move:starforged/adventure/compel) by inserting a strong suggestion into someone's mind, roll +wits and roll with advantage. This suggestion may not force the person to cause harm to themself or to their loved ones, but it may induce reckless or unwise behavior. If the suggestion is for a behavior the target wants to perform anyway but is restraining themself, add +1 as well.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/psionic.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by determining if someone is lying or [Compel](datasworn:move:starforged/adventure/compel) a person or group of people to speak truthfully, roll with advantage.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/psionic.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by projecting a brief but convincing illusion into the mind of another being, roll with advantage.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"quantum_tunneler": {
+					"_id": "asset:starsmith/path/quantum_tunneler",
+					"type": "asset",
+					"name": "Quantum Tunneler",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/quantum_tunneler.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by quantum tunneling to a position nearby and within sight, add +2 but treat a weak hit as a miss. If through an obstacle to a nearby but unseen location, treat a weak hit as a miss but take +2 momentum on a strong hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/quantum_tunneler.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Clash](datasworn:move:starforged/combat/clash) and score a weak hit, you may forgo marking progress to be in control as you tunnel away. When you [Strike](datasworn:move:starforged/combat/strike) and score a weak hit, you may mark progress only once (instead of twice) to be in control as you tunnel to reposition.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/quantum_tunneler.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you attempt to quantum entangle yourself to a location, roll +heart or +wits. On a hit, you may quantum tunnel to that location from any distance, but it is dangerous. On a miss, as above but the entangling is harmful. [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-2). When you [Face Danger](datasworn:move:starforged/adventure/face_danger) to do so, treat a weak hit as a miss. Once used, the entanglement fades.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"rebel": {
+					"_id": "asset:starsmith/path/rebel",
+					"type": "asset",
+					"name": "Rebel",
+					"category": "Path",
+					"options": {
+						"faction": {
+							"label": "faction",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/rebel.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you take this asset, declare an oppressive faction that you are actively working against. When you [Swear an Iron Vow](datasworn:move:starforged/quest/swear_an_iron_vow) (formidable or greater) to protect a community from the actions or influence of that faction, reroll any dice. When you [Fulfill Your Vow](datasworn:move:starforged/quest/fulfill_your_vow) and score a hit, also mark 2 ticks on your bonds legacy track.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/rebel.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) by sabotaging the equipment or resources of that faction, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/rebel.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) against forces of that faction, you may choose an approach.\n\n  * Call them out: Roll +heart and add +2.\n  * Make them pay: Roll +iron and mark progress on a hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"rocketeer": {
+					"_id": "asset:starsmith/path/rocketeer",
+					"type": "asset",
+					"name": "Rocketeer",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/rocketeer.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your jet pack allows you to hover mid-air, make jet-assisted leaps, or fly over short distances. It has a max of 5 fuel and can be refueled on your command vehicle. When you make a move using your jet pack to overcome an obstacle or gain a better position, add +2 and suffer -1 fuel.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/rocketeer.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you make a move reacting to an imminent threat by rapidly relocating using\na burst from your jet pack, boost and suffer -1 fuel.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/rocketeer.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) (+edge) across difficult terrain assisted by your jet pack, suffer -1 fuel and take +1 momentum on a hit. On a strong hit with a match, you surge ahead. Mark progress.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"fuel": {
+							"label": "fuel",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 5,
+							"controls": {}
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"scientist": {
+					"_id": "asset:starsmith/path/scientist",
+					"type": "asset",
+					"name": "Scientist",
+					"category": "Path",
+					"options": {
+						"expertise": {
+							"label": "expertise",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/scientist.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you take this asset, mark your area of expertise. With sufficient time (a couple of hours or more), you may [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by doing scientific analysis of a problem or inventing prototype technology within your area of expertise. On a hit, one time only, when you or an ally make a move aided by this knowledge or device, take an automatic strong hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/scientist.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Gather Information](datasworn:move:starforged/adventure/gather_information) by reviewing research or speaking with colleagues about your area of expertise, reroll any dice. On a match, you reveal an unexpected consequence or danger on this topic. Mark 1 tick on your discoveries legacy track.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/scientist.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) by relying on theoretical knowledge from your area of expertise, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"security_guard": {
+					"_id": "asset:starsmith/path/security_guard",
+					"type": "asset",
+					"name": "Security Guard",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/security_guard.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you [Swear an Iron Vow](datasworn:move:starforged/quest/swear_an_iron_vow) to provide someone or something protection for a time, set aside an action die with a value of 6. Then, when you [Face Danger](datasworn:move:starforged/adventure/face_danger) to protect that person or thing from harm, add an amount equal to half the die value (rounded up) and reduce its value by 1. When the die would reduce to 0, remove it.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/security_guard.1",
+							"enabled": false,
+							"options": {},
+							"text": "Your training in security comes in handy during a fight. When you [Strike](datasworn:move:starforged/combat/strike) or [Clash](datasworn:move:starforged/combat/clash) in close quarters in order to incapacitate your foe without hurting them, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/security_guard.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Gather Information](datasworn:move:starforged/adventure/gather_information) by attempting to intuit the intentions or motives of a potential threat to someone or something you protect, you may rely on your instincts. If you do, roll +heart with advantage. If on a strong hit a threat is uncovered, take +2 momentum and add +1 to your next move.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"telepath": {
+					"_id": "asset:starsmith/path/telepath",
+					"type": "asset",
+					"name": "Telepath",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/telepath.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you attempt to establish a telepathic link with another person who is physically present, roll +wits and boost. On a strong hit, you can speak with them telepathically from any distance. On a weak hit, as above, but the bond fades after a time. On a miss, as a weak hit, but it is stressful. [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2).  Only twice your wits score of links may be active at a time.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/telepath.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you edit a person or being's memories from a 24-hour period, roll +wits a three dice challenge. On a strong hit, the memories are altered. On a weak hit, the memories are altered, but it is stressful. [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2). On a miss, something goes wrong. [Pay the Price](datasworn:move:starforged/fate/pay_the_price). Altered memories return after several hours or several days.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/telepath.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Gather Information](datasworn:move:starforged/adventure/gather_information) or [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by observing through another person's senses, roll +wits with advantage.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"voidshifter": {
+					"_id": "asset:starsmith/path/voidshifter",
+					"type": "asset",
+					"name": "Voidshifter",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/voidshifter.0",
+							"enabled": true,
+							"options": {},
+							"text": "Chaotic void energies altered your physiology allowing you to shapeshift your appearance for short periods of time. When you make a move to deceive or avoid notice by altering your physical appearance, boost. On a weak hit, it is painful. [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-1). On a miss, the transformation fails. [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/voidshifter.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you shapeshift your body to increase your battle prowess, envision the change and roll +iron or +health. On a strong hit, set aside an action die with a value of 6. When you [Strike](datasworn:move:starforged/combat/strike) or [Clash](datasworn:move:starforged/combat/clash) leveraging this change, boost and reduce the value of the die by 1. When the die would be set to 0, the transformation ends. On a weak hit, as above but it is painful. [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-1). On a miss, the transformation fails. [Pay the Price](datasworn:move:starforged/fate/pay_the_price).",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/voidshifter.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) due to dangerous environmental conditions, boost as your body shifts to handle the conditions better.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"well_connected": {
+					"_id": "asset:starsmith/path/well_connected",
+					"type": "asset",
+					"name": "Well-Connected",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/path/well_connected.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by finding a person with knowledge or experience about a specific topic, you may add +2. If you do, treat a weak hit as miss.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/well_connected.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Make a Connection](datasworn:move:starforged/connection/make_a_connection) with someone who has a favorable relationship with another person you already have connection with, add +1. On a hit, [Develop Your Relationship](datasworn:move:starforged/connection/develop_your_relationship) with your original connection.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/path/well_connected.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by leveraging the fact that you have a relationship with a connection, you may reroll any dice. If you do and score a miss, [Test Your Relationship](datasworn:move:starforged/connection/test_your_relationship) when next you communicate with that connection.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Starsmith: Assets",
+				"authors": [
+					{
+						"name": "Eric Bright"
+					}
+				],
+				"date": "2023-03-09",
+				"license": "https://creativecommons.org/licenses/by-sa/4.0",
+				"url": "https://playeveryrole.com/starsmith-products/"
+			}
+		},
+		"companion": {
+			"_id": "asset_collection:starsmith/companion",
+			"type": "asset_collection",
+			"name": "Companion Assets",
+			"color": "#4d7a5f",
+			"contents": {
+				"crew_member": {
+					"_id": "asset:starsmith/companion/crew_member",
+					"type": "asset",
+					"name": "Crew Member",
+					"category": "Companion",
+					"options": {
+						"role_name": {
+							"label": "role,name",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/companion/crew_member.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your crew member has a specific role aboard your command vehicle. When you make a move directly aided by their expertise, reroll your action die if its value is less than your crew member's health. If you then score a strong hit with a match, mark 1 tick on your bonds legacy track.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/crew_member.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gather Information](datasworn:move:starforged/adventure/gather_information) by conferencing with your crew member, add +1 for each crew member present (up to +4). On a miss, envision how friction arises between crew members.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/crew_member.2",
+							"enabled": false,
+							"options": {},
+							"text": "When your crew member is at full health and you score a miss with a match while they are present, you may set their health to 0 and mark them as out of action.  If you do, treat the miss with a match as a strong hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"health": {
+							"label": "health",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 4,
+							"value": 4,
+							"controls": {}
+						},
+						"out of action": {
+							"label": "out of action",
+							"field_type": "card_flip",
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"flash_fox": {
+					"_id": "asset:starsmith/companion/flash_fox",
+					"type": "asset",
+					"name": "Flash Fox",
+					"category": "Companion",
+					"options": {
+						"name": {
+							"label": "name",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/companion/flash_fox.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your flash fox uses its short-range teleportation to bypass obstacles. When you make a move by directing your flash fox to teleport you a short distance away, roll +its health and boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/flash_fox.1",
+							"enabled": false,
+							"options": {},
+							"text": "Your flash fox attempts to teleport you out of harm's way. When you [Endure Harm](datasworn:move:starforged/suffer/endure_harm), you may roll +its health with advantage. If you do and score a hit, reduce the loss of health you suffered by 1. On a miss, your [Companion Takes a Hit](datasworn:move:starforged/suffer/companion_takes_a_hit) as well.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/flash_fox.2",
+							"enabled": false,
+							"options": {},
+							"text": "Your flash fox has learned to coordinate its teleporting attacks with your own. When you [Strike](datasworn:move:starforged/combat/strike) aided by the flash fox, add +1. If you [Clash](datasworn:move:starforged/combat/clash), take +1 momentum on a hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"health": {
+							"label": "health",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 3,
+							"value": 3,
+							"controls": {}
+						},
+						"out of action": {
+							"label": "out of action",
+							"field_type": "card_flip",
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"furball": {
+					"_id": "asset:starsmith/companion/furball",
+					"type": "asset",
+					"name": "Furball",
+					"category": "Companion",
+					"options": {
+						"name": {
+							"label": "name",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/companion/furball.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your cuddly furball coos softly to soothe your worries. When you [Hearten](datasworn:move:starforged/recover/hearten) in the presence of your furball, boost. However, stress can physically harm your friend. When you [Endure Harm](datasworn:move:starforged/suffer/endure_harm) in the presence of your furball, your [Companion Takes a Hit](datasworn:move:starforged/suffer/companion_takes_a_hit) as well.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/furball.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you make an Adventure move (not [Check Your Gear](datasworn:move:starforged/adventure/check_your_gear)) using your furball to help defuse a tense situation, to build good will between people, to encourage those with a broken spirit, or to support the downtrodden, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/furball.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Make a Connection](datasworn:move:starforged/connection/make_a_connection) move (not a progress move) with a fellow furball caretaker in the presence of your furballs, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"health": {
+							"label": "health",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 2,
+							"value": 2,
+							"controls": {}
+						},
+						"out of action": {
+							"label": "out of action",
+							"field_type": "card_flip",
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"nano_swarm": {
+					"_id": "asset:starsmith/companion/nano_swarm",
+					"type": "asset",
+					"name": "Nano-Swarm",
+					"category": "Companion",
+					"options": {
+						"name": {
+							"label": "name",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/companion/nano_swarm.0",
+							"enabled": true,
+							"options": {},
+							"text": "Utility: Your swarm can access a system, analyze a mechanical issue, or become a small tool to help work on equipment.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/nano_swarm.1",
+							"enabled": false,
+							"options": {},
+							"text": "Surveillance: You can observe a situation remotely from your swarm's perspective.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/nano_swarm.2",
+							"enabled": false,
+							"options": {},
+							"text": "Combat: You swarm can attack a foe by consuming small bits of its matter.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"health": {
+							"label": "health",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 2,
+							"value": 2,
+							"controls": {}
+						},
+						"out of action": {
+							"label": "out of action",
+							"field_type": "card_flip",
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"waterwyrm": {
+					"_id": "asset:starsmith/companion/waterwyrm",
+					"type": "asset",
+					"name": "Waterwyrm",
+					"category": "Companion",
+					"options": {
+						"name": {
+							"label": "name",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/companion/waterwyrm.0",
+							"enabled": true,
+							"options": {},
+							"text": "Your waterwyrm uses its scaly hide and dagger-like teeth to overcome threats. When you make a move by sending the waterwyrm to directly attack a foe or smash an obstacle, roll +its health.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/waterwyrm.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you make a move by directing your waterwyrm to entangle a foe or object in its long leviathan-like body, roll +its health and take +1 momentum on a hit.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/companion/waterwyrm.2",
+							"enabled": false,
+							"options": {},
+							"text": "Your waterwyrm is harnessed and trained as a mount for underwater travel. When you ride your waterwyrm as you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) underwater, roll +its health.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"health": {
+							"label": "health",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 5,
+							"controls": {}
+						},
+						"out of action": {
+							"label": "out of action",
+							"field_type": "card_flip",
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Starsmith: Assets",
+				"authors": [
+					{
+						"name": "Eric Bright"
+					}
+				],
+				"date": "2023-03-09",
+				"license": "https://creativecommons.org/licenses/by-sa/4.0",
+				"url": "https://playeveryrole.com/starsmith-products/"
+			}
+		},
+		"deed": {
+			"_id": "asset_collection:starsmith/deed",
+			"type": "asset_collection",
+			"name": "Deed Assets",
+			"color": "#8f5a3a",
+			"contents": {
+				"immortal_coil": {
+					"_id": "asset:starsmith/deed/immortal_coil",
+					"type": "asset",
+					"name": "Immortal Coil",
+					"category": "Deed",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/deed/immortal_coil.0",
+							"enabled": true,
+							"options": {},
+							"text": "You no longer benefit from [Heal](datasworn:move:starforged/recover/heal). Instead, you must [Repair](datasworn:move:starforged/recover/repair) to regain health as a mechanical companion would. Also, add the following options to spend repair points\n\n  * Clear wounded: 2 points\n  * Clear permanently harmed: 4 points",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/immortal_coil.1",
+							"enabled": false,
+							"options": {},
+							"text": "Your command vehicle can store a copy of your consciousness. When you take several hours, you may update your back-up. You may also selectively erase memories with this process. If you do, [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2).",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/immortal_coil.2",
+							"enabled": false,
+							"options": {},
+							"text": "Your command vehicle houses a simulacrum printer. When you die, a subspace signal stops pinging your ship. If your ship survives and detects the signal loss, its systems will automatically take a day or so to install your saved consciousness into a new body.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"indefatigable": {
+					"_id": "asset:starsmith/deed/indefatigable",
+					"type": "asset",
+					"name": "Indefatigable",
+					"category": "Deed",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/deed/indefatigable.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you use your status as a rough and tough survivor to [Compel](datasworn:move:starforged/adventure/compel) people who know of your previous ship's destruction, boost.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/indefatigable.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Sojourn](datasworn:move:starforged/recover/sojourn) and score a hit, you may regale the local community with the story of how you lost your previous ship. If you do, choose one:\n\n  * Revel in your tenacity: Take +2 momentum.\n  * Leverage your status: [Gather Information](datasworn:move:starforged/adventure/gather_information) +heart (instead of +wits).",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/indefatigable.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Withstand Damage](datasworn:move:starforged/suffer/withstand_damage), roll with advantage. Then, if you score a strong hit and choose to ride it out, take +2 momentum (instead of +1).",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"soulless": {
+					"_id": "asset:starsmith/deed/soulless",
+					"type": "asset",
+					"name": "Soulless",
+					"category": "Deed",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/deed/soulless.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you are at 0 spirit and [Endure Stress](datasworn:move:starforged/suffer/endure_stress) or [Face Desolation](datasworn:move:starforged/threshold/face_desolation), add +1. You may then reroll your action die if its value is less than your health.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/soulless.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Compel](datasworn:move:starforged/adventure/compel) someone to act against their will or to their own detriment, you may burn momentum to zero out one (not both) of the challenge dice if your momentum is greater than the value of that die. If you do, erase one tick from your bonds legacy track.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/soulless.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Gather Information](datasworn:move:starforged/adventure/gather_information) by studying a place where suffering or torment left its mark, you may confront the visceral nature of the scene and roll +iron. If you do, take +1 momentum on a hit. On a strong hit with a match, you experience an insightful vision or disturbing revelation of what occurred here. Take +1 momentum more.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"traveler": {
+					"_id": "asset:starsmith/deed/traveler",
+					"type": "asset",
+					"name": "Traveler",
+					"category": "Deed",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:starsmith/deed/traveler.0",
+							"enabled": true,
+							"options": {},
+							"text": "When you overcome a miss by shuffling through realities and calling forth one where you succeed, improve the result to a strong hit. Then, fill one segment of a six-segment clock representing stress on reality. When the clock is filled, a localized crack in the multiverse forms. Envision the dire consequences and reset the clock.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/traveler.1",
+							"enabled": false,
+							"options": {},
+							"text": "When you search the timeline for possible futures, enact the first ability of the Seer path asset.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:starsmith/deed/traveler.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you create a link to the current point in time, enact the second ability on the Looper path asset but add options for the time gap of +1 if weeks, +0 if months, and -1 if years.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"damage": {
+							"label": "damage",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 6,
+							"value": 6,
+							"controls": {}
+						},
+						"temporal rift": {
+							"label": "temporal rift",
+							"field_type": "card_flip",
+							"disables_asset": true
+						}
+					},
+					"_source": {
+						"title": "Starsmith: Assets",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Starsmith: Assets",
+				"authors": [
+					{
+						"name": "Eric Bright"
+					}
+				],
+				"date": "2023-03-09",
+				"license": "https://creativecommons.org/licenses/by-sa/4.0",
+				"url": "https://playeveryrole.com/starsmith-products/"
+			}
+		}
+	},
 	"atlas": {},
 	"moves": {},
 	"npcs": {},

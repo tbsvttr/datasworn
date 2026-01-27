@@ -12,6 +12,20 @@
 	"date": "2024-01-01",
 	"license": "https://creativecommons.org/licenses/by-nc-sa/4.0",
 	"url": "https://www.drivethrurpg.com/en/product/505365/ancient-wonders",
+	"rules": {
+		"condition_meters": {},
+		"stats": {},
+		"impacts": {},
+		"special_tracks": {
+			"failure_track": {
+				"label": "failure track",
+				"optional": true,
+				"shared": false,
+				"description": "Rewards your character for the lessons learned when you fail to overcome challenges."
+			}
+		},
+		"tags": {}
+	},
 	"oracles": {
 		"core_oracles": {
 			"_id": "oracle_collection:ancient_wonders/core_oracles",
@@ -3527,7 +3541,7 @@
 								"min": 11,
 								"max": 25
 							},
-							"text": ">Ring System"
+							"text": "Ring System"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/orbital_feature.2",
@@ -3535,7 +3549,7 @@
 								"min": 26,
 								"max": 75
 							},
-							"text": ">Moon; pg 42"
+							"text": "Moon"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/orbital_feature.3",
@@ -3543,7 +3557,7 @@
 								"min": 76,
 								"max": 80
 							},
-							"text": ">Dense Nebula Cloud; SSE, pg 24"
+							"text": "Dense Nebula Cloud"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/orbital_feature.4",
@@ -3551,7 +3565,7 @@
 								"min": 81,
 								"max": 83
 							},
-							"text": ">Fiery Energy Storm; SSE, pg 18"
+							"text": "Fiery Energy Storm"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/orbital_feature.5",
@@ -3559,7 +3573,7 @@
 								"min": 84,
 								"max": 85
 							},
-							"text": ">Precursor Vault (orbital); RG, pg 92"
+							"text": "Precursor Vault (orbital)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/orbital_feature.6",
@@ -3567,7 +3581,7 @@
 								"min": 86,
 								"max": 92
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/orbital_feature.7",
@@ -3923,7 +3937,7 @@
 								"min": 34,
 								"max": 67
 							},
-							"text": ">Ecumenopolis; pg 130"
+							"text": "Ecumenopolis"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetary_defenses_aegisphere_shielded_location.2",
@@ -4045,7 +4059,7 @@
 								"min": 1,
 								"max": 17
 							},
-							"text": "Furnace World; pg 52"
+							"text": "Furnace World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.1",
@@ -4053,7 +4067,7 @@
 								"min": 18,
 								"max": 47
 							},
-							"text": "Desert World; pg 50"
+							"text": "Desert World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.2",
@@ -4061,7 +4075,7 @@
 								"min": 48,
 								"max": 57
 							},
-							"text": "Jungle World; pg 60"
+							"text": "Jungle World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.3",
@@ -4069,7 +4083,7 @@
 								"min": 58,
 								"max": 69
 							},
-							"text": "Jovian World; pg 58"
+							"text": "Jovian World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.4",
@@ -4077,7 +4091,7 @@
 								"min": 70,
 								"max": 77
 							},
-							"text": "Rocky World; pg 72"
+							"text": "Rocky World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.5",
@@ -4085,7 +4099,7 @@
 								"min": 78,
 								"max": 83
 							},
-							"text": "Tainted World; pg 76"
+							"text": "Tainted World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.6",
@@ -4093,7 +4107,7 @@
 								"min": 84,
 								"max": 87
 							},
-							"text": "Metallic World; pg 68"
+							"text": "Metallic World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.7",
@@ -4101,7 +4115,7 @@
 								"min": 88,
 								"max": 89
 							},
-							"text": "Crystalline World; pg 48"
+							"text": "Crystalline World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.8",
@@ -4109,7 +4123,7 @@
 								"min": 90,
 								"max": 91
 							},
-							"text": "Tidally-locked World; pg  78"
+							"text": "Tidally-locked World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.9",
@@ -4117,7 +4131,7 @@
 								"min": 92,
 								"max": 93
 							},
-							"text": "Karst World; pg 62"
+							"text": "Karst World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.10",
@@ -4125,7 +4139,7 @@
 								"min": 94,
 								"max": 96
 							},
-							"text": "Grave World; pg 54"
+							"text": "Grave World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.11",
@@ -4133,7 +4147,7 @@
 								"min": 97,
 								"max": 98
 							},
-							"text": "Shattered World; pg 74"
+							"text": "Shattered World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.12",
@@ -4141,7 +4155,7 @@
 								"min": 99,
 								"max": 99
 							},
-							"text": "Living World; pg 64"
+							"text": "Living World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_pl.13",
@@ -4149,7 +4163,7 @@
 								"min": 100,
 								"max": 100
 							},
-							"text": "Anomalous World; pg 44"
+							"text": "Anomalous World"
 						}
 					],
 					"_source": {
@@ -4311,7 +4325,7 @@
 								"min": 1,
 								"max": 25
 							},
-							"text": ">Planet (host of megacity or grounded vault); pg 40"
+							"text": "Planet (host of megacity or grounded vault)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetary_defenses_nexus_defended_site.1",
@@ -4319,7 +4333,7 @@
 								"min": 26,
 								"max": 50
 							},
-							"text": ">Ecumenopolis; pg 130"
+							"text": "Ecumenopolis"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetary_defenses_nexus_defended_site.2",
@@ -5565,7 +5579,7 @@
 								"min": 1,
 								"max": 56
 							},
-							"text": "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
+							"text": "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.1",
@@ -5573,7 +5587,7 @@
 								"min": 57,
 								"max": 66
 							},
-							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.2",
@@ -5605,7 +5619,7 @@
 								"min": 80,
 								"max": 82
 							},
-							"text": "Ancient city >Megacity; pg 168"
+							"text": "Ancient city : Megacity"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.6",
@@ -5621,7 +5635,7 @@
 								"min": 86,
 								"max": 95
 							},
-							"text": "Character focus >Interlude Scene; SI, pg 250"
+							"text": "Character focus : Interlude Scene"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_outlands.8",
@@ -6033,7 +6047,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": ">Anomaly; pg 194"
+							"text": "Anomaly"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_peril_lifeless.1",
@@ -6469,7 +6483,7 @@
 								"min": 1,
 								"max": 15
 							},
-							"text": ">Precursor Vault (megastructure scale); RG, pg 82"
+							"text": "Precursor Vault (megastructure scale)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.1",
@@ -6477,7 +6491,7 @@
 								"min": 16,
 								"max": 22
 							},
-							"text": ">Bishop Ring; pg 146"
+							"text": "Bishop Ring"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.2",
@@ -6485,7 +6499,7 @@
 								"min": 23,
 								"max": 30
 							},
-							"text": ">Discworld; pg 114"
+							"text": "Discworld"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.3",
@@ -6493,7 +6507,7 @@
 								"min": 31,
 								"max": 39
 							},
-							"text": ">Ecumenopolis; pg 130"
+							"text": "Ecumenopolis"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.4",
@@ -6501,7 +6515,7 @@
 								"min": 40,
 								"max": 45
 							},
-							"text": ">Equatorial Shipyard; pg 152"
+							"text": "Equatorial Shipyard"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.5",
@@ -6509,7 +6523,7 @@
 								"min": 46,
 								"max": 52
 							},
-							"text": ">McKendree Cylinder; pg 122"
+							"text": "McKendree Cylinder"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.6",
@@ -6517,7 +6531,7 @@
 								"min": 53,
 								"max": 56
 							},
-							"text": ">Nezzarine Garden; pg 135"
+							"text": "Nezzarine Garden"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.7",
@@ -6533,7 +6547,7 @@
 								"min": 63,
 								"max": 68
 							},
-							"text": ">Standford Torus; pg 146"
+							"text": "Standford Torus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.9",
@@ -6541,7 +6555,7 @@
 								"min": 69,
 								"max": 74
 							},
-							"text": ">Behemoth Assembler; pg 152"
+							"text": "Behemoth Assembler"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.10",
@@ -6549,7 +6563,7 @@
 								"min": 75,
 								"max": 80
 							},
-							"text": ">Ecosphere; pg 128"
+							"text": "Ecosphere"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.11",
@@ -6557,7 +6571,7 @@
 								"min": 81,
 								"max": 87
 							},
-							"text": ">Habitat Cluster; pg 122"
+							"text": "Habitat Cluster"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type2_or_3.12",
@@ -6573,7 +6587,7 @@
 								"min": 95,
 								"max": 100
 							},
-							"text": ">Sentry Array; pg 150"
+							"text": "Sentry Array"
 						}
 					],
 					"_source": {
@@ -6605,7 +6619,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": ">Anomaly; pg 194"
+							"text": "Anomaly"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_peril_lifebearing.1",
@@ -6991,7 +7005,7 @@
 								"min": 1,
 								"max": 60
 							},
-							"text": "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
+							"text": "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.1",
@@ -6999,7 +7013,7 @@
 								"min": 61,
 								"max": 70
 							},
-							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.2",
@@ -7031,7 +7045,7 @@
 								"min": 78,
 								"max": 81
 							},
-							"text": "Ancient city >Megacity; pg 168"
+							"text": "Ancient city : Megacity"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_expanse.6",
@@ -7047,7 +7061,7 @@
 								"min": 86,
 								"max": 95
 							},
-							"text": "Character focus >Interlude Scene; SI, pg 250"
+							"text": "Character focus : Interlude Scene"
 						}
 					],
 					"_source": {
@@ -7550,7 +7564,7 @@
 								"min": 1,
 								"max": 10
 							},
-							"text": "Chemical World; pg 46"
+							"text": "Chemical World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.1",
@@ -7558,7 +7572,7 @@
 								"min": 11,
 								"max": 12
 							},
-							"text": "Crystalline World; pg 48"
+							"text": "Crystalline World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.2",
@@ -7566,7 +7580,7 @@
 								"min": 13,
 								"max": 22
 							},
-							"text": "Desert World; pg 50"
+							"text": "Desert World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.3",
@@ -7574,7 +7588,7 @@
 								"min": 23,
 								"max": 32
 							},
-							"text": "Furnace World; pg 52"
+							"text": "Furnace World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.4",
@@ -7582,7 +7596,7 @@
 								"min": 33,
 								"max": 42
 							},
-							"text": "Ice World; pg 56"
+							"text": "Ice World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.5",
@@ -7590,7 +7604,7 @@
 								"min": 43,
 								"max": 52
 							},
-							"text": "Jungle World; pg 60"
+							"text": "Jungle World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.6",
@@ -7598,7 +7612,7 @@
 								"min": 53,
 								"max": 62
 							},
-							"text": "Living World; pg 64"
+							"text": "Living World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.7",
@@ -7606,7 +7620,7 @@
 								"min": 63,
 								"max": 64
 							},
-							"text": "Metallic World; pg 68"
+							"text": "Metallic World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.8",
@@ -7614,7 +7628,7 @@
 								"min": 65,
 								"max": 74
 							},
-							"text": "Ocean World; pg 70"
+							"text": "Ocean World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.9",
@@ -7622,7 +7636,7 @@
 								"min": 75,
 								"max": 80
 							},
-							"text": "Rocky World; pg 72"
+							"text": "Rocky World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.10",
@@ -7630,7 +7644,7 @@
 								"min": 81,
 								"max": 90
 							},
-							"text": "Tainted World; pg 76"
+							"text": "Tainted World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_planets_ex.11",
@@ -7638,7 +7652,7 @@
 								"min": 91,
 								"max": 100
 							},
-							"text": "Vital World; pg 80"
+							"text": "Vital World"
 						}
 					],
 					"_source": {
@@ -7671,7 +7685,7 @@
 								"min": 1,
 								"max": 17
 							},
-							"text": "Furnace World; pg 52"
+							"text": "Furnace World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_st.1",
@@ -7679,7 +7693,7 @@
 								"min": 18,
 								"max": 47
 							},
-							"text": "Desert World; pg 50"
+							"text": "Desert World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_st.2",
@@ -7687,7 +7701,7 @@
 								"min": 48,
 								"max": 57
 							},
-							"text": "Jungle World; pg 60"
+							"text": "Jungle World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_st.3",
@@ -7695,7 +7709,7 @@
 								"min": 58,
 								"max": 72
 							},
-							"text": "Jovian World; pg 58"
+							"text": "Jovian World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_st.4",
@@ -7703,7 +7717,7 @@
 								"min": 73,
 								"max": 84
 							},
-							"text": "Rocky World; pg 72"
+							"text": "Rocky World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_st.5",
@@ -7711,7 +7725,7 @@
 								"min": 85,
 								"max": 94
 							},
-							"text": "Tainted World; pg 76"
+							"text": "Tainted World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_st.6",
@@ -7719,7 +7733,7 @@
 								"min": 95,
 								"max": 97
 							},
-							"text": "Grave World; pg 54"
+							"text": "Grave World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/stellar_compressor_planetary_class_sector_based_st.7",
@@ -7727,7 +7741,7 @@
 								"min": 98,
 								"max": 100
 							},
-							"text": "Shattered World; pg 74"
+							"text": "Shattered World"
 						}
 					],
 					"_source": {
@@ -7962,7 +7976,7 @@
 								"min": 1,
 								"max": 15
 							},
-							"text": ">Precursor Vault (megastructure scale); RG, pg 82"
+							"text": "Precursor Vault (megastructure scale)"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type_1.1",
@@ -7970,7 +7984,7 @@
 								"min": 16,
 								"max": 26
 							},
-							"text": ">Bishop Ring; pg 146"
+							"text": "Bishop Ring"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type_1.2",
@@ -7978,7 +7992,7 @@
 								"min": 27,
 								"max": 38
 							},
-							"text": ">Discworld; pg 114"
+							"text": "Discworld"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type_1.3",
@@ -7986,7 +8000,7 @@
 								"min": 39,
 								"max": 51
 							},
-							"text": ">Ecumenopolis; pg 130"
+							"text": "Ecumenopolis"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type_1.4",
@@ -7994,7 +8008,7 @@
 								"min": 52,
 								"max": 61
 							},
-							"text": ">Equatorial Shipyard; pg 152"
+							"text": "Equatorial Shipyard"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type_1.5",
@@ -8002,7 +8016,7 @@
 								"min": 62,
 								"max": 72
 							},
-							"text": ">McKendree Cylinder; pg 122"
+							"text": "McKendree Cylinder"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type_1.6",
@@ -8010,7 +8024,7 @@
 								"min": 73,
 								"max": 80
 							},
-							"text": ">Nezzarine Garden; pg 135"
+							"text": "Nezzarine Garden"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/sentinel_belt_planetary_megastructure_type_1.7",
@@ -8026,7 +8040,7 @@
 								"min": 91,
 								"max": 100
 							},
-							"text": ">Standford Torus; pg 146"
+							"text": "Standford Torus"
 						}
 					],
 					"_source": {
@@ -8341,7 +8355,7 @@
 								"min": 1,
 								"max": 13
 							},
-							"text": "Desert World; pg 50"
+							"text": "Desert World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_starforged.1",
@@ -8349,7 +8363,7 @@
 								"min": 14,
 								"max": 25
 							},
-							"text": "Furnace World; pg 52"
+							"text": "Furnace World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_starforged.2",
@@ -8357,7 +8371,7 @@
 								"min": 26,
 								"max": 37
 							},
-							"text": "Ice World; pg 56"
+							"text": "Ice World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_starforged.3",
@@ -8365,7 +8379,7 @@
 								"min": 38,
 								"max": 50
 							},
-							"text": "Jungle World; pg 60"
+							"text": "Jungle World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_starforged.4",
@@ -8373,7 +8387,7 @@
 								"min": 51,
 								"max": 63
 							},
-							"text": "Ocean World; pg 70"
+							"text": "Ocean World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_starforged.5",
@@ -8381,7 +8395,7 @@
 								"min": 64,
 								"max": 75
 							},
-							"text": "Rocky World; pg 72"
+							"text": "Rocky World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_starforged.6",
@@ -8389,7 +8403,7 @@
 								"min": 76,
 								"max": 88
 							},
-							"text": "Tainted World; pg 76"
+							"text": "Tainted World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/terraformer_hub_altered_planetary_class_starforged.7",
@@ -8397,7 +8411,7 @@
 								"min": 89,
 								"max": 100
 							},
-							"text": "Vital World; pg 80"
+							"text": "Vital World"
 						}
 					],
 					"_source": {
@@ -8592,7 +8606,7 @@
 								"min": 1,
 								"max": 5
 							},
-							"text": "Jungle World; pg 60"
+							"text": "Jungle World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.1",
@@ -8600,7 +8614,7 @@
 								"min": 6,
 								"max": 20
 							},
-							"text": "Ocean World; pg 70"
+							"text": "Ocean World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.2",
@@ -8608,7 +8622,7 @@
 								"min": 21,
 								"max": 52
 							},
-							"text": "Ice World; pg 56"
+							"text": "Ice World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.3",
@@ -8616,7 +8630,7 @@
 								"min": 53,
 								"max": 57
 							},
-							"text": "Chemical World; pg 46"
+							"text": "Chemical World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.4",
@@ -8624,7 +8638,7 @@
 								"min": 58,
 								"max": 69
 							},
-							"text": "Jovian World; pg 58"
+							"text": "Jovian World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.5",
@@ -8632,7 +8646,7 @@
 								"min": 70,
 								"max": 77
 							},
-							"text": "Rocky World; pg 72"
+							"text": "Rocky World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.6",
@@ -8640,7 +8654,7 @@
 								"min": 78,
 								"max": 83
 							},
-							"text": "Tainted World; pg 76"
+							"text": "Tainted World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.7",
@@ -8648,7 +8662,7 @@
 								"min": 84,
 								"max": 87
 							},
-							"text": "Metallic World; pg 68"
+							"text": "Metallic World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.8",
@@ -8656,7 +8670,7 @@
 								"min": 88,
 								"max": 89
 							},
-							"text": "Crystalline World; pg 48"
+							"text": "Crystalline World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.9",
@@ -8664,7 +8678,7 @@
 								"min": 90,
 								"max": 91
 							},
-							"text": "Tidally-locked World; pg  78"
+							"text": "Tidally-locked World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.10",
@@ -8672,7 +8686,7 @@
 								"min": 92,
 								"max": 93
 							},
-							"text": "Karst World; pg 62"
+							"text": "Karst World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.11",
@@ -8680,7 +8694,7 @@
 								"min": 94,
 								"max": 96
 							},
-							"text": "Grave World; pg 54"
+							"text": "Grave World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.12",
@@ -8688,7 +8702,7 @@
 								"min": 97,
 								"max": 98
 							},
-							"text": "Shattered World; pg 74"
+							"text": "Shattered World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.13",
@@ -8696,7 +8710,7 @@
 								"min": 99,
 								"max": 99
 							},
-							"text": "Living World; pg 64"
+							"text": "Living World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_pla.14",
@@ -8704,7 +8718,7 @@
 								"min": 100,
 								"max": 100
 							},
-							"text": "Anomalous World; pg 44"
+							"text": "Anomalous World"
 						}
 					],
 					"_source": {
@@ -9382,7 +9396,7 @@
 								"min": 1,
 								"max": 53
 							},
-							"text": "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature; pg 31"
+							"text": "Terrain feature (choose one) 1. Surface Feature; planetary class page 2. Region Landmark; SI, pg 151 3.Underwater Feature"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.1",
@@ -9390,7 +9404,7 @@
 								"min": 54,
 								"max": 63
 							},
-							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "Instance [Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.2",
@@ -9422,7 +9436,7 @@
 								"min": 82,
 								"max": 83
 							},
-							"text": "Ancient city >Megacity; pg 168"
+							"text": "Ancient city : Megacity"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.6",
@@ -9438,7 +9452,7 @@
 								"min": 86,
 								"max": 95
 							},
-							"text": "Character focus >Interlude Scene; SI, pg 250"
+							"text": "Character focus : Interlude Scene"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetside_waypoint_terminus.8",
@@ -9875,7 +9889,7 @@
 								"min": 1,
 								"max": 5
 							},
-							"text": "Jungle World; pg 60"
+							"text": "Jungle World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_sta.1",
@@ -9883,7 +9897,7 @@
 								"min": 6,
 								"max": 25
 							},
-							"text": "Ocean World; pg 70"
+							"text": "Ocean World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_sta.2",
@@ -9891,7 +9905,7 @@
 								"min": 26,
 								"max": 57
 							},
-							"text": "Ice World; pg 56"
+							"text": "Ice World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_sta.3",
@@ -9899,7 +9913,7 @@
 								"min": 58,
 								"max": 72
 							},
-							"text": "Jovian World; pg 58"
+							"text": "Jovian World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_sta.4",
@@ -9907,7 +9921,7 @@
 								"min": 73,
 								"max": 84
 							},
-							"text": "Rocky World; pg 72"
+							"text": "Rocky World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_sta.5",
@@ -9915,7 +9929,7 @@
 								"min": 85,
 								"max": 94
 							},
-							"text": "Tainted World; pg 76"
+							"text": "Tainted World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_sta.6",
@@ -9923,7 +9937,7 @@
 								"min": 95,
 								"max": 97
 							},
-							"text": "Grave World; pg 54"
+							"text": "Grave World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/fusion_suppressor_planetary_class_sector_based_sta.7",
@@ -9931,7 +9945,7 @@
 								"min": 98,
 								"max": 100
 							},
-							"text": "Shattered World; pg 74"
+							"text": "Shattered World"
 						}
 					],
 					"_source": {
@@ -10077,7 +10091,7 @@
 								"min": 9,
 								"max": 10
 							},
-							"text": ">Tidally-locked World; pg 78"
+							"text": "Tidally-locked World"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/planetary_class.4",
@@ -11079,7 +11093,7 @@
 										"min": 93,
 										"max": 100
 									},
-									"text": ">Extraplanetary Biome"
+									"text": "Extraplanetary Biome"
 								}
 							],
 							"_source": {
@@ -11600,7 +11614,7 @@
 										"min": 79,
 										"max": 80
 									},
-									"text": ">Salt Flat (Desert World); pg 50*"
+									"text": "Salt Flat (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/anomalous_world/extraplanetary_biome.45",
@@ -11616,7 +11630,7 @@
 										"min": 82,
 										"max": 83
 									},
-									"text": ">Semi-arid (Desert World); pg 50*"
+									"text": "Semi-arid (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/anomalous_world/extraplanetary_biome.47",
@@ -12833,7 +12847,7 @@
 										"min": 33,
 										"max": 100
 									},
-									"text": ">Biome Feature; next page"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -15366,7 +15380,7 @@
 										"min": 31,
 										"max": 100
 									},
-									"text": ">Biome Feature; next page"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -16979,7 +16993,7 @@
 										"min": 34,
 										"max": 100
 									},
-									"text": ">Biome Feature"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -19300,7 +19314,7 @@
 										"min": 31,
 										"max": 100
 									},
-									"text": ">Biome Feature; next page"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -20750,7 +20764,7 @@
 										"min": 1,
 										"max": 33
 									},
-									"text": "Hothouse (Furnace World); pg 53"
+									"text": "Hothouse (Furnace World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/jovian_world/planetary_heat.1",
@@ -20758,7 +20772,7 @@
 										"min": 34,
 										"max": 67
 									},
-									"text": "Bleak (Rocky World); pg 73"
+									"text": "Bleak (Rocky World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/jovian_world/planetary_heat.2",
@@ -20766,7 +20780,7 @@
 										"min": 68,
 										"max": 100
 									},
-									"text": "Frigid (Ice World); pg 57"
+									"text": "Frigid (Ice World)"
 								}
 							],
 							"_source": {
@@ -21549,7 +21563,7 @@
 										"min": 31,
 										"max": 100
 									},
-									"text": ">Biome Feature; next page"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -25248,7 +25262,7 @@
 										"min": 78,
 										"max": 100
 									},
-									"text": ">Biome Feature"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -25657,7 +25671,7 @@
 										"min": 96,
 										"max": 100
 									},
-									"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+									"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 								}
 							],
 							"_source": {
@@ -26212,7 +26226,7 @@
 										"min": 2,
 										"max": 20
 									},
-									"text": ">Lurking Threat"
+									"text": "Lurking Threat"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/living_world/underground_peril.2",
@@ -28454,7 +28468,7 @@
 										"min": 33,
 										"max": 100
 									},
-									"text": ">Biome Feature; next page"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -30790,7 +30804,7 @@
 										"min": 28,
 										"max": 100
 									},
-									"text": ">Biome Feature"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -32472,7 +32486,7 @@
 										"min": 97,
 										"max": 100
 									},
-									"text": ">Preserved biome"
+									"text": "Preserved biome"
 								}
 							],
 							"_source": {
@@ -33553,7 +33567,7 @@
 										"min": 34,
 										"max": 100
 									},
-									"text": ">Biome Feature"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -36065,7 +36079,7 @@
 										"min": 36,
 										"max": 100
 									},
-									"text": ">Biome Feature"
+									"text": "Biome Feature"
 								}
 							],
 							"_source": {
@@ -36589,7 +36603,7 @@
 										"min": 1,
 										"max": 3
 									},
-									"text": ">Badlands (Desert World)"
+									"text": "Badlands (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.1",
@@ -36597,7 +36611,7 @@
 										"min": 4,
 										"max": 6
 									},
-									"text": ">Dune (Desert World)"
+									"text": "Dune (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.2",
@@ -36605,7 +36619,7 @@
 										"min": 7,
 										"max": 8
 									},
-									"text": ">Mesa (Desert World)"
+									"text": "Mesa (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.3",
@@ -36613,7 +36627,7 @@
 										"min": 9,
 										"max": 9
 									},
-									"text": ">Oasis (Desert World)"
+									"text": "Oasis (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.4",
@@ -36621,7 +36635,7 @@
 										"min": 10,
 										"max": 11
 									},
-									"text": ">Salt Flat (Desert World)"
+									"text": "Salt Flat (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.5",
@@ -36629,7 +36643,7 @@
 										"min": 12,
 										"max": 14
 									},
-									"text": ">Semi-arid (Desert World)"
+									"text": "Semi-arid (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.6",
@@ -36637,7 +36651,7 @@
 										"min": 15,
 										"max": 17
 									},
-									"text": ">Steppe (Desert World)"
+									"text": "Steppe (Desert World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.7",
@@ -36645,7 +36659,7 @@
 										"min": 18,
 										"max": 18
 									},
-									"text": ">Ash (Furnace World)"
+									"text": "Ash (Furnace World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.8",
@@ -36653,7 +36667,7 @@
 										"min": 19,
 										"max": 20
 									},
-									"text": ">Volcanic (Furnace World)"
+									"text": "Volcanic (Furnace World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.9",
@@ -36661,7 +36675,7 @@
 										"min": 21,
 										"max": 22
 									},
-									"text": ">Cryoflora (Ice World)"
+									"text": "Cryoflora (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.10",
@@ -36669,7 +36683,7 @@
 										"min": 23,
 										"max": 24
 									},
-									"text": ">Frigid (Ice World)"
+									"text": "Frigid (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.11",
@@ -36677,7 +36691,7 @@
 										"min": 25,
 										"max": 25
 									},
-									"text": ">Geothermal (Ice World)"
+									"text": "Geothermal (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.12",
@@ -36685,7 +36699,7 @@
 										"min": 26,
 										"max": 27
 									},
-									"text": ">Glacial (Ice World)"
+									"text": "Glacial (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.13",
@@ -36693,7 +36707,7 @@
 										"min": 28,
 										"max": 28
 									},
-									"text": ">Glaciovolcanic (Ice World)"
+									"text": "Glaciovolcanic (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.14",
@@ -36701,7 +36715,7 @@
 										"min": 29,
 										"max": 30
 									},
-									"text": ">Iceberg (Ice World)"
+									"text": "Iceberg (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.15",
@@ -36709,7 +36723,7 @@
 										"min": 31,
 										"max": 33
 									},
-									"text": ">Snow (Ice World)"
+									"text": "Snow (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.16",
@@ -36717,7 +36731,7 @@
 										"min": 34,
 										"max": 34
 									},
-									"text": ">Subglacial (Ice World)"
+									"text": "Subglacial (Ice World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.17",
@@ -36725,7 +36739,7 @@
 										"min": 35,
 										"max": 38
 									},
-									"text": ">Forest (Jungle World)"
+									"text": "Forest (Jungle World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.18",
@@ -36733,7 +36747,7 @@
 										"min": 39,
 										"max": 40
 									},
-									"text": ">Megaflora (Jungle World)"
+									"text": "Megaflora (Jungle World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.19",
@@ -36741,7 +36755,7 @@
 										"min": 41,
 										"max": 41
 									},
-									"text": ">Petrified (Jungle World)"
+									"text": "Petrified (Jungle World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.20",
@@ -36749,7 +36763,7 @@
 										"min": 42,
 										"max": 44
 									},
-									"text": ">Rainforest (Jungle World)"
+									"text": "Rainforest (Jungle World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.21",
@@ -36757,7 +36771,7 @@
 										"min": 45,
 										"max": 47
 									},
-									"text": ">Swamp (Jungle World)"
+									"text": "Swamp (Jungle World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.22",
@@ -36765,7 +36779,7 @@
 										"min": 48,
 										"max": 49
 									},
-									"text": ">Tepui (Jungle World)"
+									"text": "Tepui (Jungle World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.23",
@@ -36773,7 +36787,7 @@
 										"min": 50,
 										"max": 52
 									},
-									"text": ">Archipelago (Ocean World)"
+									"text": "Archipelago (Ocean World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.24",
@@ -36781,7 +36795,7 @@
 										"min": 53,
 										"max": 56
 									},
-									"text": ">Atoll (Ocean World)"
+									"text": "Atoll (Ocean World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.25",
@@ -36789,7 +36803,7 @@
 										"min": 57,
 										"max": 58
 									},
-									"text": ">Crag (Ocean World)"
+									"text": "Crag (Ocean World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.26",
@@ -36797,7 +36811,7 @@
 										"min": 59,
 										"max": 61
 									},
-									"text": ">Hycean (Ocean World)"
+									"text": "Hycean (Ocean World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.27",
@@ -36805,7 +36819,7 @@
 										"min": 62,
 										"max": 62
 									},
-									"text": ">Mangrove (Ocean World)"
+									"text": "Mangrove (Ocean World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.28",
@@ -36813,7 +36827,7 @@
 										"min": 63,
 										"max": 64
 									},
-									"text": ">Reef (Ocean World)"
+									"text": "Reef (Ocean World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.29",
@@ -36821,7 +36835,7 @@
 										"min": 65,
 										"max": 65
 									},
-									"text": ">Basalt (Rocky World)"
+									"text": "Basalt (Rocky World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.30",
@@ -36829,7 +36843,7 @@
 										"min": 66,
 										"max": 67
 									},
-									"text": ">Bog (Rocky World)"
+									"text": "Bog (Rocky World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.31",
@@ -36837,7 +36851,7 @@
 										"min": 68,
 										"max": 68
 									},
-									"text": ">Mud (Rocky World)"
+									"text": "Mud (Rocky World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.32",
@@ -36845,7 +36859,7 @@
 										"min": 69,
 										"max": 70
 									},
-									"text": ">Hive (Tainted World)"
+									"text": "Hive (Tainted World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.33",
@@ -36853,7 +36867,7 @@
 										"min": 71,
 										"max": 71
 									},
-									"text": ">Mutagenic (Tainted World)"
+									"text": "Mutagenic (Tainted World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.34",
@@ -36861,7 +36875,7 @@
 										"min": 72,
 										"max": 73
 									},
-									"text": ">Mycelium (Tainted World)"
+									"text": "Mycelium (Tainted World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.35",
@@ -36869,7 +36883,7 @@
 										"min": 74,
 										"max": 80
 									},
-									"text": ">Grassland (Vital World)"
+									"text": "Grassland (Vital World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.36",
@@ -36877,7 +36891,7 @@
 										"min": 81,
 										"max": 87
 									},
-									"text": ">Jungle (Vital World)"
+									"text": "Jungle (Vital World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.37",
@@ -36885,7 +36899,7 @@
 										"min": 88,
 										"max": 94
 									},
-									"text": ">Savanna (Vital World)"
+									"text": "Savanna (Vital World)"
 								},
 								{
 									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/vital_world/biome.38",
@@ -36893,7 +36907,7 @@
 										"min": 95,
 										"max": 100
 									},
-									"text": ">Taiga (Vital World)"
+									"text": "Taiga (Vital World)"
 								}
 							],
 							"_source": {
@@ -38034,7 +38048,7 @@
 								"min": 1,
 								"max": 40
 							},
-							"text": ">Metal Type; pg 69"
+							"text": "Metal Type"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/splinters/splinter_material.1",
@@ -38042,7 +38056,7 @@
 								"min": 41,
 								"max": 65
 							},
-							"text": ">Ceramic Type; pg 103"
+							"text": "Ceramic Type"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/splinters/splinter_material.2",
@@ -38050,7 +38064,7 @@
 								"min": 66,
 								"max": 75
 							},
-							"text": ">Crystal Type; pg 49"
+							"text": "Crystal Type"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/splinters/splinter_material.3",
@@ -38058,7 +38072,7 @@
 								"min": 76,
 								"max": 80
 							},
-							"text": ">Animal Organic Matter; pg 64"
+							"text": "Animal Organic Matter"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/splinters/splinter_material.4",
@@ -39822,7 +39836,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						}
 					],
 					"_source": {
@@ -40097,7 +40111,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						}
 					],
 					"_source": {
@@ -40364,7 +40378,7 @@
 								"min": 1,
 								"max": 40
 							},
-							"text": ">Metal Type; pg 69"
+							"text": "Metal Type"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/unidentified_megastructure_material.1",
@@ -40372,7 +40386,7 @@
 								"min": 41,
 								"max": 65
 							},
-							"text": ">Ceramic Type"
+							"text": "Ceramic Type"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/unidentified_megastructure_material.2",
@@ -40380,7 +40394,7 @@
 								"min": 66,
 								"max": 75
 							},
-							"text": ">Crystal Type; pg 49"
+							"text": "Crystal Type"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/unidentified_megastructure_material.3",
@@ -40388,7 +40402,7 @@
 								"min": 76,
 								"max": 80
 							},
-							"text": ">Animal Organic Matter; pg 64"
+							"text": "Animal Organic Matter"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/unidentified_megastructure_material.4",
@@ -40494,7 +40508,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": ">Pay the Price table; RG, pg 25"
+							"text": "Pay the Price table"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/trouble_in_the_megastructure.1",
@@ -40518,7 +40532,7 @@
 								"min": 4,
 								"max": 4
 							},
-							"text": ">Vault Peril; RG, pg 92"
+							"text": "Vault Peril"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/trouble_in_the_megastructure.4",
@@ -40526,7 +40540,7 @@
 								"min": 5,
 								"max": 5
 							},
-							"text": ">Lurking Threat"
+							"text": "Lurking Threat"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/trouble_in_the_megastructure.5",
@@ -40534,7 +40548,7 @@
 								"min": 6,
 								"max": 6
 							},
-							"text": ">Story Complication; RG, pg 110"
+							"text": "Story Complication"
 						}
 					],
 					"_source": {
@@ -40745,7 +40759,7 @@
 								"min": 20,
 								"max": 24
 							},
-							"text": "Gemstone, >Non-precious; pg 49"
+							"text": "Gemstone, : Non-precious"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/gigafoundries_stellar_hyperforge_known_product.6",
@@ -40753,7 +40767,7 @@
 								"min": 25,
 								"max": 28
 							},
-							"text": "Gemstone, >Semi-precious; pg 49"
+							"text": "Gemstone, : Semi-precious"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/gigafoundries_stellar_hyperforge_known_product.7",
@@ -40761,7 +40775,7 @@
 								"min": 29,
 								"max": 31
 							},
-							"text": "Gemstone, >Precious; pg 49"
+							"text": "Gemstone, : Precious"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/gigafoundries_stellar_hyperforge_known_product.8",
@@ -40769,7 +40783,7 @@
 								"min": 32,
 								"max": 33
 							},
-							"text": "Gemstone, >Exotic; pg 49"
+							"text": "Gemstone, : Exotic"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/gigafoundries_stellar_hyperforge_known_product.9",
@@ -40817,7 +40831,7 @@
 								"min": 55,
 								"max": 58
 							},
-							"text": "Ingot, >Non-ferrous; pg 69"
+							"text": "Ingot, : Non-ferrous"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/gigafoundries_stellar_hyperforge_known_product.15",
@@ -40825,7 +40839,7 @@
 								"min": 59,
 								"max": 61
 							},
-							"text": "Ingot, >Precious; pg 69"
+							"text": "Ingot, : Precious"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/gigafoundries_stellar_hyperforge_known_product.16",
@@ -40833,7 +40847,7 @@
 								"min": 62,
 								"max": 63
 							},
-							"text": "Ingot, >Exotic; pg 69"
+							"text": "Ingot, : Exotic"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/gigafoundries_stellar_hyperforge_known_product.17",
@@ -40929,7 +40943,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						}
 					],
 					"_source": {
@@ -40962,7 +40976,7 @@
 								"min": 1,
 								"max": 35
 							},
-							"text": ">Engineering"
+							"text": "Engineering"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/megastructure_derelict_zones.1",
@@ -40970,7 +40984,7 @@
 								"min": 36,
 								"max": 40
 							},
-							"text": ">Living"
+							"text": "Living"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/megastructure_derelict_zones.2",
@@ -40978,7 +40992,7 @@
 								"min": 41,
 								"max": 45
 							},
-							"text": ">Medical"
+							"text": "Medical"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/megastructure_derelict_zones.3",
@@ -40986,7 +41000,7 @@
 								"min": 46,
 								"max": 65
 							},
-							"text": ">Operations"
+							"text": "Operations"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/megastructure_derelict_zones.4",
@@ -40994,7 +41008,7 @@
 								"min": 66,
 								"max": 90
 							},
-							"text": ">Production"
+							"text": "Production"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megastructures/megastructure_derelict_zones.5",
@@ -41002,7 +41016,7 @@
 								"min": 91,
 								"max": 100
 							},
-							"text": ">Research"
+							"text": "Research"
 						}
 					],
 					"_source": {
@@ -41107,7 +41121,7 @@
 								"min": 91,
 								"max": 100
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus;  pg  13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						}
 					],
 					"_source": {
@@ -42707,7 +42721,7 @@
 								"min": 5,
 								"max": 6
 							},
-							"text": ">Vault Feature; RG, pg 92"
+							"text": "Vault Feature"
 						}
 					],
 					"_source": {
@@ -43096,7 +43110,7 @@
 								"min": 5,
 								"max": 6
 							},
-							"text": ">Vault Opportunity; RG, pg 92"
+							"text": "Vault Opportunity"
 						}
 					],
 					"_source": {
@@ -43874,7 +43888,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": ">Pay the Price table; RG, pg 25"
+							"text": "Pay the Price table"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/trouble_in_the_megacity.1",
@@ -43898,7 +43912,7 @@
 								"min": 4,
 								"max": 4
 							},
-							"text": ">Vault Peril; RG, pg 92"
+							"text": "Vault Peril"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/trouble_in_the_megacity.4",
@@ -43906,7 +43920,7 @@
 								"min": 5,
 								"max": 5
 							},
-							"text": ">Lurking Threat; next page"
+							"text": "Lurking Threat"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/alien_megacities/trouble_in_the_megacity.5",
@@ -43914,7 +43928,7 @@
 								"min": 6,
 								"max": 6
 							},
-							"text": ">Story Complication; RG, pg 110"
+							"text": "Story Complication"
 						}
 					],
 					"_source": {
@@ -44132,7 +44146,7 @@
 								"min": 5,
 								"max": 6
 							},
-							"text": ">Vault Feature; RG, pg 92"
+							"text": "Vault Feature"
 						}
 					],
 					"_source": {
@@ -44748,7 +44762,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "Descriptor + Focus; pg 13"
+							"text": "Descriptor + Focus"
 						}
 					],
 					"_source": {
@@ -45429,7 +45443,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": "Descriptor + Focus; pg 13"
+							"text": "Descriptor + Focus"
 						}
 					],
 					"_source": {
@@ -46252,7 +46266,7 @@
 								"min": 5,
 								"max": 6
 							},
-							"text": ">Vault Opportunity; RG, pg 92"
+							"text": "Vault Opportunity"
 						}
 					],
 					"_source": {
@@ -46874,7 +46888,7 @@
 								"min": 100,
 								"max": 100
 							},
-							"text": ">Ultra-scale"
+							"text": "Ultra-scale"
 						}
 					],
 					"_source": {
@@ -49941,7 +49955,7 @@
 								"min": 56,
 								"max": 94
 							},
-							"text": ">Legged"
+							"text": "Legged"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/human_construct_motility_interior.4",
@@ -49949,7 +49963,7 @@
 								"min": 95,
 								"max": 100
 							},
-							"text": ">Wheeled"
+							"text": "Wheeled"
 						}
 					],
 					"_source": {
@@ -50086,7 +50100,7 @@
 								"min": 25,
 								"max": 31
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_outlands.6",
@@ -51023,7 +51037,7 @@
 								"min": 28,
 								"max": 33
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_terminus.6",
@@ -51611,7 +51625,7 @@
 								"min": 66,
 								"max": 100
 							},
-							"text": ">Legged"
+							"text": "Legged"
 						}
 					],
 					"_source": {
@@ -51871,7 +51885,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": ">Anomaly; pg 194"
+							"text": "Anomaly"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/open_sea_peril.1",
@@ -51879,7 +51893,7 @@
 								"min": 2,
 								"max": 30
 							},
-							"text": ">Lurking Threat"
+							"text": "Lurking Threat"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/open_sea_peril.2",
@@ -52008,7 +52022,7 @@
 								"min": 41,
 								"max": 65
 							},
-							"text": ">Planetcraft; pg 142"
+							"text": "Planetcraft"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/behemoth_assembler_anchored_vessel.3",
@@ -52016,7 +52030,7 @@
 								"min": 66,
 								"max": 100
 							},
-							"text": ">Precursor vault (world-spanning site, vessel); pg 92"
+							"text": "Precursor vault (world-spanning site, vessel)"
 						}
 					],
 					"_source": {
@@ -53295,7 +53309,7 @@
 								"min": 1,
 								"max": 1
 							},
-							"text": ">Anomaly; pg 194"
+							"text": "Anomaly"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/seabed_peril.1",
@@ -53303,7 +53317,7 @@
 								"min": 2,
 								"max": 20
 							},
-							"text": ">Lurking Threat; pg 36"
+							"text": "Lurking Threat"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/seabed_peril.2",
@@ -55217,7 +55231,7 @@
 								"min": 46,
 								"max": 80
 							},
-							"text": ">Legged"
+							"text": "Legged"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/human_construct_motility_land.4",
@@ -55225,7 +55239,7 @@
 								"min": 81,
 								"max": 100
 							},
-							"text": ">Wheeled"
+							"text": "Wheeled"
 						}
 					],
 					"_source": {
@@ -57023,7 +57037,7 @@
 								"min": 22,
 								"max": 29
 							},
-							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus; pg 13"
+							"text": "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) + Focus"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/space_sightings_expanse.6",
@@ -58792,7 +58806,7 @@
 								"min": 96,
 								"max": 100
 							},
-							"text": ">Basic Creature Form; RG, pg 69"
+							"text": "Basic Creature Form"
 						}
 					],
 					"_source": {
@@ -58888,7 +58902,7 @@
 								"min": 46,
 								"max": 100
 							},
-							"text": ">Legged"
+							"text": "Legged"
 						}
 					],
 					"_source": {
