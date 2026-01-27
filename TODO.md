@@ -153,6 +153,17 @@ FoundryVTT module available: [jendave/ironsmith-compendiums](https://github.com/
 
 License: CC-BY-4.0
 
+### Starforging Ironsworn - by iceyman
+
+Homebrew bringing Starforged mechanics to Classic Ironsworn. Updated to use "Follow a Path" from Ironsworn Lodestar.
+
+- [ ] Assess PDF structure for conversion feasibility
+- [ ] Potentially contains: moves, assets, oracles
+
+Source: Discord (IS15E-ish Ironsworn Upgraded.zip)
+
+Note: kat mentioned there may be a second "starforged ironsworn" project - need to identify it.
+
 ---
 
 ## Dependencies (Resolved)
