@@ -166,6 +166,20 @@ Note: kat mentioned there may be a second "starforged ironsworn" project - need 
 
 ---
 
+## Schema Enhancements
+
+### Dual-Card Assets (Ancient Wonders)
+
+Ancient Wonders has "Special Companions" with two physical cards (recto/verso). Currently modeled as separate assets (e.g., `ace_pilot_1`, `ace_pilot_2`).
+
+Proposed backwards-compatible enhancement:
+
+- [ ] Add optional `card_group` field to link paired assets
+- [ ] Add optional `card_index` field (0=recto, 1=verso)
+- [ ] Apps can render as flip-card or keep as separate assets
+
+---
+
 ## Dependencies (Resolved)
 
 - [x] Evaluate `jtd` - Official RFC 8927 implementation, stable spec
