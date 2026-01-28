@@ -1,0 +1,546 @@
+_id: "ironsmith"
+datasworn_version: "0.1.0"
+type: "expansion"
+ruleset: "classic"
+title: "Ironsmith"
+date: "2021-10-21"
+url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+license: "https://creativecommons.org/licenses/by/4.0"
+authors:
+  - name: "Eric Bright"
+assets:
+  companion:
+    name: "Companion Assets"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: &a1
+        - name: "Eric Bright"
+    contents:
+      bear:
+        name: "Bear"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Press On: When you travel through rugged forest terrain following your bear's persistence, you may [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey) with +iron (instead of +wits) and take +1 momentum on a hit."
+          - text: "Nose for Honey: When you [Resupply](datasworn:move:classic/adventure/resupply) by having your bear track fish, berries or honey, add +1 and take +1 supply or +1 momentum on a strong hit."
+          - text: "Protective: When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) alongside your bear after you have suffered harm in combat, you may decide before rolling to treat a weak hit as a miss. If you do, inflict +2 harm or take +2 momentum on a strong hit."
+        requirement: "Your bear endures all."
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 5
+            value: 5
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      giant_snake:
+        name: "Giant Snake"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Poison: Once per fight, when you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) alongside your snake and score a strong hit, inflict 1 harm after resolving the next X moves where X is result of your action die."
+          - text: "Hypnotize: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by having your snake weave hypnotically, roll +shadow. On a strong hit, you have the initiative after the next move regardless of the outcome."
+          - text: "Squeeze: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +iron by having your snake constrict the limbs of a foe of formidable or less, add +2."
+        requirement: "Your snake is silent and deadly."
+        description: "Treat a weak hit as a miss on all abilities."
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      boar:
+        name: "Boar"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Gore: When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) alongside your boar and score a hit, inflict +1 harm and take +1 momentum."
+          - text: "Charge: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +iron by having your boar knock down your foe of formidable or less, you may reroll any die."
+          - text: "Truffle Snuffle: When you encourage your boar to follow the scent of truffles, you may [Resupply](datasworn:move:classic/adventure/resupply) with +heart (instead of +wits). If you do, take +1 supply or +1 momentum on a strong hit."
+        requirement: "Your boar is an aggressive fighter."
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      icy_crocodile:
+        name: "Icy Crocodile"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Aquatic: When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) alongside your croc in a watery environment, add +1 and take +1 momentum on a hit."
+          - text: "Death Roll: When you [End The Fight](datasworn:move:classic/combat/end_the_fight) alongside your croc in a watery environment against a foe of formidable or less, you may reroll any dice."
+          - text: "Jaws of Iron: When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) alongside your croc, inflict +1 harm on a hit. Once per fight on a strong hit, inflict +2 harm instead."
+        requirement: "Your croc is cold and calculating."
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+  path:
+    name: "Path Assets"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: *a1
+    contents:
+      beast_bonded:
+        name: "Beast Bonded"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "When you make the Companion [Endure Harm](datasworn:move:classic/suffer/endure_harm) move for your beast or animal companion, you may choose to suffer the -health in place of your companion. If you do, reduce the -health suffered by 1 and add +1 when you [Endure Harm](datasworn:move:classic/suffer/endure_harm)."
+          - text: "Increase your beast or animal companion's maximum health by +1."
+          - text: "Your beast or animal companion has a higher intellect, stronger bond, and improved communication with you. When you [Sojourn](datasworn:move:classic/relationship/sojourn) with them, add +1 or take +1 more for your chosen action on a hit (decide before rolling)."
+        requirement: "Once you Forge a Bond with your animal or beast companion and unlock every ability of the Animal Kin asset..."
+      dweller_in_the_dark:
+        name: "Dweller In The Dark"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "When you [Gather Information](datasworn:move:classic/adventure/gather_information) by spying into areas of near total darkness..."
+          - text: "When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray), [Face Danger](datasworn:move:classic/adventure/face_danger), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by using areas of near total darkness..."
+          - text: "When you [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey) under cover of near total darkness, or when you [Delve The Depths](datasworn:move:delve/delve/delve_the_depths) using the cover of near total darkness..."
+        requirement: "After you ingest Myrkrsyn Nightshade flower and spend a feverish evening to permanently transform your eyes for darkvision giving you sensitivity to bright light..."
+        description: "You may roll +shadow. If you do, add +1 and take +1 momentum on a hit."
+      druidic_influence:
+        name: "Druidic Influence"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "You may [Gather Information](datasworn:move:classic/adventure/gather_information) from animals by speaking their language. If you do, roll +heart (instead of +wits) and add +1. Alternately, you may seek the aid of a single animal. If you do, roll +heart. On a strong hit, you gain an animal or beast Companion asset with one unlocked ability until dusk. Treat a weak hit as a miss."
+          - text: "When you speak the language of air and scatter sacred water to the wind, roll +wits. On a weak hit, you may change the weather moderately for an hour. On a strong hit, you may change it extremely."
+          - text: "When you speak the language of earth and thrust an iron-tipped staff into the ground, roll +wits. On a hit, take +1 momentum, and for the next week, the plants in the area grow under your basic direction. Alternately, you may [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits by having plants grow rapidly to entangle foes, create a barrier, forge a path, etc. but treat a weak hit as a miss."
+      iron_eater:
+        name: "Iron Eater"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "...to ready yourself for a ritual by ingesting iron shavings and draw on its essence, roll +wits and add +1. On a hit, take +1 momentum."
+          - text: "...in combat by ingesting a pellet of iron and draw on its strength, roll +wits and add +1. On a hit, you may suffer -1 health and take +1 iron. If you do, you suffer -2 iron when the fight ends. Take +1 iron after the pellet leaves your body."
+          - text: "...by pressing an iron paste to your tongue and draw on its glamor, roll +wits and add +1. On a hit, take +1 momentum if the next move you make is [Compel](datasworn:move:classic/relationship/compel)."
+        requirement: "After you Fulfill Your Vow in service to a mystic iron eater and Forge a Bond to train with them: When you Secure an Advantage..."
+      tactician:
+        name: "Tactician"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "When you Aid an Ally, [Battle](datasworn:move:classic/combat/battle), [Face Danger](datasworn:move:classic/adventure/face_danger), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits by leading a group or army and actively giving tactical commands, add +1 and take +1 momentum on a hit."
+          - text: "Once per fight, when you miss on a move, you may adjust your strategy on the fly. Envision this change and suffer -X momentum. Then add +X where X is any value up to your wits score. This may change the miss to a hit."
+          - text: "Once per fight, when you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits by studying your foe for a weakness and score a strong hit, you may immediately make the [Strike](datasworn:move:classic/combat/strike) move. If you do and score a hit, inflict +X harm where X is your wits score."
+      earthborn:
+        name: "Earthborn"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) related to your knowledge of underground environments or creatures, add +1 and take +1 momentum on a hit."
+          - text: "When you [Delve The Depths](datasworn:move:delve/delve/delve_the_depths) underground, add +1. On a strong hit, also choose one.
+
+              \  * This is the way: Mark progress twice.  * Hunker down: You find a secure location in addition to the result of Find an Opportunity. You may [Make Camp](datasworn:move:classic/adventure/make_camp) now and reroll any dice.  * Lay of the land: The next time you [Delve The Depths](datasworn:move:delve/delve/delve_the_depths) in this site, you may reroll any dice."
+          - text: "When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) in an underground environment, reroll any dice."
+      scholar:
+        name: "Scholar"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "[Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage)..."
+          - text: "[Compel](datasworn:move:classic/relationship/compel) or [Forge A Bond](datasworn:move:classic/relationship/forge_a_bond)..."
+          - text: "[Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey), [Delve The Depths](datasworn:move:delve/delve/delve_the_depths), or [Resupply](datasworn:move:classic/adventure/resupply)..."
+        requirement: "After you spend years studying a terrain, foe, or narrow topic, list this as your area of expertise.</p><p>When you rely primarily on this knowledge to aid you as you..."
+        description: "Add +1 and take +1 momentum on a hit."
+        options:
+          area of expertise:
+            field_type: "text"
+            label: "area of expertise"
+      way_of_sacrifice:
+        name: "Way Of Sacrifice"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "When you [Swear An Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to help a community in need without reward or benefit to yourself, you may reroll any dice. When you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) and mark experience, take +1 experience and +1 spirit."
+          - text: "When you [Forge A Bond](datasworn:move:classic/relationship/forge_a_bond) with a community you after you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) to aid them, add +1 and take +1 momentum or +1 spirit."
+          - text: "When you [Compel](datasworn:move:classic/relationship/compel) using genuine affection by putting others' needs before your own, add +1 and take +1 momentum or +1 spirit on a hit."
+      mutant_physique:
+        name: "Mutant Physique"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "When you [Endure Harm](datasworn:move:classic/suffer/endure_harm) +iron, add +1. Also, when you [Face Death](datasworn:move:classic/suffer/face_death), you may roll +iron (instead of +heart). If you do, add +1 but treat a weak hit as a miss."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +iron using brute force or feats of endurance, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge using swift reflexes, speed, or feats of acrobatics, add +1 and take +1 momentum on a hit."
+        requirement: "Your body can be pushed beyond normal human limits."
+      student_of_the_beast:
+        name: "Student Of The Beast"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "[Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits,..."
+          - text: "Aid an Ally or [Compel](datasworn:move:classic/relationship/compel), you may roll +wits (instead of +heart) and..."
+          - text: "[Battle](datasworn:move:classic/combat/battle) or [Enter The Fray](datasworn:move:classic/combat/enter_the_fray), you may roll +wits (instead of another stat) and..."
+        requirement: "After you have gained significant knowledge and experience with a particular type of monstrous beast or horror and then leverage that specialized knowledge to..."
+        description: "Add +1 and take +1 momentum on a hit."
+      mutant_senses:
+        name: "Mutant Senses"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Darkvision, like an owl or cat"
+          - text: "Smell, like a hound or elephant"
+          - text: "Hearing, like a bat or moth"
+        requirement: "Your body mutates and gains an enhanced sense of..."
+        description: "Envision how this enhancement changes your body. When you Face Danger, Gather Information, or Secure an Advantage by relying primarily on this enhanced sense, add +1 and take +1 momentum on a hit."
+      silent_stalker:
+        name: "Silent Stalker"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "[Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage)+shadow by hiding from..."
+          - text: "[Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by making a trap or [Check Your Gear](datasworn:move:delve/delve/check_your_gear) to build such a trap for..."
+          - text: "[Enter The Fray](datasworn:move:classic/combat/enter_the_fray) +shadow against..."
+        requirement: "When you..."
+        description: "A monstrous beast or horror, add +1 and take +1 momentum on a hit."
+      the_darkness_within_definition:
+        name: "The Darkness Within (Definition)"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities: []
+        options:
+          define the dark power in you:
+            field_type: "text"
+            label: "define the dark power in you"
+      infusion_brewer:
+        name: "Infusion Brewer"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Strength of the Bear: Iron/Health"
+          - text: "Grace of the Panther: Edge/Health"
+          - text: "Cunning of the Fox: Shadow / Spirit"
+        requirement: "When you drink a decoction below, roll +wits. On a strong hit, set your infusion track to +6. On a weak hit, make it +3. Then, when you make a move with that stat, add +1 and suffer -1 infusion. If you roll a 1 on the action die for that move, also suffer -1 to the associated track."
+        description: "Each decoction may only be used once per scene."
+        controls:
+          infusion:
+            field_type: "condition_meter"
+            label: "infusion"
+            max: 6
+            value: 6
+            min: 0
+      the_darkness_within:
+        name: "The Darkness Within"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "You gain access to the moves Wield the Darkness, Resist the Darkness, and Succumb to Darkness."
+          - text: "You gain access to the Cleanse the Darkness move. Envision your method for combating the dark influence inside you."
+          - text: "When you Wield the Darkness, you may make major alterations instead of minor and also perform minor acts of creation with aspects."
+  combat_talent:
+    name: "Combat Talent Assets"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: *a1
+    contents:
+      runic_warrior:
+        name: "Runic Warrior"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Once per fight, you may [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits and add +1 by tracing the Sign of Drepa to push your foe with a blast of force. On a weak hit, you have the initiative (instead of losing it)."
+          - text: "You may [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) +wits (instead of +iron or +edge) by tracing the Sign of Skina to blast your foe with mystic energy (inflicts 2 harm)."
+          - text: "When you burn momentum to improve a result while using this asset, choose one:
+
+              \  * You have the initiative.  * Take +1 momentum.  * Inflict +1 harm."
+  ritual:
+    name: "Ritual Assets"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: *a1
+    contents:
+      ancestral_knowledge:
+        name: "Ancestral Knowledge"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities: []
+        requirement: "When you surround yourself with objects connected to a specific ancestor and implore them for help, roll +heart. On a strong hit, they find you worthy and grant you temporary power. Until the following dawn, you gain the asset associated with that ancestor with all the abilities unlocked. Treat a weak hit as a miss. When you gain each upgrade, name the ancestor and asset."
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      bloodlust:
+        name: "Bloodlust"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Modr: [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) or Draw the Circle, add +X..."
+          - text: "Sadr: [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash), add +X..."
+          - text: "Skadi: Inflict harm, inflict +X harm..."
+        requirement: "When you mark your own, an ally's, or companion's arm, head and weapon with ancient sigils of rage made of blood, roll +wits. On a strong hit, mystic rage fuels the target. The next time they..."
+        description: "...where X is the result on your action die for this ritual. On a weak hit, as above but X is 1 instead."
+      bestial_aspect:
+        name: "Bestial Aspect"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Green Wolf: Heart"
+          - text: "Ironclaw Bear: Iron"
+          - text: "Rock Panther: Edge"
+        requirement: "When you partake of the stalk of a rare Kykvendi plant, wear the ceremonial trappings of an animal listed below, and focus your will for an hour, roll +wits. On a hit, you are filled with the power of that animal on take on its dominant characteristics. Envision this transformation and take +1 to the listed stat until dusk. On a strong hit, also take +1 momentum."
+      protection:
+        name: "Protection"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "From Harm: The next time the target suffers harm, reduce the harm inflicted by X where X is the result of your action die for this ritual."
+          - text: "From Despair: The next time the target suffers a loss of spirt, reduce the amount suffered by X where X is the result of your action die for this ritual."
+          - text: "From Danger: The next time the target makes the [Face Danger](datasworn:move:classic/adventure/face_danger) move, they add +X where X is the result of your action die for this ritual."
+        requirement: "When you perform the Ceremony of Iron and Stone to mark a rune in ash on an ally, companion, or yourself, roll +wits. On a hit, the effect below occurs once before the next dawn. On a strong hit, as above and take +1 momentum."
+      true_namer:
+        name: "True Namer"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities: []
+        requirement: "After you spend significant time studying a specific animal, beast, element, or other narrow topic, you learn its true name that holds ancient power."
+        description: "You may Secure an Advantage +wits by invoking a target's true name and claiming power over it. On a strong hit, for the rest of the scene or encounter, add +1 to any move where you primarily interact physically or socially with that target. Treat a weak hit as a miss. You may only attempt this once per scene or encounter per single target."
+        options:
+          true name:
+            field_type: "text"
+            label: "true name"
+      necromancy:
+        name: "Necromancy"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "When you speak the forbidden speech to one recently deceased, roll +wits. On a strong hit, you may [Gather Information](datasworn:move:classic/adventure/gather_information) from the spirit of the dead. On a weak hit, as above but [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress)."
+          - text: "When you encounter a horror, using the forbidden speech you may...
+
+              \  * [Face Danger](datasworn:move:classic/adventure/face_danger)+wits by commanding it 'See me not!' On a strong hit, it does not note your presence for a short time.  * [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits in combat by commanding it 'Be gone!' On a strong hit, inflict 1 harm and you may immediately [End The Fight](datasworn:move:classic/combat/end_the_fight). If you do and score a strong hit, the horror is banished forever.Treat a weak hit on either as a miss."
+          - text: "When you chant the forbidden speech and sprinkle your blood over a corpse under a full moon, [Endure Harm](datasworn:move:classic/suffer/endure_harm) (2 harm) and roll +wits. On a strong hit, the corpse turns into a horror that you direct with a single command. Treat a weak hit as a miss."
+      soul_of_the_beast:
+        name: "Soul Of The Beast"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a1
+        abilities:
+          - enabled: true
+            text: "Small Animal of Stealth:</p><p>E: +1 H:+1 I:+1 S: +3 W: +2"
+          - text: "Medium Animal of Speed:</p><p>E: +3 H:+1 1+1 S: +2 W: +1"
+          - text: "Large Animal of Strength:</p><p>E: +1 H:+2 1:+3 S: +1 W: +1"
+        requirement: "When you partake of the rare Wildroot Ferox and spend an hour channeling an animal spirit, roll +wits. On a hit, you transform into an animal form chosen from below for up to an hour (may be ended early). Envision this change to your body. During this time, your stats are replaced with the stats listed below. On a strong hit, also take +1 momentum and increase your animal form's highest stat by +1. These abilities must be learned in order: small, medium, large."

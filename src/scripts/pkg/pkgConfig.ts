@@ -216,3 +216,31 @@ export const AncientWonders: RulesPackageConfig = {
 		],
 	},
 }
+
+export const Ironsmith: RulesPackageConfig = {
+	type: 'expansion',
+	paths: {
+		source: path.join(ROOT_SOURCE_DATA, 'ironsmith'),
+	},
+	id: 'ironsmith',
+	pkg: {
+		name: 'ironsmith',
+		private: true,
+		scope: PKG_SCOPE_COMMUNITY,
+		description:
+			'Datasworn JSON data for Ironsmith, a Classic Ironsworn expansion by Eric Bright.',
+		keywords: [
+			'ironsworn',
+			'datasworn',
+			'TTRPG',
+			'ironsmith',
+		],
+		authors: [
+			{
+				name: 'Eric Bright',
+				email: 'noreply@playeveryrole.com',
+				url: 'https://playeveryrole.com/',
+			},
+		],
+	},
+}

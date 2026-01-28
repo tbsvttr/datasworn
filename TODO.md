@@ -143,11 +143,12 @@ FoundryVTT module available: [jendave/starsmith-compendiums](https://github.com/
 
 ### Ironsmith (for Classic Ironsworn) - by Eric Bright
 
-Not in Datasworn yet. Content includes:
+Currently includes **Core Assets** (27: Companion 4, Path 15, Ritual 7, Combat Talent 1).
 
-- [ ] Oracles, Assets, Moves
+- [x] **Core Assets** - 27 assets converted
+- [ ] **Oracles** - Expanded oracles
+- [ ] **Mythology flavor packs** - Japanese (14), Indian (12), African (11), Norse (11), South American (12) = 60 assets
 - [ ] Site/Delve Themes, Domains, Foes
-- [ ] Mythology flavor packs (Japanese, Indian, African, South American, Norse)
 
 FoundryVTT module available: [jendave/ironsmith-compendiums](https://github.com/jendave/ironsmith-compendiums)
 
