@@ -544,3 +544,1232 @@ assets:
           - text: "Medium Animal of Speed:</p><p>E: +3 H:+1 1+1 S: +2 W: +1"
           - text: "Large Animal of Strength:</p><p>E: +1 H:+2 1:+3 S: +1 W: +1"
         requirement: "When you partake of the rare Wildroot Ferox and spend an hour channeling an animal spirit, roll +wits. On a hit, you transform into an animal form chosen from below for up to an hour (may be ended early). Envision this change to your body. During this time, your stats are replaced with the stats listed below. On a strong hit, also take +1 momentum and increase your animal form's highest stat by +1. These abilities must be learned in order: small, medium, large."
+  japanese_flavor:
+    name: "Japanese Flavor Pack"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: &a2
+        - name: "Eric Bright"
+    contents:
+      katana_master:
+        name: "Katana Master"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you score a strong hit on a [Strike](datasworn:move:classic/combat/strike), you may cede the initiative. If you do, add +2 to your next move."
+          - text: "When you score a weak hit on a [Clash](datasworn:move:classic/combat/clash), you may choose to inflict no harm. If you do, you have the initiative."
+          - text: "When you score a strong hit on a [Clash](datasworn:move:classic/combat/clash), add +1 to your next move."
+        requirement: "If you wield a katana with grace, you may Strike and Clash +edge (instead of +iron). If you do..."
+        description: "Sword"
+      aikido:
+        name: "Aikido"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) +edge by evading an attack without fighting back and score a weak hit, inflict 1 harm. On a strong hit, inflict 2 harm instead. This does not represent physical damage, but fatigue or frustration on the foe's part as they struggle to engage in combat with you."
+          - text: "Same as above, but add +1 and take +1 momentum on a hit."
+          - text: "When you attempt to [End The Fight](datasworn:move:classic/combat/end_the_fight) without having used [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) in the [Battle](datasworn:move:classic/combat/battle), subtract -1 from each challenge die."
+        description: "No Harm"
+      oaken_whirlwind:
+        name: "Oaken Whirlwind"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "In your hands, these wooden weapons are deadly (2 harm). When you instead use it as a simple weapon (1 harm), you may [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) +edge (instead of +iron). If you do, add +1 and take +1 momentum on a hit."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge using your nunchaku to disarm, intimidate, or force back your opponent, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) +edge to precisely block or deflect an incoming attack, add +1 and take +1 momentum on a hit."
+        requirement: "If you wield nunchaku or tonfa..."
+        description: "Nunchaku"
+      leaping_dragon:
+        name: "Leaping Dragon"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) with a savage double claw, you may add +2. If you do (decide before rolling), inflict +1 harm on a strong hit and count a weak hit as a miss."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge using your claws to disarm or intimidate your opponent, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +iron by climbing a treacherous surface or clinging in a precarious position using your claws to gain purchase, add +1 and take +1 momentum on a hit."
+        requirement: "If you wield tekko-kagi..."
+        description: "Claws"
+      threshing_floor:
+        name: "Threshing Floor"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge using your flail to disarm, trip, or stun your opponent, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) +edge by deflecting an oncoming attack or keeping your attacker at a distance, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger), [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage), or [Compel](datasworn:move:classic/relationship/compel) +iron by hitting or breaking an inanimate object, add +1 and take +1 momentum on a hit."
+        requirement: "If you wield a chigiriki...."
+        description: "Flail"
+      scorpion_storm:
+        name: "Scorpion Storm"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge using your chain to disarm, trip, stun, or push back your opponent, add +1 and take +1 momentum on a hit."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) by first entangling your opponent then slashing, choose one (decide before rolling).
+
+              \  * Get over here: Roll +edge. On a weak hit, you retain initiative.  * Finish them: Roll +iron. A weak hit counts as a miss. On a strong hit, you may [End The Fight](datasworn:move:classic/combat/end_the_fight) and reroll any challenge dice."
+          - text: "When you [Clash](datasworn:move:classic/combat/clash) against multiple opponents, you may add +1. If you do and score a hit, inflict I harm (instead of 2 harm) and you have the initiative."
+        requirement: "If you wield a kusarigama..."
+        description: "Chained Sickle"
+      suzaku:
+        name: "Suzaku"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Rebirth: If your phoenix misses on Companion [Endure Harm](datasworn:move:classic/suffer/endure_harm) when at 0 health, roll +heart. On a strong hit, the phoenix bursts into flame dealing 3 harm to foes and returns to life with 3 health. On a weak hit, the flame deals only I harm and the phoenix returns with only 1 health."
+          - text: "Phoenix Down: When you [Face Death](datasworn:move:classic/suffer/face_death) with your phoenix by your side, add +2 and take +1 momentum on a strong hit."
+          - text: "Heart of Fire: When you [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey) through the bitter cold with your phoenix burning brightly, add +1 and take +1 momentum on a hit."
+        requirement: "Your young phoenix is determined."
+        description: "Phoenix"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      seiryuu:
+        name: "Seiryuu"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Of the Heavens: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by requesting your dragon to mystically manipulate rain or wood, roll +heart and add +1. On a hit, take +1 momentum."
+          - text: "Remember the Old Ways: When you [Compel](datasworn:move:classic/relationship/compel) or [Gather Information](datasworn:move:classic/adventure/gather_information) using your dragon's connection to kami or symbolic status in tradition, you may roll +heart (instead of +wits). Add +1 and take +1 momentum on a hit."
+          - text: "Divine [Strike](datasworn:move:classic/combat/strike): When you [Strike](datasworn:move:classic/combat/strike) by asking your dragon to attack, roll +heart. If the foe has shown itself to be dishonorable or not a creature of natural origins, add +1. On a hit, your dragon inflicts 3 harm."
+        requirement: "Your young azure dragon is loyal."
+        description: "Azure Dragon"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 5
+            value: 5
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      masamune:
+        name: "Masamune"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you gift a blade you have forged to commemorate an important event or relationship, you may (one time only) reroll any dice when you [Compel](datasworn:move:classic/relationship/compel), [Forge A Bond](datasworn:move:classic/relationship/forge_a_bond), [Sojourn](datasworn:move:classic/relationship/sojourn), or Test Your Bond."
+          - text: "When you forge or repair an exquisite blade, roll +wits. On a strong hit, choose one to apply when you [Strike](datasworn:move:classic/combat/strike) with it.
+
+              \  * Balanced: Add +1.  * Honed: Inflict +1 harm on a bit  * Named: Take +1 momentum on a hit"
+          - text: "When you reforge a blade with nie iron to imbue it with mystic power, roll +wits. On a strong hit, choose one. A weak hit or miss ruins the blade. If you break or discard one of these blades, [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress).
+
+              \  * Baneful: Name a specific foe. When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) with this blade against that foe, add +1. On a hit, inflict +1 harm and take +1 momentum  * Arcane: The blade becomes a rarity. Envision its power."
+        description: "Forger Of Blades"
+      bushido:
+        name: "Bushido"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Compel](datasworn:move:classic/relationship/compel) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by telling a hard truth with compassion, add +1 and take +1 momentum on a hit. On a weak hit, envision how the hearer may take offense and complicate your situation."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) with heroic courage or exceptional loyalty, add +1 and take +1 momentum on a hit."
+          - text: "When you [Endure Harm](datasworn:move:classic/suffer/endure_harm) in direct pursuit of fulfilling an iron vow, add +1. Additionally, you may roll +heart instead of +health or +iron."
+        description: "Code Of Honor"
+      chikara_kotoba:
+        name: "Chikara Kotoba"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Healing, roll +heart. On a strong hit, take both +1 health and +1 momentum. On a weak hit, choose only one to take."
+          - text: "Clarity, roll +heart. On a hit, you may immediately [Gather Information](datasworn:move:classic/adventure/gather_information). If you do, add +1 and take +1 momentum on a hit."
+          - text: "Friendship with another person or community, roll +heart. On a hit, you may immediately [Forge A Bond](datasworn:move:classic/relationship/forge_a_bond). If you do, add +1 and take +1 momentum on a hit."
+        requirement: "When you take time to center yourself and chant the resonant and rhythmic sounds of..."
+        description: "Power Words"
+      ninjutsu:
+        name: "Ninjutsu"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Gather Information](datasworn:move:classic/adventure/gather_information) within an enemy area to discover their positions, plans, or methods, you may roll +shadow (instead of +wits). If you do, add +1 and take +1 momentum on a hit."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Face Danger](datasworn:move:classic/adventure/face_danger) by disguising yourself, confusing the opposition through misdirection, hiding in shadows, or vanishing without a trace, add +1 and take +1 momentum on a hit."
+          - text: "Before you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow), you may meditate upon missteps you made and commit to some significant change. If you do, either add +2 or take +1 experience on a hit."
+        description: "Infiltration Specialist"
+      kami_sasayaku:
+        name: "Kami Sasayaku"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you take time to attune yourself with the kami of an area, roll +heart. On a strong hit, you connect with them favorably. Choose one\ 
+
+              \  * Comforted: Take +1 spirit.  * Emboldened: Take +2 momentum.  * Bonded: [Forge A Bond](datasworn:move:classic/relationship/forge_a_bond) with a specific kami and add +1."
+          - text: "As above, but on a hit you may [Gather Information](datasworn:move:classic/adventure/gather_information) from the spirits. If you do, roll +heart (instead of +wits)."
+          - text: "As above, but on a strong hit, the kami offer to guide you to a destination in the area. If you accept and [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey), you may roll +heart or +spirit (instead of +wits). When you Reach Your Destination, take +2 momentum on a strong hit. Your kami guide leaves you if you [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey) to a new place, Face Desolation or [Face Death](datasworn:move:classic/suffer/face_death)."
+        description: "Kami Whisperer"
+      hi_magaru:
+        name: "Hi Magaru"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you draw mystical energy from a large fire, roll +wits. On a strong hit, add the value of your action die to your energy track. On a weak hit, as above but drawing in the flames is painful. [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm). You may [Strike](datasworn:move:classic/combat/strike) +energy with gouts of flame that inflict 3 harm. If you do, suffer -1 energy and take +1 momentum on a hit."
+          - text: "You may [Clash](datasworn:move:classic/combat/clash) +energy with a fiery shield that inflicts 3 harm. If you do, suffer -1 energy and take +1 momentum on a hit."
+          - text: "ou may [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Face Danger](datasworn:move:classic/adventure/face_danger)+energy to create small fires that you can mentally direct. If you do, suffer -2 energy and take +1 momentum on a hit."
+        description: "Firebender"
+        controls:
+          energy:
+            field_type: "condition_meter"
+            label: "energy"
+            max: 6
+            value: 6
+            min: 0
+  indian_flavor:
+    name: "Indian Flavor Pack"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: *a2
+    contents:
+      katar:
+        name: "Katar"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) in close quarters, you may suffer -1 momentum and inflict +1 harm on a hit (decide before rolling)."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge in a fight by outmaneuvering your foe to get in a better melee attack position, add +1 and take +1 momentum on a hit."
+          - text: "When you Turn the Tide by committing your full body weight to a devastating blow, and your next move is a [Strike](datasworn:move:classic/combat/strike), add +1 and inflict +2 harm on a strong hit."
+        requirement: "If you wield a katar..."
+        description: "Punch Dagger"
+      chakram:
+        name: "Chakram"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) +edge, you may choose one before rolling.
+
+              \  * Barrage: Retain initiative on a weak hit but inflict only 1 harm.  * Sever limb: Inflict +1 harm on a hit but suffer -1 momentum.  * Follow up: On a strong hit, you may [Strike](datasworn:move:classic/combat/strike) now and add +1."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) to recover thrown chakram, add +1 and take +1 momentum on a hit."
+          - text: "When you use your chakram as a simple weapon (1 harm), you may [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) +iron (instead of +edge). If you do, add +1 and take +1 momentum on a hit."
+        requirement: "If you wield chakram..."
+        description: "Bladed Discs"
+      urumi:
+        name: "Urumi"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) +edge by pushing your foe or foes back with wide arcs of the urumi, choose your approach (decide before rolling).
+
+              \  * Lashing cobra: On a strong hit, inflict 1 harm.  * Grinning tiger: On a hit, take +1 momentum.  * Mauling bear: On a hit, [Strike](datasworn:move:classic/combat/strike) (if you have initiative) or [Clash](datasworn:move:classic/combat/clash) now and add +1."
+          - text: "As above, but when you [Face Danger](datasworn:move:classic/adventure/face_danger) in this way, add +1 and take +1 momentum on a hit."
+          - text: "You may choose to add +1 when you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash). If you do, inflict 1 harm (instead of 2)."
+        requirement: "If you wield an urumi..."
+        description: "Whip Sword"
+      patar:
+        name: "Patar"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) by blocking an incoming attack with your guantlet, add +1 and take +1 momentum on a hit."
+          - text: "When you [Clash](datasworn:move:classic/combat/clash) and score a strong hit, add 1 if you immediately follow with a [Strike](datasworn:move:classic/combat/strike)."
+          - text: "You may make a powerful [Strike](datasworn:move:classic/combat/strike) using the full arc of your swing. If you do, suffer -1 momentum but inflict +1 harm on a hit."
+        requirement: "If you wield a patar..."
+        description: "Gauntlet Sword"
+      haathee:
+        name: "Haathee"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Charge: When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) +heart atop your elephant, add +1 and take +1 momentum on a hit."
+          - text: "Siege Engine: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by tearing down defensive structures or [Face Danger](datasworn:move:classic/adventure/face_danger) within the howdah atop your elephant, add +1 and take +1 momentum on a hit."
+          - text: "Rampage: After you have intoxicated your elephant and order it to [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash), inflict +2 harm on a hit. On a weak hit or miss, there is collateral damage. Pay the Price and make it worse."
+        requirement: "Your elephant is unstoppable."
+        description: "War Elephant"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 5
+            value: 5
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      baagh:
+        name: "Baagh"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Ambush: When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) +shadow with your tiger, add +1 and take +1 momentum on a hit."
+          - text: "Hunter: When you [Strike](datasworn:move:classic/combat/strike) by having your tiger attack from hiding while you distract your foe, you may roll +shadow (instead of +iron or +edge). If you do, add +1 and take +1 momentum on a hit."
+          - text: "Neck Snap: When you [End The Fight](datasworn:move:classic/combat/end_the_fight) by having your tiger attempt a death blow on a foe (formidable or less), you may reroll any dice."
+        requirement: "Your cat stalks and ambushes."
+        description: "Tiger"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      saarathee:
+        name: "Saarathee"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) while piloting a chariot, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) through the risky piloting of a chariot, add +1 and take +1 momentum on a hit."
+          - text: "When you [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey) in a chariot, add +1. On a strong hit, also choose one.
+
+              \  * Beaten path: Mark progress twice if on a road or the plains.  * Make shelter: [Make Camp](datasworn:move:classic/adventure/make_camp) now and reroll any dice.  * Revel in the ride: Take +2 momentum."
+        description: "Charioteer"
+      gatka:
+        name: "Gatka"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you attack in melee with a deadly weapon in a dancing whirlwind, you may [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) +edge (instead of +iron). If you do, add +1. On a hit, inflict harm (instead of 2) and take +1 momentum."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) +edge by nimbly dodging your foe's attacks, add +1. On a hit, choose one.
+
+              \  * Feed the fervor: Take +1 momentum.  * Reposition: You have the initiative."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge by performing an impressive [Battle](datasworn:move:classic/combat/battle) dance to intimidate or maneuver into position, add +1 and take +1 momentum on a hit."
+        description: "Battle Dancer"
+      stotr_gaayak:
+        name: "Stotr Gaayak"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Star (Chandra): Ask a single question. On a strong hit, you read a helpful omen in the stars. Envision what you learn (ask the Oracle if unsure) and take +2 momentum. On a weak hit, the omen contains a warning. Envision this warning and take only +1 momentum."
+          - text: "Fire (Agni): On a strong hit, an object you hold alights with ghostly flame dispeling the darkness in a large area. On a weak hit, the flame dispels the darkness in your immediate area."
+          - text: "Storm (Indra): On a hit, dark clouds gather and gentle rain begins to fall that lasts up to an hour. On a strong hit, you may direct the clouds to become a thunderstorm or flood-inducing torrential rain instead."
+        requirement: "When you sing an ancient hymn to a god below, roll +wits"
+        description: "Hymn Singer"
+      stotr_gaayak_template:
+        name: "Stotr Gaayak (Template)"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities: []
+        requirement: "When you sing an ancient hymn to a god below, roll +wits."
+        description: "Hymn Singer"
+        options:
+          god:
+            field_type: "text"
+            label: "god"
+      shishya:
+        name: "Shishya"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "After you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) and mark experience, you may reflect with your guru on a lesson you learned. If you do, roll +heart. On a hit, you are guided towards enlightenment. Envision how your character changes and take +1 experience as well as +2 momentum. Then add +1 to your next move."
+          - text: "When you take time to receive teaching from your guru and moditate on their words, roll +heart. On a strong hit, choose two. On a weak hit, choose one.
+
+              \  * Heartened: Clear shaken.  * Encouraged: Take +1 spirit.  * Inspired: Take +1 momentum."
+          - text: "When you [Compel](datasworn:move:classic/relationship/compel) by sharing the teachings of your guru, you may roll +wits (instead of +heart). Then add +1 and take +1 momentum on a hit."
+        requirement: "After your service is accepted by a guru who will help you reach enlightenment..."
+        description: "Student"
+      taabeez_nirmaata:
+        name: "Taabeez Nirmaata"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Lotus: When you [Endure Stress](datasworn:move:classic/suffer/endure_stress), add +X. If your action die shows a one. the amulet's magic is spent."
+          - text: "Beads: When you [Endure Harm](datasworn:move:classic/suffer/endure_harm), add +X. If your action die shows a one, the amulet's magic is spent."
+          - text: "Om: When you Learn From Your Failures, you may reroll up to X dice. If either die shows a ten, the amulet's magic is spent."
+        requirement: "When you craft a mystic amulet of one type below, roll +wits. On a strong hit, X is 2. On a weak hit, X is 1."
+        description: "Amulet Maker"
+  african_flavor:
+    name: "African Flavor Pack"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: *a2
+    contents:
+      isihlangu:
+        name: "Isihlangu"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Clash](datasworn:move:classic/combat/clash) +iron and score a weak hit, you may choose to deal no harm. If you do, you have the initiative."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) using your shield as cover, add +1 and take +1 momentum on a hit. On a miss, your shield is damaged and unusable until repaired or replaced."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by leveraging your shield to get your foe into a vulnerable position, add +1. On a hit, you have the initiative."
+        requirement: "If you wield an isihlangu shield..."
+        description: "Shield"
+      iklwa:
+        name: "Iklwa"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you are in position to [Strike](datasworn:move:classic/combat/strike) at an unsuspecting or completely vulnerable foe, choose one (before rolling).
+
+              \  * Add +2 and take +1 momentum on a hit.  * Inflict +2 harm on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Clash](datasworn:move:classic/combat/clash) against a close-quarters fighting foe, add +1 and take +1 momentum on a hit."
+          - text: "When you Turn the Tide with a frenzy of slashing and piercing and your next move is a [Strike](datasworn:move:classic/combat/strike), add +1 and inflict +2 harm on a strong hit."
+        requirement: "If you wield an iklwa, a close-quarters, hand spear..."
+        description: "Spear"
+      iwisa:
+        name: "Iwisa"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Your iwisa counts as a deadly weapon inflicting 2 harm. Additionally, when you [Strike](datasworn:move:classic/combat/strike) +edge by thorwing your iwisa, add +1 and take +1 momentum on a hit."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) and score a strong hit, take +1 momentum as the enemy is dazed. Then, if your next move is a [Strike](datasworn:move:classic/combat/strike) and you score a weak hit, you do not lose initiative."
+          - text: "When you [Clash](datasworn:move:classic/combat/clash) or [Face Danger](datasworn:move:classic/adventure/face_danger) by blocking incoming attacks with your iwisa, add +1 and take +1 momentum on a hit."
+        requirement: "If you wield an iwisa club made of stout leadwood..."
+        description: "Club"
+      isijula:
+        name: "Isijula"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) by throwing multiple spears in quick succession, you may roll +edge. If you do, choose one inflict your harm on a strong hit."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) +edge by hurling a spear at a foe, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) +edge to recover a thrown spear or to put distance between you and your foe, add +1 and take +1 momentum on a hit."
+        requirement: "If you wield an isijula throwing spear..."
+        description: "Spear"
+      ingulule:
+        name: "Ingulule"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Sprint: When your cat chases down small game, you may [Resupply](datasworn:move:classic/adventure/resupply) with +edge (instead of +wits). If you do, take +1 supply or +1 momentum on a strong hit."
+          - text: "Stalk: When you [Gather Information](datasworn:move:classic/adventure/gather_information) by following your cat's lead in hunting your quarry, you may roll +shadow (instead of +wits). If you do, add +1 and take +1 momentum on a hit."
+          - text: "Clamp: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by having your cat bite down and restrain a foe of formidable or lower rank, roll +edge and add +1. On a strong hit, inflict I harm."
+        requirement: "Your cheetah is swift and fierce."
+        description: "Cheetah"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      impisi:
+        name: "Impisi"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Feeding Frenzy: When you [Resupply](datasworn:move:classic/adventure/resupply), you may roll +iron instead of +wits. If you do, add +2 and suffer -1 supply on a hit."
+          - text: "Scent: When you [Gather Information](datasworn:move:classic/adventure/gather_information) using your hyena's senses to track your quarry or investigate a scene, add +1 and take +1 momentum on a hit."
+          - text: "Mockery: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) or [Strike](datasworn:move:classic/combat/strike) in a fight by distracting your foe with your hyena's eerie laughter, add +1 and take +1 momentum on a hit."
+        requirement: "Your hyena laughs at danger."
+        description: "Hyena"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      indlela_ye_inkentshane:
+        name: "Indlela Ye Inkentshane"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) leveraging your knowledge of tracking or large animals of the plains, add +1 and take +1 momentum on a hit."
+          - text: "When you [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey), you may choose an approach.
+
+              \  * Focus: Add +2.  * Endure: On a strong hit, mark progress a second time.  * Exult: On a hit, take +2 momentum."
+          - text: "When you [Make Camp](datasworn:move:classic/adventure/make_camp) and miss, you may reroll one challenge die as you know how to make do with less."
+        description: "Way Of The Wild Dog"
+      obhejane:
+        name: "Obhejane"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Overrun: When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) by riding your rhino against a pack of foes, add +1 and inflict +1 harm on a hit."
+          - text: "No Fear: When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by charging into combat, add +1 and take +1 momentum on a hit."
+          - text: "Hardened Hide: When you make the Companion [Endure Harm](datasworn:move:classic/suffer/endure_harm) move in a fight, add +1 and take +1 momentum on a hit."
+        requirement: "Your rhino is an unstoppable force."
+        description: "Rhino"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 5
+            value: 5
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      sangoma:
+        name: "Sangoma"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you implore the ancestral spirits to [Heal](datasworn:move:classic/adventure/heal) another person, roll +wits and add +1. On a strong hit, the patient mends or heartens (as in the [Sojourn](datasworn:move:classic/relationship/sojourn) move). On a weak hit, as above but the spirits ask something of you in return."
+          - text: "When you eat vision root and dream prophetic dreams, roll +wits and [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress). On a strong hit, you see a future failure that you can now avoid. Once before the next dawn when you miss on a non-progress roll, you may improve it to a strong hit. On a weak hit, as above but improve the miss to a weak hit instead."
+          - text: "After you [Swear An Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to [Heal](datasworn:move:classic/adventure/heal) an ally of a bane or burden, one time only you may consult the ancestral spirits for guidance. If you do, roll +wits. On a hit, you conceive of a medicinal muti and the ingredients required. Take +2 momentum. On a strong hit, also reduce the rank of the vow one step."
+        description: "Witch Doctor"
+      indlela_ye_inyathi:
+        name: "Indlela Ye Inyathi"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Battle](datasworn:move:classic/combat/battle) +wits by leading groups of warriors in a pincer attack or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits in combat by coordinating a pincer attack with allies, add +1 and take +1 momentum on a hit."
+          - text: "When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) or [Clash](datasworn:move:classic/combat/clash) by charging in a blind rage, choose one.
+
+              \  * Fury: Roll +iron. Inflict +1 harm on a strong hit.  * Courage: Roll +heart. Add +1 and take +1 momentum on a hit."
+          - text: "When you Draw the Circle after a display of physical intimidation, you may roll +iron (instead of +heart). If you do, add +1 and take +1 momentum on a hit. Additionally, when you [Compel](datasworn:move:classic/relationship/compel) using physical intimidation, add +1 and take +1 momentum on a hit."
+        description: "Way Of The Buffalo"
+      ukuhlanzwa:
+        name: "Ukuhlanzwa"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you paint your face and body to purify yourself before [Battle](datasworn:move:classic/combat/battle), roll +wits. On a strong hit, your spirit is pure. Take +2 momentum and add +1 the next time you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray). On a weak hit, only take +1 momentum."
+          - text: "When you sprinkle yourself with ceremonial water mixed with the blood of fallen foes, roll +wits. On a strong hit, the next time you [Endure Harm](datasworn:move:classic/suffer/endure_harm) in a fight, you ignore all harm. On a weak hit, as above but reduce harm suffered by 2 instead."
+          - text: "When you perform qaqa, the ritual disemboweling of a fallen enemy to release its spirit, roll +heart. On a strong hit, the spirit honors your act. Take +2 momentum and +1 spirit. On a weak hit, the spirit gives you a warning. Ask the Oracle for the nature of the warning. Then, take +1 momentum and add +1 to the next move you make leveraging this knowledge."
+        description: "Battle Purity"
+  norse_flavor:
+    name: "Norse Flavor Pack"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: *a2
+    contents:
+      laevateinn:
+        name: "Laevateinn"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "You may [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) +wits in melee or from a distance with this staff. If you do, it inflicts 1 harm as a blast of Laevateinn's necrotic energy saps the life of your foe. If your action die shows a 6, inflict an additional +1 harm."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits by unleashing a mystic burst from Laevateinn, envision how the power of death hinders others or affects the environment. Then, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) +wits against a horror or servant of the dead leveraging Laevateinn's power over such creatures, add +1 and take +1 momentum on a hit."
+        requirement: "After you Fulfill Your Vow to be found worthy of Laevateinn, quest to find it, and wield it..."
+        description: "Staff"
+      gungnir:
+        name: "Gungnir"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) +edge by throwing Gungnir at a foe with mystical accuracy, add +1 and take +1 momentum on a hit as the spear's runes of blaze brightly."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash), you may decide before rolling to subtract -2 from the highest challenge die. If you do and miss, [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress) as Gungnir's power falters."
+          - text: "Once per [Battle](datasworn:move:classic/combat/battle) when you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) and miss, you may call on the power of Odin. If you do, you may reroll any dice."
+        requirement: "After you Fulfill Your Vow to be found worthy of Gungnir, quest to find it, and wield it..."
+        description: "Spear"
+      skofnung:
+        name: "Skofnung"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Suffer -1 essence to gain the Kindred asset with Skilled and Shield-Kin upgrades until the next dawn."
+          - text: "Suffer -2 essence to gain the Cutthroat asset with all three upgrades unlocked until the next dawn."
+          - text: "Suffer -3 essence. Gain the benefit of a strong hit on the Leech ritual's first ability."
+        requirement: "After you Fulfill Your Vow to be found worthy of Skofnung, quest to find it, and wield it, set your essence to +6 representing spiritual bodyguards in gems on the blade. When you draw your own blood and Endure Harm to honor those spirits, add +1 essence. When you use an ability below, roll +essence. On a strong hit, the ability occurs. On a weak hit, as above but Endure Stress (1 stress). On a miss, suffer the -essence and Pay the Price."
+        description: "Dagger"
+        controls:
+          essence:
+            field_type: "condition_meter"
+            label: "essence"
+            max: 6
+            value: 6
+            min: 0
+      mjolnir:
+        name: "Mjolnir"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Clash](datasworn:move:classic/combat/clash) and score a weak hit, you may inflict no harm to knock your foe back with a clap of thunder. If you do, you have the initiative."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) and score a strong hit, you may call forth a blast of lightning. If you do, focus on the righteousness of your cause and roll +heart. On a hit, inflict X harm and take +X momentum. On a strong hit, X is 2. On a weak hit, X is 1."
+          - text: "When you [End The Fight](datasworn:move:classic/combat/end_the_fight) by slamming Mjolnir to the ground releasing a wave of lightning and thunder, subtract -1 from each challenge die. On a weak hit or miss, you suffer collateral damage in addition to the other consequences."
+        requirement: "After you Fulfill Your Vow to be found worthy of Mjolnir, quest to find it, and wield it..."
+        description: "Hammer"
+      hugin_and_munin:
+        name: "Hugin and Munin"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Fara ok Sja: When you [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey) to follow one marked by death or [Gather Information](datasworn:move:classic/adventure/gather_information) about them by sending your ravens out to scry, you may roll +shadow (instead of +wits)."
+          - text: "Sala Sjon: When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by having your ravens gaze into a person's soul, roll +shadow. On a hit, you see one of that person's darkest fears. On a miss, [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress) from a chaotic vision of your own fears."
+          - text: "Doudar-Ord: When you Draw the Circle and choose To the death as a boast, take +2 momentum (instead of +1). In addition, take +2 momentum (instead of +1) when you [Endure Harm](datasworn:move:classic/suffer/endure_harm) and choose Embrace the pain during the [Battle](datasworn:move:classic/combat/battle)."
+        requirement: "Your ravens provide sight and insight."
+        description: "Ravens"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 3
+            value: 3
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      dire_wolf:
+        name: "Dire Wolf"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Hunter: When you [Gather Information](datasworn:move:classic/adventure/gather_information) using your wolf's keen senses to track your quarry, add +1 and take +1 momentum on a hit."
+          - text: "Pack Tactics: When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) alongside your wolf, add +1 and take +1 momentum."
+          - text: "Prey on the Weak: When you [Strike](datasworn:move:classic/combat/strike) along your wolf and score a hit against a foe with progress already marked, inflict +1 harm."
+        requirement: "Your wolf is a fierce warrior."
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      lidi_a_loki:
+        name: "Lidi A Loki"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger), [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage), or [Compel](datasworn:move:classic/relationship/compel) through trickery or deceit, add +1 and take +1 momentum on a hit."
+          - text: "As above, but you may swap the value of your action die and the highest challenge die. If you do, the next time you make an action roll where any two dice have the same value, treat it as a miss with a match. You may not use this ability again until the miss with a match is resolved."
+          - text: "You may [Sojourn](datasworn:move:classic/relationship/sojourn) +shadow (instead of +heart). If you do, add +1, and on a strong hit, choose one additional benefit and take +1 momentum. Treat a weak hit as a miss as they see through your lies. If you share a bond with the community, Test Your Bond."
+        description: "Disciple Of Loki"
+      lidi_a_hel:
+        name: "Lidi A Hel"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you hold a ceremony to commemorate the honored dead, roll +heart and add +1. On a hit, take +1 spirit and +1 momentum as you are heartened by their journey to Vahalla. On a miss, envision a new and discouraging truth about this loss and [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress)."
+          - text: "When you [End The Fight](datasworn:move:classic/combat/end_the_fight) by attempting to slay a sapient foe, you may reroll any dice. If you do and miss, [Endure Stress](datasworn:move:classic/suffer/endure_stress) (2 stress)."
+          - text: "When you [Face Death](datasworn:move:classic/suffer/face_death), you may call upon the goddess Hel's power. If you do and your action die shows a 1, you die as your spirit is violently summoned to Hel. If your action die is 2 or more, you score a weak hit."
+        description: "Disciple Of Hel"
+      bifrost:
+        name: "Bifrost"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Undertake A Journey](datasworn:move:classic/adventure/undertake_a_journey) by summoning the Bifrost, roll +heart (instead of +wits). On a strong hit, mark progress twice. On a weak hit, as above but envision how the Bifrost draws unwanted attention."
+          - text: "When you use the magic of the Bifrost to [Gather Information](datasworn:move:classic/adventure/gather_information) on a friend or ally in a distant place, roll +heart (instead of +wits). On a strong hit, you may briefly communicate with them. On a weak hit, they are only aware of your attempted communication."
+          - text: "When you attempt to pull a willing friend or ally in a distant location to you through the Bifrost, roll +heart and change any challenge die below 5 to a 5. On a strong hit, you succeed. On a weak hit, they appear at a nearby precarious spot or suffer in some way during transit."
+        description: "Rainbow Bridge"
+      lidi_a_thor:
+        name: "Lidi A Thor"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) to protect an innocent or one you have sworn a vow to or to overcome an obstacle with an uncanny feat of strength, add +1 and take +1 momentum on a hit."
+          - text: "When you spend a night in ceremony to hallow ground, call forth the abundance of the earth, or bless the fertility of a union, roll +heart and add +1. On a hit, envision the successful effect of this blessing and take +1 momentum. If you are within a community, you may immediately [Forge A Bond](datasworn:move:classic/relationship/forge_a_bond). If you do, add +1."
+          - text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by calling on the power of the storm, roll +heart and add +1. On a hit, envision how the storm manifests"
+        description: "Disciple Of Thor"
+      seidhr:
+        name: "Seidhr"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Past"
+          - text: "Present"
+          - text: "Future"
+        requirement: "When you perform a ceremony to send your spirit to the foot of Yggdrasil to consult the Norn sisters of fate, roll +wits. On a strong hit, take +2 momentum and gain insight into an event that centers on a person, place, or object of power from the chosen time period below. One time only, when you leverage this knowledge, add +2.<p>On a weak hit, as above but choose one:<ul><li>The Norn demand a tribute of blood. Endure Harm (2 harm).</li><li>The Norn demand a sacrifice of something precious to you. Endure Stress (2 stress).</li><li>The Norn set you on a fated path. Swear an Iron Vow to fulfill a quest given to you by the Norn.</li></ul>"
+        description: "Exhort The Fates"
+  south_american_flavor:
+    name: "South American Flavor Pack"
+    type: "asset_collection"
+    _source:
+      title: "Ironsmith"
+      date: "2021-10-21"
+      url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+      license: "https://creativecommons.org/licenses/by/4.0"
+      authors: *a2
+    contents:
+      champi:
+        name: "Champi"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) to knock a foe back, stun them, or push them off balance, inflict 1 harm (instead of 2) and take +2 momentum on a hit. On a strong hit, you create an opening and add +1 to your next move."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) and your total action value is 3 or more greater than both challenge dice, treat the strong hit as if it was a strong hit with a match."
+          - text: "When you [Compel](datasworn:move:classic/relationship/compel), [Face Danger](datasworn:move:classic/adventure/face_danger), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by hitting or breaking an inanimate object, add +1 and take +1 momentum on a hit."
+        requirement: "If you wield a star-headed mace..."
+        description: "Mace "
+      atlatl:
+        name: "Atlatl"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) from a short distance, you may [Strike](datasworn:move:classic/combat/strike) +iron instead of +edge. If you do, add +1 and take +1 momentum on a hit."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) to inflict devastating harm, add +1 and inflict +1 harm. Then, suffer -1 supply."
+          - text: "When you [Resupply](datasworn:move:classic/adventure/resupply) by hunting big game, choose your approach.
+
+              \  * Careful aim: Add +1 and take +1 momentum on a hit.  * Alpha [Strike](datasworn:move:classic/combat/strike): Take +1 supply on a hit."
+        requirement: "If you wield an atlatl, a wooden shaft to launch long, narrow darts..."
+        description: "Dart Thrower"
+      macuahuitl:
+        name: "Macuahuitl"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Strike](datasworn:move:classic/combat/strike) with the intent to permanently maim your opponent (decide before rolling), change the lower challenge die value to the higher challenge die value. Then, inflict +2 harm on a strong hit."
+          - text: "As above, but add +1."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) with the flat of the macuahuitl to daze your foe, add +1. On a hit, inflict I harm (instead of 2) and you have the initiative."
+        requirement: "If you wield a macuahuitl, an obsidian edged wooden paddle..."
+        description: "Serrated Club,"
+      liwi:
+        name: "Liwi"
+        type: "asset"
+        category: "Combat Talent"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +edge by throwing your bolas to tangle up the legs of your foe (formidable or less), add +1 and take +1 momentum on a hit."
+          - text: "As above, but you inflict I harm on a strong hit."
+          - text: "When you [Resupply](datasworn:move:classic/adventure/resupply) by hunting with your bolas, roll +edge (instead of +wits) and choose your approach.
+
+              \  * Game hunting: Add +1 and take +1 momentum on a hit.  * Bird hunting: Add +2 and on a hit, take only +1 supply (instead of +2)."
+        requirement: "If you wield liwi, weighted stones on straps or ropes..."
+        description: "Bolas "
+      uturunku:
+        name: "Uturunku"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Throat Clamp: When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by directing your jaguar to [Strike](datasworn:move:classic/combat/strike) from flanking and hold a foe (formidable or less) in place, add +1 and inflict 1 harm on a hit."
+          - text: "Stalker: When your jaguar stalks an unsuspecting foe, add +1 as you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) +shadow. On a strong hit, also inflict 2 harm."
+          - text: "Brain Bite: When you [End The Fight](datasworn:move:classic/combat/end_the_fight) by having your jaguar deliver a killing blow to the skull of your foe (formidable or less), you may reroll any dice."
+        requirement: "Your jaguar is strong and cunning."
+        description: "Jaguar "
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 4
+            value: 4
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      alicanto:
+        name: "Alicanto"
+        type: "asset"
+        category: "Companion"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Dinner: When you [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) leveraging your bird's ability to locate nearby ore, you may roll +heart (instead of +wits). If you do, add +1 and take +1 momentum on a hit."
+          - text: "Triggered: When you are ambushed by a threat with significant quantities of metal, you may [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) +heart (instead of +wits). If you do, add +1 and take +1 momentum on a hit."
+          - text: "Shine On: When you make an Adventure move (non-progress) in places of darkness, you may feed your bird gold to cause it to emit light. If you do, suffer -1 supply and add +2."
+        requirement: "Your flightless bird eats ore."
+        description: "Flightless Bird"
+        controls:
+          health:
+            field_type: "condition_meter"
+            label: "health"
+            max: 3
+            value: 3
+            min: 0
+        options:
+          name:
+            field_type: "text"
+            label: "name"
+      paqu_hampiq:
+        name: "Paqu Hampiq"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +wits or [Gather Information](datasworn:move:classic/adventure/gather_information) by entering a trance to communicate with the spiritual realm, add +1 and take +1 momentum on a hit."
+          - text: "When you [Compel](datasworn:move:classic/relationship/compel), [Forge A Bond](datasworn:move:classic/relationship/forge_a_bond), or Test Your Bond leveraging information gained from the above communion with the spiritual realm, add +1 and take +1 spirit on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or Face Desolation, you may offer yourself to the ancestral spirits. If you do, add +2 and treat a strong hit as a weak hit."
+        requirement: "After you Fulfill Your Vow to a shaman and Forge a Bond with them to train you..."
+        description: "Shaman"
+      anka_nan:
+        name: "Anka Nan"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) +heart by displaying exceptional and unwavering courage, add +1 and take +1 momentum on a hit."
+          - text: "When you [Enter The Fray](datasworn:move:classic/combat/enter_the_fray) +heart against a foe (formidable or less) while wearing full [Battle](datasworn:move:classic/combat/battle) regalia, add +1. On a strong hit, add +1 to all moves you make in the fight until you lose the initiative. On a weak hit, add +1 only to your next move."
+          - text: "When you [Gather Information](datasworn:move:classic/adventure/gather_information) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by observing from a high place or relying on acute vision, add +1 and take +1 momentum on a hit."
+        requirement: "After you Forge a Bond with an Eagle Warrior and they agree to train you..."
+        description: "Eagle Warrior"
+      uturunku_nan:
+        name: "Uturunku Nan"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by silently stalking your quarry, blending into shadow and remaining motionless, or swimming, add +1 and take +1 momentum on a hit."
+          - text: "When you [Strike](datasworn:move:classic/combat/strike) or [Clash](datasworn:move:classic/combat/clash) by embodying the brutal efficiency of a jaguar (decide before rolling), inflict +1 harm on a hit. Then choose one way to honor the great jaguar spirit.
+
+              \  * Blood sacrifice: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1).  * Become the beast: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1)."
+          - text: "When you [End The Fight](datasworn:move:classic/combat/end_the_fight) by attempting to take your foe alive, you may burn momentum to reduce each challenge die by 1 if your momentum is higher than both dice."
+        requirement: "After you Forge a Bond with a Jaguar Warrior and they agree to train you..."
+        description: "Jaguar Warrior"
+      tujllaki:
+        name: "Tujllaki"
+        type: "asset"
+        category: "Path"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) in a familiar type of terrain or environment by tracking your quarry or remaining hidden from them, add +1 and take +1 momentum on a hit."
+          - text: "When you [Face Danger](datasworn:move:classic/adventure/face_danger) or [Secure An Advantage](datasworn:move:classic/adventure/secure_an_advantage) by setting a trap for your quarry, add +1 and take +1 momentum on a hit."
+          - text: "When you [Resupply](datasworn:move:classic/adventure/resupply) by hunting or trapping, add +1 and on a hit, choose one.
+
+              \  * Plentiful game: Take +1 supply  * In your element: Take +1 momentum."
+        description: "Hunter"
+      pampa_suyu:
+        name: "Pampa Suyu"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "When you make a move relying on aspects of the new body, choose one.
+
+              \  * Add +1 and suffer -1 nuna.  * Roll +nuna and suffer -2 nuna."
+          - text: "As above, but you may tranform into a humanoid jaguar form."
+          - text: "As above, but you may tranform into a spectral version of either form. (You must take this upgrade last.)"
+        requirement: "When you ask the great jaguar spirit to inhabit your body, roll +wits. On a strong hit, you transform into a full jaguar. Endure Harm (1) and take +6 nuna. On a weak hit, Endure Harm (2) and take +4 nuna. The tranformation ends if a full day has passed; if you have 0 health, spirit, or nuna; or if you choose to end it."
+        description: "Shapechange"
+        controls:
+          nuna:
+            field_type: "condition_meter"
+            label: "nuna"
+            max: 6
+            value: 6
+            min: 0
+      allinyachiy:
+        name: "Allinyachiy"
+        type: "asset"
+        category: "Ritual"
+        _source:
+          title: "Ironsmith"
+          date: "2021-10-21"
+          url: "https://www.drivethrurpg.com/product/351813/Ironsmith"
+          license: "https://creativecommons.org/licenses/by/4.0"
+          authors: *a2
+        abilities:
+          - enabled: true
+            text: "Channel energy: On a hit, you may take or give +3 health (instead of +2 health)."
+          - text: "Blessed cleansing: On a hit, you may clear shaken instead of wounded and take or give +2 spirit instead of +2 health."
+          - text: "Bestow purpose: On a hit, take or give +2 momentum (instead of +2 health). If ayahuasca is ingested by the recipient of the [Heal](datasworn:move:classic/adventure/heal) move, they may [Gather Information](datasworn:move:classic/adventure/gather_information) and add +1 as they search the visions for meaning and direction."
+        requirement: "When you attempt to Heal using an ancient ceremony, add +1 and choose one (decide before rolling)."
+        description: "Healing"
