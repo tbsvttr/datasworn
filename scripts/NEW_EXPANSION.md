@@ -2,7 +2,24 @@
 
 Checklist for adding new content packages to Datasworn.
 
-## Required Steps
+## Quick Start
+
+Run the scaffold script:
+
+```bash
+npm run new:expansion
+```
+
+This creates:
+
+- `source_data/{id}/assets.yaml` - stub source file
+- `pkg/nodejs/@datasworn-community-content/{name}/package.json` - nodejs package
+
+Then add the generated config to `pkgConfig.ts` and run `npm run build:all`.
+
+---
+
+## Manual Steps
 
 ### 1. Create Source Data
 
