@@ -25,6 +25,7 @@
     "build:json": "bun ./src/scripts/datasworn/writeDatasworn.ts",
     "build:pkg": "bun ./src/scripts/pkg/nodejs/buildPackages.ts && tsc --project ./src/pkg-core/tsconfig.json",
     "build": "bun ./src/scripts/pkg/nodejs/updatePackageVersions.ts && bun run build:schema && bun run build:jtd && bun run build:dts && bun run build:json && bun run build:pkg",
+    "build:all": "./scripts/build-all.sh",
     "pkg:node": "bun ./src/scripts/pkg/nodejs/publishPackages.ts",
     "release": "npm run release --workspaces",
     "viewer": "cd tools/viewer && bun install && bun run dev",
