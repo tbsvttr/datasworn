@@ -1,56 +1,72 @@
 #!/usr/bin/env bun
 /**
  * Scaffold a new expansion package
- * Usage: bun scripts/new-expansion.ts
+ * Usage: bun scripts/new-expansion.ts <id> <ruleset> <author> [--build]
+ *
+ * Examples:
+ *   bun scripts/new-expansion.ts my_expansion starforged "Eric Bright"
+ *   bun scripts/new-expansion.ts my_expansion classic "Author Name" --build
  */
 
 import * as fs from 'fs'
 import * as path from 'path'
-import * as readline from 'readline'
 import { fileURLToPath } from 'url'
+import { execSync } from 'child_process'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const ROOT = path.join(__dirname, '..')
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
+function toTitle(id: string): string {
+  return id.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+}
 
-function ask(question: string): Promise<string> {
-  return new Promise(resolve => rl.question(question, resolve))
+function toPackageName(id: string): string {
+  return id.replace(/_/g, '-')
+}
+
+function toConfigName(id: string): string {
+  return id.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('')
 }
 
 async function main() {
-  console.log('=== New Expansion Scaffold ===\n')
+  const args = process.argv.slice(2)
+  const runBuild = args.includes('--build')
+  const filteredArgs = args.filter(a => a !== '--build')
 
-  // Gather info
-  const id = await ask('Expansion ID (e.g., my_expansion): ')
-  const name = await ask('Package name (e.g., my-expansion): ')
-  const title = await ask('Title (e.g., My Expansion): ')
-  const description = await ask('Description: ')
-  const authorName = await ask('Author name: ')
-  const authorUrl = await ask('Author URL: ')
-  const ruleset = await ask('Ruleset (classic/starforged): ')
-  const scope = await ask('Scope (community/official) [community]: ') || 'community'
-
-  rl.close()
-
-  const isOfficial = scope === 'official'
-  const pkgScope = isOfficial ? '@datasworn' : '@datasworn-community-content'
-  const depPkg = ruleset === 'starforged' ? '@datasworn/starforged' : '@datasworn/ironsworn-classic'
-
-  console.log('\n--- Creating files ---\n')
-
-  // 1. Create source_data folder
-  const sourceDir = path.join(ROOT, 'source_data', id)
-  if (!fs.existsSync(sourceDir)) {
-    fs.mkdirSync(sourceDir, { recursive: true })
-    console.log(`Created: source_data/${id}/`)
+  if (filteredArgs.length < 3) {
+    console.log('Usage: bun scripts/new-expansion.ts <id> <ruleset> <author> [--build]')
+    console.log('')
+    console.log('  id       Expansion ID with underscores (e.g., my_expansion)')
+    console.log('  ruleset  classic or starforged')
+    console.log('  author   Author name in quotes')
+    console.log('  --build  Run build:all after scaffolding')
+    console.log('')
+    console.log('Examples:')
+    console.log('  bun scripts/new-expansion.ts iron_abyss classic "John Smith"')
+    console.log('  bun scripts/new-expansion.ts star_realms starforged "Jane Doe" --build')
+    process.exit(1)
   }
 
-  // 2. Create stub assets.yaml
+  const [id, ruleset, authorName] = filteredArgs
+
+  if (!['classic', 'starforged'].includes(ruleset)) {
+    console.error('Error: ruleset must be "classic" or "starforged"')
+    process.exit(1)
+  }
+
+  const name = toPackageName(id)
+  const title = toTitle(id)
+  const configName = toConfigName(id)
+  const pkgScope = '@datasworn-community-content'
+  const depPkg = ruleset === 'starforged' ? '@datasworn/starforged' : '@datasworn/ironsworn-classic'
+
+  console.log(`\n=== Creating expansion: ${title} ===\n`)
+
+  // 1. Create source_data folder and assets.yaml
+  const sourceDir = path.join(ROOT, 'source_data', id)
+  fs.mkdirSync(sourceDir, { recursive: true })
+
   const assetsYaml = `_id: "${id}"
 datasworn_version: "0.1.0"
 type: "expansion"
@@ -67,21 +83,19 @@ assets: {}
   const assetsPath = path.join(sourceDir, 'assets.yaml')
   if (!fs.existsSync(assetsPath)) {
     fs.writeFileSync(assetsPath, assetsYaml)
-    console.log(`Created: source_data/${id}/assets.yaml`)
+    console.log(`✓ source_data/${id}/assets.yaml`)
+  } else {
+    console.log(`• source_data/${id}/assets.yaml (exists)`)
   }
 
-  // 3. Create nodejs package folder
+  // 2. Create nodejs package folder and package.json
   const pkgDir = path.join(ROOT, 'pkg/nodejs', pkgScope, name)
-  if (!fs.existsSync(pkgDir)) {
-    fs.mkdirSync(path.join(pkgDir, 'json'), { recursive: true })
-    console.log(`Created: pkg/nodejs/${pkgScope}/${name}/`)
-  }
+  fs.mkdirSync(path.join(pkgDir, 'json'), { recursive: true })
 
-  // 4. Create package.json
   const packageJson = {
     name: `${pkgScope}/${name}`,
     version: '0.1.0',
-    description,
+    description: `Datasworn JSON data for ${title}.`,
     files: ['index.js', 'index.d.ts', 'json', 'migration'],
     repository: {
       type: 'git',
@@ -89,12 +103,12 @@ assets: {}
       directory: `pkg/nodejs/${pkgScope}/${name}`
     },
     keywords: ['ironsworn', 'datasworn', 'TTRPG', name],
-    contributors: [{ name: authorName, url: authorUrl }],
+    contributors: [{ name: authorName }],
     scripts: { release: 'release-it' },
     license: 'CC-BY-4.0',
     bugs: { url: 'https://github.com/rsek/datasworn/issues' },
     dependencies: { [depPkg]: '0.1.0' },
-    authors: [{ name: authorName, url: authorUrl }],
+    authors: [{ name: authorName }],
     private: true,
     type: 'module',
     main: 'index.js',
@@ -108,13 +122,16 @@ assets: {}
 
   const pkgJsonPath = path.join(pkgDir, 'package.json')
   fs.writeFileSync(pkgJsonPath, JSON.stringify(packageJson, null, '\t') + '\n')
-  console.log(`Created: pkg/nodejs/${pkgScope}/${name}/package.json`)
+  console.log(`✓ pkg/nodejs/${pkgScope}/${name}/package.json`)
 
-  // 5. Generate pkgConfig entry
-  const scopeConst = isOfficial ? 'PKG_SCOPE_OFFICIAL' : 'PKG_SCOPE_COMMUNITY'
-  const configName = id.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('')
+  // 3. Append to pkgConfig.ts
+  const pkgConfigPath = path.join(ROOT, 'src/scripts/pkg/pkgConfig.ts')
+  const pkgConfigContent = fs.readFileSync(pkgConfigPath, 'utf-8')
 
-  const configEntry = `
+  if (pkgConfigContent.includes(`id: '${id}'`)) {
+    console.log(`• src/scripts/pkg/pkgConfig.ts (${configName} exists)`)
+  } else {
+    const configEntry = `
 export const ${configName}: RulesPackageConfig = {
 \ttype: 'expansion',
 \tpaths: {
@@ -124,27 +141,38 @@ export const ${configName}: RulesPackageConfig = {
 \tpkg: {
 \t\tname: '${name}',
 \t\tprivate: true,
-\t\tscope: ${scopeConst},
-\t\tdescription: '${description}',
-\t\tkeywords: ['ironsworn', 'datasworn', 'TTRPG', '${name}'],
+\t\tscope: PKG_SCOPE_COMMUNITY,
+\t\tdescription:
+\t\t\t'Datasworn JSON data for ${title}.',
+\t\tkeywords: [
+\t\t\t'ironsworn',
+\t\t\t'datasworn',
+\t\t\t'TTRPG',
+\t\t\t'${name}',
+\t\t],
 \t\tauthors: [
 \t\t\t{
 \t\t\t\tname: '${authorName}',
-\t\t\t\turl: '${authorUrl}',
 \t\t\t},
 \t\t],
 \t},
 }
 `
+    fs.appendFileSync(pkgConfigPath, configEntry)
+    console.log(`✓ src/scripts/pkg/pkgConfig.ts (added ${configName})`)
+  }
 
-  console.log(`\n--- Add to src/scripts/pkg/pkgConfig.ts ---\n`)
-  console.log(configEntry)
+  console.log('')
 
-  console.log(`\n--- Next steps ---`)
-  console.log(`1. Add the config above to src/scripts/pkg/pkgConfig.ts`)
-  console.log(`2. Add content to source_data/${id}/assets.yaml`)
-  console.log(`3. Run: npm run build:all`)
-  console.log(`4. Commit all changes`)
+  if (runBuild) {
+    console.log('=== Running build:all ===\n')
+    execSync('npm run build:all', { cwd: ROOT, stdio: 'inherit' })
+  } else {
+    console.log('Next steps:')
+    console.log(`1. Add content to source_data/${id}/assets.yaml`)
+    console.log('2. Run: npm run build:all')
+    console.log('3. Commit all changes')
+  }
 }
 
 main().catch(console.error)
