@@ -13,6 +13,1463 @@
 	"license": "https://creativecommons.org/licenses/by/4.0",
 	"url": "https://playeveryrole.com/starsmith-products/",
 	"oracles": {
+		"additional": {
+			"_id": "oracle_collection:starsmith/additional",
+			"type": "oracle_collection",
+			"name": "Additional Oracles",
+			"oracle_type": "tables",
+			"contents": {
+				"random_npc_conversation": {
+					"_id": "oracle_rollable:starsmith/additional/random_npc_conversation",
+					"type": "oracle_rollable",
+					"name": "Random NPC Conversation",
+					"oracle_type": "table_text",
+					"dice": "1d300",
+					"summary": "Use the RANDOM NPC CONVERSATION oracle when you just want a topic starter for a more mundane conversation. Think of this as a conversation starter that will allow some of your characters personality to come through without having to also force through plot information.",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Result"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.0",
+							"roll": {
+								"min": 1,
+								"max": 5
+							},
+							"text": "Culture of the community"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.1",
+							"roll": {
+								"min": 6,
+								"max": 10
+							},
+							"text": "Distribution of wealth"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.2",
+							"roll": {
+								"min": 11,
+								"max": 15
+							},
+							"text": "Famous people"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.3",
+							"roll": {
+								"min": 16,
+								"max": 20
+							},
+							"text": "Famous places"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.4",
+							"roll": {
+								"min": 21,
+								"max": 25
+							},
+							"text": "Heritage of a PC"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.5",
+							"roll": {
+								"min": 26,
+								"max": 30
+							},
+							"text": "Heritage of an NPC"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.6",
+							"roll": {
+								"min": 31,
+								"max": 35
+							},
+							"text": "How to curry favor"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.7",
+							"roll": {
+								"min": 36,
+								"max": 40
+							},
+							"text": "Ingenious or outlandish ideas"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.8",
+							"roll": {
+								"min": 41,
+								"max": 45
+							},
+							"text": "Items of importance"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.9",
+							"roll": {
+								"min": 46,
+								"max": 50
+							},
+							"text": "Legends of heroic deeds"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.10",
+							"roll": {
+								"min": 51,
+								"max": 55
+							},
+							"text": "Legends of relics"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.11",
+							"roll": {
+								"min": 56,
+								"max": 60
+							},
+							"text": "Local faction"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.12",
+							"roll": {
+								"min": 61,
+								"max": 65
+							},
+							"text": "Powerful people"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.13",
+							"roll": {
+								"min": 66,
+								"max": 70
+							},
+							"text": "Quickest way to fame"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.14",
+							"roll": {
+								"min": 71,
+								"max": 75
+							},
+							"text": "Shifting political alliances"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.15",
+							"roll": {
+								"min": 76,
+								"max": 80
+							},
+							"text": "Significant death"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.16",
+							"roll": {
+								"min": 81,
+								"max": 85
+							},
+							"text": "Source of wealth"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.17",
+							"roll": {
+								"min": 86,
+								"max": 90
+							},
+							"text": "Their own heritage"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.18",
+							"roll": {
+								"min": 91,
+								"max": 95
+							},
+							"text": "Useful contacts"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.19",
+							"roll": {
+								"min": 96,
+								"max": 100
+							},
+							"text": "Where the power lies"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.20",
+							"roll": {
+								"min": 101,
+								"max": 105
+							},
+							"text": "Acquisition of knowledge"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.21",
+							"roll": {
+								"min": 106,
+								"max": 110
+							},
+							"text": "Current events"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.22",
+							"roll": {
+								"min": 111,
+								"max": 115
+							},
+							"text": "Current leadership"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.23",
+							"roll": {
+								"min": 116,
+								"max": 120
+							},
+							"text": "Failures of a PC"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.24",
+							"roll": {
+								"min": 121,
+								"max": 125
+							},
+							"text": "Failures of an NPC"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.25",
+							"roll": {
+								"min": 126,
+								"max": 130
+							},
+							"text": "Future of the community"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.26",
+							"roll": {
+								"min": 131,
+								"max": 135
+							},
+							"text": "General knowledge of a region"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.27",
+							"roll": {
+								"min": 136,
+								"max": 140
+							},
+							"text": "Heritage of the community"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.28",
+							"roll": {
+								"min": 141,
+								"max": 145
+							},
+							"text": "Important political connections"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.29",
+							"roll": {
+								"min": 146,
+								"max": 150
+							},
+							"text": "Important social connections"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.30",
+							"roll": {
+								"min": 151,
+								"max": 155
+							},
+							"text": "Most valuable experiences"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.31",
+							"roll": {
+								"min": 156,
+								"max": 160
+							},
+							"text": "New life"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.32",
+							"roll": {
+								"min": 161,
+								"max": 165
+							},
+							"text": "Personal injury"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.33",
+							"roll": {
+								"min": 166,
+								"max": 170
+							},
+							"text": "Recent political changes"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.34",
+							"roll": {
+								"min": 171,
+								"max": 175
+							},
+							"text": "Rumors of a PC's past"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.35",
+							"roll": {
+								"min": 176,
+								"max": 180
+							},
+							"text": "Rumors of an NPC's past"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.36",
+							"roll": {
+								"min": 181,
+								"max": 185
+							},
+							"text": "Specific location"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.37",
+							"roll": {
+								"min": 186,
+								"max": 190
+							},
+							"text": "Their own failures"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.38",
+							"roll": {
+								"min": 191,
+								"max": 195
+							},
+							"text": "Upcoming events"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.39",
+							"roll": {
+								"min": 196,
+								"max": 200
+							},
+							"text": "Value of experience"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.40",
+							"roll": {
+								"min": 201,
+								"max": 205
+							},
+							"text": "Common knowledge about an enemy"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.41",
+							"roll": {
+								"min": 206,
+								"max": 210
+							},
+							"text": "Difficulties in settling the Expanse"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.42",
+							"roll": {
+								"min": 211,
+								"max": 215
+							},
+							"text": "Enemy secret that has been made known"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.43",
+							"roll": {
+								"min": 216,
+								"max": 220
+							},
+							"text": "Events leading to the cataclysm as told to them in childhood"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.44",
+							"roll": {
+								"min": 221,
+								"max": 225
+							},
+							"text": "Gossip about shamed individuals who have forsaken vows"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.45",
+							"roll": {
+								"min": 226,
+								"max": 230
+							},
+							"text": "History/speculation from before humanity arrived in The Forge"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.46",
+							"roll": {
+								"min": 231,
+								"max": 235
+							},
+							"text": "Information that has recently been discovered"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.47",
+							"roll": {
+								"min": 236,
+								"max": 240
+							},
+							"text": "Information that has recently been lost"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.48",
+							"roll": {
+								"min": 241,
+								"max": 245
+							},
+							"text": "Information that was lost during the cataclysm"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.49",
+							"roll": {
+								"min": 246,
+								"max": 250
+							},
+							"text": "Major plot point involving an iron vow"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.50",
+							"roll": {
+								"min": 251,
+								"max": 255
+							},
+							"text": "Minor plot point involving an iron vow"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.51",
+							"roll": {
+								"min": 256,
+								"max": 260
+							},
+							"text": "Particular equipment of a trade or craft"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.52",
+							"roll": {
+								"min": 261,
+								"max": 265
+							},
+							"text": "Particular skills of a trade or craft"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.53",
+							"roll": {
+								"min": 266,
+								"max": 270
+							},
+							"text": "PC secret that has been made known"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.54",
+							"roll": {
+								"min": 271,
+								"max": 275
+							},
+							"text": "Recent change in the family of an NPC"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.55",
+							"roll": {
+								"min": 276,
+								"max": 280
+							},
+							"text": "Recent change in their own family"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.56",
+							"roll": {
+								"min": 281,
+								"max": 285
+							},
+							"text": "Recent inaction and the consequences"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.57",
+							"roll": {
+								"min": 286,
+								"max": 290
+							},
+							"text": "Reported sightings of the firstborn"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.58",
+							"roll": {
+								"min": 291,
+								"max": 295
+							},
+							"text": "Small jobs or quests that need to be done"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/random_npc_conversation.59",
+							"roll": {
+								"min": 296,
+								"max": 300
+							},
+							"text": "Why the leadership needs to change"
+						}
+					],
+					"_source": {
+						"title": "Starsmith Expanded Oracles",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"quick_flora_first_look": {
+					"_id": "oracle_rollable:starsmith/additional/quick_flora_first_look",
+					"type": "oracle_rollable",
+					"name": "Quick Flora First Look",
+					"oracle_type": "table_text",
+					"dice": "1d6",
+					"summary": "Since this is a vital world, you’ll likely want to generate some lifeforms.For the fauna (animals), you should use the original STARFORGED creature oracles, but I thought it would be nice to have a quick flora (plant) oracle as well.",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Result"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_first_look.0",
+							"roll": {
+								"min": 1,
+								"max": 1
+							},
+							"text": "Broad leaves"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_first_look.1",
+							"roll": {
+								"min": 2,
+								"max": 2
+							},
+							"text": "Fragrant leaves"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_first_look.2",
+							"roll": {
+								"min": 3,
+								"max": 3
+							},
+							"text": "Multi-pronged leaves"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_first_look.3",
+							"roll": {
+								"min": 4,
+								"max": 4
+							},
+							"text": "Narrow leaves"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_first_look.4",
+							"roll": {
+								"min": 5,
+								"max": 5
+							},
+							"text": "Twisted shoots/branches"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_first_look.5",
+							"roll": {
+								"min": 6,
+								"max": 6
+							},
+							"text": "Vibrant colors"
+						}
+					],
+					"_source": {
+						"title": "Starsmith Expanded Oracles",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"starship_quirks": {
+					"_id": "oracle_rollable:starsmith/additional/starship_quirks",
+					"type": "oracle_rollable",
+					"name": "Starship Quirks",
+					"oracle_type": "table_text",
+					"dice": "1d300",
+					"summary": "Your ship is an important aspect of your character—and a character in its own right. What does it look like? What makes it interesting or uniquely yours? Does it have any particular quirks? If nothing occurs to you now, you can flesh it out in play, or roll once or twice on the table below.",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Result"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.0",
+							"roll": {
+								"min": 1,
+								"max": 5
+							},
+							"text": "Engine room is scorched with old burn marks"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.1",
+							"roll": {
+								"min": 6,
+								"max": 10
+							},
+							"text": "Exterior is marred by rust and grime"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.2",
+							"roll": {
+								"min": 11,
+								"max": 15
+							},
+							"text": "Faint, phantom music sometimes echoes through the corridors"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.3",
+							"roll": {
+								"min": 16,
+								"max": 20
+							},
+							"text": "Gravity generator is notoriously fickle"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.4",
+							"roll": {
+								"min": 21,
+								"max": 25
+							},
+							"text": "Hull is fused with organic growths"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.5",
+							"roll": {
+								"min": 26,
+								"max": 30
+							},
+							"text": "Hull rattles and groans in atmospheric flight"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.6",
+							"roll": {
+								"min": 31,
+								"max": 35
+							},
+							"text": "Interior spaces are crowded with exposed cables and conduits"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.7",
+							"roll": {
+								"min": 36,
+								"max": 40
+							},
+							"text": "Looks defenseless, but exterior panels open to reveal weapons"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.8",
+							"roll": {
+								"min": 41,
+								"max": 45
+							},
+							"text": "Navigation logs contain coordinates to locations that do not-- or should not--exist"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.9",
+							"roll": {
+								"min": 46,
+								"max": 50
+							},
+							"text": "Old bloodstain in the airlock reappears even when painted over"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.10",
+							"roll": {
+								"min": 51,
+								"max": 55
+							},
+							"text": "Once a beautiful ship, now scarred by a devastating battle"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.11",
+							"roll": {
+								"min": 56,
+								"max": 60
+							},
+							"text": "Patched hull covers a recent catastrophic breach"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.12",
+							"roll": {
+								"min": 61,
+								"max": 65
+							},
+							"text": "Placards and control labels are in an uncommon language"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.13",
+							"roll": {
+								"min": 66,
+								"max": 70
+							},
+							"text": "Removable plate decks provide access to hidden storage"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.14",
+							"roll": {
+								"min": 71,
+								"max": 75
+							},
+							"text": "Segmented landing gear unfold like gangly spider legs"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.15",
+							"roll": {
+								"min": 76,
+								"max": 80
+							},
+							"text": "Ship is powered by an ancient precursor device"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.16",
+							"roll": {
+								"min": 81,
+								"max": 85
+							},
+							"text": "Someone marked the hull with graffiti during a recent layover"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.17",
+							"roll": {
+								"min": 86,
+								"max": 90
+							},
+							"text": "Strange symbols are scrawled on the deck and bulkheads in the main corridor"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.18",
+							"roll": {
+								"min": 91,
+								"max": 95
+							},
+							"text": "Things tend to go missing for no logical reason"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.19",
+							"roll": {
+								"min": 96,
+								"max": 100
+							},
+							"text": "Timers and clocks are always just a bit off"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.20",
+							"roll": {
+								"min": 101,
+								"max": 105
+							},
+							"text": "Ablative armor means constant patching"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.21",
+							"roll": {
+								"min": 106,
+								"max": 110
+							},
+							"text": "Bulkhead doors often either slowly close or jam while closing"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.22",
+							"roll": {
+								"min": 111,
+								"max": 115
+							},
+							"text": "Day and night cycles are constantly miscalibrated when in planetary orbit"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.23",
+							"roll": {
+								"min": 116,
+								"max": 120
+							},
+							"text": "Engine room reacts poorly to tools made of a certain alloy"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.24",
+							"roll": {
+								"min": 121,
+								"max": 125
+							},
+							"text": "Equipment only works after being hit with a certain pattern"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.25",
+							"roll": {
+								"min": 126,
+								"max": 130
+							},
+							"text": "Exterior is garishly painted leaving no room for subtlety"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.26",
+							"roll": {
+								"min": 131,
+								"max": 135
+							},
+							"text": "Hull and nacelles reconfigure for Eidolon jumps"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.27",
+							"roll": {
+								"min": 136,
+								"max": 140
+							},
+							"text": "Hull is marked with a limerick, haiku, or joke"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.28",
+							"roll": {
+								"min": 141,
+								"max": 145
+							},
+							"text": "Internal comms sometimes activate on their own, usually at inappropriate times"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.29",
+							"roll": {
+								"min": 146,
+								"max": 150
+							},
+							"text": "Internal wiring runs off organic neural gel packs"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.30",
+							"roll": {
+								"min": 151,
+								"max": 155
+							},
+							"text": "Landing gear can slide like skis on inclines without warning"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.31",
+							"roll": {
+								"min": 156,
+								"max": 160
+							},
+							"text": "Lighting randomly shuts down a section at a time in long hallways before resetting"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.32",
+							"roll": {
+								"min": 161,
+								"max": 165
+							},
+							"text": "Main crew quarters has an aquarium built into the wall that is impossible to clean"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.33",
+							"roll": {
+								"min": 166,
+								"max": 170
+							},
+							"text": "Placards and control labels only use icons instead of language"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.34",
+							"roll": {
+								"min": 171,
+								"max": 175
+							},
+							"text": "Previous captain or crew logs randomly plays despite being purged from the system"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.35",
+							"roll": {
+								"min": 176,
+								"max": 180
+							},
+							"text": "Removable wall plates provide access to maintenance crawl spaces"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.36",
+							"roll": {
+								"min": 181,
+								"max": 185
+							},
+							"text": "Rerouting power must be done manually with a large circuit board of wires and plugs"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.37",
+							"roll": {
+								"min": 186,
+								"max": 190
+							},
+							"text": "Rooms are just a little too small as the builder tried to cut costs"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.38",
+							"roll": {
+								"min": 191,
+								"max": 195
+							},
+							"text": "Rooms have their own gravity generators but all in different orientations"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.39",
+							"roll": {
+								"min": 196,
+								"max": 200
+							},
+							"text": "Ship painted and decorated to look like a lifeform"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.40",
+							"roll": {
+								"min": 201,
+								"max": 205
+							},
+							"text": "Air recycler often leaves an unusual odor"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.41",
+							"roll": {
+								"min": 206,
+								"max": 210
+							},
+							"text": "Computer has an unusual acknowledgment when responding to commands"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.42",
+							"roll": {
+								"min": 211,
+								"max": 215
+							},
+							"text": "Critical piece of equipment requires manual pumping to restart"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.43",
+							"roll": {
+								"min": 216,
+								"max": 220
+							},
+							"text": "Diagnostic program returns data from the wrong system"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.44",
+							"roll": {
+								"min": 221,
+								"max": 225
+							},
+							"text": "Each piece of major equipment is labeled with an ostentatious name"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.45",
+							"roll": {
+								"min": 226,
+								"max": 230
+							},
+							"text": "Exterior is marred by pits or dimples from micro-strikes during shield failure"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.46",
+							"roll": {
+								"min": 231,
+								"max": 235
+							},
+							"text": "Exterior sensors lack either visual data or the ability to zoom in visually"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.47",
+							"roll": {
+								"min": 236,
+								"max": 240
+							},
+							"text": "Hull rattles and groans during Eidolon jumps"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.48",
+							"roll": {
+								"min": 241,
+								"max": 245
+							},
+							"text": "Maneuvering thrusters can hiccup before fully firing"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.49",
+							"roll": {
+								"min": 246,
+								"max": 250
+							},
+							"text": "Manual flight mode requires wearing a headset and pair of chunky tech gloves"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.50",
+							"roll": {
+								"min": 251,
+								"max": 255
+							},
+							"text": "Restroom is only accessible via a long vertical shaft with a ladder"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.51",
+							"roll": {
+								"min": 256,
+								"max": 260
+							},
+							"text": "Rudimentary AI program attempts to add appropriate emojis to logs and fails"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.52",
+							"roll": {
+								"min": 261,
+								"max": 265
+							},
+							"text": "Rudimentary holodeck often malfunctions by disregarding safety protocols"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.53",
+							"roll": {
+								"min": 266,
+								"max": 270
+							},
+							"text": "Ship or system alerts have unnecessarily long beep or chime patterns"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.54",
+							"roll": {
+								"min": 271,
+								"max": 275
+							},
+							"text": "Space rodent nests show up randomly despite extermination"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.55",
+							"roll": {
+								"min": 276,
+								"max": 280
+							},
+							"text": "The pilot chair is the most uncomfortable chair on the ship"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.56",
+							"roll": {
+								"min": 281,
+								"max": 285
+							},
+							"text": "Video comms often malfunction by adding visual filters"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.57",
+							"roll": {
+								"min": 286,
+								"max": 290
+							},
+							"text": "Voice commands for core computer only respond to absurd name"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.58",
+							"roll": {
+								"min": 291,
+								"max": 295
+							},
+							"text": "Voice options for the computer system all have outrageous accents"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/starship_quirks.59",
+							"roll": {
+								"min": 296,
+								"max": 300
+							},
+							"text": "Water recycler leaves the water with an unpleasant color"
+						}
+					],
+					"_source": {
+						"title": "Starsmith Expanded Oracles",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"quick_flora_characteristics": {
+					"_id": "oracle_rollable:starsmith/additional/quick_flora_characteristics",
+					"type": "oracle_rollable",
+					"name": "Quick Flora Characteristics",
+					"oracle_type": "table_text",
+					"dice": "1d100",
+					"summary": "Since this is a vital world, you’ll likely want to generate some lifeforms.For the fauna (animals), you should use the original STARFORGED creature oracles, but I thought it would be nice to have a quick flora (plant) oracle as well.",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Result"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.0",
+							"roll": {
+								"min": 1,
+								"max": 10
+							},
+							"text": "Airborne, toxic pollen"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.1",
+							"roll": {
+								"min": 11,
+								"max": 20
+							},
+							"text": "Blade-like leaves"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.2",
+							"roll": {
+								"min": 21,
+								"max": 30
+							},
+							"text": "Flexible, fibrous stalks"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.3",
+							"roll": {
+								"min": 31,
+								"max": 40
+							},
+							"text": "Fruit bearing"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.4",
+							"roll": {
+								"min": 41,
+								"max": 50
+							},
+							"text": "Poisonous, oily coating"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.5",
+							"roll": {
+								"min": 51,
+								"max": 60
+							},
+							"text": "Protected seed  pods"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.6",
+							"roll": {
+								"min": 61,
+								"max": 70
+							},
+							"text": "Rigid stalks"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.7",
+							"roll": {
+								"min": 71,
+								"max": 80
+							},
+							"text": "Sharp thorns"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.8",
+							"roll": {
+								"min": 81,
+								"max": 90
+							},
+							"text": "Sticky sap"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_characteristics.9",
+							"roll": {
+								"min": 91,
+								"max": 100
+							},
+							"text": "Thick bark"
+						}
+					],
+					"_source": {
+						"title": "Starsmith Expanded Oracles",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"registry_number_model": {
+					"_id": "oracle_rollable:starsmith/additional/registry_number_model",
+					"type": "oracle_rollable",
+					"name": "Registry Number Model",
+					"oracle_type": "table_text",
+					"dice": "1d6",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Result"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_model.0",
+							"roll": {
+								"min": 1,
+								"max": 1
+							},
+							"text": "A"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_model.1",
+							"roll": {
+								"min": 2,
+								"max": 2
+							},
+							"text": "B"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_model.2",
+							"roll": {
+								"min": 3,
+								"max": 3
+							},
+							"text": "C"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_model.3",
+							"roll": {
+								"min": 4,
+								"max": 4
+							},
+							"text": "D"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_model.4",
+							"roll": {
+								"min": 5,
+								"max": 5
+							},
+							"text": "E"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_model.5",
+							"roll": {
+								"min": 6,
+								"max": 6
+							},
+							"text": "J"
+						}
+					],
+					"_source": {
+						"title": "Starsmith Expanded Oracles",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"registry_number_initializer_letters": {
+					"_id": "oracle_rollable:starsmith/additional/registry_number_initializer_letters",
+					"type": "oracle_rollable",
+					"name": "Registry Number Initializer Letters",
+					"oracle_type": "table_text",
+					"dice": "1d6",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Result"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_initializer_letters.0",
+							"roll": {
+								"min": 1,
+								"max": 1
+							},
+							"text": "CCV - Custom Commissioned Vessel"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_initializer_letters.1",
+							"roll": {
+								"min": 2,
+								"max": 2
+							},
+							"text": "RTV - Registered Terminus Vessel"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_initializer_letters.2",
+							"roll": {
+								"min": 3,
+								"max": 3
+							},
+							"text": "NCC - Naval Corps Contracted"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_initializer_letters.3",
+							"roll": {
+								"min": 4,
+								"max": 4
+							},
+							"text": "USS - United Star System"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_initializer_letters.4",
+							"roll": {
+								"min": 5,
+								"max": 5
+							},
+							"text": "DFX - Deep Forge Experimental"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/registry_number_initializer_letters.5",
+							"roll": {
+								"min": 6,
+								"max": 6
+							},
+							"text": "Use Faction Initials"
+						}
+					],
+					"_source": {
+						"title": "Starsmith Expanded Oracles",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				},
+				"quick_flora_plant_type": {
+					"_id": "oracle_rollable:starsmith/additional/quick_flora_plant_type",
+					"type": "oracle_rollable",
+					"name": "Quick Flora Plant Type",
+					"oracle_type": "table_text",
+					"dice": "1d100",
+					"summary": "Since this is a vital world, you’ll likely want to generate some lifeforms.For the fauna (animals), you should use the original STARFORGED creature oracles, but I thought it would be nice to have a quick flora (plant) oracle as well.",
+					"column_labels": {
+						"roll": "Roll",
+						"text": "Result"
+					},
+					"rows": [
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.0",
+							"roll": {
+								"min": 1,
+								"max": 10
+							},
+							"text": "Grass"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.1",
+							"roll": {
+								"min": 11,
+								"max": 20
+							},
+							"text": "Moss"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.2",
+							"roll": {
+								"min": 21,
+								"max": 30
+							},
+							"text": "Root vegetable"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.3",
+							"roll": {
+								"min": 31,
+								"max": 40
+							},
+							"text": "Shrub"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.4",
+							"roll": {
+								"min": 41,
+								"max": 50
+							},
+							"text": "Tree, medium"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.5",
+							"roll": {
+								"min": 51,
+								"max": 60
+							},
+							"text": "Tree, small"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.6",
+							"roll": {
+								"min": 61,
+								"max": 70
+							},
+							"text": "Tree, tall"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.7",
+							"roll": {
+								"min": 71,
+								"max": 80
+							},
+							"text": "Vine, climbing"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.8",
+							"roll": {
+								"min": 81,
+								"max": 90
+							},
+							"text": "Vine, creeping"
+						},
+						{
+							"_id": "oracle_rollable.row:starsmith/additional/quick_flora_plant_type.9",
+							"roll": {
+								"min": 91,
+								"max": 100
+							},
+							"text": "Weed"
+						}
+					],
+					"_source": {
+						"title": "Starsmith Expanded Oracles",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2023-03-09",
+						"license": "https://creativecommons.org/licenses/by-sa/4.0",
+						"url": "https://playeveryrole.com/starsmith-products/"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Starsmith Expanded Oracles",
+				"authors": [
+					{
+						"name": "Eric Bright"
+					}
+				],
+				"date": "2023-03-09",
+				"license": "https://creativecommons.org/licenses/by-sa/4.0",
+				"url": "https://playeveryrole.com/starsmith-products/"
+			}
+		},
 		"character": {
 			"_id": "oracle_collection:starsmith/character",
 			"type": "oracle_collection",

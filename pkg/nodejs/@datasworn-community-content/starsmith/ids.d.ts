@@ -3,6 +3,15 @@
 export declare const MoveIds: {}
 
 export declare const OracleIds: {
+	readonly additional: {
+		readonly random_npc_conversation: 'oracle_rollable:starsmith/additional/random_npc_conversation'
+		readonly quick_flora_first_look: 'oracle_rollable:starsmith/additional/quick_flora_first_look'
+		readonly starship_quirks: 'oracle_rollable:starsmith/additional/starship_quirks'
+		readonly quick_flora_characteristics: 'oracle_rollable:starsmith/additional/quick_flora_characteristics'
+		readonly registry_number_model: 'oracle_rollable:starsmith/additional/registry_number_model'
+		readonly registry_number_initializer_letters: 'oracle_rollable:starsmith/additional/registry_number_initializer_letters'
+		readonly quick_flora_plant_type: 'oracle_rollable:starsmith/additional/quick_flora_plant_type'
+	}
 	readonly character: {
 		readonly first_look: 'oracle_rollable:starsmith/character/first_look'
 		readonly initial_disposition: 'oracle_rollable:starsmith/character/initial_disposition'

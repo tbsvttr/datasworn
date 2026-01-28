@@ -1,0 +1,703 @@
+_id: "starsmith"
+datasworn_version: "0.1.0"
+type: "expansion"
+ruleset: "starforged"
+oracles:
+  additional:
+    name: "Additional Oracles"
+    type: "oracle_collection"
+    _source: &a1
+      title: "Starsmith Expanded Oracles"
+      date: "2023-03-09"
+      url: "https://playeveryrole.com/starsmith-products/"
+      license: "https://creativecommons.org/licenses/by-sa/4.0"
+      authors:
+        - name: "Eric Bright"
+    oracle_type: "tables"
+    contents:
+      random_npc_conversation:
+        name: "Random NPC Conversation"
+        type: "oracle_rollable"
+        oracle_type: "table_text"
+        _source: *a1
+        dice: "1d300"
+        rows:
+          - roll:
+              min: 1
+              max: 5
+            text: "Culture of the community"
+          - roll:
+              min: 6
+              max: 10
+            text: "Distribution of wealth"
+          - roll:
+              min: 11
+              max: 15
+            text: "Famous people"
+          - roll:
+              min: 16
+              max: 20
+            text: "Famous places"
+          - roll:
+              min: 21
+              max: 25
+            text: "Heritage of a PC"
+          - roll:
+              min: 26
+              max: 30
+            text: "Heritage of an NPC"
+          - roll:
+              min: 31
+              max: 35
+            text: "How to curry favor"
+          - roll:
+              min: 36
+              max: 40
+            text: "Ingenious or outlandish ideas"
+          - roll:
+              min: 41
+              max: 45
+            text: "Items of importance"
+          - roll:
+              min: 46
+              max: 50
+            text: "Legends of heroic deeds"
+          - roll:
+              min: 51
+              max: 55
+            text: "Legends of relics"
+          - roll:
+              min: 56
+              max: 60
+            text: "Local faction"
+          - roll:
+              min: 61
+              max: 65
+            text: "Powerful people"
+          - roll:
+              min: 66
+              max: 70
+            text: "Quickest way to fame"
+          - roll:
+              min: 71
+              max: 75
+            text: "Shifting political alliances"
+          - roll:
+              min: 76
+              max: 80
+            text: "Significant death"
+          - roll:
+              min: 81
+              max: 85
+            text: "Source of wealth"
+          - roll:
+              min: 86
+              max: 90
+            text: "Their own heritage"
+          - roll:
+              min: 91
+              max: 95
+            text: "Useful contacts"
+          - roll:
+              min: 96
+              max: 100
+            text: "Where the power lies"
+          - roll:
+              min: 101
+              max: 105
+            text: "Acquisition of knowledge"
+          - roll:
+              min: 106
+              max: 110
+            text: "Current events"
+          - roll:
+              min: 111
+              max: 115
+            text: "Current leadership"
+          - roll:
+              min: 116
+              max: 120
+            text: "Failures of a PC"
+          - roll:
+              min: 121
+              max: 125
+            text: "Failures of an NPC"
+          - roll:
+              min: 126
+              max: 130
+            text: "Future of the community"
+          - roll:
+              min: 131
+              max: 135
+            text: "General knowledge of a region"
+          - roll:
+              min: 136
+              max: 140
+            text: "Heritage of the community"
+          - roll:
+              min: 141
+              max: 145
+            text: "Important political connections"
+          - roll:
+              min: 146
+              max: 150
+            text: "Important social connections"
+          - roll:
+              min: 151
+              max: 155
+            text: "Most valuable experiences"
+          - roll:
+              min: 156
+              max: 160
+            text: "New life"
+          - roll:
+              min: 161
+              max: 165
+            text: "Personal injury"
+          - roll:
+              min: 166
+              max: 170
+            text: "Recent political changes"
+          - roll:
+              min: 171
+              max: 175
+            text: "Rumors of a PC's past"
+          - roll:
+              min: 176
+              max: 180
+            text: "Rumors of an NPC's past"
+          - roll:
+              min: 181
+              max: 185
+            text: "Specific location"
+          - roll:
+              min: 186
+              max: 190
+            text: "Their own failures"
+          - roll:
+              min: 191
+              max: 195
+            text: "Upcoming events"
+          - roll:
+              min: 196
+              max: 200
+            text: "Value of experience"
+          - roll:
+              min: 201
+              max: 205
+            text: "Common knowledge about an enemy"
+          - roll:
+              min: 206
+              max: 210
+            text: "Difficulties in settling the Expanse"
+          - roll:
+              min: 211
+              max: 215
+            text: "Enemy secret that has been made known"
+          - roll:
+              min: 216
+              max: 220
+            text: "Events leading to the cataclysm as told to them in childhood"
+          - roll:
+              min: 221
+              max: 225
+            text: "Gossip about shamed individuals who have forsaken vows"
+          - roll:
+              min: 226
+              max: 230
+            text: "History/speculation from before humanity arrived in The Forge"
+          - roll:
+              min: 231
+              max: 235
+            text: "Information that has recently been discovered"
+          - roll:
+              min: 236
+              max: 240
+            text: "Information that has recently been lost"
+          - roll:
+              min: 241
+              max: 245
+            text: "Information that was lost during the cataclysm"
+          - roll:
+              min: 246
+              max: 250
+            text: "Major plot point involving an iron vow"
+          - roll:
+              min: 251
+              max: 255
+            text: "Minor plot point involving an iron vow"
+          - roll:
+              min: 256
+              max: 260
+            text: "Particular equipment of a trade or craft"
+          - roll:
+              min: 261
+              max: 265
+            text: "Particular skills of a trade or craft"
+          - roll:
+              min: 266
+              max: 270
+            text: "PC secret that has been made known"
+          - roll:
+              min: 271
+              max: 275
+            text: "Recent change in the family of an NPC"
+          - roll:
+              min: 276
+              max: 280
+            text: "Recent change in their own family"
+          - roll:
+              min: 281
+              max: 285
+            text: "Recent inaction and the consequences"
+          - roll:
+              min: 286
+              max: 290
+            text: "Reported sightings of the firstborn"
+          - roll:
+              min: 291
+              max: 295
+            text: "Small jobs or quests that need to be done"
+          - roll:
+              min: 296
+              max: 300
+            text: "Why the leadership needs to change"
+        summary: "Use the RANDOM NPC CONVERSATION oracle when you just want a topic starter for a more mundane conversation. Think of this as a conversation starter that will allow some of your characters personality to come through without having to also force through plot information."
+      quick_flora_first_look:
+        name: "Quick Flora First Look"
+        type: "oracle_rollable"
+        oracle_type: "table_text"
+        _source: *a1
+        dice: "1d6"
+        rows:
+          - roll:
+              min: 1
+              max: 1
+            text: "Broad leaves"
+          - roll:
+              min: 2
+              max: 2
+            text: "Fragrant leaves"
+          - roll:
+              min: 3
+              max: 3
+            text: "Multi-pronged leaves"
+          - roll:
+              min: 4
+              max: 4
+            text: "Narrow leaves"
+          - roll:
+              min: 5
+              max: 5
+            text: "Twisted shoots/branches"
+          - roll:
+              min: 6
+              max: 6
+            text: "Vibrant colors"
+        summary: "Since this is a vital world, you’ll likely want to generate some lifeforms.For the fauna (animals), you should use the original STARFORGED creature oracles, but I thought it would be nice to have a quick flora (plant) oracle as well."
+      starship_quirks:
+        name: "Starship Quirks"
+        type: "oracle_rollable"
+        oracle_type: "table_text"
+        _source: *a1
+        dice: "1d300"
+        rows:
+          - roll:
+              min: 1
+              max: 5
+            text: "Engine room is scorched with old burn marks"
+          - roll:
+              min: 6
+              max: 10
+            text: "Exterior is marred by rust and grime"
+          - roll:
+              min: 11
+              max: 15
+            text: "Faint, phantom music sometimes echoes through the corridors"
+          - roll:
+              min: 16
+              max: 20
+            text: "Gravity generator is notoriously fickle"
+          - roll:
+              min: 21
+              max: 25
+            text: "Hull is fused with organic growths"
+          - roll:
+              min: 26
+              max: 30
+            text: "Hull rattles and groans in atmospheric flight"
+          - roll:
+              min: 31
+              max: 35
+            text: "Interior spaces are crowded with exposed cables and conduits"
+          - roll:
+              min: 36
+              max: 40
+            text: "Looks defenseless, but exterior panels open to reveal weapons"
+          - roll:
+              min: 41
+              max: 45
+            text: "Navigation logs contain coordinates to locations that do not-- or should not--exist"
+          - roll:
+              min: 46
+              max: 50
+            text: "Old bloodstain in the airlock reappears even when painted over"
+          - roll:
+              min: 51
+              max: 55
+            text: "Once a beautiful ship, now scarred by a devastating battle"
+          - roll:
+              min: 56
+              max: 60
+            text: "Patched hull covers a recent catastrophic breach"
+          - roll:
+              min: 61
+              max: 65
+            text: "Placards and control labels are in an uncommon language"
+          - roll:
+              min: 66
+              max: 70
+            text: "Removable plate decks provide access to hidden storage"
+          - roll:
+              min: 71
+              max: 75
+            text: "Segmented landing gear unfold like gangly spider legs"
+          - roll:
+              min: 76
+              max: 80
+            text: "Ship is powered by an ancient precursor device"
+          - roll:
+              min: 81
+              max: 85
+            text: "Someone marked the hull with graffiti during a recent layover"
+          - roll:
+              min: 86
+              max: 90
+            text: "Strange symbols are scrawled on the deck and bulkheads in the main corridor"
+          - roll:
+              min: 91
+              max: 95
+            text: "Things tend to go missing for no logical reason"
+          - roll:
+              min: 96
+              max: 100
+            text: "Timers and clocks are always just a bit off"
+          - roll:
+              min: 101
+              max: 105
+            text: "Ablative armor means constant patching"
+          - roll:
+              min: 106
+              max: 110
+            text: "Bulkhead doors often either slowly close or jam while closing"
+          - roll:
+              min: 111
+              max: 115
+            text: "Day and night cycles are constantly miscalibrated when in planetary orbit"
+          - roll:
+              min: 116
+              max: 120
+            text: "Engine room reacts poorly to tools made of a certain alloy"
+          - roll:
+              min: 121
+              max: 125
+            text: "Equipment only works after being hit with a certain pattern"
+          - roll:
+              min: 126
+              max: 130
+            text: "Exterior is garishly painted leaving no room for subtlety"
+          - roll:
+              min: 131
+              max: 135
+            text: "Hull and nacelles reconfigure for Eidolon jumps"
+          - roll:
+              min: 136
+              max: 140
+            text: "Hull is marked with a limerick, haiku, or joke"
+          - roll:
+              min: 141
+              max: 145
+            text: "Internal comms sometimes activate on their own, usually at inappropriate times"
+          - roll:
+              min: 146
+              max: 150
+            text: "Internal wiring runs off organic neural gel packs"
+          - roll:
+              min: 151
+              max: 155
+            text: "Landing gear can slide like skis on inclines without warning"
+          - roll:
+              min: 156
+              max: 160
+            text: "Lighting randomly shuts down a section at a time in long hallways before resetting"
+          - roll:
+              min: 161
+              max: 165
+            text: "Main crew quarters has an aquarium built into the wall that is impossible to clean"
+          - roll:
+              min: 166
+              max: 170
+            text: "Placards and control labels only use icons instead of language"
+          - roll:
+              min: 171
+              max: 175
+            text: "Previous captain or crew logs randomly plays despite being purged from the system"
+          - roll:
+              min: 176
+              max: 180
+            text: "Removable wall plates provide access to maintenance crawl spaces"
+          - roll:
+              min: 181
+              max: 185
+            text: "Rerouting power must be done manually with a large circuit board of wires and plugs"
+          - roll:
+              min: 186
+              max: 190
+            text: "Rooms are just a little too small as the builder tried to cut costs"
+          - roll:
+              min: 191
+              max: 195
+            text: "Rooms have their own gravity generators but all in different orientations"
+          - roll:
+              min: 196
+              max: 200
+            text: "Ship painted and decorated to look like a lifeform"
+          - roll:
+              min: 201
+              max: 205
+            text: "Air recycler often leaves an unusual odor"
+          - roll:
+              min: 206
+              max: 210
+            text: "Computer has an unusual acknowledgment when responding to commands"
+          - roll:
+              min: 211
+              max: 215
+            text: "Critical piece of equipment requires manual pumping to restart"
+          - roll:
+              min: 216
+              max: 220
+            text: "Diagnostic program returns data from the wrong system"
+          - roll:
+              min: 221
+              max: 225
+            text: "Each piece of major equipment is labeled with an ostentatious name"
+          - roll:
+              min: 226
+              max: 230
+            text: "Exterior is marred by pits or dimples from micro-strikes during shield failure"
+          - roll:
+              min: 231
+              max: 235
+            text: "Exterior sensors lack either visual data or the ability to zoom in visually"
+          - roll:
+              min: 236
+              max: 240
+            text: "Hull rattles and groans during Eidolon jumps"
+          - roll:
+              min: 241
+              max: 245
+            text: "Maneuvering thrusters can hiccup before fully firing"
+          - roll:
+              min: 246
+              max: 250
+            text: "Manual flight mode requires wearing a headset and pair of chunky tech gloves"
+          - roll:
+              min: 251
+              max: 255
+            text: "Restroom is only accessible via a long vertical shaft with a ladder"
+          - roll:
+              min: 256
+              max: 260
+            text: "Rudimentary AI program attempts to add appropriate emojis to logs and fails"
+          - roll:
+              min: 261
+              max: 265
+            text: "Rudimentary holodeck often malfunctions by disregarding safety protocols"
+          - roll:
+              min: 266
+              max: 270
+            text: "Ship or system alerts have unnecessarily long beep or chime patterns"
+          - roll:
+              min: 271
+              max: 275
+            text: "Space rodent nests show up randomly despite extermination"
+          - roll:
+              min: 276
+              max: 280
+            text: "The pilot chair is the most uncomfortable chair on the ship"
+          - roll:
+              min: 281
+              max: 285
+            text: "Video comms often malfunction by adding visual filters"
+          - roll:
+              min: 286
+              max: 290
+            text: "Voice commands for core computer only respond to absurd name"
+          - roll:
+              min: 291
+              max: 295
+            text: "Voice options for the computer system all have outrageous accents"
+          - roll:
+              min: 296
+              max: 300
+            text: "Water recycler leaves the water with an unpleasant color"
+        summary: "Your ship is an important aspect of your character—and a character in its own right. What does it look like? What makes it interesting or uniquely yours? Does it have any particular quirks? If nothing occurs to you now, you can flesh it out in play, or roll once or twice on the table below."
+      quick_flora_characteristics:
+        name: "Quick Flora Characteristics"
+        type: "oracle_rollable"
+        oracle_type: "table_text"
+        _source: *a1
+        dice: "1d100"
+        rows:
+          - roll:
+              min: 1
+              max: 10
+            text: "Airborne, toxic pollen"
+          - roll:
+              min: 11
+              max: 20
+            text: "Blade-like leaves"
+          - roll:
+              min: 21
+              max: 30
+            text: "Flexible, fibrous stalks"
+          - roll:
+              min: 31
+              max: 40
+            text: "Fruit bearing"
+          - roll:
+              min: 41
+              max: 50
+            text: "Poisonous, oily coating"
+          - roll:
+              min: 51
+              max: 60
+            text: "Protected seed  pods"
+          - roll:
+              min: 61
+              max: 70
+            text: "Rigid stalks"
+          - roll:
+              min: 71
+              max: 80
+            text: "Sharp thorns"
+          - roll:
+              min: 81
+              max: 90
+            text: "Sticky sap"
+          - roll:
+              min: 91
+              max: 100
+            text: "Thick bark"
+        summary: "Since this is a vital world, you’ll likely want to generate some lifeforms.For the fauna (animals), you should use the original STARFORGED creature oracles, but I thought it would be nice to have a quick flora (plant) oracle as well."
+      registry_number_model:
+        name: "Registry Number Model"
+        type: "oracle_rollable"
+        oracle_type: "table_text"
+        _source: *a1
+        dice: "1d6"
+        rows:
+          - roll:
+              min: 1
+              max: 1
+            text: "A"
+          - roll:
+              min: 2
+              max: 2
+            text: "B"
+          - roll:
+              min: 3
+              max: 3
+            text: "C"
+          - roll:
+              min: 4
+              max: 4
+            text: "D"
+          - roll:
+              min: 5
+              max: 5
+            text: "E"
+          - roll:
+              min: 6
+              max: 6
+            text: "J"
+      registry_number_initializer_letters:
+        name: "Registry Number Initializer Letters"
+        type: "oracle_rollable"
+        oracle_type: "table_text"
+        _source: *a1
+        dice: "1d6"
+        rows:
+          - roll:
+              min: 1
+              max: 1
+            text: "CCV - Custom Commissioned Vessel"
+          - roll:
+              min: 2
+              max: 2
+            text: "RTV - Registered Terminus Vessel"
+          - roll:
+              min: 3
+              max: 3
+            text: "NCC - Naval Corps Contracted"
+          - roll:
+              min: 4
+              max: 4
+            text: "USS - United Star System"
+          - roll:
+              min: 5
+              max: 5
+            text: "DFX - Deep Forge Experimental"
+          - roll:
+              min: 6
+              max: 6
+            text: "Use Faction Initials"
+      quick_flora_plant_type:
+        name: "Quick Flora Plant Type"
+        type: "oracle_rollable"
+        oracle_type: "table_text"
+        _source: *a1
+        dice: "1d100"
+        rows:
+          - roll:
+              min: 1
+              max: 10
+            text: "Grass"
+          - roll:
+              min: 11
+              max: 20
+            text: "Moss"
+          - roll:
+              min: 21
+              max: 30
+            text: "Root vegetable"
+          - roll:
+              min: 31
+              max: 40
+            text: "Shrub"
+          - roll:
+              min: 41
+              max: 50
+            text: "Tree, medium"
+          - roll:
+              min: 51
+              max: 60
+            text: "Tree, small"
+          - roll:
+              min: 61
+              max: 70
+            text: "Tree, tall"
+          - roll:
+              min: 71
+              max: 80
+            text: "Vine, climbing"
+          - roll:
+              min: 81
+              max: 90
+            text: "Vine, creeping"
+          - roll:
+              min: 91
+              max: 100
+            text: "Weed"
+        summary: "Since this is a vital world, you’ll likely want to generate some lifeforms.For the fauna (animals), you should use the original STARFORGED creature oracles, but I thought it would be nice to have a quick flora (plant) oracle as well."

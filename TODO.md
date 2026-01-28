@@ -134,7 +134,7 @@ Recent improvements (PR #8 by southpole):
 Missing content:
 
 - [x] **New Assets** - 32 assets across all categories (Module: 7, Path: 15, Companion: 5, Deed: 4, Support Vehicle: 1)
-- [ ] **Additional Oracles** - e.g., "Random NPC Conversions" and others not in current data
+- [x] **Additional Oracles** - 7 oracles added (Random NPC Conversation, Quick Flora, Starship Quirks, Registry Number)
 - [ ] **Mecha Mercs** - Modular giant robot system with 4 chassis types (adds new mechanics - harder to convert)
 
 Source: [playeveryrole.com/starsmith-products](https://playeveryrole.com/starsmith-products/)

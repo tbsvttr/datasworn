@@ -4,6 +4,15 @@
 export const MoveIds = {}
 
 export const OracleIds = {
+	additional: {
+		random_npc_conversation: 'oracle_rollable:starsmith/additional/random_npc_conversation',
+		quick_flora_first_look: 'oracle_rollable:starsmith/additional/quick_flora_first_look',
+		starship_quirks: 'oracle_rollable:starsmith/additional/starship_quirks',
+		quick_flora_characteristics: 'oracle_rollable:starsmith/additional/quick_flora_characteristics',
+		registry_number_model: 'oracle_rollable:starsmith/additional/registry_number_model',
+		registry_number_initializer_letters: 'oracle_rollable:starsmith/additional/registry_number_initializer_letters',
+		quick_flora_plant_type: 'oracle_rollable:starsmith/additional/quick_flora_plant_type'
+	},
 	character: {
 		first_look: 'oracle_rollable:starsmith/character/first_look',
 		initial_disposition: 'oracle_rollable:starsmith/character/initial_disposition',
