@@ -1,124 +1,113 @@
 # Adding a New Expansion
 
-Checklist for adding new content packages to Datasworn.
-
 ## Quick Start
 
-Run the scaffold script:
+One command scaffolds everything:
 
 ```bash
-npm run new:expansion
+npm run new:expansion my_expansion starforged "Author Name"
 ```
 
-This creates:
+This automatically:
 
-- `source_data/{id}/assets.yaml` - stub source file
-- `pkg/nodejs/@datasworn-community-content/{name}/package.json` - nodejs package
+- Creates `source_data/my_expansion/assets.yaml`
+- Creates `pkg/nodejs/@datasworn-community-content/my-expansion/package.json`
+- Adds config to `src/scripts/pkg/pkgConfig.ts`
 
-Then add the generated config to `pkgConfig.ts` and run `npm run build:all`.
+Then add content and build:
+
+```bash
+# Edit source_data/my_expansion/assets.yaml with your content
+npm run build:all
+```
+
+Or do it all at once with `--build`:
+
+```bash
+npm run new:expansion my_expansion classic "Author Name" --build
+```
+
+## Script Usage
+
+```
+npm run new:expansion <id> <ruleset> <author> [--build]
+
+  id       Expansion ID with underscores (e.g., my_expansion)
+  ruleset  classic or starforged
+  author   Author name in quotes
+  --build  Run build:all after scaffolding
+```
+
+The script derives:
+
+- Package name: `my_expansion` → `my-expansion`
+- Title: `my_expansion` → `My Expansion`
+- Config name: `my_expansion` → `MyExpansion`
 
 ---
 
-## Manual Steps
+## Manual Steps (Reference)
+
+If you need to do it manually:
 
 ### 1. Create Source Data
 
-Create `source_data/{expansion_id}/` with YAML files:
-- `assets.yaml` - Asset collections
-- `oracles.yaml` - Oracle collections (optional)
-- `moves.yaml` - Move categories (optional)
+Create `source_data/{id}/assets.yaml`:
 
-### 2. Register Package Config
+```yaml
+_id: "my_expansion"
+datasworn_version: "0.1.0"
+type: "expansion"
+ruleset: "starforged"
+title: "My Expansion"
+date: "2024-01-01"
+url: ""
+license: "https://creativecommons.org/licenses/by/4.0"
+authors:
+  - name: "Author Name"
+
+assets: {}
+```
+
+### 2. Register in pkgConfig.ts
 
 Add to `src/scripts/pkg/pkgConfig.ts`:
 
 ```typescript
 export const MyExpansion: RulesPackageConfig = {
   type: 'expansion',
-  paths: {
-    source: path.join(ROOT_SOURCE_DATA, 'my_expansion'),
-  },
+  paths: { source: path.join(ROOT_SOURCE_DATA, 'my_expansion') },
   id: 'my_expansion',
   pkg: {
     name: 'my-expansion',
-    private: true,  // Set to false when ready for NPM
-    scope: PKG_SCOPE_COMMUNITY,  // or PKG_SCOPE_OFFICIAL
+    private: true,
+    scope: PKG_SCOPE_COMMUNITY,
     description: 'Datasworn JSON data for My Expansion.',
-    keywords: ['ironsworn', 'datasworn', 'TTRPG'],
-    authors: [{ name: 'Author Name', url: 'https://...' }],
+    keywords: ['ironsworn', 'datasworn', 'TTRPG', 'my-expansion'],
+    authors: [{ name: 'Author Name' }],
   },
 }
 ```
 
-### 3. Create Node.js Package Folder
+### 3. Create Node.js Package
 
-Create `pkg/nodejs/@datasworn-community-content/{expansion}/package.json`:
+Create `pkg/nodejs/@datasworn-community-content/my-expansion/package.json` with correct dependency:
 
-```json
-{
-  "name": "@datasworn-community-content/my-expansion",
-  "version": "0.1.0",
-  "description": "...",
-  "files": ["index.js", "index.d.ts", "json", "migration"],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rsek/datasworn.git",
-    "directory": "pkg/nodejs/@datasworn-community-content/my-expansion"
-  },
-  "keywords": ["ironsworn", "datasworn", "TTRPG"],
-  "contributors": [{ "name": "Author", "url": "..." }],
-  "license": "CC-BY-4.0",
-  "dependencies": {
-    "@datasworn/ironsworn-classic": "0.1.0"
-  },
-  "private": true,
-  "type": "module",
-  "main": "index.js",
-  "types": "index.d.ts",
-  "exports": {
-    ".": { "types": "./index.d.ts", "default": "./index.js" },
-    "./ids": { "types": "./ids.d.ts", "default": "./ids.js" },
-    "./json/my_expansion.json": "./json/my_expansion.json"
-  }
-}
-```
+- Classic expansions: `"@datasworn/ironsworn-classic": "0.1.0"`
+- Starforged expansions: `"@datasworn/starforged": "0.1.0"`
 
-**Note:** Use the correct dependency:
-- For Classic Ironsworn expansions: `@datasworn/ironsworn-classic`
-- For Starforged expansions: `@datasworn/starforged`
-
-### 4. Run Full Build
+### 4. Build
 
 ```bash
 npm run build:all
-# or manually:
-npm run build:json   # Build JSON from YAML
-npm run build:pkg    # Build Node.js packages
-uv run build.py --force  # Build Python package
 ```
 
-### 5. Commit All Changes
-
-Check for uncommitted files:
-```bash
-git status
-```
-
-Typical files to commit:
-- `source_data/{expansion}/*.yaml`
-- `src/scripts/pkg/pkgConfig.ts`
-- `datasworn/{expansion}/{expansion}.json`
-- `src/migration/history/0.1.0/{expansion}/`
-- `pkg/nodejs/@datasworn-community-content/{expansion}/`
-- `pkg/python/datasworn/src/datasworn/core/src/datasworn/core/models.py`
+---
 
 ## Common Issues
 
-### "ENOENT: package.json not found"
-You forgot step 3 - create the Node.js package folder with package.json.
-
-### Expansion not discovered by build
-You forgot step 2 - register in pkgConfig.ts.
-
-### Missing root-level metadata
-Source YAML needs `_id`, `type`, `ruleset`, `title`, `date`, `url`, `license`, `authors` at root level.
+| Error | Cause | Fix |
+|-------|-------|-----|
+| ENOENT: package.json not found | Missing nodejs package folder | Create package.json in pkg/nodejs/... |
+| Expansion not discovered | Not in pkgConfig.ts | Add export to pkgConfig.ts |
+| Validation errors | Missing root metadata | Add _id, type, ruleset, title, date, etc. |
