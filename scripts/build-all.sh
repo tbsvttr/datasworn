@@ -7,19 +7,27 @@ set -e
 echo "=== Datasworn Full Build ==="
 echo ""
 
-echo "1/4 Building JSON from source YAML..."
+echo "0/5 Validating package configuration..."
+bun scripts/validate-packages.ts
+
+echo ""
+echo "1/5 Building JSON from source YAML..."
 npm run build:json
 
 echo ""
-echo "2/4 Building Node.js packages..."
+echo "2/5 Building Node.js packages..."
 npm run build:pkg
 
 echo ""
-echo "3/4 Building Python package..."
+echo "3/5 Building Python package..."
 uv run build.py --force
 
 echo ""
-echo "4/4 Checking for uncommitted changes..."
+echo "4/5 Re-validating packages..."
+bun scripts/validate-packages.ts
+
+echo ""
+echo "5/5 Checking for uncommitted changes..."
 if [ -n "$(git status --porcelain)" ]; then
     echo ""
     echo "Uncommitted changes detected:"
