@@ -308,4 +308,47 @@ export declare const OracleIds: {
 	}
 }
 
-export declare const AssetIds: {}
+export declare const AssetIds: {
+	readonly module: {
+		readonly aeroponics: 'asset:starsmith/module/aeroponics'
+		readonly armory: 'asset:starsmith/module/armory'
+		readonly drones: 'asset:starsmith/module/drones'
+		readonly external_refit: 'asset:starsmith/module/external_refit'
+		readonly holodeck: 'asset:starsmith/module/holodeck'
+		readonly stabilizers: 'asset:starsmith/module/stabilizers'
+		readonly tractor_beam: 'asset:starsmith/module/tractor_beam'
+	}
+	readonly support_vehicle: {
+		readonly aquatic_hov: 'asset:starsmith/support_vehicle/aquatic_hov'
+	}
+	readonly path: {
+		readonly constable: 'asset:starsmith/path/constable'
+		readonly cosmic_constructor: 'asset:starsmith/path/cosmic_constructor'
+		readonly enhanced: 'asset:starsmith/path/enhanced'
+		readonly linguist: 'asset:starsmith/path/linguist'
+		readonly logistician: 'asset:starsmith/path/logistician'
+		readonly precog: 'asset:starsmith/path/precog'
+		readonly psionic: 'asset:starsmith/path/psionic'
+		readonly quantum_tunneler: 'asset:starsmith/path/quantum_tunneler'
+		readonly rebel: 'asset:starsmith/path/rebel'
+		readonly rocketeer: 'asset:starsmith/path/rocketeer'
+		readonly scientist: 'asset:starsmith/path/scientist'
+		readonly security_guard: 'asset:starsmith/path/security_guard'
+		readonly telepath: 'asset:starsmith/path/telepath'
+		readonly voidshifter: 'asset:starsmith/path/voidshifter'
+		readonly well_connected: 'asset:starsmith/path/well_connected'
+	}
+	readonly companion: {
+		readonly crew_member: 'asset:starsmith/companion/crew_member'
+		readonly flash_fox: 'asset:starsmith/companion/flash_fox'
+		readonly furball: 'asset:starsmith/companion/furball'
+		readonly nano_swarm: 'asset:starsmith/companion/nano_swarm'
+		readonly waterwyrm: 'asset:starsmith/companion/waterwyrm'
+	}
+	readonly deed: {
+		readonly immortal_coil: 'asset:starsmith/deed/immortal_coil'
+		readonly indefatigable: 'asset:starsmith/deed/indefatigable'
+		readonly soulless: 'asset:starsmith/deed/soulless'
+		readonly traveler: 'asset:starsmith/deed/traveler'
+	}
+}

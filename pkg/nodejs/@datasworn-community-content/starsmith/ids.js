@@ -309,4 +309,47 @@ export const OracleIds = {
 	}
 }
 
-export const AssetIds = {}
+export const AssetIds = {
+	module: {
+		aeroponics: 'asset:starsmith/module/aeroponics',
+		armory: 'asset:starsmith/module/armory',
+		drones: 'asset:starsmith/module/drones',
+		external_refit: 'asset:starsmith/module/external_refit',
+		holodeck: 'asset:starsmith/module/holodeck',
+		stabilizers: 'asset:starsmith/module/stabilizers',
+		tractor_beam: 'asset:starsmith/module/tractor_beam'
+	},
+	support_vehicle: {
+		aquatic_hov: 'asset:starsmith/support_vehicle/aquatic_hov'
+	},
+	path: {
+		constable: 'asset:starsmith/path/constable',
+		cosmic_constructor: 'asset:starsmith/path/cosmic_constructor',
+		enhanced: 'asset:starsmith/path/enhanced',
+		linguist: 'asset:starsmith/path/linguist',
+		logistician: 'asset:starsmith/path/logistician',
+		precog: 'asset:starsmith/path/precog',
+		psionic: 'asset:starsmith/path/psionic',
+		quantum_tunneler: 'asset:starsmith/path/quantum_tunneler',
+		rebel: 'asset:starsmith/path/rebel',
+		rocketeer: 'asset:starsmith/path/rocketeer',
+		scientist: 'asset:starsmith/path/scientist',
+		security_guard: 'asset:starsmith/path/security_guard',
+		telepath: 'asset:starsmith/path/telepath',
+		voidshifter: 'asset:starsmith/path/voidshifter',
+		well_connected: 'asset:starsmith/path/well_connected'
+	},
+	companion: {
+		crew_member: 'asset:starsmith/companion/crew_member',
+		flash_fox: 'asset:starsmith/companion/flash_fox',
+		furball: 'asset:starsmith/companion/furball',
+		nano_swarm: 'asset:starsmith/companion/nano_swarm',
+		waterwyrm: 'asset:starsmith/companion/waterwyrm'
+	},
+	deed: {
+		immortal_coil: 'asset:starsmith/deed/immortal_coil',
+		indefatigable: 'asset:starsmith/deed/indefatigable',
+		soulless: 'asset:starsmith/deed/soulless',
+		traveler: 'asset:starsmith/deed/traveler'
+	}
+}
