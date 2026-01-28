@@ -10,7 +10,7 @@ assets:
       title: "Starsmith: Assets"
       date: "2023-03-09"
       url: "https://playeveryrole.com/starsmith-products/"
-      license: "https://creativecommons.org/licenses/by-sa/4.0"
+      license: "https://creativecommons.org/licenses/by/4.0"
       authors: &a1
         - name: "Eric Bright"
     contents:
@@ -22,7 +22,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -38,7 +38,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -59,7 +59,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -86,7 +86,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -102,7 +102,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -129,7 +129,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -145,7 +145,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -165,7 +165,7 @@ assets:
       title: "Starsmith: Assets"
       date: "2023-03-09"
       url: "https://playeveryrole.com/starsmith-products/"
-      license: "https://creativecommons.org/licenses/by-sa/4.0"
+      license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
     contents:
       aquatic_hov:
@@ -176,7 +176,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -206,7 +206,7 @@ assets:
       title: "Starsmith: Assets"
       date: "2023-03-09"
       url: "https://playeveryrole.com/starsmith-products/"
-      license: "https://creativecommons.org/licenses/by-sa/4.0"
+      license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
     contents:
       constable:
@@ -217,7 +217,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -232,7 +232,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -254,7 +254,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -269,7 +269,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -284,7 +284,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -299,7 +299,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -314,7 +314,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -329,7 +329,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -344,7 +344,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -368,7 +368,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -392,7 +392,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -411,7 +411,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -426,7 +426,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -441,7 +441,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -456,7 +456,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -471,7 +471,7 @@ assets:
       title: "Starsmith: Assets"
       date: "2023-03-09"
       url: "https://playeveryrole.com/starsmith-products/"
-      license: "https://creativecommons.org/licenses/by-sa/4.0"
+      license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
     contents:
       crew_member:
@@ -482,7 +482,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -512,7 +512,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -542,7 +542,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -572,7 +572,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -602,7 +602,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -632,7 +632,7 @@ assets:
       title: "Starsmith: Assets"
       date: "2023-03-09"
       url: "https://playeveryrole.com/starsmith-products/"
-      license: "https://creativecommons.org/licenses/by-sa/4.0"
+      license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
     contents:
       immortal_coil:
@@ -643,7 +643,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -663,7 +663,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -683,7 +683,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true
@@ -698,7 +698,7 @@ assets:
           title: "Starsmith: Assets"
           date: "2023-03-09"
           url: "https://playeveryrole.com/starsmith-products/"
-          license: "https://creativecommons.org/licenses/by-sa/4.0"
+          license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
         abilities:
           - enabled: true

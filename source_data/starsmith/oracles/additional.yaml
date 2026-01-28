@@ -10,7 +10,7 @@ oracles:
       title: "Starsmith Expanded Oracles"
       date: "2023-03-09"
       url: "https://playeveryrole.com/starsmith-products/"
-      license: "https://creativecommons.org/licenses/by-sa/4.0"
+      license: "https://creativecommons.org/licenses/by/4.0"
       authors:
         - name: "Eric Bright"
     oracle_type: "tables"
