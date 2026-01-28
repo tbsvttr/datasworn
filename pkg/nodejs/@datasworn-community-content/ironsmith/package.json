@@ -1,0 +1,60 @@
+{
+	"name": "@datasworn-community-content/ironsmith",
+	"version": "0.1.0",
+	"description": "Datasworn JSON data for Ironsmith, a Classic Ironsworn expansion by Eric Bright.",
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"json",
+		"migration"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rsek/datasworn.git",
+		"directory": "pkg/nodejs/@datasworn-community-content/ironsmith"
+	},
+	"keywords": [
+		"ironsworn",
+		"datasworn",
+		"TTRPG",
+		"ironsmith"
+	],
+	"contributors": [
+		{
+			"name": "Eric Bright",
+			"url": "https://playeveryrole.com/"
+		}
+	],
+	"scripts": {
+		"release": "release-it"
+	},
+	"license": "CC-BY-4.0",
+	"bugs": {
+		"url": "https://github.com/rsek/datasworn/issues"
+	},
+	"dependencies": {
+		"@datasworn/ironsworn-classic": "0.1.0"
+	},
+	"authors": [
+		{
+			"name": "Eric Bright",
+			"email": "noreply@playeveryrole.com",
+			"url": "https://playeveryrole.com/"
+		}
+	],
+	"private": true,
+	"type": "module",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"default": "./index.js"
+		},
+		"./ids": {
+			"types": "./ids.d.ts",
+			"default": "./ids.js"
+		},
+		"./json/ironsmith.json": "./json/ironsmith.json"
+	}
+}
