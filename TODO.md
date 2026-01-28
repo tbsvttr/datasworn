@@ -143,11 +143,11 @@ FoundryVTT module available: [jendave/starsmith-compendiums](https://github.com/
 
 ### Ironsmith (for Classic Ironsworn) - by Eric Bright
 
-Currently includes **Core Assets** (27) and **Mythology Flavor Packs** (60) = 87 total assets.
+Currently includes **87 assets** and **76 oracles**.
 
-- [x] **Core Assets** - 27 assets converted (Companion 4, Path 15, Ritual 7, Combat Talent 1)
-- [x] **Mythology flavor packs** - 60 assets converted (Japanese 14, Indian 12, African 11, Norse 11, South American 12)
-- [ ] **Oracles** - Expanded oracles
+- [x] **Core Assets** - 27 assets (Companion 4, Path 15, Ritual 7, Combat Talent 1)
+- [x] **Mythology flavor packs** - 60 assets (Japanese 14, Indian 12, African 11, Norse 11, South American 12)
+- [x] **Oracles** - 76 oracles across 10 categories (Corruption, Quests, Mystery Vow, Monster Hunting, etc.)
 - [ ] Site/Delve Themes, Domains, Foes
 
 FoundryVTT module available: [jendave/ironsmith-compendiums](https://github.com/jendave/ironsmith-compendiums)
