@@ -37,7 +37,7 @@
 - [x] Expand/collapse all - Tree controls
 - [x] Linked oracle rolls - Markdown links like `[Action](datasworn:...)` are clickable
 - [x] Delve renderers - Proper display for sites, themes, domains
-- [ ] Roll history - Show recent oracle rolls in session
+- [x] Roll history - Show recent oracle rolls in session
 
 ### Nice to Have
 

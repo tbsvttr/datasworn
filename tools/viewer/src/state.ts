@@ -4,12 +4,22 @@ import type { RulesPackage } from './utils/loader'
 // Re-export Datasworn namespace for use in other files
 export type { Datasworn }
 
+export interface RollHistoryEntry {
+	id: number
+	timestamp: Date
+	dice: string
+	roll: number
+	result: string
+	oracleName?: string
+}
+
 export interface AppState {
 	rulesets: Map<string, RulesPackage>
 	currentRuleset: string | null
 	selectedPath: string[] | null
 	selectedItem: unknown | null
 	loading: boolean
+	rollHistory: RollHistoryEntry[]
 }
 
 type Listener = (state: AppState) => void
@@ -20,8 +30,11 @@ class StateManager {
 		currentRuleset: null,
 		selectedPath: null,
 		selectedItem: null,
-		loading: true
+		loading: true,
+		rollHistory: []
 	}
+
+	private rollIdCounter = 0
 
 	private listeners: Set<Listener> = new Set()
 
@@ -83,6 +96,24 @@ class StateManager {
 		const { rulesets, currentRuleset } = this.state
 		if (!currentRuleset) return null
 		return rulesets.get(currentRuleset) ?? null
+	}
+
+	addRollToHistory(dice: string, roll: number, result: string, oracleName?: string): void {
+		const entry: RollHistoryEntry = {
+			id: ++this.rollIdCounter,
+			timestamp: new Date(),
+			dice,
+			roll,
+			result,
+			oracleName
+		}
+		// Keep last 50 rolls
+		const history = [entry, ...this.state.rollHistory].slice(0, 50)
+		this.setState({ rollHistory: history })
+	}
+
+	clearRollHistory(): void {
+		this.setState({ rollHistory: [] })
 	}
 
 	// Navigate to an item by its Datasworn ID (e.g., "move:classic/suffer/endure_harm")

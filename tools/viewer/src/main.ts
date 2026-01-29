@@ -90,17 +90,37 @@ interface RollInfo {
 	rows?: OracleRow[]
 }
 
+/** Get oracle name from context */
+function getOracleNameFromContext(button: HTMLElement): string | undefined {
+	// Try to find oracle name from nearby heading or detail panel
+	const detailPanel = document.querySelector('.detail-panel')
+	if (detailPanel) {
+		const heading = detailPanel.querySelector('h2')
+		if (heading) return heading.textContent || undefined
+	}
+	// Fallback: find closest heading
+	const container = button.closest('.oracle-table, .embedded-oracle-table')
+	if (container) {
+		const prevHeading = container.previousElementSibling
+		if (prevHeading?.tagName === 'H3' || prevHeading?.tagName === 'H4') {
+			return prevHeading.textContent || undefined
+		}
+	}
+	return undefined
+}
+
 /** Handle a roll based on roll info */
 function handleRoll(info: RollInfo, button: HTMLElement): void {
+	const oracleName = getOracleNameFromContext(button)
 	if (info.type === 'oracle') {
-		handleOracleRoll(info.tableId, info.dice || '1d100')
+		handleOracleRoll(info.tableId, info.dice || '1d100', oracleName)
 	} else if (info.type === 'odds' && info.rows) {
-		handleOddsRollFromInfo(info, button)
+		handleOddsRollFromInfo(info, button, oracleName)
 	}
 }
 
 /** Handle rolling on a standard oracle table */
-function handleOracleRoll(tableId: string, dice: string): void {
+function handleOracleRoll(tableId: string, dice: string, oracleName?: string): void {
 	const roll = rollDice(dice)
 	const result = highlightResult(tableId, roll)
 
@@ -109,10 +129,13 @@ function handleOracleRoll(tableId: string, dice: string): void {
 		resultDiv.innerHTML = `<strong>Rolled ${roll}:</strong> ${result || 'No result'}`
 		resultDiv.classList.add('show')
 	}
+
+	// Add to roll history
+	state.addRollToHistory(dice, roll, result || 'No result', oracleName)
 }
 
 /** Handle rolling odds from RollInfo */
-function handleOddsRollFromInfo(info: RollInfo, button: HTMLElement): void {
+function handleOddsRollFromInfo(info: RollInfo, button: HTMLElement, oracleName?: string): void {
 	const roll = rollDice('1d100')
 	const rows = info.rows || []
 
@@ -127,6 +150,10 @@ function handleOddsRollFromInfo(info: RollInfo, button: HTMLElement): void {
 
 	const matchResult = isMatch(roll)
 	updateOddsResult(roll, resultText, matchResult, button)
+
+	// Add to roll history
+	const oddsName = button.querySelector('.odds-name')?.textContent || 'Ask the Oracle'
+	state.addRollToHistory('1d100', roll, resultText, oracleName || oddsName)
 }
 
 /** Handle legacy odds roll (from data-rows attribute) */
@@ -145,6 +172,10 @@ function handleOddsRoll(button: HTMLButtonElement, rowsData: string): void {
 
 	const matchResult = isMatch(roll)
 	updateOddsResult(roll, resultText, matchResult, button)
+
+	// Add to roll history
+	const oddsName = button.querySelector('.odds-name')?.textContent || 'Ask the Oracle'
+	state.addRollToHistory('1d100', roll, resultText, oddsName)
 }
 
 /** Update the odds result display */
