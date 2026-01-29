@@ -1,63 +1,32 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"maxSize": 2048000
-	},
-	"formatter": {
-		"include": [
+		"maxSize": 2048000,
+		"includes": [
 			"src/**/*.ts",
-			"src/**/*.js",
-			"pkg/nodejs/**/*.d.ts",
-			"src/migration/history/*/*.d.ts",
-			".vscode/**/*.json",
-			"datasworn/**/*.json",
-			"json-typedef/**/*.json",
-			"pkg/**/*.json",
-			"source_data/**/*.json",
-			"src/**/*.json"
-		],
-		"ignore": [
-			"**/dist",
-			"**/docs",
-			"**/*.d.ts",
-			"**/*.html",
-			"**/*.md",
-			"**/.github",
-			"**/.vscode",
-			"pkg/nodejs/**/*.js",
-			"src/data-legacy",
-			"src/extras",
-			"package.json",
-			"package-lock.json"
+			"scripts/**/*.ts",
+			"tools/**/*.ts",
+			"!**/*.d.ts",
+			"!**/dist",
+			"!**/node_modules",
+			"!src/data-legacy",
+			"!src/extras",
+			"!src/migration",
+			"!src/pkg-core",
+			"!src/builders"
 		]
 	},
-	"organizeImports": { "enabled": true },
+	"formatter": {
+		"enabled": true
+	},
 	"linter": {
-		"include": [
-			"src/**/*.ts",
-			"pkg/nodejs/**/*.d.ts",
-			"pkg/nodejs/**/*.json",
-			"src/migration/history/*/*.d.ts",
-			"src/migration/history/*/*.json",
-			"src/migration/history/*/*.schema.json",
-			"datasworn/**/*.json",
-			"source_data/**/*.json"
-		],
-		"ignore": [
-			"**/*.js",
-			"**/dist",
-			"**/docs",
-			"**/*.d.ts",
-			"**/*.html",
-			"src/data-legacy",
-			"src/extras",
-			"node_modules"
-		],
 		"enabled": true,
 		"rules": {
 			"recommended": true,
 			"correctness": {
-				"noUnusedVariables": "warn"
+				"noUnusedVariables": "warn",
+				"noUnusedFunctionParameters": "off",
+				"noUnsafeFinally": "warn"
 			},
 			"style": {
 				"noNamespace": "off",
@@ -66,16 +35,31 @@
 				"useNamingConvention": {
 					"level": "off",
 					"options": { "strictCase": false }
-				}
+				},
+				"noNonNullAssertion": "warn",
+				"useEnumInitializers": "off",
+				"useLiteralEnumMembers": "off"
 			},
-			"suspicious": { "noEmptyInterface": "off", "noRedeclare": "off" },
-			"complexity": { "noThisInStatic": "warn" }
+			"suspicious": {
+				"noEmptyInterface": "off",
+				"noRedeclare": "off",
+				"noExplicitAny": "off",
+				"noTemplateCurlyInString": "warn",
+				"useAdjacentOverloadSignatures": "warn",
+				"noThenProperty": "warn",
+				"useIterableCallbackReturn": "warn",
+				"noImplicitAnyLet": "warn",
+				"noShadowRestrictedNames": "off"
+			},
+			"complexity": {
+				"noThisInStatic": "warn",
+				"noBannedTypes": "warn"
+			}
 		}
 	},
 	"javascript": {
 		"formatter": {
 			"semicolons": "asNeeded",
-			// TODO: migrate to double quotes when there aren't any branches to worry about
 			"jsxQuoteStyle": "single",
 			"quoteStyle": "single",
 			"trailingCommas": "none"
