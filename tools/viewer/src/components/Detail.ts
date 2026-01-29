@@ -30,11 +30,15 @@ import {
 	renderDelveSiteTheme,
 	renderDelveSiteDomain
 } from '../renderers'
+import { setupHoverPreview } from './HoverPreview'
 
 export function createDetailPanel(container: HTMLElement): void {
 	const panel = document.createElement('div')
 	panel.className = 'detail-panel'
 	container.appendChild(panel)
+
+	// Set up hover previews for datasworn: links
+	setupHoverPreview(panel)
 
 	// Handle clicks on datasworn links, breadcrumbs, and copy button
 	panel.addEventListener('click', (e) => {

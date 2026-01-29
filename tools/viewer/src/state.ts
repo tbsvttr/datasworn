@@ -181,6 +181,54 @@ class StateManager {
 		return false
 	}
 
+	// Find an item by its Datasworn ID without navigating
+	findById(id: string): unknown | null {
+		const colonIdx = id.indexOf(':')
+		if (colonIdx === -1) return null
+
+		const type = id.slice(0, colonIdx)
+		const pathPart = id.slice(colonIdx + 1)
+		const pathSegments = pathPart.split('/')
+
+		if (pathSegments.length < 2) return null
+
+		const rulesetId = pathSegments[0]
+		const itemPath = pathSegments.slice(1)
+
+		// Try current ruleset first, then specified ruleset
+		let ruleset = this.getCurrentRuleset()
+		if (rulesetId && this.state.rulesets.has(rulesetId)) {
+			ruleset = this.state.rulesets.get(rulesetId) ?? null
+		}
+
+		if (!ruleset) return null
+
+		const categoryMap: Record<string, string> = {
+			move: 'moves',
+			move_category: 'moves',
+			asset: 'assets',
+			asset_collection: 'assets',
+			oracle: 'oracles',
+			oracle_rollable: 'oracles',
+			oracle_collection: 'oracles',
+			npc: 'npcs',
+			npc_collection: 'npcs',
+			truth: 'truths',
+			atlas_entry: 'atlas',
+			atlas_collection: 'atlas',
+			delve_site: 'delve_sites',
+			delve_site_theme: 'site_themes',
+			delve_site_domain: 'site_domains'
+		}
+
+		const categoryKey = categoryMap[type] || type.replace(/_collection$/, '') + 's'
+		const category = (ruleset as unknown as Record<string, unknown>)[categoryKey] as Record<string, unknown> | undefined
+		if (!category) return null
+
+		const result = this.findItemByPath(category, itemPath, [categoryKey])
+		return result?.item ?? null
+	}
+
 	private findItemByPath(
 		obj: Record<string, unknown>,
 		pathSegments: string[],

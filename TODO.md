@@ -41,7 +41,7 @@
 
 ### Nice to Have
 
-- [ ] Hover previews - Preview linked items on hover
+- [x] Hover previews - Preview linked items on hover
 - [x] Mobile layout - Responsive sidebar/detail toggle
 - [ ] Cursed oracle support - Use Sundered Isles `curse` tags for alternatives
 - [ ] Export/print view - Clean printable format
