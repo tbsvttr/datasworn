@@ -116198,6 +116198,8 @@
 						"out of action": {
 							"label": "out of action",
 							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
 							"disables_asset": true
 						}
 					},
@@ -116269,6 +116271,8 @@
 						"out of action": {
 							"label": "out of action",
 							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
 							"disables_asset": true
 						}
 					},
@@ -116340,6 +116344,8 @@
 						"out of action": {
 							"label": "out of action",
 							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
 							"disables_asset": true
 						}
 					},
@@ -116411,6 +116417,8 @@
 						"out of action": {
 							"label": "out of action",
 							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
 							"disables_asset": true
 						}
 					},
@@ -116482,6 +116490,8 @@
 						"out of action": {
 							"label": "out of action",
 							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
 							"disables_asset": true
 						}
 					},
@@ -116717,6 +116727,8 @@
 						"temporal rift": {
 							"label": "temporal rift",
 							"field_type": "card_flip",
+							"value": false,
+							"is_impact": false,
 							"disables_asset": true
 						}
 					},

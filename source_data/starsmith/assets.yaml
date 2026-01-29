@@ -76,6 +76,8 @@ assets:
           broken:
             label: "broken"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
         shared: true
       external_refit:
@@ -193,6 +195,8 @@ assets:
           battered:
             label: "battered"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
         options:
           name:
@@ -499,6 +503,8 @@ assets:
           out of action:
             label: "out of action"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
         options:
           role_name:
@@ -529,6 +535,8 @@ assets:
           out of action:
             label: "out of action"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
         options:
           name:
@@ -559,6 +567,8 @@ assets:
           out of action:
             label: "out of action"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
         options:
           name:
@@ -589,6 +599,8 @@ assets:
           out of action:
             label: "out of action"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
         options:
           name:
@@ -619,6 +631,8 @@ assets:
           out of action:
             label: "out of action"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
         options:
           name:
@@ -715,5 +729,7 @@ assets:
           temporal rift:
             label: "temporal rift"
             field_type: "card_flip"
+            is_impact: false
+            value: false
             disables_asset: true
     color: "#8f5a3a"
