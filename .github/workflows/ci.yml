@@ -48,3 +48,20 @@ jobs:
       - name: Run viewer tests
         working-directory: tools/viewer
         run: bun test
+
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Validate packages
+        run: bun run validate
