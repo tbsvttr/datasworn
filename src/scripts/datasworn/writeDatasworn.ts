@@ -43,7 +43,7 @@ async function buildRulesPackages(pkgs: Record<string, RulesPackageConfig>) {
 
 	// indexes all package contents by their ID, so we can validate package links after they're built
 	const index = new Map<string, unknown>()
-	const unvalidatedRefs = new Set<string>()
+	const unvalidatedRefs = new Map<string, Set<string>>()
 
 	for (const k in pkgs) {
 		const pkg = pkgs[k]
@@ -90,7 +90,7 @@ async function buildRulesPackages(pkgs: Record<string, RulesPackageConfig>) {
 		invalid: new Set<string>()
 	}
 
-	for (const ref of unvalidatedRefs)
+	for (const ref of unvalidatedRefs.keys())
 		RulesPackageBuilder.validateIdRef(ref, idTracker, tree)
 
 	for (const [pkgId, builder] of builders)
@@ -120,13 +120,20 @@ async function buildRulesPackages(pkgs: Record<string, RulesPackageConfig>) {
 			errors.push(e as Error | string)
 		}
 
-	// TODO: make this report specific files where the bad ID exists
-	// TODO: grab all ID refs when deserializing so the crawl operation only happens once
-
-	for (const id of idTracker.invalid)
-		errors.push(`Invalid or unparseable ID reference: <${id}>`)
-	for (const id of idTracker.unreachable)
-		errors.push(`Couldn't reach referenced ID: ${id}`)
+	for (const id of idTracker.invalid) {
+		const sources = unvalidatedRefs.get(id)
+		const fileList = sources?.size
+			? `\n\t  Found in: ${Array.from(sources).map(formatPath).join(', ')}`
+			: ''
+		errors.push(`Invalid or unparseable ID reference: <${id}>${fileList}`)
+	}
+	for (const id of idTracker.unreachable) {
+		const sources = unvalidatedRefs.get(id)
+		const fileList = sources?.size
+			? `\n\t  Referenced in: ${Array.from(sources).map(formatPath).join(', ')}`
+			: ''
+		errors.push(`Couldn't reach referenced ID: ${id}${fileList}`)
+	}
 
 	if (errors.length > 0)
 		throw new Error(
@@ -146,7 +153,7 @@ async function buildRulesPackages(pkgs: Record<string, RulesPackageConfig>) {
 async function assemblePkgFiles(
 	{ id, paths: _paths, type }: RulesPackageConfig,
 	masterIndex: Map<string, unknown>,
-	idRefTracker: Set<string>,
+	idRefTracker: Map<string, Set<string>>,
 	sourceFiles: AsyncIterableIterator<string>
 ) {
 	const [sourceValidator, validator] = await validators
@@ -186,22 +193,33 @@ async function assemblePkgFiles(
 	return builder
 }
 
-function trackIdRefs<T>(this: Set<string>, key: unknown, v: T): T {
-	if (needsIdValidation(key, v)) {
-		const ids = v.matchAll(idLike)
+function makeIdRefTracker(refMap: Map<string, Set<string>>, filePath: string) {
+	return <T>(_key: unknown, v: T): T => {
+		if (needsIdValidation(_key, v)) {
+			const ids = v.matchAll(idLike)
 
-		if (ids != null) for (const match of ids) this.add(match[0])
+			if (ids != null)
+				for (const match of ids) {
+					const id = match[0]
+					let sources = refMap.get(id)
+					if (sources == null) {
+						sources = new Set()
+						refMap.set(id, sources)
+					}
+					sources.add(filePath)
+				}
+		}
+
+		return v
 	}
-
-	return v
 }
 
 async function _loadBuilderFile<T extends DataswornSource.RulesPackage>(
 	filePath: string,
 	builder: RulesPackageBuilder,
-	idRefTracker: Set<string>
+	idRefTracker: Map<string, Set<string>>
 ) {
-	const track = trackIdRefs.bind(idRefTracker)
+	const track = makeIdRefTracker(idRefTracker, filePath)
 
 	let data!: T
 

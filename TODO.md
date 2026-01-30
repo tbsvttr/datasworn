@@ -197,7 +197,7 @@ Items extracted from `TODO`/`FIXME`/`HACK` comments in source files.
   — `src/schema/utils/generateRulesetSchemas.ts`
 - [ ] **Computed properties**: Support function-based computed properties
   — `src/schema/utils/Computed.ts`
-- [ ] **canonicalTags enums**: Convert `curse_behavior` and `region` from `Type.String()` to enums
+- [x] **canonicalTags enums**: Convert `curse_behavior` and `region` from `Type.String()` to enums
   — `src/schema/tags/canonicalTags.ts`
 - [ ] **Dice rolls**: Support arbitrary dice expressions (e.g. 1d6); consider `recommended_rolls`
   — `src/schema/common/Rolls.ts`
@@ -214,9 +214,9 @@ Items extracted from `TODO`/`FIXME`/`HACK` comments in source files.
 
 - [ ] **Validation stubs**: Implement actual validation in `jsl.ts` format validators
   — `src/scripts/validation/jsl.ts`
-- [ ] **ID error reporting**: Report specific files where bad IDs exist
+- [x] **ID error reporting**: Report specific files where bad IDs exist
   — `src/scripts/datasworn/writeDatasworn.ts`
-- [ ] **ID ref optimization**: Grab all ID refs when deserializing to avoid redundant crawls
+- [x] **ID ref optimization**: Grab all ID refs when deserializing to avoid redundant crawls
   — `src/scripts/datasworn/writeDatasworn.ts`
 - [ ] **JTD patternProperties**: Verify handling is safe beyond Dictionary-style usage
   — `src/scripts/json-typedef/utils.ts`
