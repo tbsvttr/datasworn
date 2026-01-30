@@ -26,4 +26,3 @@ export const EmbeddedOracleRollable = DiscriminatedUnion(
 )
 
 export type EmbeddedOracleRollable = Static<typeof EmbeddedOracleRollable>
-
