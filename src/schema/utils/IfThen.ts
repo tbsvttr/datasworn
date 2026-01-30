@@ -45,6 +45,6 @@ export function IfThenElse<
 			else: ifFalse,
 			[Kind]: 'IfThenElse'
 		},
-		(v, k) => typeof v === 'undefined'
+		(v, _k) => typeof v === 'undefined'
 	) as TIfThenElse<If, Then, Else>
 }

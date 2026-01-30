@@ -15,9 +15,9 @@ enum Outcome {
 }
 
 enum RollMethod {
-	Miss = Outcome.Miss,
-	WeakHit = Outcome.WeakHit,
-	StrongHit = Outcome.StrongHit,
+	Miss = 'miss',
+	WeakHit = 'weak_hit',
+	StrongHit = 'strong_hit',
 	PlayerChoice = 'player_choice',
 	Highest = 'highest',
 	Lowest = 'lowest',

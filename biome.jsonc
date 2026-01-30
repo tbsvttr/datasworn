@@ -25,11 +25,11 @@
 			"recommended": true,
 			"correctness": {
 				"noUnusedVariables": "warn",
-				"noUnusedFunctionParameters": "off",
+				"noUnusedFunctionParameters": "warn",
 				"noUnsafeFinally": "warn"
 			},
 			"style": {
-				"noNamespace": "off",
+				"noNamespace": "warn",
 				"useConsistentArrayType": "off",
 				"useImportType": "error",
 				"useNamingConvention": {
@@ -37,19 +37,19 @@
 					"options": { "strictCase": false }
 				},
 				"noNonNullAssertion": "warn",
-				"useEnumInitializers": "off",
-				"useLiteralEnumMembers": "off"
+				"useEnumInitializers": "warn",
+				"useLiteralEnumMembers": "warn"
 			},
 			"suspicious": {
-				"noEmptyInterface": "off",
-				"noRedeclare": "off",
+				"noEmptyInterface": "warn",
+				"noRedeclare": "warn",
 				"noExplicitAny": "off",
 				"noTemplateCurlyInString": "warn",
 				"useAdjacentOverloadSignatures": "warn",
 				"noThenProperty": "warn",
 				"useIterableCallbackReturn": "warn",
 				"noImplicitAnyLet": "warn",
-				"noShadowRestrictedNames": "off"
+				"noShadowRestrictedNames": "warn"
 			},
 			"complexity": {
 				"noThisInStatic": "warn",

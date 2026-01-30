@@ -17,4 +17,4 @@ function _isDataswornID(str: string) {
 	return false
 }
 
-function _parseID(str: string) {}
+function _parseID(_str: string) {}

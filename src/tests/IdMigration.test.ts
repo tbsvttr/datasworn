@@ -31,7 +31,7 @@ for (const oldId of previousIndex.keys()) {
 }
 
 describe('Changed ID has migration', () => {
-	test.each(changedIds)('%p => %p', (oldId, mapping) => {
+	test.each(changedIds)('%p => %p', (_oldId, mapping) => {
 		expect(mapping).not.toBeUndefined()
 	})
 })

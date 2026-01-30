@@ -37,7 +37,7 @@ function convertMoveLinks(text: string): string {
 	// [Resupply](Moves/Recover/Resupply) -> [Resupply](datasworn:move:starforged/recover/resupply)
 	return text.replace(
 		/\[([^\]]+)\]\(Moves\/([^)]+)\)/g,
-		(match, name, movePath) => {
+		(_match, name, movePath) => {
 			const dataswornPath = movePath.toLowerCase().replace(/_/g, '_')
 			return `[${name}](datasworn:move:starforged/${dataswornPath.toLowerCase()})`
 		}

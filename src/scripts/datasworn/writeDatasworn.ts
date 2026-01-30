@@ -144,7 +144,7 @@ async function buildRulesPackages(pkgs: Record<string, RulesPackageConfig>) {
 
 /** Loads files for a given Datasworn package configuration and assembles them with RulesPackageBuilder. */
 async function assemblePkgFiles(
-	{ id, paths, type }: RulesPackageConfig,
+	{ id, paths: _paths, type }: RulesPackageConfig,
 	masterIndex: Map<string, unknown>,
 	idRefTracker: Set<string>,
 	sourceFiles: AsyncIterableIterator<string>
