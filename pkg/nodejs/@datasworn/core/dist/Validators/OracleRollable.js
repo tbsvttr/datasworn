@@ -112,5 +112,5 @@ function compareRanges(a, b) {
     // At this point, both a.roll and b.roll are guaranteed to be non-null
     const aMin = (_a = a.roll.min) !== null && _a !== void 0 ? _a : 0;
     const bMin = (_b = b.roll.min) !== null && _b !== void 0 ? _b : 0;
-    return aMin < bMin ? -1 : bMin > aMin ? 1 : 0;
+    return aMin < bMin ? -1 : aMin > bMin ? 1 : 0;
 }
