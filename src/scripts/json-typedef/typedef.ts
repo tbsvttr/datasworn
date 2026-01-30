@@ -366,6 +366,7 @@ export type Static<
 // --------------------------------------------------------------------------
 // TimestampFormat
 // --------------------------------------------------------------------------
+// biome-ignore lint/style/noNamespace: groups related timestamp validation logic with private helpers
 export namespace TimestampFormat {
 	const DATE_TIME_SEPARATOR = /t|\s/i
 	const TIME = /^(\d\d):(\d\d):(\d\d(?:\.\d+)?)(z|([+-])(\d\d)(?::?(\d\d))?)?$/i
@@ -427,6 +428,7 @@ export class ValueCheckError extends Types.TypeBoxError {
 		super('Unknown type')
 	}
 }
+// biome-ignore lint/style/noNamespace: groups JTD type-checking functions with private helpers
 export namespace ValueCheck {
 	// ------------------------------------------------------------------------
 	// Guards
@@ -455,39 +457,41 @@ export namespace ValueCheck {
 	// ------------------------------------------------------------------------
 	// Types
 	// ------------------------------------------------------------------------
+	// biome-ignore lint/suspicious/noShadowRestrictedNames: named after JTD type
 	function Array(schema: TArray, value: unknown): boolean {
 		return (
 			IsArray(value) && value.every((value) => Visit(schema.elements, value))
 		)
 	}
-	function Boolean(schema: TBoolean, value: unknown): boolean {
+	// biome-ignore lint/suspicious/noShadowRestrictedNames: named after JTD type
+	function Boolean(_schema: TBoolean, value: unknown): boolean {
 		return typeof value === 'boolean'
 	}
 	function Enum(schema: TEnum, value: unknown): boolean {
 		return typeof value === 'string' && schema.enum.includes(value)
 	}
-	function Float32(schema: TFloat32, value: unknown): boolean {
+	function Float32(_schema: TFloat32, value: unknown): boolean {
 		return typeof value === 'number'
 	}
-	function Float64(schema: TFloat64, value: unknown): boolean {
+	function Float64(_schema: TFloat64, value: unknown): boolean {
 		return typeof value === 'number'
 	}
-	function Int8(schema: TInt8, value: unknown): boolean {
+	function Int8(_schema: TInt8, value: unknown): boolean {
 		return IsInt(value, -128, 127)
 	}
-	function Int16(schema: TInt16, value: unknown): boolean {
+	function Int16(_schema: TInt16, value: unknown): boolean {
 		return IsInt(value, -32_768, 32_767)
 	}
-	function Int32(schema: TInt32, value: unknown): boolean {
+	function Int32(_schema: TInt32, value: unknown): boolean {
 		return IsInt(value, -2_147_483_648, 2_147_483_647)
 	}
-	function Uint8(schema: TUint8, value: unknown): boolean {
+	function Uint8(_schema: TUint8, value: unknown): boolean {
 		return IsInt(value, 0, 255)
 	}
-	function Uint16(schema: TUint16, value: unknown): boolean {
+	function Uint16(_schema: TUint16, value: unknown): boolean {
 		return IsInt(value, 0, 65535)
 	}
-	function Uint32(schema: TUint32, value: unknown): boolean {
+	function Uint32(_schema: TUint32, value: unknown): boolean {
 		return IsInt(value, 0, 4_294_967_295)
 	}
 	function Record(schema: TRecord, value: unknown): boolean {
@@ -498,7 +502,8 @@ export namespace ValueCheck {
 			)
 		)
 	}
-	function String(schema: TString, value: unknown): boolean {
+	// biome-ignore lint/suspicious/noShadowRestrictedNames: named after JTD type
+	function String(_schema: TString, value: unknown): boolean {
 		return typeof value === 'string'
 	}
 	function Struct(
@@ -541,7 +546,7 @@ export namespace ValueCheck {
 			if (!unknownKeys.includes(knownKey)) return false
 		return true
 	}
-	function Timestamp(schema: TString, value: unknown): boolean {
+	function Timestamp(_schema: TString, value: unknown): boolean {
 		return IsString(value) && TimestampFormat.Check(value)
 	}
 	function Union(schema: TUnion, value: unknown): boolean {
@@ -601,6 +606,7 @@ export namespace ValueCheck {
 // --------------------------------------------------------------------------
 // TypeGuard
 // --------------------------------------------------------------------------
+// biome-ignore lint/style/noNamespace: groups JTD type guard functions with private helpers
 export namespace TypeGuard {
 	// ------------------------------------------------------------------------
 	// Guards

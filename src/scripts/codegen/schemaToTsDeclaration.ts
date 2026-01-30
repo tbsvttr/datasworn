@@ -75,7 +75,7 @@ function extractKeywords(schema: TSchema) {
 
 	jsDoc.push(
 		...toTags(
-			mapValues(pick(schema, ...extractableKeywords), (v, k) =>
+			mapValues(pick(schema, ...extractableKeywords), (v, _k) =>
 				v === true ? undefined : v
 			)
 		)

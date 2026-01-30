@@ -10,19 +10,19 @@ import type {
 import { UnionEnum } from '../schema/Utils.js'
 import type { Metadata } from './json-typedef/typedef.js'
 
-export namespace Keywords {
-	export const releaseStage = UnionEnum(['experimental', 'release'], {
+export const Keywords = {
+	releaseStage: UnionEnum(['experimental', 'release'], {
 		default: 'release'
-	})
-	export const i18n = Type.Boolean({ default: false })
-	export const deprecated = Type.Boolean({ default: false })
-	export const remarks = Type.String()
-	export const rollable = Type.Union([Type.Boolean(), DiceExpression], {
+	}),
+	i18n: Type.Boolean({ default: false }),
+	deprecated: Type.Boolean({ default: false }),
+	remarks: Type.String(),
+	rollable: Type.Union([Type.Boolean(), DiceExpression], {
 		description:
 			'This array represents rows in a rollable table. If `true`, use the `dice` property of the parent object to roll. Alternatively, provide a dice expression to use.',
 		default: false
 	})
-}
+} as const
 
 type TypeParamCodeGenData = {
 	/** Default value for the type parameter. */

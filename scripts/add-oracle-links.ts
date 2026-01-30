@@ -78,14 +78,14 @@ for (const [name, id] of Object.entries(PLANET_LINKS)) {
 		`>\\s*${name.replace(/\s+/g, '\\s+')}[;,]?\\s*pg\\s*(\\d+)`,
 		'gi'
 	)
-	content = content.replace(pattern, (match, page) => {
+	content = content.replace(pattern, (_match, page) => {
 		replacements++
 		return `[${name}](datasworn:${id}) (pg ${page})`
 	})
 
 	// Also match >Name" (trailing quote from broken parsing) - preserve the quote
 	const quotePattern = new RegExp(`>\\s*${name.replace(/\s+/g, '\\s+')}"`, 'gi')
-	content = content.replace(quotePattern, (match) => {
+	content = content.replace(quotePattern, (_match) => {
 		replacements++
 		return `[${name}](datasworn:${id})"`
 	})

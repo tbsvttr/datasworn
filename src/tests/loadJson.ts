@@ -24,7 +24,7 @@ export async function loadDatasworn(
 			Bun.file(filePath)
 				.text()
 				.then((txt) => {
-					const rulesPackage = JSON.parse(txt, (key, value) => {
+					const rulesPackage = JSON.parse(txt, (_key, value) => {
 						if (
 							typeof value !== 'object' ||
 							value == null ||
