@@ -66,6 +66,15 @@ jobs:
         working-directory: tools/viewer
         run: bun test
 
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run npm audit
+        run: npm audit --audit-level=moderate
+
   validate:
     runs-on: ubuntu-latest
     steps:
