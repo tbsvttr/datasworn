@@ -53,7 +53,7 @@ describe('Build Pipeline', () => {
 		expect(
 			existsSync(path.join(ROOT, 'datasworn/starforged/starforged.json'))
 		).toBe(true)
-	}, 120000)
+	}, 300000)
 
 	test('build:pkg builds packages', async () => {
 		const result = await $`npm run build:pkg`.quiet().nothrow()

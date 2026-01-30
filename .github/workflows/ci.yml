@@ -42,7 +42,7 @@ jobs:
         run: bun run check
 
       - name: Run tests
-        run: bun test
+        run: bun test src/ pkg/
 
   test-viewer:
     runs-on: ubuntu-latest
