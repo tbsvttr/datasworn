@@ -9,20 +9,22 @@ dependencies = [
     "datasworn-classic",
     "datasworn-core",
     "datasworn-delve",
+		"datasworn-lodestar",
     "datasworn-starforged",
     "datasworn-sundered-isles",
 ]
 
 
-[tool.uv]
-managed = true
-package = false  # the project itself is not a package
+# [tool.uv]
+# managed = true
+# package = false  # the project itself is not a package
 
 [tool.uv.workspace]
 members = [
     "src/datasworn/classic",
     "src/datasworn/core",
     "src/datasworn/delve",
+		"src/datasworn/lodestar",
     "src/datasworn/starforged",
     "src/datasworn/sundered_isles",
 ]
@@ -33,6 +35,7 @@ datasworn-classic = { workspace = true }
 datasworn-starforged = { workspace = true }
 datasworn-sundered-isles = { workspace = true }
 datasworn-delve = { workspace = true }
+datasworn-lodestar = { workspace = true }
 
 [build-system]
 requires = ["uv_build>=0.9.18,<0.10.0"]
