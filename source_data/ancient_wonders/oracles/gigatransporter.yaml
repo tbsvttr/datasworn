@@ -1,0 +1,180 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+oracles:
+  gigatransporter:
+    name: "Gigatransporter"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#7f8c8d"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      vessel_platform_core:
+        name: "Gigatransporter Vessel Platform Core"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the following tables to determine the composition of the vessel of the gigatransporter. In addition to these, you may use the Shape oracle on page 102 to further detail it.
+
+          If the gigatransporter is a space elevator, Ask the Oracle (small chance) if it has an energy-based beam as a way of transfer instead of the traditional vessel. An energy-based beam does not feature Vessel Levels or Travel Duration, as the beam extends between the surface and orbital stations and provides near-instantaneous travel.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 50 }
+            text: "Hollow"
+          - roll: { min: 51, max: 100 }
+            text: "Solid"
+      vessel_transport_duration_launch_l:
+        name: "Gigatransporter Vessel Transport Duration - Launch Loop"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Transportation speed depends on the distance traveled and the efficiency of the gigatransporter. This table determines the end result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Couple hours"
+          - roll: { min: 11, max: 25 }
+            text: "Few hours"
+          - roll: { min: 26, max: 50 }
+            text: "Several hours"
+          - roll: { min: 51, max: 100 }
+            text: "Many hours or days"
+      vessel_platform_form:
+        name: "Gigatransporter Vessel Platform Form"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the following tables to determine the composition of the vessel of the gigatransporter. In addition to these, you may use the Shape oracle on page 102 to further detail it.
+
+          If the gigatransporter is a space elevator, Ask the Oracle (small chance) if it has an energy-based beam as a way of transfer instead of the traditional vessel. An energy-based beam does not feature Vessel Levels or Travel Duration, as the beam extends between the surface and orbital stations and provides near-instantaneous travel.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 33 }
+            text: "Single platform"
+          - roll: { min: 34, max: 67 }
+            text: "Compartmentalized platform"
+          - roll: { min: 68, max: 100 }
+            text: "Multiple individual platforms"
+      vessel_transport_duration_space_el:
+        name: "Gigatransporter Vessel Transport Duration - Space Elevator"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Transportation speed depends on the distance traveled and the efficiency of the gigatransporter. This table determines the end result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 5 }
+            text: "Few hours"
+          - roll: { min: 6, max: 25 }
+            text: "Several hours"
+          - roll: { min: 26, max: 100 }
+            text: "Many hours or days"
+      vessel_transport_duration_skyhook:
+        name: "Gigatransporter Vessel Transport Duration - Skyhook"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Transportation speed depends on the distance traveled and the efficiency of the gigatransporter. This table determines the end result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Few minutes"
+          - roll: { min: 11, max: 30 }
+            text: "Several minutes"
+          - roll: { min: 31, max: 60 }
+            text: "Half an hour"
+          - roll: { min: 61, max: 85 }
+            text: "An hour"
+          - roll: { min: 86, max: 100 }
+            text: "Couple hours"
+      class_origin_destination:
+        name: "Gigatransporter Class (Gigatransporter / Origin / Destination)"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify the type of a gigatransporter.
+
+          As is customary with the use of oracles, instead of rolling, you can choose which of these transporters suits your fictional circumstances or narrative needs.
+
+          Once you have your result, envision the gigatransporter through the description of how it works on the corresponding page.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 25 }
+            text: "Launch Loop / Orbit / Orbit"
+          - roll: { min: 26, max: 50 }
+            text: "Mass Catapult / Surface / Orbit or deep space"
+          - roll: { min: 51, max: 75 }
+            text: "Skyhook / Surface / Orbit or deep space"
+          - roll: { min: 76, max: 100 }
+            text: "Space Elevator / Orbit or surface / Surface or orbit"
+      vessel_transport_duration_mass_cat:
+        name: "Gigatransporter Vessel Transport Duration - Mass Catapult"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Transportation speed depends on the distance traveled and the efficiency of the gigatransporter. This table determines the end result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 5 }
+            text: "Few minutes"
+          - roll: { min: 6, max: 15 }
+            text: "Several minutes"
+          - roll: { min: 16, max: 30 }
+            text: "Half an hour"
+          - roll: { min: 31, max: 50 }
+            text: "An hour"
+          - roll: { min: 51, max: 70 }
+            text: "Couple hours"
+          - roll: { min: 71, max: 90 }
+            text: "Few hours"
+          - roll: { min: 91, max: 100 }
+            text: "Several hours"
+      vessel_levels:
+        name: "Gigatransporter Vessel Levels"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the following tables to determine the composition of the vessel of the gigatransporter. In addition to these, you may use the Shape oracle on page 102 to further detail it.
+
+          If the gigatransporter is a space elevator, Ask the Oracle (small chance) if it has an energy-based beam as a way of transfer instead of the traditional vessel. An energy-based beam does not feature Vessel Levels or Travel Duration, as the beam extends between the surface and orbital stations and provides near-instantaneous travel.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 33 }
+            text: "Single-leveled platforms"
+          - roll: { min: 34, max: 67 }
+            text: "Dual-level platforms"
+          - roll: { min: 68, max: 100 }
+            text: "Multi-level platforms"
+      vessel_size:
+        name: "Gigatransporter Vessel Size"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the following tables to determine the composition of the vessel of the gigatransporter. In addition to these, you may use the Shape oracle on page 102 to further detail it.
+
+          If the gigatransporter is a space elevator, Ask the Oracle (small chance) if it has an energy-based beam as a way of transfer instead of the traditional vessel. An energy-based beam does not feature Vessel Levels or Travel Duration, as the beam extends between the surface and orbital stations and provides near-instantaneous travel.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 70 }
+            text: "Large (vehicle-sized)"
+          - roll: { min: 71, max: 95 }
+            text: "Huge (whale-sized)"
+          - roll: { min: 96, max: 100 }
+            text: "Titanic (hill-sized)"

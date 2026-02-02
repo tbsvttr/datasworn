@@ -1,0 +1,1215 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+oracles:
+  alien_megastructure:
+    name: "Alien Megastructures"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#8e44ad"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      unidentified_megastructure_ceramic_rarity:
+        name: "Unidentified Megastructure Ceramic Rarity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the table below to reveal the type of ceramic and detail an object or environment. Roll once to determine which ceramic rarity column to reference. Then, roll again to uncover the ceramic type result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 50 }
+            text: "Non-precious"
+          - roll: { min: 51, max: 85 }
+            text: "Semi-precious"
+          - roll: { min: 86, max: 100 }
+            text: "Precious"
+      sentinel_belt_stellar_megastructure_megastructure_:
+        name: "Sentinel Belt Stellar Megastructure (Megastructure/Stellar Object)"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this table according to the When Discovered rules to reveal the stellar megastructure at the center of the sentinel belt.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Accretion Macrocollector / Star"
+          - roll: { min: 11, max: 21 }
+            text:
+              "Dyson Object (if it is a Dyson Ring or Shell, it extends up to the 4th
+              interplanetary orbit) / Star"
+          - roll: { min: 22, max: 31 }
+            text: "Fusion Suppressor / Star"
+          - roll: { min: 32, max: 35 }
+            text: "Helio-obliterator / Star"
+          - roll: { min: 36, max: 43 }
+            text: "Hyperstructural Shipyard / -"
+          - roll: { min: 44, max: 53 }
+            text: "Kugelblitz Silo / Black  hole"
+          - roll: { min: 54, max: 59 }
+            text: "Matrioshka Brain / Star"
+          - roll: { min: 60, max: 63 }
+            text: "Nicoll-dyson Array / Star"
+          - roll: { min: 64, max: 67 }
+            text: "Penrose Sphere / Black  hole"
+          - roll: { min: 68, max: 77 }
+            text: "Star Lifter / Star"
+          - roll: { min: 78, max: 87 }
+            text: "Stellar Compressor / Star"
+          - roll: { min: 88, max: 92 }
+            text: "Stellar Engine / Star"
+          - roll: { min: 93, max: 100 }
+            text: "Stellar Hyperforge / Star"
+      quantity_of_megastructures_type_1:
+        name: "Quantity Of Megastructures - Type 1"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          The default assumption for most megastructures is that only one may exist in any individual sector or solar system. This doesn't count for gigatransporters, which can be present without quantity restriction by inhabiting worlds or the greater megastructures enlisted in this section.
+
+          If you wish to include more megastructures in your setting, use the following guidelines. This assumes that your Megastructure Prevalence truth is that these marvels greet explorers and travelers with regularity. You determine your megastructure truths on page 87.
+
+          In a solar system confirmed to contain a megastructure, roll on the following table and reference the column that corresponds with your previously established truth about the precursor technological scale.
+
+          After determining the total megastructures present in a sector or solar system, roll >Megastructure Class (next page) to determine their types. When doing so, keep in mind that only one type 3 megastructure may exist in any individual solar system. If one is discovered, any subsequent rolls must be made referencing the Type 2 column.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 75 }
+            text: "One"
+          - roll: { min: 76, max: 95 }
+            text: "Two"
+          - roll: { min: 96, max: 100 }
+            text: "Three"
+      unidentified_megastructure_when_discovered_sector_:
+        name: "Unidentified Megastructure When Discovered Sector Based"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Sub-planetary scale -- First, roll on the following table to determine the megastructure location.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 40 }
+            text: "Planetside"
+          - roll: { min: 41, max: 75 }
+            text: "Orbital"
+          - roll: { min: 76, max: 100 }
+            text: "Deep space"
+      megastructure_inner_first_look:
+        name: "Megastructure Inner First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 3 }
+            text: "Connective passageways or corridors"
+          - roll: { min: 4, max: 6 }
+            text: "Environment reacts to your presence"
+          - roll: { min: 7, max: 9 }
+            text: "Immense cargo pods or containers"
+          - roll: { min: 10, max: 12 }
+            text: "Evidence of looting or scavenging"
+          - roll: { min: 13, max: 15 }
+            text: "Pervasive undulating vibrations"
+          - roll: { min: 16, max: 18 }
+            text: "Electromagnetic interference"
+          - roll: { min: 19, max: 22 }
+            text: "Thrumming or droning sound"
+          - roll: { min: 23, max: 26 }
+            text: "Echoes of distant machinery"
+          - roll: { min: 27, max: 29 }
+            text: "Toxic residue or atmosphere"
+          - roll: { min: 30, max: 32 }
+            text: "Ornate markings or symbols"
+          - roll: { min: 33, max: 35 }
+            text: "Signs of invasive lifeforms"
+          - roll: { min: 36, max: 39 }
+            text: "Electrical arcs and sparks"
+          - roll: { min: 40, max: 42 }
+            text: "Pools of synthetic liquids"
+          - roll: { min: 43, max: 45 }
+            text: "Crumbling infrastructure"
+          - roll: { min: 46, max: 48 }
+            text: "Carried tech is disrupted"
+          - roll: { min: 49, max: 52 }
+            text: "Loud mechanical noises"
+          - roll: { min: 53, max: 56 }
+            text: "Pervasive steam or fog"
+          - roll: { min: 57, max: 60 }
+            text: "Leaking gases or vapor"
+          - roll: { min: 61, max: 63 }
+            text: "Excessive cold or heat"
+          - roll: { min: 64, max: 66 }
+            text: "Lighted or illuminated"
+          - roll: { min: 67, max: 70 }
+            text: "Obfuscating pollution"
+          - roll: { min: 71, max: 73 }
+            text: "Radioactive hotspots"
+          - roll: { min: 74, max: 76 }
+            text: "Reflective structures"
+          - roll: { min: 77, max: 79 }
+            text: "Conductive surfaces"
+          - roll: { min: 80, max: 83 }
+            text: "Thick haze or smoke"
+          - roll: { min: 84, max: 86 }
+            text: "Magnetic surfaces"
+          - roll: { min: 87, max: 89 }
+            text: "Cryptic interfaces"
+          - roll: { min: 90, max: 92 }
+            text: "Active constructs"
+          - roll: { min: 93, max: 95 }
+            text: "Intense smell"
+          - roll: { min: 96, max: 100 }
+            text:
+              "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
+              Focus"
+      megastructure_status:
+        name: "Megastructure Status"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify the current condition of a megastructure. Some of these marvels are made up of many individual structures. In those cases, you may roll on this table to determine the status of any individual assemblies instead of the whole megastructure. Additionally, you may Ask the Oracle to determine whether the megastructure or assembly is visibly damaged. If yes, you may interpret the status result as a consequence of the damage.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text:
+              "Partially constructed - The megastructure never reached a point of
+              completion and was never operable"
+          - roll: { min: 11, max: 40 }
+            text:
+              "Operational - The megastructure appears to be fulfilling its original
+              purpose as intended"
+          - roll: { min: 41, max: 55 }
+            text:
+              "Non-functional / offline - While still intact, the megastructure is
+              either no longer functional or is offline"
+          - roll: { min: 56, max: 95 }
+            text:
+              "Dysfunctional - The megastructure is not functioning as originally
+              intended"
+          - roll: { min: 96, max: 100 }
+            text: "Destroyed - The megastructure has been wrecked"
+      terraformer_hub_megastructure_status_non_functiona:
+        name: "Terraformer Hub Megastructure Status - Non-functional"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          The megastructure affects its host world in one of the following ways
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 75 }
+            text:
+              "As operational, but roll >Altered Planetary Class twice (next page). The
+              second result is the world's original class."
+          - roll: { min: 76, max: 100 }
+            text: "As if the terraformer hub were partially constructed."
+      megastructure_outer_first_look:
+        name: "Megastructure Outer First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          This oracle provides inspiration for the initial survey of a megastructure. It covers the aspects of the site that are obvious when observed at a distance.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 5 }
+            text: "Automated defenses"
+          - roll: { min: 6, max: 11 }
+            text: "Blocked access"
+          - roll: { min: 12, max: 17 }
+            text: "Breached exterior"
+          - roll: { min: 18, max: 23 }
+            text: "Bulwark against assaults"
+          - roll: { min: 24, max: 28 }
+            text: "Electrical arcs and sparks"
+          - roll: { min: 29, max: 33 }
+            text: "Encased in an energy field"
+          - roll: { min: 34, max: 38 }
+            text: "Energy core or conduit"
+          - roll: { min: 39, max: 44 }
+            text: "Exposed entrance or dock"
+          - roll: { min: 45, max: 50 }
+            text: "Fluctuating gravity"
+          - roll: { min: 51, max: 56 }
+            text: "Leaking radiation"
+          - roll: { min: 57, max: 61 }
+            text: "Multiple attached structures"
+          - roll: { min: 62, max: 67 }
+            text: "No obvious point of entry"
+          - roll: { min: 68, max: 72 }
+            text: "Orbiting object"
+          - roll: { min: 73, max: 78 }
+            text: "Powerful electromagnetic field"
+          - roll: { min: 79, max: 84 }
+            text: "Signal or message"
+          - roll: { min: 85, max: 89 }
+            text: "Significant amount of debris"
+          - roll: { min: 90, max: 95 }
+            text: "Strong gravity well"
+          - roll: { min: 96, max: 100 }
+            text:
+              "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
+              Focus"
+      unidentified_megastructure_type_type_2_civilizatio:
+        name: "Unidentified Megastructure Type - Type 2 civilizations"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this table only if your established truth is that the precursor technological scale was type 2 or 3. If this is the case, reference the appropriate column. Otherwise, assume the result to be 1.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 55 }
+            text: "Type 1"
+          - roll: { min: 56, max: 100 }
+            text: "Type 2"
+      atmosphere_harvester_megastructure_status_status_e:
+        name: "Atmosphere Harvester Megastructure Status (Status / Effect)"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          A cloud-roaming structure that siphons  off a world's atmosphere.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text:
+              "Partially constructed / The megastructure's skeleton drifts amongst the
+              worlds clouds, awaiting completion. The host planet is a Jovian
+              world (page 58)."
+          - roll: { min: 16, max: 50 }
+            text:
+              "Operational / A vast column of gases is easily visible in the Jovian
+              world that hosts the megastructure (page 58). This column
+              violently churns while being drawn into the atmosphere harvester."
+          - roll: { min: 51, max: 85 }
+            text:
+              "Non-functional or offline / Ask the Oracle (50/50) if the atmosphere
+              harvester has completely siphoned the world's atmosphere. *  If
+              yes: The megastructure left only the world's solid core. When you
+              generate the Jovian world that serves as a host to the
+              megastructure, use the Surface Biome guideline (page 59). The
+              world has no atmosphere, nor does it have any features that are
+              related to atmospheric weather. * If no: The atmosphere harvester
+              is eerily still as it hovers among the Jovian world's clouds."
+          - roll: { min: 86, max: 95 }
+            text:
+              "Dysfunctional / The atmosphere harvester is siphoning the Jovian world's
+              gases at such a terrific rate that it has generated an enormous
+              superstorm with the megastructure at its heart. The world has the
+              additional feature of having a perpetual superstorm."
+          - roll: { min: 96, max: 100 }
+            text:
+              "Destroyed / The remains of the atmosphere harvester float silently,
+              hidden amidst the world's clouds. The planet is a Jovian world
+              (page 58)."
+      unidentified_megastructure_ceramic_type_non_precio:
+        name: "Unidentified Megastructure Ceramic Type - Non-precious"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the table below to reveal the type of ceramic and detail an object or environment. Roll once to determine which ceramic rarity column to reference. Then, roll again to uncover the ceramic type result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 7 }
+            text: "Biscuit porcelain"
+          - roll: { min: 8, max: 14 }
+            text: "Biscuit porcelain"
+          - roll: { min: 15, max: 21 }
+            text: "Clinker or cement"
+          - roll: { min: 22, max: 28 }
+            text: "Clinker or cement"
+          - roll: { min: 29, max: 35 }
+            text: "Earthenware"
+          - roll: { min: 36, max: 42 }
+            text: "Earthenware"
+          - roll: { min: 43, max: 49 }
+            text: "Float glass"
+          - roll: { min: 50, max: 56 }
+            text: "Float glass"
+          - roll: { min: 57, max: 64 }
+            text: "Raku"
+          - roll: { min: 65, max: 71 }
+            text: "Raku"
+          - roll: { min: 72, max: 78 }
+            text: "Soda-lime glass"
+          - roll: { min: 79, max: 85 }
+            text: "Soda-lime glass"
+          - roll: { min: 86, max: 100 }
+            text: "Stoneware"
+      unidentified_megastructure_material:
+        name: "Unidentified Megastructure Material"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 40 }
+            text: "Metal Type"
+          - roll: { min: 41, max: 65 }
+            text: "Ceramic Type"
+          - roll: { min: 66, max: 75 }
+            text: "Crystal Type"
+          - roll: { min: 76, max: 80 }
+            text: "Animal Organic Matter"
+          - roll: { min: 81, max: 85 }
+            text: "Plant-like"
+          - roll: { min: 86, max: 87 }
+            text: "Energy"
+          - roll: { min: 88, max: 90 }
+            text: "Liquid"
+          - roll: { min: 91, max: 100 }
+            text: "Roll twice"
+      unidentified_megastructure_scale_type_3:
+        name: "Unidentified Megastructure Scale Type 3"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to determine the size of the megastructure in the sector it inhabits.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 80 }
+            text: "1-80  Stellar"
+          - roll: { min: 81, max: 100 }
+            text: "System"
+      trouble_in_the_megastructure:
+        name: "Trouble In The Megastructure"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this set of oracles to detail your exploration into the depths of a megastructure.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 1 }
+            text: "Pay the Price table"
+          - roll: { min: 2, max: 2 }
+            text:
+              "[Theme](datasworn:oracle_rollable:starforged/core/theme) Peril; RG, pg
+              100"
+          - roll: { min: 3, max: 3 }
+            text:
+              "[Derelict](datasworn:oracle_collection:starforged/derelict) Peril; RG, pg
+              82"
+          - roll: { min: 4, max: 4 }
+            text: "Vault Peril"
+          - roll: { min: 5, max: 5 }
+            text: "Lurking Threat"
+          - roll: { min: 6, max: 6 }
+            text: "Story Complication"
+      quantity_of_megastructures_type_2:
+        name: "Quantity Of Megastructures - Type 2"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          The default assumption for most megastructures is that only one may exist in any individual sector or solar system. This doesn't count for gigatransporters, which can be present without quantity restriction by inhabiting worlds or the greater megastructures enlisted in this section.
+
+          If you wish to include more megastructures in your setting, use the following guidelines. This assumes that your Megastructure Prevalence truth is that these marvels greet explorers and travelers with regularity. You determine your megastructure truths on page 87.
+
+          In a solar system confirmed to contain a megastructure, roll on the following table and reference the column that corresponds with your previously established truth about the precursor technological scale.
+
+          After determining the total megastructures present in a sector or solar system, roll >Megastructure Class (next page) to determine their types. When doing so, keep in mind that only one type 3 megastructure may exist in any individual solar system. If one is discovered, any subsequent rolls must be made referencing the Type 2 column.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 50 }
+            text: "One"
+          - roll: { min: 51, max: 85 }
+            text: "Two"
+          - roll: { min: 86, max: 100 }
+            text: "Three"
+      unidentified_megastructure_form:
+        name: "Unidentified Megastructure Form"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 75 }
+            text: "Single unit"
+          - roll: { min: 76, max: 100 }
+            text: "Composed of many units"
+      construct_ultra_scale_no_megastructures:
+        name: "Construct Ultra-Scale - No Megastructures"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Reference the No Megastructures column if you are not using the content from Chapter 4.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 1 }
+            text: "Vast"
+          - roll: { min: 2, max: 11 }
+            text: "Colossal"
+          - roll: { min: 12, max: 100 }
+            text: "Titanic"
+      gigafoundries_stellar_hyperforge_known_product:
+        name: "Gigafoundries Stellar Hyperforge Known Product"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          When you explore a stellar hyperforge and find something of value that was produced in or delivered to the foundry, use the oracles below. If you are familiar with the precursor technology, use the Known Product table; otherwise, roll on the Unknown Product table. Alternatively, if you know enough about the precursors, you may use both tables to envision an item more specifically.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 3 }
+            text: "Artwork"
+          - roll: { min: 4, max: 7 }
+            text: "Clothing"
+          - roll: { min: 8, max: 11 }
+            text: "Construction material"
+          - roll: { min: 12, max: 14 }
+            text: "Drugs"
+          - roll: { min: 15, max: 19 }
+            text: "Food"
+          - roll: { min: 20, max: 24 }
+            text: "Gemstone, : Non-precious"
+          - roll: { min: 25, max: 28 }
+            text: "Gemstone, : Semi-precious"
+          - roll: { min: 29, max: 31 }
+            text: "Gemstone, : Precious"
+          - roll: { min: 32, max: 33 }
+            text: "Gemstone, : Exotic"
+          - roll: { min: 34, max: 37 }
+            text: "Houseware, basic"
+          - roll: { min: 38, max: 40 }
+            text: "Houseware, complex"
+          - roll: { min: 41, max: 44 }
+            text: "Industrial machine"
+          - roll: { min: 45, max: 49 }
+            text: "Industrial part"
+          - roll: { min: 50, max: 54 }
+            text: "Ingot, ferrous"
+          - roll: { min: 55, max: 58 }
+            text: "Ingot, : Non-ferrous"
+          - roll: { min: 59, max: 61 }
+            text: "Ingot, : Precious"
+          - roll: { min: 62, max: 63 }
+            text: "Ingot, : Exotic"
+          - roll: { min: 64, max: 66 }
+            text: "Jewelry"
+          - roll: { min: 67, max: 70 }
+            text: "Liquor"
+          - roll: { min: 71, max: 74 }
+            text: "Medical supply"
+          - roll: { min: 75, max: 77 }
+            text: "Small arms"
+          - roll: { min: 78, max: 81 }
+            text: "Tool, basic"
+          - roll: { min: 82, max: 84 }
+            text: "Tool, industrial"
+          - roll: { min: 85, max: 86 }
+            text: "Tool, medical"
+          - roll: { min: 87, max: 88 }
+            text: "Vehicle, air"
+          - roll: { min: 89, max: 90 }
+            text: "Vehicle, aquatic"
+          - roll: { min: 91, max: 92 }
+            text: "Vehicle, land"
+          - roll: { min: 93, max: 95 }
+            text: "Vehicle, space"
+          - roll: { min: 96, max: 100 }
+            text:
+              "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
+              Focus"
+      megastructure_derelict_zones:
+        name: "Megastructure Derelict Zones"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          When prompted to roll for the derelict zone of a megastructure, use this oracle as an extension of the Derelict Zones table on page 351 of the Starforged rulebook.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 35 }
+            text: "Engineering"
+          - roll: { min: 36, max: 40 }
+            text: "Living"
+          - roll: { min: 41, max: 45 }
+            text: "Medical"
+          - roll: { min: 46, max: 65 }
+            text: "Operations"
+          - roll: { min: 66, max: 90 }
+            text: "Production"
+          - roll: { min: 91, max: 100 }
+            text: "Research"
+      gigafoundries_stellar_hyperforge_unknown_product:
+        name: "Gigafoundries Stellar Hyperforge Unknown Product"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          When you explore a stellar hyperforge and find something of value that was produced in or delivered to the foundry, use the oracles below. If you are familiar with the precursor technology, use the Known Product table; otherwise, roll on the Unknown Product table. Alternatively, if you know enough about the precursors, you may use both tables to envision an item more specifically.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Agricultural"
+          - roll: { min: 11, max: 20 }
+            text: "Consumable"
+          - roll: { min: 21, max: 30 }
+            text: "Construction"
+          - roll: { min: 31, max: 40 }
+            text: "Luxury"
+          - roll: { min: 41, max: 50 }
+            text: "Medical"
+          - roll: { min: 51, max: 60 }
+            text: "Military"
+          - roll: { min: 61, max: 70 }
+            text: "Religious"
+          - roll: { min: 71, max: 80 }
+            text: "Tool"
+          - roll: { min: 81, max: 90 }
+            text: "Vehicle"
+          - roll: { min: 91, max: 100 }
+            text:
+              "[Descriptor](datasworn:oracle_rollable:starforged/core/descriptor) +
+              Focus"
+      unidentified_megastructure_purpose:
+        name: "Unidentified Megastructure Purpose"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Megastructures are massive alien vaults built to fulfill a particular function. Coming to a definitive conclusion about their purpose requires undertaking an arduous, intense expedition.
+
+          When you explore an unidentified megastructure, you may use this oracle to reveal the megastructure function at an appropriate point in your survey, either due to the completion of your expedition or a because your narrative framing would naturally lead you to a revelation regarding the nature of the site.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 7 }
+            text: "Archive of inestimable knowledge"
+          - roll: { min: 8, max: 14 }
+            text: "Conduit to mystical powers"
+          - roll: { min: 15, max: 21 }
+            text: "Containment of a reality-defying being"
+          - roll: { min: 22, max: 28 }
+            text: "Containment of weapons"
+          - roll: { min: 29, max: 35 }
+            text: "Imprisonment of beings or individuals"
+          - roll: { min: 36, max: 42 }
+            text: "Interment of the dead"
+          - roll: { min: 43, max: 49 }
+            text: "Manipulation of spacetime"
+          - roll: { min: 50, max: 56 }
+            text: "Preservation of an ancient intelligence"
+          - roll: { min: 57, max: 63 }
+            text: "Protection of precious technology or artifacts"
+          - roll: { min: 64, max: 70 }
+            text: "Remotely controlling other beings"
+          - roll: { min: 71, max: 77 }
+            text: "Safeguard relics or treasury"
+          - roll: { min: 78, max: 84 }
+            text: "Surveying or researching unknown realities"
+          - roll: { min: 85, max: 95 }
+            text:
+              "[Action](datasworn:oracle_rollable:starforged/core/action) + Theme; pg
+              12"
+          - roll: { min: 96, max: 100 }
+            text: "Roll twice"
+      unidentified_megastructure_ceramic_type_precious:
+        name: "Unidentified Megastructure Ceramic Type - Precious"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the table below to reveal the type of ceramic and detail an object or environment. Roll once to determine which ceramic rarity column to reference. Then, roll again to uncover the ceramic type result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 7 }
+            text: "Ballistic glass"
+          - roll: { min: 8, max: 14 }
+            text: "Ballistic glass"
+          - roll: { min: 15, max: 21 }
+            text: "Black clay"
+          - roll: { min: 22, max: 28 }
+            text: "Black clay"
+          - roll: { min: 29, max: 35 }
+            text: "Bone china"
+          - roll: { min: 36, max: 42 }
+            text: "Bone china"
+          - roll: { min: 43, max: 49 }
+            text: "Faience"
+          - roll: { min: 50, max: 56 }
+            text: "Faience"
+          - roll: { min: 57, max: 64 }
+            text: "Glass-ceramic"
+          - roll: { min: 65, max: 71 }
+            text: "Glass-ceramic"
+          - roll: { min: 72, max: 78 }
+            text: "Lusterware"
+          - roll: { min: 79, max: 85 }
+            text: "Maiolica"
+          - roll: { min: 86, max: 100 }
+            text: "Obvara"
+      stellar_object:
+        name: "Stellar Object"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this table oracle to define the star at the center of the solar system.
+
+          Reroll the "Artificial star constructed by a long-dead civilization" result if your precursors
+
+          <p class="p1">Technological Scale truth on page 94 is that they were type 1 or 2.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 5 }
+            text: "Neutron star surrounded by intense magnetic fields"
+          - roll: { min: 6, max: 7 }
+            text: "Unstable star showing signs of impending supernova"
+          - roll: { min: 8, max: 12 }
+            text: "Two stars in close orbit connected by fiery tendrils of energy"
+          - roll: { min: 13, max: 21 }
+            text: "Hypergiant star generating turbulent solar winds"
+          - roll: { min: 22, max: 26 }
+            text: "Blazing blue star"
+          - roll: { min: 27, max: 41 }
+            text: "Burning yellow star"
+          - roll: { min: 42, max: 42 }
+            text: "Artificial star constructed by a long-dead civilization"
+          - roll: { min: 43, max: 57 }
+            text: "Glowing orange star"
+          - roll: { min: 58, max: 72 }
+            text: "Smoldering red star"
+          - roll: { min: 73, max: 82 }
+            text: "Young star incubating in a molecular cloud"
+          - roll: { min: 83, max: 87 }
+            text: "Corrupted star radiating with unnatural light"
+          - roll: { min: 88, max: 97 }
+            text: "White dwarf shining with spectral light"
+          - roll: { min: 98, max: 100 }
+            text: "Black hole"
+      megastructure_class_type_1_megastructure_presumed_:
+        name:
+          "Megastructure Class - Type 1 (Megastructure / Presumed Purpose / Scale /
+          Stellar Object)"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify the type of a megastructure. Reference the column that corresponds to the Technological Scale truth previously established on page 87. The Presumed Purpose hints as to what humanity understands to be the function of the wonder, the Scale defines its size, and the Stellar Object indicates whether the megastructure needs a star or black hole to be present.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Unidentified Megastructure / Unknown / Planetary or sub / --"
+          - roll: { min: 11, max: 16 }
+            text: "Asteroid Processor / Mining / Subplanetary / --"
+          - roll: { min: 17, max: 23 }
+            text: "Atmosphere Harvester / Mining / Subplanetary / --"
+          - roll: { min: 24, max: 29 }
+            text: "Defense Nexus / Military / Subplanetary / --"
+          - roll: { min: 30, max: 35 }
+            text: "Ecopoiesis Array / Terraforming / Subplanetary / --"
+          - roll: { min: 36, max: 43 }
+            text: "Ecumenopolis / Residence / Planetary / --"
+          - roll: { min: 44, max: 49 }
+            text: "Equatorial Shipyard / Industry / Planetary / --"
+          - roll: { min: 50, max: 55 }
+            text: "Ferrothermal Engine / Terraforming / Subplanetary / --"
+          - roll: { min: 56, max: 61 }
+            text: "Geothermal Stabilizer / Terraforming / Subplanetary / --"
+          - roll: { min: 62, max: 70 }
+            text: "McKendree Cylinder / Residence / Subplanetary / --"
+          - roll: { min: 71, max: 76 }
+            text: "Nezzarine Garden / Agriculture / Planetary / Star"
+          - roll: { min: 77, max: 83 }
+            text: "Quarry World / Mining / Planetary / --"
+          - roll: { min: 84, max: 85 }
+            text: "Sentinel Belt / Military / System / --"
+          - roll: { min: 86, max: 93 }
+            text: "Standford Torus / Residence / Subplanetary / Star"
+          - roll: { min: 94, max: 100 }
+            text: "Terravore / Mining / Subplanetary / --"
+      megastructure_class_type_3_megastructure_presumed_:
+        name:
+          "Megastructure Class - Type 3 (Megastructure / Presumed Purpose / Scale /
+          Stellar Object)"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify the type of a megastructure. Reference the column that corresponds to the Technological Scale truth previously established on page 87. The Presumed Purpose hints as to what humanity understands to be the function of the wonder, the Scale defines its size, and the Stellar Object indicates whether the megastructure needs a star or black hole to be present.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Unidentified Megastructure / Unknown / Planetary or sub / --"
+          - roll: { min: 11, max: 12 }
+            text: "Asteroid Processor / Mining / Subplanetary / --"
+          - roll: { min: 13, max: 14 }
+            text: "Atmosphere Harvester / Mining / Subplanetary / --"
+          - roll: { min: 15, max: 16 }
+            text: "Defense Nexus / Military / Subplanetary / --"
+          - roll: { min: 17, max: 18 }
+            text: "Ecopoiesis Array / Terraforming / Subplanetary / --"
+          - roll: { min: 19, max: 21 }
+            text: "Ecumenopolis / Residence / Planetary / --"
+          - roll: { min: 22, max: 23 }
+            text: "Equatorial Shipyard / Industry / Planetary / --"
+          - roll: { min: 24, max: 25 }
+            text: "Ferrothermal Engine / Terraforming / Subplanetary / --"
+          - roll: { min: 26, max: 27 }
+            text: "Geothermal Stabilizer / Terraforming / Subplanetary / --"
+          - roll: { min: 28, max: 31 }
+            text: "McKendree Cylinder / Residence / Subplanetary / --"
+          - roll: { min: 32, max: 33 }
+            text: "Nezzarine Garden / Agriculture / Planetary / Star"
+          - roll: { min: 34, max: 35 }
+            text: "Quarry World / Mining / Planetary / --"
+          - roll: { min: 36, max: 37 }
+            text: "Sentinel Belt / Military / System / --"
+          - roll: { min: 38, max: 40 }
+            text: "Standford Torus / Residence / Subplanetary / Star"
+          - roll: { min: 41, max: 42 }
+            text: "Terravore / Mining / Subplanetary / --"
+          - roll: { min: 43, max: 44 }
+            text: "Aegisphere / Military / Planetary / --"
+          - roll: { min: 45, max: 46 }
+            text: "Bishop Ring / Residence / Planetary / Star"
+          - roll: { min: 47, max: 48 }
+            text: "Behemoth Assembler / Industry / Planetary / Star"
+          - roll: { min: 49, max: 50 }
+            text: "Discworld / Residence / Planetary / Star"
+          - roll: { min: 51, max: 52 }
+            text: "Ecosphere / Research / Planetary / --"
+          - roll: { min: 53, max: 56 }
+            text: "Habitat Cluster / Residence / Planetary / --"
+          - roll: { min: 57, max: 58 }
+            text: "Jupiter Brain / Research / Planetary / --"
+          - roll: { min: 59, max: 60 }
+            text: "Kintsugi World / Cultural / Planetary / --"
+          - roll: { min: 61, max: 62 }
+            text: "Lunar Speculorefractor / Terraforming / Planetary / Star"
+          - roll: { min: 63, max: 64 }
+            text: "Planetcraft /  Mixed / Planetary / --"
+          - roll: { min: 65, max: 66 }
+            text: "Sentry Array / Military / Planetary / --"
+          - roll: { min: 67, max: 68 }
+            text: "Terraformer Hub / Terraforming / Planetary / --"
+          - roll: { min: 69, max: 70 }
+            text: "Accretion Macrocollector / Mining / Stellar / Black  hole"
+          - roll: { min: 71, max: 72 }
+            text: "Alderson Disk / Residence / System / Star"
+          - roll: { min: 73, max: 74 }
+            text: "Dyson Object / Industry / Stellar / Star"
+          - roll: { min: 75, max: 76 }
+            text: "Fusion Suppressor / Terraforming / Stellar / Star"
+          - roll: { min: 77, max: 78 }
+            text: "Helio-obliterator / Military / Stellar / Star"
+          - roll: { min: 79, max: 80 }
+            text: "Hyperstructural Shipyard / Industry / Stellar / --"
+          - roll: { min: 81, max: 82 }
+            text: "Kugelblitz Silo / Industry / Stellar / Black  hole"
+          - roll: { min: 83, max: 84 }
+            text: "Matrioshka Brain / Research / Stellar / Star"
+          - roll: { min: 85, max: 86 }
+            text: "Nicoll-dyson Array / Military / Stellar / Star"
+          - roll: { min: 87, max: 88 }
+            text: "Penrose Sphere / Industry / Military  Stellar / Black  hole"
+          - roll: { min: 89, max: 90 }
+            text: "Star Lifter / Mining / Stellar / Star"
+          - roll: { min: 91, max: 92 }
+            text: "Stellar Compressor / Terraforming / Stellar / Star"
+          - roll: { min: 93, max: 94 }
+            text: "Stellar Engine / Transportation / Stellar / Star"
+          - roll: { min: 95, max: 96 }
+            text: "Stellar Hyperforge / Industry / Stellar / Star"
+          - roll: { min: 97, max: 98 }
+            text: "Stellar Ringworld / Residence / System / Star"
+          - roll: { min: 99, max: 100 }
+            text: "System-forge / Industry / System / Star"
+      cursed_megastructure_outer_first_look:
+        name: "Cursed Megastructure Outer First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Areas of obfuscating, unnatural darkness"
+          - roll: { min: 11, max: 20 }
+            text: "Biological infestation"
+          - roll: { min: 21, max: 30 }
+            text: "Desiccated or putrefied corpses"
+          - roll: { min: 31, max: 40 }
+            text: "Mutated or warped structures"
+          - roll: { min: 41, max: 50 }
+            text: "Powerful electro-magnetic pulses"
+          - roll: { min: 51, max: 60 }
+            text: "Scarred by vast tears or impacts"
+          - roll: { min: 61, max: 70 }
+            text: "Ship graveyards"
+          - roll: { min: 71, max: 80 }
+            text: "Time or reality distortions"
+          - roll: { min: 81, max: 90 }
+            text: "Vibrantly colored aura"
+          - roll: { min: 91, max: 100 }
+            text: "Vibrating gravitational waves"
+      cursed_megastructure_inner_first_look:
+        name: "Cursed Megastructure Inner First Look"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 7 }
+            text: "Unsettling sense of being watched"
+          - roll: { min: 8, max: 14 }
+            text: "Glimpses of shadows on the move"
+          - roll: { min: 15, max: 21 }
+            text: "Overwhelming stillness or quiet"
+          - roll: { min: 22, max: 26 }
+            text: "Mutated or warped structures"
+          - roll: { min: 27, max: 34 }
+            text: "Ominous, untraceable sounds"
+          - roll: { min: 35, max: 40 }
+            text: "Sticky and viscous surfaces"
+          - roll: { min: 41, max: 46 }
+            text: "Time or reality distortions"
+          - roll: { min: 47, max: 53 }
+            text: "Foul masses of secretions"
+          - roll: { min: 54, max: 60 }
+            text: "Shrouded in mist or haze"
+          - roll: { min: 61, max: 67 }
+            text: "Impenetrable darkness"
+          - roll: { min: 68, max: 74 }
+            text: "Uncanny illumination"
+          - roll: { min: 75, max: 80 }
+            text: "Hazardous readings"
+          - roll: { min: 81, max: 87 }
+            text: "Abnormal gravity"
+          - roll: { min: 88, max: 94 }
+            text: "Noxious fog"
+          - roll: { min: 95, max: 100 }
+            text: "Watchful AI"
+      terraformer_hub_megastructure_status:
+        name: "Terraformer Hub Megastructure Status"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text: 'Partially constructed / When you roll
+              [Planet](datasworn:oracle_rollable:starforged/planet/class) to
+              generate the features of the world that hosts the terraformer hub,
+              reroll the "Anomalous World", "Jovian World'', "Karst World",
+              "Tidally-locked World", and "Shattered World" Planetary Class
+              results.'
+          - roll: { min: 16, max: 50 }
+            text: "Operational / When you roll
+              [Planet](datasworn:oracle_rollable:starforged/planet/class) to
+              generate the features of the world that hosts the terraformer hub,
+              do not use the Planetary Class oracle. Instead, use the Altered
+              Planetary Class oracle. When you explore the sanctum of the
+              megastructure, you may attempt to use its systems to rapidly alter
+              a small region of the world. If you do, introduce the features of
+              another planetary class."
+          - roll: { min: 51, max: 85 }
+            text: "Non-functional or offline / Roll on Non-functional table below"
+          - roll: { min: 86, max: 95 }
+            text:
+              "Dysfunctional / As operational, but roll >Altered Planetary Class twice
+              (next page). The second result is the original class.
+              Additionally, the planet has powerful earthquakes and violent
+              weather events."
+          - roll: { min: 96, max: 100 }
+            text:
+              "Destroyed / Determine how the terraformer hub affects its world by
+              rolling on the Destroyed oracle. Additionally, the area
+              surrounding the megastructure is a grim wreckage. When you explore
+              this area, envision the features of a grave world (page 54)."
+      megastructure_class_type_2_megastructure_presumed_:
+        name:
+          "Megastructure Class - Type 2 (Megastructure / Presumed Purpose / Scale /
+          Stellar Object)"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to identify the type of a megastructure. Reference the column that corresponds to the Technological Scale truth previously established on page 87. The Presumed Purpose hints as to what humanity understands to be the function of the wonder, the Scale defines its size, and the Stellar Object indicates whether the megastructure needs a star or black hole to be present.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Unidentified Megastructure / Unknown / Planetary or sub / --"
+          - roll: { min: 11, max: 13 }
+            text: "Asteroid Processor / Mining / Subplanetary / --"
+          - roll: { min: 14, max: 16 }
+            text: "Atmosphere Harvester / Mining / Subplanetary / --"
+          - roll: { min: 17, max: 19 }
+            text: "Defense Nexus / Military / Subplanetary / --"
+          - roll: { min: 20, max: 22 }
+            text: "Ecopoiesis Array / Terraforming / Subplanetary / --"
+          - roll: { min: 23, max: 27 }
+            text: "Ecumenopolis / Residence / Planetary / --"
+          - roll: { min: 28, max: 30 }
+            text: "Equatorial Shipyard / Industry / Planetary / --"
+          - roll: { min: 31, max: 33 }
+            text: "Ferrothermal Engine / Terraforming / Subplanetary / --"
+          - roll: { min: 34, max: 36 }
+            text: "Geothermal Stabilizer / Terraforming / Subplanetary / --"
+          - roll: { min: 37, max: 42 }
+            text: "McKendree Cylinder / Residence / Subplanetary / --"
+          - roll: { min: 43, max: 45 }
+            text: "Nezzarine Garden / Agriculture / Planetary / Star"
+          - roll: { min: 46, max: 48 }
+            text: "Quarry World / Mining / Planetary / --"
+          - roll: { min: 49, max: 50 }
+            text: "Sentinel Belt / Military / System / --"
+          - roll: { min: 51, max: 55 }
+            text: "Standford Torus / Residence / Subplanetary / Star"
+          - roll: { min: 56, max: 58 }
+            text: "Terravore / Mining / Subplanetary / --"
+          - roll: { min: 59, max: 61 }
+            text: "Aegisphere / Military / Planetary / --"
+          - roll: { min: 62, max: 66 }
+            text: "Bishop Ring / Residence / Planetary / Star"
+          - roll: { min: 67, max: 69 }
+            text: "Behemoth Assembler / Industry / Planetary / Star"
+          - roll: { min: 70, max: 73 }
+            text: "Discworld / Residence / Planetary / Star"
+          - roll: { min: 74, max: 76 }
+            text: "Ecosphere / Research / Planetary / --"
+          - roll: { min: 77, max: 82 }
+            text: "Habitat Cluster / Residence / Planetary / --"
+          - roll: { min: 83, max: 85 }
+            text: "Jupiter Brain / Research / Planetary / --"
+          - roll: { min: 86, max: 88 }
+            text: "Kintsugi World / Cultural / Planetary / --"
+          - roll: { min: 89, max: 91 }
+            text: "Lunar Speculorefractor / Terraforming / Planetary / Star"
+          - roll: { min: 92, max: 94 }
+            text: "Planetcraft /  Mixed / Planetary / --"
+          - roll: { min: 95, max: 97 }
+            text: "Sentry Array / Military / Planetary / --"
+          - roll: { min: 98, max: 100 }
+            text: "Terraformer Hub / Terraforming / Planetary / --"
+      quantity_of_megastructures_type_3:
+        name: "Quantity Of Megastructures - Type 3"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          The default assumption for most megastructures is that only one may exist in any individual sector or solar system. This doesn't count for gigatransporters, which can be present without quantity restriction by inhabiting worlds or the greater megastructures enlisted in this section.
+
+          If you wish to include more megastructures in your setting, use the following guidelines. This assumes that your Megastructure Prevalence truth is that these marvels greet explorers and travelers with regularity. You determine your megastructure truths on page 87.
+
+          In a solar system confirmed to contain a megastructure, roll on the following table and reference the column that corresponds with your previously established truth about the precursor technological scale.
+
+          After determining the total megastructures present in a sector or solar system, roll >Megastructure Class (next page) to determine their types. When doing so, keep in mind that only one type 3 megastructure may exist in any individual solar system. If one is discovered, any subsequent rolls must be made referencing the Type 2 column.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 25 }
+            text: "One"
+          - roll: { min: 26, max: 75 }
+            text: "Two"
+          - roll: { min: 76, max: 100 }
+            text: "Three"
+      terraformer_hub_megastructure_status_destroyed:
+        name: "Terraformer Hub Megastructure Status - Destroyed"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 75 }
+            text:
+              "As if the terraformer hub were operational, but roll >Altered Planetary
+              Class twice (next page). The second result is the original class."
+          - roll: { min: 76, max: 100 }
+            text:
+              'When you roll [Planet](datasworn:oracle_rollable:starforged/planet/class)
+              to generate the features of the world that hosts the terraformer
+              hub, reroll the "Anomalous World", "Jovian World'', and
+              "Shattered World" Planetary Class results.'
+      exploring_the_megastructure:
+        name: "Exploring The Megastructure"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this set of oracles to detail your exploration into the depths of a megastructure.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 1 }
+            text:
+              "[Theme](datasworn:oracle_rollable:starforged/core/theme) Feature; RG, pg
+              100"
+          - roll: { min: 2, max: 4 }
+            text:
+              "[Derelict](datasworn:oracle_collection:starforged/derelict) Feature; RG,
+              pg 82"
+          - roll: { min: 5, max: 6 }
+            text: "Vault Feature"
+      unidentified_megastructure_scale_type_2:
+        name: "Unidentified Megastructure Scale Type 2"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to determine the size of the megastructure in the sector it inhabits.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Sub-planetary"
+          - roll: { min: 11, max: 100 }
+            text: "Planetary"
+      unidentified_megastructure_type_type_3_civilizatio:
+        name: "Unidentified Megastructure Type - Type 3 civilizations"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this table only if your established truth is that the precursor technological scale was type 2 or 3. If this is the case, reference the appropriate column. Otherwise, assume the result to be 1.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 40 }
+            text: "Type 1"
+          - roll: { min: 41, max: 70 }
+            text: "Type 2"
+          - roll: { min: 71, max: 100 }
+            text: "Type 3"
+      unidentified_megastructure_shape:
+        name: "Unidentified Megastructure Shape"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text: "Practical or functional"
+          - roll: { min: 16, max: 20 }
+            text: "Geometric (complex shape)"
+          - roll: { min: 21, max: 25 }
+            text: "Geometric (cube)"
+          - roll: { min: 26, max: 30 }
+            text: "Geometric (obelisk)"
+          - roll: { min: 31, max: 35 }
+            text: "Geometric (pyramid)"
+          - roll: { min: 36, max: 40 }
+            text: "Geometric (ring or torus)"
+          - roll: { min: 41, max: 45 }
+            text: "Geometric (sphere)"
+          - roll: { min: 46, max: 55 }
+            text: "Organic or curved"
+          - roll: { min: 56, max: 60 }
+            text: "Platform or disc"
+          - roll: { min: 61, max: 65 }
+            text: "Spires or towers"
+          - roll: { min: 66, max: 68 }
+            text: "Domed"
+          - roll: { min: 69, max: 73 }
+            text: "Spiky"
+          - roll: { min: 74, max: 76 }
+            text: "Sculptural or effigy"
+          - roll: { min: 77, max: 79 }
+            text: "Amorphous"
+          - roll: { min: 80, max: 85 }
+            text: "Transforming"
+          - roll: { min: 86, max: 100 }
+            text: "Roll twice"
+      megastructure_gravity:
+        name: "Megastructure Gravity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to reveal the gravity experienced on or within any area of a megastructure.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text:
+              "Weak - With enough caution, greatly reduced gravitational forces allow
+              for major freedom of movement"
+          - roll: { min: 11, max: 35 }
+            text: "Low - Reduced gravitational forces allow for significant maneuverability"
+          - roll: { min: 36, max: 85 }
+            text:
+              "Ideal - Gravitational forces are at levels in which humans evolved to
+              thrive"
+          - roll: { min: 86, max: 100 }
+            text:
+              "High - Human can only survive for a short period of time without
+              mechanical aids"
+      unidentified_megastructure_scale_type_1:
+        name: "Unidentified Megastructure Scale Type 1"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to determine the size of the megastructure in the sector it inhabits.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 60 }
+            text: "Sub-planetary"
+          - roll: { min: 61, max: 100 }
+            text: "Planetary"
+      opportunity_in_the_megastructure:
+        name: "Opportunity In The Megastructure"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this set of oracles to detail your exploration into the depths of a megastructure.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 2 }
+            text:
+              "[Theme](datasworn:oracle_rollable:starforged/core/theme) Opportunity; RG,
+              pg 100"
+          - roll: { min: 3, max: 4 }
+            text:
+              "[Derelict](datasworn:oracle_collection:starforged/derelict) Opportunity;
+              RG, pg 82"
+          - roll: { min: 5, max: 6 }
+            text: "Vault Opportunity"
+      unidentified_megastructure_ceramic_type_semi_preci:
+        name: "Unidentified Megastructure Ceramic Type - Semi-precious"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use the table below to reveal the type of ceramic and detail an object or environment. Roll once to determine which ceramic rarity column to reference. Then, roll again to uncover the ceramic type result.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 7 }
+            text: "Bioglass"
+          - roll: { min: 8, max: 14 }
+            text: "Borosilicate glass"
+          - roll: { min: 15, max: 21 }
+            text: "Creamware"
+          - roll: { min: 22, max: 28 }
+            text: "Enamelware"
+          - roll: { min: 29, max: 35 }
+            text: "Glazed earthenware"
+          - roll: { min: 36, max: 42 }
+            text: "Hard-paste porcelain"
+          - roll: { min: 43, max: 49 }
+            text: "Lacquered glass"
+          - roll: { min: 50, max: 56 }
+            text: "Laminated glass"
+          - roll: { min: 57, max: 64 }
+            text: "Porcelain stoneware"
+          - roll: { min: 65, max: 71 }
+            text: "Smoked raku"
+          - roll: { min: 72, max: 78 }
+            text: "Soft-paste porcelain"
+          - roll: { min: 79, max: 85 }
+            text: "Tempered glass"
+          - roll: { min: 86, max: 100 }
+            text: "Yellowware"

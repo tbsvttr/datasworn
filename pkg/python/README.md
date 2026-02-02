@@ -23,6 +23,7 @@ uv run scripts/python/post_process_models.py \
 | `datasworn-core` | Pydantic models for Datasworn types |
 | `datasworn-classic` | Ironsworn Classic ruleset |
 | `datasworn-delve` | Ironsworn: Delve expansion |
+| `datasworn-lodestar` | Ironsworn: Lodestar expansion |
 | `datasworn-starforged` | Ironsworn: Starforged ruleset |
 | `datasworn-sundered-isles` | Sundered Isles expansion |
 
@@ -33,6 +34,7 @@ uv run scripts/python/post_process_models.py \
 | `datasworn-community-content-ancient-wonders` | Ancient Wonders expansion |
 | `datasworn-community-content-fe-runners` | FE Runners expansion |
 | `datasworn-community-content-starsmith` | Starsmith expansion |
+| `datasworn-community-content-ironsmith` | Ironsmith expansion |
 
 ## Installation
 

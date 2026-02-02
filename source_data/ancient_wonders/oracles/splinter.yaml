@@ -1,0 +1,324 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+oracles:
+  splinter:
+    name: "Splinters"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#9b59b6"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      major_splinter_bonus:
+        name: "Major Splinter Bonus"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          When using this oracle to reveal the effect of a major splinter bonus, take note of the result by marking it on the SPLINTER card. Then, reference this table when using it. Alternatively, you can write the bonus in the card abbreviately, or combine both styles.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 3 }
+            text:
+              "Add +1. On a miss, reroll any challenge dice. On a strong hit, take +1
+              momentum."
+          - roll: { min: 4, max: 6 }
+            text: "Add +1. You may reroll any challenge dice. On a hit, take +2 momentum."
+          - roll: { min: 7, max: 9 }
+            text:
+              "Add +1. You may reroll any challenge dice. On a strong hit, add +1 on
+              your next move."
+          - roll: { min: 10, max: 12 }
+            text: "Add +2. On a miss, reroll one challenge die. On a hit, take +1 momentum."
+          - roll: { min: 13, max: 15 }
+            text:
+              "Add +2. On a miss, reroll one challenge die. On a strong hit, take +2
+              momentum."
+          - roll: { min: 16, max: 18 }
+            text: "Add +2. On a strong hit, take +3 momentum and add +2 on your next move."
+          - roll: { min: 19, max: 21 }
+            text:
+              "Add +3. On a hit, add +1 on your next move. On a strong hit, take +2
+              momentum."
+          - roll: { min: 22, max: 24 }
+            text: "Add +3. On a hit, take +1 momentum and add +1 on your next move."
+          - roll: { min: 25, max: 27 }
+            text: "Add +3. On a strong hit, take +3 momentum and add +1 on your next move."
+          - roll: { min: 28, max: 30 }
+            text: "Count a miss as a weak hit. Then, add +1 on your next move."
+          - roll: { min: 31, max: 33 }
+            text: "Count a miss as a weak hit. Then, take +3 momentum."
+          - roll: { min: 34, max: 36 }
+            text: "Count a weak hit as a strong hit. Then, add +1 on your next move."
+          - roll: { min: 37, max: 39 }
+            text: "Count a weak hit as a strong hit. Then, take +3 momentum."
+          - roll: { min: 40, max: 42 }
+            text:
+              "Lose Momentum (-1). Then, take an automatic strong hit, but still roll
+              your action."
+          - roll: { min: 43, max: 45 }
+            text:
+              "Lose Momentum (-2). Then, choose one: Count a miss a weak hit or count a
+              weak hit as a strong hit."
+          - roll: { min: 46, max: 48 }
+            text:
+              "On a miss, reroll any challenge dice. On a hit, add +2 on your next
+              move."
+          - roll: { min: 49, max: 51 }
+            text:
+              "On a miss, reroll any challenge dice. On a hit, add +2 on your next move.
+              On a strong hit, take +1 momentum."
+          - roll: { min: 52, max: 54 }
+            text:
+              "On a miss, reroll any challenge dice. On a hit, take +3 momentum and add
+              +1 on your next move."
+          - roll: { min: 55, max: 57 }
+            text:
+              "On a miss, reroll one challenge die. On a hit, add +2 on your next move.
+              On a strong hit, take +3 momentum"
+          - roll: { min: 58, max: 60 }
+            text:
+              "On a miss, reroll one challenge die. On a hit, take +2 momentum. On a
+              strong hit, add +2 on your next move."
+          - roll: { min: 61, max: 63 }
+            text:
+              "Roll an extra challenge die and keep the two lowest. On a hit, add +1 on
+              your next move. On a strong hit, take +2 momentum."
+          - roll: { min: 64, max: 66 }
+            text:
+              "Roll an extra challenge die and keep the two lowest. On a hit, take +1
+              momentum and add +1 on your next move."
+          - roll: { min: 67, max: 69 }
+            text:
+              "Roll an extra challenge die and keep the two lowest. On a strong hit,
+              take +3 momentum and add +1 on your next move."
+          - roll: { min: 70, max: 72 }
+            text:
+              "Take an automatic strong hit, but still roll your action. Then, Lose
+              Momentum (-1)."
+          - roll: { min: 73, max: 75 }
+            text:
+              "Take an automatic strong hit, but still roll your action. Then, make a
+              suffer move (-2)."
+          - roll: { min: 76, max: 78 }
+            text:
+              "You may reroll any challenge dice. On a hit, take +3 momentum. On a
+              strong hit, add +1 on your next move."
+          - roll: { min: 79, max: 81 }
+            text:
+              "You may reroll any challenge dice. On a strong hit, add +2 on your next
+              move."
+          - roll: { min: 82, max: 84 }
+            text:
+              "You may reroll one challenge die. On a hit, add +2 on your next move. On
+              a strong hit, take +2 momentum."
+          - roll: { min: 85, max: 87 }
+            text:
+              "You may reroll one challenge die. On a hit, take +1 momentum and add +2
+              on your next move."
+          - roll: { min: 88, max: 90 }
+            text:
+              "You may reroll one challenge die. On a strong hit, take +3 momentum and
+              add +2 on your next move."
+          - roll: { min: 91, max: 100 }
+            text:
+              "Roll twice and take both bonuses with two different focuses. If you
+              decide to use the SPLINTER's power, choose which focus to use and
+              which bonus to take. Discard the SPLINTER when you roll a 5 or 6
+              on your action die (instead of a 6) after resolving the move."
+      splinter_material:
+        name: "Splinter Material"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 40 }
+            text: "Metal Type"
+          - roll: { min: 41, max: 65 }
+            text: "Ceramic Type"
+          - roll: { min: 66, max: 75 }
+            text: "Crystal Type"
+          - roll: { min: 76, max: 80 }
+            text: "Animal Organic Matter"
+          - roll: { min: 81, max: 85 }
+            text: "Plant-like"
+          - roll: { min: 86, max: 87 }
+            text: "Energy"
+          - roll: { min: 88, max: 90 }
+            text: "Liquid"
+          - roll: { min: 91, max: 100 }
+            text: "Roll twice"
+      splinter_focus:
+        name: "Splinter Focus"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to determine the aspect of your character that the splinter affects when used.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 5 }
+            text: "Accuracy"
+          - roll: { min: 6, max: 10 }
+            text: "Affability"
+          - roll: { min: 11, max: 15 }
+            text: "Awareness"
+          - roll: { min: 16, max: 20 }
+            text: "Bravery"
+          - roll: { min: 21, max: 25 }
+            text: "Deceitfulness"
+          - roll: { min: 26, max: 35 }
+            text: "Deviousness"
+          - roll: { min: 36, max: 40 }
+            text: "Dexterity"
+          - roll: { min: 41, max: 45 }
+            text: "Erudition"
+          - roll: { min: 46, max: 50 }
+            text: "Examination"
+          - roll: { min: 51, max: 55 }
+            text: "Finesse"
+          - roll: { min: 56, max: 60 }
+            text: "Force"
+          - roll: { min: 61, max: 65 }
+            text: "Hostility"
+          - roll: { min: 66, max: 70 }
+            text: "Learning"
+          - roll: { min: 71, max: 75 }
+            text: "Resistance"
+          - roll: { min: 76, max: 80 }
+            text: "Resolve"
+          - roll: { min: 81, max: 85 }
+            text: "Speed"
+          - roll: { min: 86, max: 90 }
+            text: "Stamina"
+          - roll: { min: 91, max: 95 }
+            text: "Stealthiness"
+          - roll: { min: 96, max: 100 }
+            text: "Subtlety"
+      minor_splinter_bonus:
+        name: "Minor Splinter Bonus"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          When using this oracle to reveal the effect of a minor splinter bonus, take note of the result by marking it on the SPLINTER card. Then, reference this table when using it. Alternatively, you can write the bonus in the card abbreviately, or combine both styles.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 9 }
+            text: "You may reroll one challenge die. On a strong hit, take +1 momentum."
+          - roll: { min: 10, max: 18 }
+            text: "Add +2. On a strong hit, take +1 momentum."
+          - roll: { min: 19, max: 27 }
+            text: "On a miss, reroll one challenge die. On a hit, take +1 momentum."
+          - roll: { min: 28, max: 36 }
+            text: "On a miss, reroll one challenge die. On a strong hit, take +2 momentum."
+          - roll: { min: 37, max: 45 }
+            text: "On a hit, take +1 momentum and add +2 on your next move"
+          - roll: { min: 46, max: 54 }
+            text: "On a hit, add +2 on your next move. On a strong hit, take +2 momentum."
+          - roll: { min: 55, max: 63 }
+            text: "On a strong hit, take +3 momentum and +2 on your next move."
+          - roll: { min: 64, max: 72 }
+            text: "Add +1. On a hit, take +1 momentum and add +1 on your next move."
+          - roll: { min: 73, max: 81 }
+            text:
+              "Add +1. On a hit, add +1 on your next move. On a strong hit, take +1
+              momentum."
+          - roll: { min: 82, max: 90 }
+            text: "Add +1. On a strong hit, take +3 momentum and add +1 on your next move."
+          - roll: { min: 91, max: 100 }
+            text:
+              "Roll twice and take both bonuses with two different focuses. If you
+              decide to use the SPLINTER's power, choose which focus to use and
+              which bonus to take. Discard the SPLINTER when you roll a 5 or 6
+              on your action die (instead of a 6) after resolving the move."
+      splinter_shape:
+        name: "Splinter Shape"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text: "Practical or functional"
+          - roll: { min: 16, max: 20 }
+            text: "Geometric (complex shape)"
+          - roll: { min: 21, max: 25 }
+            text: "Geometric (cube)"
+          - roll: { min: 26, max: 30 }
+            text: "Geometric (pyramidical)"
+          - roll: { min: 31, max: 35 }
+            text: "Geometric (rhombus)"
+          - roll: { min: 36, max: 40 }
+            text: "Geometric (ring or torus)"
+          - roll: { min: 41, max: 45 }
+            text: "Geometric (sphere)"
+          - roll: { min: 46, max: 55 }
+            text: "Organic or curved"
+          - roll: { min: 56, max: 60 }
+            text: "Disc"
+          - roll: { min: 61, max: 65 }
+            text: "Spiky or pointy"
+          - roll: { min: 66, max: 68 }
+            text: "Amorphous"
+          - roll: { min: 69, max: 75 }
+            text: "Transforming"
+          - roll: { min: 76, max: 100 }
+            text: "Roll twice"
+  items:
+    name: "Items"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#e67e22"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      item_rarity_non_precursor_site:
+        name: "Item Rarity - Non-precursor Site"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to reveal the rarity of an item. Reference the column of the finding's environment.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 63 }
+            text: "Uncommon"
+          - roll: { min: 64, max: 88 }
+            text: "Notable"
+          - roll: { min: 89, max: 98 }
+            text: "Rare"
+          - roll: { min: 99, max: 100 }
+            text: "Exotic"
+      item_rarity_precursor_site:
+        name: "Item Rarity - Precursor Site"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to reveal the rarity of an item. Reference the column of the finding's environment.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text: "Uncommon"
+          - roll: { min: 16, max: 65 }
+            text: "Notable"
+          - roll: { min: 66, max: 90 }
+            text: "Rare"
+          - roll: { min: 91, max: 100 }
+            text: "Exotic"

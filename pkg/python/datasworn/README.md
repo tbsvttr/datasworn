@@ -7,6 +7,7 @@ Official Datasworn content packages for Python/Pydantic.
 - `datasworn-core` - Pydantic models for all Datasworn types
 - `datasworn-classic` - Ironsworn Classic ruleset
 - `datasworn-delve` - Ironsworn: Delve expansion
+- `datasworn-lodestar` - Ironsworn: Lodestar expansion
 - `datasworn-starforged` - Ironsworn: Starforged ruleset
 - `datasworn-sundered-isles` - Sundered Isles expansion
 
