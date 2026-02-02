@@ -191,10 +191,10 @@ Items extracted from `TODO`/`FIXME`/`HACK` comments in source files.
   — `src/schema/generic/PrimaryTypeNode.ts`
 - [ ] **DelveSiteDomain defaults**: Blocked — TypeBox TypeCompiler doesn't support defaults inside `Type.Intersect`; source YAML provides actual values
   — `src/schema/delve/DelveSiteDomain.ts`
-- [ ] **TagRule type safety**: Update TagRule type to match expected shape (2 locations)
+- [x] **TagRule type safety**: Replaced `any` with `TagRuleConfig` discriminated union (note: file is currently unused/experimental)
   — `src/schema/utils/generateRulesetSchemas.ts`
 - [ ] **Generate dummy schemas**: Generate placeholder schemas so overrides can be inserted later
-  — `src/schema/utils/generateRulesetSchemas.ts`
+  — `src/schema/utils/generateRulesetSchemas.ts` (currently unused/experimental)
 - [ ] **Computed properties**: Support function-based computed properties
   — `src/schema/utils/Computed.ts`
 - [x] **canonicalTags enums**: Convert `curse_behavior` and `region` from `Type.String()` to enums
