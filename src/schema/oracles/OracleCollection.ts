@@ -13,8 +13,6 @@ import {
 	SharedTextLabels
 } from './Table.js'
 
-// TODO: color property should get its own description: "An optional thematic color for this column. For an example, see \"Basic Creature Form\" (Starforged p. 337)"
-
 const OracleCollectionType = Utils.UnionEnumFromRecord(
 	{
 		tables: 'A grouping of separate tables.',

@@ -23,7 +23,8 @@ const PrimaryNodeBase = Type.Object({
 	),
 	color: Type.Optional(
 		Type.Ref(CssColor, {
-			description: 'A thematic color associated with this node.'
+			description:
+				'An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).'
 		})
 	),
 	images: Type.Optional(

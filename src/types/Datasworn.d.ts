@@ -68,7 +68,7 @@ export interface Asset {
 	 */
 	replaces?: AssetIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -369,7 +369,7 @@ export interface AssetCollection {
 	 */
 	replaces?: AssetCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -603,7 +603,7 @@ export interface AtlasCollection {
 	 */
 	replaces?: AtlasCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -677,7 +677,7 @@ export interface AtlasEntry {
 	 */
 	replaces?: AtlasEntryIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -984,7 +984,7 @@ export interface DelveSite {
 	 */
 	replaces?: DelveSiteIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -1165,7 +1165,7 @@ export interface DelveSiteDomain {
 	 */
 	replaces?: DelveSiteDomainIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -1458,7 +1458,7 @@ export interface DelveSiteTheme {
 	 */
 	replaces?: DelveSiteThemeIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -1761,7 +1761,7 @@ export interface EmbeddedActionRollMove {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -1810,7 +1810,7 @@ export interface EmbeddedNoRollMove {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -1852,7 +1852,7 @@ export interface EmbeddedOracleColumnText {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -1901,7 +1901,7 @@ export interface EmbeddedOracleColumnText2 {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -1950,7 +1950,7 @@ export interface EmbeddedOracleColumnText3 {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2008,7 +2008,7 @@ export interface EmbeddedOracleTableText {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2070,7 +2070,7 @@ export interface EmbeddedOracleTableText2 {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2134,7 +2134,7 @@ export interface EmbeddedOracleTableText3 {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2189,7 +2189,7 @@ export interface EmbeddedProgressRollMove {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2232,7 +2232,7 @@ export interface EmbeddedSpecialTrackMove {
 	suggestions?: Suggestions;
 	tags?: Tags;
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2528,7 +2528,7 @@ export interface MoveActionRoll {
 	 */
 	replaces?: MoveIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2600,7 +2600,7 @@ export interface MoveCategory {
 	 */
 	replaces?: MoveCategoryIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2714,7 +2714,7 @@ export interface MoveNoRoll {
 	 */
 	replaces?: MoveIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2856,7 +2856,7 @@ export interface MoveProgressRoll {
 	 */
 	replaces?: MoveIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -2942,7 +2942,7 @@ export interface MoveSpecialTrack {
 	 */
 	replaces?: MoveIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3015,7 +3015,7 @@ export interface Npc {
 	 */
 	replaces?: NpcIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3068,7 +3068,7 @@ export interface NpcCollection {
 	 */
 	replaces?: NpcCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3230,7 +3230,7 @@ export interface OracleColumnText {
 	 */
 	replaces?: OracleRollableIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3286,7 +3286,7 @@ export interface OracleColumnText2 {
 	 */
 	replaces?: OracleRollableIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3342,7 +3342,7 @@ export interface OracleColumnText3 {
 	 */
 	replaces?: OracleRollableIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3634,7 +3634,7 @@ export interface OracleTablesCollection {
 	 */
 	replaces?: OracleCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3696,7 +3696,7 @@ export interface OracleTableSharedRolls {
 	 */
 	replaces?: OracleCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3765,7 +3765,7 @@ export interface OracleTableSharedText {
 	 */
 	replaces?: OracleCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3833,7 +3833,7 @@ export interface OracleTableSharedText2 {
 	 */
 	replaces?: OracleCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3903,7 +3903,7 @@ export interface OracleTableSharedText3 {
 	 */
 	replaces?: OracleCollectionIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -3968,7 +3968,7 @@ export interface OracleTableText {
 	 */
 	replaces?: OracleRollableIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -4044,7 +4044,7 @@ export interface OracleTableText2 {
 	 */
 	replaces?: OracleRollableIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -4122,7 +4122,7 @@ export interface OracleTableText3 {
 	 */
 	replaces?: OracleRollableIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -4248,7 +4248,7 @@ export interface Rarity {
 	 */
 	replaces?: RarityIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];
@@ -5151,7 +5151,7 @@ export interface Truth {
 	 */
 	replaces?: TruthIdWildcard[];
 	/**
-	 * A thematic color associated with this node.
+	 * An optional thematic color associated with this node. For an example, see "Basic Creature Form" (Starforged p. 337).
 	 */
 	color?: CssColor;
 	images?: WebpImageUrl[];

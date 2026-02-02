@@ -187,9 +187,9 @@ Items extracted from `TODO`/`FIXME`/`HACK` comments in source files.
 
 ### Schema
 
-- [ ] **OracleCollection color description**: Add "An optional thematic color for this column" (see Starforged p. 337)
-  — `src/schema/oracles/OracleCollection.ts`
-- [ ] **DelveSiteDomain defaults**: Disabled because defaults make TypeCompiler upset — investigate
+- [x] **OracleCollection color description**: Added Starforged p. 337 reference to color property description
+  — `src/schema/generic/PrimaryTypeNode.ts`
+- [ ] **DelveSiteDomain defaults**: Blocked — TypeBox TypeCompiler doesn't support defaults inside `Type.Intersect`; source YAML provides actual values
   — `src/schema/delve/DelveSiteDomain.ts`
 - [ ] **TagRule type safety**: Update TagRule type to match expected shape (2 locations)
   — `src/schema/utils/generateRulesetSchemas.ts`
