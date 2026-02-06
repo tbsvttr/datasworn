@@ -29,13 +29,19 @@ npm install @datasworn/ironsworn-classic-delve
 
 ### Using this Fork
 
-The official npm packages haven't been updated since before rsek's last commits. This fork includes schema changes that make JSON files incompatible with the old npm validator. To use this fork in your project instead:
+The official npm packages haven't been updated since before rsek's last commits. This fork includes schema changes that make JSON files incompatible with the old npm validator. To use this fork directly from GitHub:
+
+> **Tip:** Pin to a specific commit SHA (e.g. `#73bbbea9`) instead of `#main` for reproducible installs.
 
 #### npm
 
 ```json
 {
   "dependencies": {
+    "@datasworn/core": "github:tbsvttr/datasworn#main&path:pkg/nodejs/@datasworn/core",
+    "@datasworn/starforged": "github:tbsvttr/datasworn#main&path:pkg/nodejs/@datasworn/starforged"
+  },
+  "overrides": {
     "@datasworn/core": "github:tbsvttr/datasworn#main&path:pkg/nodejs/@datasworn/core"
   }
 }
@@ -46,10 +52,18 @@ The official npm packages haven't been updated since before rsek's last commits.
 ```json
 {
   "dependencies": {
-    "@datasworn/core": "github:tbsvttr/datasworn/pkg/nodejs/@datasworn/core"
+    "@datasworn/core": "github:tbsvttr/datasworn#main&path:pkg/nodejs/@datasworn/core",
+    "@datasworn/starforged": "github:tbsvttr/datasworn#main&path:pkg/nodejs/@datasworn/starforged"
+  },
+  "pnpm": {
+    "overrides": {
+      "@datasworn/core": "github:tbsvttr/datasworn#main&path:pkg/nodejs/@datasworn/core"
+    }
   }
 }
 ```
+
+The `overrides` section is needed because data packages (like `@datasworn/starforged`) depend on `@datasworn/core`. Without it, the package manager may fail to resolve the dependency since the fork isn't published to npm.
 
 Available packages in `pkg/nodejs/`:
 
