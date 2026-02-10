@@ -1,0 +1,130 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+oracles:
+  celestial_brain:
+    name: "Celestial Brains"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#1abc9c"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+    contents:
+      asking_questions_when_undetermined:
+        name: "Celestial Brains Asking Questions - When - Undetermined Continuity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle if you want to determine when an event occurs. If you already know that an event happened in the past or future, reference the Determined Continuity column. Otherwise, reference the Undetermined Continuity column.
+
+          There are "when" questions that this oracle might not be suitable for answering, such as "When did the precursor civilizations fall" or "When will the universe end". In such cases, you may still use the oracle below solely for vaguely past or future answers but not specific time scales.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 2 }
+            text: "Never"
+          - roll: { min: 3, max: 7 }
+            text: "Distant past"
+          - roll: { min: 8, max: 14 }
+            text: "Years ago"
+          - roll: { min: 15, max: 22 }
+            text: "Months ago"
+          - roll: { min: 23, max: 32 }
+            text: "Weeks ago"
+          - roll: { min: 33, max: 47 }
+            text: "Days ago"
+          - roll: { min: 48, max: 50 }
+            text: "Hours ago"
+          - roll: { min: 51, max: 52 }
+            text: "Right now"
+          - roll: { min: 53, max: 55 }
+            text: "Hours from now"
+          - roll: { min: 56, max: 70 }
+            text: "Days from now"
+          - roll: { min: 71, max: 80 }
+            text: "Weeks from now"
+          - roll: { min: 81, max: 88 }
+            text: "Months from now"
+          - roll: { min: 89, max: 95 }
+            text: "Years from now"
+          - roll: { min: 96, max: 100 }
+            text: "Far future"
+      asking_questions_region:
+        name: "Celestial Brains Asking Questions - Region"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to broadly determine the "where" answer provided by a brain.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 55 }
+            text: "Terminus - Inner, mostly populated territories"
+          - roll: { min: 56, max: 90 }
+            text: "Outlands - Outer, mostly uncharted territories"
+          - roll: { min: 91, max: 100 }
+            text: "Expanse - Unexplored territories"
+      sentience_matrioshka:
+        name: "Celestial Brains Sentience - Matrioshka"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Some brains may have gained a high level of sentience by design, error, or synthetic evolution. When interacting with one of these constructs, roll on the table below to determine its overall intelligence.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 10 }
+            text: "Non-sentient"
+          - roll: { min: 11, max: 65 }
+            text: "Self-aware"
+          - roll: { min: 66, max: 100 }
+            text: "Truly conscious"
+      sentience_jupiter:
+        name: "Celestial Brains Sentience - Jupiter"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Some brains may have gained a high level of sentience by design, error, or synthetic evolution. When interacting with one of these constructs, roll on the table below to determine its overall intelligence.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 20 }
+            text: "Non-sentient"
+          - roll: { min: 21, max: 70 }
+            text: "Self-aware"
+          - roll: { min: 71, max: 100 }
+            text: "Truly conscious"
+      asking_questions_when_determined:
+        name: "Celestial Brains Asking Questions - When - Determined Continuity"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle if you want to determine when an event occurs. If you already know that an event happened in the past or future, reference the Determined Continuity column. Otherwise, reference the Undetermined Continuity column.
+
+          There are "when" questions that this oracle might not be suitable for answering, such as "When did the precursor civilizations fall" or "When will the universe end". In such cases, you may still use the oracle below solely for vaguely past or future answers but not specific time scales.
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 8 }
+            text: "Never"
+          - roll: { min: 9, max: 20 }
+            text: "Distant past or far future"
+          - roll: { min: 21, max: 34 }
+            text: "Years ago, or from now"
+          - roll: { min: 35, max: 50 }
+            text: "Months ago, or from now"
+          - roll: { min: 51, max: 66 }
+            text: "Weeks ago, or from now"
+          - roll: { min: 67, max: 80 }
+            text: "Days ago, or from now"
+          - roll: { min: 81, max: 92 }
+            text: "Hours ago, or from now"
+          - roll: { min: 93, max: 100 }
+            text: "Right now"

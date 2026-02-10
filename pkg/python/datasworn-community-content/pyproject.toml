@@ -9,7 +9,8 @@ dependencies = [
     "datasworn-community-content-ancient-wonders",
     "datasworn-community-content-fe-runners",
     "datasworn-community-content-starsmith",
-    "datasworn-core",
+		"datasworn-community-content-ironsmith",
+    # "datasworn-core",
 ]
 
 [tool.uv]
@@ -18,16 +19,18 @@ package = false # the project itself is not a package
 
 [tool.uv.workspace]
 members = [
-    "src/datasworn-community-content/ancient-wonders",
-    "src/datasworn-community-content/fe-runners",
-    "src/datasworn-community-content/starsmith",
+    "src/datasworn_community_content/ancient-wonders",
+    "src/datasworn_community_content/fe-runners",
+    "src/datasworn_community_content/starsmith",
+		"src/datasworn_community_content/ironsmith",
 ]
 
 [tool.uv.sources]
-datasworn-core = { path = "../datasworn/src/datasworn/core" }
+# datasworn-core = { path = "../datasworn/src/datasworn/core" }
 datasworn-community-content-ancient-wonders = { workspace = true }
 datasworn-community-content-fe-runners = { workspace = true }
 datasworn-community-content-starsmith = { workspace = true }
+datasworn-community-content-ironsmith = { workspace = true }
 
 [build-system]
 requires = ["uv_build>=0.9.18,<0.10.0"]

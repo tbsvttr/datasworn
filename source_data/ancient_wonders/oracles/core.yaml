@@ -1,0 +1,936 @@
+_id: ancient_wonders
+datasworn_version: "0.1.0"
+type: expansion
+ruleset: starforged
+oracles:
+  core:
+    name: "Core Oracles"
+    type: oracle_collection
+    oracle_type: tables
+    color: "#2c3e50"
+    _source:
+      <<: &Source
+        title: "Ancient Wonders"
+        license: https://creativecommons.org/licenses/by-nc-sa/4.0
+        url: https://www.drivethrurpg.com/en/product/505365/ancient-wonders
+        date: 2024-01-01
+        authors:
+          - name: Ludic Pen
+        page: 12
+    contents:
+      theme:
+        name: "Theme"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to generate an abstract noun that, if matched with the [Action](datasworn:oracle_rollable:starforged/core/action) oracle, provides an interpretative answer to most questions.
+        _source:
+          <<: *Source
+          page: 12
+        rows:
+          - roll: { min: 1, max: 1 }
+            text: "Ability"
+          - roll: { min: 2, max: 2 }
+            text: "Advantage"
+          - roll: { min: 3, max: 3 }
+            text: "Alliance"
+          - roll: { min: 4, max: 4 }
+            text: "Authority"
+          - roll: { min: 5, max: 5 }
+            text: "Balance"
+          - roll: { min: 6, max: 6 }
+            text: "Barrier"
+          - roll: { min: 7, max: 7 }
+            text: "Belief"
+          - roll: { min: 8, max: 8 }
+            text: "Blood"
+          - roll: { min: 9, max: 9 }
+            text: "Bond"
+          - roll: { min: 10, max: 10 }
+            text: "Burden"
+          - roll: { min: 11, max: 11 }
+            text: "Commerce"
+          - roll: { min: 12, max: 12 }
+            text: "Community"
+          - roll: { min: 13, max: 13 }
+            text: "Corruption"
+          - roll: { min: 14, max: 14 }
+            text: "Creation"
+          - roll: { min: 15, max: 15 }
+            text: "Crime"
+          - roll: { min: 16, max: 16 }
+            text: "Culture"
+          - roll: { min: 17, max: 17 }
+            text: "Cure"
+          - roll: { min: 18, max: 18 }
+            text: "Danger"
+          - roll: { min: 19, max: 19 }
+            text: "Death"
+          - roll: { min: 20, max: 20 }
+            text: "Debt"
+          - roll: { min: 21, max: 21 }
+            text: "Decay"
+          - roll: { min: 22, max: 22 }
+            text: "Deception"
+          - roll: { min: 23, max: 23 }
+            text: "Defense"
+          - roll: { min: 24, max: 24 }
+            text: "Destiny"
+          - roll: { min: 25, max: 25 }
+            text: "Disaster"
+          - roll: { min: 26, max: 26 }
+            text: "Discovery"
+          - roll: { min: 27, max: 27 }
+            text: "Disease"
+          - roll: { min: 28, max: 28 }
+            text: "Dominion"
+          - roll: { min: 29, max: 29 }
+            text: "Dream"
+          - roll: { min: 30, max: 30 }
+            text: "Duty"
+          - roll: { min: 31, max: 31 }
+            text: "Enemy"
+          - roll: { min: 32, max: 32 }
+            text: "Expedition"
+          - roll: { min: 33, max: 33 }
+            text: "Faction"
+          - roll: { min: 34, max: 34 }
+            text: "Fame"
+          - roll: { min: 35, max: 35 }
+            text: "Family"
+          - roll: { min: 36, max: 36 }
+            text: "Fear"
+          - roll: { min: 37, max: 37 }
+            text: "Fellowship"
+          - roll: { min: 38, max: 38 }
+            text: "Freedom"
+          - roll: { min: 39, max: 39 }
+            text: "Greed"
+          - roll: { min: 40, max: 40 }
+            text: "Hardship"
+          - roll: { min: 41, max: 41 }
+            text: "Hate"
+          - roll: { min: 42, max: 42 }
+            text: "Health"
+          - roll: { min: 43, max: 43 }
+            text: "History"
+          - roll: { min: 44, max: 44 }
+            text: "Home"
+          - roll: { min: 45, max: 45 }
+            text: "Honor"
+          - roll: { min: 46, max: 46 }
+            text: "Hope"
+          - roll: { min: 47, max: 47 }
+            text: "Humanity"
+          - roll: { min: 48, max: 48 }
+            text: "Innocence"
+          - roll: { min: 49, max: 49 }
+            text: "Knowledge"
+          - roll: { min: 50, max: 50 }
+            text: "Labor"
+          - roll: { min: 51, max: 51 }
+            text: "Language"
+          - roll: { min: 52, max: 52 }
+            text: "Law"
+          - roll: { min: 53, max: 53 }
+            text: "Legacy"
+          - roll: { min: 54, max: 54 }
+            text: "Life"
+          - roll: { min: 55, max: 55 }
+            text: "Love"
+          - roll: { min: 56, max: 56 }
+            text: "Memory"
+          - roll: { min: 57, max: 57 }
+            text: "Nature"
+          - roll: { min: 58, max: 58 }
+            text: "Opportunity"
+          - roll: { min: 59, max: 59 }
+            text: "Passage"
+          - roll: { min: 60, max: 60 }
+            text: "Peace"
+          - roll: { min: 61, max: 61 }
+            text: "Phenomenon"
+          - roll: { min: 62, max: 62 }
+            text: "Possession"
+          - roll: { min: 63, max: 63 }
+            text: "Power"
+          - roll: { min: 64, max: 64 }
+            text: "Price"
+          - roll: { min: 65, max: 65 }
+            text: "Pride"
+          - roll: { min: 66, max: 66 }
+            text: "Prize"
+          - roll: { min: 67, max: 67 }
+            text: "Prophesy"
+          - roll: { min: 68, max: 68 }
+            text: "Protection"
+          - roll: { min: 69, max: 69 }
+            text: "Quest"
+          - roll: { min: 70, max: 70 }
+            text: "Relationship"
+          - roll: { min: 71, max: 71 }
+            text: "Religion"
+          - roll: { min: 72, max: 72 }
+            text: "Reputation"
+          - roll: { min: 73, max: 73 }
+            text: "Resource"
+          - roll: { min: 74, max: 74 }
+            text: "Revenge"
+          - roll: { min: 75, max: 75 }
+            text: "Rival"
+          - roll: { min: 76, max: 76 }
+            text: "Rumor"
+          - roll: { min: 77, max: 77 }
+            text: "Safety"
+          - roll: { min: 78, max: 78 }
+            text: "Sanctuary"
+          - roll: { min: 79, max: 79 }
+            text: "Secret"
+          - roll: { min: 80, max: 80 }
+            text: "Solution"
+          - roll: { min: 81, max: 81 }
+            text: "Spirit"
+          - roll: { min: 82, max: 82 }
+            text: "Stranger"
+          - roll: { min: 83, max: 83 }
+            text: "Strategy"
+          - roll: { min: 84, max: 84 }
+            text: "Strength"
+          - roll: { min: 85, max: 85 }
+            text: "Superstition"
+          - roll: { min: 86, max: 86 }
+            text: "Supply"
+          - roll: { min: 87, max: 87 }
+            text: "Survival"
+          - roll: { min: 88, max: 88 }
+            text: "Technology"
+          - roll: { min: 89, max: 89 }
+            text: "Time"
+          - roll: { min: 90, max: 90 }
+            text: "Tool"
+          - roll: { min: 91, max: 91 }
+            text: "Trade"
+          - roll: { min: 92, max: 92 }
+            text: "Truth"
+          - roll: { min: 93, max: 93 }
+            text: "Vengeance"
+          - roll: { min: 94, max: 94 }
+            text: "Vow"
+          - roll: { min: 95, max: 95 }
+            text: "War"
+          - roll: { min: 96, max: 96 }
+            text: "Warning"
+          - roll: { min: 97, max: 97 }
+            text: "Weakness"
+          - roll: { min: 98, max: 98 }
+            text: "Wealth"
+          - roll: { min: 99, max: 99 }
+            text: "Weapon"
+          - roll: { min: 100, max: 100 }
+            text: "World"
+      # faction_type:
+      #   name: "Faction Type"
+      #   oracle_type: table_text
+      #   type: oracle_rollable
+      #   _source:
+      #     <<: *Source
+      #   rows:
+      #     - roll: { min: 1, max: 40 }
+      #       text: "[Dominion]"
+      #     - roll: { min: 41, max: 70 }
+      #       text: "[Guild]"
+      #     - roll: { min: 71, max: 100 }
+      #       text: "[Fringe Group]"
+      # faction_dominion:
+      #   name: "Faction Dominion"
+      #   oracle_type: table_text
+      #   type: oracle_rollable
+      #   _source:
+      #     <<: *Source
+      #   rows:
+      #     - roll: { min: 1, max: 5 }
+      #       text: "Agriculture"
+      #     - roll: { min: 6, max: 9 }
+      #       text: "Artistry"
+      #     - roll: { min: 10, max: 14 }
+      #       text: "Commerce"
+      #     - roll: { min: 15, max: 18 }
+      #       text: "Conquest"
+      #     - roll: { min: 19, max: 22 }
+      #       text: "Construction"
+      #     - roll: { min: 23, max: 26 }
+      #       text: "Diplomacy"
+      #     - roll: { min: 27, max: 30 }
+      #       text: "Education"
+      #     - roll: { min: 31, max: 34 }
+      #       text: "Environmentalism"
+      #     - roll: { min: 35, max: 38 }
+      #       text: "Exploration"
+      #     - roll: { min: 39, max: 42 }
+      #       text: "Faith"
+      #     - roll: { min: 43, max: 46 }
+      #       text: "History"
+      #     - roll: { min: 47, max: 50 }
+      #       text: "Honor"
+      #     - roll: { min: 51, max: 55 }
+      #       text: "Industry"
+      #     - roll: { min: 56, max: 59 }
+      #       text: "Isolationism"
+      #     - roll: { min: 60, max: 63 }
+      #       text: "Law"
+      #     - roll: { min: 64, max: 67 }
+      #       text: "Mysticism"
+      #     - roll: { min: 68, max: 71 }
+      #       text: "Pacifism"
+      #     - roll: { min: 72, max: 75 }
+      #       text: "Prophecy"
+      #     - roll: { min: 76, max: 79 }
+      #       text: "Science"
+      #     - roll: { min: 80, max: 83 }
+      #       text: "Secrecy"
+      #     - roll: { min: 84, max: 87 }
+      #       text: "Technology"
+      #     - roll: { min: 88, max: 91 }
+      #       text: "Treachery"
+      #     - roll: { min: 92, max: 96 }
+      #       text: "Warfare"
+      #     - roll: { min: 97, max: 100 }
+      #       text: "Wealth"
+      core_manipulators_ferrothermal_engine_status:
+        name: "Core Manipulators Ferrothermal Engine Status"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text:
+              "Partially constructed / The host planet is a rocky world (no atmosphere,
+              mono biome: bleak; page 72). The lack of an active core has
+              prevented a magnetic field from forming; the world has the
+              additional feature of having a highly irradiated surface as solar
+              winds bombard the world with powerful radiation while stripping
+              away any atmosphere and hydrosphere."
+          - roll: { min: 16, max: 50 }
+            text: 'Operational / When you roll
+              [Planet](datasworn:oracle_rollable:starforged/planet/class) to
+              generate its  features, reroll the "Anomalous World",
+              "Furnace  World", "Jovian World", "Rocky World", and
+              "Shattered World" Planetary Class results. The  world must have
+              at least a thin atmosphere.'
+          - roll: { min: 51, max: 85 }
+            text:
+              "Non-functional or offline / As operational. However, the world's core
+              has  begun cooling. Reduced effectiveness of the  magnetic field
+              has gradually allowed more radiation to reach the planet's
+              surface, making the world mildly irradiated."
+          - roll: { min: 86, max: 95 }
+            text:
+              "Dysfunctional / As non-functional or offline, but holes within the
+              magnetic field have allowed certain regions  of the world's
+              surface to be bombarded by powerful, radioactive winds, resulting
+              in highly irradiated regions and powerful earthquakes."
+          - roll: { min: 96, max: 100 }
+            text:
+              "Destroyed / The planet is a rocky world (no atmosphere,  mono biome:
+              bleak; page 72). The loss of its  active core has caused its
+              magnetic field to dissipate, allowing solar winds to bombard the
+              world with powerful radiation and strip away any atmosphere and
+              hydrosphere."
+      # faction_projects:
+      #   name: "Faction Projects"
+      #   oracle_type: table_text
+      #   type: oracle_rollable
+      #   _source:
+      #     <<: *Source
+      #   rows:
+      #     - roll: { min: 1, max: 3 }
+      #       text: "Broaden scope of the faction to include a new focus"
+      #     - roll: { min: 4, max: 6 }
+      #       text: "Build or secure a powerful device"
+      #     - roll: { min: 7, max: 9 }
+      #       text: "Consolidate control of a valuable commodity"
+      #     - roll: { min: 10, max: 12 }
+      #       text: "Destroy or defeat a rival"
+      #     - roll: { min: 13, max: 15 }
+      #       text: "Disrupt the operations of a rival"
+      #     - roll: { min: 16, max: 18 }
+      #       text: "Escape the control of another faction or power"
+      #     - roll: { min: 19, max: 21 }
+      #       text: "Establish a monument or memorial"
+      #     - roll: { min: 22, max: 24 }
+      #       text: "Establish a safe refuge or headquarters"
+      #     - roll: { min: 25, max: 27 }
+      #       text: "Expand operations to a new location or sector"
+      #     - roll: { min: 28, max: 30 }
+      #       text: "Form an alliance"
+      #     - roll: { min: 31, max: 33 }
+      #       text: "Fulfill a prophecy"
+      #     - roll: { min: 34, max: 36 }
+      #       text: "Give aid to a faction"
+      #     - roll: { min: 37, max: 39 }
+      #       text: "Harness unnatural or forbidden power"
+      #     - roll: { min: 40, max: 42 }
+      #       text: "Hunt down a rogue asset"
+      #     - roll: { min: 43, max: 45 }
+      #       text: "Incite conflict among rivals"
+      #     - roll: { min: 46, max: 48 }
+      #       text: "Negotiate an agreement"
+      #     - roll: { min: 49, max: 51 }
+      #       text: "Obtain a needed commodity"
+      #     - roll: { min: 52, max: 54 }
+      #       text: "Obtain an important cultural artifact"
+      #     - roll: { min: 55, max: 57 }
+      #       text: "Obtain crucial data or information"
+      #     - roll: { min: 58, max: 60 }
+      #       text: "Obtain incriminating information about a rival"
+      #     - roll: { min: 61, max: 63 }
+      #       text: "Prevent a prophecy"
+      #     - roll: { min: 64, max: 66 }
+      #       text: "Put down an internal revolt or rebellion"
+      #     - roll: { min: 67, max: 69 }
+      #       text: "Repay a debt"
+      #     - roll: { min: 70, max: 72 }
+      #       text: "Rescue or recover a group or asset"
+      #     - roll: { min: 73, max: 75 }
+      #       text: "Research an innovation"
+      #     - roll: { min: 76, max: 78 }
+      #       text: "Resolve a conflict with another faction"
+      #     - roll: { min: 79, max: 81 }
+      #       text: "Reunite splintered elements of the faction"
+      #     - roll: { min: 82, max: 84 }
+      #       text: "Seize a powerful artifact or valuable treasure"
+      #     - roll: { min: 85, max: 87 }
+      #       text: "Seize rival territory or operations"
+      #     - roll: { min: 88, max: 90 }
+      #       text: "Subsume another faction"
+      #     - roll: { min: 91, max: 93 }
+      #       text: "Transport a valued asset"
+      #     - roll: { min: 94, max: 96 }
+      #       text: "Usurp leadership within a rival faction"
+      #     - roll: { min: 97, max: 100 }
+      #       text: "[Action] + [Theme]"
+      core_manipulators_geothermal_stabilizer_status:
+        name: "Core Manipulators Geothermal Stabilizer Status"
+        oracle_type: table_text
+        type: oracle_rollable
+        _source:
+          <<: *Source
+        rows:
+          - roll: { min: 1, max: 15 }
+            text:
+              "Partially constructed / The planet is a furnace world (mono biome:
+              volcanic; page 52)."
+          - roll: { min: 16, max: 50 }
+            text: 'Operational / When you roll
+              [Planet](datasworn:oracle_rollable:starforged/planet/class) to
+              generate the features of the world that hosts the megastructure,
+              reroll the "Anomalous World", "Furnace World", "Jovian
+              "World", and "Shattered World" Planetary Class results. There
+              are no volcanoes, earthquakes, or magnetic disturbances.'
+          - roll: { min: 51, max: 85 }
+            text:
+              "Non-functional or offline / The planet is a furnace world (mono biome:
+              volcanic; page 52). Making the geothermal stabilizer functional
+              will have a quickly appearing effect on the world; all volcanic
+              activity and earthquakes cease and any magnetic disturbances
+              disappear. The planetary class (or biome) begins to change. For
+              example, a furnace world will change into a rocky world as
+              eruptions cease and previously exposed lava solidifies"
+          - roll: { min: 86, max: 95 }
+            text:
+              "Dysfunctional / As non-functional or offline, but the world also has
+              these additional, perpetual features: * Erratic magnetic field *
+              Powerful volcanic eruptions * Catastrophic earthquakes"
+          - roll: { min: 96, max: 100 }
+            text:
+              "Destroyed / The core is violently destabilized. The planet is a shattered
+              world (page 74)."
+      action:
+        name: "Action"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to generate a verb that, if matched with the [Theme](datasworn:oracle_rollable:starforged/core/theme) oracle, provides a prompt that can answer any goal, situation, or event.
+        _source:
+          <<: *Source
+          page: 12
+        rows:
+          - roll: { min: 1, max: 1 }
+            text: "Abandon"
+          - roll: { min: 2, max: 2 }
+            text: "Acquire"
+          - roll: { min: 3, max: 3 }
+            text: "Advance"
+          - roll: { min: 4, max: 4 }
+            text: "Affect"
+          - roll: { min: 5, max: 5 }
+            text: "Aid"
+          - roll: { min: 6, max: 6 }
+            text: "Arrive"
+          - roll: { min: 7, max: 7 }
+            text: "Assault"
+          - roll: { min: 8, max: 8 }
+            text: "Attack"
+          - roll: { min: 9, max: 9 }
+            text: "Avenge"
+          - roll: { min: 10, max: 10 }
+            text: "Avoid"
+          - roll: { min: 11, max: 11 }
+            text: "Await"
+          - roll: { min: 12, max: 12 }
+            text: "Begin"
+          - roll: { min: 13, max: 13 }
+            text: "Betray"
+          - roll: { min: 14, max: 14 }
+            text: "Bolster"
+          - roll: { min: 15, max: 15 }
+            text: "Breach"
+          - roll: { min: 16, max: 16 }
+            text: "Break"
+          - roll: { min: 17, max: 17 }
+            text: "Capture"
+          - roll: { min: 18, max: 18 }
+            text: "Challenge"
+          - roll: { min: 19, max: 19 }
+            text: "Change"
+          - roll: { min: 20, max: 20 }
+            text: "Charge"
+          - roll: { min: 21, max: 21 }
+            text: "Clash"
+          - roll: { min: 22, max: 22 }
+            text: "Command"
+          - roll: { min: 23, max: 23 }
+            text: "Communicate"
+          - roll: { min: 24, max: 24 }
+            text: "Construct"
+          - roll: { min: 25, max: 25 }
+            text: "Control"
+          - roll: { min: 26, max: 26 }
+            text: "Coordinate"
+          - roll: { min: 27, max: 27 }
+            text: "Create"
+          - roll: { min: 28, max: 28 }
+            text: "Debate"
+          - roll: { min: 29, max: 29 }
+            text: "Defeat"
+          - roll: { min: 30, max: 30 }
+            text: "Defend"
+          - roll: { min: 31, max: 31 }
+            text: "Deflect"
+          - roll: { min: 32, max: 32 }
+            text: "Defy"
+          - roll: { min: 33, max: 33 }
+            text: "Deliver"
+          - roll: { min: 34, max: 34 }
+            text: "Demand"
+          - roll: { min: 35, max: 35 }
+            text: "Depart"
+          - roll: { min: 36, max: 36 }
+            text: "Destroy"
+          - roll: { min: 37, max: 37 }
+            text: "Distract"
+          - roll: { min: 38, max: 38 }
+            text: "Eliminate"
+          - roll: { min: 39, max: 39 }
+            text: "Endure"
+          - roll: { min: 40, max: 40 }
+            text: "Escalate"
+          - roll: { min: 41, max: 41 }
+            text: "Escort"
+          - roll: { min: 42, max: 42 }
+            text: "Evade"
+          - roll: { min: 43, max: 43 }
+            text: "Explore"
+          - roll: { min: 44, max: 44 }
+            text: "Falter"
+          - roll: { min: 45, max: 45 }
+            text: "Find"
+          - roll: { min: 46, max: 46 }
+            text: "Finish"
+          - roll: { min: 47, max: 47 }
+            text: "Focus"
+          - roll: { min: 48, max: 48 }
+            text: "Follow"
+          - roll: { min: 49, max: 49 }
+            text: "Fortify"
+          - roll: { min: 50, max: 50 }
+            text: "Gather"
+          - roll: { min: 51, max: 51 }
+            text: "Guard"
+          - roll: { min: 52, max: 52 }
+            text: "Hide"
+          - roll: { min: 53, max: 53 }
+            text: "Hold"
+          - roll: { min: 54, max: 54 }
+            text: "Hunt"
+          - roll: { min: 55, max: 55 }
+            text: "Impress"
+          - roll: { min: 56, max: 56 }
+            text: "Initiate"
+          - roll: { min: 57, max: 57 }
+            text: "Inspect"
+          - roll: { min: 58, max: 58 }
+            text: "Investigate"
+          - roll: { min: 59, max: 59 }
+            text: "Journey"
+          - roll: { min: 60, max: 60 }
+            text: "Learn"
+          - roll: { min: 61, max: 61 }
+            text: "Leave"
+          - roll: { min: 62, max: 62 }
+            text: "Locate"
+          - roll: { min: 63, max: 63 }
+            text: "Lose"
+          - roll: { min: 64, max: 64 }
+            text: "Manipulate"
+          - roll: { min: 65, max: 65 }
+            text: "Mourn"
+          - roll: { min: 66, max: 66 }
+            text: "Move"
+          - roll: { min: 67, max: 67 }
+            text: "Oppose"
+          - roll: { min: 68, max: 68 }
+            text: "Overwhelm"
+          - roll: { min: 69, max: 69 }
+            text: "Persevere"
+          - roll: { min: 70, max: 70 }
+            text: "Preserve"
+          - roll: { min: 71, max: 71 }
+            text: "Protect"
+          - roll: { min: 72, max: 72 }
+            text: "Raid"
+          - roll: { min: 73, max: 73 }
+            text: "Reduce"
+          - roll: { min: 74, max: 74 }
+            text: "Refuse"
+          - roll: { min: 75, max: 75 }
+            text: "Reject"
+          - roll: { min: 76, max: 76 }
+            text: "Release"
+          - roll: { min: 77, max: 77 }
+            text: "Remove"
+          - roll: { min: 78, max: 78 }
+            text: "Research"
+          - roll: { min: 79, max: 79 }
+            text: "Resist"
+          - roll: { min: 80, max: 80 }
+            text: "Restore"
+          - roll: { min: 81, max: 81 }
+            text: "Reveal"
+          - roll: { min: 82, max: 82 }
+            text: "Risk"
+          - roll: { min: 83, max: 83 }
+            text: "Scheme"
+          - roll: { min: 84, max: 84 }
+            text: "Search"
+          - roll: { min: 85, max: 85 }
+            text: "Secure"
+          - roll: { min: 86, max: 86 }
+            text: "Seize"
+          - roll: { min: 87, max: 87 }
+            text: "Serve"
+          - roll: { min: 88, max: 88 }
+            text: "Share"
+          - roll: { min: 89, max: 89 }
+            text: "Strengthen"
+          - roll: { min: 90, max: 90 }
+            text: "Summon"
+          - roll: { min: 91, max: 91 }
+            text: "Support"
+          - roll: { min: 92, max: 92 }
+            text: "Suppress"
+          - roll: { min: 93, max: 93 }
+            text: "Surrender"
+          - roll: { min: 94, max: 94 }
+            text: "Swear"
+          - roll: { min: 95, max: 95 }
+            text: "Threaten"
+          - roll: { min: 96, max: 96 }
+            text: "Transform"
+          - roll: { min: 97, max: 97 }
+            text: "Uncover"
+          - roll: { min: 98, max: 98 }
+            text: "Uphold"
+          - roll: { min: 99, max: 99 }
+            text: "Weaken"
+          - roll: { min: 100, max: 100 }
+            text: "Withdraw"
+      descriptor:
+        name: "Descriptor"
+        oracle_type: table_text
+        type: oracle_rollable
+        summary: |-
+          Use this oracle to generate an adjective that, if matched with the [Focus](datasworn:oracle_rollable:starforged/core/focus) oracle, provides detail of a location, discovery, or encounter.
+        _source:
+          <<: *Source
+          page: 13
+        rows:
+          - roll: { min: 1, max: 1 }
+            text: "Abandoned"
+          - roll: { min: 2, max: 2 }
+            text: "Abundant"
+          - roll: { min: 3, max: 3 }
+            text: "Active"
+          - roll: { min: 4, max: 4 }
+            text: "Advanced"
+          - roll: { min: 5, max: 5 }
+            text: "Alien"
+          - roll: { min: 6, max: 6 }
+            text: "Ancient"
+          - roll: { min: 7, max: 7 }
+            text: "Archaic"
+          - roll: { min: 8, max: 8 }
+            text: "Automated"
+          - roll: { min: 9, max: 9 }
+            text: "Barren"
+          - roll: { min: 10, max: 10 }
+            text: "Biological"
+          - roll: { min: 11, max: 11 }
+            text: "Blighted"
+          - roll: { min: 12, max: 12 }
+            text: "Blocked"
+          - roll: { min: 13, max: 13 }
+            text: "Breached"
+          - roll: { min: 14, max: 14 }
+            text: "Broken"
+          - roll: { min: 15, max: 15 }
+            text: "Captured"
+          - roll: { min: 16, max: 16 }
+            text: "Chaotic"
+          - roll: { min: 17, max: 17 }
+            text: "Civilized"
+          - roll: { min: 18, max: 18 }
+            text: "Collapsed"
+          - roll: { min: 19, max: 19 }
+            text: "Colossal"
+          - roll: { min: 20, max: 20 }
+            text: "Confined"
+          - roll: { min: 21, max: 21 }
+            text: "Conspicuous"
+          - roll: { min: 22, max: 22 }
+            text: "Constructed"
+          - roll: { min: 23, max: 23 }
+            text: "Contested"
+          - roll: { min: 24, max: 24 }
+            text: "Corrupted"
+          - roll: { min: 25, max: 25 }
+            text: "Created"
+          - roll: { min: 26, max: 26 }
+            text: "Damaged"
+          - roll: { min: 27, max: 27 }
+            text: "Dead"
+          - roll: { min: 28, max: 28 }
+            text: "Deadly"
+          - roll: { min: 29, max: 29 }
+            text: "Decaying"
+          - roll: { min: 30, max: 30 }
+            text: "Defended"
+          - roll: { min: 31, max: 31 }
+            text: "Depleted"
+          - roll: { min: 32, max: 32 }
+            text: "Desolate"
+          - roll: { min: 33, max: 33 }
+            text: "Destroyed"
+          - roll: { min: 34, max: 34 }
+            text: "Diverse"
+          - roll: { min: 35, max: 35 }
+            text: "Empty"
+          - roll: { min: 36, max: 36 }
+            text: "Engulfed"
+          - roll: { min: 37, max: 37 }
+            text: "Ensnaring"
+          - roll: { min: 38, max: 38 }
+            text: "Expansive"
+          - roll: { min: 39, max: 39 }
+            text: "Exposed"
+          - roll: { min: 40, max: 40 }
+            text: "Fiery"
+          - roll: { min: 41, max: 41 }
+            text: "Foreboding"
+          - roll: { min: 42, max: 42 }
+            text: "Forgotten"
+          - roll: { min: 43, max: 43 }
+            text: "Forsaken"
+          - roll: { min: 44, max: 44 }
+            text: "Fortified"
+          - roll: { min: 45, max: 45 }
+            text: "Foul"
+          - roll: { min: 46, max: 46 }
+            text: "Fragile"
+          - roll: { min: 47, max: 47 }
+            text: "Frozen"
+          - roll: { min: 48, max: 48 }
+            text: "Functional"
+          - roll: { min: 49, max: 49 }
+            text: "Grim"
+          - roll: { min: 50, max: 50 }
+            text: "Guarded"
+          - roll: { min: 51, max: 51 }
+            text: "Haunted"
+          - roll: { min: 52, max: 52 }
+            text: "Hidden"
+          - roll: { min: 53, max: 53 }
+            text: "Hoarded"
+          - roll: { min: 54, max: 54 }
+            text: "Hostile"
+          - roll: { min: 55, max: 55 }
+            text: "Immersed"
+          - roll: { min: 56, max: 56 }
+            text: "Inaccessible"
+          - roll: { min: 57, max: 57 }
+            text: "Infested"
+          - roll: { min: 58, max: 58 }
+            text: "Inhabited"
+          - roll: { min: 59, max: 59 }
+            text: "Isolated"
+          - roll: { min: 60, max: 60 }
+            text: "Living"
+          - roll: { min: 61, max: 61 }
+            text: "Lost"
+          - roll: { min: 62, max: 62 }
+            text: "Lush"
+          - roll: { min: 63, max: 63 }
+            text: "Makeshift"
+          - roll: { min: 64, max: 64 }
+            text: "Mechanical"
+          - roll: { min: 65, max: 65 }
+            text: "Misleading"
+          - roll: { min: 66, max: 66 }
+            text: "Moving"
+          - roll: { min: 67, max: 67 }
+            text: "Mysterious"
+          - roll: { min: 68, max: 68 }
+            text: "Natural"
+          - roll: { min: 69, max: 69 }
+            text: "New"
+          - roll: { min: 70, max: 70 }
+            text: "Obscured"
+          - roll: { min: 71, max: 71 }
+            text: "Open"
+          - roll: { min: 72, max: 72 }
+            text: "Peaceful"
+          - roll: { min: 73, max: 73 }
+            text: "Perilous"
+          - roll: { min: 74, max: 74 }
+            text: "Pillaged"
+          - roll: { min: 75, max: 75 }
+            text: "Powerful"
+          - roll: { min: 76, max: 76 }
+            text: "Preserved"
+          - roll: { min: 77, max: 77 }
+            text: "Prominent"
+          - roll: { min: 78, max: 78 }
+            text: "Protected"
+          - roll: { min: 79, max: 79 }
+            text: "Radiant"
+          - roll: { min: 80, max: 80 }
+            text: "Rare"
+          - roll: { min: 81, max: 81 }
+            text: "Remote"
+          - roll: { min: 82, max: 82 }
+            text: "Rich"
+          - roll: { min: 83, max: 83 }
+            text: "Ruined"
+          - roll: { min: 84, max: 84 }
+            text: "Sacred"
+          - roll: { min: 85, max: 85 }
+            text: "Safe"
+          - roll: { min: 86, max: 86 }
+            text: "Sealed"
+          - roll: { min: 87, max: 87 }
+            text: "Secret"
+          - roll: { min: 88, max: 88 }
+            text: "Settled"
+          - roll: { min: 89, max: 89 }
+            text: "Shrouded"
+          - roll: { min: 90, max: 90 }
+            text: "Stolen"
+          - roll: { min: 91, max: 91 }
+            text: "Strange"
+          - roll: { min: 92, max: 92 }
+            text: "Subsurface"
+          - roll: { min: 93, max: 93 }
+            text: "Toxic"
+          - roll: { min: 94, max: 94 }
+            text: "Trapped"
+          - roll: { min: 95, max: 95 }
+            text: "Undiscovered"
+          - roll: { min: 96, max: 96 }
+            text: "Unnatural"
+          - roll: { min: 97, max: 97 }
+            text: "Unstable"
+          - roll: { min: 98, max: 98 }
+            text: "Untamed"
+          - roll: { min: 99, max: 99 }
+            text: "Valuable"
+          - roll: { min: 100, max: 100 }
+            text: "Violent"
+      # faction_fringe_group:
+      #   name: "Faction Fringe Group"
+      #   oracle_type: table_text
+      #   type: oracle_rollable
+      #   _source:
+      #     <<: *Source
+      #   rows:
+      #     - roll: { min: 1, max: 5 }
+      #       text: "Cultists"
+      #     - roll: { min: 6, max: 15 }
+      #       text: "Exiles"
+      #     - roll: { min: 16, max: 25 }
+      #       text: "Gangsters"
+      #     - roll: { min: 26, max: 35 }
+      #       text: "Hackers"
+      #     - roll: { min: 36, max: 40 }
+      #       text: "Monster hunters"
+      #     - roll: { min: 41, max: 50 }
+      #       text: "Pirates"
+      #     - roll: { min: 51, max: 60 }
+      #       text: "Raiders"
+      #     - roll: { min: 61, max: 70 }
+      #       text: "Rebels"
+      #     - roll: { min: 71, max: 75 }
+      #       text: "Rogue AI"
+      #     - roll: { min: 76, max: 85 }
+      #       text: "Scavengers"
+      #     - roll: { min: 86, max: 95 }
+      #       text: "Smugglers"
+      #     - roll: { min: 96, max: 100 }
+      #       text: "Roll twice"
+      # faction_guild:
+      #   name: "Faction Guild"
+      #   oracle_type: table_text
+      #   type: oracle_rollable
+      #   _source:
+      #     <<: *Source
+      #   rows:
+      #     - roll: { min: 1, max: 5 }
+      #       text: "Assassins"
+      #     - roll: { min: 6, max: 10 }
+      #       text: "Bounty Hunters"
+      #     - roll: { min: 11, max: 15 }
+      #       text: "Couriers"
+      #     - roll: { min: 16, max: 20 }
+      #       text: "Courtesans"
+      #     - roll: { min: 21, max: 25 }
+      #       text: "Engineers"
+      #     - roll: { min: 26, max: 30 }
+      #       text: "Healers"
+      #     - roll: { min: 31, max: 40 }
+      #       text: "Industrialists"
+      #     - roll: { min: 41, max: 50 }
+      #       text: "Mercenaries"
+      #     - roll: { min: 51, max: 60 }
+      #       text: "Merchants"
+      #     - roll: { min: 61, max: 65 }
+      #       text: "Mystics"
+      #     - roll: { min: 66, max: 75 }
+      #       text: "Navigators"
+      #     - roll: { min: 76, max: 80 }
+      #       text: "Peacekeepers"
+      #     - roll: { min: 81, max: 85 }
+      #       text: "Researchers"
+      #     - roll: { min: 86, max: 90 }
+      #       text: "Spies"
+      #     - roll: { min: 91, max: 100 }
+      #       text: "Roll twice"

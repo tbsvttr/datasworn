@@ -24,6 +24,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 6
         abilities:
           - enabled: true
             text: "You have a high yield aeroponics bay to enrich your food supply. When you [Resupply](datasworn:move:starforged/recover/resupply) at a settlement in need of fresh food, add +1 or take +2 momentum on a hit. The food takes some time to regrow."
@@ -40,10 +41,12 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 8
         abilities:
           - enabled: true
             text: "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) to oppose an invader within your vehicle, boost. On a strong hit, they were unprepared for your firepower. Add +1 to all moves until you roll a one on your action die."
-          - text: "You may prepare for engaging in combat by taking limited-use armaments from your armory. If you do, one time only, when you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray), choose your approach.
+          - text:
+              "You may prepare for engaging in combat by taking limited-use armaments from your armory. If you do, one time only, when you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray), choose your approach.
 
 
               \  * Going in hot: On a hit, take +2 momentum. On a strong hit with a match, also mark progress.
@@ -61,6 +64,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 10
         abilities:
           - enabled: true
             text: "Your set of hoverbike-sized drones are equipped with combat analytics to fight at your side.  When you [Strike](datasworn:move:starforged/combat/strike) aided by the drones, add +1.  When you [Clash](datasworn:move:starforged/combat/clash), take +1 momentum on a hit."
@@ -90,6 +94,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 12
         abilities:
           - enabled: true
             text: "Your command vehicle is sealed against high pressure environments and can travel underwater. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) to traverse hazardous underwater currents or areas of dangerous debris, boost."
@@ -106,6 +111,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 14
         abilities:
           - enabled: true
             text: "Your holodeck helps you practice and prepare. Declare a path asset you are training for, and set your training cycle to 0. Once per journey when you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition), you may train in the holodeck. If you do, roll +integrity or +an appropriate stat. On a hit, take +1 training cycle. When your training cycle is at 4 and you [Advance](datasworn:move:starforged/legacy/advance) to gain or upgrade the declared asset, it costs -1 XP. Then, set your training cycle to zero and declare a new path asset."
@@ -133,6 +139,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 16
         abilities:
           - enabled: true
             text: "Your deflector array clears the way for safer passage. When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) through debris or asteroid fields, boost."
@@ -149,6 +156,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 18
         abilities:
           - enabled: true
             text: "Your tractor beam can tow a smaller vehicle, asteroid or other willing object. When you make a move with the tractor beam, take +1 momentum on a hit."
@@ -169,6 +177,7 @@ assets:
       url: "https://playeveryrole.com/starsmith-products/"
       license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
+      page: 20
     contents:
       aquatic_hov:
         name: "Aquatic HOV"
@@ -180,6 +189,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 20
         abilities:
           - enabled: true
             text: "Your unarmed HOV can be launched from orbit to splashdown into deep waters and holds several people and their equipment. When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [React Under Fire](datasworn:move:starforged/combat/react_under_fire) to navigate through hazardous waters, avoid obstacles, or evade an attack, boost. A single use rocket may be fired to return the HOV to your command vehicle."
@@ -212,6 +222,7 @@ assets:
       url: "https://playeveryrole.com/starsmith-products/"
       license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
+      page: 22
     contents:
       constable:
         name: "Constable"
@@ -223,6 +234,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 24
         abilities:
           - enabled: true
             text: "You are an agent of the law from a nearby locality. Envision where your authority comes from. When you invoke the law and [Compel](datasworn:move:starforged/adventure/compel) a person familiar with the authority you are associated with, boost."
@@ -238,6 +250,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 24
         abilities:
           - enabled: true
             text: "You can mold cosmic energy into small, basic shapes with a physical form that last from a few moments to a few minutes. When you rest and meditate to gather this energy, roll +spirit. On a strong hit, take up to +3 energy. On a weak hit, take +2. On a miss, take +2 energy but [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-2). Your max energy is +5. When you make moves aided by your constructs to attack or overcome obstacles, add +2 and suffer -1 energy."
@@ -260,6 +273,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 26
         abilities:
           - enabled: true
             text: "Your DNA was spliced with that of another species, known or unknown. Envision a permanent change this bestows upon your body and how others react to it when they find out. When you make a move directly aided by this change, add +1. On a strong hit, take +2 momentum. On a miss with a match, [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-2) as your body temporarily rejects the DNA."
@@ -275,6 +289,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 28
         abilities:
           - enabled: true
             text: "You were trained in several languages and dialects found throughout the Forge. When you [Ask the Oracle](datasworn:move:starforged/fate/ask_the_oracle) if you know a specific language or dialect you encounter, increase the likelihood by one step."
@@ -290,6 +305,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 30
         abilities:
           - enabled: true
             text: "When you focus or meditate to [Gather Information](datasworn:move:starforged/adventure/gather_information) about a place, being, or situation (in person or remotely) by puzzling through the logical causes, effects or outcomes, boost."
@@ -305,6 +321,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 32
         abilities:
           - enabled: true
             text: "You can see brief moments into the future allowing you to attempt avoiding mistakes. When you score a miss on [Face Danger](datasworn:move:starforged/adventure/face_danger), [Clash](datasworn:move:starforged/combat/clash) or [React Under Fire](datasworn:move:starforged/combat/react_under_fire), you may choose for this to have been a vision of an avoidable future. If you do, [Lose Momentum](datasworn:move:starforged/suffer/lose_momentum) (-2), envision how you approach the situation differently and reroll any dice. On a strong hit, take +1 momentum."
@@ -320,6 +337,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 34
         abilities:
           - enabled: true
             text: "When you [Compel](datasworn:move:starforged/adventure/compel) by inserting a strong suggestion into someone's mind, roll +wits and roll with advantage. This suggestion may not force the person to cause harm to themself or to their loved ones, but it may induce reckless or unwise behavior. If the suggestion is for a behavior the target wants to perform anyway but is restraining themself, add +1 as well."
@@ -335,6 +353,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 36
         abilities:
           - enabled: true
             text: "When you [Face Danger](datasworn:move:starforged/adventure/face_danger) or [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by quantum tunneling to a position nearby and within sight, add +2 but treat a weak hit as a miss. If through an obstacle to a nearby but unseen location, treat a weak hit as a miss but take +2 momentum on a strong hit."
@@ -350,11 +369,13 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 38
         abilities:
           - enabled: true
             text: "When you take this asset, declare an oppressive faction that you are actively working against. When you [Swear an Iron Vow](datasworn:move:starforged/quest/swear_an_iron_vow) (formidable or greater) to protect a community from the actions or influence of that faction, reroll any dice. When you [Fulfill Your Vow](datasworn:move:starforged/quest/fulfill_your_vow) and score a hit, also mark 2 ticks on your bonds legacy track."
           - text: "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) or [Gain Ground](datasworn:move:starforged/combat/gain_ground) by sabotaging the equipment or resources of that faction, boost."
-          - text: "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) against forces of that faction, you may choose an approach.
+          - text:
+              "When you [Enter the Fray](datasworn:move:starforged/combat/enter_the_fray) against forces of that faction, you may choose an approach.
 
 
               \  * Call them out: Roll +heart and add +2.
@@ -374,10 +395,12 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 40
         abilities:
           - enabled: true
             text: "Your jet pack allows you to hover mid-air, make jet-assisted leaps, or fly over short distances. It has a max of 5 fuel and can be refueled on your command vehicle. When you make a move using your jet pack to overcome an obstacle or gain a better position, add +2 and suffer -1 fuel."
-          - text: "When you make a move reacting to an imminent threat by rapidly relocating using
+          - text:
+              "When you make a move reacting to an imminent threat by rapidly relocating using
 
               a burst from your jet pack, boost and suffer -1 fuel."
           - text: "When you [Undertake an Expedition](datasworn:move:starforged/exploration/undertake_an_expedition) (+edge) across difficult terrain assisted by your jet pack, suffer -1 fuel and take +1 momentum on a hit. On a strong hit with a match, you surge ahead. Mark progress."
@@ -398,6 +421,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 42
         abilities:
           - enabled: true
             text: "When you take this asset, mark your area of expertise. With sufficient time (a couple of hours or more), you may [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by doing scientific analysis of a problem or inventing prototype technology within your area of expertise. On a hit, one time only, when you or an ally make a move aided by this knowledge or device, take an automatic strong hit."
@@ -417,6 +441,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 44
         abilities:
           - enabled: true
             text: "When you [Swear an Iron Vow](datasworn:move:starforged/quest/swear_an_iron_vow) to provide someone or something protection for a time, set aside an action die with a value of 6. Then, when you [Face Danger](datasworn:move:starforged/adventure/face_danger) to protect that person or thing from harm, add an amount equal to half the die value (rounded up) and reduce its value by 1. When the die would reduce to 0, remove it."
@@ -432,6 +457,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 46
         abilities:
           - enabled: true
             text: "When you attempt to establish a telepathic link with another person who is physically present, roll +wits and boost. On a strong hit, you can speak with them telepathically from any distance. On a weak hit, as above, but the bond fades after a time. On a miss, as a weak hit, but it is stressful. [Endure Stress](datasworn:move:starforged/suffer/endure_stress) (-2).  Only twice your wits score of links may be active at a time."
@@ -447,6 +473,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 48
         abilities:
           - enabled: true
             text: "Chaotic void energies altered your physiology allowing you to shapeshift your appearance for short periods of time. When you make a move to deceive or avoid notice by altering your physical appearance, boost. On a weak hit, it is painful. [Endure Harm](datasworn:move:starforged/suffer/endure_harm) (-1). On a miss, the transformation fails. [Pay the Price](datasworn:move:starforged/fate/pay_the_price)."
@@ -462,6 +489,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 50
         abilities:
           - enabled: true
             text: "When you [Secure an Advantage](datasworn:move:starforged/adventure/secure_an_advantage) by finding a person with knowledge or experience about a specific topic, you may add +2. If you do, treat a weak hit as miss."
@@ -477,6 +505,7 @@ assets:
       url: "https://playeveryrole.com/starsmith-products/"
       license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
+      page: 52
     contents:
       crew_member:
         name: "Crew Member"
@@ -488,6 +517,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 52
         abilities:
           - enabled: true
             text: "Your crew member has a specific role aboard your command vehicle. When you make a move directly aided by their expertise, reroll your action die if its value is less than your crew member's health. If you then score a strong hit with a match, mark 1 tick on your bonds legacy track."
@@ -520,6 +550,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 54
         abilities:
           - enabled: true
             text: "Your flash fox uses its short-range teleportation to bypass obstacles. When you make a move by directing your flash fox to teleport you a short distance away, roll +its health and boost."
@@ -552,6 +583,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 56
         abilities:
           - enabled: true
             text: "Your cuddly furball coos softly to soothe your worries. When you [Hearten](datasworn:move:starforged/recover/hearten) in the presence of your furball, boost. However, stress can physically harm your friend. When you [Endure Harm](datasworn:move:starforged/suffer/endure_harm) in the presence of your furball, your [Companion Takes a Hit](datasworn:move:starforged/suffer/companion_takes_a_hit) as well."
@@ -584,6 +616,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 58
         abilities:
           - enabled: true
             text: "Utility: Your swarm can access a system, analyze a mechanical issue, or become a small tool to help work on equipment."
@@ -616,6 +649,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 60
         abilities:
           - enabled: true
             text: "Your waterwyrm uses its scaly hide and dagger-like teeth to overcome threats. When you make a move by sending the waterwyrm to directly attack a foe or smash an obstacle, roll +its health."
@@ -648,6 +682,7 @@ assets:
       url: "https://playeveryrole.com/starsmith-products/"
       license: "https://creativecommons.org/licenses/by/4.0"
       authors: *a1
+      page: 62
     contents:
       immortal_coil:
         name: "Immortal Coil"
@@ -659,9 +694,11 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 62
         abilities:
           - enabled: true
-            text: "You no longer benefit from [Heal](datasworn:move:starforged/recover/heal). Instead, you must [Repair](datasworn:move:starforged/recover/repair) to regain health as a mechanical companion would. Also, add the following options to spend repair points
+            text:
+              "You no longer benefit from [Heal](datasworn:move:starforged/recover/heal). Instead, you must [Repair](datasworn:move:starforged/recover/repair) to regain health as a mechanical companion would. Also, add the following options to spend repair points
 
 
               \  * Clear wounded: 2 points
@@ -679,10 +716,12 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 64
         abilities:
           - enabled: true
             text: "When you use your status as a rough and tough survivor to [Compel](datasworn:move:starforged/adventure/compel) people who know of your previous ship's destruction, boost."
-          - text: "When you [Sojourn](datasworn:move:starforged/recover/sojourn) and score a hit, you may regale the local community with the story of how you lost your previous ship. If you do, choose one:
+          - text:
+              "When you [Sojourn](datasworn:move:starforged/recover/sojourn) and score a hit, you may regale the local community with the story of how you lost your previous ship. If you do, choose one:
 
 
               \  * Revel in your tenacity: Take +2 momentum.
@@ -699,6 +738,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 66
         abilities:
           - enabled: true
             text: "When you are at 0 spirit and [Endure Stress](datasworn:move:starforged/suffer/endure_stress) or [Face Desolation](datasworn:move:starforged/threshold/face_desolation), add +1. You may then reroll your action die if its value is less than your health."
@@ -714,6 +754,7 @@ assets:
           url: "https://playeveryrole.com/starsmith-products/"
           license: "https://creativecommons.org/licenses/by/4.0"
           authors: *a1
+          page: 68
         abilities:
           - enabled: true
             text: "When you overcome a miss by shuffling through realities and calling forth one where you succeed, improve the result to a strong hit. Then, fill one segment of a six-segment clock representing stress on reality. When the clock is filled, a localized crack in the multiverse forms. Envision the dire consequences and reset the clock."

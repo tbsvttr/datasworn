@@ -47,10 +47,12 @@ PKG_SCOPE_COMMUNITY = "datasworn-community-content"
 PKG_CONFIG = {
     "classic": {"scope": PKG_SCOPE_OFFICIAL},
     "delve": {"scope": PKG_SCOPE_OFFICIAL},
+    "lodestar": {"scope": PKG_SCOPE_OFFICIAL},
     "starforged": {"scope": PKG_SCOPE_OFFICIAL},
     "sundered_isles": {"scope": PKG_SCOPE_OFFICIAL},
     "ancient_wonders": {"scope": PKG_SCOPE_COMMUNITY, "pkg_dir": "ancient-wonders"},
     "fe_runners": {"scope": PKG_SCOPE_COMMUNITY, "pkg_dir": "fe-runners"},
+    "ironsmith": {"scope": PKG_SCOPE_COMMUNITY},
     "starsmith": {"scope": PKG_SCOPE_COMMUNITY},
 }
 
@@ -84,7 +86,16 @@ def copy_json(args):
         sscope = snake(scope)
         # Use pkg_dir if specified, otherwise use the key name
         pkg_dir = pkg_config.get("pkg_dir", pkg)
-        pkg_root = PKG_ROOT / scope / "src" / scope / pkg_dir / "src" / sscope / snake(pkg_dir)
+        pkg_root = (
+            PKG_ROOT
+            / scope
+            / "src"
+            / sscope
+            / pkg_dir
+            / "src"
+            / sscope
+            / snake(pkg_dir)
+        )
         pkg_json_dest = pkg_root / "json"
         json_src = ROOT_OUTPUT / pkg / f"{pkg}.json"
 

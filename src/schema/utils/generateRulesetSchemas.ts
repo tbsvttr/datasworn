@@ -21,33 +21,6 @@ import { CollectableType, NonCollectableType, type Rules } from '../Rules.js'
 import { pascalCase } from './string.js'
 import { UnionEnum } from './UnionEnum.js'
 
-/** Build-time configuration for a tag rule, used to generate TypeBox schemas. */
-type TagRuleConfig =
-	| TagRuleConfigPrimitive
-	| TagRuleConfigEnum
-	| TagRuleConfigIdRef
-
-interface TagRuleConfigBase {
-	description: string
-	node_types: (CollectableType | NonCollectableType)[] | null
-}
-
-interface TagRuleConfigPrimitive extends TagRuleConfigBase {
-	value_type: 'boolean' | 'integer'
-	array?: boolean
-}
-
-interface TagRuleConfigEnum extends TagRuleConfigBase {
-	value_type: 'enum'
-	enum: string[]
-	array?: boolean
-}
-
-interface TagRuleConfigIdRef extends TagRuleConfigBase {
-	value_type: CollectableType | NonCollectableType
-	wildcard?: boolean
-}
-
 export function generateRulesetSchemas(rulesPackage: string, rules: Rules) {
 	const ConditionMeterKey = UnionEnum(
 		Object.keys(rules.condition_meters),
@@ -62,18 +35,14 @@ export function generateRulesetSchemas(rulesPackage: string, rules: Rules) {
 	return {
 		ConditionMeterKey,
 		StatKey,
-		// NB: Rules.tags schema shape doesn't match TagRuleConfig yet; this function is experimental
-		...generateTagSchemas(
-			rulesPackage,
-			rules.tags as unknown as Record<SnakeCase<string>, TagRuleConfig>
-		)
+		...generateTagSchemas(rulesPackage, rules.tags)
 	}
 }
 
 function generateTagSchema(
 	rulesPackage: string,
 	tagKey: string,
-	tagRule: TagRuleConfig
+	tagRule: any // TODO: update TagRule type to match expected shape
 ): SetRequired<TSchema, '$id' | 'description'> {
 	const $id = `${pascalCase(rulesPackage) + pascalCase(tagKey)}Tag`
 	const { description } = tagRule
@@ -111,12 +80,8 @@ function generateTagSchema(
 						description
 					}) as any)
 				: (Type.Ref(`${pascalCase(tagRule.value_type)}Id`, options) as any)
-		default: {
-			const _exhaustive: never = tagRule
-			throw new Error(
-				`Unknown tag value type: ${(_exhaustive as TagRuleConfig).value_type}`
-			)
-		}
+		default:
+			throw new Error(`Unknown tag value type: ${tagRule.value_type}`)
 	}
 }
 
@@ -124,7 +89,7 @@ const anyType = [...CollectableType.enum, ...NonCollectableType.enum]
 
 function generateTagSchemas(
 	rulesPackage: SnakeCase<string>,
-	tags: Record<SnakeCase<string>, TagRuleConfig>
+	tags: Record<SnakeCase<string>, any> // TODO: update TagRule type to match expected shape
 ) {
 	const allowedTagProperties = Object.fromEntries(
 		anyType.map((k: CollectableType | NonCollectableType) => [

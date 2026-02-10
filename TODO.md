@@ -187,14 +187,14 @@ Items extracted from `TODO`/`FIXME`/`HACK` comments in source files.
 
 ### Schema
 
-- [x] **OracleCollection color description**: Added Starforged p. 337 reference to color property description
-  — `src/schema/generic/PrimaryTypeNode.ts`
-- [ ] **DelveSiteDomain defaults**: Blocked — TypeBox TypeCompiler doesn't support defaults inside `Type.Intersect`; source YAML provides actual values
+- [ ] **OracleCollection color description**: Add "An optional thematic color for this column" (see Starforged p. 337)
+  — `src/schema/oracles/OracleCollection.ts`
+- [ ] **DelveSiteDomain defaults**: Disabled because defaults make TypeCompiler upset — investigate
   — `src/schema/delve/DelveSiteDomain.ts`
-- [x] **TagRule type safety**: Replaced `any` with `TagRuleConfig` discriminated union (note: file is currently unused/experimental)
+- [ ] **TagRule type safety**: Update TagRule type to match expected shape (2 locations)
   — `src/schema/utils/generateRulesetSchemas.ts`
 - [ ] **Generate dummy schemas**: Generate placeholder schemas so overrides can be inserted later
-  — `src/schema/utils/generateRulesetSchemas.ts` (currently unused/experimental)
+  — `src/schema/utils/generateRulesetSchemas.ts`
 - [ ] **Computed properties**: Support function-based computed properties
   — `src/schema/utils/Computed.ts`
 - [x] **canonicalTags enums**: Convert `curse_behavior` and `region` from `Type.String()` to enums
@@ -212,15 +212,14 @@ Items extracted from `TODO`/`FIXME`/`HACK` comments in source files.
 
 ### Scripts
 
-- [x] **Validation stubs**: Dead code — `jsl.ts` is not imported anywhere; no action needed
+- [ ] **Validation stubs**: Implement actual validation in `jsl.ts` format validators
   — `src/scripts/validation/jsl.ts`
 - [x] **ID error reporting**: Report specific files where bad IDs exist
   — `src/scripts/datasworn/writeDatasworn.ts`
 - [x] **ID ref optimization**: Grab all ID refs when deserializing to avoid redundant crawls
   — `src/scripts/datasworn/writeDatasworn.ts`
-- [x] **JTD patternProperties**: Verified safe — only called with Dictionary-style `TRecord` schemas; FIXME removed
   — `src/scripts/json-typedef/utils.ts`
-- [x] **JTD metadata omission**: Resolved — `SelectEnhancementFieldChoice` now present in JTD output; stale HACK removed
+- [ ] **JTD metadata omission**: Track down why some metadata gets omitted
   — `src/scripts/json-typedef/utils.ts`
 - [ ] **i18n extraction**: Complete implementation — requires `loadDataswornNamespace` or refactoring
   — `src/scripts/i18n/extractLocaleStrings.ts`, `src/scripts/i18n/index.ts`
