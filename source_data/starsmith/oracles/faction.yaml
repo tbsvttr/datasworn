@@ -32,6 +32,18 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: ▶Dominion - Governing power
+            roll:
+              min: 1
+              max: 40
+          - text: ▶Guild - Organization of specialists
+            roll:
+              min: 41
+              max: 70
+          - text: ▶Fring Group - Band of outlaws, outcasts, or rogues
+            roll:
+              min: 71
+              max: 100
           - text: ▶Corporation - Influential business that rules economically
             roll:
               min: 101
@@ -66,6 +78,174 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Agriculture
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 1
+              max: 5
+          - text: Artistry
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 6
+              max: 9
+          - text: Commerce
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 10
+              max: 14
+          - text: Conquest
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 15
+              max: 18
+          - text: Construction
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 19
+              max: 22
+          - text: Diplomacy
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 23
+              max: 26
+          - text: Education
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 27
+              max: 30
+          - text: Environmentalism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 31
+              max: 34
+          - text: Exploration
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 35
+              max: 38
+          - text: Faith
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 39
+              max: 42
+          - text: History
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 43
+              max: 46
+          - text: Honor
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 47
+              max: 50
+          - text: Industry
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 51
+              max: 55
+          - text: Isolationism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 56
+              max: 59
+          - text: Law
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 60
+              max: 63
+          - text: Mysticism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 64
+              max: 67
+          - text: Pacifism
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 68
+              max: 71
+          - text: Prophecy
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 72
+              max: 75
+          - text: Science
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 76
+              max: 79
+          - text: Secrecy
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 80
+              max: 83
+          - text: Technology
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 84
+              max: 87
+          - text: Treachery
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 88
+              max: 91
+          - text: Warfare
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 92
+              max: 96
+          - text: Wealth
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 97
+              max: 100
           - text: Altruism
             _i18n:
               text:
@@ -540,6 +720,111 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Assassins
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 1
+              max: 5
+          - text: Bounty Hunters
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 6
+              max: 10
+          - text: Couriers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 11
+              max: 15
+          - text: Courtesans
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 16
+              max: 20
+          - text: Engineers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 21
+              max: 25
+          - text: Healers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 26
+              max: 30
+          - text: Industrialists
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 31
+              max: 40
+          - text: Mercenaries
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 41
+              max: 50
+          - text: Merchants
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 51
+              max: 60
+          - text: Mystics
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 61
+              max: 65
+          - text: Navigators
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 66
+              max: 75
+          - text: Peacekeepers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 76
+              max: 80
+          - text: Researchers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 81
+              max: 85
+          - text: Spies
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 86
+              max: 90
+          - text: Roll twice
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 91
+              max: 100
           - text: Agriculturists
             _i18n:
               text:
@@ -1065,7 +1350,7 @@ oracles:
               min: 97
               max: 100
         type: oracle_rollable
-      role:
+      data_harvester_role:
         name: Data Harvesters Role
         oracle_type: table_text
         dice: 1d100
@@ -1117,6 +1402,72 @@ oracles:
               min: 81
               max: 88
           - text: Transmission experts
+            roll:
+              min: 89
+              max: 96
+          - text: Roll twice
+            oracle_rolls:
+              - oracle:
+                dice:
+                auto: true
+                duplicates: reroll
+                number_of_rolls: 2
+            roll:
+              min: 97
+              max: 100
+        type: oracle_rollable
+      religious_role:
+        name: Religious Role
+        oracle_type: table_text
+        dice: 1d100
+        _comment: Extension of the oracle table
+        _source: *Source
+        rows:
+          - text: Alien worshipers
+            roll:
+              min: 1
+              max: 8
+          - text: Crusaders
+            roll:
+              min: 9
+              max: 16
+          - text: Devout atheists
+            roll:
+              min: 17
+              max: 24
+          - text: Doomsayers
+            roll:
+              min: 25
+              max: 32
+          - text: Evangelists
+            roll:
+              min: 33
+              max: 40
+          - text: Monotheists
+            roll:
+              min: 41
+              max: 48
+          - text: Pantheists
+            roll:
+              min: 49
+              max: 56
+          - text: Puritans
+            roll:
+              min: 57
+              max: 64
+          - text: Self edifying
+            roll:
+              min: 65
+              max: 72
+          - text: Star worshipers
+            roll:
+              min: 73
+              max: 80
+          - text: Universalists
+            roll:
+              min: 81
+              max: 88
+          - text: Worshipers of the dead
             roll:
               min: 89
               max: 96
@@ -1388,6 +1739,138 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Broaden scope of the faction to include a new focus
+            roll:
+              min: 1
+              max: 3
+          - text: Build or secure a powerful device
+            roll:
+              min: 4
+              max: 6
+          - text: Consolidate control of a valuable commodity
+            roll:
+              min: 7
+              max: 9
+          - text: Destroy or defeat a rival
+            roll:
+              min: 10
+              max: 12
+          - text: Disrupt the operations of a rival
+            roll:
+              min: 13
+              max: 15
+          - text: Escape the control of another faction or power
+            roll:
+              min: 16
+              max: 18
+          - text: Establish a monument or memorial
+            roll:
+              min: 19
+              max: 21
+          - text: Establish a safe refuge or headquarters
+            roll:
+              min: 22
+              max: 24
+          - text: Expand operations to a new location or sector
+            roll:
+              min: 25
+              max: 27
+          - text: Form an alliance
+            roll:
+              min: 28
+              max: 30
+          - text: Fulfill a prophecy
+            roll:
+              min: 31
+              max: 33
+          - text: Give aid to a faction
+            roll:
+              min: 34
+              max: 36
+          - text: Harness unnatural or forbidden power
+            roll:
+              min: 37
+              max: 39
+          - text: Hunt down a rogue asset
+            roll:
+              min: 40
+              max: 42
+          - text: Incite conflict among rivals
+            roll:
+              min: 43
+              max: 45
+          - text: Negotiate an agreement
+            roll:
+              min: 46
+              max: 48
+          - text: Obtain a needed commodity
+            roll:
+              min: 49
+              max: 51
+          - text: Obtain an important cultural artifact
+            roll:
+              min: 52
+              max: 54
+          - text: Obtain crucial data or information
+            roll:
+              min: 55
+              max: 57
+          - text: Obtain incriminating information about a rival
+            roll:
+              min: 58
+              max: 60
+          - text: Prevent a prophecy
+            roll:
+              min: 61
+              max: 63
+          - text: Put down an internal revolt or rebellion
+            roll:
+              min: 64
+              max: 66
+          - text: Repay a debt
+            roll:
+              min: 67
+              max: 69
+          - text: Rescue or recover a group or asset
+            roll:
+              min: 70
+              max: 72
+          - text: Research an innovation
+            roll:
+              min: 73
+              max: 75
+          - text: Resolve a conflict with another faction
+            roll:
+              min: 76
+              max: 78
+          - text: Reunite splintered elements of the faction
+            roll:
+              min: 79
+              max: 81
+          - text: Seize a powerful artifact or valuable treasure
+            roll:
+              min: 82
+              max: 84
+          - text: Seize rival territory or operations
+            roll:
+              min: 85
+              max: 87
+          - text: Subsume another faction
+            roll:
+              min: 88
+              max: 90
+          - text: Transport a valued asset
+            roll:
+              min: 91
+              max: 93
+          - text: Usurp leadership within a rival faction
+            roll:
+              min: 94
+              max: 96
+          - text: '[Action](datasworn:oracle_rollable:starforged/core/action) + [Theme](datasworn:oracle_rollable:starforged/core/theme)'
+            roll:
+              min: 97
+              max: 100
           - text: Blackmail an asset to prevent them going rogue
             roll:
               min: 101
@@ -1662,6 +2145,118 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Antagonistic towards
+            roll:
+              min: 1
+              max: 4
+          - text: Apathetic or unaware of
+            roll:
+              min: 5
+              max: 8
+          - text: Betrayed by
+            roll:
+              min: 9
+              max: 11
+          - text: Broke faith with
+            roll:
+              min: 12
+              max: 14
+          - text: Distrustful of
+            roll:
+              min: 15
+              max: 18
+          - text: Does business with
+            roll:
+              min: 19
+              max: 22
+          - text: Extorted by
+            roll:
+              min: 23
+              max: 25
+          - text: Holds contempt for
+            roll:
+              min: 26
+              max: 29
+          - text: Holds leverage over
+            roll:
+              min: 30
+              max: 33
+          - text: In control of
+            roll:
+              min: 34
+              max: 36
+          - text: Maneuvering against
+            roll:
+              min: 37
+              max: 40
+          - text: Needs aid from
+            roll:
+              min: 41
+              max: 44
+          - text: Negotiating with
+            roll:
+              min: 45
+              max: 47
+          - text: Open alliance with
+            roll:
+              min: 48
+              max: 51
+          - text: Owes a debt to
+            roll:
+              min: 52
+              max: 54
+          - text: Shares a rivalry with
+            roll:
+              min: 55
+              max: 58
+          - text: Shares power with
+            roll:
+              min: 59
+              max: 61
+          - text: Shows respect for
+            roll:
+              min: 62
+              max: 64
+          - text: Splintered from
+            roll:
+              min: 65
+              max: 67
+          - text: Subordinate to
+            roll:
+              min: 68
+              max: 70
+          - text: Supplied with resources by
+            roll:
+              min: 71
+              max: 74
+          - text: Supplies resources to
+            roll:
+              min: 75
+              max: 78
+          - text: Temporary alliance with
+            roll:
+              min: 79
+              max: 81
+          - text: Tolerates
+            roll:
+              min: 82
+              max: 85
+          - text: Trades favors with
+            roll:
+              min: 86
+              max: 89
+          - text: Unjustly accused by
+            roll:
+              min: 90
+              max: 92
+          - text: Warring with
+            roll:
+              min: 93
+              max: 96
+          - text: Roll twice
+            roll:
+              min: 97
+              max: 100
           - text: Acquired sensitive information from
             roll:
               min: 101
@@ -1908,6 +2503,356 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Ancient
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 1
+              max: 2
+          - text: Ashen
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 3
+              max: 4
+          - text: Awakened
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 5
+              max: 6
+          - text: Azure
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 7
+              max: 8
+          - text: Blessed
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 9
+              max: 10
+          - text: Bloody
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 11
+              max: 12
+          - text: Broken
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 13
+              max: 14
+          - text: Ceaseless
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 15
+              max: 16
+          - text: Crimson
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 17
+              max: 18
+          - text: Cursed
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 19
+              max: 20
+          - text: Dawning
+            _i18n:
+              text:
+                part_of_speech: gerund
+            roll:
+              min: 21
+              max: 22
+          - text: Dissident
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 23
+              max: 24
+          - text: Ebon
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 25
+              max: 26
+          - text: Elder
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 27
+              max: 28
+          - text: Enduring
+            _i18n:
+              text:
+                part_of_speech: gerund
+            roll:
+              min: 29
+              max: 30
+          - text: Enlightened
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 31
+              max: 32
+          - text: Exalted
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 33
+              max: 34
+          - text: Fallen
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 35
+              max: 36
+          - text: Fated
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 37
+              max: 38
+          - text: First
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 39
+              max: 40
+          - text: Forgotten
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 41
+              max: 42
+          - text: Forsaken
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 43
+              max: 44
+          - text: Gloaming
+            _i18n:
+              text:
+                part_of_speech: gerund
+            roll:
+              min: 45
+              max: 46
+          - text: Golden
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 47
+              max: 48
+          - text: Hidden
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 49
+              max: 50
+          - text: Infernal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 51
+              max: 52
+          - text: Infinite
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 53
+              max: 54
+          - text: Iron
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 55
+              max: 56
+          - text: Kindred
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 57
+              max: 58
+          - text: Obsidian
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 59
+              max: 60
+          - text: Radiant
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 61
+              max: 62
+          - text: Risen
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 63
+              max: 64
+          - text: Sacred
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 65
+              max: 66
+          - text: Sapphire
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 67
+              max: 68
+          - text: Scarlet
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 69
+              max: 70
+          - text: Serene
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 71
+              max: 72
+          - text: Shattered
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 73
+              max: 74
+          - text: Shining
+            _i18n:
+              text:
+                part_of_speech: gerund
+            roll:
+              min: 75
+              max: 76
+          - text: Silent
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 77
+              max: 78
+          - text: Silver
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 79
+              max: 80
+          - text: Sovereign
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 81
+              max: 82
+          - text: Stellar
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 83
+              max: 84
+          - text: Sundered
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 85
+              max: 86
+          - text: Supreme
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 87
+              max: 88
+          - text: Undying
+            _i18n:
+              text:
+                part_of_speech: gerund
+            roll:
+              min: 89
+              max: 90
+          - text: Unified
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 91
+              max: 92
+          - text: United
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 93
+              max: 94
+          - text: Universal
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 95
+              max: 96
+          - text: Veiled
+            _i18n:
+              text:
+                part_of_speech: adjective
+            roll:
+              min: 97
+              max: 98
+          - text: Wandering
+            _i18n:
+              text:
+                part_of_speech: gerund
+            roll:
+              min: 99
+              max: 100
           - text: Abyssal
             _i18n:
               text:
@@ -2618,6 +3563,181 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Accord
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 1
+              max: 4
+          - text: Alliance
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 5
+              max: 8
+          - text: Ascendancy
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 9
+              max: 12
+          - text: Circle
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 13
+              max: 16
+          - text: Coalition
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 17
+              max: 20
+          - text: Collective
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 21
+              max: 24
+          - text: Commonwealth
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 25
+              max: 28
+          - text: Confederation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 29
+              max: 32
+          - text: Consortium
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 33
+              max: 36
+          - text: Council
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 37
+              max: 40
+          - text: Court
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 41
+              max: 44
+          - text: Covenant
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 45
+              max: 48
+          - text: Dominion
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 49
+              max: 52
+          - text: Empire
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 53
+              max: 56
+          - text: Federation
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 57
+              max: 60
+          - text: Imperium
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 61
+              max: 64
+          - text: League
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 65
+              max: 68
+          - text: Legion
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 69
+              max: 72
+          - text: Order
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 73
+              max: 76
+          - text: Pact
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 77
+              max: 80
+          - text: Regiment
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 81
+              max: 84
+          - text: Republic
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 85
+              max: 88
+          - text: Sphere
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 89
+              max: 92
+          - text: Syndicate
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 93
+              max: 96
+          - text: Union
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 97
+              max: 100
           - text: Academy
             _i18n:
               text:
@@ -2978,6 +4098,356 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Blades
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 1
+              max: 2
+          - text: Builders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 3
+              max: 4
+          - text: Daggers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 5
+              max: 6
+          - text: Defenders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 7
+              max: 8
+          - text: Disciples
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 9
+              max: 10
+          - text: Domains
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 11
+              max: 12
+          - text: Drifters
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 13
+              max: 14
+          - text: Embers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 15
+              max: 16
+          - text: Flames
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 17
+              max: 18
+          - text: Fleet
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 19
+              max: 20
+          - text: Guardians
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 21
+              max: 22
+          - text: Hammers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 23
+              max: 24
+          - text: Harbingers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 25
+              max: 26
+          - text: Heralds
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 27
+              max: 28
+          - text: Hounds
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 29
+              max: 30
+          - text: Hunters
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 31
+              max: 32
+          - text: Jackals
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 33
+              max: 34
+          - text: Keepers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 35
+              max: 36
+          - text: Knights
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 37
+              max: 38
+          - text: Menders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 39
+              max: 40
+          - text: Outcasts
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 41
+              max: 42
+          - text: Phantoms
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 43
+              max: 44
+          - text: Planets
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 45
+              max: 46
+          - text: Raiders
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 47
+              max: 48
+          - text: Ravens
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 49
+              max: 50
+          - text: Realms
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 51
+              max: 52
+          - text: Reavers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 53
+              max: 54
+          - text: Relics
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 55
+              max: 56
+          - text: Seekers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 57
+              max: 58
+          - text: Sentinels
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 59
+              max: 60
+          - text: Serpents
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 61
+              max: 62
+          - text: Servants
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 63
+              max: 64
+          - text: Shadows
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 65
+              max: 66
+          - text: Shards
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 67
+              max: 68
+          - text: Skulls
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 69
+              max: 70
+          - text: Souls
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 71
+              max: 72
+          - text: Specters
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 73
+              max: 74
+          - text: Stars
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 75
+              max: 76
+          - text: Suns
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 77
+              max: 78
+          - text: Swarm
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 79
+              max: 80
+          - text: Swords
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 81
+              max: 82
+          - text: Talons
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 83
+              max: 84
+          - text: Vanguards
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 85
+              max: 86
+          - text: Wardens
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 87
+              max: 88
+          - text: Watchers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 89
+              max: 90
+          - text: Wolves
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 91
+              max: 92
+          - text: Worlds
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 93
+              max: 94
+          - text: Wraiths
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 95
+              max: 96
+          - text: Wreckers
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 97
+              max: 98
+          - text: Wrights
+            _i18n:
+              text:
+                part_of_speech: common_noun
+            roll:
+              min: 99
+              max: 100
           - text: Adherents
             _i18n:
               text:
@@ -3688,6 +5158,138 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Ancient or coded language
+            roll:
+              min: 1
+              max: 3
+          - text: Animal or creature motif used as a faction symbol
+            roll:
+              min: 4
+              max: 6
+          - text: Banishes the disloyal
+            roll:
+              min: 7
+              max: 9
+          - text: Body augmentations are respected and valued
+            roll:
+              min: 10
+              max: 12
+          - text: Body ornamentations signify castes or roles
+            roll:
+              min: 13
+              max: 15
+          - text: Conceals individual identity
+            roll:
+              min: 16
+              max: 18
+          - text: Dependent on an addictive substance
+            roll:
+              min: 19
+              max: 21
+          - text: Distinctive or elaborate clothing
+            roll:
+              min: 22
+              max: 24
+          - text: Elite soldiers provide defense or serve as bodyguards
+            roll:
+              min: 25
+              max: 27
+          - text: Favors a signature weapon
+            roll:
+              min: 28
+              max: 30
+          - text: Guided by superstition or prophecy
+            roll:
+              min: 31
+              max: 33
+          - text: Heavily stratified social structure
+            roll:
+              min: 34
+              max: 36
+          - text: Hoards precursor artifacts
+            roll:
+              min: 37
+              max: 39
+          - text: Honors the fallen through unusual death rites
+            roll:
+              min: 40
+              max: 42
+          - text: Idolizes a long-dead founder or martyr
+            roll:
+              min: 43
+              max: 45
+          - text: Keeps exhaustive records or archives
+            roll:
+              min: 46
+              max: 48
+          - text: Lives off-planet in spaceborne fleets
+            roll:
+              min: 49
+              max: 51
+          - text: Members take a new name when joining the faction
+            roll:
+              min: 52
+              max: 54
+          - text: Nomadic people and mobile operations
+            roll:
+              min: 55
+              max: 57
+          - text: Operates under strict codes or laws
+            roll:
+              min: 58
+              max: 60
+          - text: Recognizes others through a distinctive greeting or gesture
+            roll:
+              min: 61
+              max: 63
+          - text: Reliant on machine intelligence
+            roll:
+              min: 64
+              max: 66
+          - text: Resolves disputes through formal duels
+            roll:
+              min: 67
+              max: 69
+          - text: Rites of adulthood or ascension
+            roll:
+              min: 70
+              max: 72
+          - text: Shuns or distrusts machine intelligence
+            roll:
+              min: 73
+              max: 75
+          - text: Starships share a distinctive and recognizable profile
+            roll:
+              min: 76
+              max: 78
+          - text: Suspicious of outsiders
+            roll:
+              min: 79
+              max: 81
+          - text: Symbiotic relationship with a specific type of creature
+            roll:
+              min: 82
+              max: 84
+          - text: Trades in a unique currency or commodity
+            roll:
+              min: 85
+              max: 87
+          - text: Trains in a demanding physical discipline or martial art
+            roll:
+              min: 88
+              max: 90
+          - text: Wields unnatural abilities or strange technologies
+            roll:
+              min: 91
+              max: 93
+          - text: Work or environment causes mutations
+            roll:
+              min: 94
+              max: 96
+          - text: '[Action](datasworn:oracle_rollable:starforged/core/action) + [Theme](datasworn:oracle_rollable:starforged/core/theme)'
+            roll:
+              min: 97
+              max: 100          
           - text: Amalgamation of languages used
             roll:
               min: 101
@@ -3962,6 +5564,138 @@ oracles:
         _comment: Extension of the oracle table
         _source: *Source
         rows:
+          - text: Caught in the crossfire of feuding factions
+            roll:
+              min: 1
+              max: 3
+          - text: Colluding with a criminal enterprise
+            roll:
+              min: 4
+              max: 6
+          - text: Corrupted by a dangerous power
+            roll:
+              min: 7
+              max: 9
+          - text: Critical resource is in short supply
+            roll:
+              min: 10
+              max: 12
+          - text: Defenses are overextended
+            roll:
+              min: 13
+              max: 15
+          - text: Developing revolutionary technology
+            roll:
+              min: 16
+              max: 18
+          - text: Digital systems are corrupted or infiltrated
+            roll:
+              min: 19
+              max: 21
+          - text: Heavily in debt
+            roll:
+              min: 22
+              max: 24
+          - text: Hit hard by a recent attack or calamity
+            roll:
+              min: 25
+              max: 27
+          - text: Holds a powerful artifact
+            roll:
+              min: 28
+              max: 30
+          - text: Holds incriminating information against a leader or faction
+            roll:
+              min: 31
+              max: 33
+          - text: Hoarding a valuable commodity
+            roll:
+              min: 34
+              max: 36
+          - text: Infiltrated by a rival faction
+            roll:
+              min: 37
+              max: 39
+          - text: Knows the location of a fabled treasure or lost technology
+            roll:
+              min: 40
+              max: 42
+          - text: Leaders are haunted by a dark prophecy
+            roll:
+              min: 43
+              max: 45
+          - text: Leaders are incompetent
+            roll:
+              min: 46
+              max: 48
+          - text: Leaders are puppets of another power or faction
+            roll:
+              min: 49
+              max: 51
+          - text: Lesser members of the leadership are plotting a coup
+            roll:
+              min: 52
+              max: 54
+          - text: New belief or religion is creating a schism among members
+            roll:
+              min: 55
+              max: 57
+          - text: Operations are a false front for their true purpose
+            roll:
+              min: 58
+              max: 60
+          - text: Overdependence on a failing or vulnerable technology
+            roll:
+              min: 61
+              max: 63
+          - text: Plagued by infighting and low morale
+            roll:
+              min: 64
+              max: 66
+          - text: Plotting to betray an allied faction
+            roll:
+              min: 67
+              max: 69
+          - text: Preparing a major offensive or operation
+            roll:
+              min: 70
+              max: 72
+          - text: Pulling the strings of a leader or faction
+            roll:
+              min: 73
+              max: 75
+          - text: Recently acquired an unexpected fortune
+            roll:
+              min: 76
+              max: 78
+          - text: Secretly supporting a reviled faction
+            roll:
+              min: 79
+              max: 81
+          - text: Sheltering an infamous or dangerous fugitive
+            roll:
+              min: 82
+              max: 84
+          - text: Suffered destructive sabotage from within
+            roll:
+              min: 85
+              max: 87
+          - text: Suffering a shortage of key workers or personnel
+            roll:
+              min: 88
+              max: 90
+          - text: Uprising or revolt is brewing from within
+            roll:
+              min: 91
+              max: 93
+          - text: Vulnerable to attack or aggression
+            roll:
+              min: 94
+              max: 96
+          - text: "[Action](datasworn:oracle_rollable:starforged/core/action) + [Theme](datasworn:oracle_rollable:starforged/core/theme)"
+            roll:
+              min: 97
+              max: 100
           - text: Asked to ally with both sides of feuding factions
             roll:
               min: 101
