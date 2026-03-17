@@ -14,6 +14,7 @@ assets:
         title: 'Ironsmith: Darkness'
         authors:
           - name: Eric Bright
+      page: 50
     contents:
       the_darkness_within_definition:
         name: 'The Darkness Within (Definition)'
@@ -21,6 +22,7 @@ assets:
         category: 'Path'
         _source:
           <<: *Source
+          page: 52
         abilities: []
         options:
           define_the_dark_power_in_you:
@@ -38,6 +40,7 @@ assets:
         category: 'Path'
         _source:
           <<: *Source
+          page: 53
         abilities:
           - enabled: true
             text: 'You gain access to the moves [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness), [Resist the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness), and [Succumb to Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness).'
