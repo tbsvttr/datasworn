@@ -40,7 +40,7 @@ oracles:
             roll:
               min: 41
               max: 70
-          - text: ▶Fring Group - Band of outlaws, outcasts, or rogues
+          - text: ▶Fringe Group - Band of outlaws, outcasts, or rogues
             roll:
               min: 71
               max: 100
