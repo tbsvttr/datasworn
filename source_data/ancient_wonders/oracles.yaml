@@ -7979,6 +7979,8 @@ oracles:
                 text: "Precious"
               - roll: { min: 46, max: 50 }
                 text: "Exotic"
+              - roll: { min: 51, max: 100 }
+                text: "Ferrous"
           surface_feature:
             name: "Metallic World Surface Feature"
             oracle_type: table_text
