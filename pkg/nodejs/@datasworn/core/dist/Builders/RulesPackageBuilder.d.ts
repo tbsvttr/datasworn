@@ -35,8 +35,8 @@ export declare class RulesPackageBuilder<TSource extends DataswornSource.RulesPa
     counter: Record<string, number>;
     mergeFiles(force?: boolean): this;
     toJSON(): TTarget;
-    static validateIdRef(id: string, idTracker: IdRefTracker, tree?: Map<string, Datasworn.RulesPackage> | Record<string, Datasworn.RulesPackage>): boolean;
-    validateIdRefs(idTracker: IdRefTracker, tree?: Map<string, Datasworn.RulesPackage> | Record<string, Datasworn.RulesPackage>): IdRefTracker;
+    static validateIdRef(id: string, idTracker: IdRefTracker, tree?: (Map<string, Datasworn.RulesPackage> | Record<string, Datasworn.RulesPackage>) | null): boolean;
+    validateIdRefs(idTracker: IdRefTracker, tree?: (Map<string, Datasworn.RulesPackage> | Record<string, Datasworn.RulesPackage>) | null): IdRefTracker;
     idRefs: Set<string>;
     /** Performs JSON schema validation on the built data. */
     validate(force?: boolean): this;

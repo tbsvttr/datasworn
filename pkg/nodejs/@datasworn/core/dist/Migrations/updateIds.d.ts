@@ -3,7 +3,7 @@ export type ReplacementMap = Map<string | RegExp, string | null>;
 /**
  * Load the parsed JSON objects from `id_map.json` and/or `id_regex_map.json` in to a Map object for efficient lookup and replacement.
  */
-export declare function rehydrateReplacementMaps(...data: ReplacementMapData[]): Map<string | RegExp, string>;
+export declare function rehydrateReplacementMaps(...data: ReplacementMapData[]): Map<string | RegExp, string | null>;
 /**
  * Updates any string containing a v0.0.10 ID reference to be compatible with v0.1.0.
  * @param k The key of the JSON value.

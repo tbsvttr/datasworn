@@ -24,6 +24,7 @@
 		"outDir": "dist",
 		"rootDir": "src",
 		"baseUrl": "src",
+		"ignoreDeprecations": "6.0",
 		"target": "ES2018",
 		"lib": ["ES2020", "ES2021", "ES2022"],
 		"moduleResolution": "NodeNext",

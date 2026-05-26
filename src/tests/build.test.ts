@@ -337,9 +337,10 @@ describe('Generated Types Compilation', () => {
 		const dtsPath = path.join(ROOT, 'src/types/Datasworn.d.ts')
 		expect(existsSync(dtsPath)).toBe(true)
 
-		// Try to compile just the types file (--typeRoots avoids broken @types/parse-path stub)
+		// Try to compile just the types file (--typeRoots avoids broken @types/parse-path stub).
+		// --ignoreConfig is required by TS 6+ to opt out of loading the project tsconfig.
 		const result =
-			await $`npx tsc ${dtsPath} --noEmit --skipLibCheck --typeRoots none`
+			await $`npx tsc ${dtsPath} --noEmit --skipLibCheck --typeRoots none --ignoreConfig`
 				.quiet()
 				.nothrow()
 		expect(result.exitCode).toBe(0)

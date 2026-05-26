@@ -54,7 +54,7 @@ declare abstract class IdParser<TypeIds extends StringId.TypeIdParts = StringId.
     toString(): string;
     toJSON(): string;
     /** The type ID of the target node. For primary IDs, this is the same as {@link IdParser.typeId}. */
-    get typeId(): string;
+    get typeId(): string | undefined;
     /** The type ID of the most recent primary node. For primary IDs, this is the same as {@link IdParser.typeId} */
     get primaryTypeId(): TypeId.Primary;
     get primaryPath(): string;
@@ -76,14 +76,14 @@ declare abstract class IdParser<TypeIds extends StringId.TypeIdParts = StringId.
      * @throws If the ID is a wildcard ID; if no Datasworn tree is provided (either in {@link IdParser.tree} or as an argument).
      * @returns The identified node, or `undefined` if the node doesn't exist.
      */
-    get(tree?: DictionaryLike<Datasworn.RulesPackage>): Node | undefined;
+    get(tree?: DictionaryLike<Datasworn.RulesPackage> | null): Node | undefined;
     /**
      * Get all Datasworn nodes that match this wildcard ID.
      * @remarks Non-wildcard IDs work here too; technically they're valid as wildcard IDs.
      * @param forEach Optional function to apply to each match. If it returns `true`, the matcher will exit early and return only the matches it has made so far.
      * @returns A {@link Map}
      */
-    getMatches(tree?: DictionaryLike<Datasworn.RulesPackage>, forEach?: (id: string, node: unknown) => boolean): Map<string, Node>;
+    getMatches(tree?: DictionaryLike<Datasworn.RulesPackage> | null, forEach?: (id: string, node: unknown) => boolean): Map<string, Node>;
     /**
      * Can the target ID be matched with this ID?
      * @throws If `target` is a wildcard.
@@ -162,7 +162,7 @@ declare abstract class IdParser<TypeIds extends StringId.TypeIdParts = StringId.
     /** @internal */
     protected _getUnsafe(tree: (typeof IdParser)['tree']): Node;
     /** @internal */
-    protected _matchRulesPackages(tree?: DictionaryLike<Datasworn.RulesPackage>): Map<string, Datasworn.RulesPackage>;
+    protected _matchRulesPackages(tree?: DictionaryLike<Datasworn.RulesPackage> | null): Map<string, Datasworn.RulesPackage>;
     /**
      * @param forEach Optional function to apply to each match. If it returns `true`, the matcher will exit early and return whatever results it currently has.
      * @internal
