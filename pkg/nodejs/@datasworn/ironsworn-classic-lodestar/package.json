@@ -58,5 +58,8 @@
 			"default": "./ids.js"
 		},
 		"./json/lodestar.json": "./json/lodestar.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }

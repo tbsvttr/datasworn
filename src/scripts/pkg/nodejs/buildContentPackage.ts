@@ -65,10 +65,10 @@ export async function buildContentPackage({
 				Object.assign(packageDotJson, packageUpdate)
 				packageDotJson.version = VERSION
 
-				// Add typed exports configuration
 				packageDotJson.type = 'module'
 				packageDotJson.main = 'index.js'
 				packageDotJson.types = 'index.d.ts'
+				packageDotJson.engines = { node: '>=20' }
 				packageDotJson.exports = {
 					'.': {
 						types: './index.d.ts',

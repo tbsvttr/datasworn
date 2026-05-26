@@ -57,5 +57,8 @@
 			"default": "./ids.js"
 		},
 		"./json/ancient_wonders.json": "./json/ancient_wonders.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }

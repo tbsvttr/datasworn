@@ -57,5 +57,8 @@
 			"default": "./ids.js"
 		},
 		"./json/starsmith.json": "./json/starsmith.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }

@@ -58,5 +58,8 @@
 			"default": "./ids.js"
 		},
 		"./json/sundered_isles.json": "./json/sundered_isles.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }

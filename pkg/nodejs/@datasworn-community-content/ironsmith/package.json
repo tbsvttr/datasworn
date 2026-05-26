@@ -56,5 +56,8 @@
 			"default": "./ids.js"
 		},
 		"./json/ironsmith.json": "./json/ironsmith.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }

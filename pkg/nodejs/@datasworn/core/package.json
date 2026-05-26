@@ -35,5 +35,8 @@
 	"bugs": {
 		"url": "https://github.com/tbsvttr/datasworn/issues"
 	},
+	"engines": {
+		"node": ">=20"
+	},
 	"dependencies": {}
 }

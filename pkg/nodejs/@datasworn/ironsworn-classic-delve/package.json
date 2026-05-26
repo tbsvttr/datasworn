@@ -58,5 +58,8 @@
 			"default": "./ids.js"
 		},
 		"./json/delve.json": "./json/delve.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }

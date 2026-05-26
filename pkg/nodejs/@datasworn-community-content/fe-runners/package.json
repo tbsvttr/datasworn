@@ -58,5 +58,8 @@
 			"default": "./ids.js"
 		},
 		"./json/fe_runners.json": "./json/fe_runners.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }

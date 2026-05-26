@@ -59,5 +59,8 @@
 			"default": "./ids.js"
 		},
 		"./json/starforged.json": "./json/starforged.json"
+	},
+	"engines": {
+		"node": ">=20"
 	}
 }
