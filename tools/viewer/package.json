@@ -11,15 +11,15 @@
 		"test:watch": "vitest"
 	},
 	"devDependencies": {
-		"jsdom": "^27.4.0",
+		"jsdom": "^29.1.1",
 		"typescript": "^5.9.3",
-		"vite": "^7.3.3",
+		"vite": "^8.0.14",
 		"vitest": "^4.1.7"
 	},
 	"dependencies": {
 		"@datasworn/core": "file:../../pkg/nodejs/@datasworn/core",
 		"dompurify": "^3.4.6",
-		"marked": "^17.0.6"
+		"marked": "^18.0.4"
 	},
 	"overrides": {
 		"ws": "^8.20.1",
