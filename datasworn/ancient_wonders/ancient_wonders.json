@@ -3837,7 +3837,7 @@
 					"name": "Colossal Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -3966,7 +3966,7 @@
 					"name": "Lesser Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -4233,7 +4233,7 @@
 					"name": "Massive Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -4532,7 +4532,7 @@
 					"name": "Medium Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -4751,7 +4751,7 @@
 					"name": "Titanic Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -5261,7 +5261,7 @@
 					"name": "Enormous Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -6912,7 +6912,7 @@
 					"name": "Large Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -7325,7 +7325,7 @@
 					"name": "Small Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -8262,7 +8262,7 @@
 					"name": "Huge Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -8513,7 +8513,7 @@
 					"name": "Dwarf Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "Use this oracle to define the main attributes of a moon. \n\nA moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "Use this oracle to define the main attributes of a moon.\n\nA moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -9384,7 +9384,7 @@
 					"name": "Planetside Waypoint - Terminus",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "When you reach a waypoint while exploring a planet, use the table below to provide an event, encounter, or moment of character focus. \n\nIf you get the \"Planetside community\" result but have previously determined there are no settlements in the world, reroll or envision how this contradiction adds an unexpected revelation.",
+					"summary": "When you reach a waypoint while exploring a planet, use the table below to provide an event, encounter, or moment of character focus.\n\nIf you get the \"Planetside community\" result but have previously determined there are no settlements in the world, reroll or envision how this contradiction adds an unexpected revelation.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -9699,7 +9699,7 @@
 					"name": "Vast Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -10703,7 +10703,7 @@
 					"name": "Giant Planet: Moon Size / Gravity",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -27967,6 +27967,14 @@
 										"max": 50
 									},
 									"text": "Exotic"
+								},
+								{
+									"_id": "oracle_rollable.row:ancient_wonders/planets_expanded/metallic_world/metal_rarity.3",
+									"roll": {
+										"min": 51,
+										"max": 100
+									},
+									"text": "Ferrous"
 								}
 							],
 							"_source": {
@@ -48841,33 +48849,25 @@
 							"_id": "oracle_rollable.row:ancient_wonders/other/harvesting_platforms_scale_few.0",
 							"roll": {
 								"min": 1,
-								"max": 1
+								"max": 10
 							},
-							"text": "Few"
+							"text": "Huge"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/harvesting_platforms_scale_few.1",
 							"roll": {
-								"min": 2,
-								"max": 2
+								"min": 11,
+								"max": 30
 							},
-							"text": "1-10   Huge"
+							"text": "Titanic"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/harvesting_platforms_scale_few.2",
 							"roll": {
-								"min": 3,
-								"max": 3
+								"min": 31,
+								"max": 100
 							},
-							"text": "11-30  Titanic"
-						},
-						{
-							"_id": "oracle_rollable.row:ancient_wonders/other/harvesting_platforms_scale_few.3",
-							"roll": {
-								"min": 4,
-								"max": 4
-							},
-							"text": "31-100 Colossal"
+							"text": "Colossal"
 						}
 					],
 					"_source": {
@@ -57346,7 +57346,7 @@
 					"name": "Moon Density",
 					"oracle_type": "table_text",
 					"dice": "1d100",
-					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results. \n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
+					"summary": "A moon is always smaller than the planetary body it orbits, so the moon size results are not equivalent of the planet size results.\n\nOnce you roll for the moon size, cross-reference it with the planetary body size to determine the moon base gravity. Then, roll the density to determine the gravity modifier.",
 					"column_labels": {
 						"roll": "Roll",
 						"text": "Result"
@@ -57356,49 +57356,41 @@
 							"_id": "oracle_rollable.row:ancient_wonders/other/moon_density.0",
 							"roll": {
 								"min": 1,
-								"max": 1
+								"max": 10
 							},
-							"text": "Result / Gravity Modifier"
+							"text": "Very light / Two lower gravity"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/moon_density.1",
 							"roll": {
-								"min": 2,
-								"max": 2
+								"min": 11,
+								"max": 30
 							},
-							"text": "1-10   Very light / Two lower gravity"
+							"text": "Light / One lower gravity"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/moon_density.2",
 							"roll": {
-								"min": 3,
-								"max": 3
+								"min": 31,
+								"max": 70
 							},
-							"text": "11-30  Light / One lower gravity"
+							"text": "Moderate / Base gravity"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/moon_density.3",
 							"roll": {
-								"min": 4,
-								"max": 4
+								"min": 71,
+								"max": 90
 							},
-							"text": "31-70  Moderate / Base gravity"
+							"text": "Heavy / One higher gravity"
 						},
 						{
 							"_id": "oracle_rollable.row:ancient_wonders/other/moon_density.4",
 							"roll": {
-								"min": 5,
-								"max": 5
+								"min": 91,
+								"max": 100
 							},
-							"text": "71-90  Heavy / One higher gravity"
-						},
-						{
-							"_id": "oracle_rollable.row:ancient_wonders/other/moon_density.5",
-							"roll": {
-								"min": 6,
-								"max": 6
-							},
-							"text": "91-100 Very heavy / Two higher gravity"
+							"text": "Very heavy / Two higher gravity"
 						}
 					],
 					"_source": {
