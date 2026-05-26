@@ -333,7 +333,8 @@ pub struct Asset {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -729,7 +730,8 @@ pub struct AssetCollection {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -1357,7 +1359,8 @@ pub struct AtlasCollection {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -1454,7 +1457,8 @@ pub struct AtlasEntry {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -1867,7 +1871,8 @@ pub struct DelveSite {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2003,7 +2008,8 @@ pub struct DelveSiteDomain {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2211,7 +2217,8 @@ pub struct DelveSiteTheme {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2465,7 +2472,8 @@ pub struct EmbeddedActionRollMove {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2547,7 +2555,8 @@ pub struct EmbeddedMoveActionRoll {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2610,7 +2619,8 @@ pub struct EmbeddedMoveNoRoll {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2681,7 +2691,8 @@ pub struct EmbeddedMoveProgressRoll {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2747,7 +2758,8 @@ pub struct EmbeddedMoveSpecialTrack {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2823,7 +2835,8 @@ pub struct EmbeddedNoRollMove {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2900,7 +2913,8 @@ pub struct EmbeddedOracleColumnText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -2987,7 +3001,8 @@ pub struct EmbeddedOracleColumnText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3074,7 +3089,8 @@ pub struct EmbeddedOracleColumnText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3174,7 +3190,8 @@ pub struct EmbeddedOracleRollableColumnText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3252,7 +3269,8 @@ pub struct EmbeddedOracleRollableColumnText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3330,7 +3348,8 @@ pub struct EmbeddedOracleRollableColumnText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3420,7 +3439,8 @@ pub struct EmbeddedOracleRollableTableText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3513,7 +3533,8 @@ pub struct EmbeddedOracleRollableTableText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3609,7 +3630,8 @@ pub struct EmbeddedOracleRollableTableText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3712,7 +3734,8 @@ pub struct EmbeddedOracleTableText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3814,7 +3837,8 @@ pub struct EmbeddedOracleTableText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -3919,7 +3943,8 @@ pub struct EmbeddedOracleTableText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4009,7 +4034,8 @@ pub struct EmbeddedProgressRollMove {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4084,7 +4110,8 @@ pub struct EmbeddedSpecialTrackMove {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4411,7 +4438,8 @@ pub struct MoveActionRoll0 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4491,7 +4519,8 @@ pub struct MoveNoRoll0 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4581,7 +4610,8 @@ pub struct MoveProgressRoll0 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4666,7 +4696,8 @@ pub struct MoveSpecialTrack0 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4758,7 +4789,8 @@ pub struct MoveActionRoll {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -4857,7 +4889,8 @@ pub struct MoveCategory {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5050,7 +5083,8 @@ pub struct MoveNoRoll {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5229,7 +5263,8 @@ pub struct MoveProgressRoll {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5370,7 +5405,8 @@ pub struct MoveSpecialTrack {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5504,7 +5540,8 @@ pub struct Npc {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5585,7 +5622,8 @@ pub struct NpcCollection {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5764,7 +5802,8 @@ pub struct OracleCollectionTableSharedRolls {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5861,7 +5900,8 @@ pub struct OracleCollectionTableSharedText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -5961,7 +6001,8 @@ pub struct OracleCollectionTableSharedText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6064,7 +6105,8 @@ pub struct OracleCollectionTableSharedText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6155,7 +6197,8 @@ pub struct OracleCollectionTables {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6267,7 +6310,8 @@ pub struct OracleColumnText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6361,7 +6405,8 @@ pub struct OracleColumnText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6455,7 +6500,8 @@ pub struct OracleColumnText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6640,7 +6686,8 @@ pub struct OracleRollableColumnText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6725,7 +6772,8 @@ pub struct OracleRollableColumnText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6810,7 +6858,8 @@ pub struct OracleRollableColumnText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -6914,7 +6963,8 @@ pub struct OracleRollableTableText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7020,7 +7070,8 @@ pub struct OracleRollableTableText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7129,7 +7180,8 @@ pub struct OracleRollableTableText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7404,7 +7456,8 @@ pub struct OracleRollableTableTableText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7510,7 +7563,8 @@ pub struct OracleRollableTableTableText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7619,7 +7673,8 @@ pub struct OracleRollableTableTableText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7722,7 +7777,8 @@ pub struct OracleTableSharedRolls {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7828,7 +7884,8 @@ pub struct OracleTableSharedText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -7937,7 +7994,8 @@ pub struct OracleTableSharedText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -8049,7 +8107,8 @@ pub struct OracleTableSharedText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -8172,7 +8231,8 @@ pub struct OracleTableText {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -8287,7 +8347,8 @@ pub struct OracleTableText2 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -8405,7 +8466,8 @@ pub struct OracleTableText3 {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -8495,7 +8557,8 @@ pub struct OracleTablesCollection {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -8689,7 +8752,8 @@ pub struct Rarity {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,
@@ -9886,7 +9950,8 @@ pub struct Truth {
     #[serde(skip_serializing_if = "Option::is_none")]
     pub canonicalName: Option<Box<Label>>,
 
-    /// A thematic color associated with this node.
+    /// An optional thematic color associated with this node. For an example,
+    /// see "Basic Creature Form" (Starforged p. 337).
     #[serde(rename = "color")]
     #[serde(skip_serializing_if = "Option::is_none")]
     pub color: Option<Box<CssColor>>,

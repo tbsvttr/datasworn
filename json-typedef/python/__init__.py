@@ -601,7 +601,8 @@ class Asset:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     controls: 'Optional[Dict[str, AssetControlField]]'
@@ -1401,7 +1402,8 @@ class AssetCollection:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -2574,7 +2576,8 @@ class AtlasCollection:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -2736,7 +2739,8 @@ class AtlasEntry:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -3478,7 +3482,8 @@ class DelveSite:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     extra_card: 'Optional[str]'
@@ -3700,7 +3705,8 @@ class DelveSiteDomain:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     descriptipn: 'Optional[MarkdownString]'
@@ -4088,7 +4094,8 @@ class DelveSiteTheme:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     descriptipn: 'Optional[MarkdownString]'
@@ -4547,7 +4554,8 @@ class EmbeddedActionRollMove:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -4666,7 +4674,8 @@ class EmbeddedMoveActionRoll(EmbeddedMove):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -4765,7 +4774,8 @@ class EmbeddedMoveNoRoll(EmbeddedMove):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -4868,7 +4878,8 @@ class EmbeddedMoveProgressRoll(EmbeddedMove):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -4970,7 +4981,8 @@ class EmbeddedMoveSpecialTrack(EmbeddedMove):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -5101,7 +5113,8 @@ class EmbeddedNoRollMove:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -5222,7 +5235,8 @@ class EmbeddedOracleColumnText:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -5354,7 +5368,8 @@ class EmbeddedOracleColumnText2:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -5486,7 +5501,8 @@ class EmbeddedOracleColumnText3:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -5628,7 +5644,8 @@ class EmbeddedOracleRollableColumnText(EmbeddedOracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -5749,7 +5766,8 @@ class EmbeddedOracleRollableColumnText2(EmbeddedOracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -5870,7 +5888,8 @@ class EmbeddedOracleRollableColumnText3(EmbeddedOracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -6010,7 +6029,8 @@ class EmbeddedOracleRollableTableText(EmbeddedOracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -6155,7 +6175,8 @@ class EmbeddedOracleRollableTableText2(EmbeddedOracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -6303,7 +6324,8 @@ class EmbeddedOracleRollableTableText3(EmbeddedOracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -6477,7 +6499,8 @@ class EmbeddedOracleTableText:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -6633,7 +6656,8 @@ class EmbeddedOracleTableText2:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -6792,7 +6816,8 @@ class EmbeddedOracleTableText3:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -6919,7 +6944,8 @@ class EmbeddedProgressRollMove:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -7032,7 +7058,8 @@ class EmbeddedSpecialTrackMove:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -7609,7 +7636,8 @@ class MoveActionRoll0(Move):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -7737,7 +7765,8 @@ class MoveNoRoll0(Move):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -7871,7 +7900,8 @@ class MoveProgressRoll0(Move):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -8004,7 +8034,8 @@ class MoveSpecialTrack0(Move):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -8143,7 +8174,8 @@ class MoveActionRoll:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -8302,7 +8334,8 @@ class MoveCategory:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -8673,7 +8706,8 @@ class MoveNoRoll:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -9012,7 +9046,8 @@ class MoveProgressRoll:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -9233,7 +9268,8 @@ class MoveSpecialTrack:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -9415,7 +9451,8 @@ class Npc:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -9539,7 +9576,8 @@ class NpcCollection:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -9875,7 +9913,8 @@ class OracleCollectionTableSharedRolls(OracleCollection):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -10026,7 +10065,8 @@ class OracleCollectionTableSharedText(OracleCollection):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -10180,7 +10220,8 @@ class OracleCollectionTableSharedText2(OracleCollection):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -10337,7 +10378,8 @@ class OracleCollectionTableSharedText3(OracleCollection):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -10473,7 +10515,8 @@ class OracleCollectionTables(OracleCollection):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -10669,7 +10712,8 @@ class OracleColumnText:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -10814,7 +10858,8 @@ class OracleColumnText2:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -10959,7 +11004,8 @@ class OracleColumnText3:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -11256,7 +11302,8 @@ class OracleRollableColumnText(OracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -11390,7 +11437,8 @@ class OracleRollableColumnText2(OracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -11524,7 +11572,8 @@ class OracleRollableColumnText3(OracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -11688,7 +11737,8 @@ class OracleRollableTableText(OracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -11858,7 +11908,8 @@ class OracleRollableTableText2(OracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -12031,7 +12082,8 @@ class OracleRollableTableText3(OracleRollable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -12482,7 +12534,8 @@ class OracleRollableTableTableText(OracleRollableTable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -12652,7 +12705,8 @@ class OracleRollableTableTableText2(OracleRollableTable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -12825,7 +12879,8 @@ class OracleRollableTableTableText3(OracleRollableTable):
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -12985,7 +13040,8 @@ class OracleTableSharedRolls:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -13147,7 +13203,8 @@ class OracleTableSharedText:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -13312,7 +13369,8 @@ class OracleTableSharedText2:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -13480,7 +13538,8 @@ class OracleTableSharedText3:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -13672,7 +13731,8 @@ class OracleTableText:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -13853,7 +13913,8 @@ class OracleTableText2:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -14037,7 +14098,8 @@ class OracleTableText3:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -14171,7 +14233,8 @@ class OracleTablesCollection:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     description: 'Optional[MarkdownString]'
@@ -14481,7 +14544,8 @@ class Rarity:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     icon: 'Optional[SvgImageURL]'
@@ -16626,7 +16690,8 @@ class Truth:
 
     color: 'Optional[CSSColor]'
     """
-    A thematic color associated with this node.
+    An optional thematic color associated with this node. For an example, see
+    "Basic Creature Form" (Starforged p. 337).
     """
 
     factions: 'Optional[List[EntityPrompt]]'

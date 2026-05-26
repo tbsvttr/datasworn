@@ -493,7 +493,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -1034,7 +1034,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -1834,7 +1834,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -1945,7 +1945,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -2446,7 +2446,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -2602,7 +2602,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -2863,7 +2863,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -3148,7 +3148,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -3227,7 +3227,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -3300,7 +3300,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -3382,7 +3382,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -3458,7 +3458,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -3544,7 +3544,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -3618,7 +3618,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -3708,7 +3708,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -3798,7 +3798,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -3896,7 +3896,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -3994,7 +3994,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -4095,7 +4095,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -4180,7 +4180,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -4265,7 +4265,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -4350,7 +4350,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -4458,7 +4458,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -4561,7 +4561,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -4667,7 +4667,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -4770,7 +4770,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -4851,7 +4851,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -5281,7 +5281,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -5382,7 +5382,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -5492,7 +5492,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -5596,7 +5596,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -5707,7 +5707,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -5832,7 +5832,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -6066,7 +6066,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -6282,7 +6282,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -6433,7 +6433,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -6583,7 +6583,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -6683,7 +6683,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -6888,7 +6888,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -7001,7 +7001,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -7111,7 +7111,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -7224,7 +7224,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -7340,7 +7340,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -7464,7 +7464,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -7568,7 +7568,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -7669,7 +7669,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -7837,7 +7837,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -7955,7 +7955,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -8076,7 +8076,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -8175,7 +8175,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -8274,7 +8274,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -8370,7 +8370,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -8683,7 +8683,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -8801,7 +8801,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -8922,7 +8922,7 @@
 						"color": {
 							"ref": "CssColor",
 							"metadata": {
-								"description": "A thematic color associated with this node."
+								"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 							}
 						},
 						"images": {
@@ -9064,7 +9064,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -9182,7 +9182,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -9297,7 +9297,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -9415,7 +9415,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -9536,7 +9536,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -9660,7 +9660,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -9783,7 +9783,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -9909,7 +9909,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -10110,7 +10110,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {
@@ -11625,7 +11625,7 @@
 				"color": {
 					"ref": "CssColor",
 					"metadata": {
-						"description": "A thematic color associated with this node."
+						"description": "An optional thematic color associated with this node. For an example, see \"Basic Creature Form\" (Starforged p. 337)."
 					}
 				},
 				"images": {

@@ -220,7 +220,8 @@ public class OracleRollableTableText2 extends OracleRollable {
 
     /**
      * Getter for color.<p>
-     * A thematic color associated with this node.
+     * An optional thematic color associated with this node. For an example, see
+     * "Basic Creature Form" (Starforged p. 337).
      */
     public CssColor getColor() {
         return color;
@@ -228,7 +229,8 @@ public class OracleRollableTableText2 extends OracleRollable {
 
     /**
      * Setter for color.<p>
-     * A thematic color associated with this node.
+     * An optional thematic color associated with this node. For an example, see
+     * "Basic Creature Form" (Starforged p. 337).
      */
     public void setColor(CssColor color) {
         this.color = color;

@@ -488,7 +488,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # Controls are condition meters, clocks, counters, and other asset input
@@ -1170,7 +1171,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -2116,7 +2118,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -2260,7 +2263,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -3003,7 +3007,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An additional theme or domain card ID, for use with optional rules in
@@ -3214,7 +3219,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # Optional extended description text.
@@ -3552,7 +3558,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # Optional extended description text.
@@ -3995,7 +4002,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -4464,7 +4472,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -4594,7 +4603,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -4731,7 +4741,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -4868,7 +4879,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -5725,7 +5737,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -5887,7 +5900,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -6052,7 +6066,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -6180,7 +6195,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -6299,7 +6315,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -7182,7 +7199,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -7336,7 +7354,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -7677,7 +7696,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -8012,7 +8032,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -8239,7 +8260,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -8430,7 +8452,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -8542,7 +8565,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -9413,7 +9437,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -9557,7 +9582,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -9701,7 +9727,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -11299,7 +11326,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -11455,7 +11483,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -11614,7 +11643,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -11776,7 +11806,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -11959,7 +11990,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -12135,7 +12167,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -12314,7 +12347,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -12445,7 +12479,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # A longer description of this collection, which might include multiple
@@ -12745,7 +12780,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # An SVG icon associated with this collection.
@@ -14834,7 +14870,8 @@ module Datasworn
     # different from `name`.
     attr_accessor :canonical_name
 
-    # A thematic color associated with this node.
+    # An optional thematic color associated with this node. For an example, see
+    # "Basic Creature Form" (Starforged p. 337).
     attr_accessor :color
 
     # Prompts for factions related to this truth, like those presented in

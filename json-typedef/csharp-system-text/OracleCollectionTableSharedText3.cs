@@ -55,7 +55,8 @@ namespace Datasworn
         public Label? CanonicalName { get; set; }
 
         /// <summary>
-        /// A thematic color associated with this node.
+        /// An optional thematic color associated with this node. For an
+        /// example, see "Basic Creature Form" (Starforged p. 337).
         /// </summary>
         [JsonPropertyName("color")]
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]

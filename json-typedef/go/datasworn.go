@@ -289,7 +289,8 @@ type Asset struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// Controls are condition meters, clocks, counters, and other asset input
@@ -652,7 +653,8 @@ type AssetCollection struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -1327,7 +1329,8 @@ type AtlasCollection struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -1393,7 +1396,8 @@ type AtlasEntry struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -1703,7 +1707,8 @@ type DelveSite struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An additional theme or domain card ID, for use with optional rules in
@@ -1799,7 +1804,8 @@ type DelveSiteDomain struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// Optional extended description text.
@@ -1940,7 +1946,8 @@ type DelveSiteTheme struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// Optional extended description text.
@@ -2118,7 +2125,8 @@ type EmbeddedActionRollMove struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2217,7 +2225,8 @@ type EmbeddedMoveActionRoll struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2259,7 +2268,8 @@ type EmbeddedMoveNoRoll struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2306,7 +2316,8 @@ type EmbeddedMoveProgressRoll struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2350,7 +2361,8 @@ type EmbeddedMoveSpecialTrack struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2404,7 +2416,8 @@ type EmbeddedNoRollMove struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2457,7 +2470,8 @@ type EmbeddedOracleColumnText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2516,7 +2530,8 @@ type EmbeddedOracleColumnText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2575,7 +2590,8 @@ type EmbeddedOracleColumnText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2693,7 +2709,8 @@ type EmbeddedOracleRollableColumnText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2744,7 +2761,8 @@ type EmbeddedOracleRollableColumnText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2795,7 +2813,8 @@ type EmbeddedOracleRollableColumnText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2854,7 +2873,8 @@ type EmbeddedOracleRollableTableText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2915,7 +2935,8 @@ type EmbeddedOracleRollableTableText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -2978,7 +2999,8 @@ type EmbeddedOracleRollableTableText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3049,7 +3071,8 @@ type EmbeddedOracleTableText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3118,7 +3141,8 @@ type EmbeddedOracleTableText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3189,7 +3213,8 @@ type EmbeddedOracleTableText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3250,7 +3275,8 @@ type EmbeddedProgressRollMove struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3302,7 +3328,8 @@ type EmbeddedSpecialTrackMove struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3579,7 +3606,8 @@ type MoveActionRoll0 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3633,7 +3661,8 @@ type MoveNoRoll0 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3694,7 +3723,8 @@ type MoveProgressRoll0 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3752,7 +3782,8 @@ type MoveSpecialTrack0 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3816,7 +3847,8 @@ type MoveActionRoll struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -3885,7 +3917,8 @@ type MoveCategory struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -4069,7 +4102,8 @@ type MoveNoRoll struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -4204,7 +4238,8 @@ type MoveProgressRoll struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -4309,7 +4344,8 @@ type MoveSpecialTrack struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -4404,7 +4440,8 @@ type Npc struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -4456,7 +4493,8 @@ type NpcCollection struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -4634,7 +4672,8 @@ type OracleCollectionTableSharedRolls struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -4699,7 +4738,8 @@ type OracleCollectionTableSharedText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -4766,7 +4806,8 @@ type OracleCollectionTableSharedText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -4835,7 +4876,8 @@ type OracleCollectionTableSharedText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -4896,7 +4938,8 @@ type OracleCollectionTables struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -4975,7 +5018,8 @@ type OracleColumnText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5039,7 +5083,8 @@ type OracleColumnText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5103,7 +5148,8 @@ type OracleColumnText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5286,7 +5332,8 @@ type OracleRollableColumnText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5342,7 +5389,8 @@ type OracleRollableColumnText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5398,7 +5446,8 @@ type OracleRollableColumnText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5468,7 +5517,8 @@ type OracleRollableTableText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5539,7 +5589,8 @@ type OracleRollableTableText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5612,7 +5663,8 @@ type OracleRollableTableText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5829,7 +5881,8 @@ type OracleRollableTableTableText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5900,7 +5953,8 @@ type OracleRollableTableTableText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -5973,7 +6027,8 @@ type OracleRollableTableTableText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -6045,7 +6100,8 @@ type OracleTableSharedRolls struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -6118,7 +6174,8 @@ type OracleTableSharedText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -6193,7 +6250,8 @@ type OracleTableSharedText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -6270,7 +6328,8 @@ type OracleTableSharedText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -6355,7 +6414,8 @@ type OracleTableText struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -6434,7 +6494,8 @@ type OracleTableText2 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -6515,7 +6576,8 @@ type OracleTableText3 struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -6577,7 +6639,8 @@ type OracleTablesCollection struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// A longer description of this collection, which might include multiple
@@ -6722,7 +6785,8 @@ type Rarity struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// An SVG icon associated with this collection.
@@ -7739,7 +7803,8 @@ type Truth struct {
 	// different from `name`.
 	CanonicalName *Label `json:"canonical_name,omitempty"`
 
-	// A thematic color associated with this node.
+	// An optional thematic color associated with this node. For an example, see
+	// "Basic Creature Form" (Starforged p. 337).
 	Color *CSSColor `json:"color,omitempty"`
 
 	// Prompts for factions related to this truth, like those presented in standard
