@@ -18,6 +18,7 @@
 	},
 	"dependencies": {
 		"@datasworn/core": "file:../../pkg/nodejs/@datasworn/core",
+		"dompurify": "^3.4.6",
 		"marked": "^17.0.1"
 	}
 }

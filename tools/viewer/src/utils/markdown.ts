@@ -1,6 +1,6 @@
+import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 
-// Configure marked for safe rendering
 marked.setOptions({
 	gfm: true,
 	breaks: true
@@ -9,10 +9,10 @@ marked.setOptions({
 export function renderMarkdown(text: string): string {
 	if (!text) return ''
 
-	// Convert Datasworn-style bold (__text__) to standard markdown (**text**)
 	const normalized = text.replace(/__([^_]+)__/g, '**$1**')
+	const rendered = marked.parse(normalized) as string
 
-	return marked.parse(normalized) as string
+	return DOMPurify.sanitize(rendered)
 }
 
 export function escapeHtml(text: string): string {
