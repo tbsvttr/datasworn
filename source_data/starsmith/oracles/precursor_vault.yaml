@@ -2098,6 +2098,146 @@ oracles:
             _comment: Extension of the oracle table
             _source: *Source
             rows:
+              - text: Abyssal pit or chasm
+                roll:
+                  min: 1
+                  max: 2
+              - text: Altered gravity
+                roll:
+                  min: 3
+                  max: 5
+              - text: Area filled with strange liquid
+                roll:
+                  min: 6
+                  max: 7
+              - text: Area humming with aberrant energy
+                roll:
+                  min: 8
+                  max: 10
+              - text: Blasted or wrecked area
+                roll:
+                  min: 11
+                  max: 13
+              - text: Central chamber of immense proportions or grandeur
+                roll:
+                  min: 14
+                  max: 16
+              - text: Colossal machine
+                roll:
+                  min: 17
+                  max: 19
+              - text: Corrupted plant life
+                roll:
+                  min: 20
+                  max: 21
+              - text: Enigmatic mechanisms come to life
+                roll:
+                  min: 22
+                  max: 24
+              - text: Haze of spores or nanomachines
+                roll:
+                  min: 25
+                  max: 26
+              - text: Incomprehensible architecture or geometry
+                roll:
+                  min: 27
+                  max: 28
+              - text: Incongruent space contradicts the nature of this site
+                roll:
+                  min: 29
+                  max: 31
+              - text: Inscrutable object emits sound and energy
+                roll:
+                  min: 32
+                  max: 34
+              - text: Machinery fused with organic growths
+                roll:
+                  min: 35
+                  max: 37
+              - text: Moving chamber or passage
+                roll:
+                  min: 38
+                  max: 40
+              - text: Mutated remains of the dead
+                roll:
+                  min: 41
+                  max: 43
+              - text: Nest of invasive creatures
+                roll:
+                  min: 44
+                  max: 46
+              - text: Pockets or layers of altered atmosphere
+                roll:
+                  min: 47
+                  max: 49
+              - text: Pods or chambers with preserved corpses
+                roll:
+                  min: 50
+                  max: 51
+              - text: Pools of strange liquid
+                roll:
+                  min: 52
+                  max: 54
+              - text: Pulsating surfaces
+                roll:
+                  min: 55
+                  max: 57
+              - text: Rampant biological infestation
+                roll:
+                  min: 58
+                  max: 60
+              - text: Repository of biological specimens
+                roll:
+                  min: 61
+                  max: 63
+              - text: Sealed chamber
+                roll:
+                  min: 64
+                  max: 66
+              - text: Sealed containers of inscrutable purpose
+                roll:
+                  min: 67
+                  max: 69
+              - text: Simulated or illusionary environment
+                roll:
+                  min: 70
+                  max: 72
+              - text: Surfaces covered in slime or fungus
+                roll:
+                  min: 73
+                  max: 74
+              - text: Temporal distortions
+                roll:
+                  min: 75
+                  max: 76
+              - text: Transforming spaces
+                roll:
+                  min: 77
+                  max: 79
+              - text: Visions of this place in another time
+                roll:
+                  min: 80
+                  max: 82
+              - text: Visions or reflections of another reality
+                roll:
+                  min: 83
+                  max: 85
+              - text: Warped or misshapen spaces
+                roll:
+                  min: 86
+                  max: 88
+              - text: Whispering voices speak to you
+                roll:
+                  min: 89
+                  max: 90
+              - roll:
+                  min: 91
+                  max: 95
+                <<: *DescriptorFocus
+              - text: Roll twice
+                roll:
+                  min: 96
+                  max: 100
               - text: Activity monitors showing unreadable data
                 roll:
                   min: 101
