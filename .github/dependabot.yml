@@ -4,10 +4,34 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 5
     groups:
       dev-dependencies:
-        patterns:
-          - "*"
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+      prod-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+    ignore:
+      - dependency-name: "@sinclair/typebox"
+
+  - package-ecosystem: "npm"
+    directory: "/tools/viewer"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 3
+    groups:
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+      prod-dependencies:
+        dependency-type: "production"
         update-types:
           - "minor"
           - "patch"
@@ -16,3 +40,4 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 3
