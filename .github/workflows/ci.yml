@@ -67,7 +67,7 @@ jobs:
 
       - name: Run viewer tests
         working-directory: tools/viewer
-        run: bun test
+        run: bun run test
 
   audit:
     runs-on: ubuntu-latest
@@ -75,8 +75,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Run npm audit
-        run: npm audit --audit-level=moderate
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: .tool-versions
+
+      - name: Install dependencies
+        run: bun install
+
+      # Lodash GHSAs are transitive through release-it (dev only, maintainer
+      # release time) and have no upstream fix; ignore them in CI noise.
+      - name: Run bun audit
+        run: bun audit --audit-level=moderate --ignore=GHSA-xxjr-mmjv-4gpg --ignore=GHSA-r5fr-rjxr-66jc --ignore=GHSA-f23m-r3pf-42rh
 
   validate:
     runs-on: ubuntu-latest

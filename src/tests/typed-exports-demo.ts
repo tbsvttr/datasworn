@@ -109,6 +109,7 @@ console.log(`Starship Asset ID: ${starshipId}`)
 // and any function that expects specific ID types
 type _StarforgedMoveId =
 	(typeof MoveIds)[keyof typeof MoveIds][keyof (typeof MoveIds)[keyof typeof MoveIds]]
+
 // This creates a union type of all move IDs
 
-export { BUILTIN_SOURCES, MoveIds, OracleIds, AssetIds }
+export { AssetIds, BUILTIN_SOURCES, MoveIds, OracleIds }
