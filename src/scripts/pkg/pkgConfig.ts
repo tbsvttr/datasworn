@@ -70,9 +70,8 @@ export const IronswornClassicLodestar: RulesPackageConfig = {
 		],
 		authors: [
 			{
-				name: 'sgreg',
-				email: 'sven@craplab.fi',
-				url: 'https://github.com/sgreg'
+				name: 'Shawn Tomkin',
+				url: 'https://ironswornrpg.com'
 			}
 		]
 	}

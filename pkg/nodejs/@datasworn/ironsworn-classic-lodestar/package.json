@@ -22,9 +22,8 @@
 	],
 	"contributors": [
 		{
-			"name": "sgreg",
-			"email": "sven@craplab.fi",
-			"url": "https://github.com/sgreg"
+			"name": "Shawn Tomkin",
+			"url": "https://ironswornrpg.com"
 		}
 	],
 	"scripts": {
@@ -35,13 +34,13 @@
 		"url": "https://github.com/tbsvttr/datasworn/issues"
 	},
 	"dependencies": {
-		"@datasworn/ironsworn-classic": "0.1.0"
+		"@datasworn/ironsworn-classic": "0.1.0",
+		"@datasworn/ironsworn-classic-delve": "0.1.0"
 	},
 	"authors": [
 		{
-			"name": "sgreg",
-			"email": "sven@craplab.fi",
-			"url": "https://github.com/sgreg"
+			"name": "Shawn Tomkin",
+			"url": "https://ironswornrpg.com"
 		}
 	],
 	"private": false,

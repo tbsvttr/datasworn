@@ -16,21 +16,24 @@
 	"assets": {},
 	"atlas": {},
 	"moves": {
-		"adventure": {
-			"_id": "move_category:lodestar/adventure",
+		"journey": {
+			"_id": "move_category:lodestar/journey",
 			"type": "move_category",
-			"name": "Adventure Moves",
-			"summary": "Adventure moves are used as you travel the Ironlands, investigate situations, and deal with threats.",
+			"name": "Journey Moves",
+			"enhances": [
+				"move_category:classic/adventure"
+			],
+			"summary": "Journey moves are used as you travel across the Ironlands.",
 			"contents": {
 				"follow_a_path": {
-					"_id": "move:lodestar/adventure/follow_a_path",
+					"_id": "move:lodestar/journey/follow_a_path",
 					"type": "move",
 					"name": "Follow a Path",
 					"roll_type": "action_roll",
 					"trigger": {
 						"conditions": [
 							{
-								"_id": "move.condition:lodestar/adventure/follow_a_path.0",
+								"_id": "move.condition:lodestar/journey/follow_a_path.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -45,15 +48,15 @@
 					"text": "When __you journey along a known route, and one day blends into the next__, roll +supply.\n\nOn a __strong hit__, you reach your destination and the situation favors you. Take +1 momentum.\n\nOn a __weak hit__, you complete the journey, but face a cost or complication. Choose one or more.\n\n  * You took longer than expected.\n  * You pressed on through pain, sickness, or weariness: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You suffered under the burden of foul weather, worries, or fearful locations: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You wasted resources.\n  * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination.",
 					"outcomes": {
 						"strong_hit": {
-							"_id": "move.outcome:lodestar/adventure/follow_a_path.strong_hit",
+							"_id": "move.outcome:lodestar/journey/follow_a_path.strong_hit",
 							"text": "On a __strong hit__, you reach your destination and the situation favors you. Take +1 momentum."
 						},
 						"weak_hit": {
-							"_id": "move.outcome:lodestar/adventure/follow_a_path.weak_hit",
+							"_id": "move.outcome:lodestar/journey/follow_a_path.weak_hit",
 							"text": "On a __weak hit__, you complete the journey, but face a cost or complication. Choose one or more.\n\n  * You took longer than expected.\n  * You pressed on through pain, sickness, or weariness: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You suffered under the burden of foul weather, worries, or fearful locations: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You wasted resources.\n  * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
 						"miss": {
-							"_id": "move.outcome:lodestar/adventure/follow_a_path.miss",
+							"_id": "move.outcome:lodestar/journey/follow_a_path.miss",
 							"text": "On a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination."
 						}
 					},
@@ -84,6 +87,127 @@
 				"date": "2025-05-01",
 				"license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 				"page": 10,
+				"url": "https://ironswornrpg.com"
+			}
+		},
+		"adventure": {
+			"_id": "move_category:lodestar/adventure",
+			"type": "move_category",
+			"name": "Adventure Moves",
+			"enhances": [
+				"move_category:classic/adventure"
+			],
+			"contents": {
+				"face_danger": {
+					"_id": "move:lodestar/adventure/face_danger",
+					"type": "move",
+					"name": "Face Danger",
+					"roll_type": "action_roll",
+					"replaces": [
+						"move:classic/adventure/face_danger"
+					],
+					"trigger": {
+						"conditions": [
+							{
+								"_id": "move.condition:lodestar/adventure/face_danger.0",
+								"method": "player_choice",
+								"roll_options": [
+									{
+										"using": "stat",
+										"stat": "edge"
+									}
+								],
+								"text": "With speed, agility, or precision"
+							},
+							{
+								"_id": "move.condition:lodestar/adventure/face_danger.1",
+								"method": "player_choice",
+								"roll_options": [
+									{
+										"using": "stat",
+										"stat": "heart"
+									}
+								],
+								"text": "With charm, loyalty, or courage"
+							},
+							{
+								"_id": "move.condition:lodestar/adventure/face_danger.2",
+								"method": "player_choice",
+								"roll_options": [
+									{
+										"using": "stat",
+										"stat": "iron"
+									}
+								],
+								"text": "With aggressive action, forceful defense, strength, or endurance"
+							},
+							{
+								"_id": "move.condition:lodestar/adventure/face_danger.3",
+								"method": "player_choice",
+								"roll_options": [
+									{
+										"using": "stat",
+										"stat": "shadow"
+									}
+								],
+								"text": "With deception, stealth, or trickery"
+							},
+							{
+								"_id": "move.condition:lodestar/adventure/face_danger.4",
+								"method": "player_choice",
+								"roll_options": [
+									{
+										"using": "stat",
+										"stat": "wits"
+									}
+								],
+								"text": "With expertise, insight, or observation"
+							}
+						],
+						"text": "When you attempt something risky or react to an imminent threat..."
+					},
+					"text": "When __you attempt something risky or react to an imminent threat__, envision your action and roll. If you act...\n\n  * With speed, agility, or precision: Roll +edge.\n  * With charm, loyalty, or courage: Roll +heart.\n  * With aggressive action, forceful defense, strength, or endurance: Roll +iron.\n  * With deception, stealth, or trickery: Roll +shadow.\n  * With expertise, insight, or observation: Roll +wits.\n\nOn a __strong hit__, you are successful. Take +1 momentum.\n\nOn a __weak hit__, you succeed, but face a troublesome cost. Choose one.\n\n  * You are delayed, lose advantage, or face a new danger: Suffer -1 momentum.\n  * You are tired or hurt: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).\n  * You are dispirited or afraid: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).\n  * You sacrifice resources: Suffer -1 supply.\n\nOn a __miss__, you fail, or a momentary success is undermined by a dire turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price).",
+					"outcomes": {
+						"strong_hit": {
+							"_id": "move.outcome:lodestar/adventure/face_danger.strong_hit",
+							"text": "On a __strong hit__, you are successful. Take +1 momentum."
+						},
+						"weak_hit": {
+							"_id": "move.outcome:lodestar/adventure/face_danger.weak_hit",
+							"text": "On a __weak hit__, you succeed, but face a troublesome cost. Choose one.\n\n  * You are delayed, lose advantage, or face a new danger: Suffer -1 momentum.\n  * You are tired or hurt: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).\n  * You are dispirited or afraid: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).\n  * You sacrifice resources: Suffer -1 supply."
+						},
+						"miss": {
+							"_id": "move.outcome:lodestar/adventure/face_danger.miss",
+							"text": "On a __miss__, you fail, or a momentary success is undermined by a dire turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price)."
+						}
+					},
+					"oracles": {},
+					"_source": {
+						"title": "Ironsworn Lodestar",
+						"authors": [
+							{
+								"name": "Shawn Tomkin"
+							}
+						],
+						"date": "2025-05-01",
+						"license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+						"page": 8,
+						"url": "https://ironswornrpg.com"
+					},
+					"allow_momentum_burn": true
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Ironsworn Lodestar",
+				"authors": [
+					{
+						"name": "Shawn Tomkin"
+					}
+				],
+				"date": "2025-05-01",
+				"license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+				"page": 8,
 				"url": "https://ironswornrpg.com"
 			}
 		},
