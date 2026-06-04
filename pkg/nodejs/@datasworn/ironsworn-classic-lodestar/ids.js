@@ -17,6 +17,20 @@ export const MoveIds = {
 }
 
 export const OracleIds = {
+	character: {
+		first_look: 'oracle_rollable:lodestar/character/first_look',
+		revealed_details: 'oracle_rollable:lodestar/character/revealed_details'
+	},
+	name: {
+		ironlander_set_2: 'oracle_rollable:lodestar/name/ironlander_set_2',
+		firstborn: {
+			elf_1: 'oracle_rollable:lodestar/name/firstborn/elf_1',
+			elf_2: 'oracle_rollable:lodestar/name/firstborn/elf_2',
+			giant: 'oracle_rollable:lodestar/name/firstborn/giant',
+			varou: 'oracle_rollable:lodestar/name/firstborn/varou',
+			troll: 'oracle_rollable:lodestar/name/firstborn/troll'
+		}
+	},
 	combat: {
 		battleground: 'oracle_rollable:lodestar/combat/battleground',
 		tactic: 'oracle_rollable:lodestar/combat/tactic'
@@ -24,6 +38,20 @@ export const OracleIds = {
 	core: {
 		descriptor: 'oracle_rollable:lodestar/core/descriptor',
 		focus: 'oracle_rollable:lodestar/core/focus'
+	},
+	location: {
+		overland: {
+			landmark: 'oracle_rollable:lodestar/location/overland/landmark',
+			waypoint: 'oracle_rollable:lodestar/location/overland/waypoint',
+			peril: 'oracle_rollable:lodestar/location/overland/peril',
+			opportunity: 'oracle_rollable:lodestar/location/overland/opportunity'
+		},
+		coastal_waters: {
+			landmark: 'oracle_rollable:lodestar/location/coastal_waters/landmark',
+			waypoint: 'oracle_rollable:lodestar/location/coastal_waters/waypoint',
+			peril: 'oracle_rollable:lodestar/location/coastal_waters/peril',
+			opportunity: 'oracle_rollable:lodestar/location/coastal_waters/opportunity'
+		}
 	},
 	magic: {
 		ritual_backlash: 'oracle_rollable:lodestar/magic/ritual_backlash',
@@ -43,8 +71,28 @@ export const OracleIds = {
 			disposition: 'oracle_rollable:lodestar/scale/magnitude/disposition'
 		}
 	},
+	settlement: {
+		condition: 'oracle_rollable:lodestar/settlement/condition',
+		disposition: 'oracle_rollable:lodestar/settlement/disposition',
+		first_look: 'oracle_rollable:lodestar/settlement/first_look',
+		projects: 'oracle_rollable:lodestar/settlement/projects',
+		trouble: 'oracle_rollable:lodestar/settlement/trouble',
+		cultural_touchstones: 'oracle_rollable:lodestar/settlement/cultural_touchstones',
+		quick_name: {
+			prefix_a: 'oracle_rollable:lodestar/settlement/quick_name/prefix_a',
+			suffix_a: 'oracle_rollable:lodestar/settlement/quick_name/suffix_a',
+			prefix_b: 'oracle_rollable:lodestar/settlement/quick_name/prefix_b',
+			suffix_b: 'oracle_rollable:lodestar/settlement/quick_name/suffix_b'
+		},
+		type: {
+			settled_lands: 'oracle_rollable:lodestar/settlement/type/settled_lands',
+			boundary_lands: 'oracle_rollable:lodestar/settlement/type/boundary_lands',
+			remote_lands: 'oracle_rollable:lodestar/settlement/type/remote_lands'
+		}
+	},
 	story: {
-		clue: 'oracle_rollable:lodestar/story/clue'
+		clue: 'oracle_rollable:lodestar/story/clue',
+		plot_twist: 'oracle_rollable:lodestar/story/plot_twist'
 	}
 }
 
