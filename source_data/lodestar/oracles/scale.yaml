@@ -192,7 +192,12 @@ oracles:
       rank:
         name: Rank
         type: oracle_rollable
-        oracle_type: table_text
+        oracle_type: table_text3
+        column_labels:
+          roll: Roll
+          text: Rank
+          text2: Quest
+          text3: Journey / Foe
         _source:
           <<: *Source
           page: 99
@@ -200,11 +205,36 @@ oracles:
         rows:
           - roll: { min: 1, max: 15 }
             text: Troublesome
+            text2: A challenging quest with a small number of obstacles
+            text3: |-
+              Journey: Traveling a moderate distance within a single region
+
+              Foe: Common enemies
           - roll: { min: 16, max: 35 }
             text: Dangerous
+            text2: An involved quest with several obstacles
+            text3: |-
+              Journey: Traveling a long distance within a single region, or across rough terrain
+
+              Foe: Capable fighters and deadly creatures
           - roll: { min: 36, max: 65 }
             text: Formidable
+            text2: A complex quest with many obstacles
+            text3: |-
+              Journey: Traveling from one region to another, or across especially challenging terrain
+
+              Foe: Exceptional fighters and mighty creatures
           - roll: { min: 66, max: 85 }
             text: Extreme
+            text2: An intimidating quest with scores of obstacles
+            text3: |-
+              Journey: Traveling through multiple regions
+
+              Foe: Foes of overwhelming skill or power
           - roll: { min: 86, max: 100 }
             text: Epic
+            text2: A life-defining quest of unknowable scope
+            text3: |-
+              Journey: Traveling from one end of the Ironlands to another, or to a separate land
+
+              Foe: Legendary foes of mythic power

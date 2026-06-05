@@ -9,7 +9,6 @@ oracles:
     oracle_type: tables
     enhances:
       - oracle_collection:classic/character
-      - oracle_collection:delve/character
     _source: &Source
       title: 'Ironsworn: Lodestar'
       authors:

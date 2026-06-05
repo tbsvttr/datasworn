@@ -37,7 +37,8 @@ export const OracleIds = {
 	},
 	core: {
 		descriptor: 'oracle_rollable:lodestar/core/descriptor',
-		focus: 'oracle_rollable:lodestar/core/focus'
+		focus: 'oracle_rollable:lodestar/core/focus',
+		building_prompt: 'oracle_rollable:lodestar/core/building_prompt'
 	},
 	location: {
 		overland: {

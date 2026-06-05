@@ -89,8 +89,12 @@ oracles:
           <<: *Source
           page: 97
         rows:
-          - roll: { min: 1, max: 6 }
-            text: 'Drain the life from a target.'
+          - roll: { min: 1, max: 2 }
+            text: 'Alter the weather.'
+          - roll: { min: 3, max: 4 }
+            text: 'Nullify other powers.'
+          - roll: { min: 5, max: 6 }
+            text: 'Imbue an object with power.'
           - roll: { min: 7, max: 8 }
             text: 'Disintegrate or decay objects.'
           - roll: { min: 9, max: 10 }
@@ -106,7 +110,7 @@ oracles:
           - roll: { min: 19, max: 20 }
             text: 'Control elemental forces.'
           - roll: { min: 21, max: 22 }
-            text: 'Erase or suppress memories.'
+            text: 'Erase or suppresses memories.'
           - roll: { min: 23, max: 24 }
             text: 'Shroud in lasting darkness.'
           - roll: { min: 25, max: 26 }
@@ -132,11 +136,11 @@ oracles:
           - roll: { min: 45, max: 46 }
             text: 'Manifest inner fears.'
           - roll: { min: 47, max: 48 }
-            text: 'Reveal hidden truths.'
+            text: 'Banish to another time.'
           - roll: { min: 49, max: 50 }
-            text: 'Commune with spirits.'
+            text: 'Manipulate plant growth.'
           - roll: { min: 51, max: 52 }
-            text: 'Control weather or environment.'
+            text: 'Trigger a natural disaster.'
           - roll: { min: 53, max: 54 }
             text: 'Reveal past events.'
           - roll: { min: 55, max: 56 }

@@ -640,3 +640,24 @@ oracles:
           - <<: *i18n.common_noun
             roll: { min: 100, max: 100 }
             text: Corpse
+      building_prompt:
+        name: Building a Prompt
+        type: oracle_rollable
+        oracle_type: table_text
+        _source:
+          <<: *Source
+          page: 51
+        summary: Use this table to choose a structured prompt when you are unsure which Core oracles to combine for a question.
+        rows:
+          - roll: { min: 1, max: 20 }
+            text: Action + Theme
+          - roll: { min: 21, max: 40 }
+            text: Descriptor + Focus
+          - roll: { min: 41, max: 55 }
+            text: Action + Focus
+          - roll: { min: 56, max: 70 }
+            text: Descriptor + Theme
+          - roll: { min: 71, max: 85 }
+            text: Action + Descriptor + Focus
+          - roll: { min: 86, max: 100 }
+            text: Action + Descriptor + Theme

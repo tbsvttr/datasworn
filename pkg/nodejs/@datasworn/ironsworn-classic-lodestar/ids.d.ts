@@ -37,6 +37,7 @@ export declare const OracleIds: {
 	readonly core: {
 		readonly descriptor: 'oracle_rollable:lodestar/core/descriptor'
 		readonly focus: 'oracle_rollable:lodestar/core/focus'
+		readonly building_prompt: 'oracle_rollable:lodestar/core/building_prompt'
 	}
 	readonly location: {
 		readonly overland: {
