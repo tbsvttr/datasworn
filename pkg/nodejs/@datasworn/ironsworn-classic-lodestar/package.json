@@ -22,8 +22,9 @@
 	],
 	"contributors": [
 		{
-			"name": "Shawn Tomkin",
-			"url": "https://ironswornrpg.com"
+			"name": "sgreg",
+			"email": "sven@craplab.fi",
+			"url": "https://github.com/sgreg"
 		}
 	],
 	"scripts": {
@@ -39,8 +40,9 @@
 	},
 	"authors": [
 		{
-			"name": "Shawn Tomkin",
-			"url": "https://ironswornrpg.com"
+			"name": "sgreg",
+			"email": "sven@craplab.fi",
+			"url": "https://github.com/sgreg"
 		}
 	],
 	"private": false,
