@@ -16920,24 +16920,23 @@
 	"assets": {},
 	"atlas": {},
 	"moves": {
-		"journey": {
-			"_id": "move_category:lodestar/journey",
+		"adventure": {
+			"_id": "move_category:lodestar/adventure",
 			"type": "move_category",
-			"name": "Journey Moves",
+			"name": "Adventure Moves",
 			"enhances": [
 				"move_category:classic/adventure"
 			],
-			"summary": "Journey moves are used as you travel across the Ironlands.",
 			"contents": {
 				"follow_a_path": {
-					"_id": "move:lodestar/journey/follow_a_path",
+					"_id": "move:lodestar/adventure/follow_a_path",
 					"type": "move",
 					"name": "Follow a Path",
 					"roll_type": "action_roll",
 					"trigger": {
 						"conditions": [
 							{
-								"_id": "move.condition:lodestar/journey/follow_a_path.0",
+								"_id": "move.condition:lodestar/adventure/follow_a_path.0",
 								"method": "player_choice",
 								"roll_options": [
 									{
@@ -16952,15 +16951,15 @@
 					"text": "When __you journey along a known route, and one day blends into the next__, roll +supply.\n\nOn a __strong hit__, you reach your destination and the situation favors you. Take +1 momentum.\n\nOn a __weak hit__, you complete the journey, but face a cost or complication. Choose one or more.\n\n  * You took longer than expected.\n  * You pressed on through pain, sickness, or weariness: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You suffered under the burden of foul weather, worries, or fearful locations: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You wasted resources.\n  * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).\n\nOn a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination.",
 					"outcomes": {
 						"strong_hit": {
-							"_id": "move.outcome:lodestar/journey/follow_a_path.strong_hit",
+							"_id": "move.outcome:lodestar/adventure/follow_a_path.strong_hit",
 							"text": "On a __strong hit__, you reach your destination and the situation favors you. Take +1 momentum."
 						},
 						"weak_hit": {
-							"_id": "move.outcome:lodestar/journey/follow_a_path.weak_hit",
+							"_id": "move.outcome:lodestar/adventure/follow_a_path.weak_hit",
 							"text": "On a __weak hit__, you complete the journey, but face a cost or complication. Choose one or more.\n\n  * You took longer than expected.\n  * You pressed on through pain, sickness, or weariness: [Endure Harm](datasworn:move:classic/suffer/endure_harm).\n  * You suffered under the burden of foul weather, worries, or fearful locations: [Endure Stress](datasworn:move:classic/suffer/endure_stress).\n  * You wasted resources.\n  * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure)."
 						},
 						"miss": {
-							"_id": "move.outcome:lodestar/journey/follow_a_path.miss",
+							"_id": "move.outcome:lodestar/adventure/follow_a_path.miss",
 							"text": "On a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination."
 						}
 					},
@@ -16978,30 +16977,7 @@
 						"url": "https://ironswornrpg.com"
 					},
 					"allow_momentum_burn": true
-				}
-			},
-			"collections": {},
-			"_source": {
-				"title": "Ironsworn Lodestar",
-				"authors": [
-					{
-						"name": "Shawn Tomkin"
-					}
-				],
-				"date": "2025-05-01",
-				"license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-				"page": 10,
-				"url": "https://ironswornrpg.com"
-			}
-		},
-		"adventure": {
-			"_id": "move_category:lodestar/adventure",
-			"type": "move_category",
-			"name": "Adventure Moves",
-			"enhances": [
-				"move_category:classic/adventure"
-			],
-			"contents": {
+				},
 				"face_danger": {
 					"_id": "move:lodestar/adventure/face_danger",
 					"type": "move",

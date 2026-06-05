@@ -10,16 +10,14 @@ ruleset: classic
   url: https://ironswornrpg.com
   date: 2025-05-01
 moves:
-  journey:
-    name: Journey Moves
+  adventure:
+    name: Adventure Moves
     type: move_category
     enhances:
       - move_category:classic/adventure
     _source:
       <<: *Source
-      page: 10
-    summary: |-
-      Journey moves are used as you travel across the Ironlands.
+      page: 8
     contents:
       follow_a_path:
         name: Follow a Path
@@ -63,15 +61,6 @@ moves:
                 * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).
           miss:
             text: On a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination.
-  adventure:
-    name: Adventure Moves
-    type: move_category
-    enhances:
-      - move_category:classic/adventure
-    _source:
-      <<: *Source
-      page: 8
-    contents:
       face_danger:
         name: Face Danger
         type: move

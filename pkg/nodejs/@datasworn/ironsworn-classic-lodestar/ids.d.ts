@@ -1,10 +1,8 @@
 // Auto-generated ID constant types - do not edit manually
 
 export declare const MoveIds: {
-	readonly journey: {
-		readonly follow_a_path: 'move:lodestar/journey/follow_a_path'
-	}
 	readonly adventure: {
+		readonly follow_a_path: 'move:lodestar/adventure/follow_a_path'
 		readonly face_danger: 'move:lodestar/adventure/face_danger'
 	}
 	readonly scene_challenge: {
