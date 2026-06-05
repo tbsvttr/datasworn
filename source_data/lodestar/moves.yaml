@@ -13,11 +13,11 @@ moves:
   adventure:
     name: Adventure Moves
     type: move_category
+    enhances:
+      - move_category:classic/adventure
     _source:
       <<: *Source
-      page: 10
-    summary: |-
-      Adventure moves are used as you travel the Ironlands, investigate situations, and deal with threats.
+      page: 8
     contents:
       follow_a_path:
         name: Follow a Path
@@ -61,6 +61,75 @@ moves:
                 * You face a complication or hazard at the destination. Envision what you find ([Ask the Oracle](datasworn:move:classic/fate/ask_the_oracle) if unsure).
           miss:
             text: On a __miss__, you are waylaid by a dire threat and must [Pay the Price](datasworn:move:classic/fate/pay_the_price). If you overcome this obstacle, you may push on safely to your destination.
+      face_danger:
+        name: Face Danger
+        type: move
+        roll_type: action_roll
+        replaces:
+          - move:classic/adventure/face_danger
+        trigger:
+          text: When you attempt something risky or react to an imminent threat...
+          conditions:
+            - text: With speed, agility, or precision
+              method: player_choice
+              roll_options:
+                - using: stat
+                  stat: edge
+            - text: With charm, loyalty, or courage
+              method: player_choice
+              roll_options:
+                - using: stat
+                  stat: heart
+            - text: With aggressive action, forceful defense, strength, or endurance
+              method: player_choice
+              roll_options:
+                - using: stat
+                  stat: iron
+            - text: With deception, stealth, or trickery
+              method: player_choice
+              roll_options:
+                - using: stat
+                  stat: shadow
+            - text: With expertise, insight, or observation
+              method: player_choice
+              roll_options:
+                - using: stat
+                  stat: wits
+        _source:
+          <<: *Source
+          page: 8
+        text: |-
+          When __you attempt something risky or react to an imminent threat__, envision your action and roll. If you act...
+
+            * With speed, agility, or precision: Roll +edge.
+            * With charm, loyalty, or courage: Roll +heart.
+            * With aggressive action, forceful defense, strength, or endurance: Roll +iron.
+            * With deception, stealth, or trickery: Roll +shadow.
+            * With expertise, insight, or observation: Roll +wits.
+
+          On a __strong hit__, you are successful. Take +1 momentum.
+
+          On a __weak hit__, you succeed, but face a troublesome cost. Choose one.
+
+            * You are delayed, lose advantage, or face a new danger: Suffer -1 momentum.
+            * You are tired or hurt: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).
+            * You are dispirited or afraid: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).
+            * You sacrifice resources: Suffer -1 supply.
+
+          On a __miss__, you fail, or a momentary success is undermined by a dire turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price).
+        outcomes:
+          strong_hit:
+            text: On a __strong hit__, you are successful. Take +1 momentum.
+          weak_hit:
+            text: |-
+              On a __weak hit__, you succeed, but face a troublesome cost. Choose one.
+
+                * You are delayed, lose advantage, or face a new danger: Suffer -1 momentum.
+                * You are tired or hurt: [Endure Harm](datasworn:move:classic/suffer/endure_harm) (1 harm).
+                * You are dispirited or afraid: [Endure Stress](datasworn:move:classic/suffer/endure_stress) (1 stress).
+                * You sacrifice resources: Suffer -1 supply.
+          miss:
+            text: On a __miss__, you fail, or a momentary success is undermined by a dire turn of events. [Pay the Price](datasworn:move:classic/fate/pay_the_price).
   scene_challenge:
     name: Scene Challenge Moves
     type: move_category
@@ -189,7 +258,7 @@ moves:
             * With deception, stealth, or trickery: Roll +shadow.
             * With expertise, insight, or observation: Roll +wits.
 
-          On a __strong hit__, take both. On a __string hit with a match__, take both and mark progress. On a __weak hit__, choose one.
+          On a __strong hit__, take both. On a __strong hit with a match__, take both and mark progress. On a __weak hit__, choose one.
 
             * Take +2 momentum
             * Add +1 on your next move (not a progress move)

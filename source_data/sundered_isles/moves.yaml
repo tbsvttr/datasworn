@@ -17,6 +17,8 @@ moves:
     name: Exploration Moves
     type: move_category
     color: '#427FAA'
+    enhances:
+      - move_category:starforged/exploration
     # summary: |-
     #   Make __exploration moves__ as you traverse uncharted space, the surface of inhospitable planets, the depths of foreboding derelicts or enigmatic alien vaults, and other perilous sites.
     # description: |-

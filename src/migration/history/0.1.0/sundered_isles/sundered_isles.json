@@ -68166,6 +68166,9 @@
 			"_id": "move_category:sundered_isles/exploration",
 			"type": "move_category",
 			"name": "Exploration Moves",
+			"enhances": [
+				"move_category:starforged/exploration"
+			],
 			"color": "#427FAA",
 			"contents": {
 				"undertake_an_expedition": {

@@ -35,7 +35,8 @@
 		"url": "https://github.com/tbsvttr/datasworn/issues"
 	},
 	"dependencies": {
-		"@datasworn/ironsworn-classic": "0.1.0"
+		"@datasworn/ironsworn-classic": "0.1.0",
+		"@datasworn/ironsworn-classic-delve": "0.1.0"
 	},
 	"authors": [
 		{
