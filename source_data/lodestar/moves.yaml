@@ -269,7 +269,7 @@ moves:
             * With deception, stealth, or trickery: Roll +shadow.
             * With expertise, insight, or observation: Roll +wits.
 
-          On a __strong hit__, take both. On a __string hit with a match__, take both and mark progress. On a __weak hit__, choose one.
+          On a __strong hit__, take both. On a __strong hit with a match__, take both and mark progress. On a __weak hit__, choose one.
 
             * Take +2 momentum
             * Add +1 on your next move (not a progress move)
