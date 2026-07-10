@@ -41,6 +41,6 @@ build-backend = "uv_build"
 [dependency-groups]
 dev = [
     "pyclean>=3.4.0",
-    "pytest>=9.0.2",
+    "pytest>=9.0.3",
     "rich>=14.2.0",
 ]
