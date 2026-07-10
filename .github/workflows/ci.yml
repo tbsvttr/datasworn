@@ -83,10 +83,12 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      # Lodash GHSAs are transitive through release-it (dev only, maintainer
-      # release time) and have no upstream fix; ignore them in CI noise.
+      # Some CVEs are transitive through release-it/@release-it/bumper (dev
+      # only, maintainer release time) and either have no upstream fix
+      # (lodash) or can't be overridden without violating bumper's semver
+      # constraint (js-yaml — bumper pins ^4.1.0, fix is 5.x only).
       - name: Run bun audit
-        run: bun audit --audit-level=moderate --ignore=GHSA-xxjr-mmjv-4gpg --ignore=GHSA-r5fr-rjxr-66jc --ignore=GHSA-f23m-r3pf-42rh
+        run: bun audit --audit-level=moderate --ignore=GHSA-xxjr-mmjv-4gpg --ignore=GHSA-r5fr-rjxr-66jc --ignore=GHSA-f23m-r3pf-42rh --ignore=GHSA-h67p-54hq-rp68
 
   validate:
     runs-on: ubuntu-latest
