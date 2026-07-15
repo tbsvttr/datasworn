@@ -2821,7 +2821,6 @@ class SourceInfo(BaseModel):
         date_aliased,
         Field(
             description="The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
-            pattern='[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))',
         ),
     ]
     url: Annotated[
@@ -8615,7 +8614,6 @@ class Expansion(BaseModel):
         date_aliased,
         Field(
             description="The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
-            pattern='[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))',
         ),
     ]
     url: Annotated[
@@ -8784,7 +8782,6 @@ class Ruleset(BaseModel):
         date_aliased,
         Field(
             description="The date of the source documents's last update, formatted YYYY-MM-DD. Required because it's used to determine whether the data needs updating.",
-            pattern='[0-9]{4}-((0[0-9])|(1[0-2]))-(([0-2][0-9])|(3[0-1]))',
         ),
     ]
     url: Annotated[

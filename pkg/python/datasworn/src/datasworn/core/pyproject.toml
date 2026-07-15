@@ -8,7 +8,12 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "pydantic[email]>=2.13.4",
+    # Pin <2.13 until the generated models.py is reconciled with 2.13's stricter
+    # validation: (a) `date` fields carry a string `pattern` constraint that 2.13
+    # rejects, and (b) several fields (e.g. delve site_domains.*.features) are
+    # typed as models but the compiled JSON emits them as lists. Bumping pydantic
+    # again should coincide with regenerating and post-processing models.py.
+    "pydantic[email]>=2.12.5,<2.13",
 ]
 
 [tool.uv.build-backend]
