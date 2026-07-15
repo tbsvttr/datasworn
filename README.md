@@ -9,7 +9,15 @@
 | **Community content** (Ancient Wonders, Ironsmith, Starsmith, FE Runners) | [`datasworn-community/community-content`](https://github.com/datasworn-community/community-content) |
 | **Starting a new content package** | [`datasworn-community/community-template`](https://github.com/datasworn-community/community-template) |
 
-No new features, dependency updates, or bug fixes will land here. This repo is retained as a read-only historical reference while consumers migrate their imports and GitHub links.
+### JavaScript / TypeScript consumers
+
+Migrate now. The `@datasworn-community/*` packages on npm are the successor to the `@datasworn/*` packages that were published from this fork.
+
+### Python / JTD / Rust / C# consumers
+
+**Stay on this fork for now.** The community org's initial rewrite is JavaScript-focused and doesn't (yet) publish Python Pydantic bindings, JSON Type Definitions, or the language ports (Rust / C# / etc.) that this fork emits. Per-language successor repos are planned under the org as demand is confirmed. This banner will be updated with pointers as each language surface finds a home.
+
+No new features, dependency updates, or bug fixes will land here **for JavaScript consumers**. Non-JS surfaces continue to receive fixes here until their org replacements exist.
 
 ---
 
