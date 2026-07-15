@@ -5,37 +5,37 @@
  */
 declare namespace TypeId {
     /** Object types that can exist in collections. */
-    const Collectable: readonly ["atlas_entry", "npc", "oracle_rollable", "asset", "move"];
+    const Collectable: readonly ['atlas_entry', 'npc', 'oracle_rollable', 'asset', 'move'];
     type Collectable = (typeof Collectable)[number];
-    const Collection: readonly ["atlas_collection", "npc_collection", "oracle_collection", "asset_collection", "move_category"];
+    const Collection: readonly ['atlas_collection', 'npc_collection', 'oracle_collection', 'asset_collection', 'move_category'];
     type Collection = (typeof Collection)[number];
     /** ID type elements for types that don't use collections at all. */
-    const NonCollectable: readonly ["delve_site", "delve_site_domain", "delve_site_theme", "rarity", "truth"];
+    const NonCollectable: readonly ['delve_site', 'delve_site_domain', 'delve_site_theme', 'rarity', 'truth'];
     type NonCollectable = (typeof NonCollectable)[number];
     /** Any primary node type. Primary node types can have IDs that address only their type (IDs without '.' separators). */
     type Primary = Collectable | Collection | NonCollectable;
     const Primary: ["atlas_entry", "npc", "oracle_rollable", "asset", "move", "atlas_collection", "npc_collection", "oracle_collection", "asset_collection", "move_category", "delve_site", "delve_site_domain", "delve_site_theme", "rarity", "truth"];
     const CollectedByMap: {
-        readonly asset_collection: "asset";
-        readonly move_category: "move";
-        readonly atlas_collection: "atlas_entry";
-        readonly npc_collection: "npc";
-        readonly oracle_collection: "oracle_rollable";
+        readonly asset_collection: 'asset';
+        readonly move_category: 'move';
+        readonly atlas_collection: 'atlas_entry';
+        readonly npc_collection: 'npc';
+        readonly oracle_collection: 'oracle_rollable';
     };
     type CollectableOf<T extends Collection> = (typeof CollectedByMap)[T];
     function getCollectableOf<T extends Collection>(typeId: T): CollectableOf<T>;
     const CollectionOfMap: {
-        readonly asset: "asset_collection";
-        readonly move: "move_category";
-        readonly atlas_entry: "atlas_collection";
-        readonly npc: "npc_collection";
-        readonly oracle_rollable: "oracle_collection";
+        readonly asset: 'asset_collection';
+        readonly move: 'move_category';
+        readonly atlas_entry: 'atlas_collection';
+        readonly npc: 'npc_collection';
+        readonly oracle_rollable: 'oracle_collection';
     };
     type CollectionOf<T extends Collectable> = (typeof CollectionOfMap)[T];
     function getCollectionOf<T extends Collectable>(typeId: T): CollectionOf<T>;
     const EmbeddablePrimary: ["oracle_rollable", "move"];
     type EmbeddablePrimary = (typeof EmbeddablePrimary)[number];
-    const EmbedOnly: readonly ["ability", "condition", "outcome", "option", "row", "feature", "danger", "denizen", "variant"];
+    const EmbedOnly: readonly ['ability', 'condition', 'outcome', 'option', 'row', 'feature', 'danger', 'denizen', 'variant'];
     type EmbedOnly = (typeof EmbedOnly)[number];
     const Embeddable: ["oracle_rollable", "move", "ability", "condition", "outcome", "option", "row", "feature", "danger", "denizen", "variant"];
     type Embeddable = EmbeddablePrimary | EmbedOnly;
@@ -73,36 +73,36 @@ declare namespace TypeId {
     }[T];
     const EmbeddedTypePath: string[];
     const EmbeddedPropertyKeys: {
-        readonly ability: "abilities";
-        readonly condition: "trigger.conditions";
-        readonly outcome: "outcomes";
-        readonly option: "options";
-        readonly row: "rows";
-        readonly feature: "features";
-        readonly danger: "dangers";
-        readonly denizen: "denizens";
-        readonly variant: "variants";
+        readonly ability: 'abilities';
+        readonly condition: 'trigger.conditions';
+        readonly outcome: 'outcomes';
+        readonly option: 'options';
+        readonly row: 'rows';
+        readonly feature: 'features';
+        readonly danger: 'dangers';
+        readonly denizen: 'denizens';
+        readonly variant: 'variants';
     };
     function getEmbeddedPropertyType(typeId: TypeId.Any): 'array' | 'dictionary';
     type Any = Primary | EmbedOnly;
     const Any: ["atlas_entry", "npc", "oracle_rollable", "asset", "move", "atlas_collection", "npc_collection", "oracle_collection", "asset_collection", "move_category", "delve_site", "delve_site_domain", "delve_site_theme", "rarity", "truth", "ability", "condition", "outcome", "option", "row", "feature", "danger", "denizen", "variant"];
     /** The ancestor key of this type on the {@link Datasworn.RulesPackage} object. */
     const BranchKey: {
-        readonly asset_collection: "assets";
-        readonly asset: "assets";
-        readonly move_category: "moves";
-        readonly move: "moves";
-        readonly atlas_collection: "atlas";
-        readonly atlas_entry: "atlas";
-        readonly npc_collection: "npcs";
-        readonly npc: "npcs";
-        readonly oracle_collection: "oracles";
-        readonly oracle_rollable: "oracles";
-        readonly delve_site: "delve_sites";
-        readonly truth: "truths";
-        readonly delve_site_domain: "site_domains";
-        readonly delve_site_theme: "site_themes";
-        readonly rarity: "rarities";
+        readonly asset_collection: 'assets';
+        readonly asset: 'assets';
+        readonly move_category: 'moves';
+        readonly move: 'moves';
+        readonly atlas_collection: 'atlas';
+        readonly atlas_entry: 'atlas';
+        readonly npc_collection: 'npcs';
+        readonly npc: 'npcs';
+        readonly oracle_collection: 'oracles';
+        readonly oracle_rollable: 'oracles';
+        readonly delve_site: 'delve_sites';
+        readonly truth: 'truths';
+        readonly delve_site_domain: 'site_domains';
+        readonly delve_site_theme: 'site_themes';
+        readonly rarity: 'rarities';
     };
     type BranchKey<T extends Primary = Primary> = (typeof BranchKey)[T];
     /** The ancestor key of this type when it's embedded in another object. */

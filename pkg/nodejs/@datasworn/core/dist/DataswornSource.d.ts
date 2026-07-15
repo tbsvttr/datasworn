@@ -1,7 +1,7 @@
 /**
  * The root object for a Datasworn source file, whose schema is discriminated by the `type` property. Unlike the JSON schema for distribution, this may be a standalone object (Asset, Npc, Move, OracleRollable, DelveSite, DelveSiteTheme, DelveSiteDomain, or Rarity), but it still must specify its `ruleset` and `datasworn_version`.
  */
-export type SourceRoot = RulesPackage | (Asset | Npc | Move | OracleRollable | DelveSite | DelveSiteTheme | DelveSiteDomain | Rarity) & ({
+export type SourceRoot = RulesPackage | ((Asset | Npc | Move | OracleRollable | DelveSite | DelveSiteTheme | DelveSiteDomain | Rarity) & ({
     /**
      * The version of the Datasworn format used by this data.
      * @pattern ```javascript
@@ -10,7 +10,7 @@ export type SourceRoot = RulesPackage | (Asset | Npc | Move | OracleRollable | D
      */
     datasworn_version: "0.1.0";
     ruleset: RulesetId;
-});
+}));
 /**
  *   - `miss`: An automatic miss.
  *   - `weak_hit`: An automatic weak hit.

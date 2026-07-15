@@ -12,5 +12,5 @@ type RowLike = {
  * @param b The second row to compare.
  * @returns `-1` if `a` comes before `b`, `1` if `b` comes before `a`, or `0` if the sort order is unchanged.
  */
-export declare function compareRanges(a: RowLike, b: RowLike): 1 | 0 | -1;
+export declare function compareRanges(a: RowLike, b: RowLike): -1 | 0 | 1;
 export {};

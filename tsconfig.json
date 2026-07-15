@@ -11,20 +11,18 @@
 	"compilerOptions": {
 		"paths": {
 			"Datasworn": [
-				"../pkg/nodejs/@datasworn/core/Datasworn.d.ts",
-				"./types/Datasworn.d.ts",
-				"./types/Datasworn.js"
+				"./pkg/nodejs/@datasworn/core/Datasworn.d.ts",
+				"./src/types/Datasworn.d.ts",
+				"./src/types/Datasworn.js"
 			],
 			"DataswornSource": [
-				"../pkg/nodejs/@datasworn/core/DataswornSource.d.ts",
-				"./types/DataswornSource.d.ts",
-				"./types/DataswornSource.js"
+				"./pkg/nodejs/@datasworn/core/DataswornSource.d.ts",
+				"./src/types/DataswornSource.d.ts",
+				"./src/types/DataswornSource.js"
 			]
 		},
 		"outDir": "dist",
 		"rootDir": "src",
-		"baseUrl": "src",
-		"ignoreDeprecations": "6.0",
 		"target": "ES2018",
 		"lib": ["ES2020", "ES2021", "ES2022"],
 		"moduleResolution": "NodeNext",

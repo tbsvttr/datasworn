@@ -1,6 +1,6 @@
 import path from 'node:path'
 import { Glob } from 'bun'
-import { copyDir, copyFile, updateJSON } from 'scripts/utils/readWrite.js'
+import { copyDir, copyFile, updateJSON } from '../../utils/readWrite.js'
 import type { Datasworn } from '../../../pkg-core/index.js'
 import type { RulesPackageConfig } from '../../../schema/tools/build/index.js'
 import {

@@ -236,7 +236,7 @@ declare class CollectableId<TTypeId extends TypeId.Collectable = TypeId.Collecta
     get collectionAncestorKeys(): CollectableAncestorKeys;
     get recursionDepth(): CollectableAncestorKeys['length'];
     get parentTypeId(): TypeId.CollectionOf<TTypeId>;
-    getCollectionIdParent(): CollectionId<TypeId.CollectionOf<TTypeId>, RulesPackage, Head<CollectableAncestorKeys> & PathKeys.CollectionAncestorKeys, LastElementOf<CollectableAncestorKeys>>;
+    getCollectionIdParent(): CollectionId<TypeId.CollectionOf<TTypeId>, RulesPackage, Head<CollectableAncestorKeys> & CollectionAncestorKeys, LastElementOf<CollectableAncestorKeys>>;
     /** @internal */
     _getUnsafe(tree: (typeof IdParser)['tree']): TypeNode.Collectable<TTypeId>;
     /** @internal */

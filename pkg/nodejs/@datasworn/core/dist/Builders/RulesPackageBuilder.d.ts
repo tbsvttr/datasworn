@@ -44,9 +44,9 @@ export declare class RulesPackageBuilder<TSource extends DataswornSource.RulesPa
     /** Top-level RulesPackage properties to omit from key sorting. */
     static readonly topLevelKeysBlackList: ["rules"];
     /** Separator character used for JSON pointers. */
-    static readonly pointerSep: "/";
+    static readonly pointerSep: '/';
     /** Hash character that prepends generated JSON pointers. */
-    static readonly hashChar: "#";
+    static readonly hashChar: '#';
     /**
      *
      * @param id The `_id` of the RulesPackage to be constructed.
