@@ -1,3 +1,18 @@
+# ⚠️ Deprecated — please use the [Datasworn Community](https://github.com/datasworn-community) org
+
+**This fork is superseded by the community-owned [`datasworn-community`](https://github.com/datasworn-community) GitHub organization**, which continues the work here with proper release infrastructure, published packages, and shared maintainership. Please point new work there:
+
+| What you want | Where it lives now |
+|---|---|
+| **Schema, types, build tooling** | [`datasworn-community/datasworn`](https://github.com/datasworn-community/datasworn) → `@datasworn-community/core`, `@datasworn-community/build-tools` |
+| **Official content** (Ironsworn, Starforged, Delve, Sundered Isles, Lodestar) | [`datasworn-community/official-content`](https://github.com/datasworn-community/official-content) |
+| **Community content** (Ancient Wonders, Ironsmith, Starsmith, FE Runners) | [`datasworn-community/community-content`](https://github.com/datasworn-community/community-content) |
+| **Starting a new content package** | [`datasworn-community/community-template`](https://github.com/datasworn-community/community-template) |
+
+No new features, dependency updates, or bug fixes will land here. This repo is retained as a read-only historical reference while consumers migrate their imports and GitHub links.
+
+---
+
 # Datasworn v0.1.0
 
 [![@datasworn/core on npm](https://img.shields.io/npm/v/@datasworn/core?logo=npm)](https://www.npmjs.com/package/@datasworn/core)
