@@ -9,14 +9,19 @@
 | **Community content** (Ancient Wonders, Ironsmith, Starsmith, FE Runners) | [`datasworn-community/community-content`](https://github.com/datasworn-community/community-content) |
 | **Starting a new content package** | [`datasworn-community/community-template`](https://github.com/datasworn-community/community-template) |
 | **Web viewer** (browse rulesets, roll on oracles) | [`datasworn-community/viewer`](https://github.com/datasworn-community/viewer) → live at [datasworn-community.github.io/viewer](https://datasworn-community.github.io/viewer/) |
+| **Python Pydantic bindings** | [`datasworn-community/python-bindings`](https://github.com/datasworn-community/python-bindings) — install as `datasworn-community-<ruleset>` |
 
 ### JavaScript / TypeScript consumers
 
 Migrate now. The `@datasworn-community/*` packages on npm are the successor to the `@datasworn/*` packages that were published from this fork.
 
-### Python / JTD / Rust / C# consumers
+### Python consumers
 
-**Stay on this fork for now.** The community org's initial rewrite is JavaScript-focused and doesn't (yet) publish Python Pydantic bindings, JSON Type Definitions, or the language ports (Rust / C# / etc.) that this fork emits. Per-language successor repos are planned under the org as demand is confirmed. This banner will be updated with pointers as each language surface finds a home.
+Use [`datasworn-community/python-bindings`](https://github.com/datasworn-community/python-bindings). It's a rename + reshape of this fork's `pkg/python/` — same Pydantic models, same import paths (`from datasworn.core.models import Ruleset`), new PyPI names (`datasworn-community-core`, `datasworn-community-classic`, …). Not on PyPI yet; install from git in the meantime, see the new repo's README.
+
+### JTD / Rust / C# consumers
+
+**Stay on this fork for now.** The community org still doesn't publish JSON Type Definitions or language-port bindings (Rust / C#) that this fork emits. Per-language successor repos will be added under the org as demand is confirmed. This banner will be updated with pointers as each surface finds a home.
 
 No new features, dependency updates, or bug fixes will land here **for JavaScript consumers**. Non-JS surfaces continue to receive fixes here until their org replacements exist.
 
