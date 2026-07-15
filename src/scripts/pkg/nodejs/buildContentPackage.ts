@@ -1,6 +1,5 @@
 import path from 'node:path'
 import { Glob } from 'bun'
-import { copyDir, copyFile, updateJSON } from '../../utils/readWrite.js'
 import type { Datasworn } from '../../../pkg-core/index.js'
 import type { RulesPackageConfig } from '../../../schema/tools/build/index.js'
 import {
@@ -11,7 +10,12 @@ import {
 	VERSION
 } from '../../const.js'
 import Log from '../../utils/Log.js'
-import { emptyDir } from '../../utils/readWrite.js'
+import {
+	copyDir,
+	copyFile,
+	emptyDir,
+	updateJSON
+} from '../../utils/readWrite.js'
 import {
 	generateIdConstantsDts,
 	generateIdConstantsJs
