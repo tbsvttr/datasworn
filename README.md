@@ -8,6 +8,7 @@
 | **Official content** (Ironsworn, Starforged, Delve, Sundered Isles, Lodestar) | [`datasworn-community/official-content`](https://github.com/datasworn-community/official-content) |
 | **Community content** (Ancient Wonders, Ironsmith, Starsmith, FE Runners) | [`datasworn-community/community-content`](https://github.com/datasworn-community/community-content) |
 | **Starting a new content package** | [`datasworn-community/community-template`](https://github.com/datasworn-community/community-template) |
+| **Web viewer** (browse rulesets, roll on oracles) | [`datasworn-community/viewer`](https://github.com/datasworn-community/viewer) → live at [datasworn-community.github.io/viewer](https://datasworn-community.github.io/viewer/) |
 
 ### JavaScript / TypeScript consumers
 
