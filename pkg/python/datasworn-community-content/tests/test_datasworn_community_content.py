@@ -1,9 +1,15 @@
+"""Tests for the Datasworn community-content Python packages.
+
+Validates that every community rules-package JSON file can be loaded into
+Pydantic models without validation errors and exposes the expected fields.
+"""
+
 import importlib
 import json
 from pathlib import Path
 
-from datasworn.core.models import Expansion, Ruleset, RulesPackage, Type
-from rich import print
+import pytest
+from datasworn.core.models import Expansion, Ruleset
 
 NAMESPACE = "datasworn_community_content"
 
@@ -15,29 +21,29 @@ RULES_PACKAGES = [
 
 
 def load_rules_package(package_name: str) -> Ruleset | Expansion:
+    """Load a rules package JSON file into a Pydantic model."""
     package = importlib.import_module(f"{NAMESPACE}.{package_name}")
     json_file = Path(package.__file__).parent / "json" / f"{package_name}.json"
+
     with json_file.open() as f:
-        rules = f.read()
-        rules_json = json.loads(rules)
-        if rules_json["type"] == "expansion":
-            return Expansion.model_validate_json(rules)
-        else:
-            return Ruleset.model_validate_json(rules)
-        # print(rules_json.keys())
-        # rules_package = Ruleset(**rules_json)
+        rules_json = json.load(f)
+
+    if rules_json["type"] == "expansion":
+        return Expansion.model_validate(rules_json)
+    return Ruleset.model_validate(rules_json)
 
 
-def test_datasworn():
-    for rules_package in RULES_PACKAGES:
-        rules_package = load_rules_package(rules_package)
-        # datasworn_tree = {rules_package._id: rules_package}
+@pytest.mark.parametrize("package_name", RULES_PACKAGES)
+def test_load_rules_package(package_name: str):
+    """Each community rules package loads without validation errors."""
+    rules = load_rules_package(package_name)
 
-        _id = rules_package.id
-        print(f"\n{_id}: {type(rules_package)} {rules_package.type}")
-        print(rules_package)
+    assert rules.id is not None
+    assert isinstance(rules.id, str)
+    assert package_name in rules.id
+    assert rules.type in ("ruleset", "expansion")
 
-        # if rules_package.type == Type.ruleset:
-        # rules_package_dict = rules_package.model_dump()
-        # datasworn_tree[_id] = Ruleset(**rules_package_dict.model_dump() {"type": "ruleset"})
-        # print(datasworn_tree[_id])
+    if rules.type == "ruleset":
+        assert isinstance(rules, Ruleset)
+    else:
+        assert isinstance(rules, Expansion)
