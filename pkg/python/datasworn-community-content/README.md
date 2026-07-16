@@ -1,5 +1,7 @@
 # Datasworn Community Content Python Packages
 
+> **⚠️ Moved.** Ported to [`datasworn-community/python-bindings`](https://github.com/datasworn-community/python-bindings) alongside the official packages, in one flat workspace. New PyPI names: `datasworn-community-ancient-wonders`, `datasworn-community-fe-runners`, `datasworn-community-ironsmith`, `datasworn-community-starsmith`. Python import paths unchanged (`from datasworn_community_content.starsmith import starsmith`). Use the new repo — this copy is retained for historical reference only.
+
 Community-created content packages for Datasworn in Python/Pydantic.
 
 ## Packages

@@ -1,5 +1,7 @@
 # Datasworn Python Packages
 
+> **⚠️ Moved.** These packages are now maintained at [`datasworn-community/python-bindings`](https://github.com/datasworn-community/python-bindings). Same Pydantic models, same Python import paths (`from datasworn.core.models import Ruleset`), new PyPI names on the `datasworn-community-*` prefix. This copy is preserved as read-only historical reference while the community org replacements stabilize.
+
 Python/Pydantic packages for working with [Datasworn](https://github.com/tbsvttr/datasworn) data.
 
 ## Quick Reference: Regenerating After JSON Changes
