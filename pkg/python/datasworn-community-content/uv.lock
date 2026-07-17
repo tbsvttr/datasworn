@@ -79,7 +79,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pydantic", extras = ["email"], specifier = ">=2.13.4" }]
+requires-dist = [{ name = "pydantic", extras = ["email"], specifier = ">=2.13.4,<2.14" }]
 
 [[package]]
 name = "dnspython"
