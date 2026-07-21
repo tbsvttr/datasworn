@@ -1,0 +1,232 @@
+_id: 'ironsmith_darkness'
+datasworn_version: '0.1.0'
+type: 'expansion'
+ruleset: 'classic'
+assets:
+  path:
+    name: 'Path Assets'
+    type: 'asset_collection'
+    _source:
+      <<: &Source
+        license: https://creativecommons.org/licenses/by/4.0
+        url: https://www.drivethrurpg.com/product/351813/Ironsmith
+        date: 2021-10-21
+        title: 'Ironsmith: Darkness'
+        authors:
+          - name: Eric Bright
+      page: 50
+    contents:
+      the_darkness_within_definition:
+        name: 'The Darkness Within (Definition)'
+        type: 'asset'
+        category: 'Path'
+        _source:
+          <<: *Source
+          page: 52
+        abilities: []
+        options:
+          define_the_dark_power_in_you:
+            field_type: 'text'
+            label: 'define the dark power in you'
+          define_aspects_that_the_darkness_controls:
+            field_type: 'text'
+            label: 'define aspects that the darkness controls'
+          define_weaknesses_the_darkness_gives_you:
+            field_type: 'text'
+            label: 'define weaknesses the darkness gives you'
+      the_darkness_within:
+        name: 'The Darkness Within'
+        type: 'asset'
+        category: 'Path'
+        _source:
+          <<: *Source
+          page: 53
+        abilities:
+          - enabled: true
+            text: 'You gain access to the moves [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness), [Resist the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness), and [Succumb to Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness).'
+            enhance_moves:
+              - roll_type: action_roll
+                enhances:
+                  - move:classic/relationship/compel
+                  - move:classic/adventure/face_danger
+                  - move:classic/adventure/gather_information
+                  - move:classic/adventure/secure_an_advantage
+                  - move:classic/combat/strike
+                  - move:classic/combat/clash
+                  - move:classic/suffer/endure_harm
+                  - move:classic/suffer/face_death
+                trigger:
+                  conditions:
+                    - text: by summoning the darkness within you and leveraging it
+                      method: player_choice
+                      roll_options:
+                        - using: asset_control
+                          assets: null
+                          control: darkness
+            moves:
+              wield_the_darkness:
+                name: Wield the Darkness
+                type: move
+                roll_type: no_roll
+                trigger:
+                  text: When you summon the darkness within you and leverage it to make minor alterations to an aspect the dark power controls...
+                  conditions:
+                    - text: '__Act:__ You may [Compel](datasworn:move:classic/relationship/compel), [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage), [Strike](datasworn:move:classic/combat/strike), or [Clash](datasworn:move:classic/combat/clash) + darkness instead of the normal stat. If your action die shows a 1 on that move, mark darkness.'
+                    - text:
+                        '__Interrupt:__ After rolling for a move but before resolving the outcome, choose one:
+
+                        \ * Mark darkness to change a weak hit to a strong hit.  * Mark darkness twice to chance a miss to a weak hit.'
+                    - text: '__Empower:__ You may [Endure Harm](datasworn:move:classic/suffer/endure_harm) or [Face Death](datasworn:move:classic/suffer/face_death) +darkness instead of the normal stat. If your action die shows a 1 on that move, mark Darkness.'
+                text: |-
+                  When you __summon the darkness within you and leverage it to make minor alterations to an aspect__ the dark power controls, choose one option below. Then envision how your character uses the power to:
+
+                    * __Act:__ You may [Compel](datasworn:move:classic/relationship/compel), [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage), [Strike](datasworn:move:classic/combat/strike), or [Clash](datasworn:move:classic/combat/clash) + darkness instead of the normal stat. If your action die shows a 1 on that move, mark darkness.
+                    * __Interrupt:__ After rolling for a move but before resolving the outcome, choose one: 
+                    
+                      * Mark darkness to change a weak hit to a strong hit.
+                      * Mark darkness twice to chance a miss to a weak hit.
+                    * __Empower:__ You may [Endure Harm](datasworn:move:classic/suffer/endure_harm) or [Face Death](datasworn:move:classic/suffer/face_death) +darkness instead of the normal stat. If your action die shows a 1 on that move, mark Darkness.
+              resist_the_darkness:
+                name: Resist the Darkness
+                type: move
+                roll_type: action_roll
+                trigger:
+                  text: When you encounter a manifestation of the darkness within you and try to resist its pull...
+                  conditions:
+                    - method: player_choice
+                      roll_options:
+                        - using: stat
+                          stat: heart
+                text: |-
+                  When you __encounter a manifestation of the darkness within you and try to resist its pull__, roll + heart and change any challenge die below your darkness level to your darkness level.
+
+                  On a __strong hit__, you stave off the darkness and affirm your control over it. Take +1 momentum.
+
+                  On a __weak hit__, you stave off the darkness for now but still feel its grip on you. You press on.
+
+                  On a __miss__, the darkness nearly overwhelms you. Mark darkness, and choose one:
+
+                    - [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Act (not Interrupt or Empower) and add +1.
+                    - Indulge the Darkness: You act against your better nature to your detriment.
+                    - [Pay the Price ](datasworn:move:classic/fate/pay_the_price)
+
+                  You may not [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Interrupt this move.
+                outcomes:
+                  strong_hit:
+                    text: On a __strong hit__, you stave off the darkness and affirm your control over it. Take +1 momentum.
+                  weak_hit:
+                    text: On a __weak hit__, you stave off the darkness for now but still feel its grip on you. You press on.
+                  miss:
+                    text: |-
+                      On a __miss__, the darkness nearly overwhelms you. Mark darkness, and choose one:
+
+                      - [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Act (not Interrupt or Empower) and add +1.
+                      - Indulge the Darkness: You act against your better nature to your detriment.
+                      - [Pay the Price ](datasworn:move:classic/fate/pay_the_price)
+              succumb_to_darkness:
+                name: Succumb to Darkness
+                type: move
+                roll_type: action_roll
+                trigger:
+                  text: When you fill your Darkness track...
+                  conditions:
+                    - method: player_choice
+                      roll_options:
+                        - using: stat
+                          stat: heart
+                text: |-
+                  When you __fill your Darkness Track__, roll + heart and change any challenge die below a value of 5 to 5. 
+
+                  On a __strong hit__, you find the willpower to press back the darkness if only for a moment. Set your darkness level to +5 and press on.
+
+                  On a __weak hit__, choose one:
+                    
+                    * The darkness overwhelms you, but not before you wield it one more time to enact a significant change or revenge on the source of your darkness. Envision your final moments.
+                    * You catch a fleeting vision of what the darkness within you fears and see a path to redemption and freedom. Envision how the darkness may be cast off and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to purify and free yourself of this darkness. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) or refuse the quest, you are lost. Otherwise, you gain tenuous control over the darkness and set your darkness level to +5. When you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) to free yourself, you lose the Darkness Within asset and take +3 Experience.
+
+                  On a __miss__, your body, mind, and soul are consumed by the darkness. Choose one:
+
+                    * A remnant of you haunts the Ironlands and is set towards an ill purpose by the dark power that lived within you. Envision how your remnant furthers the cause of darkness in the Ironlands.
+                    * You were not a strong enough vessel to hold the darkness in. Envision how this dark power now moves on to corrupt another who you care about.
+                    
+                  You may not [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Interrupt this move.
+                outcomes:
+                  strong_hit:
+                    text: On a __strong hit__, you find the willpower to press back the darkness if only for a moment. Set your darkness level to +5 and press on.
+                  weak_hit:
+                    text: |-
+                      On a __weak hit__, choose one:
+
+                      * The darkness overwhelms you, but not before you wield it one more time to enact a significant change or revenge on the source of your darkness. Envision your final moments.
+                      * You catch a fleeting vision of what the darkness within you fears and see a path to redemption and freedom. Envision how the darkness may be cast off and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to purify and free yourself of this darkness. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) or refuse the quest, you are lost. Otherwise, you gain tenuous control over the darkness and set your darkness level to +5. When you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) to free yourself, you lose the Darkness Within asset and take +3 Experience.
+                  miss:
+                    text: |-
+                      On a __miss__, your body, mind, and soul are consumed by the darkness. Choose one:
+
+                      * A remnant of you haunts the Ironlands and is set towards an ill purpose by the dark power that lived within you. Envision how your remnant furthers the cause of darkness in the Ironlands.
+                      * You were not a strong enough vessel to hold the darkness in. Envision how this dark power now moves on to corrupt another who you care about.
+          - text: 'You gain access to the [Cleanse the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness) move. Envision your method for combating the dark influence inside you.'
+            moves:
+              cleanse_the_darkness:
+                name: Cleanse the Darkness
+                type: move
+                roll_type: action_roll
+                trigger:
+                  text: When you take significant time to perform an activity that fights the darkness within you...
+                  conditions:
+                    - method: player_choice
+                      roll_options:
+                        - using: stat
+                          stat: heart
+                text: |-
+                  When you __take significant time to perform an activity that fights the darkness within you__, roll +heart and change any challenge die result that is below your darkness level to your darkness level. You may not [Cleanse the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness) if you are Shaken.
+
+                  On a __strong hit__, the darkness retreats. Lower your darkness and choose one:
+
+                    * Lower your darkness again.
+                    * Take +1 momentum.
+
+                  On a __weak hit__, the darkness loosens its grip. Lower your darkness once.
+
+                  On a __miss__, the darkness clings to you. Mark Shaken.
+
+                  You may not [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Interrupt this move.
+                outcomes:
+                  strong_hit:
+                    text: |-
+                      On a __strong hit__, the darkness retreats. Lower your darkness and choose one:
+
+                      * Lower your darkness again.
+                      * Take +1 momentum.
+                  weak_hit:
+                    text: On a __weak hit__, the darkness loosens its grip. Lower your darkness once.
+                  miss:
+                    text: On a __miss__, the darkness clings to you. Mark Shaken.
+          - text: 'When you [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness), you may make major alterations instead of minor and also perform minor acts of creation with aspects.'
+          - text: 'When you [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness), you may perform major acts of creation and also bend reality with aspects. You must have all other upgrades before choosing this one.'
+        controls:
+          darkness:
+            field_type: condition_meter
+            min: 2
+            max: 5
+            value: 2
+            label: darkness
+            controls:
+              flee:
+                field_type: checkbox
+                label: 'Setback: Flee'
+              freeze:
+                field_type: checkbox
+                label: 'Setback: Freeze'
+              destroy:
+                field_type: checkbox
+                label: 'Snap: Destroy'
+              detach:
+                field_type: checkbox
+                label: 'Snap: Detach'
+              delusion:
+                field_type: checkbox
+                label: 'Struggle: Delusion'
+              dependency:
+                field_type: checkbox
+                label: 'Struggle: Dependency'

@@ -1,0 +1,17 @@
+_id: ironsmith_darkness
+datasworn_version: '0.1.0'
+type: expansion
+ruleset: classic
+<<: &Source
+  license: https://creativecommons.org/licenses/by/4.0
+  url: https://www.drivethrurpg.com/product/351813/Ironsmith
+  date: 2021-10-21
+  title: 'Ironsmith: Darkness'
+  authors:
+    - name: Eric Bright
+rules:
+  special_tracks:
+    failure_track:
+      label: darkness track
+      description: Rewards your Ironsworn character for the lessons learned when you fail to overcome challenges.
+      optional: true

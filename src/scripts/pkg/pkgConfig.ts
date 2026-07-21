@@ -239,3 +239,26 @@ export const Ironsmith: RulesPackageConfig = {
 		]
 	}
 }
+
+export const IronsmithDarkness: RulesPackageConfig = {
+	type: 'expansion',
+	paths: {
+		source: path.join(ROOT_SOURCE_DATA, 'ironsmith_darkness')
+	},
+	id: 'ironsmith_darkness',
+	pkg: {
+		name: 'ironsmith-darkness',
+		private: true,
+		scope: PKG_SCOPE_COMMUNITY,
+		description:
+			'Datasworn JSON data for the Darkness system of Ironsmith, a Classic Ironsworn expansion by Eric Bright.',
+		keywords: ['ironsworn', 'datasworn', 'TTRPG', 'ironsmith'],
+		authors: [
+			{
+				name: 'Eric Bright',
+				email: 'noreply@playeveryrole.com',
+				url: 'https://playeveryrole.com/'
+			}
+		]
+	}
+}

@@ -1,0 +1,384 @@
+{
+	"_id": "ironsmith_darkness",
+	"datasworn_version": "0.1.0",
+	"type": "expansion",
+	"ruleset": "classic",
+	"title": "Ironsmith: Darkness",
+	"authors": [
+		{
+			"name": "Eric Bright"
+		}
+	],
+	"date": "2021-10-21",
+	"license": "https://creativecommons.org/licenses/by/4.0",
+	"url": "https://www.drivethrurpg.com/product/351813/Ironsmith",
+	"rules": {
+		"condition_meters": {},
+		"stats": {},
+		"impacts": {},
+		"special_tracks": {
+			"failure_track": {
+				"label": "darkness track",
+				"optional": true,
+				"shared": false,
+				"description": "Rewards your Ironsworn character for the lessons learned when you fail to overcome challenges."
+			}
+		},
+		"tags": {}
+	},
+	"oracles": {},
+	"assets": {
+		"path": {
+			"_id": "asset_collection:ironsmith_darkness/path",
+			"type": "asset_collection",
+			"name": "Path Assets",
+			"contents": {
+				"the_darkness_within_definition": {
+					"_id": "asset:ironsmith_darkness/path/the_darkness_within_definition",
+					"type": "asset",
+					"name": "The Darkness Within (Definition)",
+					"category": "Path",
+					"options": {
+						"define_the_dark_power_in_you": {
+							"label": "define the dark power in you",
+							"field_type": "text",
+							"value": null
+						},
+						"define_aspects_that_the_darkness_controls": {
+							"label": "define aspects that the darkness controls",
+							"field_type": "text",
+							"value": null
+						},
+						"define_weaknesses_the_darkness_gives_you": {
+							"label": "define weaknesses the darkness gives you",
+							"field_type": "text",
+							"value": null
+						}
+					},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [],
+					"controls": {},
+					"_source": {
+						"title": "Ironsmith: Darkness",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2021-10-21",
+						"license": "https://creativecommons.org/licenses/by/4.0",
+						"url": "https://www.drivethrurpg.com/product/351813/Ironsmith"
+					}
+				},
+				"the_darkness_within": {
+					"_id": "asset:ironsmith_darkness/path/the_darkness_within",
+					"type": "asset",
+					"name": "The Darkness Within",
+					"category": "Path",
+					"options": {},
+					"count_as_impact": false,
+					"shared": false,
+					"abilities": [
+						{
+							"_id": "asset.ability:ironsmith_darkness/path/the_darkness_within.0",
+							"enabled": true,
+							"options": {},
+							"text": "You gain access to the moves [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness), [Resist the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness), and [Succumb to Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness).",
+							"controls": {},
+							"oracles": {},
+							"enhance_moves": [
+								{
+									"roll_type": "action_roll",
+									"enhances": [
+										"move:classic/relationship/compel",
+										"move:classic/adventure/face_danger",
+										"move:classic/adventure/gather_information",
+										"move:classic/adventure/secure_an_advantage",
+										"move:classic/combat/strike",
+										"move:classic/combat/clash",
+										"move:classic/suffer/endure_harm",
+										"move:classic/suffer/face_death"
+									],
+									"trigger": {
+										"conditions": [
+											{
+												"method": "player_choice",
+												"roll_options": [
+													{
+														"using": "asset_control",
+														"control": "darkness",
+														"assets": null
+													}
+												],
+												"text": "by summoning the darkness within you and leveraging it"
+											}
+										]
+									}
+								}
+							],
+							"moves": {
+								"wield_the_darkness": {
+									"_id": "asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness",
+									"type": "move",
+									"name": "Wield the Darkness",
+									"roll_type": "no_roll",
+									"trigger": {
+										"conditions": [
+											{
+												"_id": "asset.ability.move.condition:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness.0",
+												"method": null,
+												"roll_options": null,
+												"text": "__Act:__ You may [Compel](datasworn:move:classic/relationship/compel), [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage), [Strike](datasworn:move:classic/combat/strike), or [Clash](datasworn:move:classic/combat/clash) + darkness instead of the normal stat. If your action die shows a 1 on that move, mark darkness."
+											},
+											{
+												"_id": "asset.ability.move.condition:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness.1",
+												"method": null,
+												"roll_options": null,
+												"text": "__Interrupt:__ After rolling for a move but before resolving the outcome, choose one:\n\\ * Mark darkness to change a weak hit to a strong hit.  * Mark darkness twice to chance a miss to a weak hit."
+											},
+											{
+												"_id": "asset.ability.move.condition:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness.2",
+												"method": null,
+												"roll_options": null,
+												"text": "__Empower:__ You may [Endure Harm](datasworn:move:classic/suffer/endure_harm) or [Face Death](datasworn:move:classic/suffer/face_death) +darkness instead of the normal stat. If your action die shows a 1 on that move, mark Darkness."
+											}
+										],
+										"text": "When you summon the darkness within you and leverage it to make minor alterations to an aspect the dark power controls..."
+									},
+									"text": "When you __summon the darkness within you and leverage it to make minor alterations to an aspect__ the dark power controls, choose one option below. Then envision how your character uses the power to:\n\n  * __Act:__ You may [Compel](datasworn:move:classic/relationship/compel), [Face Danger](datasworn:move:classic/adventure/face_danger), [Gather Information](datasworn:move:classic/adventure/gather_information), [Secure an Advantage](datasworn:move:classic/adventure/secure_an_advantage), [Strike](datasworn:move:classic/combat/strike), or [Clash](datasworn:move:classic/combat/clash) + darkness instead of the normal stat. If your action die shows a 1 on that move, mark darkness.\n  * __Interrupt:__ After rolling for a move but before resolving the outcome, choose one: \n  \n    * Mark darkness to change a weak hit to a strong hit.\n    * Mark darkness twice to chance a miss to a weak hit.\n  * __Empower:__ You may [Endure Harm](datasworn:move:classic/suffer/endure_harm) or [Face Death](datasworn:move:classic/suffer/face_death) +darkness instead of the normal stat. If your action die shows a 1 on that move, mark Darkness.",
+									"outcomes": null,
+									"allow_momentum_burn": false
+								},
+								"resist_the_darkness": {
+									"_id": "asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness",
+									"type": "move",
+									"name": "Resist the Darkness",
+									"roll_type": "action_roll",
+									"trigger": {
+										"conditions": [
+											{
+												"_id": "asset.ability.move.condition:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness.0",
+												"method": "player_choice",
+												"roll_options": [
+													{
+														"using": "stat",
+														"stat": "heart"
+													}
+												]
+											}
+										],
+										"text": "When you encounter a manifestation of the darkness within you and try to resist its pull..."
+									},
+									"text": "When you __encounter a manifestation of the darkness within you and try to resist its pull__, roll + heart and change any challenge die below your darkness level to your darkness level.\n\nOn a __strong hit__, you stave off the darkness and affirm your control over it. Take +1 momentum.\n\nOn a __weak hit__, you stave off the darkness for now but still feel its grip on you. You press on.\n\nOn a __miss__, the darkness nearly overwhelms you. Mark darkness, and choose one:\n\n  - [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Act (not Interrupt or Empower) and add +1.\n  - Indulge the Darkness: You act against your better nature to your detriment.\n  - [Pay the Price ](datasworn:move:classic/fate/pay_the_price)\n\nYou may not [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Interrupt this move.",
+									"outcomes": {
+										"strong_hit": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness.strong_hit",
+											"text": "On a __strong hit__, you stave off the darkness and affirm your control over it. Take +1 momentum."
+										},
+										"weak_hit": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness.weak_hit",
+											"text": "On a __weak hit__, you stave off the darkness for now but still feel its grip on you. You press on."
+										},
+										"miss": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.0.resist_the_darkness.miss",
+											"text": "On a __miss__, the darkness nearly overwhelms you. Mark darkness, and choose one:\n\n- [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Act (not Interrupt or Empower) and add +1.\n- Indulge the Darkness: You act against your better nature to your detriment.\n- [Pay the Price ](datasworn:move:classic/fate/pay_the_price)"
+										}
+									},
+									"allow_momentum_burn": true
+								},
+								"succumb_to_darkness": {
+									"_id": "asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness",
+									"type": "move",
+									"name": "Succumb to Darkness",
+									"roll_type": "action_roll",
+									"trigger": {
+										"conditions": [
+											{
+												"_id": "asset.ability.move.condition:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness.0",
+												"method": "player_choice",
+												"roll_options": [
+													{
+														"using": "stat",
+														"stat": "heart"
+													}
+												]
+											}
+										],
+										"text": "When you fill your Darkness track..."
+									},
+									"text": "When you __fill your Darkness Track__, roll + heart and change any challenge die below a value of 5 to 5. \n\nOn a __strong hit__, you find the willpower to press back the darkness if only for a moment. Set your darkness level to +5 and press on.\n\nOn a __weak hit__, choose one:\n  \n  * The darkness overwhelms you, but not before you wield it one more time to enact a significant change or revenge on the source of your darkness. Envision your final moments.\n  * You catch a fleeting vision of what the darkness within you fears and see a path to redemption and freedom. Envision how the darkness may be cast off and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to purify and free yourself of this darkness. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) or refuse the quest, you are lost. Otherwise, you gain tenuous control over the darkness and set your darkness level to +5. When you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) to free yourself, you lose the Darkness Within asset and take +3 Experience.\n\nOn a __miss__, your body, mind, and soul are consumed by the darkness. Choose one:\n\n  * A remnant of you haunts the Ironlands and is set towards an ill purpose by the dark power that lived within you. Envision how your remnant furthers the cause of darkness in the Ironlands.\n  * You were not a strong enough vessel to hold the darkness in. Envision how this dark power now moves on to corrupt another who you care about.\n  \nYou may not [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Interrupt this move.",
+									"outcomes": {
+										"strong_hit": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness.strong_hit",
+											"text": "On a __strong hit__, you find the willpower to press back the darkness if only for a moment. Set your darkness level to +5 and press on."
+										},
+										"weak_hit": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness.weak_hit",
+											"text": "On a __weak hit__, choose one:\n\n* The darkness overwhelms you, but not before you wield it one more time to enact a significant change or revenge on the source of your darkness. Envision your final moments.\n* You catch a fleeting vision of what the darkness within you fears and see a path to redemption and freedom. Envision how the darkness may be cast off and [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) to purify and free yourself of this darkness. If you fail to score a hit when you [Swear an Iron Vow](datasworn:move:classic/quest/swear_an_iron_vow) or refuse the quest, you are lost. Otherwise, you gain tenuous control over the darkness and set your darkness level to +5. When you [Fulfill Your Vow](datasworn:move:classic/quest/fulfill_your_vow) to free yourself, you lose the Darkness Within asset and take +3 Experience."
+										},
+										"miss": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.0.succumb_to_darkness.miss",
+											"text": "On a __miss__, your body, mind, and soul are consumed by the darkness. Choose one:\n\n* A remnant of you haunts the Ironlands and is set towards an ill purpose by the dark power that lived within you. Envision how your remnant furthers the cause of darkness in the Ironlands.\n* You were not a strong enough vessel to hold the darkness in. Envision how this dark power now moves on to corrupt another who you care about."
+										}
+									},
+									"allow_momentum_burn": true
+								}
+							}
+						},
+						{
+							"_id": "asset.ability:ironsmith_darkness/path/the_darkness_within.1",
+							"enabled": false,
+							"options": {},
+							"text": "You gain access to the [Cleanse the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness) move. Envision your method for combating the dark influence inside you.",
+							"controls": {},
+							"oracles": {},
+							"moves": {
+								"cleanse_the_darkness": {
+									"_id": "asset.ability.move:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness",
+									"type": "move",
+									"name": "Cleanse the Darkness",
+									"roll_type": "action_roll",
+									"trigger": {
+										"conditions": [
+											{
+												"_id": "asset.ability.move.condition:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness.0",
+												"method": "player_choice",
+												"roll_options": [
+													{
+														"using": "stat",
+														"stat": "heart"
+													}
+												]
+											}
+										],
+										"text": "When you take significant time to perform an activity that fights the darkness within you..."
+									},
+									"text": "When you __take significant time to perform an activity that fights the darkness within you__, roll +heart and change any challenge die result that is below your darkness level to your darkness level. You may not [Cleanse the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness) if you are Shaken.\n\nOn a __strong hit__, the darkness retreats. Lower your darkness and choose one:\n\n  * Lower your darkness again.\n  * Take +1 momentum.\n\nOn a __weak hit__, the darkness loosens its grip. Lower your darkness once.\n\nOn a __miss__, the darkness clings to you. Mark Shaken.\n\nYou may not [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness) to Interrupt this move.",
+									"outcomes": {
+										"strong_hit": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness.strong_hit",
+											"text": "On a __strong hit__, the darkness retreats. Lower your darkness and choose one:\n\n* Lower your darkness again.\n* Take +1 momentum."
+										},
+										"weak_hit": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness.weak_hit",
+											"text": "On a __weak hit__, the darkness loosens its grip. Lower your darkness once."
+										},
+										"miss": {
+											"_id": "asset.ability.move.outcome:ironsmith_darkness/path/the_darkness_within.1.cleanse_the_darkness.miss",
+											"text": "On a __miss__, the darkness clings to you. Mark Shaken."
+										}
+									},
+									"allow_momentum_burn": true
+								}
+							}
+						},
+						{
+							"_id": "asset.ability:ironsmith_darkness/path/the_darkness_within.2",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness), you may make major alterations instead of minor and also perform minor acts of creation with aspects.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						},
+						{
+							"_id": "asset.ability:ironsmith_darkness/path/the_darkness_within.3",
+							"enabled": false,
+							"options": {},
+							"text": "When you [Wield the Darkness](asset.ability.move:ironsmith_darkness/path/the_darkness_within.0.wield_the_darkness), you may perform major acts of creation and also bend reality with aspects. You must have all other upgrades before choosing this one.",
+							"controls": {},
+							"oracles": {},
+							"moves": {}
+						}
+					],
+					"controls": {
+						"darkness": {
+							"label": "darkness",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 2,
+							"max": 5,
+							"value": 2,
+							"controls": {
+								"flee": {
+									"label": "Setback: Flee",
+									"field_type": "checkbox",
+									"value": false,
+									"is_impact": false,
+									"disables_asset": false
+								},
+								"freeze": {
+									"label": "Setback: Freeze",
+									"field_type": "checkbox",
+									"value": false,
+									"is_impact": false,
+									"disables_asset": false
+								},
+								"destroy": {
+									"label": "Snap: Destroy",
+									"field_type": "checkbox",
+									"value": false,
+									"is_impact": false,
+									"disables_asset": false
+								},
+								"detach": {
+									"label": "Snap: Detach",
+									"field_type": "checkbox",
+									"value": false,
+									"is_impact": false,
+									"disables_asset": false
+								},
+								"delusion": {
+									"label": "Struggle: Delusion",
+									"field_type": "checkbox",
+									"value": false,
+									"is_impact": false,
+									"disables_asset": false
+								},
+								"dependency": {
+									"label": "Struggle: Dependency",
+									"field_type": "checkbox",
+									"value": false,
+									"is_impact": false,
+									"disables_asset": false
+								}
+							}
+						}
+					},
+					"_source": {
+						"title": "Ironsmith: Darkness",
+						"authors": [
+							{
+								"name": "Eric Bright"
+							}
+						],
+						"date": "2021-10-21",
+						"license": "https://creativecommons.org/licenses/by/4.0",
+						"url": "https://www.drivethrurpg.com/product/351813/Ironsmith"
+					}
+				}
+			},
+			"collections": {},
+			"_source": {
+				"title": "Ironsmith: Darkness",
+				"authors": [
+					{
+						"name": "Eric Bright"
+					}
+				],
+				"date": "2021-10-21",
+				"license": "https://creativecommons.org/licenses/by/4.0",
+				"url": "https://www.drivethrurpg.com/product/351813/Ironsmith"
+			}
+		}
+	},
+	"atlas": {},
+	"moves": {},
+	"npcs": {},
+	"rarities": {},
+	"delve_sites": {},
+	"site_domains": {},
+	"site_themes": {},
+	"truths": {}
+}
