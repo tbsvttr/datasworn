@@ -19,7 +19,7 @@
 	"dependencies": {
 		"@datasworn/core": "file:../../pkg/nodejs/@datasworn/core",
 		"dompurify": "^3.4.12",
-		"marked": "^18.0.4"
+		"marked": "^18.0.7"
 	},
 	"overrides": {
 		"ws": "^8.20.1",
